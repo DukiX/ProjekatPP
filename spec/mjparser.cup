@@ -68,8 +68,9 @@ nonterminal StatementList, Statement, Addop;
 nonterminal Unmatched, Matched;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Obj Program, ProgName, Designator, MethodDecl, MethodTypeName; 
-nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Term, Expr, Factor, VarDeclList,FactorList; 
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Term, Expr, Factor, VarDeclList; 
 
+nonterminal FactorList;
 nonterminal DesignatorStatement;
 nonterminal Mulop;
 nonterminal BoolConst;
@@ -87,6 +88,9 @@ ProgName ::= (ProgName) IDENT:pName
 VarDeclList ::= (VarDeclarations) VarDeclList VarDecl  
 				|
 				(NoVarDecl)/* epsilon */ 
+				|
+				(ErrVarDecl) error
+			  	{: parser.log.debug("Uspesan oporavak od definicije globalne promenljive."); :}
 				;
 				
 VarDecl ::= (VarDecl) Type:varType IDENT:varName SEMI 
@@ -112,9 +116,12 @@ FormPars ::= (FormParams) FormalParamList | (NoFormParam) /* epsilon */ ;
 FormalParamList ::= (FormalParamDecls) FormalParamList COMMA FormalParamDecl
 					|
 					(SingleFormalParamDecl) FormalParamDecl
+					|
+					(ErrFormPar) error
+			  		{: parser.log.debug("Uspesan oporavak od formalnog parametra."); :}
 					;
 					
-FormalParamDecl ::= (FormalParamDecl) Type IDENT ;
+FormalParamDecl ::= (FormalParamDecl) Type IDENT;
 
 StatementList ::= (Statements) StatementList Statement 
 					|
@@ -126,10 +133,10 @@ Statement ::= (MatchedStmt) Matched | (UnmachedStmt) Unmatched;
 Unmatched ::= (UnmatchedIf) IF LPAREN Condition RPAREN Statement | (UnmatchedIfElse) IF LPAREN Condition RPAREN Matched ELSE Unmatched;
 	
 				  
-Matched ::=	(ErrAssignment) Designator EQUAL error SEMI
+Matched ::=	(ErrAssignment) error SEMI
 			  {: parser.log.debug("Uspesan oporavak od greske pri dodeli vrednosti."); :}
 			  |
-			  (PrintStmt) PRINT LPAREN Expr RPAREN SEMI 
+			(PrintStmt) PRINT LPAREN Expr RPAREN SEMI 
 			  |
 			  (ReturnExpr) RETURN Expr:t SEMI
 			  |
@@ -162,7 +169,10 @@ ForCondition ::= (ForCond) Condition
 			/*epsilon*/
 			;
 			
-Condition ::= (Condit) CondTerm CondTermList
+Condition ::= (Condit) CondTerm CondTermList			
+				|
+				(ConditError) error
+				{: parser.log.debug("Uspesan oporavak od if greske."); :}
 				;
 
 CondTermList ::= (CondTerms) CondTermList OR CondTerm
@@ -281,6 +291,4 @@ Relop ::= 	(Releq) EQ
 			;
 			
 			
-			
-			
-			
+		
