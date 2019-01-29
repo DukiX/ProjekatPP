@@ -1,0 +1,46 @@
+INFO  19:27:38,518 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  19:27:38,532 - #2 program
+INFO  19:27:38,532 - #15 MJProgram
+INFO  19:27:38,532 - #15 int
+INFO  19:27:38,534 - #15 x
+INFO  19:27:38,534 - #5 ;
+INFO  19:27:38,534 - #15 int
+INFO  19:27:38,534 - #15 y
+INFO  19:27:38,534 - #5 ;
+INFO  19:27:38,534 - #3 {
+INFO  19:27:38,534 - #15 int
+INFO  19:27:38,534 - #15 k
+INFO  19:27:38,536 - #6 (
+INFO  19:27:38,536 - #7 )
+INFO  19:27:38,536 - #15 int
+INFO  19:27:38,536 - #15 c
+INFO  19:27:38,536 - #5 ;
+INFO  19:27:38,536 - #3 {
+INFO  19:27:38,536 - #15 c
+INFO  19:27:38,536 - #12 =
+INFO  19:27:38,538 - #14 1
+INFO  19:27:38,538 - #5 ;
+INFO  19:27:38,538 - #10 return
+INFO  19:27:38,540 - #15 c
+INFO  19:27:38,540 - #11 +
+INFO  19:27:38,540 - #14 2
+INFO  19:27:38,540 - #5 ;
+INFO  19:27:38,540 - #4 }
+INFO  19:27:38,540 - #15 int
+INFO  19:27:38,540 - #15 main
+INFO  19:27:38,540 - #6 (
+INFO  19:27:38,540 - #7 )
+INFO  19:27:38,540 - #3 {
+INFO  19:27:38,540 - #15 y
+INFO  19:27:38,540 - #12 =
+INFO  19:27:38,540 - #14 2
+INFO  19:27:38,540 - #5 ;
+INFO  19:27:38,540 - #15 y
+INFO  19:27:38,540 - #18 ++
+ERROR 19:27:38,540 - 
+Sintaksna greska na liniji 12
+ERROR 19:27:38,540 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 12
+ERROR 19:27:38,544 - Greska na liniji 11 : ime y nije deklarisano! 
+ERROR 19:27:38,546 - Greska na liniji 11 :  nekompatibilni tipovi u dodeli vrednosti 
+INFO  19:27:38,546 - Print calls = 0
+ERROR 19:27:38,546 - Parsiranje NIJE uspesno zavrseno!

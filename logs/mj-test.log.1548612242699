@@ -1,0 +1,59 @@
+INFO  19:02:28,107 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  19:02:28,119 - #2 program
+INFO  19:02:28,119 - #15 MJProgram
+INFO  19:02:28,119 - #15 int
+INFO  19:02:28,121 - #15 x
+INFO  19:02:28,121 - #5 ;
+INFO  19:02:28,121 - #15 int
+INFO  19:02:28,121 - #15 y
+INFO  19:02:28,121 - #5 ;
+INFO  19:02:28,121 - #3 {
+INFO  19:02:28,121 - #15 int
+INFO  19:02:28,121 - #15 k
+INFO  19:02:28,121 - #6 (
+INFO  19:02:28,121 - #7 )
+INFO  19:02:28,123 - #15 int
+INFO  19:02:28,123 - #15 c
+INFO  19:02:28,123 - #5 ;
+INFO  19:02:28,123 - #3 {
+INFO  19:02:28,123 - #15 c
+INFO  19:02:28,123 - #12 =
+INFO  19:02:28,123 - #14 1
+INFO  19:02:28,123 - #5 ;
+INFO  19:02:28,125 - #10 return
+INFO  19:02:28,125 - #15 c
+INFO  19:02:28,125 - #11 +
+INFO  19:02:28,127 - #14 2
+INFO  19:02:28,127 - #5 ;
+INFO  19:02:28,127 - #4 }
+INFO  19:02:28,127 - #15 int
+INFO  19:02:28,127 - #15 main
+INFO  19:02:28,127 - #6 (
+INFO  19:02:28,127 - #7 )
+INFO  19:02:28,127 - #3 {
+INFO  19:02:28,127 - #15 y
+INFO  19:02:28,127 - #12 =
+INFO  19:02:28,127 - #14 2
+INFO  19:02:28,127 - #5 ;
+INFO  19:02:28,127 - #15 x
+INFO  19:02:28,127 - #12 =
+INFO  19:02:28,127 - #15 y
+INFO  19:02:28,127 - #11 +
+INFO  19:02:28,127 - #14 2
+INFO  19:02:28,127 - #5 ;
+INFO  19:02:28,127 - #15 y
+INFO  19:02:28,127 - #12 =
+INFO  19:02:28,127 - #15 k
+INFO  19:02:28,127 - #6 (
+INFO  19:02:28,127 - #7 )
+INFO  19:02:28,129 - #11 +
+INFO  19:02:28,129 - #14 3
+INFO  19:02:28,129 - #5 ;
+INFO  19:02:28,129 - #15 x
+INFO  19:02:28,129 - #11 +
+ERROR 19:02:28,129 - 
+Sintaksna greska na liniji 14
+ERROR 19:02:28,129 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 14
+ERROR 19:02:28,133 - Greska na liniji 14 : ime x nije deklarisano! 
+INFO  19:02:28,133 - Print calls = 0
+ERROR 19:02:28,133 - Parsiranje NIJE uspesno zavrseno!

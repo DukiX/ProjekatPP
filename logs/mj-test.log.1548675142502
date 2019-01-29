@@ -1,0 +1,109 @@
+INFO  12:31:15,811 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  12:31:15,947 - #2 program
+INFO  12:31:15,949 - #20 MJProgram
+INFO  12:31:15,949 - #20 int
+INFO  12:31:15,953 - #20 x
+INFO  12:31:15,957 - #5 ;
+INFO  12:31:15,957 - #20 int
+INFO  12:31:15,960 - #20 y
+INFO  12:31:15,960 - #5 ;
+INFO  12:31:15,960 - #3 {
+INFO  12:31:15,960 - #20 int
+INFO  12:31:15,962 - #20 k
+INFO  12:31:15,962 - #6 (
+INFO  12:31:15,966 - #7 )
+INFO  12:31:15,968 - #20 int
+INFO  12:31:15,970 - #20 c
+INFO  12:31:15,970 - #5 ;
+INFO  12:31:15,970 - #3 {
+INFO  12:31:15,970 - #20 c
+INFO  12:31:15,972 - #12 =
+INFO  12:31:15,974 - #19 1
+INFO  12:31:15,976 - #5 ;
+INFO  12:31:15,982 - #10 return
+INFO  12:31:15,984 - #20 c
+INFO  12:31:15,984 - #11 +
+INFO  12:31:15,984 - #19 2
+INFO  12:31:15,988 - #5 ;
+INFO  12:31:15,988 - #4 }
+INFO  12:31:15,988 - #20 int
+INFO  12:31:15,992 - #20 main
+INFO  12:31:15,992 - #6 (
+INFO  12:31:15,992 - #7 )
+INFO  12:31:15,992 - #3 {
+INFO  12:31:15,992 - #20 y
+INFO  12:31:15,992 - #12 =
+INFO  12:31:15,992 - #19 2
+INFO  12:31:15,992 - #5 ;
+INFO  12:31:15,992 - #14 read
+INFO  12:31:15,992 - #6 (
+INFO  12:31:15,992 - #20 y
+INFO  12:31:15,992 - #7 )
+INFO  12:31:15,992 - #5 ;
+INFO  12:31:15,992 - #20 y
+INFO  12:31:15,992 - #23 ++
+INFO  12:31:15,992 - #5 ;
+INFO  12:31:15,992 - #20 x
+INFO  12:31:15,992 - #24 --
+INFO  12:31:15,992 - #5 ;
+INFO  12:31:15,992 - #20 x
+INFO  12:31:15,992 - #12 =
+INFO  12:31:15,992 - #20 y
+INFO  12:31:15,992 - #15 -
+INFO  12:31:15,992 - #19 2
+INFO  12:31:15,996 - #11 +
+INFO  12:31:15,996 - #25 x
+INFO  12:31:15,996 - #5 ;
+INFO  12:31:15,996 - #20 x
+INFO  12:31:15,996 - #12 =
+INFO  12:31:15,996 - #20 x
+INFO  12:31:15,996 - #18 %
+INFO  12:31:15,996 - #20 y
+INFO  12:31:16,000 - #11 +
+INFO  12:31:16,000 - #19 2
+INFO  12:31:16,000 - #11 +
+INFO  12:31:16,000 - #19 3
+INFO  12:31:16,000 - #16 *
+INFO  12:31:16,000 - #19 5
+INFO  12:31:16,002 - #5 ;
+INFO  12:31:16,002 - #20 y
+INFO  12:31:16,006 - #12 =
+INFO  12:31:16,006 - #20 y
+INFO  12:31:16,006 - #16 *
+INFO  12:31:16,006 - #20 y
+INFO  12:31:16,006 - #5 ;
+INFO  12:31:16,006 - #20 y
+INFO  12:31:16,006 - #12 =
+INFO  12:31:16,006 - #20 k
+INFO  12:31:16,006 - #6 (
+INFO  12:31:16,006 - #7 )
+INFO  12:31:16,008 - #11 +
+INFO  12:31:16,008 - #19 3
+INFO  12:31:16,008 - #5 ;
+INFO  12:31:16,008 - #9 print
+INFO  12:31:16,008 - #6 (
+INFO  12:31:16,008 - #20 y
+INFO  12:31:16,008 - #7 )
+INFO  12:31:16,008 - #5 ;
+INFO  12:31:16,008 - #9 print
+INFO  12:31:16,008 - #6 (
+INFO  12:31:16,008 - #20 y
+INFO  12:31:16,008 - #8 ,
+INFO  12:31:16,008 - #19 1
+INFO  12:31:16,008 - #7 )
+INFO  12:31:16,008 - #5 ;
+INFO  12:31:16,008 - #10 return
+INFO  12:31:16,010 - #19 0
+INFO  12:31:16,010 - #5 ;
+INFO  12:31:16,010 - #4 }
+INFO  12:31:16,010 - #4 }
+INFO  12:31:16,024 - Deklarisana promenljiva x na liniji 2
+INFO  12:31:16,024 - Deklarisana promenljiva y na liniji 2
+INFO  12:31:16,024 - Obradjuje se funkcija k na liniji 5
+INFO  12:31:16,024 - Deklarisana promenljiva c na liniji 5
+INFO  12:31:16,024 - Obradjuje se funkcija main na liniji 10
+ERROR 12:31:16,024 - Greska na liniji 15 : nekompatibilni tipovi u izrazu za sabiranje.
+ERROR 12:31:16,024 - Greska na liniji 15 :  nekompatibilni tipovi u dodeli vrednosti 
+INFO  12:31:16,024 - Pronadjen poziv funkcije k na liniji 18
+INFO  12:31:16,024 - Print calls = 1
+ERROR 12:31:16,024 - Parsiranje NIJE uspesno zavrseno!

@@ -1,0 +1,83 @@
+INFO  17:51:22,550 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  17:51:22,571 - #2 program
+INFO  17:51:22,571 - #37 MJProgram
+INFO  17:51:22,571 - #37 int
+INFO  17:51:22,571 - #37 x
+INFO  17:51:22,572 - #5 ;
+INFO  17:51:22,572 - #37 int
+INFO  17:51:22,572 - #37 y
+INFO  17:51:22,572 - #5 ;
+INFO  17:51:22,572 - #37 char
+INFO  17:51:22,572 - #37 a
+INFO  17:51:22,572 - #5 ;
+INFO  17:51:22,572 - #3 {
+INFO  17:51:22,572 - #37 int
+INFO  17:51:22,573 - #37 k
+INFO  17:51:22,573 - #6 (
+INFO  17:51:22,573 - #7 )
+INFO  17:51:22,573 - #37 int
+INFO  17:51:22,573 - #37 c
+INFO  17:51:22,573 - #5 ;
+INFO  17:51:22,573 - #3 {
+INFO  17:51:22,574 - #37 c
+INFO  17:51:22,574 - #12 =
+INFO  17:51:22,576 - #36 1
+INFO  17:51:22,576 - #5 ;
+INFO  17:51:22,577 - #10 return
+INFO  17:51:22,577 - #37 c
+INFO  17:51:22,577 - #11 +
+INFO  17:51:22,577 - #36 2
+INFO  17:51:22,578 - #5 ;
+INFO  17:51:22,578 - #4 }
+INFO  17:51:22,578 - #37 int
+INFO  17:51:22,578 - #37 main
+INFO  17:51:22,578 - #6 (
+INFO  17:51:22,578 - #7 )
+INFO  17:51:22,578 - #3 {
+INFO  17:51:22,578 - #37 y
+INFO  17:51:22,578 - #12 =
+INFO  17:51:22,579 - #37 x
+INFO  17:51:22,579 - #22 [
+INFO  17:51:22,579 - #36 2
+INFO  17:51:22,579 - #23 ]
+INFO  17:51:22,579 - #5 ;
+INFO  17:51:22,579 - #3 {
+INFO  17:51:22,579 - #37 y
+INFO  17:51:22,579 - #12 =
+INFO  17:51:22,579 - #37 x
+INFO  17:51:22,579 - #22 [
+INFO  17:51:22,579 - #36 2
+INFO  17:51:22,579 - #23 ]
+INFO  17:51:22,579 - #5 ;
+INFO  17:51:22,579 - #37 x
+INFO  17:51:22,579 - #12 =
+INFO  17:51:22,579 - #36 2
+INFO  17:51:22,579 - #5 ;
+INFO  17:51:22,579 - #3 {
+INFO  17:51:22,579 - #37 y
+INFO  17:51:22,580 - #12 =
+INFO  17:51:22,580 - #37 k
+INFO  17:51:22,580 - #6 (
+INFO  17:51:22,580 - #7 )
+INFO  17:51:22,580 - #5 ;
+INFO  17:51:22,580 - #26 break
+INFO  17:51:22,581 - #5 ;
+INFO  17:51:22,581 - #4 }
+INFO  17:51:22,581 - #27 continue
+INFO  17:51:22,581 - #5 ;
+INFO  17:51:22,581 - #4 }
+INFO  17:51:22,581 - #25 for
+INFO  17:51:22,581 - #6 (
+INFO  17:51:22,581 - #37 x
+INFO  17:51:22,581 - #12 =
+INFO  17:51:22,581 - #36 2
+INFO  17:51:22,582 - #5 ;
+INFO  17:51:22,582 - #36 5
+INFO  17:51:22,582 - #30 ==
+ERROR 17:51:22,582 - 
+Sintaksna greska na liniji 22
+ERROR 17:51:22,582 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 22
+ERROR 17:51:22,587 - Greska na liniji 22 : ime x nije deklarisano! 
+ERROR 17:51:22,587 - Greska na liniji 22 :  nekompatibilni tipovi u dodeli vrednosti 
+INFO  17:51:22,587 - Print calls = 0
+ERROR 17:51:22,587 - Parsiranje NIJE uspesno zavrseno!

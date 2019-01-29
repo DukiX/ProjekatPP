@@ -1,0 +1,73 @@
+INFO  19:36:08,887 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  19:36:08,905 - #2 program
+INFO  19:36:08,905 - #15 MJProgram
+INFO  19:36:08,905 - #15 int
+INFO  19:36:08,906 - #15 x
+INFO  19:36:08,907 - #5 ;
+INFO  19:36:08,907 - #15 int
+INFO  19:36:08,907 - #15 y
+INFO  19:36:08,907 - #5 ;
+INFO  19:36:08,907 - #3 {
+INFO  19:36:08,907 - #15 int
+INFO  19:36:08,908 - #15 k
+INFO  19:36:08,908 - #6 (
+INFO  19:36:08,909 - #7 )
+INFO  19:36:08,910 - #15 int
+INFO  19:36:08,910 - #15 c
+INFO  19:36:08,910 - #5 ;
+INFO  19:36:08,910 - #3 {
+INFO  19:36:08,910 - #15 c
+INFO  19:36:08,911 - #12 =
+INFO  19:36:08,911 - #14 1
+INFO  19:36:08,911 - #5 ;
+INFO  19:36:08,912 - #10 return
+INFO  19:36:08,914 - #15 c
+INFO  19:36:08,914 - #11 +
+INFO  19:36:08,914 - #14 2
+INFO  19:36:08,914 - #5 ;
+INFO  19:36:08,914 - #4 }
+INFO  19:36:08,914 - #15 int
+INFO  19:36:08,915 - #15 main
+INFO  19:36:08,915 - #6 (
+INFO  19:36:08,915 - #7 )
+INFO  19:36:08,915 - #3 {
+INFO  19:36:08,915 - #15 y
+INFO  19:36:08,915 - #12 =
+INFO  19:36:08,915 - #14 2
+INFO  19:36:08,915 - #5 ;
+INFO  19:36:08,915 - #15 y
+INFO  19:36:08,915 - #18 ++
+INFO  19:36:08,915 - #5 ;
+INFO  19:36:08,915 - #15 x
+INFO  19:36:08,915 - #12 =
+INFO  19:36:08,916 - #15 y
+INFO  19:36:08,916 - #11 +
+INFO  19:36:08,916 - #14 2
+INFO  19:36:08,916 - #5 ;
+INFO  19:36:08,916 - #15 y
+INFO  19:36:08,916 - #12 =
+INFO  19:36:08,916 - #15 k
+INFO  19:36:08,916 - #6 (
+INFO  19:36:08,916 - #7 )
+INFO  19:36:08,916 - #11 +
+INFO  19:36:08,916 - #14 3
+INFO  19:36:08,917 - #5 ;
+INFO  19:36:08,917 - #9 print
+INFO  19:36:08,917 - #6 (
+INFO  19:36:08,917 - #15 y
+INFO  19:36:08,917 - #7 )
+INFO  19:36:08,917 - #5 ;
+INFO  19:36:08,917 - #10 return
+INFO  19:36:08,917 - #14 0
+INFO  19:36:08,917 - #5 ;
+INFO  19:36:08,917 - #4 }
+INFO  19:36:08,917 - #4 }
+INFO  19:36:08,922 - Deklarisana promenljiva x na liniji 2
+INFO  19:36:08,922 - Deklarisana promenljiva y na liniji 2
+INFO  19:36:08,922 - Obradjuje se funkcija k na liniji 5
+INFO  19:36:08,922 - Deklarisana promenljiva c na liniji 5
+INFO  19:36:08,923 - Obradjuje se funkcija main na liniji 10
+INFO  19:36:08,923 - Pronadjen poziv funkcije k na liniji 14
+INFO  19:36:08,923 - Print calls = 1
+INFO  19:36:08,924 - Generating bytecode file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  19:36:08,928 - Parsiranje uspesno zavrseno!

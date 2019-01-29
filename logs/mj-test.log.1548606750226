@@ -1,0 +1,67 @@
+INFO  17:32:14,591 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  17:32:14,603 - #2 program
+INFO  17:32:14,603 - #15 MJProgram
+INFO  17:32:14,603 - #15 int
+INFO  17:32:14,605 - #15 x
+INFO  17:32:14,605 - #5 ;
+INFO  17:32:14,605 - #15 int
+INFO  17:32:14,605 - #15 y
+INFO  17:32:14,605 - #5 ;
+INFO  17:32:14,605 - #3 {
+INFO  17:32:14,605 - #15 int
+INFO  17:32:14,605 - #15 k
+INFO  17:32:14,607 - #6 (
+INFO  17:32:14,607 - #7 )
+INFO  17:32:14,607 - #15 int
+INFO  17:32:14,607 - #15 c
+INFO  17:32:14,607 - #5 ;
+INFO  17:32:14,607 - #3 {
+INFO  17:32:14,607 - #15 c
+INFO  17:32:14,607 - #12 =
+INFO  17:32:14,607 - #14 1
+INFO  17:32:14,607 - #5 ;
+INFO  17:32:14,609 - #10 return
+INFO  17:32:14,609 - #15 c
+INFO  17:32:14,609 - #11 +
+INFO  17:32:14,609 - #14 2
+INFO  17:32:14,611 - #5 ;
+INFO  17:32:14,611 - #4 }
+INFO  17:32:14,611 - #15 int
+INFO  17:32:14,611 - #15 main
+INFO  17:32:14,611 - #6 (
+INFO  17:32:14,611 - #7 )
+INFO  17:32:14,611 - #3 {
+INFO  17:32:14,611 - #15 y
+INFO  17:32:14,611 - #12 =
+INFO  17:32:14,611 - #14 2
+INFO  17:32:14,611 - #5 ;
+INFO  17:32:14,611 - #15 x
+INFO  17:32:14,613 - #12 =
+INFO  17:32:14,613 - #15 y
+INFO  17:32:14,613 - #11 +
+INFO  17:32:14,613 - #14 2
+INFO  17:32:14,613 - #5 ;
+INFO  17:32:14,613 - #15 y
+INFO  17:32:14,613 - #12 =
+INFO  17:32:14,613 - #15 k
+INFO  17:32:14,613 - #6 (
+INFO  17:32:14,613 - #7 )
+INFO  17:32:14,613 - #11 +
+INFO  17:32:14,613 - #14 3
+INFO  17:32:14,613 - #5 ;
+INFO  17:32:14,613 - #9 print
+INFO  17:32:14,613 - #6 (
+INFO  17:32:14,613 - #15 y
+INFO  17:32:14,613 - #7 )
+INFO  17:32:14,613 - #5 ;
+INFO  17:32:14,613 - #10 return
+INFO  17:32:14,613 - #14 0
+INFO  17:32:14,613 - #5 ;
+INFO  17:32:14,613 - #15 x
+INFO  17:32:14,613 - #11 +
+ERROR 17:32:14,613 - 
+Sintaksna greska na liniji 16
+ERROR 17:32:14,613 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 16
+ERROR 17:32:14,621 - Greska na liniji 16 : ime x nije deklarisano! 
+INFO  17:32:14,621 - Print calls = 0
+ERROR 17:32:14,621 - Parsiranje NIJE uspesno zavrseno!

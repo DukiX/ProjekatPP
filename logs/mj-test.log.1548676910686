@@ -1,0 +1,110 @@
+INFO  12:58:39,926 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  12:58:39,944 - #2 program
+INFO  12:58:39,944 - #22 MJProgram
+INFO  12:58:39,944 - #22 int
+INFO  12:58:39,946 - #22 x
+INFO  12:58:39,946 - #5 ;
+INFO  12:58:39,946 - #22 int
+INFO  12:58:39,946 - #22 y
+INFO  12:58:39,946 - #5 ;
+INFO  12:58:39,946 - #22 bool
+INFO  12:58:39,946 - #22 a
+INFO  12:58:39,946 - #5 ;
+INFO  12:58:39,946 - #3 {
+INFO  12:58:39,946 - #22 int
+INFO  12:58:39,946 - #22 k
+INFO  12:58:39,946 - #6 (
+INFO  12:58:39,948 - #7 )
+INFO  12:58:39,948 - #22 int
+INFO  12:58:39,948 - #22 c
+INFO  12:58:39,948 - #5 ;
+INFO  12:58:39,948 - #3 {
+INFO  12:58:39,948 - #22 c
+INFO  12:58:39,948 - #12 =
+INFO  12:58:39,950 - #21 1
+INFO  12:58:39,950 - #5 ;
+INFO  12:58:39,952 - #10 return
+INFO  12:58:39,952 - #22 c
+INFO  12:58:39,952 - #11 +
+INFO  12:58:39,952 - #21 2
+INFO  12:58:39,952 - #5 ;
+INFO  12:58:39,952 - #4 }
+INFO  12:58:39,952 - #22 int
+INFO  12:58:39,952 - #22 main
+INFO  12:58:39,952 - #6 (
+INFO  12:58:39,952 - #7 )
+INFO  12:58:39,952 - #3 {
+INFO  12:58:39,952 - #22 y
+INFO  12:58:39,952 - #12 =
+INFO  12:58:39,952 - #21 2
+INFO  12:58:39,952 - #5 ;
+INFO  12:58:39,952 - #14 read
+INFO  12:58:39,954 - #6 (
+INFO  12:58:39,954 - #22 y
+INFO  12:58:39,954 - #7 )
+INFO  12:58:39,954 - #5 ;
+INFO  12:58:39,954 - #22 y
+INFO  12:58:39,954 - #25 ++
+INFO  12:58:39,954 - #5 ;
+INFO  12:58:39,954 - #22 x
+INFO  12:58:39,954 - #26 --
+INFO  12:58:39,954 - #5 ;
+INFO  12:58:39,954 - #22 x
+INFO  12:58:39,954 - #12 =
+INFO  12:58:39,954 - #22 y
+INFO  12:58:39,954 - #15 -
+INFO  12:58:39,954 - #21 2
+INFO  12:58:39,954 - #5 ;
+INFO  12:58:39,954 - #22 x
+INFO  12:58:39,954 - #12 =
+INFO  12:58:39,954 - #22 x
+INFO  12:58:39,954 - #18 %
+INFO  12:58:39,954 - #22 y
+INFO  12:58:39,954 - #11 +
+INFO  12:58:39,954 - #21 2
+INFO  12:58:39,956 - #11 +
+INFO  12:58:39,956 - #21 3
+INFO  12:58:39,956 - #16 *
+INFO  12:58:39,956 - #21 5
+INFO  12:58:39,956 - #5 ;
+INFO  12:58:39,960 - #22 y
+INFO  12:58:39,960 - #12 =
+INFO  12:58:39,960 - #22 y
+INFO  12:58:39,960 - #16 *
+INFO  12:58:39,960 - #22 y
+INFO  12:58:39,960 - #5 ;
+INFO  12:58:39,960 - #22 y
+INFO  12:58:39,960 - #12 =
+INFO  12:58:39,960 - #22 k
+INFO  12:58:39,960 - #6 (
+INFO  12:58:39,960 - #7 )
+INFO  12:58:39,960 - #11 +
+INFO  12:58:39,960 - #21 3
+INFO  12:58:39,960 - #5 ;
+INFO  12:58:39,960 - #9 print
+INFO  12:58:39,960 - #6 (
+INFO  12:58:39,960 - #22 y
+INFO  12:58:39,960 - #7 )
+INFO  12:58:39,960 - #5 ;
+INFO  12:58:39,960 - #9 print
+INFO  12:58:39,960 - #6 (
+INFO  12:58:39,960 - #22 y
+INFO  12:58:39,960 - #8 ,
+INFO  12:58:39,960 - #21 1
+INFO  12:58:39,960 - #7 )
+INFO  12:58:39,960 - #5 ;
+INFO  12:58:39,962 - #10 return
+INFO  12:58:39,962 - #21 0
+INFO  12:58:39,962 - #5 ;
+INFO  12:58:39,962 - #4 }
+INFO  12:58:39,962 - #4 }
+INFO  12:58:39,972 - Deklarisana promenljiva x na liniji 2
+INFO  12:58:39,972 - Deklarisana promenljiva y na liniji 2
+ERROR 12:58:39,972 - Nije pronadjen tip bool u tabeli simbola
+INFO  12:58:39,972 - Deklarisana promenljiva a na liniji 2
+INFO  12:58:39,974 - Obradjuje se funkcija k na liniji 5
+INFO  12:58:39,974 - Deklarisana promenljiva c na liniji 5
+INFO  12:58:39,974 - Obradjuje se funkcija main na liniji 10
+INFO  12:58:39,974 - Pronadjen poziv funkcije k na liniji 18
+INFO  12:58:39,974 - Print calls = 1
+ERROR 12:58:39,974 - Parsiranje NIJE uspesno zavrseno!

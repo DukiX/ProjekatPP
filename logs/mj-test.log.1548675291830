@@ -1,0 +1,55 @@
+INFO  12:34:37,719 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  12:34:37,735 - #2 program
+INFO  12:34:37,735 - #20 MJProgram
+INFO  12:34:37,735 - #20 int
+INFO  12:34:37,735 - #20 x
+INFO  12:34:37,737 - #5 ;
+INFO  12:34:37,737 - #20 int
+INFO  12:34:37,737 - #20 y
+INFO  12:34:37,737 - #5 ;
+INFO  12:34:37,737 - #3 {
+INFO  12:34:37,737 - #20 int
+INFO  12:34:37,737 - #20 k
+INFO  12:34:37,737 - #6 (
+INFO  12:34:37,737 - #7 )
+INFO  12:34:37,737 - #20 int
+INFO  12:34:37,739 - #20 c
+INFO  12:34:37,739 - #5 ;
+INFO  12:34:37,739 - #3 {
+INFO  12:34:37,739 - #20 c
+INFO  12:34:37,739 - #12 =
+INFO  12:34:37,739 - #19 1
+INFO  12:34:37,739 - #5 ;
+INFO  12:34:37,739 - #10 return
+INFO  12:34:37,741 - #20 c
+INFO  12:34:37,741 - #11 +
+INFO  12:34:37,741 - #19 2
+INFO  12:34:37,743 - #5 ;
+INFO  12:34:37,743 - #4 }
+INFO  12:34:37,743 - #20 int
+INFO  12:34:37,743 - #20 main
+INFO  12:34:37,743 - #6 (
+INFO  12:34:37,743 - #7 )
+INFO  12:34:37,743 - #3 {
+INFO  12:34:37,743 - #20 y
+INFO  12:34:37,743 - #12 =
+INFO  12:34:37,743 - #19 2
+INFO  12:34:37,743 - #5 ;
+INFO  12:34:37,743 - #14 read
+INFO  12:34:37,743 - #6 (
+INFO  12:34:37,743 - #20 y
+INFO  12:34:37,743 - #7 )
+INFO  12:34:37,743 - #5 ;
+INFO  12:34:37,743 - #20 y
+INFO  12:34:37,743 - #23 ++
+INFO  12:34:37,743 - #5 ;
+INFO  12:34:37,743 - #20 x
+INFO  12:34:37,743 - #24 --
+INFO  12:34:37,743 - #5 ;
+INFO  12:34:37,743 - #25 9
+ERROR 12:34:37,743 - 
+Sintaksna greska na liniji 15
+ERROR 12:34:37,745 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 15
+ERROR 12:34:37,755 - Greska na liniji 14 : ime x nije deklarisano! 
+INFO  12:34:37,755 - Print calls = 0
+ERROR 12:34:37,755 - Parsiranje NIJE uspesno zavrseno!

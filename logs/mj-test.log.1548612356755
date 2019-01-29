@@ -1,0 +1,67 @@
+INFO  19:04:51,117 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  19:04:51,133 - #2 program
+INFO  19:04:51,133 - #15 MJProgram
+INFO  19:04:51,133 - #15 int
+INFO  19:04:51,133 - #15 x
+INFO  19:04:51,135 - #5 ;
+INFO  19:04:51,135 - #15 int
+INFO  19:04:51,135 - #15 y
+INFO  19:04:51,135 - #5 ;
+INFO  19:04:51,135 - #3 {
+INFO  19:04:51,135 - #15 int
+INFO  19:04:51,135 - #15 k
+INFO  19:04:51,135 - #6 (
+INFO  19:04:51,137 - #7 )
+INFO  19:04:51,137 - #15 int
+INFO  19:04:51,137 - #15 c
+INFO  19:04:51,137 - #5 ;
+INFO  19:04:51,137 - #3 {
+INFO  19:04:51,137 - #15 c
+INFO  19:04:51,137 - #12 =
+INFO  19:04:51,137 - #14 1
+INFO  19:04:51,137 - #5 ;
+INFO  19:04:51,139 - #10 return
+INFO  19:04:51,139 - #15 c
+INFO  19:04:51,139 - #11 +
+INFO  19:04:51,139 - #14 2
+INFO  19:04:51,141 - #5 ;
+INFO  19:04:51,141 - #4 }
+INFO  19:04:51,141 - #15 int
+INFO  19:04:51,141 - #15 main
+INFO  19:04:51,141 - #6 (
+INFO  19:04:51,141 - #7 )
+INFO  19:04:51,141 - #3 {
+INFO  19:04:51,141 - #15 y
+INFO  19:04:51,141 - #12 =
+INFO  19:04:51,141 - #14 2
+INFO  19:04:51,141 - #5 ;
+INFO  19:04:51,141 - #15 x
+INFO  19:04:51,141 - #12 =
+INFO  19:04:51,141 - #15 y
+INFO  19:04:51,141 - #11 +
+INFO  19:04:51,141 - #14 2
+INFO  19:04:51,141 - #5 ;
+INFO  19:04:51,141 - #15 y
+INFO  19:04:51,141 - #12 =
+INFO  19:04:51,141 - #15 k
+INFO  19:04:51,141 - #6 (
+INFO  19:04:51,141 - #7 )
+INFO  19:04:51,141 - #11 +
+INFO  19:04:51,143 - #14 3
+INFO  19:04:51,143 - #5 ;
+INFO  19:04:51,143 - #15 x
+INFO  19:04:51,143 - #18 ++
+ERROR 19:04:51,143 - 
+Sintaksna greska na liniji 14
+ERROR 19:04:51,143 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 14
+ERROR 19:04:51,147 - Greska na liniji 11 : ime y nije deklarisano! 
+ERROR 19:04:51,147 - Greska na liniji 11 :  nekompatibilni tipovi u dodeli vrednosti 
+ERROR 19:04:51,147 - Greska na liniji 12 : ime x nije deklarisano! 
+ERROR 19:04:51,147 - Greska na liniji 12 : ime y nije deklarisano! 
+ERROR 19:04:51,147 - Greska na liniji 12 : nekompatibilni tipovi u izrazu za sabiranje.
+ERROR 19:04:51,147 - Greska na liniji 13 : ime y nije deklarisano! 
+ERROR 19:04:51,147 - Greska na liniji 13 : ime k nije deklarisano! 
+ERROR 19:04:51,147 - Greska na liniji 13 : ime noObj nije funkcija!
+ERROR 19:04:51,147 - Greska na liniji 13 : nekompatibilni tipovi u izrazu za sabiranje.
+INFO  19:04:51,147 - Print calls = 0
+ERROR 19:04:51,149 - Parsiranje NIJE uspesno zavrseno!

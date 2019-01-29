@@ -1,0 +1,55 @@
+INFO  18:51:44,750 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  18:51:44,774 - #2 program
+INFO  18:51:44,774 - #37 MJProgram
+INFO  18:51:44,774 - #37 int
+INFO  18:51:44,774 - #37 x
+INFO  18:51:44,775 - #5 ;
+INFO  18:51:44,775 - #37 int
+INFO  18:51:44,775 - #37 y
+INFO  18:51:44,775 - #5 ;
+INFO  18:51:44,775 - #37 char
+INFO  18:51:44,775 - #37 a
+INFO  18:51:44,775 - #5 ;
+INFO  18:51:44,775 - #3 {
+INFO  18:51:44,775 - #37 int
+INFO  18:51:44,776 - #37 k
+INFO  18:51:44,776 - #6 (
+INFO  18:51:44,776 - #7 )
+INFO  18:51:44,776 - #37 int
+INFO  18:51:44,776 - #37 c
+INFO  18:51:44,776 - #5 ;
+INFO  18:51:44,777 - #3 {
+INFO  18:51:44,777 - #37 c
+INFO  18:51:44,777 - #12 =
+INFO  18:51:44,779 - #36 1
+INFO  18:51:44,779 - #5 ;
+INFO  18:51:44,780 - #10 return
+INFO  18:51:44,781 - #37 c
+INFO  18:51:44,781 - #11 +
+INFO  18:51:44,781 - #36 2
+INFO  18:51:44,781 - #5 ;
+INFO  18:51:44,781 - #4 }
+INFO  18:51:44,782 - #37 int
+INFO  18:51:44,782 - #37 main
+INFO  18:51:44,782 - #6 (
+INFO  18:51:44,782 - #7 )
+INFO  18:51:44,782 - #3 {
+INFO  18:51:44,782 - #38 if
+INFO  18:51:44,782 - #6 (
+INFO  18:51:44,782 - #37 a
+INFO  18:51:44,782 - #30 ==
+INFO  18:51:44,782 - #36 5
+INFO  18:51:44,783 - #28 &&
+INFO  18:51:44,783 - #36 6
+INFO  18:51:44,784 - #32 >
+INFO  18:51:44,784 - #36 5
+INFO  18:51:44,784 - #7 )
+INFO  18:51:44,784 - #37 a
+INFO  18:51:44,784 - #40 ++
+INFO  18:51:44,784 - #39 else
+ERROR 18:51:44,784 - 
+Sintaksna greska na liniji 11
+ERROR 18:51:44,785 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 11
+ERROR 18:51:44,796 - Greska na liniji 11 : ime a nije deklarisano! 
+INFO  18:51:44,796 - Print calls = 0
+ERROR 18:51:44,796 - Parsiranje NIJE uspesno zavrseno!
