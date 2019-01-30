@@ -57,8 +57,8 @@ import java_cup.runtime.Symbol;
 <YYINITIAL> "/" 		{ return new_symbol(sym.DIV, yytext()); }
 <YYINITIAL> "%" 		{ return new_symbol(sym.MOD, yytext()); }
 "'"[\040-\176]"'" {return new_symbol (sym.CHARCONST, new Character (yytext().charAt(1)));}
-"True" 		{ return new_symbol(sym.TRUE, yytext()); }
-"False" 		{ return new_symbol(sym.FALSE, yytext()); }
+"true" 		{ return new_symbol(sym.TRUE, yytext()); }
+"false" 		{ return new_symbol(sym.FALSE, yytext()); }
 "new"		{ return new_symbol(sym.NEW, yytext()); }
 "[" 		{ return new_symbol(sym.LSQUARE, yytext()); }
 "]" 		{ return new_symbol(sym.RSQUARE, yytext()); }
@@ -78,6 +78,7 @@ import java_cup.runtime.Symbol;
 
 "if"		{ return new_symbol(sym.IF, yytext()); }
 "else"		{ return new_symbol(sym.ELSE, yytext()); }
+"const"		{ return new_symbol(sym.CONST, yytext()); }
 
 
 <YYINITIAL> "//" 		     { yybegin(COMMENT); }

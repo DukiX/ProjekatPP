@@ -15,9 +15,10 @@ public class Compiler {
 		//System.out.println(s.value.getClass());
 		Program prog = (Program)(s.value);
     	Tab.init();
-		SemanticPass stv = new SemanticPass(); 
+		SemanticAnalyzer stv = new SemanticAnalyzer(); 
 		prog.traverseBottomUp(stv);
 		Tab.dump();
-		System.out.println(prog.toString(""));
+		//Ispis stabla:
+		//System.out.println(prog.toString(""));
 	}
 }

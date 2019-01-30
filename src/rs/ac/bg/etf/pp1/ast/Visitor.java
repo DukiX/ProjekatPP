@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 29/0/2019 17:8:6
+// 30/0/2019 19:25:39
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -9,6 +9,7 @@ public interface Visitor {
 
     public void visit(Unmatched Unmatched);
     public void visit(Mulop Mulop);
+    public void visit(VarDeclaration VarDeclaration);
     public void visit(ForDesignator ForDesignator);
     public void visit(DesignatorOptions DesignatorOptions);
     public void visit(Matched Matched);
@@ -23,7 +24,9 @@ public interface Visitor {
     public void visit(FactorTypeExpr FactorTypeExpr);
     public void visit(CondFactList CondFactList);
     public void visit(Condition Condition);
+    public void visit(For For);
     public void visit(CondFactNotBool CondFactNotBool);
+    public void visit(ConstDef ConstDef);
     public void visit(BoolConst BoolConst);
     public void visit(ActualParamList ActualParamList);
     public void visit(VarDeclList VarDeclList);
@@ -89,6 +92,7 @@ public interface Visitor {
     public void visit(ForCond ForCond);
     public void visit(ForDesignatorDerived1 ForDesignatorDerived1);
     public void visit(ForDesign ForDesign);
+    public void visit(ForFor ForFor);
     public void visit(MatchedFor MatchedFor);
     public void visit(MatchedBreak MatchedBreak);
     public void visit(MatchedContinue MatchedContinue);
@@ -118,6 +122,11 @@ public interface Visitor {
     public void visit(NoMethodDecl NoMethodDecl);
     public void visit(MethodDeclarations MethodDeclarations);
     public void visit(Type Type);
+    public void visit(FactorBoolDef FactorBoolDef);
+    public void visit(CharConstDef CharConstDef);
+    public void visit(ConstDefNum ConstDefNum);
+    public void visit(ConstDecl ConstDecl);
+    public void visit(VarDeclArray VarDeclArray);
     public void visit(VarDecl VarDecl);
     public void visit(ErrVarDecl ErrVarDecl);
     public void visit(NoVarDecl NoVarDecl);

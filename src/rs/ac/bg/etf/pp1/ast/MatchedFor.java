@@ -1,18 +1,21 @@
 // generated with ast extension for cup
 // version 0.8
-// 29/0/2019 17:8:6
+// 30/0/2019 19:25:39
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public class MatchedFor extends Matched {
 
+    private For For;
     private ForDesignator ForDesignator;
     private ForCondition ForCondition;
     private ForDesignator ForDesignator1;
     private Matched Matched;
 
-    public MatchedFor (ForDesignator ForDesignator, ForCondition ForCondition, ForDesignator ForDesignator1, Matched Matched) {
+    public MatchedFor (For For, ForDesignator ForDesignator, ForCondition ForCondition, ForDesignator ForDesignator1, Matched Matched) {
+        this.For=For;
+        if(For!=null) For.setParent(this);
         this.ForDesignator=ForDesignator;
         if(ForDesignator!=null) ForDesignator.setParent(this);
         this.ForCondition=ForCondition;
@@ -21,6 +24,14 @@ public class MatchedFor extends Matched {
         if(ForDesignator1!=null) ForDesignator1.setParent(this);
         this.Matched=Matched;
         if(Matched!=null) Matched.setParent(this);
+    }
+
+    public For getFor() {
+        return For;
+    }
+
+    public void setFor(For For) {
+        this.For=For;
     }
 
     public ForDesignator getForDesignator() {
@@ -60,6 +71,7 @@ public class MatchedFor extends Matched {
     }
 
     public void childrenAccept(Visitor visitor) {
+        if(For!=null) For.accept(visitor);
         if(ForDesignator!=null) ForDesignator.accept(visitor);
         if(ForCondition!=null) ForCondition.accept(visitor);
         if(ForDesignator1!=null) ForDesignator1.accept(visitor);
@@ -68,6 +80,7 @@ public class MatchedFor extends Matched {
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
+        if(For!=null) For.traverseTopDown(visitor);
         if(ForDesignator!=null) ForDesignator.traverseTopDown(visitor);
         if(ForCondition!=null) ForCondition.traverseTopDown(visitor);
         if(ForDesignator1!=null) ForDesignator1.traverseTopDown(visitor);
@@ -75,6 +88,7 @@ public class MatchedFor extends Matched {
     }
 
     public void traverseBottomUp(Visitor visitor) {
+        if(For!=null) For.traverseBottomUp(visitor);
         if(ForDesignator!=null) ForDesignator.traverseBottomUp(visitor);
         if(ForCondition!=null) ForCondition.traverseBottomUp(visitor);
         if(ForDesignator1!=null) ForDesignator1.traverseBottomUp(visitor);
@@ -86,6 +100,12 @@ public class MatchedFor extends Matched {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
         buffer.append("MatchedFor(\n");
+
+        if(For!=null)
+            buffer.append(For.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
 
         if(ForDesignator!=null)
             buffer.append(ForDesignator.toString("  "+tab));

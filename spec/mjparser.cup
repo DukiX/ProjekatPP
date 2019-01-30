@@ -54,7 +54,7 @@ scan with {:
 :}
 
 
-terminal PROG, LBRACE, RBRACE, SEMI, LPAREN, RPAREN, COMMA, PRINT, RETURN, PLUS, EQUAL, VOID, READ, MINUS, MUL, DIV, MOD, TRUE, FALSE, NEW, LSQUARE, RSQUARE, DOT, FOR, BREAK, CONTINUE, AND, OR;
+terminal PROG, LBRACE, RBRACE, SEMI, LPAREN, RPAREN, COMMA, PRINT, RETURN, PLUS, EQUAL, VOID, READ, MINUS, MUL, DIV, MOD, NEW, LSQUARE, RSQUARE, DOT, FOR, BREAK, CONTINUE, AND, OR, CONST,TRUE, FALSE;
 terminal EQ, NE, GT, LT, GE, LE;
 terminal Integer NUMBER ;
 terminal String IDENT ;
@@ -62,22 +62,21 @@ terminal IF, ELSE;
 terminal INCREMENT, DECREMENT;
 terminal char CHARCONST;
 
-nonterminal MethodDeclList, VarDecl;
+nonterminal MethodDeclList, VarDeclaration;
 nonterminal FormalParamList, FormalParamDecl, FormPars, ActualPars, ActualParamList; 
 nonterminal StatementList, Statement, Addop;
 nonterminal Unmatched, Matched;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Obj Program, ProgName, Designator, MethodDecl, MethodTypeName; 
-nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Term, Expr, Factor, VarDeclList; 
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Term, Expr, Factor, FactorList,VarDeclList,BoolConst,DesignatorOptions; 
 
-nonterminal FactorList;
 nonterminal DesignatorStatement;
 nonterminal Mulop;
-nonterminal BoolConst;
 nonterminal FactorTypeExpr;
-nonterminal DesignatorOptions;
 nonterminal ForDesignator, ForCondition, Condition, CondTermList, CondTerm, CondFactList, CondFact;
+nonterminal ConstDef;
 nonterminal Relop, CondFactNotBool;
+nonterminal For;
 
 Program ::= (Program) PROG ProgName:p VarDeclList LBRACE MethodDeclList RBRACE 
 ;
@@ -85,16 +84,29 @@ Program ::= (Program) PROG ProgName:p VarDeclList LBRACE MethodDeclList RBRACE
 ProgName ::= (ProgName) IDENT:pName 
 ;
 
-VarDeclList ::= (VarDeclarations) VarDeclList VarDecl  
+
+VarDeclList ::= (VarDeclarations) VarDeclList VarDeclaration  
 				|
 				(NoVarDecl)/* epsilon */ 
 				|
 				(ErrVarDecl) error
-			  	{: parser.log.debug("Uspesan oporavak od definicije globalne promenljive."); :}
+			  	{: parser.log.debug("Uspesan oporavak od definicije promenljive."); :}
 				;
 				
-VarDecl ::= (VarDecl) Type:varType IDENT:varName SEMI 
-;
+VarDeclaration ::= (VarDecl) Type:varType IDENT:varName SEMI 
+				|
+				(VarDeclArray) Type:varType IDENT:arrayName LSQUARE RSQUARE SEMI 
+				|
+				(ConstDecl) CONST Type:constType IDENT:constName EQUAL ConstDef SEMI
+				;
+
+ConstDef ::= (ConstDefNum) NUMBER
+			|
+			(CharConstDef) CHARCONST
+			|
+			(FactorBoolDef) BoolConst
+			;
+
 
 Type ::= (Type) IDENT:typeName 
 ;
@@ -121,7 +133,7 @@ FormalParamList ::= (FormalParamDecls) FormalParamList COMMA FormalParamDecl
 			  		{: parser.log.debug("Uspesan oporavak od formalnog parametra."); :}
 					;
 					
-FormalParamDecl ::= (FormalParamDecl) Type IDENT;
+FormalParamDecl ::= (FormalParamDecl) Type:formalType IDENT:formalName;
 
 StatementList ::= (Statements) StatementList Statement 
 					|
@@ -136,7 +148,7 @@ Unmatched ::= (UnmatchedIf) IF LPAREN Condition RPAREN Statement | (UnmatchedIfE
 Matched ::=	(ErrAssignment) error SEMI
 			  {: parser.log.debug("Uspesan oporavak od greske pri dodeli vrednosti."); :}
 			  |
-			(PrintStmt) PRINT LPAREN Expr RPAREN SEMI 
+			  (PrintStmt) PRINT LPAREN Expr:ex RPAREN SEMI 
 			  |
 			  (ReturnExpr) RETURN Expr:t SEMI
 			  |
@@ -146,9 +158,9 @@ Matched ::=	(ErrAssignment) error SEMI
 			  |
 			  (MatchedDesignatorStatement) DesignatorStatement SEMI	
 			  |
-			  (MatchedRead) READ LPAREN Designator RPAREN SEMI
+			  (MatchedRead) READ LPAREN Designator:d RPAREN SEMI
 			  |
-			  (PrintStmtTwo) PRINT LPAREN Expr COMMA NUMBER RPAREN SEMI
+			  (PrintStmtTwo) PRINT LPAREN Expr:ex COMMA NUMBER RPAREN SEMI
 			  |
 			  (MatchedBraces)LBRACE Statement StatementList RBRACE
 			  |
@@ -156,8 +168,10 @@ Matched ::=	(ErrAssignment) error SEMI
 			  |
 			  (MatchedBreak) BREAK SEMI
 			  |
-			  (MatchedFor) FOR LPAREN ForDesignator SEMI ForCondition SEMI ForDesignator RPAREN Matched
+			  (MatchedFor) For LPAREN ForDesignator SEMI ForCondition SEMI ForDesignator RPAREN Matched
 			  ;
+			
+For ::= (ForFor) FOR;
 
 ForDesignator ::= (ForDesign) DesignatorStatement
 			|
@@ -201,9 +215,9 @@ DesignatorStatement ::= (ProcCall) Designator:func LPAREN ActualPars RPAREN
 			  |
 			  (Assignment) Designator:dest EQUAL Expr:e
 			  |
-			  (Increment) Designator INCREMENT
+			  (Increment) Designator:d INCREMENT
 			  |
-			  (Decrement) Designator DECREMENT
+			  (Decrement) Designator:d DECREMENT
 			  ;
 			  
 Expr ::= (AddExpr) Expr:te Addop Term:t
@@ -215,7 +229,7 @@ Expr ::= (AddExpr) Expr:te Addop Term:t
 
 Term ::= (Term) Factor FactorList:t;
 
-FactorList ::= (MulopFactor) FactorList Mulop Factor
+FactorList ::= (MulopFactor) FactorList:fl Mulop Factor:f
 			|
 			(NoFactor) /* epsilon */
 			;
@@ -255,7 +269,7 @@ ActualParamList ::= (ActualParams) ActualParamList COMMA Expr
 					(ActualParam) Expr
 					;
 
-Designator ::= (Designator) IDENT:name DesignatorOptions
+Designator ::= (Designator) IDENT:name DesignatorOptions:desopt
 			;
 			
 DesignatorOptions ::=(DotDesignatorOption) DOT IDENT

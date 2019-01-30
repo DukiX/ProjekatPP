@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 29/0/2019 17:8:6
+// 30/0/2019 19:25:39
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -10,12 +10,12 @@ public class FormalParamDecl implements SyntaxNode {
     private SyntaxNode parent;
     private int line;
     private Type Type;
-    private String I2;
+    private String formalName;
 
-    public FormalParamDecl (Type Type, String I2) {
+    public FormalParamDecl (Type Type, String formalName) {
         this.Type=Type;
         if(Type!=null) Type.setParent(this);
-        this.I2=I2;
+        this.formalName=formalName;
     }
 
     public Type getType() {
@@ -26,12 +26,12 @@ public class FormalParamDecl implements SyntaxNode {
         this.Type=Type;
     }
 
-    public String getI2() {
-        return I2;
+    public String getFormalName() {
+        return formalName;
     }
 
-    public void setI2(String I2) {
-        this.I2=I2;
+    public void setFormalName(String formalName) {
+        this.formalName=formalName;
     }
 
     public SyntaxNode getParent() {
@@ -79,7 +79,7 @@ public class FormalParamDecl implements SyntaxNode {
             buffer.append(tab+"  null");
         buffer.append("\n");
 
-        buffer.append(" "+tab+I2);
+        buffer.append(" "+tab+formalName);
         buffer.append("\n");
 
         buffer.append(tab);

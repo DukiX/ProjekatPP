@@ -1,14 +1,12 @@
 // generated with ast extension for cup
 // version 0.8
-// 29/0/2019 17:8:6
+// 30/0/2019 19:25:39
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class VarDecl implements SyntaxNode {
+public class VarDecl extends VarDeclaration {
 
-    private SyntaxNode parent;
-    private int line;
     private Type Type;
     private String varName;
 
@@ -32,22 +30,6 @@ public class VarDecl implements SyntaxNode {
 
     public void setVarName(String varName) {
         this.varName=varName;
-    }
-
-    public SyntaxNode getParent() {
-        return parent;
-    }
-
-    public void setParent(SyntaxNode parent) {
-        this.parent=parent;
-    }
-
-    public int getLine() {
-        return line;
-    }
-
-    public void setLine(int line) {
-        this.line=line;
     }
 
     public void accept(Visitor visitor) {
