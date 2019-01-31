@@ -1,24 +1,24 @@
 // generated with ast extension for cup
 // version 0.8
-// 30/0/2019 19:25:39
+// 31/0/2019 18:43:40
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public class DotDesignatorOption extends DesignatorOptions {
 
-    private String I1;
+    private String idnam;
 
-    public DotDesignatorOption (String I1) {
-        this.I1=I1;
+    public DotDesignatorOption (String idnam) {
+        this.idnam=idnam;
     }
 
-    public String getI1() {
-        return I1;
+    public String getIdnam() {
+        return idnam;
     }
 
-    public void setI1(String I1) {
-        this.I1=I1;
+    public void setIdnam(String idnam) {
+        this.idnam=idnam;
     }
 
     public void accept(Visitor visitor) {
@@ -41,7 +41,7 @@ public class DotDesignatorOption extends DesignatorOptions {
         buffer.append(tab);
         buffer.append("DotDesignatorOption(\n");
 
-        buffer.append(" "+tab+I1);
+        buffer.append(" "+tab+idnam);
         buffer.append("\n");
 
         buffer.append(tab);

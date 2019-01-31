@@ -1,13 +1,24 @@
 // generated with ast extension for cup
 // version 0.8
-// 30/0/2019 19:25:39
+// 31/0/2019 18:43:40
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class CondFactNotBoolDerived1 extends CondFactNotBool {
+public class EnumNmbr extends EnumNumbering {
 
-    public CondFactNotBoolDerived1 () {
+    private Integer N1;
+
+    public EnumNmbr (Integer N1) {
+        this.N1=N1;
+    }
+
+    public Integer getN1() {
+        return N1;
+    }
+
+    public void setN1(Integer N1) {
+        this.N1=N1;
     }
 
     public void accept(Visitor visitor) {
@@ -28,10 +39,13 @@ public class CondFactNotBoolDerived1 extends CondFactNotBool {
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("CondFactNotBoolDerived1(\n");
+        buffer.append("EnumNmbr(\n");
+
+        buffer.append(" "+tab+N1);
+        buffer.append("\n");
 
         buffer.append(tab);
-        buffer.append(") [CondFactNotBoolDerived1]");
+        buffer.append(") [EnumNmbr]");
         return buffer.toString();
     }
 }

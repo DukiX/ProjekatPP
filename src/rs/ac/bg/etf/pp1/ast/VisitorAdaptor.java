@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 30/0/2019 19:25:39
+// 31/0/2019 18:43:40
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -25,10 +25,11 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(CondFactList CondFactList) { }
     public void visit(Condition Condition) { }
     public void visit(For For) { }
-    public void visit(CondFactNotBool CondFactNotBool) { }
     public void visit(ConstDef ConstDef) { }
+    public void visit(EnumList EnumList) { }
     public void visit(BoolConst BoolConst) { }
     public void visit(ActualParamList ActualParamList) { }
+    public void visit(EnumNumbering EnumNumbering) { }
     public void visit(VarDeclList VarDeclList) { }
     public void visit(FormalParamList FormalParamList) { }
     public void visit(Expr Expr) { }
@@ -38,6 +39,7 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(CondFact CondFact) { }
     public void visit(MethodDeclList MethodDeclList) { }
     public void visit(FormPars FormPars) { }
+    public void visit(MethodTypeN MethodTypeN) { }
     public void visit(Relle Relle) { visit(); }
     public void visit(Relge Relge) { visit(); }
     public void visit(Rellt Rellt) { visit(); }
@@ -59,10 +61,9 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(Actuals Actuals) { visit(); }
     public void visit(BoolFalse BoolFalse) { visit(); }
     public void visit(BoolTrue BoolTrue) { visit(); }
-    public void visit(NoFactorTypeExpr NoFactorTypeExpr) { visit(); }
-    public void visit(YFactorTypeExpr YFactorTypeExpr) { visit(); }
     public void visit(FuncCall FuncCall) { visit(); }
     public void visit(Var Var) { visit(); }
+    public void visit(FactorNewArr FactorNewArr) { visit(); }
     public void visit(FactorNew FactorNew) { visit(); }
     public void visit(FactorBool FactorBool) { visit(); }
     public void visit(FactorExpr FactorExpr) { visit(); }
@@ -78,7 +79,6 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(Increment Increment) { visit(); }
     public void visit(Assignment Assignment) { visit(); }
     public void visit(ProcCall ProcCall) { visit(); }
-    public void visit(CondFactNotBoolDerived1 CondFactNotBoolDerived1) { visit(); }
     public void visit(CndFctNotBool CndFctNotBool) { visit(); }
     public void visit(CndFct CndFct) { visit(); }
     public void visit(CondFactListDerived1 CondFactListDerived1) { visit(); }
@@ -117,6 +117,7 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(FormalParamDecls FormalParamDecls) { visit(); }
     public void visit(NoFormParam NoFormParam) { visit(); }
     public void visit(FormParams FormParams) { visit(); }
+    public void visit(MethodTypeVoid MethodTypeVoid) { visit(); }
     public void visit(MethodTypeName MethodTypeName) { visit(); }
     public void visit(MethodDecl MethodDecl) { visit(); }
     public void visit(NoMethodDecl NoMethodDecl) { visit(); }
@@ -125,6 +126,12 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(FactorBoolDef FactorBoolDef) { visit(); }
     public void visit(CharConstDef CharConstDef) { visit(); }
     public void visit(ConstDefNum ConstDefNum) { visit(); }
+    public void visit(EnumNoNmbr EnumNoNmbr) { visit(); }
+    public void visit(EnumNmbr EnumNmbr) { visit(); }
+    public void visit(EnumElem EnumElem) { visit(); }
+    public void visit(EnumLst EnumLst) { visit(); }
+    public void visit(EnumName EnumName) { visit(); }
+    public void visit(EnumDecl EnumDecl) { visit(); }
     public void visit(ConstDecl ConstDecl) { visit(); }
     public void visit(VarDeclArray VarDeclArray) { visit(); }
     public void visit(VarDecl VarDecl) { visit(); }

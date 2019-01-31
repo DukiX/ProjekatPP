@@ -54,7 +54,7 @@ scan with {:
 :}
 
 
-terminal PROG, LBRACE, RBRACE, SEMI, LPAREN, RPAREN, COMMA, PRINT, RETURN, PLUS, EQUAL, VOID, READ, MINUS, MUL, DIV, MOD, NEW, LSQUARE, RSQUARE, DOT, FOR, BREAK, CONTINUE, AND, OR, CONST,TRUE, FALSE;
+terminal PROG, LBRACE, RBRACE, SEMI, LPAREN, RPAREN, COMMA, PRINT, RETURN, PLUS, EQUAL, VOID, READ, MINUS, MUL, DIV, MOD, NEW, LSQUARE, RSQUARE, DOT, FOR, BREAK, CONTINUE, AND, OR, CONST,TRUE, FALSE, ENUM;
 terminal EQ, NE, GT, LT, GE, LE;
 terminal Integer NUMBER ;
 terminal String IDENT ;
@@ -62,21 +62,22 @@ terminal IF, ELSE;
 terminal INCREMENT, DECREMENT;
 terminal char CHARCONST;
 
-nonterminal MethodDeclList, VarDeclaration;
+nonterminal MethodDeclList;
 nonterminal FormalParamList, FormalParamDecl, FormPars, ActualPars, ActualParamList; 
 nonterminal StatementList, Statement, Addop;
 nonterminal Unmatched, Matched;
 
-nonterminal rs.etf.pp1.symboltable.concepts.Obj Program, ProgName, Designator, MethodDecl, MethodTypeName; 
-nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Term, Expr, Factor, FactorList,VarDeclList,BoolConst,DesignatorOptions; 
+nonterminal rs.etf.pp1.symboltable.concepts.Obj Program, ProgName, Designator, MethodDecl, MethodTypeN ,EnumName, DesignatorOptions; 
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Term, Expr, Factor, FactorList,VarDeclList,BoolConst, VarDeclaration, ConstDef; 
 
 nonterminal DesignatorStatement;
 nonterminal Mulop;
 nonterminal FactorTypeExpr;
 nonterminal ForDesignator, ForCondition, Condition, CondTermList, CondTerm, CondFactList, CondFact;
-nonterminal ConstDef;
-nonterminal Relop, CondFactNotBool;
+nonterminal Relop;
 nonterminal For;
+nonterminal EnumNumbering;
+nonterminal EnumList;
 
 Program ::= (Program) PROG ProgName:p VarDeclList LBRACE MethodDeclList RBRACE 
 ;
@@ -97,7 +98,21 @@ VarDeclaration ::= (VarDecl) Type:varType IDENT:varName SEMI
 				|
 				(VarDeclArray) Type:varType IDENT:arrayName LSQUARE RSQUARE SEMI 
 				|
-				(ConstDecl) CONST Type:constType IDENT:constName EQUAL ConstDef SEMI
+				(ConstDecl) CONST Type:constType IDENT:constName EQUAL ConstDef:cd SEMI
+				|
+				(EnumDecl) ENUM EnumName:e LBRACE EnumList RBRACE
+				;
+
+EnumName ::= (EnumName) IDENT:EnumNme;
+				
+EnumList ::= (EnumLst) EnumList COMMA IDENT:name EnumNumbering
+			|
+			(EnumElem) IDENT:name EnumNumbering
+			;
+			
+EnumNumbering ::= (EnumNmbr) EQUAL NUMBER
+				|
+				(EnumNoNmbr) /* epsilon */
 				;
 
 ConstDef ::= (ConstDefNum) NUMBER
@@ -116,12 +131,14 @@ MethodDeclList ::= (MethodDeclarations) MethodDeclList MethodDecl
 					(NoMethodDecl)/* epsilon */
 					;
 
-MethodDecl ::= (MethodDecl) MethodTypeName
+MethodDecl ::= (MethodDecl) MethodTypeN
 			   LPAREN FormPars RPAREN VarDeclList LBRACE StatementList RBRACE 
 			   ;
 
-MethodTypeName ::= (MethodTypeName) Type:retType IDENT:methName
-;
+MethodTypeN ::= (MethodTypeName) Type:retType IDENT:methName
+				|
+				(MethodTypeVoid) VOID IDENT:methName
+				;
 
 FormPars ::= (FormParams) FormalParamList | (NoFormParam) /* epsilon */ ;
 
@@ -202,13 +219,10 @@ CondFactList ::= (CondFacts) CondFactList AND CondFact
 				/*epsilon*/
 				;
 
-CondFact ::= (CndFct) Expr CondFactNotBool
+CondFact ::= (CndFct) Expr
+			|
+			(CndFctNotBool) Expr:e1 Relop:r Expr:e2
 			;
-
-CondFactNotBool ::= (CndFctNotBool) Relop Expr
-					|
-					/*epsilon*/
-					;
 
 			  
 DesignatorStatement ::= (ProcCall) Designator:func LPAREN ActualPars RPAREN
@@ -242,17 +256,14 @@ Factor ::= (Const) NUMBER
 			|
 			(FactorBool) BoolConst
 			|
-			(FactorNew) NEW Type FactorTypeExpr
+			(FactorNew) NEW Type
+			|
+			(FactorNewArr) NEW Type:t LSQUARE Expr:e RSQUARE
 			|
 		   (Var) Designator:d
 		    |
 		   (FuncCall) Designator:func LPAREN ActualPars RPAREN
 		   ;
-		   
-FactorTypeExpr ::= (YFactorTypeExpr) LSQUARE Expr RSQUARE
-				|
-				(NoFactorTypeExpr) /* epsilon */
-				;
 		   
 BoolConst ::= (BoolTrue) TRUE
 				|
@@ -272,9 +283,9 @@ ActualParamList ::= (ActualParams) ActualParamList COMMA Expr
 Designator ::= (Designator) IDENT:name DesignatorOptions:desopt
 			;
 			
-DesignatorOptions ::=(DotDesignatorOption) DOT IDENT
+DesignatorOptions ::=(DotDesignatorOption) DOT IDENT:idnam
 					|
-					(SquareDesignatorOption) LSQUARE Expr RSQUARE
+					(SquareDesignatorOption) LSQUARE Expr:ex RSQUARE
 					|
 					(NoDesignatorOptions) /* epsilon */
 					;
@@ -302,7 +313,4 @@ Relop ::= 	(Releq) EQ
 			(Relge) GE
 			|
 			(Relle) LE
-			;
-			
-			
-		
+;

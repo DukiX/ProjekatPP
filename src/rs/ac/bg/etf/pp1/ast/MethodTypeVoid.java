@@ -1,13 +1,24 @@
 // generated with ast extension for cup
 // version 0.8
-// 28/0/2019 17:47:43
+// 31/0/2019 18:43:40
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class CondFactNotBoolDerived2 extends CondFactNotBool {
+public class MethodTypeVoid extends MethodTypeN {
 
-    public CondFactNotBoolDerived2 () {
+    private String methName;
+
+    public MethodTypeVoid (String methName) {
+        this.methName=methName;
+    }
+
+    public String getMethName() {
+        return methName;
+    }
+
+    public void setMethName(String methName) {
+        this.methName=methName;
     }
 
     public void accept(Visitor visitor) {
@@ -28,10 +39,13 @@ public class CondFactNotBoolDerived2 extends CondFactNotBool {
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("CondFactNotBoolDerived2(\n");
+        buffer.append("MethodTypeVoid(\n");
+
+        buffer.append(" "+tab+methName);
+        buffer.append("\n");
 
         buffer.append(tab);
-        buffer.append(") [CondFactNotBoolDerived2]");
+        buffer.append(") [MethodTypeVoid]");
         return buffer.toString();
     }
 }

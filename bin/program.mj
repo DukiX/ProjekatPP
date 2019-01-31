@@ -1,5 +1,7 @@
 program MJProgram
 	int x; int y; char a;int z; const int aa = 1; int niz[]; bool bul1; bool bul2; 
+	enum nabr{kk, mm=1,vv}
+	enum novonabr{kiki,miki,diki}
 {
 
 	int k () int c; {
@@ -7,15 +9,16 @@ program MJProgram
 		return c+2;
 	}
 	
-	int kva(int b,char k, int hrk) int p; const int tiki=10; {
+	int kva(int b,char krki, int hrk) int p; const int tiki=10; {
 		p=2;
 		x=tiki;
 		x=b;
 		return p;
+		
 	}
-	
-	int main() char karak; const char zika = 'a'; {
-		if(a==5 && 6>5 || a) {
+
+	void main() char karak; const char zika = 'a'; {
+		if(x==5 || a=='b' && 6>5 || a) {
 			x++;
 			x--;
 		} else {
@@ -24,6 +27,17 @@ program MJProgram
 		}
 		x=aa;
 		
+		z=nabr.kk;
+		
+		x=novonabr.kiki;
+		
+		x=niz[2];
+		
+		
+		x=z;
+		
+		niz = new int[2];
+		
 		bul1=bul2;
 		
 		bul1=true;
@@ -31,6 +45,8 @@ program MJProgram
 		bul2=false;
 		
 		a='i';
+		
+		x=-y;
 		
 		for(x=1;x<3;x++){
 			x--;
@@ -57,7 +73,7 @@ program MJProgram
 		
 		//niz[1]=x;
 		
-		niz[2]=niz[3];
+		//niz[2]=niz[3];
 		
 		
 		//x = kva(4==3);
@@ -68,10 +84,11 @@ program MJProgram
 		
 		read(y);
 
+
 		x=x % y +2 + 3*5;
 		y = k() + 3;
 		print(x+y);
-		print(x,1);
-		return 0;
+		print(bul1,1);
+		
 	}
 }	

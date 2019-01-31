@@ -80,6 +80,7 @@ import java_cup.runtime.Symbol;
 "else"		{ return new_symbol(sym.ELSE, yytext()); }
 "const"		{ return new_symbol(sym.CONST, yytext()); }
 
+"enum"		{ return new_symbol(sym.ENUM, yytext()); }
 
 <YYINITIAL> "//" 		     { yybegin(COMMENT); }
 <COMMENT> .      { yybegin(COMMENT); }

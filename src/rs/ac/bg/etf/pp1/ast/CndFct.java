@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 30/0/2019 19:25:39
+// 31/0/2019 18:43:40
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -8,13 +8,10 @@ package rs.ac.bg.etf.pp1.ast;
 public class CndFct extends CondFact {
 
     private Expr Expr;
-    private CondFactNotBool CondFactNotBool;
 
-    public CndFct (Expr Expr, CondFactNotBool CondFactNotBool) {
+    public CndFct (Expr Expr) {
         this.Expr=Expr;
         if(Expr!=null) Expr.setParent(this);
-        this.CondFactNotBool=CondFactNotBool;
-        if(CondFactNotBool!=null) CondFactNotBool.setParent(this);
     }
 
     public Expr getExpr() {
@@ -25,32 +22,21 @@ public class CndFct extends CondFact {
         this.Expr=Expr;
     }
 
-    public CondFactNotBool getCondFactNotBool() {
-        return CondFactNotBool;
-    }
-
-    public void setCondFactNotBool(CondFactNotBool CondFactNotBool) {
-        this.CondFactNotBool=CondFactNotBool;
-    }
-
     public void accept(Visitor visitor) {
         visitor.visit(this);
     }
 
     public void childrenAccept(Visitor visitor) {
         if(Expr!=null) Expr.accept(visitor);
-        if(CondFactNotBool!=null) CondFactNotBool.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
         if(Expr!=null) Expr.traverseTopDown(visitor);
-        if(CondFactNotBool!=null) CondFactNotBool.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
         if(Expr!=null) Expr.traverseBottomUp(visitor);
-        if(CondFactNotBool!=null) CondFactNotBool.traverseBottomUp(visitor);
         accept(visitor);
     }
 
@@ -61,12 +47,6 @@ public class CndFct extends CondFact {
 
         if(Expr!=null)
             buffer.append(Expr.toString("  "+tab));
-        else
-            buffer.append(tab+"  null");
-        buffer.append("\n");
-
-        if(CondFactNotBool!=null)
-            buffer.append(CondFactNotBool.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");

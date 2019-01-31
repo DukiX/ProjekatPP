@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 30/0/2019 19:25:39
+// 31/0/2019 18:43:40
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -25,10 +25,11 @@ public interface Visitor {
     public void visit(CondFactList CondFactList);
     public void visit(Condition Condition);
     public void visit(For For);
-    public void visit(CondFactNotBool CondFactNotBool);
     public void visit(ConstDef ConstDef);
+    public void visit(EnumList EnumList);
     public void visit(BoolConst BoolConst);
     public void visit(ActualParamList ActualParamList);
+    public void visit(EnumNumbering EnumNumbering);
     public void visit(VarDeclList VarDeclList);
     public void visit(FormalParamList FormalParamList);
     public void visit(Expr Expr);
@@ -38,6 +39,7 @@ public interface Visitor {
     public void visit(CondFact CondFact);
     public void visit(MethodDeclList MethodDeclList);
     public void visit(FormPars FormPars);
+    public void visit(MethodTypeN MethodTypeN);
     public void visit(Relle Relle);
     public void visit(Relge Relge);
     public void visit(Rellt Rellt);
@@ -59,10 +61,9 @@ public interface Visitor {
     public void visit(Actuals Actuals);
     public void visit(BoolFalse BoolFalse);
     public void visit(BoolTrue BoolTrue);
-    public void visit(NoFactorTypeExpr NoFactorTypeExpr);
-    public void visit(YFactorTypeExpr YFactorTypeExpr);
     public void visit(FuncCall FuncCall);
     public void visit(Var Var);
+    public void visit(FactorNewArr FactorNewArr);
     public void visit(FactorNew FactorNew);
     public void visit(FactorBool FactorBool);
     public void visit(FactorExpr FactorExpr);
@@ -78,7 +79,6 @@ public interface Visitor {
     public void visit(Increment Increment);
     public void visit(Assignment Assignment);
     public void visit(ProcCall ProcCall);
-    public void visit(CondFactNotBoolDerived1 CondFactNotBoolDerived1);
     public void visit(CndFctNotBool CndFctNotBool);
     public void visit(CndFct CndFct);
     public void visit(CondFactListDerived1 CondFactListDerived1);
@@ -117,6 +117,7 @@ public interface Visitor {
     public void visit(FormalParamDecls FormalParamDecls);
     public void visit(NoFormParam NoFormParam);
     public void visit(FormParams FormParams);
+    public void visit(MethodTypeVoid MethodTypeVoid);
     public void visit(MethodTypeName MethodTypeName);
     public void visit(MethodDecl MethodDecl);
     public void visit(NoMethodDecl NoMethodDecl);
@@ -125,6 +126,12 @@ public interface Visitor {
     public void visit(FactorBoolDef FactorBoolDef);
     public void visit(CharConstDef CharConstDef);
     public void visit(ConstDefNum ConstDefNum);
+    public void visit(EnumNoNmbr EnumNoNmbr);
+    public void visit(EnumNmbr EnumNmbr);
+    public void visit(EnumElem EnumElem);
+    public void visit(EnumLst EnumLst);
+    public void visit(EnumName EnumName);
+    public void visit(EnumDecl EnumDecl);
     public void visit(ConstDecl ConstDecl);
     public void visit(VarDeclArray VarDeclArray);
     public void visit(VarDecl VarDecl);
