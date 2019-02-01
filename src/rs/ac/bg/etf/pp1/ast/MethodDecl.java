@@ -1,15 +1,11 @@
 // generated with ast extension for cup
 // version 0.8
-// 31/0/2019 18:43:40
+// 1/1/2019 18:3:38
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class MethodDecl implements SyntaxNode {
-
-    private SyntaxNode parent;
-    private int line;
-    public rs.etf.pp1.symboltable.concepts.Obj obj = null;
+public class MethodDecl extends MethodDeclr {
 
     private MethodTypeN MethodTypeN;
     private FormPars FormPars;
@@ -57,22 +53,6 @@ public class MethodDecl implements SyntaxNode {
 
     public void setStatementList(StatementList StatementList) {
         this.StatementList=StatementList;
-    }
-
-    public SyntaxNode getParent() {
-        return parent;
-    }
-
-    public void setParent(SyntaxNode parent) {
-        this.parent=parent;
-    }
-
-    public int getLine() {
-        return line;
-    }
-
-    public void setLine(int line) {
-        this.line=line;
     }
 
     public void accept(Visitor visitor) {

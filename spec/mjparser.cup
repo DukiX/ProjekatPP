@@ -63,12 +63,12 @@ terminal INCREMENT, DECREMENT;
 terminal char CHARCONST;
 
 nonterminal MethodDeclList;
-nonterminal FormalParamList, FormalParamDecl, FormPars, ActualPars, ActualParamList; 
+nonterminal FormalParamList, FormalParamDecl, FormPars, ActualPars; 
 nonterminal StatementList, Statement, Addop;
 nonterminal Unmatched, Matched;
 
-nonterminal rs.etf.pp1.symboltable.concepts.Obj Program, ProgName, Designator, MethodDecl, MethodTypeN ,EnumName, DesignatorOptions; 
-nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Term, Expr, Factor, FactorList,VarDeclList,BoolConst, VarDeclaration, ConstDef; 
+nonterminal rs.etf.pp1.symboltable.concepts.Obj Program, ProgName, Designator, MethodDeclr, MethodTypeN ,EnumName, DesignatorOptions; 
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Term, Expr, Factor, FactorList,VarDeclList,BoolConst, VarDeclaration, ConstDef, ActualParamList; 
 
 nonterminal DesignatorStatement;
 nonterminal Mulop;
@@ -126,13 +126,16 @@ ConstDef ::= (ConstDefNum) NUMBER
 Type ::= (Type) IDENT:typeName 
 ;
 
-MethodDeclList ::= (MethodDeclarations) MethodDeclList MethodDecl
+MethodDeclList ::= (MethodDeclarations) MethodDeclList MethodDeclr
 					|
 					(NoMethodDecl)/* epsilon */
 					;
 
-MethodDecl ::= (MethodDecl) MethodTypeN
+MethodDeclr ::= (MethodDecl) MethodTypeN
 			   LPAREN FormPars RPAREN VarDeclList LBRACE StatementList RBRACE 
+			   |
+			   (ErrMethDecl) error
+			  	{: parser.log.debug("Nepoznata format deklaracije metode. Oporavak od greske"); :}
 			   ;
 
 MethodTypeN ::= (MethodTypeName) Type:retType IDENT:methName
@@ -275,9 +278,9 @@ ActualPars ::= (Actuals) ActualParamList
 			   (NoActuals) /* epsilon */ 
 			   ;
 			   
-ActualParamList ::= (ActualParams) ActualParamList COMMA Expr
+ActualParamList ::= (ActualParams) ActualParamList COMMA Expr:e
 					|
-					(ActualParam) Expr
+					(ActualParam) Expr:e
 					;
 
 Designator ::= (Designator) IDENT:name DesignatorOptions:desopt

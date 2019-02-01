@@ -1,94 +1,53 @@
-program MJProgram
-	int x; int y; char a;int z; const int aa = 1; int niz[]; bool bul1; bool bul2; 
-	enum nabr{kk, mm=1,vv}
-	enum novonabr{kiki,miki,diki}
-{
+program test301
 
-	int k () int c; {
-		c = 1;
-		return c+2;
-	}
+	enum Broj { NULA, JEDAN, PET=5, DESET=10}
+
+	const int jedan = 1;
+	const int pet = 5;
+
+	int niz[];
+	char nizch[];
 	
-	int kva(int b,char krki, int hrk) int p; const int tiki=10; {
-		p=2;
-		x=tiki;
-		x=b;
-		return p;
-		
-	}
+{
+	void main()	
+		int bodovi;
+		int nula; int jedan;
+	{
+		nula = Broj.NULA;
+		jedan = Broj.JEDAN;	
 
-	void main() char karak; const char zika = 'a'; {
-		if(x==5 || a=='b' && 6>5 || a) {
-			x++;
-			x--;
-		} else {
-			x--;
-			x++;
-		}
-		x=aa;
-		
-		z=nabr.kk;
-		
-		x=novonabr.kiki;
-		
-		x=niz[2];
-		
-		
-		x=z;
+		bodovi = 0;
+		bodovi++;
+		bodovi = bodovi + jedan;
+		bodovi = bodovi * pet;
+		bodovi--;
+		print(bodovi); 
+			
 		
 		niz = new int[2];
-		
-		bul1=bul2;
-		
-		bul1=true;
-		
-		bul2=false;
-		
-		a='i';
-		
-		x=-y;
-		
-		for(x=1;x<3;x++){
-			x--;
-			break;
-		}
+		niz[nula] = pet;
+		niz[1] = Broj.DESET;
+		bodovi = niz[1]/niz[0];
+		print(bodovi); 
+		print(niz[Broj.JEDAN]);
 		
 		
-		for(x=1;x<3;x++){
-			x--;
-			break;
+		nizch = new char[3];
+		nizch[0] = 'a';
+		nizch[jedan] = 'b';
+		nizch[pet - 3] = 'c';
+		print( nizch[2 - 1]);
+		print( nizch[jedan * 2]);
 			
-			for(x=1;x<3;x++){
-				x--;
-				break;
-				continue;
-			}
-		}
 		
-		
-		
-		a= zika;
-		
-		karak = a;
-		
-		//niz[1]=x;
-		
-		//niz[2]=niz[3];
-		
-		
-		//x = kva(4==3);
-		
-		//x = y + 5 +;
-		
-		x=k();
-		
-		read(y);
-
-
-		x=x % y +2 + 3*5;
-		y = k() + 3;
-		print(x+y);
-		print(bul1,1);
-		
+		bodovi = bodovi + ((pet * jedan - 1) * 2 - (3 % 2 + 3 * 2 - 3) - Broj.JEDAN * 0); 
+		print(bodovi);
+			
+			
+		read(bodovi);
+		bodovi = bodovi + 1;
+		print(bodovi);
+			
+	
 	}
-}	
+}

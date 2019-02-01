@@ -66,16 +66,15 @@ nonterminal MethodDeclList MethodDeclList;
 nonterminal FormalParamList FormalParamList;
 nonterminal FormalParamDecl FormalParamDecl;
 nonterminal FormPars FormPars;
-nonterminal ActualPars ActualPars;
-nonterminal ActualParamList ActualParamList; 
+nonterminal ActualPars ActualPars; 
 nonterminal StatementList StatementList;
 nonterminal Statement Statement;
 nonterminal Addop Addop;
 nonterminal Unmatched Unmatched;
 nonterminal Matched Matched;
 
-nonterminal rs.etf.pp1.symboltable.concepts.Obj Program, ProgName, Designator, MethodDecl, MethodTypeN ,EnumName, DesignatorOptions; 
-nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Term, Expr, Factor, FactorList,VarDeclList,BoolConst, VarDeclaration, ConstDef; 
+nonterminal rs.etf.pp1.symboltable.concepts.Obj Program, ProgName, Designator, MethodDeclr, MethodTypeN ,EnumName, DesignatorOptions; 
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Term, Expr, Factor, FactorList,VarDeclList,BoolConst, VarDeclaration, ConstDef, ActualParamList; 
 
 nonterminal DesignatorStatement DesignatorStatement;
 nonterminal Mulop Mulop;
@@ -139,13 +138,16 @@ ConstDef ::= (ConstDefNum) NUMBER:N1 {: RESULT=new ConstDefNum(N1); RESULT.setLi
 Type ::= (Type) IDENT:typeName {: RESULT=new Type(typeName); RESULT.setLine(typeNameleft); :} 
 ;
 
-MethodDeclList ::= (MethodDeclarations) MethodDeclList:M1 MethodDecl:M2 {: RESULT=new MethodDeclarations(M1, M2); RESULT.setLine(M1left); :}
+MethodDeclList ::= (MethodDeclarations) MethodDeclList:M1 MethodDeclr:M2 {: RESULT=new MethodDeclarations(M1, M2); RESULT.setLine(M1left); :}
 					|
 					(NoMethodDecl) {: RESULT=new NoMethodDecl(); :}/* epsilon */
 					;
 
-MethodDecl ::= (MethodDecl) MethodTypeN:M1
+MethodDeclr ::= (MethodDecl) MethodTypeN:M1
 			   LPAREN FormPars:F2 RPAREN VarDeclList:V3 LBRACE StatementList:S4 RBRACE {: RESULT=new MethodDecl(M1, F2, V3, S4); RESULT.setLine(M1left); :} 
+			   |
+			   (ErrMethDecl) error
+			  	{: parser.log.debug("Nepoznata format deklaracije metode. Oporavak od greske"); :} {: RESULT=new ErrMethDecl(); :}
 			   ;
 
 MethodTypeN ::= (MethodTypeName) Type:retType IDENT:methName {: RESULT=new MethodTypeName(retType, methName); RESULT.setLine(retTypeleft); :}
@@ -288,9 +290,9 @@ ActualPars ::= (Actuals) ActualParamList:A1 {: RESULT=new Actuals(A1); RESULT.se
 			   (NoActuals) {: RESULT=new NoActuals(); :} /* epsilon */ 
 			   ;
 			   
-ActualParamList ::= (ActualParams) ActualParamList:A1 COMMA Expr:E2 {: RESULT=new ActualParams(A1, E2); RESULT.setLine(A1left); :}
+ActualParamList ::= (ActualParams) ActualParamList:A1 COMMA Expr:e {: RESULT=new ActualParams(A1, e); RESULT.setLine(A1left); :}
 					|
-					(ActualParam) Expr:E1 {: RESULT=new ActualParam(E1); RESULT.setLine(E1left); :}
+					(ActualParam) Expr:e {: RESULT=new ActualParam(e); RESULT.setLine(eleft); :}
 					;
 
 Designator ::= (Designator) IDENT:name DesignatorOptions:desopt {: RESULT=new Designator(name, desopt); RESULT.setLine(nameleft); :}
