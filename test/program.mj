@@ -1,53 +1,93 @@
-program test301
-
-	enum Broj { NULA, JEDAN, PET=5, DESET=10}
-
-	const int jedan = 1;
-	const int pet = 5;
-
+ program MJProgram
+	int x, y;
+	char ffff, l;
+	int jjj;
+	const int soi=7;
+	const int so=0;
+	const char caki='a';
 	int niz[];
-	char nizch[];
+	const bool pera=true;
+	char b;
+	bool kikisa;
+	enum ukucani { ja, diki}
+	
 	
 {
-	void main()	
-		int bodovi;
-		int nula; int jedan;
-	{
-		nula = Broj.NULA;
-		jedan = Broj.JEDAN;	
-
-		bodovi = 0;
-		bodovi++;
-		bodovi = bodovi + jedan;
-		bodovi = bodovi * pet;
-		bodovi--;
-		print(bodovi); 
-			
-		
-		niz = new int[2];
-		niz[nula] = pet;
-		niz[1] = Broj.DESET;
-		bodovi = niz[1]/niz[0];
-		print(bodovi); 
-		print(niz[Broj.JEDAN]);
-		
-		
-		nizch = new char[3];
-		nizch[0] = 'a';
-		nizch[jedan] = 'b';
-		nizch[pet - 3] = 'c';
-		print( nizch[2 - 1]);
-		print( nizch[jedan * 2]);
-			
-		
-		bodovi = bodovi + ((pet * jedan - 1) * 2 - (3 % 2 + 3 * 2 - 3) - Broj.JEDAN * 0); 
-		print(bodovi);
-			
-			
-		read(bodovi);
-		bodovi = bodovi + 1;
-		print(bodovi);
-			
 	
+	int k (int miki, int kiki) int c; {
+		c = 1;
+		c=miki;
+		return 2;
+	}
+	
+	int r(int s) int n;{
+		n=0;
+		return n;
+	}
+	
+	bool prov(){
+		return true;
+	}
+	
+	int bezpar() int i;{
+	
+		return i;
+	}
+	
+	void konacno() {
+	
+		return;
+	}
+	
+
+	
+	int main() {
+		y = 2 * 5;
+		y = y - 1;
+		y++;
+		x = y + 2;
+		
+		
+		ffff='a';
+		l='a';
+		
+		
+		y=-7;
+		kikisa=prov();
+		
+		x=k(r(k(bezpar(),r(3))),r(k(r(r(3)),bezpar())));
+		
+		print(true);
+		 
+		
+		b='m';
+		x++;
+		{
+		y=3;
+		{
+		x=k(2, 3);
+		}
+		}
+		
+		y=r(4);
+		
+		for(x=4; x<6 || y<1000 && y>0; x++){
+			y=7;
+		continue;
+		}
+		
+		//if(kikisa){
+		//x=7;
+		//}
+		
+		//niz = new int[x];
+		//x=niz[2];
+		
+		
+		
+		//print(niz[2]);
+		read(niz[2]);
+		
+		return 0;
 	}
 }

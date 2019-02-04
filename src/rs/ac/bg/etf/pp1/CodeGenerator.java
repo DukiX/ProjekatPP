@@ -2,21 +2,9 @@ package rs.ac.bg.etf.pp1;
 
 import rs.ac.bg.etf.pp1.CounterVisitor.FormParamCounter;
 import rs.ac.bg.etf.pp1.CounterVisitor.VarCounter;
-import rs.ac.bg.etf.pp1.ast.AddExpr;
-import rs.ac.bg.etf.pp1.ast.Assignment;
-import rs.ac.bg.etf.pp1.ast.Const;
-import rs.ac.bg.etf.pp1.ast.Designator;
-import rs.ac.bg.etf.pp1.ast.FormalParamDecl;
-import rs.ac.bg.etf.pp1.ast.FuncCall;
-import rs.ac.bg.etf.pp1.ast.MethodDecl;
-import rs.ac.bg.etf.pp1.ast.MethodTypeName;
-import rs.ac.bg.etf.pp1.ast.PrintStmt;
-import rs.ac.bg.etf.pp1.ast.ReturnExpr;
-import rs.ac.bg.etf.pp1.ast.ReturnNoExpr;
-import rs.ac.bg.etf.pp1.ast.SyntaxNode;
-import rs.ac.bg.etf.pp1.ast.VarDecl;
-import rs.ac.bg.etf.pp1.ast.VisitorAdaptor;
+import rs.ac.bg.etf.pp1.ast.*;
 import rs.etf.pp1.mj.runtime.Code;
+import rs.etf.pp1.symboltable.Tab;
 import rs.etf.pp1.symboltable.concepts.Obj;
 
 public class CodeGenerator extends VisitorAdaptor {
@@ -103,6 +91,18 @@ public class CodeGenerator extends VisitorAdaptor {
 		int offset = functionObj.getAdr() - Code.pc; 
 		Code.put(Code.call);
 		Code.put2(offset);
+	}
+	
+	@Override
+	public void visit(ProcCall procCall) {
+		Obj functionObj = procCall.getDesignator().obj;
+		int offset = functionObj.getAdr() - Code.pc; 
+		Code.put(Code.call);
+		Code.put2(offset);
+		
+		if(procCall.getDesignator().obj.getType() != Tab.noType) {
+			Code.put(Code.pop);
+		}
 	}
 	
 	@Override

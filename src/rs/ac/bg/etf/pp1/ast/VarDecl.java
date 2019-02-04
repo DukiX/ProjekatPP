@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 1/1/2019 18:3:38
+// 3/1/2019 11:41:1
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -9,11 +9,14 @@ public class VarDecl extends VarDeclaration {
 
     private Type Type;
     private String varName;
+    private VarList VarList;
 
-    public VarDecl (Type Type, String varName) {
+    public VarDecl (Type Type, String varName, VarList VarList) {
         this.Type=Type;
         if(Type!=null) Type.setParent(this);
         this.varName=varName;
+        this.VarList=VarList;
+        if(VarList!=null) VarList.setParent(this);
     }
 
     public Type getType() {
@@ -32,21 +35,32 @@ public class VarDecl extends VarDeclaration {
         this.varName=varName;
     }
 
+    public VarList getVarList() {
+        return VarList;
+    }
+
+    public void setVarList(VarList VarList) {
+        this.VarList=VarList;
+    }
+
     public void accept(Visitor visitor) {
         visitor.visit(this);
     }
 
     public void childrenAccept(Visitor visitor) {
         if(Type!=null) Type.accept(visitor);
+        if(VarList!=null) VarList.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
         if(Type!=null) Type.traverseTopDown(visitor);
+        if(VarList!=null) VarList.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
         if(Type!=null) Type.traverseBottomUp(visitor);
+        if(VarList!=null) VarList.traverseBottomUp(visitor);
         accept(visitor);
     }
 
@@ -62,6 +76,12 @@ public class VarDecl extends VarDeclaration {
         buffer.append("\n");
 
         buffer.append(" "+tab+varName);
+        buffer.append("\n");
+
+        if(VarList!=null)
+            buffer.append(VarList.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
         buffer.append("\n");
 
         buffer.append(tab);

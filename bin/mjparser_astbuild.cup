@@ -74,7 +74,7 @@ nonterminal Unmatched Unmatched;
 nonterminal Matched Matched;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Obj Program, ProgName, Designator, MethodDeclr, MethodTypeN ,EnumName, DesignatorOptions; 
-nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Term, Expr, Factor, FactorList,VarDeclList,BoolConst, VarDeclaration, ConstDef, ActualParamList; 
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Term, Expr, Factor, FactorList,VarDeclList,BoolConst, VarDeclaration, ConstDef, ActualParamList, VarList; 
 
 nonterminal DesignatorStatement DesignatorStatement;
 nonterminal Mulop Mulop;
@@ -106,7 +106,7 @@ VarDeclList ::= (VarDeclarations) VarDeclList:V1 VarDeclaration:V2 {: RESULT=new
 			  	{: parser.log.debug("Uspesan oporavak od definicije promenljive."); :} {: RESULT=new ErrVarDecl(); :}
 				;
 				
-VarDeclaration ::= (VarDecl) Type:varType IDENT:varName SEMI {: RESULT=new VarDecl(varType, varName); RESULT.setLine(varTypeleft); :} 
+VarDeclaration ::= (VarDecl) Type:varType IDENT:varName VarList:l SEMI {: RESULT=new VarDecl(varType, varName, l); RESULT.setLine(varTypeleft); :} 
 				|
 				(VarDeclArray) Type:varType IDENT:arrayName LSQUARE RSQUARE SEMI {: RESULT=new VarDeclArray(varType, arrayName); RESULT.setLine(varTypeleft); :} 
 				|
@@ -114,6 +114,11 @@ VarDeclaration ::= (VarDecl) Type:varType IDENT:varName SEMI {: RESULT=new VarDe
 				|
 				(EnumDecl) ENUM EnumName:e LBRACE EnumList:E1 RBRACE {: RESULT=new EnumDecl(e, E1); RESULT.setLine(eleft); :}
 				;
+
+VarList ::= (VarListY) VarList:V1 COMMA IDENT:varName {: RESULT=new VarListY(V1, varName); RESULT.setLine(V1left); :}
+			|
+			(VarListN) {: RESULT=new VarListN(); :} /*epsilon*/
+			;
 
 EnumName ::= (EnumName) IDENT:EnumNme {: RESULT=new EnumName(EnumNme); RESULT.setLine(EnumNmeleft); :};
 				

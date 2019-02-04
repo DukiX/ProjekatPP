@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 1/1/2019 18:3:38
+// 3/1/2019 11:41:1
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -21,6 +21,7 @@ public interface Visitor {
     public void visit(ForCondition ForCondition);
     public void visit(Factor Factor);
     public void visit(CondTerm CondTerm);
+    public void visit(VarList VarList);
     public void visit(FactorTypeExpr FactorTypeExpr);
     public void visit(CondFactList CondFactList);
     public void visit(Condition Condition);
@@ -133,6 +134,8 @@ public interface Visitor {
     public void visit(EnumElem EnumElem);
     public void visit(EnumLst EnumLst);
     public void visit(EnumName EnumName);
+    public void visit(VarListN VarListN);
+    public void visit(VarListY VarListY);
     public void visit(EnumDecl EnumDecl);
     public void visit(ConstDecl ConstDecl);
     public void visit(VarDeclArray VarDeclArray);

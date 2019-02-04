@@ -68,7 +68,7 @@ nonterminal StatementList, Statement, Addop;
 nonterminal Unmatched, Matched;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Obj Program, ProgName, Designator, MethodDeclr, MethodTypeN ,EnumName, DesignatorOptions; 
-nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Term, Expr, Factor, FactorList,VarDeclList,BoolConst, VarDeclaration, ConstDef, ActualParamList; 
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Term, Expr, Factor, FactorList,VarDeclList,BoolConst, VarDeclaration, ConstDef, ActualParamList, VarList; 
 
 nonterminal DesignatorStatement;
 nonterminal Mulop;
@@ -94,7 +94,7 @@ VarDeclList ::= (VarDeclarations) VarDeclList VarDeclaration
 			  	{: parser.log.debug("Uspesan oporavak od definicije promenljive."); :}
 				;
 				
-VarDeclaration ::= (VarDecl) Type:varType IDENT:varName SEMI 
+VarDeclaration ::= (VarDecl) Type:varType IDENT:varName VarList:l SEMI 
 				|
 				(VarDeclArray) Type:varType IDENT:arrayName LSQUARE RSQUARE SEMI 
 				|
@@ -102,6 +102,11 @@ VarDeclaration ::= (VarDecl) Type:varType IDENT:varName SEMI
 				|
 				(EnumDecl) ENUM EnumName:e LBRACE EnumList RBRACE
 				;
+
+VarList ::= (VarListY) VarList COMMA IDENT:varName
+			|
+			(VarListN) /*epsilon*/
+			;
 
 EnumName ::= (EnumName) IDENT:EnumNme;
 				
