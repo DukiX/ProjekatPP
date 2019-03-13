@@ -1,0 +1,70 @@
+INFO  11:10:30,047 - Compiling source file: C:\Users\Dusan\eclipse-workspace\MJCompiler\test\program.mj
+INFO  11:10:30,206 - #2 program
+INFO  11:10:30,206 - #39 MJProgram
+INFO  11:10:30,206 - #39 int
+INFO  11:10:30,209 - #39 x
+INFO  11:10:30,210 - #8 ,
+INFO  11:10:30,212 - #39 y
+INFO  11:10:30,212 - #5 ;
+INFO  11:10:30,213 - #3 {
+INFO  11:10:30,214 - #39 int
+INFO  11:10:30,215 - #39 k
+INFO  11:10:30,215 - #6 (
+INFO  11:10:30,216 - #39 int
+INFO  11:10:30,216 - #39 miki
+INFO  11:10:30,216 - #8 ,
+INFO  11:10:30,217 - #39 int
+INFO  11:10:30,217 - #39 kiki
+INFO  11:10:30,219 - #7 )
+INFO  11:10:30,219 - #39 int
+INFO  11:10:30,219 - #39 c
+INFO  11:10:30,220 - #5 ;
+INFO  11:10:30,220 - #3 {
+INFO  11:10:30,220 - #39 c
+INFO  11:10:30,228 - #12 =
+INFO  11:10:30,231 - #38 1
+INFO  11:10:30,231 - #5 ;
+INFO  11:10:30,235 - #39 c
+INFO  11:10:30,235 - #12 =
+INFO  11:10:30,235 - #39 miki
+INFO  11:10:30,235 - #5 ;
+INFO  11:10:30,235 - #10 return
+INFO  11:10:30,235 - #38 2
+INFO  11:10:30,235 - #5 ;
+INFO  11:10:30,235 - #4 }
+INFO  11:10:30,235 - #39 int
+INFO  11:10:30,239 - #39 main
+INFO  11:10:30,239 - #6 (
+INFO  11:10:30,239 - #7 )
+INFO  11:10:30,240 - #3 {
+INFO  11:10:30,240 - #39 y
+INFO  11:10:30,241 - #12 =
+INFO  11:10:30,241 - #38 2
+INFO  11:10:30,241 - #11 +
+INFO  11:10:30,241 - #38 5
+INFO  11:10:30,243 - #5 ;
+INFO  11:10:30,244 - #9 print
+INFO  11:10:30,244 - #6 (
+INFO  11:10:30,244 - #39 y
+INFO  11:10:30,244 - #7 )
+INFO  11:10:30,244 - #5 ;
+INFO  11:10:30,244 - #10 return
+INFO  11:10:30,244 - #38 0
+INFO  11:10:30,244 - #5 ;
+INFO  11:10:30,244 - #4 }
+INFO  11:10:30,244 - #4 }
+INFO  11:10:30,266 - Deklarisana promenljiva y na liniji 5
+INFO  11:10:30,266 - Deklarisana promenljiva x na liniji 2
+INFO  11:10:30,266 - Obradjuje se funkcija k na liniji 6
+INFO  11:10:30,272 - Deklarisan formalni argument miki na liniji 6
+INFO  11:10:30,272 - Deklarisan formalni argument kiki na liniji 6
+INFO  11:10:30,278 - Deklarisana promenljiva c na liniji 6
+INFO  11:10:30,278 - Upotreba lokalne promenljive c na liniji 7
+INFO  11:10:30,278 - Upotreba lokalne promenljive c na liniji 8
+INFO  11:10:30,278 - Upotreba lokalne promenljive miki na liniji 8
+INFO  11:10:30,278 - Obradjuje se funkcija main na liniji 13
+INFO  11:10:30,278 - Upotreba globalne promenljive y na liniji 14
+INFO  11:10:30,278 - Upotreba globalne promenljive y na liniji 15
+INFO  11:10:30,278 - Print calls = 1
+INFO  11:10:30,278 - Generating bytecode file: C:\Users\Dusan\eclipse-workspace\MJCompiler\test\program.obj
+INFO  11:10:30,293 - Parsiranje uspesno zavrseno!

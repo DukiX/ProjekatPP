@@ -1,0 +1,39 @@
+INFO  12:43:51,067 - Compiling source file: C:\Users\Dusan\eclipse-workspace\MJCompiler\test\program.mj
+INFO  12:43:51,111 - #2 program
+INFO  12:43:51,112 - #39 MJProgram
+INFO  12:43:51,112 - #39 int
+INFO  12:43:51,113 - #39 x
+INFO  12:43:51,114 - #8 ,
+INFO  12:43:51,115 - #39 y
+INFO  12:43:51,115 - #5 ;
+INFO  12:43:51,115 - #3 {
+INFO  12:43:51,115 - #39 int
+INFO  12:43:51,116 - #39 main
+INFO  12:43:51,116 - #6 (
+INFO  12:43:51,117 - #7 )
+INFO  12:43:51,117 - #3 {
+INFO  12:43:51,118 - #39 y
+INFO  12:43:51,118 - #12 =
+INFO  12:43:51,120 - #38 4
+INFO  12:43:51,120 - #39 mod
+ERROR 12:43:51,120 - 
+Sintaksna greska na liniji 9
+INFO  12:43:51,120 - #38 3
+INFO  12:43:51,120 - #5 ;
+INFO  12:43:51,120 - #9 print
+INFO  12:43:51,121 - #6 (
+INFO  12:43:51,122 - #39 y
+DEBUG 12:43:51,122 - Uspesan oporavak od greske pri dodeli vrednosti.
+INFO  12:43:51,122 - #7 )
+INFO  12:43:51,124 - #5 ;
+INFO  12:43:51,125 - #10 return
+INFO  12:43:51,125 - #38 0
+INFO  12:43:51,125 - #5 ;
+INFO  12:43:51,125 - #4 }
+INFO  12:43:51,126 - #4 }
+INFO  12:43:51,155 - Deklarisana promenljiva y na liniji 5
+INFO  12:43:51,155 - Deklarisana promenljiva x na liniji 2
+INFO  12:43:51,155 - Obradjuje se funkcija main na liniji 8
+INFO  12:43:51,155 - Upotreba globalne promenljive y na liniji 10
+INFO  12:43:51,155 - Print calls = 1
+ERROR 12:43:51,156 - Parsiranje NIJE uspesno zavrseno!

@@ -113,6 +113,36 @@ public class CodeGenerator extends VisitorAdaptor {
 	
 	@Override
 	public void visit(AddExpr AddExpr) {
+		if(AddExpr.getAddop().getClass()==Plusop.class) {
+			Code.put(Code.add);
+		}else {
+			Code.put(Code.sub);
+		}
+	}
+	
+	public void visit(Increment inc) {
+		Code.put(Code.const_1);
 		Code.put(Code.add);
+		Code.store(inc.getDesignator().obj);
+	}
+	
+	public void visit(Decrement dec) {
+		Code.put(Code.const_1);
+		Code.put(Code.sub);
+		Code.store(dec.getDesignator().obj);
+	}
+	
+	public void visit(MinusTerm mt) {
+		Code.put(Code.neg);
+	}
+	
+	public void visit(MulopFactor mf) {
+		if(mf.getMulop().getClass()==Timesop.class) {
+			Code.put(Code.mul);
+		}else if(mf.getMulop().getClass()==Divop.class) {
+			Code.put(Code.div);
+		}else {
+			Code.put(Code.rem);
+		}
 	}
 }

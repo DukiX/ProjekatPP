@@ -1,0 +1,48 @@
+INFO  11:44:11,186 - Compiling source file: C:\Users\Dusan\eclipse-workspace\MJCompiler\test\program.mj
+INFO  11:44:11,237 - #2 program
+INFO  11:44:11,237 - #39 MJProgram
+INFO  11:44:11,238 - #39 int
+INFO  11:44:11,240 - #39 x
+INFO  11:44:11,240 - #8 ,
+INFO  11:44:11,241 - #39 y
+INFO  11:44:11,241 - #5 ;
+INFO  11:44:11,242 - #3 {
+INFO  11:44:11,242 - #39 int
+INFO  11:44:11,243 - #39 main
+INFO  11:44:11,243 - #6 (
+INFO  11:44:11,243 - #7 )
+INFO  11:44:11,244 - #3 {
+INFO  11:44:11,244 - #39 y
+INFO  11:44:11,245 - #12 =
+INFO  11:44:11,246 - #38 2
+INFO  11:44:11,247 - #5 ;
+INFO  11:44:11,247 - #9 print
+INFO  11:44:11,248 - #6 (
+INFO  11:44:11,248 - #39 y
+INFO  11:44:11,249 - #7 )
+INFO  11:44:11,249 - #5 ;
+INFO  11:44:11,249 - #39 y
+INFO  11:44:11,249 - #42 ++
+INFO  11:44:11,249 - #5 ;
+INFO  11:44:11,250 - #5 ;
+ERROR 11:44:11,250 - 
+Sintaksna greska na liniji 11
+INFO  11:44:11,250 - #9 print
+INFO  11:44:11,250 - #6 (
+INFO  11:44:11,250 - #39 y
+DEBUG 11:44:11,252 - Uspesan oporavak od greske pri dodeli vrednosti.
+INFO  11:44:11,253 - #7 )
+INFO  11:44:11,253 - #5 ;
+INFO  11:44:11,253 - #10 return
+INFO  11:44:11,253 - #38 0
+INFO  11:44:11,253 - #5 ;
+INFO  11:44:11,253 - #4 }
+INFO  11:44:11,253 - #4 }
+INFO  11:44:11,279 - Deklarisana promenljiva y na liniji 5
+INFO  11:44:11,280 - Deklarisana promenljiva x na liniji 2
+INFO  11:44:11,281 - Obradjuje se funkcija main na liniji 8
+INFO  11:44:11,281 - Upotreba globalne promenljive y na liniji 9
+INFO  11:44:11,281 - Upotreba globalne promenljive y na liniji 10
+INFO  11:44:11,281 - Upotreba globalne promenljive y na liniji 12
+INFO  11:44:11,281 - Print calls = 2
+ERROR 11:44:11,282 - Parsiranje NIJE uspesno zavrseno!

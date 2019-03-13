@@ -1,0 +1,50 @@
+INFO  11:53:05,973 - Compiling source file: C:\Users\Dusan\eclipse-workspace\MJCompiler\test\program.mj
+INFO  11:53:06,012 - #2 program
+INFO  11:53:06,012 - #39 MJProgram
+INFO  11:53:06,012 - #39 int
+INFO  11:53:06,013 - #39 x
+INFO  11:53:06,014 - #8 ,
+INFO  11:53:06,014 - #39 y
+INFO  11:53:06,014 - #5 ;
+INFO  11:53:06,015 - #3 {
+INFO  11:53:06,015 - #39 int
+INFO  11:53:06,015 - #39 main
+INFO  11:53:06,015 - #6 (
+INFO  11:53:06,016 - #7 )
+INFO  11:53:06,016 - #3 {
+INFO  11:53:06,016 - #39 y
+INFO  11:53:06,017 - #12 =
+INFO  11:53:06,018 - #38 2
+INFO  11:53:06,018 - #5 ;
+INFO  11:53:06,019 - #9 print
+INFO  11:53:06,020 - #6 (
+INFO  11:53:06,020 - #39 y
+INFO  11:53:06,020 - #7 )
+INFO  11:53:06,020 - #5 ;
+INFO  11:53:06,021 - #39 y
+INFO  11:53:06,022 - #12 =
+INFO  11:53:06,022 - #39 y
+INFO  11:53:06,022 - #11 +
+INFO  11:53:06,022 - #38 1
+INFO  11:53:06,023 - #5 ;
+INFO  11:53:06,023 - #9 print
+INFO  11:53:06,023 - #6 (
+INFO  11:53:06,023 - #39 y
+INFO  11:53:06,023 - #7 )
+INFO  11:53:06,023 - #5 ;
+INFO  11:53:06,024 - #10 return
+INFO  11:53:06,024 - #38 0
+INFO  11:53:06,024 - #5 ;
+INFO  11:53:06,024 - #4 }
+INFO  11:53:06,024 - #4 }
+INFO  11:53:06,045 - Deklarisana promenljiva y na liniji 5
+INFO  11:53:06,046 - Deklarisana promenljiva x na liniji 2
+INFO  11:53:06,046 - Obradjuje se funkcija main na liniji 8
+INFO  11:53:06,047 - Upotreba globalne promenljive y na liniji 9
+INFO  11:53:06,047 - Upotreba globalne promenljive y na liniji 10
+INFO  11:53:06,047 - Upotreba globalne promenljive y na liniji 11
+INFO  11:53:06,047 - Upotreba globalne promenljive y na liniji 11
+INFO  11:53:06,047 - Upotreba globalne promenljive y na liniji 12
+INFO  11:53:06,047 - Print calls = 2
+INFO  11:53:06,048 - Generating bytecode file: C:\Users\Dusan\eclipse-workspace\MJCompiler\test\program.obj
+INFO  11:53:06,053 - Parsiranje uspesno zavrseno!
