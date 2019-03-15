@@ -9,37 +9,37 @@ import rs.etf.pp1.symboltable.concepts.Obj;
 import rs.etf.pp1.symboltable.concepts.Struct;
 
 public class CodeGenerator extends VisitorAdaptor {
-	
+
 	private int varCount;
-	
+
 	private int paramCnt;
-	
+
 	private int mainPc;
-	
+
 	public int getMainPc() {
 		return mainPc;
 	}
-	
+
 	@Override
 	public void visit(MethodTypeName MethodTypeName) {
 		if ("main".equalsIgnoreCase(MethodTypeName.getMethName())) {
 			mainPc = Code.pc;
 		}
 		MethodTypeName.obj.setAdr(Code.pc);
-		
+
 		// Collect arguments and local variables.
 		SyntaxNode methodNode = MethodTypeName.getParent();
 		VarCounter varCnt = new VarCounter();
 		methodNode.traverseTopDown(varCnt);
 		FormParamCounter fpCnt = new FormParamCounter();
 		methodNode.traverseTopDown(fpCnt);
-		
+
 		// Generate the entry.
 		Code.put(Code.enter);
 		Code.put(fpCnt.getCount());
 		Code.put(varCnt.getCount() + fpCnt.getCount());
 	}
-	
+
 	@Override
 	public void visit(VarDecl VarDecl) {
 		varCount++;
@@ -48,40 +48,59 @@ public class CodeGenerator extends VisitorAdaptor {
 	@Override
 	public void visit(FormalParamDecl FormalParam) {
 		paramCnt++;
-	}	
-	
+	}
+
 	@Override
 	public void visit(MethodDecl MethodDecl) {
 		Code.put(Code.exit);
 		Code.put(Code.return_);
 	}
-	
+
 	@Override
 	public void visit(ReturnExpr ReturnExpr) {
 		Code.put(Code.exit);
 		Code.put(Code.return_);
 	}
-	
+
 	@Override
 	public void visit(ReturnNoExpr ReturnNoExpr) {
 		Code.put(Code.exit);
 		Code.put(Code.return_);
 	}
-	
+
 	@Override
-	public void visit(Assignment Assignment) {
-		Code.store(Assignment.getDesignator().obj);
+	public void visit(Assignment assignment) {
+		if (assignment.getDesignator().obj.getKind() == Obj.Elem) {
+
+			if (assignment.getDesignator().obj.getLevel() == 0) { // global variable
+				Code.put(Code.getstatic);
+				Code.put2(assignment.getDesignator().obj.getAdr());
+			} else {
+				// local variable
+				if (0 <= assignment.getDesignator().obj.getAdr() && assignment.getDesignator().obj.getAdr() <= 3)
+					Code.put(Code.load_n + assignment.getDesignator().obj.getAdr());
+				else {
+					Code.put(Code.load);
+					Code.put(assignment.getDesignator().obj.getAdr());
+				}
+			}
+			Code.put(Code.dup_x2);
+			Code.put(Code.pop);
+		}
+		
+		
+		Code.store(assignment.getDesignator().obj);
 	}
-	
+
 	@Override
 	public void visit(Const Const) {
 		Code.load(new Obj(Obj.Con, "$", Const.struct, Const.getN1(), 0));
 	}
-	
+
 	public void visit(CharConst cc) {
 		Code.load(new Obj(Obj.Con, "$", cc.struct, cc.getC(), 0));
 	}
-	
+
 	public void visit(BoolTrue bt) {
 		Code.load(new Obj(Obj.Con, "$", bt.struct, 1, 0));
 	}
@@ -89,141 +108,168 @@ public class CodeGenerator extends VisitorAdaptor {
 	public void visit(BoolFalse bf) {
 		Code.load(new Obj(Obj.Con, "$", bf.struct, 0, 0));
 	}
-	
+
 	@Override
 	public void visit(Designator designator) {
 		SyntaxNode parent = designator.getParent();
 		if (Assignment.class != parent.getClass() && FuncCall.class != parent.getClass()) {
-			/*if(designator.obj.getKind()==Obj.Elem) {
-				
-				Code.put2(designator.obj.getAdr());
+			if (designator.obj.getKind() == Obj.Elem) {
+				// Code.loadConst(designator.obj.getAdr());
+				/*
+				 * Code.put(Code.getstatic); Code.put2(designator.obj.getAdr());
+				 */
+
+				if (designator.obj.getLevel() == 0) { // global variable
+					Code.put(Code.getstatic);
+					Code.put2(designator.obj.getAdr());
+				} else {
+					// local variable
+					if (0 <= designator.obj.getAdr() && designator.obj.getAdr() <= 3)
+						Code.put(Code.load_n + designator.obj.getAdr());
+					else {
+						Code.put(Code.load);
+						Code.put(designator.obj.getAdr());
+					}
+				}
 				Code.put(Code.dup_x1);
 				Code.put(Code.pop);
-			}*/
+				/*
+				 * Code.put2(designator.obj.getAdr()); Code.put(Code.dup_x1);
+				 * Code.put(Code.pop);
+				 */
+			}
 			Code.load(designator.obj);
 		}
 	}
-	
+
 	@Override
 	public void visit(FuncCall FuncCall) {
 		Obj functionObj = FuncCall.getDesignator().obj;
-		int offset = functionObj.getAdr() - Code.pc; 
+		int offset = functionObj.getAdr() - Code.pc;
 		Code.put(Code.call);
 		Code.put2(offset);
 	}
-	
+
 	@Override
 	public void visit(ProcCall procCall) {
 		Obj functionObj = procCall.getDesignator().obj;
-		int offset = functionObj.getAdr() - Code.pc; 
+		int offset = functionObj.getAdr() - Code.pc;
 		Code.put(Code.call);
 		Code.put2(offset);
-		
-		if(procCall.getDesignator().obj.getType() != Tab.noType) {
+
+		if (procCall.getDesignator().obj.getType() != Tab.noType) {
 			Code.put(Code.pop);
 		}
 	}
-	
+
 	@Override
 	public void visit(PrintStmt printStmt) {
 		if (printStmt.getExpr().struct == Tab.charType) {
 			Code.put(Code.const_5);
 			Code.put(Code.bprint);
-		}else if(printStmt.getExpr().struct == Tab.intType){
+		} else if (printStmt.getExpr().struct == Tab.intType) {
 			Code.put(Code.const_5);
 			Code.put(Code.print);
-		}else {//bool
+		} else {// bool
 			Code.put(Code.const_5);
 			Code.put(Code.print);
 		}
 	}
-	
+
 	public void visit(PrintStmtTwo pst) {
 		if (pst.getExpr().struct == Tab.charType) {
 			Code.loadConst(pst.getNum());
 			Code.put(Code.bprint);
-		}else if(pst.getExpr().struct == Tab.intType){
+		} else if (pst.getExpr().struct == Tab.intType) {
 			Code.loadConst(pst.getNum());
 			Code.put(Code.print);
-		}else {//bool
+		} else {// bool
 			Code.loadConst(pst.getNum());
 			Code.put(Code.print);
 		}
 	}
-	
+
 	@Override
 	public void visit(AddExpr AddExpr) {
-		if(AddExpr.getAddop().getClass()==Plusop.class) {
+		if (AddExpr.getAddop().getClass() == Plusop.class) {
 			Code.put(Code.add);
-		}else {
+		} else {
 			Code.put(Code.sub);
 		}
 	}
-	
+
 	public void visit(Increment inc) {
 		Code.put(Code.const_1);
 		Code.put(Code.add);
 		Code.store(inc.getDesignator().obj);
 	}
-	
+
 	public void visit(Decrement dec) {
 		Code.put(Code.const_1);
 		Code.put(Code.sub);
 		Code.store(dec.getDesignator().obj);
 	}
-	
+
 	public void visit(MinusTerm mt) {
 		Code.put(Code.neg);
 	}
-	
+
 	public void visit(MulopFactor mf) {
-		if(mf.getMulop().getClass()==Timesop.class) {
+		if (mf.getMulop().getClass() == Timesop.class) {
 			Code.put(Code.mul);
-		}else if(mf.getMulop().getClass()==Divop.class) {
+		} else if (mf.getMulop().getClass() == Divop.class) {
 			Code.put(Code.div);
-		}else {
+		} else {
 			Code.put(Code.rem);
 		}
 	}
-	
+
 	public void visit(MatchedRead mr) {
 		if (mr.getDesignator().obj.getType() == Tab.charType) {
 			Code.put(Code.bread);
 			Code.store(mr.getDesignator().obj);
-		}else {
+		} else {
 			Code.put(Code.read);
 			Code.store(mr.getDesignator().obj);
 		}
 	}
-	
+
 	public void visit(FactorNewArr fna) {
 		Code.put(Code.newarray);
-		if(fna.getType().struct==Tab.charType) {
+		if (fna.getType().struct == Tab.charType) {
 			Code.put(0);
-		}else {
+		} else {
 			Code.put(1);
 		}
 	}
-	
+
+	int adresa;
+
 	public void visit(CndFctNotBool cnb) {
-		if(cnb.getRelop().getClass()==Releq.class) {
-			//Code.put(Code.jcc+Code.eq);
+		if (cnb.getRelop().getClass() == Releq.class) {
+			// Code.put(Code.jcc+Code.eq);
 			Code.putFalseJump(Code.eq, 0);
-		}else if(cnb.getRelop().getClass()==Relne.class) {
-			//Code.put(Code.jcc+Code.ne);
+		} else if (cnb.getRelop().getClass() == Relne.class) {
+			// Code.put(Code.jcc+Code.ne);
 			Code.putFalseJump(Code.ne, 0);
-		}else if(cnb.getRelop().getClass()==Relgt.class) {
-			//Code.put(Code.jcc+Code.gt);
+		} else if (cnb.getRelop().getClass() == Relgt.class) {
+			// Code.put(Code.jcc+Code.gt);
 			Code.putFalseJump(Code.gt, 0);
-		}else if(cnb.getRelop().getClass()==Rellt.class) {
-			//Code.put(Code.jcc+Code.lt);
+		} else if (cnb.getRelop().getClass() == Rellt.class) {
+			// Code.put(Code.jcc+Code.lt);
 			Code.putFalseJump(Code.lt, 0);
-		}else if(cnb.getRelop().getClass()==Relge.class) {
-			//Code.put(Code.jcc+Code.ge);
+		} else if (cnb.getRelop().getClass() == Relge.class) {
+			// Code.put(Code.jcc+Code.ge);
 			Code.putFalseJump(Code.ge, 0);
-		}else if(cnb.getRelop().getClass()==Relle.class) {
-			//Code.put(Code.jcc+Code.le);
+		} else if (cnb.getRelop().getClass() == Relle.class) {
+			// Code.put(Code.jcc+Code.le);
 			Code.putFalseJump(Code.le, 0);
 		}
+		adresa = Code.pc - 2;
 	}
+
+	public void visit(Endif e) {
+		Code.fixup(adresa);
+	}
+
 }

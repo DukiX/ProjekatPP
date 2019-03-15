@@ -1,0 +1,75 @@
+INFO  15:46:33,542 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  15:46:33,574 - #2 program
+INFO  15:46:33,574 - #39 MJProgram
+INFO  15:46:33,574 - #39 char
+INFO  15:46:33,575 - #39 kva
+INFO  15:46:33,575 - #5 ;
+INFO  15:46:33,575 - #39 int
+INFO  15:46:33,576 - #39 x
+INFO  15:46:33,576 - #20 [
+INFO  15:46:33,576 - #21 ]
+INFO  15:46:33,576 - #5 ;
+INFO  15:46:33,576 - #39 bool
+INFO  15:46:33,576 - #39 a
+INFO  15:46:33,576 - #5 ;
+INFO  15:46:33,576 - #39 char
+INFO  15:46:33,576 - #39 b
+INFO  15:46:33,576 - #5 ;
+INFO  15:46:33,576 - #39 int
+INFO  15:46:33,576 - #39 y
+INFO  15:46:33,577 - #5 ;
+INFO  15:46:33,577 - #39 int
+INFO  15:46:33,577 - #39 z
+INFO  15:46:33,578 - #5 ;
+INFO  15:46:33,578 - #3 {
+INFO  15:46:33,578 - #39 int
+INFO  15:46:33,579 - #39 main
+INFO  15:46:33,579 - #6 (
+INFO  15:46:33,579 - #7 )
+INFO  15:46:33,579 - #3 {
+INFO  15:46:33,579 - #39 x
+INFO  15:46:33,580 - #12 =
+INFO  15:46:33,580 - #19 new
+INFO  15:46:33,581 - #39 int
+INFO  15:46:33,581 - #20 [
+INFO  15:46:33,581 - #38 10
+INFO  15:46:33,581 - #21 ]
+INFO  15:46:33,582 - #5 ;
+INFO  15:46:33,582 - #39 y
+INFO  15:46:33,582 - #12 =
+INFO  15:46:33,582 - #39 gg
+INFO  15:46:33,582 - #5 ;
+INFO  15:46:33,582 - #39 y
+INFO  15:46:33,582 - #12 =
+INFO  15:46:33,582 - #39 x
+INFO  15:46:33,582 - #20 [
+INFO  15:46:33,582 - #38 3
+INFO  15:46:33,582 - #21 ]
+INFO  15:46:33,583 - #5 ;
+INFO  15:46:33,583 - #39 y
+INFO  15:46:33,583 - #12 =
+INFO  15:46:33,583 - #38 5
+INFO  15:46:33,583 - #5 ;
+INFO  15:46:33,583 - #10 return
+INFO  15:46:33,583 - #38 0
+INFO  15:46:33,583 - #5 ;
+INFO  15:46:33,583 - #4 }
+INFO  15:46:33,584 - #4 }
+INFO  15:46:33,598 - Deklarisana promenljiva kva na liniji 3
+INFO  15:46:33,598 - Deklarisan niz x na liniji 4
+INFO  15:46:33,598 - Deklarisana promenljiva a na liniji 6
+INFO  15:46:33,598 - Deklarisana promenljiva b na liniji 7
+INFO  15:46:33,598 - Deklarisana promenljiva y na liniji 8
+INFO  15:46:33,598 - Deklarisana promenljiva z na liniji 9
+INFO  15:46:33,598 - Obradjuje se funkcija main na liniji 14
+INFO  15:46:33,598 - Upotreba globalne promenljive x na liniji 15
+INFO  15:46:33,599 - Upotreba globalne promenljive y na liniji 16
+ERROR 15:46:33,599 - Greska na liniji 16 : ime gg nije deklarisano! 
+INFO  15:46:33,599 - Upotreba lokalne promenljive gg na liniji 16
+ERROR 15:46:33,602 - Greska na liniji 16 :  nekompatibilni tipovi u dodeli vrednosti 1 0
+INFO  15:46:33,602 - Upotreba globalne promenljive y na liniji 17
+INFO  15:46:33,602 - Upotreba globalne promenljive x na liniji 17
+INFO  15:46:33,602 - Upotreba elementa niza x na liniji 17
+INFO  15:46:33,602 - Upotreba globalne promenljive y na liniji 18
+INFO  15:46:33,603 - Print calls = 0
+ERROR 15:46:33,603 - Parsiranje NIJE uspesno zavrseno!

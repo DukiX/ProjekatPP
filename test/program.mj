@@ -1,20 +1,27 @@
  program MJProgram
  	int gg;
-	int x[];
+ 	char kva;
 	
+	int zz[];
 	bool a;
 	char b;
 	int y;
-	int z;
+	
 {
 
 
 	
-	int main() {
-		y=9;
-		if(y==9){
-			y=3;
-		}
+	int main() int x[];{
+		x = new int[10];
+		y=gg;
+		x[3]=4;
+		y=x[3];
+		print(y);
+		zz = new int[9];
+		zz[1]=25;
+		gg = zz[1];
+		print(gg);
+		y=5;
 		return 0;
 	}
 }
