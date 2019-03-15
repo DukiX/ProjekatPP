@@ -91,6 +91,8 @@ nonterminal For For;
 nonterminal EnumNumbering EnumNumbering;
 nonterminal EnumList EnumList;
 nonterminal Endif Endif;
+nonterminal Begelse Begelse;
+nonterminal Endelse Endelse;
 
 Program ::= (Program) PROG ProgName:p VarDeclList:V1 LBRACE MethodDeclList:M2 RBRACE {: RESULT=new Program(p, V1, M2); RESULT.setLine(pleft); :} 
 ;
@@ -180,7 +182,7 @@ StatementList ::= (Statements) StatementList:S1 Statement:S2 {: RESULT=new State
 
 Statement ::= (MatchedStmt) Matched:M1 {: RESULT=new MatchedStmt(M1); RESULT.setLine(M1left); :} | (UnmachedStmt) Unmatched:U1 {: RESULT=new UnmachedStmt(U1); RESULT.setLine(U1left); :};
 
-Unmatched ::= (UnmatchedIf) IF LPAREN Condition:C1 RPAREN Statement:S2 Endif:E3 {: RESULT=new UnmatchedIf(C1, S2, E3); RESULT.setLine(C1left); :} | (UnmatchedIfElse) IF LPAREN Condition:C1 RPAREN Matched:M2 ELSE Unmatched:U3 {: RESULT=new UnmatchedIfElse(C1, M2, U3); RESULT.setLine(C1left); :};
+Unmatched ::= (UnmatchedIf) IF LPAREN Condition:C1 RPAREN Statement:S2 Endif:E3 {: RESULT=new UnmatchedIf(C1, S2, E3); RESULT.setLine(C1left); :} | (UnmatchedIfElse) IF LPAREN Condition:C1 RPAREN Matched:M2 ELSE Begelse:B3 Unmatched:U4 Endelse:E5 {: RESULT=new UnmatchedIfElse(C1, M2, B3, U4, E5); RESULT.setLine(C1left); :};
 
 Endif ::= (Endif) {: RESULT=new Endif(); :} /* epsilon */;
 	
@@ -194,7 +196,7 @@ Matched ::=	(ErrAssignment) error SEMI
 			  |
 			  (ReturnNoExpr) RETURN SEMI {: RESULT=new ReturnNoExpr(); :}
 			  | 
-			  (MatchedIf) IF LPAREN Condition:C1 RPAREN Matched:M2 ELSE Matched:M3 {: RESULT=new MatchedIf(C1, M2, M3); RESULT.setLine(C1left); :}
+			  (MatchedIf) IF LPAREN Condition:C1 RPAREN Matched:M2 ELSE Begelse:B3 Matched:M4 Endelse:E5 {: RESULT=new MatchedIf(C1, M2, B3, M4, E5); RESULT.setLine(C1left); :}
 			  |
 			  (MatchedDesignatorStatement) DesignatorStatement:D1 SEMI {: RESULT=new MatchedDesignatorStatement(D1); RESULT.setLine(D1left); :}	
 			  |
@@ -210,6 +212,10 @@ Matched ::=	(ErrAssignment) error SEMI
 			  |
 			  (MatchedFor) For:F1 LPAREN ForDesignator:F2 SEMI ForCondition:F3 SEMI ForDesignator:F4 RPAREN Matched:M5 {: RESULT=new MatchedFor(F1, F2, F3, F4, M5); RESULT.setLine(F1left); :}
 			  ;
+			  
+Begelse ::= (Begelse) {: RESULT=new Begelse(); :} /* epsilon */;
+
+Endelse ::= (Endelse) {: RESULT=new Endelse(); :} /* epsilon */;
 			
 For ::= (ForFor) FOR {: RESULT=new ForFor(); :};
 

@@ -243,7 +243,8 @@ public class CodeGenerator extends VisitorAdaptor {
 		}
 	}
 
-	int adresa;
+	int adresa1;
+	int adresa2;
 
 	public void visit(CndFctNotBool cnb) {
 		if (cnb.getRelop().getClass() == Releq.class) {
@@ -265,11 +266,22 @@ public class CodeGenerator extends VisitorAdaptor {
 			// Code.put(Code.jcc+Code.le);
 			Code.putFalseJump(Code.le, 0);
 		}
-		adresa = Code.pc - 2;
+		adresa1 = Code.pc - 2;
 	}
+	
 
 	public void visit(Endif e) {
-		Code.fixup(adresa);
+		Code.fixup(adresa1);
+	}
+	
+	public void visit(Begelse e) {
+		Code.putJump(0);
+		Code.fixup(adresa1);
+		adresa2 = Code.pc - 2;
+	}
+	
+	public void visit(Endelse e) {
+		Code.fixup(adresa2);
 	}
 
 }

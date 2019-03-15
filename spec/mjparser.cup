@@ -79,6 +79,8 @@ nonterminal For;
 nonterminal EnumNumbering;
 nonterminal EnumList;
 nonterminal Endif;
+nonterminal Begelse;
+nonterminal Endelse;
 
 Program ::= (Program) PROG ProgName:p VarDeclList LBRACE MethodDeclList RBRACE 
 ;
@@ -168,7 +170,7 @@ StatementList ::= (Statements) StatementList Statement
 
 Statement ::= (MatchedStmt) Matched | (UnmachedStmt) Unmatched;
 
-Unmatched ::= (UnmatchedIf) IF LPAREN Condition RPAREN Statement Endif | (UnmatchedIfElse) IF LPAREN Condition RPAREN Matched ELSE Unmatched;
+Unmatched ::= (UnmatchedIf) IF LPAREN Condition RPAREN Statement Endif | (UnmatchedIfElse) IF LPAREN Condition RPAREN Matched ELSE Begelse Unmatched Endelse;
 
 Endif ::= (Endif) /* epsilon */;
 	
@@ -182,7 +184,7 @@ Matched ::=	(ErrAssignment) error SEMI
 			  |
 			  (ReturnNoExpr) RETURN SEMI
 			  | 
-			  (MatchedIf) IF LPAREN Condition RPAREN Matched ELSE Matched
+			  (MatchedIf) IF LPAREN Condition RPAREN Matched ELSE Begelse Matched Endelse
 			  |
 			  (MatchedDesignatorStatement) DesignatorStatement SEMI	
 			  |
@@ -198,6 +200,10 @@ Matched ::=	(ErrAssignment) error SEMI
 			  |
 			  (MatchedFor) For LPAREN ForDesignator SEMI ForCondition SEMI ForDesignator RPAREN Matched
 			  ;
+			  
+Begelse ::= (Begelse) /* epsilon */;
+
+Endelse ::= (Endelse) /* epsilon */;
 			
 For ::= (ForFor) FOR;
 
