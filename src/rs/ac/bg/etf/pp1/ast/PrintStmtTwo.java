@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 13/2/2019 10:51:45
+// 15/2/2019 11:43:38
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -8,12 +8,12 @@ package rs.ac.bg.etf.pp1.ast;
 public class PrintStmtTwo extends Matched {
 
     private Expr Expr;
-    private Integer N1;
+    private Integer num;
 
-    public PrintStmtTwo (Expr Expr, Integer N1) {
+    public PrintStmtTwo (Expr Expr, Integer num) {
         this.Expr=Expr;
         if(Expr!=null) Expr.setParent(this);
-        this.N1=N1;
+        this.num=num;
     }
 
     public Expr getExpr() {
@@ -24,12 +24,12 @@ public class PrintStmtTwo extends Matched {
         this.Expr=Expr;
     }
 
-    public Integer getN1() {
-        return N1;
+    public Integer getNum() {
+        return num;
     }
 
-    public void setN1(Integer N1) {
-        this.N1=N1;
+    public void setNum(Integer num) {
+        this.num=num;
     }
 
     public void accept(Visitor visitor) {
@@ -61,7 +61,7 @@ public class PrintStmtTwo extends Matched {
             buffer.append(tab+"  null");
         buffer.append("\n");
 
-        buffer.append(" "+tab+N1);
+        buffer.append(" "+tab+num);
         buffer.append("\n");
 
         buffer.append(tab);

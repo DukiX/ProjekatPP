@@ -197,7 +197,7 @@ Matched ::=	(ErrAssignment) error SEMI
 			  |
 			  (MatchedRead) READ LPAREN Designator:d RPAREN SEMI {: RESULT=new MatchedRead(d); RESULT.setLine(dleft); :}
 			  |
-			  (PrintStmtTwo) PRINT LPAREN Expr:ex COMMA NUMBER:N1 RPAREN SEMI {: RESULT=new PrintStmtTwo(ex, N1); RESULT.setLine(exleft); :}
+			  (PrintStmtTwo) PRINT LPAREN Expr:ex COMMA NUMBER:num RPAREN SEMI {: RESULT=new PrintStmtTwo(ex, num); RESULT.setLine(exleft); :}
 			  |
 			  (MatchedBraces)LBRACE Statement:S1 StatementList:S2 RBRACE {: RESULT=new MatchedBraces(S1, S2); RESULT.setLine(S1left); :}
 			  |
@@ -274,9 +274,9 @@ Factor ::= (Const) NUMBER:N1 {: RESULT=new Const(N1); RESULT.setLine(N1left); :}
 			|
 			(FactorExpr) LPAREN Expr:E1 RPAREN {: RESULT=new FactorExpr(E1); RESULT.setLine(E1left); :}
 			|
-			(FactorBool) BoolConst:B1 {: RESULT=new FactorBool(B1); RESULT.setLine(B1left); :}
+			(FactorBool) BoolConst:bc {: RESULT=new FactorBool(bc); RESULT.setLine(bcleft); :}
 			|
-			(FactorNew) NEW Type:T1 {: RESULT=new FactorNew(T1); RESULT.setLine(T1left); :}
+			(FactorNew) NEW Type:t {: RESULT=new FactorNew(t); RESULT.setLine(tleft); :}
 			|
 			(FactorNewArr) NEW Type:t LSQUARE Expr:e RSQUARE {: RESULT=new FactorNewArr(t, e); RESULT.setLine(tleft); :}
 			|

@@ -1,0 +1,70 @@
+INFO  12:55:31,373 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  12:55:31,404 - #2 program
+INFO  12:55:31,404 - #39 MJProgram
+INFO  12:55:31,404 - #39 int
+INFO  12:55:31,405 - #39 gg
+INFO  12:55:31,405 - #5 ;
+INFO  12:55:31,406 - #39 int
+INFO  12:55:31,406 - #39 x
+INFO  12:55:31,406 - #20 [
+INFO  12:55:31,406 - #21 ]
+INFO  12:55:31,406 - #5 ;
+INFO  12:55:31,406 - #39 bool
+INFO  12:55:31,407 - #39 a
+INFO  12:55:31,407 - #5 ;
+INFO  12:55:31,407 - #39 char
+INFO  12:55:31,407 - #39 b
+INFO  12:55:31,407 - #5 ;
+INFO  12:55:31,407 - #39 int
+INFO  12:55:31,407 - #39 y
+INFO  12:55:31,407 - #5 ;
+INFO  12:55:31,407 - #3 {
+INFO  12:55:31,407 - #39 int
+INFO  12:55:31,410 - #39 main
+INFO  12:55:31,410 - #6 (
+INFO  12:55:31,410 - #7 )
+INFO  12:55:31,411 - #3 {
+INFO  12:55:31,411 - #39 x
+INFO  12:55:31,411 - #12 =
+INFO  12:55:31,412 - #19 new
+INFO  12:55:31,412 - #39 int
+INFO  12:55:31,412 - #20 [
+INFO  12:55:31,412 - #38 2
+INFO  12:55:31,412 - #21 ]
+INFO  12:55:31,413 - #5 ;
+INFO  12:55:31,413 - #39 y
+INFO  12:55:31,413 - #12 =
+INFO  12:55:31,413 - #38 3
+INFO  12:55:31,413 - #5 ;
+INFO  12:55:31,414 - #9 print
+INFO  12:55:31,414 - #6 (
+INFO  12:55:31,414 - #39 y
+INFO  12:55:31,414 - #7 )
+INFO  12:55:31,414 - #5 ;
+INFO  12:55:31,414 - #39 y
+INFO  12:55:31,414 - #12 =
+INFO  12:55:31,414 - #39 x
+INFO  12:55:31,415 - #20 [
+INFO  12:55:31,415 - #38 1
+INFO  12:55:31,415 - #21 ]
+INFO  12:55:31,415 - #5 ;
+INFO  12:55:31,415 - #10 return
+INFO  12:55:31,416 - #38 0
+INFO  12:55:31,416 - #5 ;
+INFO  12:55:31,416 - #4 }
+INFO  12:55:31,416 - #4 }
+INFO  12:55:31,431 - Deklarisana promenljiva gg na liniji 2
+INFO  12:55:31,431 - Deklarisan niz x na liniji 3
+INFO  12:55:31,431 - Deklarisana promenljiva a na liniji 5
+INFO  12:55:31,431 - Deklarisana promenljiva b na liniji 6
+INFO  12:55:31,431 - Deklarisana promenljiva y na liniji 7
+INFO  12:55:31,431 - Obradjuje se funkcija main na liniji 12
+INFO  12:55:31,432 - Upotreba globalne promenljive x na liniji 13
+INFO  12:55:31,432 - Upotreba globalne promenljive y na liniji 14
+INFO  12:55:31,432 - Upotreba globalne promenljive y na liniji 15
+INFO  12:55:31,432 - Upotreba globalne promenljive y na liniji 16
+INFO  12:55:31,432 - Upotreba globalne promenljive x na liniji 16
+INFO  12:55:31,432 - Upotreba elementa niza x na liniji 16
+INFO  12:55:31,432 - Print calls = 1
+INFO  12:55:31,437 - Generating bytecode file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  12:55:31,444 - Parsiranje uspesno zavrseno!

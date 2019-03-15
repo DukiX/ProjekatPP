@@ -1,0 +1,46 @@
+INFO  11:13:39,894 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  11:13:39,924 - #2 program
+INFO  11:13:39,924 - #39 MJProgram
+INFO  11:13:39,924 - #39 int
+INFO  11:13:39,925 - #39 x
+INFO  11:13:39,925 - #8 ,
+INFO  11:13:39,926 - #39 y
+INFO  11:13:39,926 - #5 ;
+INFO  11:13:39,926 - #39 bool
+INFO  11:13:39,926 - #39 a
+INFO  11:13:39,926 - #5 ;
+INFO  11:13:39,926 - #39 char
+INFO  11:13:39,926 - #39 b
+INFO  11:13:39,926 - #5 ;
+INFO  11:13:39,926 - #3 {
+INFO  11:13:39,926 - #39 int
+INFO  11:13:39,927 - #39 main
+INFO  11:13:39,927 - #6 (
+INFO  11:13:39,927 - #7 )
+INFO  11:13:39,927 - #3 {
+INFO  11:13:39,927 - #39 b
+INFO  11:13:39,928 - #12 =
+INFO  11:13:39,931 - #39 f
+INFO  11:13:39,931 - #5 ;
+INFO  11:13:39,932 - #9 print
+INFO  11:13:39,932 - #6 (
+INFO  11:13:39,932 - #39 b
+INFO  11:13:39,932 - #7 )
+INFO  11:13:39,932 - #5 ;
+INFO  11:13:39,932 - #10 return
+INFO  11:13:39,932 - #38 0
+INFO  11:13:39,932 - #5 ;
+INFO  11:13:39,932 - #4 }
+INFO  11:13:39,933 - #4 }
+INFO  11:13:39,947 - Deklarisana promenljiva y na liniji 5
+INFO  11:13:39,947 - Deklarisana promenljiva x na liniji 2
+INFO  11:13:39,947 - Deklarisana promenljiva a na liniji 3
+INFO  11:13:39,948 - Deklarisana promenljiva b na liniji 4
+INFO  11:13:39,948 - Obradjuje se funkcija main na liniji 10
+INFO  11:13:39,948 - Upotreba globalne promenljive b na liniji 11
+ERROR 11:13:39,948 - Greska na liniji 11 : ime f nije deklarisano! 
+INFO  11:13:39,948 - Upotreba lokalne promenljive f na liniji 11
+ERROR 11:13:39,949 - Greska na liniji 11 :  nekompatibilni tipovi u dodeli vrednosti 2 0
+INFO  11:13:39,949 - Upotreba globalne promenljive b na liniji 12
+INFO  11:13:39,949 - Print calls = 1
+ERROR 11:13:39,950 - Parsiranje NIJE uspesno zavrseno!

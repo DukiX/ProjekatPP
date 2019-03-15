@@ -1,0 +1,44 @@
+INFO  11:39:09,967 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  11:39:09,997 - #2 program
+INFO  11:39:09,998 - #39 MJProgram
+INFO  11:39:09,998 - #39 int
+INFO  11:39:09,998 - #39 x
+INFO  11:39:09,999 - #8 ,
+INFO  11:39:09,999 - #39 y
+INFO  11:39:09,999 - #5 ;
+INFO  11:39:10,000 - #39 bool
+INFO  11:39:10,000 - #39 a
+INFO  11:39:10,000 - #5 ;
+INFO  11:39:10,000 - #39 char
+INFO  11:39:10,000 - #39 b
+INFO  11:39:10,000 - #5 ;
+INFO  11:39:10,000 - #3 {
+INFO  11:39:10,001 - #39 int
+INFO  11:39:10,001 - #39 main
+INFO  11:39:10,001 - #6 (
+INFO  11:39:10,001 - #7 )
+INFO  11:39:10,002 - #3 {
+INFO  11:39:10,002 - #39 a
+INFO  11:39:10,002 - #12 =
+INFO  11:39:10,005 - #38 1
+INFO  11:39:10,005 - #5 ;
+INFO  11:39:10,007 - #9 print
+INFO  11:39:10,007 - #6 (
+INFO  11:39:10,007 - #39 a
+INFO  11:39:10,007 - #7 )
+INFO  11:39:10,007 - #5 ;
+INFO  11:39:10,008 - #10 return
+INFO  11:39:10,008 - #38 0
+INFO  11:39:10,008 - #5 ;
+INFO  11:39:10,008 - #4 }
+INFO  11:39:10,008 - #4 }
+INFO  11:39:10,024 - Deklarisana promenljiva y na liniji 5
+INFO  11:39:10,024 - Deklarisana promenljiva x na liniji 2
+INFO  11:39:10,025 - Deklarisana promenljiva a na liniji 3
+INFO  11:39:10,025 - Deklarisana promenljiva b na liniji 4
+INFO  11:39:10,025 - Obradjuje se funkcija main na liniji 10
+INFO  11:39:10,025 - Upotreba globalne promenljive a na liniji 11
+ERROR 11:39:10,025 - Greska na liniji 11 :  nekompatibilni tipovi u dodeli vrednosti 5 1
+INFO  11:39:10,025 - Upotreba globalne promenljive a na liniji 12
+INFO  11:39:10,025 - Print calls = 1
+ERROR 11:39:10,026 - Parsiranje NIJE uspesno zavrseno!

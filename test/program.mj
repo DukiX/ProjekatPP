@@ -1,13 +1,20 @@
  program MJProgram
-	int x, y;
-		
+ 	int gg;
+	int x[];
+	
+	bool a;
+	char b;
+	int y;
+	int z;
 {
 
 
 	
 	int main() {
-		y = 4 % 3;
-		print(y);
+		y=9;
+		if(y==9){
+			y=3;
+		}
 		return 0;
 	}
 }

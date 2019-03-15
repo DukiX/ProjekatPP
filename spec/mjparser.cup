@@ -185,7 +185,7 @@ Matched ::=	(ErrAssignment) error SEMI
 			  |
 			  (MatchedRead) READ LPAREN Designator:d RPAREN SEMI
 			  |
-			  (PrintStmtTwo) PRINT LPAREN Expr:ex COMMA NUMBER RPAREN SEMI
+			  (PrintStmtTwo) PRINT LPAREN Expr:ex COMMA NUMBER:num RPAREN SEMI
 			  |
 			  (MatchedBraces)LBRACE Statement StatementList RBRACE
 			  |
@@ -262,9 +262,9 @@ Factor ::= (Const) NUMBER
 			|
 			(FactorExpr) LPAREN Expr RPAREN
 			|
-			(FactorBool) BoolConst
+			(FactorBool) BoolConst:bc
 			|
-			(FactorNew) NEW Type
+			(FactorNew) NEW Type:t
 			|
 			(FactorNewArr) NEW Type:t LSQUARE Expr:e RSQUARE
 			|

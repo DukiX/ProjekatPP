@@ -6,6 +6,7 @@ import rs.ac.bg.etf.pp1.ast.*;
 import rs.etf.pp1.mj.runtime.Code;
 import rs.etf.pp1.symboltable.Tab;
 import rs.etf.pp1.symboltable.concepts.Obj;
+import rs.etf.pp1.symboltable.concepts.Struct;
 
 public class CodeGenerator extends VisitorAdaptor {
 	
@@ -77,11 +78,29 @@ public class CodeGenerator extends VisitorAdaptor {
 		Code.load(new Obj(Obj.Con, "$", Const.struct, Const.getN1(), 0));
 	}
 	
+	public void visit(CharConst cc) {
+		Code.load(new Obj(Obj.Con, "$", cc.struct, cc.getC(), 0));
+	}
+	
+	public void visit(BoolTrue bt) {
+		Code.load(new Obj(Obj.Con, "$", bt.struct, 1, 0));
+	}
+
+	public void visit(BoolFalse bf) {
+		Code.load(new Obj(Obj.Con, "$", bf.struct, 0, 0));
+	}
+	
 	@Override
-	public void visit(Designator Designator) {
-		SyntaxNode parent = Designator.getParent();
+	public void visit(Designator designator) {
+		SyntaxNode parent = designator.getParent();
 		if (Assignment.class != parent.getClass() && FuncCall.class != parent.getClass()) {
-			Code.load(Designator.obj);
+			/*if(designator.obj.getKind()==Obj.Elem) {
+				
+				Code.put2(designator.obj.getAdr());
+				Code.put(Code.dup_x1);
+				Code.put(Code.pop);
+			}*/
+			Code.load(designator.obj);
 		}
 	}
 	
@@ -106,9 +125,30 @@ public class CodeGenerator extends VisitorAdaptor {
 	}
 	
 	@Override
-	public void visit(PrintStmt PrintStmt) {
-		Code.put(Code.const_5);
-		Code.put(Code.print);
+	public void visit(PrintStmt printStmt) {
+		if (printStmt.getExpr().struct == Tab.charType) {
+			Code.put(Code.const_5);
+			Code.put(Code.bprint);
+		}else if(printStmt.getExpr().struct == Tab.intType){
+			Code.put(Code.const_5);
+			Code.put(Code.print);
+		}else {//bool
+			Code.put(Code.const_5);
+			Code.put(Code.print);
+		}
+	}
+	
+	public void visit(PrintStmtTwo pst) {
+		if (pst.getExpr().struct == Tab.charType) {
+			Code.loadConst(pst.getNum());
+			Code.put(Code.bprint);
+		}else if(pst.getExpr().struct == Tab.intType){
+			Code.loadConst(pst.getNum());
+			Code.put(Code.print);
+		}else {//bool
+			Code.loadConst(pst.getNum());
+			Code.put(Code.print);
+		}
 	}
 	
 	@Override
@@ -143,6 +183,47 @@ public class CodeGenerator extends VisitorAdaptor {
 			Code.put(Code.div);
 		}else {
 			Code.put(Code.rem);
+		}
+	}
+	
+	public void visit(MatchedRead mr) {
+		if (mr.getDesignator().obj.getType() == Tab.charType) {
+			Code.put(Code.bread);
+			Code.store(mr.getDesignator().obj);
+		}else {
+			Code.put(Code.read);
+			Code.store(mr.getDesignator().obj);
+		}
+	}
+	
+	public void visit(FactorNewArr fna) {
+		Code.put(Code.newarray);
+		if(fna.getType().struct==Tab.charType) {
+			Code.put(0);
+		}else {
+			Code.put(1);
+		}
+	}
+	
+	public void visit(CndFctNotBool cnb) {
+		if(cnb.getRelop().getClass()==Releq.class) {
+			//Code.put(Code.jcc+Code.eq);
+			Code.putFalseJump(Code.eq, 0);
+		}else if(cnb.getRelop().getClass()==Relne.class) {
+			//Code.put(Code.jcc+Code.ne);
+			Code.putFalseJump(Code.ne, 0);
+		}else if(cnb.getRelop().getClass()==Relgt.class) {
+			//Code.put(Code.jcc+Code.gt);
+			Code.putFalseJump(Code.gt, 0);
+		}else if(cnb.getRelop().getClass()==Rellt.class) {
+			//Code.put(Code.jcc+Code.lt);
+			Code.putFalseJump(Code.lt, 0);
+		}else if(cnb.getRelop().getClass()==Relge.class) {
+			//Code.put(Code.jcc+Code.ge);
+			Code.putFalseJump(Code.ge, 0);
+		}else if(cnb.getRelop().getClass()==Relle.class) {
+			//Code.put(Code.jcc+Code.le);
+			Code.putFalseJump(Code.le, 0);
 		}
 	}
 }

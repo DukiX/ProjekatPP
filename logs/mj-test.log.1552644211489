@@ -1,0 +1,52 @@
+INFO  11:01:55,045 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  11:01:55,075 - #2 program
+INFO  11:01:55,075 - #39 MJProgram
+INFO  11:01:55,075 - #39 int
+INFO  11:01:55,076 - #39 x
+INFO  11:01:55,076 - #8 ,
+INFO  11:01:55,076 - #39 y
+INFO  11:01:55,076 - #5 ;
+INFO  11:01:55,077 - #39 char
+INFO  11:01:55,077 - #39 a
+INFO  11:01:55,077 - #5 ;
+INFO  11:01:55,077 - #3 {
+INFO  11:01:55,077 - #39 int
+INFO  11:01:55,078 - #39 main
+INFO  11:01:55,078 - #6 (
+INFO  11:01:55,078 - #7 )
+INFO  11:01:55,078 - #3 {
+INFO  11:01:55,078 - #39 y
+INFO  11:01:55,079 - #12 =
+INFO  11:01:55,080 - #38 5
+INFO  11:01:55,080 - #5 ;
+INFO  11:01:55,081 - #9 print
+INFO  11:01:55,083 - #6 (
+INFO  11:01:55,083 - #39 y
+INFO  11:01:55,083 - #8 ,
+INFO  11:01:55,083 - #38 5
+INFO  11:01:55,083 - #7 )
+INFO  11:01:55,083 - #5 ;
+INFO  11:01:55,083 - #39 y
+INFO  11:01:55,084 - #42 ++
+INFO  11:01:55,084 - #5 ;
+INFO  11:01:55,084 - #9 print
+INFO  11:01:55,084 - #6 (
+INFO  11:01:55,084 - #39 y
+INFO  11:01:55,084 - #7 )
+INFO  11:01:55,084 - #5 ;
+INFO  11:01:55,084 - #10 return
+INFO  11:01:55,084 - #38 0
+INFO  11:01:55,084 - #5 ;
+INFO  11:01:55,084 - #4 }
+INFO  11:01:55,084 - #4 }
+INFO  11:01:55,100 - Deklarisana promenljiva y na liniji 5
+INFO  11:01:55,101 - Deklarisana promenljiva x na liniji 2
+INFO  11:01:55,101 - Deklarisana promenljiva a na liniji 3
+INFO  11:01:55,101 - Obradjuje se funkcija main na liniji 9
+INFO  11:01:55,101 - Upotreba globalne promenljive y na liniji 10
+INFO  11:01:55,101 - Upotreba globalne promenljive y na liniji 11
+INFO  11:01:55,101 - Upotreba globalne promenljive y na liniji 12
+INFO  11:01:55,101 - Upotreba globalne promenljive y na liniji 13
+INFO  11:01:55,101 - Print calls = 2
+INFO  11:01:55,102 - Generating bytecode file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  11:01:55,106 - Parsiranje uspesno zavrseno!

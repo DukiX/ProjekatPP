@@ -1,0 +1,54 @@
+INFO  12:23:55,050 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  12:23:55,081 - #2 program
+INFO  12:23:55,081 - #39 MJProgram
+INFO  12:23:55,081 - #39 int
+INFO  12:23:55,082 - #39 x
+INFO  12:23:55,082 - #20 [
+INFO  12:23:55,082 - #21 ]
+INFO  12:23:55,082 - #5 ;
+INFO  12:23:55,082 - #39 int
+INFO  12:23:55,083 - #39 y
+INFO  12:23:55,083 - #5 ;
+INFO  12:23:55,083 - #39 bool
+INFO  12:23:55,083 - #39 a
+INFO  12:23:55,083 - #5 ;
+INFO  12:23:55,083 - #39 char
+INFO  12:23:55,083 - #39 b
+INFO  12:23:55,084 - #5 ;
+INFO  12:23:55,084 - #3 {
+INFO  12:23:55,084 - #39 int
+INFO  12:23:55,084 - #39 main
+INFO  12:23:55,084 - #6 (
+INFO  12:23:55,084 - #7 )
+INFO  12:23:55,087 - #3 {
+INFO  12:23:55,087 - #39 x
+INFO  12:23:55,088 - #12 =
+INFO  12:23:55,089 - #19 new
+INFO  12:23:55,089 - #39 int
+INFO  12:23:55,089 - #20 [
+INFO  12:23:55,089 - #38 2
+INFO  12:23:55,089 - #21 ]
+INFO  12:23:55,090 - #5 ;
+INFO  12:23:55,090 - #39 y
+INFO  12:23:55,090 - #12 =
+INFO  12:23:55,090 - #39 x
+INFO  12:23:55,090 - #20 [
+INFO  12:23:55,090 - #38 0
+INFO  12:23:55,090 - #21 ]
+INFO  12:23:55,090 - #5 ;
+INFO  12:23:55,091 - #10 return
+INFO  12:23:55,091 - #38 0
+INFO  12:23:55,091 - #5 ;
+INFO  12:23:55,091 - #4 }
+INFO  12:23:55,091 - #4 }
+INFO  12:23:55,106 - Deklarisan niz x na liniji 2
+INFO  12:23:55,106 - Deklarisana promenljiva y na liniji 3
+INFO  12:23:55,106 - Deklarisana promenljiva a na liniji 4
+INFO  12:23:55,106 - Deklarisana promenljiva b na liniji 5
+INFO  12:23:55,106 - Obradjuje se funkcija main na liniji 11
+INFO  12:23:55,107 - Upotreba globalne promenljive x na liniji 12
+INFO  12:23:55,107 - Upotreba globalne promenljive y na liniji 13
+INFO  12:23:55,107 - Upotreba globalne promenljive x na liniji 13
+INFO  12:23:55,107 - Upotreba elementa niza x na liniji 13
+INFO  12:23:55,107 - Print calls = 0
+INFO  12:23:55,107 - Generating bytecode file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.obj

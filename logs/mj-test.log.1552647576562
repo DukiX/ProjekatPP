@@ -1,0 +1,50 @@
+INFO  11:59:07,350 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  11:59:07,379 - #2 program
+INFO  11:59:07,379 - #39 MJProgram
+INFO  11:59:07,379 - #39 int
+INFO  11:59:07,380 - #39 x
+INFO  11:59:07,380 - #20 [
+INFO  11:59:07,381 - #21 ]
+INFO  11:59:07,381 - #5 ;
+INFO  11:59:07,381 - #39 bool
+INFO  11:59:07,381 - #39 a
+INFO  11:59:07,381 - #5 ;
+INFO  11:59:07,381 - #39 char
+INFO  11:59:07,381 - #39 b
+INFO  11:59:07,381 - #5 ;
+INFO  11:59:07,382 - #3 {
+INFO  11:59:07,382 - #39 int
+INFO  11:59:07,382 - #39 main
+INFO  11:59:07,382 - #6 (
+INFO  11:59:07,382 - #7 )
+INFO  11:59:07,383 - #3 {
+INFO  11:59:07,383 - #39 x
+INFO  11:59:07,384 - #12 =
+INFO  11:59:07,385 - #19 new
+INFO  11:59:07,385 - #39 int
+INFO  11:59:07,385 - #20 [
+INFO  11:59:07,385 - #38 2
+INFO  11:59:07,385 - #21 ]
+INFO  11:59:07,386 - #5 ;
+INFO  11:59:07,386 - #39 x
+INFO  11:59:07,386 - #20 [
+INFO  11:59:07,386 - #38 0
+INFO  11:59:07,386 - #21 ]
+INFO  11:59:07,387 - #12 =
+INFO  11:59:07,387 - #38 3
+INFO  11:59:07,387 - #5 ;
+INFO  11:59:07,387 - #10 return
+INFO  11:59:07,387 - #38 0
+INFO  11:59:07,387 - #5 ;
+INFO  11:59:07,387 - #4 }
+INFO  11:59:07,387 - #4 }
+INFO  11:59:07,403 - Deklarisan niz x na liniji 2
+INFO  11:59:07,403 - Deklarisana promenljiva a na liniji 3
+INFO  11:59:07,403 - Deklarisana promenljiva b na liniji 4
+INFO  11:59:07,403 - Obradjuje se funkcija main na liniji 10
+INFO  11:59:07,404 - Upotreba globalne promenljive x na liniji 11
+INFO  11:59:07,404 - Upotreba globalne promenljive x na liniji 12
+INFO  11:59:07,405 - Upotreba elementa niza x na liniji 12
+INFO  11:59:07,405 - Print calls = 0
+INFO  11:59:07,405 - Generating bytecode file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  11:59:07,409 - Parsiranje uspesno zavrseno!

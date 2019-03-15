@@ -1,0 +1,55 @@
+INFO  12:00:25,545 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  12:00:25,575 - #2 program
+INFO  12:00:25,575 - #39 MJProgram
+INFO  12:00:25,575 - #39 char
+INFO  12:00:25,576 - #39 x
+INFO  12:00:25,576 - #20 [
+INFO  12:00:25,577 - #21 ]
+INFO  12:00:25,577 - #5 ;
+INFO  12:00:25,577 - #39 int
+INFO  12:00:25,577 - #39 y
+INFO  12:00:25,577 - #5 ;
+INFO  12:00:25,577 - #39 bool
+INFO  12:00:25,577 - #39 a
+INFO  12:00:25,578 - #5 ;
+INFO  12:00:25,578 - #39 char
+INFO  12:00:25,578 - #39 b
+INFO  12:00:25,578 - #5 ;
+INFO  12:00:25,578 - #3 {
+INFO  12:00:25,578 - #39 int
+INFO  12:00:25,579 - #39 main
+INFO  12:00:25,579 - #6 (
+INFO  12:00:25,579 - #7 )
+INFO  12:00:25,590 - #3 {
+INFO  12:00:25,590 - #39 x
+INFO  12:00:25,591 - #12 =
+INFO  12:00:25,592 - #19 new
+INFO  12:00:25,592 - #39 char
+INFO  12:00:25,592 - #20 [
+INFO  12:00:25,592 - #38 2
+INFO  12:00:25,592 - #21 ]
+INFO  12:00:25,593 - #5 ;
+INFO  12:00:25,593 - #39 b
+INFO  12:00:25,593 - #12 =
+INFO  12:00:25,593 - #39 x
+INFO  12:00:25,593 - #20 [
+INFO  12:00:25,593 - #38 0
+INFO  12:00:25,593 - #21 ]
+INFO  12:00:25,593 - #5 ;
+INFO  12:00:25,593 - #10 return
+INFO  12:00:25,593 - #38 0
+INFO  12:00:25,593 - #5 ;
+INFO  12:00:25,593 - #4 }
+INFO  12:00:25,594 - #4 }
+INFO  12:00:25,601 - Deklarisan niz x na liniji 2
+INFO  12:00:25,601 - Deklarisana promenljiva y na liniji 3
+INFO  12:00:25,601 - Deklarisana promenljiva a na liniji 4
+INFO  12:00:25,601 - Deklarisana promenljiva b na liniji 5
+INFO  12:00:25,601 - Obradjuje se funkcija main na liniji 11
+INFO  12:00:25,602 - Upotreba globalne promenljive x na liniji 12
+INFO  12:00:25,602 - Upotreba globalne promenljive b na liniji 13
+INFO  12:00:25,602 - Upotreba globalne promenljive x na liniji 13
+INFO  12:00:25,602 - Upotreba elementa niza x na liniji 13
+INFO  12:00:25,602 - Print calls = 0
+INFO  12:00:25,603 - Generating bytecode file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  12:00:25,607 - Parsiranje uspesno zavrseno!

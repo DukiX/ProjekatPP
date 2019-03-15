@@ -1,0 +1,44 @@
+INFO  11:12:36,202 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  11:12:36,230 - #2 program
+INFO  11:12:36,231 - #39 MJProgram
+INFO  11:12:36,231 - #39 int
+INFO  11:12:36,231 - #39 x
+INFO  11:12:36,232 - #8 ,
+INFO  11:12:36,232 - #39 y
+INFO  11:12:36,232 - #5 ;
+INFO  11:12:36,232 - #39 bool
+INFO  11:12:36,232 - #39 a
+INFO  11:12:36,233 - #5 ;
+INFO  11:12:36,233 - #39 char
+INFO  11:12:36,233 - #39 b
+INFO  11:12:36,233 - #5 ;
+INFO  11:12:36,233 - #3 {
+INFO  11:12:36,233 - #39 int
+INFO  11:12:36,233 - #39 main
+INFO  11:12:36,233 - #6 (
+INFO  11:12:36,233 - #7 )
+INFO  11:12:36,234 - #3 {
+INFO  11:12:36,234 - #39 b
+INFO  11:12:36,234 - #12 =
+INFO  11:12:36,235 - #44 f
+INFO  11:12:36,235 - #5 ;
+INFO  11:12:36,236 - #9 print
+INFO  11:12:36,237 - #6 (
+INFO  11:12:36,237 - #39 b
+INFO  11:12:36,237 - #7 )
+INFO  11:12:36,237 - #5 ;
+INFO  11:12:36,237 - #10 return
+INFO  11:12:36,237 - #38 0
+INFO  11:12:36,237 - #5 ;
+INFO  11:12:36,237 - #4 }
+INFO  11:12:36,237 - #4 }
+INFO  11:12:36,251 - Deklarisana promenljiva y na liniji 5
+INFO  11:12:36,252 - Deklarisana promenljiva x na liniji 2
+INFO  11:12:36,252 - Deklarisana promenljiva a na liniji 3
+INFO  11:12:36,252 - Deklarisana promenljiva b na liniji 4
+INFO  11:12:36,252 - Obradjuje se funkcija main na liniji 10
+INFO  11:12:36,252 - Upotreba globalne promenljive b na liniji 11
+INFO  11:12:36,252 - Upotreba globalne promenljive b na liniji 12
+INFO  11:12:36,252 - Print calls = 1
+INFO  11:12:36,253 - Generating bytecode file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  11:12:36,258 - Parsiranje uspesno zavrseno!

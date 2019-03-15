@@ -463,7 +463,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		}
 		if (desopt == 2) {
 			if (obj.getType().getKind() == Struct.Array) {
-				designator.obj = new Obj(Obj.Elem, obj.getName(), obj.getType().getElemType()); // IME ELEMENTA NIZA
+				designator.obj = new Obj(Obj.Elem, "", obj.getType().getElemType(),obj.getAdr(),obj.getLevel()); // IME ELEMENTA NIZA I DRUGA 2 ARGUMENTA!!
 				report_info("Upotreba elementa niza " + obj.getName() + " na liniji " + designator.getLine(), null);
 			} else {
 				report_error("Ime " + obj.getName() + " nije tip niz na liniji " + designator.getLine(), null);
