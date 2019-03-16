@@ -406,6 +406,12 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		fna.struct = new Struct(Struct.Array, fna.getType().struct);
 	}
 
+	public void visit(CndFct cf) {
+		if (cf.getExpr().struct != boolType) {
+			report_error("Samostalan uslov mora biti bool " + cf.getLine(), null);
+		}
+	}
+	
 	public void visit(CndFctNotBool cfnb) {
 		if (!cfnb.getExpr().struct.compatibleWith(cfnb.getExpr1().struct))
 			report_error("Nekompatibilni tipovi u iskazu na liniji" + cfnb.getLine(), null);

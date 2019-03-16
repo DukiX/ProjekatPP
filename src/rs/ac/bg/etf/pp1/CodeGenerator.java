@@ -1,5 +1,7 @@
 package rs.ac.bg.etf.pp1;
 
+import java.util.LinkedList;
+
 import rs.ac.bg.etf.pp1.CounterVisitor.FormParamCounter;
 import rs.ac.bg.etf.pp1.CounterVisitor.VarCounter;
 import rs.ac.bg.etf.pp1.ast.*;
@@ -243,9 +245,19 @@ public class CodeGenerator extends VisitorAdaptor {
 		}
 	}
 
-	int adresa1;
+	//int adresa1;
 	int adresa2;
+	
+	private LinkedList<LinkedList<Integer>> listaListiAdresaElse = new LinkedList<>();
+	
+	private LinkedList<LinkedList<Integer>> listaListiAdresaPocIf = new LinkedList<>();
 
+	public void visit(Ifif ifif) {
+		listaListiAdresaElse.add(new LinkedList<>());
+		
+		listaListiAdresaPocIf.add(new LinkedList<>());
+	} 
+	
 	public void visit(CndFctNotBool cnb) {
 		if (cnb.getRelop().getClass() == Releq.class) {
 			// Code.put(Code.jcc+Code.eq);
@@ -266,22 +278,44 @@ public class CodeGenerator extends VisitorAdaptor {
 			// Code.put(Code.jcc+Code.le);
 			Code.putFalseJump(Code.le, 0);
 		}
-		adresa1 = Code.pc - 2;
+		//adresa1 = Code.pc - 2;
+		listaListiAdresaElse.peekLast().add(new Integer(Code.pc - 2));
 	}
 	
-
 	public void visit(Endif e) {
-		Code.fixup(adresa1);
+		//Code.fixup(adresa1);
+		LinkedList<Integer> lst = listaListiAdresaElse.removeLast();
+		for(Integer i:lst) {
+			Code.fixup(i);
+		}
+	}
+	
+	public void visit(Begif b) {
+		LinkedList<Integer> lst = listaListiAdresaPocIf.removeLast();
+		for(Integer i:lst) {
+			Code.fixup(i);
+		}
 	}
 	
 	public void visit(Begelse e) {
 		Code.putJump(0);
-		Code.fixup(adresa1);
+		//Code.fixup(adresa1);
+		
+		LinkedList<Integer> lst = listaListiAdresaElse.removeLast();
+		for(Integer i:lst) {
+			Code.fixup(i);
+		}
+		
 		adresa2 = Code.pc - 2;
 	}
 	
 	public void visit(Endelse e) {
 		Code.fixup(adresa2);
+	}
+	
+	public void visit(CondT t) {
+		Code.putJump(0);
+		listaListiAdresaPocIf.peekLast().add(new Integer(Code.pc - 2));
 	}
 
 }

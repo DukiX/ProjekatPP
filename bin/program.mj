@@ -23,8 +23,16 @@
 		print(gg);
 		y=5;
 		
-		if(y!=5){
+		if(y==5 && x[3]==4){
 			print(3);
+			if(gg!=25){
+				print(2);
+			}else{
+				print(1);
+				if(y==5){
+					print(100);
+				}
+			}
 		}else{
 			print(4);
 		}

@@ -93,6 +93,8 @@ nonterminal EnumList EnumList;
 nonterminal Endif Endif;
 nonterminal Begelse Begelse;
 nonterminal Endelse Endelse;
+nonterminal Ifif Ifif;
+nonterminal Begif Begif;
 
 Program ::= (Program) PROG ProgName:p VarDeclList:V1 LBRACE MethodDeclList:M2 RBRACE {: RESULT=new Program(p, V1, M2); RESULT.setLine(pleft); :} 
 ;
@@ -182,7 +184,7 @@ StatementList ::= (Statements) StatementList:S1 Statement:S2 {: RESULT=new State
 
 Statement ::= (MatchedStmt) Matched:M1 {: RESULT=new MatchedStmt(M1); RESULT.setLine(M1left); :} | (UnmachedStmt) Unmatched:U1 {: RESULT=new UnmachedStmt(U1); RESULT.setLine(U1left); :};
 
-Unmatched ::= (UnmatchedIf) IF LPAREN Condition:C1 RPAREN Statement:S2 Endif:E3 {: RESULT=new UnmatchedIf(C1, S2, E3); RESULT.setLine(C1left); :} | (UnmatchedIfElse) IF LPAREN Condition:C1 RPAREN Matched:M2 ELSE Unmatched:U3 Endelse:E4 {: RESULT=new UnmatchedIfElse(C1, M2, U3, E4); RESULT.setLine(C1left); :};
+Unmatched ::= (UnmatchedIf) Ifif:I1 LPAREN Condition:C2 RPAREN Begif:B3 Statement:S4 Endif:E5 {: RESULT=new UnmatchedIf(I1, C2, B3, S4, E5); RESULT.setLine(I1left); :} | (UnmatchedIfElse) Ifif:I1 LPAREN Condition:C2 RPAREN Begif:B3 Matched:M4 ELSE Begelse:B5 Unmatched:U6 Endelse:E7 {: RESULT=new UnmatchedIfElse(I1, C2, B3, M4, B5, U6, E7); RESULT.setLine(I1left); :};
 
 Endif ::= (Endif) {: RESULT=new Endif(); :} /* epsilon */;
 	
@@ -196,7 +198,7 @@ Matched ::=	(ErrAssignment) error SEMI
 			  |
 			  (ReturnNoExpr) RETURN SEMI {: RESULT=new ReturnNoExpr(); :}
 			  | 
-			  (MatchedIf) IF LPAREN Condition:C1 RPAREN Matched:M2 ELSE Matched:M3 Endelse:E4 {: RESULT=new MatchedIf(C1, M2, M3, E4); RESULT.setLine(C1left); :}
+			  (MatchedIf) Ifif:I1 LPAREN Condition:C2 RPAREN Begif:B3 Matched:M4 ELSE Begelse:B5 Matched:M6 Endelse:E7 {: RESULT=new MatchedIf(I1, C2, B3, M4, B5, M6, E7); RESULT.setLine(I1left); :}
 			  |
 			  (MatchedDesignatorStatement) DesignatorStatement:D1 SEMI {: RESULT=new MatchedDesignatorStatement(D1); RESULT.setLine(D1left); :}	
 			  |
@@ -213,6 +215,10 @@ Matched ::=	(ErrAssignment) error SEMI
 			  (MatchedFor) For:F1 LPAREN ForDesignator:F2 SEMI ForCondition:F3 SEMI ForDesignator:F4 RPAREN Matched:M5 {: RESULT=new MatchedFor(F1, F2, F3, F4, M5); RESULT.setLine(F1left); :}
 			  ;
 			  
+Ifif ::= (Ifif) IF {: RESULT=new Ifif(); :};
+
+Begif ::= (Begif) {: RESULT=new Begif(); :} /* epsilon */;
+
 Begelse ::= (Begelse) {: RESULT=new Begelse(); :} /* epsilon */;
 
 Endelse ::= (Endelse) {: RESULT=new Endelse(); :} /* epsilon */;
@@ -243,7 +249,7 @@ CondTermList ::= (CondTerms) CondTermList:C1 OR CondTerm:C2 {: RESULT=new CondTe
 CondTerm ::= (CondT) CondFact:C1 CondFactList:C2 {: RESULT=new CondT(C1, C2); RESULT.setLine(C1left); :}
 				;
 				
-CondFactList ::= (CondFacts) CondFactList:C1 AND CondFact:C2 {: RESULT=new CondFacts(C1, C2); RESULT.setLine(C1left); :}
+CondFactList ::= (CondFacts) CondFactList:C1 AND CondFact:cf {: RESULT=new CondFacts(C1, cf); RESULT.setLine(C1left); :}
 				| {: RESULT=new CondFactListDerived1(); :}
 				/*epsilon*/
 				;

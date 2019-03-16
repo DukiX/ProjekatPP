@@ -81,6 +81,8 @@ nonterminal EnumList;
 nonterminal Endif;
 nonterminal Begelse;
 nonterminal Endelse;
+nonterminal Ifif;
+nonterminal Begif;
 
 Program ::= (Program) PROG ProgName:p VarDeclList LBRACE MethodDeclList RBRACE 
 ;
@@ -170,7 +172,7 @@ StatementList ::= (Statements) StatementList Statement
 
 Statement ::= (MatchedStmt) Matched | (UnmachedStmt) Unmatched;
 
-Unmatched ::= (UnmatchedIf) IF LPAREN Condition RPAREN Statement Endif | (UnmatchedIfElse) IF LPAREN Condition RPAREN Matched ELSE Begelse Unmatched Endelse;
+Unmatched ::= (UnmatchedIf) Ifif LPAREN Condition RPAREN Begif Statement Endif | (UnmatchedIfElse) Ifif LPAREN Condition RPAREN Begif Matched ELSE Begelse Unmatched Endelse;
 
 Endif ::= (Endif) /* epsilon */;
 	
@@ -184,7 +186,7 @@ Matched ::=	(ErrAssignment) error SEMI
 			  |
 			  (ReturnNoExpr) RETURN SEMI
 			  | 
-			  (MatchedIf) IF LPAREN Condition RPAREN Matched ELSE Begelse Matched Endelse
+			  (MatchedIf) Ifif LPAREN Condition RPAREN Begif Matched ELSE Begelse Matched Endelse
 			  |
 			  (MatchedDesignatorStatement) DesignatorStatement SEMI	
 			  |
@@ -201,6 +203,10 @@ Matched ::=	(ErrAssignment) error SEMI
 			  (MatchedFor) For LPAREN ForDesignator SEMI ForCondition SEMI ForDesignator RPAREN Matched
 			  ;
 			  
+Ifif ::= (Ifif) IF;
+
+Begif ::= (Begif) /* epsilon */;
+
 Begelse ::= (Begelse) /* epsilon */;
 
 Endelse ::= (Endelse) /* epsilon */;
@@ -231,7 +237,7 @@ CondTermList ::= (CondTerms) CondTermList OR CondTerm
 CondTerm ::= (CondT) CondFact CondFactList
 				;
 				
-CondFactList ::= (CondFacts) CondFactList AND CondFact
+CondFactList ::= (CondFacts) CondFactList AND CondFact:cf
 				|
 				/*epsilon*/
 				;
