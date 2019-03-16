@@ -83,6 +83,7 @@ nonterminal Begelse;
 nonterminal Endelse;
 nonterminal Ifif;
 nonterminal Begif;
+nonterminal Andbegadr;
 
 Program ::= (Program) PROG ProgName:p VarDeclList LBRACE MethodDeclList RBRACE 
 ;
@@ -229,11 +230,13 @@ Condition ::= (Condit) CondTerm CondTermList
 				{: parser.log.debug("Uspesan oporavak od if greske."); :}
 				;
 
-CondTermList ::= (CondTerms) CondTermList OR CondTerm
+CondTermList ::= (CondTerms) CondTermList OR Andbegadr CondTerm
 				|
 				/*epsilon*/
 				;
-				
+
+Andbegadr ::= (Andbegadr) /* epsilon */;
+
 CondTerm ::= (CondT) CondFact CondFactList
 				;
 				

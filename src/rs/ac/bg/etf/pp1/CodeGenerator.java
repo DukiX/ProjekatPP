@@ -89,8 +89,7 @@ public class CodeGenerator extends VisitorAdaptor {
 			Code.put(Code.dup_x2);
 			Code.put(Code.pop);
 		}
-		
-		
+
 		Code.store(assignment.getDesignator().obj);
 	}
 
@@ -245,19 +244,19 @@ public class CodeGenerator extends VisitorAdaptor {
 		}
 	}
 
-	//int adresa1;
+	// int adresa1;
 	int adresa2;
-	
+
 	private LinkedList<LinkedList<Integer>> listaListiAdresaElse = new LinkedList<>();
-	
+
 	private LinkedList<LinkedList<Integer>> listaListiAdresaPocIf = new LinkedList<>();
 
 	public void visit(Ifif ifif) {
 		listaListiAdresaElse.add(new LinkedList<>());
-		
+
 		listaListiAdresaPocIf.add(new LinkedList<>());
-	} 
-	
+	}
+
 	public void visit(CndFctNotBool cnb) {
 		if (cnb.getRelop().getClass() == Releq.class) {
 			// Code.put(Code.jcc+Code.eq);
@@ -278,41 +277,52 @@ public class CodeGenerator extends VisitorAdaptor {
 			// Code.put(Code.jcc+Code.le);
 			Code.putFalseJump(Code.le, 0);
 		}
-		//adresa1 = Code.pc - 2;
+		// adresa1 = Code.pc - 2;
 		listaListiAdresaElse.peekLast().add(new Integer(Code.pc - 2));
 	}
-	
+
 	public void visit(Endif e) {
-		//Code.fixup(adresa1);
+		// Code.fixup(adresa1);
 		LinkedList<Integer> lst = listaListiAdresaElse.removeLast();
-		for(Integer i:lst) {
+		for (Integer i : lst) {
 			Code.fixup(i);
 		}
 	}
-	
+
 	public void visit(Begif b) {
 		LinkedList<Integer> lst = listaListiAdresaPocIf.removeLast();
-		for(Integer i:lst) {
+		for (Integer i : lst) {
 			Code.fixup(i);
 		}
 	}
-	
+
 	public void visit(Begelse e) {
 		Code.putJump(0);
-		//Code.fixup(adresa1);
-		
+		// Code.fixup(adresa1);
+
 		LinkedList<Integer> lst = listaListiAdresaElse.removeLast();
-		for(Integer i:lst) {
+		for (Integer i : lst) {
 			Code.fixup(i);
 		}
-		
+
 		adresa2 = Code.pc - 2;
 	}
-	
+
+	public void visit(Andbegadr e) {
+		// Code.fixup(adresa1);
+		LinkedList<Integer> lst = listaListiAdresaElse.peekLast();
+		if (lst != null) {
+			for (Integer i : lst) {
+				Code.fixup(i);
+			}
+			lst.clear();
+		}
+	}
+
 	public void visit(Endelse e) {
 		Code.fixup(adresa2);
 	}
-	
+
 	public void visit(CondT t) {
 		Code.putJump(0);
 		listaListiAdresaPocIf.peekLast().add(new Integer(Code.pc - 2));

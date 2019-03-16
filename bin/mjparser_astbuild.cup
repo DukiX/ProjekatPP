@@ -95,6 +95,7 @@ nonterminal Begelse Begelse;
 nonterminal Endelse Endelse;
 nonterminal Ifif Ifif;
 nonterminal Begif Begif;
+nonterminal Andbegadr Andbegadr;
 
 Program ::= (Program) PROG ProgName:p VarDeclList:V1 LBRACE MethodDeclList:M2 RBRACE {: RESULT=new Program(p, V1, M2); RESULT.setLine(pleft); :} 
 ;
@@ -241,11 +242,13 @@ Condition ::= (Condit) CondTerm:C1 CondTermList:C2 {: RESULT=new Condit(C1, C2);
 				{: parser.log.debug("Uspesan oporavak od if greske."); :} {: RESULT=new ConditError(); :}
 				;
 
-CondTermList ::= (CondTerms) CondTermList:C1 OR CondTerm:C2 {: RESULT=new CondTerms(C1, C2); RESULT.setLine(C1left); :}
+CondTermList ::= (CondTerms) CondTermList:C1 OR Andbegadr:A2 CondTerm:C3 {: RESULT=new CondTerms(C1, A2, C3); RESULT.setLine(C1left); :}
 				| {: RESULT=new CondTermListDerived1(); :}
 				/*epsilon*/
 				;
-				
+
+Andbegadr ::= (Andbegadr) {: RESULT=new Andbegadr(); :} /* epsilon */;
+
 CondTerm ::= (CondT) CondFact:C1 CondFactList:C2 {: RESULT=new CondT(C1, C2); RESULT.setLine(C1left); :}
 				;
 				
