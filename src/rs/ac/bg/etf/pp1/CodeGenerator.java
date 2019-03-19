@@ -327,5 +327,42 @@ public class CodeGenerator extends VisitorAdaptor {
 		Code.putJump(0);
 		listaListiAdresaPocIf.peekLast().add(new Integer(Code.pc - 2));
 	}
+	
+	private LinkedList<Integer> listaForPocetnihAdr = new LinkedList<>();
+	
+	public void visit(ForFor f) {
+		listaListiAdresaElse.add(new LinkedList<>());
 
+		listaListiAdresaPocIf.add(new LinkedList<>());
+		
+	}
+	
+	public void visit(Begfor b) {
+		LinkedList<Integer> lst = listaListiAdresaPocIf.removeLast();
+		for (Integer i : lst) {
+			Code.fixup(i);
+		}
+	}
+	
+	public void visit(Beginc b) {
+		listaForPocetnihAdr.add(Code.pc);
+	}
+	
+	private LinkedList<Integer> listaAdresaZaInc = new LinkedList<>();
+	
+	public void visit(BegForCond e) {
+		listaAdresaZaInc.add(Code.pc);
+	}
+	
+	public void visit(Endinc e) {
+		Code.putJump(listaAdresaZaInc.removeLast());
+	}
+	
+	public void visit(Endfor e) {
+		Code.putJump(listaForPocetnihAdr.removeLast());
+		LinkedList<Integer> lst = listaListiAdresaElse.removeLast();
+		for (Integer i : lst) {
+			Code.fixup(i);
+		}
+	}
 }

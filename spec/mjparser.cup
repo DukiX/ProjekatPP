@@ -84,6 +84,11 @@ nonterminal Endelse;
 nonterminal Ifif;
 nonterminal Begif;
 nonterminal Andbegadr;
+nonterminal Begfor;
+nonterminal Endfor;
+nonterminal Beginc;
+nonterminal Endinc;
+nonterminal BegForCond;
 
 Program ::= (Program) PROG ProgName:p VarDeclList LBRACE MethodDeclList RBRACE 
 ;
@@ -201,12 +206,22 @@ Matched ::=	(ErrAssignment) error SEMI
 			  |
 			  (MatchedBreak) BREAK SEMI
 			  |
-			  (MatchedFor) For LPAREN ForDesignator SEMI ForCondition SEMI ForDesignator RPAREN Matched
+			  (MatchedFor) For LPAREN ForDesignator SEMI BegForCond ForCondition SEMI Beginc ForDesignator Endinc RPAREN Begfor Matched Endfor
 			  ;
 			  
 Ifif ::= (Ifif) IF;
 
 Begif ::= (Begif) /* epsilon */;
+
+Beginc ::= (Beginc) /* epsilon */;
+
+BegForCond ::= (BegForCond) /* epsilon */;
+
+Endinc ::= (Endinc) /* epsilon */;
+
+Begfor ::= (Begfor) /* epsilon */;
+
+Endfor ::= (Endfor) /* epsilon */;
 
 Begelse ::= (Begelse) /* epsilon */;
 

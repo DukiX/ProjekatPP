@@ -1,0 +1,74 @@
+INFO  20:10:57,564 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  20:10:57,595 - #2 program
+INFO  20:10:57,595 - #39 MJProgram
+INFO  20:10:57,595 - #39 int
+INFO  20:10:57,596 - #39 x
+INFO  20:10:57,596 - #8 ,
+INFO  20:10:57,597 - #39 y
+INFO  20:10:57,597 - #8 ,
+INFO  20:10:57,597 - #39 z
+INFO  20:10:57,597 - #8 ,
+INFO  20:10:57,597 - #39 k
+INFO  20:10:57,597 - #8 ,
+INFO  20:10:57,597 - #39 i
+INFO  20:10:57,597 - #5 ;
+INFO  20:10:57,597 - #3 {
+INFO  20:10:57,598 - #39 int
+INFO  20:10:57,598 - #39 main
+INFO  20:10:57,598 - #6 (
+INFO  20:10:57,598 - #7 )
+INFO  20:10:57,599 - #3 {
+INFO  20:10:57,599 - #39 x
+INFO  20:10:57,599 - #12 =
+INFO  20:10:57,600 - #38 6
+INFO  20:10:57,601 - #23 for
+ERROR 20:10:57,602 - 
+Sintaksna greska na liniji 9
+INFO  20:10:57,602 - #6 (
+INFO  20:10:57,602 - #39 i
+INFO  20:10:57,602 - #12 =
+INFO  20:10:57,602 - #38 0
+INFO  20:10:57,602 - #5 ;
+INFO  20:10:57,602 - #39 i
+INFO  20:10:57,602 - #35 <
+INFO  20:10:57,603 - #38 5
+INFO  20:10:57,603 - #26 &&
+INFO  20:10:57,603 - #39 x
+INFO  20:10:57,603 - #35 <
+INFO  20:10:57,603 - #38 10
+INFO  20:10:57,603 - #5 ;
+INFO  20:10:57,603 - #39 i
+INFO  20:10:57,603 - #42 ++
+INFO  20:10:57,603 - #7 )
+DEBUG 20:10:57,603 - Uspesan oporavak od greske pri dodeli vrednosti.
+ERROR 20:10:57,604 - 
+Sintaksna greska na liniji 9
+INFO  20:10:57,604 - #3 {
+INFO  20:10:57,604 - #9 print
+INFO  20:10:57,604 - #6 (
+INFO  20:10:57,604 - #39 x
+INFO  20:10:57,604 - #7 )
+INFO  20:10:57,604 - #5 ;
+INFO  20:10:57,604 - #39 x
+INFO  20:10:57,604 - #42 ++
+INFO  20:10:57,604 - #5 ;
+DEBUG 20:10:57,604 - Uspesan oporavak od greske pri dodeli vrednosti.
+INFO  20:10:57,604 - #4 }
+INFO  20:10:57,604 - #10 return
+ERROR 20:10:57,605 - 
+Sintaksna greska na liniji 14
+INFO  20:10:57,605 - #38 0
+INFO  20:10:57,605 - #5 ;
+INFO  20:10:57,605 - #4 }
+INFO  20:10:57,605 - #4 }
+DEBUG 20:10:57,605 - Uspesan oporavak od greske pri dodeli vrednosti.
+INFO  20:10:57,620 - Deklarisana promenljiva y na liniji 6
+INFO  20:10:57,621 - Deklarisana promenljiva z na liniji 6
+INFO  20:10:57,621 - Deklarisana promenljiva k na liniji 6
+INFO  20:10:57,621 - Deklarisana promenljiva i na liniji 6
+INFO  20:10:57,621 - Deklarisana promenljiva x na liniji 2
+INFO  20:10:57,621 - Obradjuje se funkcija main na liniji 7
+INFO  20:10:57,621 - Upotreba globalne promenljive x na liniji 11
+ERROR 20:10:57,621 - Semanticka greska na liniji 7: funcija main nema return iskaz!
+INFO  20:10:57,621 - Print calls = 0
+ERROR 20:10:57,622 - Parsiranje NIJE uspesno zavrseno!

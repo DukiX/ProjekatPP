@@ -1,23 +1,18 @@
  program MJProgram
- 	int x,y,z,k;
+ 	int x,y,z,k,i,j;
 {
 
 
 	
 	int main() {
-		
-		x=1;
-		y=2;
-		z=3;
-		k=4;
-		
-		if(x<0 && y==2 || z==3 && k>2){
-			print(15);
-			if(k==4){
-				print(1360);
+		x=6;
+		for(i = 0; i < 5 && x<10; i++){
+			if(i % 2 == 0){
+				for(j=0;j<3;j++){
+					print(1000+j+x);
+				}	
 			}
-		}else{
-			print(3153);
+			x++;
 		}
 		
 		return 0;

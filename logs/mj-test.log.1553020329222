@@ -1,0 +1,68 @@
+INFO  19:31:54,284 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  19:31:54,317 - #2 program
+INFO  19:31:54,317 - #39 MJProgram
+INFO  19:31:54,317 - #39 int
+INFO  19:31:54,318 - #39 x
+INFO  19:31:54,319 - #8 ,
+INFO  19:31:54,319 - #39 y
+INFO  19:31:54,319 - #8 ,
+INFO  19:31:54,319 - #39 z
+INFO  19:31:54,319 - #8 ,
+INFO  19:31:54,319 - #39 k
+INFO  19:31:54,319 - #5 ;
+INFO  19:31:54,319 - #3 {
+INFO  19:31:54,320 - #39 int
+INFO  19:31:54,320 - #39 main
+INFO  19:31:54,320 - #6 (
+INFO  19:31:54,320 - #7 )
+INFO  19:31:54,321 - #3 {
+INFO  19:31:54,321 - #23 for
+INFO  19:31:54,321 - #6 (
+INFO  19:31:54,328 - #39 i
+INFO  19:31:54,328 - #12 =
+INFO  19:31:54,329 - #38 0
+INFO  19:31:54,330 - #5 ;
+INFO  19:31:54,331 - #39 i
+INFO  19:31:54,331 - #35 <
+INFO  19:31:54,331 - #38 5
+INFO  19:31:54,332 - #5 ;
+INFO  19:31:54,333 - #39 i
+INFO  19:31:54,333 - #42 ++
+INFO  19:31:54,333 - #7 )
+INFO  19:31:54,333 - #3 {
+INFO  19:31:54,333 - #9 print
+INFO  19:31:54,333 - #6 (
+INFO  19:31:54,333 - #39 x
+INFO  19:31:54,333 - #7 )
+INFO  19:31:54,333 - #5 ;
+INFO  19:31:54,334 - #39 x
+INFO  19:31:54,334 - #12 =
+INFO  19:31:54,334 - #39 x
+INFO  19:31:54,334 - #11 +
+INFO  19:31:54,334 - #38 1
+INFO  19:31:54,339 - #5 ;
+INFO  19:31:54,340 - #4 }
+INFO  19:31:54,340 - #10 return
+INFO  19:31:54,340 - #38 0
+INFO  19:31:54,340 - #5 ;
+INFO  19:31:54,340 - #4 }
+INFO  19:31:54,341 - #4 }
+INFO  19:31:54,356 - Deklarisana promenljiva y na liniji 6
+INFO  19:31:54,356 - Deklarisana promenljiva z na liniji 6
+INFO  19:31:54,356 - Deklarisana promenljiva k na liniji 6
+INFO  19:31:54,356 - Deklarisana promenljiva x na liniji 2
+INFO  19:31:54,356 - Obradjuje se funkcija main na liniji 7
+ERROR 19:31:54,356 - Greska na liniji 9 : ime i nije deklarisano! 
+INFO  19:31:54,356 - Upotreba lokalne promenljive i na liniji 9
+ERROR 19:31:54,356 - Greska na liniji 9 :  nekompatibilni tipovi u dodeli vrednosti 0 1
+ERROR 19:31:54,356 - Greska na liniji 9 : ime i nije deklarisano! 
+INFO  19:31:54,356 - Upotreba lokalne promenljive i na liniji 9
+ERROR 19:31:54,357 - Nekompatibilni tipovi u iskazu na liniji9
+ERROR 19:31:54,357 - Greska na liniji 9 : ime i nije deklarisano! 
+INFO  19:31:54,357 - Upotreba lokalne promenljive i na liniji 9
+ERROR 19:31:54,357 - Promenljiva kod ++ mora biti INT: i na liniji 9
+INFO  19:31:54,357 - Upotreba globalne promenljive x na liniji 10
+INFO  19:31:54,357 - Upotreba globalne promenljive x na liniji 11
+INFO  19:31:54,357 - Upotreba globalne promenljive x na liniji 11
+INFO  19:31:54,357 - Print calls = 1
+ERROR 19:31:54,358 - Parsiranje NIJE uspesno zavrseno!

@@ -96,6 +96,11 @@ nonterminal Endelse Endelse;
 nonterminal Ifif Ifif;
 nonterminal Begif Begif;
 nonterminal Andbegadr Andbegadr;
+nonterminal Begfor Begfor;
+nonterminal Endfor Endfor;
+nonterminal Beginc Beginc;
+nonterminal Endinc Endinc;
+nonterminal BegForCond BegForCond;
 
 Program ::= (Program) PROG ProgName:p VarDeclList:V1 LBRACE MethodDeclList:M2 RBRACE {: RESULT=new Program(p, V1, M2); RESULT.setLine(pleft); :} 
 ;
@@ -213,12 +218,22 @@ Matched ::=	(ErrAssignment) error SEMI
 			  |
 			  (MatchedBreak) BREAK SEMI {: RESULT=new MatchedBreak(); :}
 			  |
-			  (MatchedFor) For:F1 LPAREN ForDesignator:F2 SEMI ForCondition:F3 SEMI ForDesignator:F4 RPAREN Matched:M5 {: RESULT=new MatchedFor(F1, F2, F3, F4, M5); RESULT.setLine(F1left); :}
+			  (MatchedFor) For:F1 LPAREN ForDesignator:F2 SEMI BegForCond:B3 ForCondition:F4 SEMI Beginc:B5 ForDesignator:F6 Endinc:E7 RPAREN Begfor:B8 Matched:M9 Endfor:E10 {: RESULT=new MatchedFor(F1, F2, B3, F4, B5, F6, E7, B8, M9, E10); RESULT.setLine(F1left); :}
 			  ;
 			  
 Ifif ::= (Ifif) IF {: RESULT=new Ifif(); :};
 
 Begif ::= (Begif) {: RESULT=new Begif(); :} /* epsilon */;
+
+Beginc ::= (Beginc) {: RESULT=new Beginc(); :} /* epsilon */;
+
+BegForCond ::= (BegForCond) {: RESULT=new BegForCond(); :} /* epsilon */;
+
+Endinc ::= (Endinc) {: RESULT=new Endinc(); :} /* epsilon */;
+
+Begfor ::= (Begfor) {: RESULT=new Begfor(); :} /* epsilon */;
+
+Endfor ::= (Endfor) {: RESULT=new Endfor(); :} /* epsilon */;
 
 Begelse ::= (Begelse) {: RESULT=new Begelse(); :} /* epsilon */;
 
