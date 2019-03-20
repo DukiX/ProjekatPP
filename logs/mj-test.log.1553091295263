@@ -1,0 +1,88 @@
+INFO  15:14:33,494 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  15:14:33,525 - #2 program
+INFO  15:14:33,525 - #39 MJProgram
+INFO  15:14:33,526 - #39 int
+INFO  15:14:33,526 - #39 x
+INFO  15:14:33,527 - #8 ,
+INFO  15:14:33,528 - #39 y
+INFO  15:14:33,528 - #8 ,
+INFO  15:14:33,528 - #39 z
+INFO  15:14:33,528 - #8 ,
+INFO  15:14:33,528 - #39 k
+INFO  15:14:33,528 - #8 ,
+INFO  15:14:33,528 - #39 i
+INFO  15:14:33,528 - #8 ,
+INFO  15:14:33,529 - #39 j
+INFO  15:14:33,529 - #5 ;
+INFO  15:14:33,529 - #3 {
+INFO  15:14:33,529 - #39 int
+INFO  15:14:33,529 - #39 main
+INFO  15:14:33,529 - #6 (
+INFO  15:14:33,529 - #7 )
+INFO  15:14:33,530 - #3 {
+INFO  15:14:33,530 - #39 x
+INFO  15:14:33,532 - #12 =
+INFO  15:14:33,533 - #38 6
+INFO  15:14:33,533 - #5 ;
+INFO  15:14:33,534 - #23 for
+INFO  15:14:33,535 - #6 (
+INFO  15:14:33,535 - #39 i
+INFO  15:14:33,535 - #12 =
+INFO  15:14:33,535 - #38 0
+INFO  15:14:33,536 - #5 ;
+INFO  15:14:33,536 - #39 i
+INFO  15:14:33,536 - #35 <
+INFO  15:14:33,536 - #38 5
+INFO  15:14:33,537 - #26 &&
+INFO  15:14:33,537 - #39 x
+INFO  15:14:33,537 - #35 <
+INFO  15:14:33,537 - #38 12
+INFO  15:14:33,537 - #5 ;
+INFO  15:14:33,539 - #39 i
+INFO  15:14:33,539 - #42 ++
+INFO  15:14:33,539 - #7 )
+INFO  15:14:33,540 - #3 {
+INFO  15:14:33,540 - #40 if
+INFO  15:14:33,540 - #6 (
+INFO  15:14:33,540 - #39 i
+INFO  15:14:33,540 - #18 %
+INFO  15:14:33,540 - #38 2
+INFO  15:14:33,541 - #32 ==
+INFO  15:14:33,541 - #38 0
+INFO  15:14:33,541 - #7 )
+INFO  15:14:33,542 - #3 {
+INFO  15:14:33,542 - #9 print
+INFO  15:14:33,542 - #6 (
+INFO  15:14:33,542 - #38 1000
+INFO  15:14:33,542 - #11 +
+INFO  15:14:33,542 - #39 x
+INFO  15:14:33,543 - #7 )
+INFO  15:14:33,543 - #5 ;
+INFO  15:14:33,543 - #4 }
+INFO  15:14:33,543 - #39 x
+INFO  15:14:33,544 - #42 ++
+INFO  15:14:33,544 - #5 ;
+INFO  15:14:33,544 - #4 }
+INFO  15:14:33,544 - #10 return
+INFO  15:14:33,545 - #38 0
+INFO  15:14:33,545 - #5 ;
+INFO  15:14:33,545 - #4 }
+INFO  15:14:33,549 - #4 }
+INFO  15:14:33,562 - Deklarisana promenljiva y na liniji 6
+INFO  15:14:33,562 - Deklarisana promenljiva z na liniji 6
+INFO  15:14:33,562 - Deklarisana promenljiva k na liniji 6
+INFO  15:14:33,562 - Deklarisana promenljiva i na liniji 6
+INFO  15:14:33,562 - Deklarisana promenljiva j na liniji 6
+INFO  15:14:33,562 - Deklarisana promenljiva x na liniji 2
+INFO  15:14:33,562 - Obradjuje se funkcija main na liniji 7
+INFO  15:14:33,562 - Upotreba globalne promenljive x na liniji 8
+INFO  15:14:33,562 - Upotreba globalne promenljive i na liniji 9
+INFO  15:14:33,562 - Upotreba globalne promenljive i na liniji 9
+INFO  15:14:33,563 - Upotreba globalne promenljive x na liniji 9
+INFO  15:14:33,563 - Upotreba globalne promenljive i na liniji 9
+INFO  15:14:33,563 - Upotreba globalne promenljive i na liniji 10
+INFO  15:14:33,563 - Upotreba globalne promenljive x na liniji 11
+INFO  15:14:33,563 - Upotreba globalne promenljive x na liniji 14
+INFO  15:14:33,563 - Print calls = 1
+INFO  15:14:33,564 - Generating bytecode file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  15:14:33,570 - Parsiranje uspesno zavrseno!

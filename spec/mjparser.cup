@@ -236,7 +236,7 @@ ForDesignator ::= (ForDesign) DesignatorStatement
 
 ForCondition ::= (ForCond) Condition
 			|
-			/*epsilon*/
+			(EmptyForCond) /*epsilon*/
 			;
 			
 Condition ::= (Condit) CondTerm CondTermList			

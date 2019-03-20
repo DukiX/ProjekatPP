@@ -335,6 +335,7 @@ public class CodeGenerator extends VisitorAdaptor {
 
 		listaListiAdresaPocIf.add(new LinkedList<>());
 		
+		listaListiBreak.add(new LinkedList<>());
 	}
 	
 	public void visit(Begfor b) {
@@ -364,5 +365,29 @@ public class CodeGenerator extends VisitorAdaptor {
 		for (Integer i : lst) {
 			Code.fixup(i);
 		}
+		
+		lst = listaListiBreak.removeLast();
+		for (Integer i : lst) {
+			Code.fixup(i);
+		}
+	}
+	
+	
+	public void visit(MatchedContinue mb) {
+		Code.putJump(listaForPocetnihAdr.peekLast());
+	}
+	
+	private LinkedList<LinkedList<Integer>> listaListiBreak = new LinkedList<>();
+	
+	public void visit(MatchedBreak mb) {
+		Code.putJump(0);
+		listaListiBreak.peekLast().add(Code.pc-2);
+	}
+	
+	public void visit(EmptyForCond efc) {
+		Code.putJump(0);
+		listaListiAdresaPocIf.peekLast().add(new Integer(Code.pc - 2));
 	}
 }
+
+

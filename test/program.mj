@@ -6,13 +6,23 @@
 	
 	int main() {
 		x=6;
-		for(i = 0; i < 5 && x<10; i++){
-			if(i % 2 == 0){
-				for(j=0;j<3;j++){
-					print(1000+j+x);
-				}	
+		
+		for(i = 0;;i++){
+			print(i);
+			if(i==3){
+				break;
 			}
-			x++;
+		}
+		
+		for(i = 0; i < 5 && x<12; i++){
+			if(i % 2 == 0){
+				print(1000+x);
+				continue;
+			}
+			else{
+				x++;
+				break;
+			}
 		}
 		
 		return 0;

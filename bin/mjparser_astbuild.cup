@@ -247,8 +247,8 @@ ForDesignator ::= (ForDesign) DesignatorStatement:D1 {: RESULT=new ForDesign(D1)
 			;
 
 ForCondition ::= (ForCond) Condition:C1 {: RESULT=new ForCond(C1); RESULT.setLine(C1left); :}
-			| {: RESULT=new ForConditionDerived1(); :}
-			/*epsilon*/
+			|
+			(EmptyForCond) {: RESULT=new EmptyForCond(); :} /*epsilon*/
 			;
 			
 Condition ::= (Condit) CondTerm:C1 CondTermList:C2 {: RESULT=new Condit(C1, C2); RESULT.setLine(C1left); :}			
