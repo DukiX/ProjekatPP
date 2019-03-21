@@ -1,29 +1,32 @@
  program MJProgram
  	int x,y,z,k,i,j;
+ 	int niz[];
+ 	int niz2[];
 {
 
 
 	
 	int main() {
-		x=6;
 		
-		for(i = 0;;i++){
-			print(i);
-			if(i==3){
-				break;
-			}
-		}
+		niz = new int[5];
+		niz2=new int[2];
+		x=niz[2];
+		niz2[1]=5;
+		print(niz2[1]);
 		
-		for(i = 0; i < 5 && x<12; i++){
-			if(i % 2 == 0){
-				print(1000+x);
-				continue;
-			}
-			else{
-				x++;
-				break;
-			}
-		}
+		
+		//for(i=0;i<5;i++){
+			//if(i%2==0){
+			//	for(j=0;j<5;j++){
+					//print(j,10);
+			//	}
+			//}
+			//niz[i]=i;
+		//}
+		
+		//for(i=0;i<5;i++){
+			//print(niz[i],10);
+		//}
 		
 		return 0;
 	}
