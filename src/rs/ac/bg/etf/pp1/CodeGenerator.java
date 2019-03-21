@@ -256,6 +256,12 @@ public class CodeGenerator extends VisitorAdaptor {
 
 		listaListiAdresaPocIf.add(new LinkedList<>());
 	}
+	
+	public void visit(CndFct cf) {
+		Code.put(Code.const_1);
+		Code.putFalseJump(Code.eq, 0);
+		listaListiAdresaElse.peekLast().add(new Integer(Code.pc - 2));
+	}
 
 	public void visit(CndFctNotBool cnb) {
 		if (cnb.getRelop().getClass() == Releq.class) {

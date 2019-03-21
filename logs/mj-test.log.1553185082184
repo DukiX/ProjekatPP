@@ -1,0 +1,112 @@
+INFO  17:17:43,996 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  17:17:44,023 - #2 program
+INFO  17:17:44,023 - #39 MJProgram
+INFO  17:17:44,023 - #39 int
+INFO  17:17:44,024 - #39 x
+INFO  17:17:44,024 - #8 ,
+INFO  17:17:44,024 - #39 y
+INFO  17:17:44,024 - #8 ,
+INFO  17:17:44,024 - #39 z
+INFO  17:17:44,024 - #8 ,
+INFO  17:17:44,024 - #39 k
+INFO  17:17:44,025 - #8 ,
+INFO  17:17:44,025 - #39 i
+INFO  17:17:44,025 - #8 ,
+INFO  17:17:44,025 - #39 j
+INFO  17:17:44,025 - #5 ;
+INFO  17:17:44,025 - #39 int
+INFO  17:17:44,025 - #39 niz
+INFO  17:17:44,025 - #20 [
+INFO  17:17:44,025 - #21 ]
+INFO  17:17:44,025 - #5 ;
+INFO  17:17:44,025 - #39 int
+INFO  17:17:44,025 - #39 niz2
+INFO  17:17:44,028 - #20 [
+INFO  17:17:44,028 - #21 ]
+INFO  17:17:44,028 - #5 ;
+INFO  17:17:44,028 - #39 bool
+INFO  17:17:44,028 - #39 test
+INFO  17:17:44,028 - #5 ;
+INFO  17:17:44,028 - #3 {
+INFO  17:17:44,028 - #39 int
+INFO  17:17:44,028 - #39 main
+INFO  17:17:44,028 - #6 (
+INFO  17:17:44,028 - #7 )
+INFO  17:17:44,029 - #3 {
+INFO  17:17:44,029 - #39 niz
+INFO  17:17:44,029 - #12 =
+INFO  17:17:44,030 - #19 new
+INFO  17:17:44,030 - #39 int
+INFO  17:17:44,030 - #20 [
+INFO  17:17:44,030 - #38 5
+INFO  17:17:44,030 - #21 ]
+INFO  17:17:44,031 - #5 ;
+INFO  17:17:44,031 - #39 niz2
+INFO  17:17:44,031 - #12 =
+INFO  17:17:44,032 - #19 new
+INFO  17:17:44,032 - #39 int
+INFO  17:17:44,032 - #20 [
+INFO  17:17:44,032 - #38 2
+INFO  17:17:44,032 - #21 ]
+INFO  17:17:44,032 - #5 ;
+INFO  17:17:44,032 - #39 x
+INFO  17:17:44,032 - #12 =
+INFO  17:17:44,032 - #39 niz
+INFO  17:17:44,032 - #20 [
+INFO  17:17:44,032 - #38 2
+INFO  17:17:44,032 - #21 ]
+INFO  17:17:44,032 - #5 ;
+INFO  17:17:44,032 - #39 niz2
+INFO  17:17:44,032 - #20 [
+INFO  17:17:44,032 - #38 1
+INFO  17:17:44,033 - #21 ]
+INFO  17:17:44,033 - #12 =
+INFO  17:17:44,033 - #38 5
+INFO  17:17:44,033 - #5 ;
+INFO  17:17:44,033 - #39 test
+INFO  17:17:44,033 - #12 =
+INFO  17:17:44,033 - #30 false
+INFO  17:17:44,033 - #5 ;
+INFO  17:17:44,037 - #40 if
+INFO  17:17:44,037 - #6 (
+INFO  17:17:44,037 - #39 test
+INFO  17:17:44,037 - #7 )
+INFO  17:17:44,038 - #3 {
+INFO  17:17:44,039 - #9 print
+INFO  17:17:44,039 - #6 (
+INFO  17:17:44,039 - #39 niz2
+INFO  17:17:44,039 - #20 [
+INFO  17:17:44,039 - #38 1
+INFO  17:17:44,039 - #21 ]
+INFO  17:17:44,039 - #7 )
+INFO  17:17:44,039 - #5 ;
+INFO  17:17:44,039 - #4 }
+INFO  17:17:44,039 - #10 return
+INFO  17:17:44,040 - #38 0
+INFO  17:17:44,040 - #5 ;
+INFO  17:17:44,040 - #4 }
+INFO  17:17:44,040 - #4 }
+INFO  17:17:44,054 - Deklarisana promenljiva y na liniji 6
+INFO  17:17:44,055 - Deklarisana promenljiva z na liniji 6
+INFO  17:17:44,055 - Deklarisana promenljiva k na liniji 6
+INFO  17:17:44,055 - Deklarisana promenljiva i na liniji 6
+INFO  17:17:44,055 - Deklarisana promenljiva j na liniji 6
+INFO  17:17:44,055 - Deklarisana promenljiva x na liniji 2
+INFO  17:17:44,055 - Deklarisan niz niz na liniji 3
+INFO  17:17:44,055 - Deklarisan niz niz2 na liniji 4
+INFO  17:17:44,055 - Deklarisana promenljiva test na liniji 5
+INFO  17:17:44,055 - Obradjuje se funkcija main na liniji 10
+INFO  17:17:44,055 - Upotreba globalne promenljive niz na liniji 12
+INFO  17:17:44,055 - Upotreba globalne promenljive niz2 na liniji 13
+INFO  17:17:44,055 - Upotreba globalne promenljive x na liniji 14
+INFO  17:17:44,055 - Upotreba globalne promenljive niz na liniji 14
+INFO  17:17:44,055 - Upotreba elementa niza niz na liniji 14
+INFO  17:17:44,055 - Upotreba globalne promenljive niz2 na liniji 15
+INFO  17:17:44,055 - Upotreba elementa niza niz2 na liniji 15
+INFO  17:17:44,055 - Upotreba globalne promenljive test na liniji 17
+INFO  17:17:44,055 - Upotreba globalne promenljive test na liniji 20
+INFO  17:17:44,056 - Upotreba globalne promenljive niz2 na liniji 21
+INFO  17:17:44,056 - Upotreba elementa niza niz2 na liniji 21
+INFO  17:17:44,056 - Print calls = 1
+INFO  17:17:44,057 - Generating bytecode file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  17:17:44,065 - Parsiranje uspesno zavrseno!

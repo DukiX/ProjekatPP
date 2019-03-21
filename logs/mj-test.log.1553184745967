@@ -1,0 +1,112 @@
+INFO  17:12:20,816 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  17:12:20,842 - #2 program
+INFO  17:12:20,843 - #39 MJProgram
+INFO  17:12:20,843 - #39 int
+INFO  17:12:20,843 - #39 x
+INFO  17:12:20,843 - #8 ,
+INFO  17:12:20,844 - #39 y
+INFO  17:12:20,844 - #8 ,
+INFO  17:12:20,844 - #39 z
+INFO  17:12:20,844 - #8 ,
+INFO  17:12:20,844 - #39 k
+INFO  17:12:20,844 - #8 ,
+INFO  17:12:20,844 - #39 i
+INFO  17:12:20,844 - #8 ,
+INFO  17:12:20,844 - #39 j
+INFO  17:12:20,844 - #5 ;
+INFO  17:12:20,844 - #39 int
+INFO  17:12:20,844 - #39 niz
+INFO  17:12:20,845 - #20 [
+INFO  17:12:20,845 - #21 ]
+INFO  17:12:20,845 - #5 ;
+INFO  17:12:20,845 - #39 int
+INFO  17:12:20,845 - #39 niz2
+INFO  17:12:20,847 - #20 [
+INFO  17:12:20,847 - #21 ]
+INFO  17:12:20,847 - #5 ;
+INFO  17:12:20,847 - #39 bool
+INFO  17:12:20,847 - #39 test
+INFO  17:12:20,847 - #5 ;
+INFO  17:12:20,847 - #3 {
+INFO  17:12:20,847 - #39 int
+INFO  17:12:20,848 - #39 main
+INFO  17:12:20,848 - #6 (
+INFO  17:12:20,848 - #7 )
+INFO  17:12:20,848 - #3 {
+INFO  17:12:20,848 - #39 niz
+INFO  17:12:20,848 - #12 =
+INFO  17:12:20,849 - #19 new
+INFO  17:12:20,849 - #39 int
+INFO  17:12:20,849 - #20 [
+INFO  17:12:20,849 - #38 5
+INFO  17:12:20,849 - #21 ]
+INFO  17:12:20,850 - #5 ;
+INFO  17:12:20,850 - #39 niz2
+INFO  17:12:20,851 - #12 =
+INFO  17:12:20,851 - #19 new
+INFO  17:12:20,851 - #39 int
+INFO  17:12:20,851 - #20 [
+INFO  17:12:20,851 - #38 2
+INFO  17:12:20,851 - #21 ]
+INFO  17:12:20,851 - #5 ;
+INFO  17:12:20,851 - #39 x
+INFO  17:12:20,851 - #12 =
+INFO  17:12:20,851 - #39 niz
+INFO  17:12:20,851 - #20 [
+INFO  17:12:20,851 - #38 2
+INFO  17:12:20,851 - #21 ]
+INFO  17:12:20,851 - #5 ;
+INFO  17:12:20,852 - #39 niz2
+INFO  17:12:20,852 - #20 [
+INFO  17:12:20,852 - #38 1
+INFO  17:12:20,852 - #21 ]
+INFO  17:12:20,852 - #12 =
+INFO  17:12:20,852 - #38 5
+INFO  17:12:20,852 - #5 ;
+INFO  17:12:20,852 - #39 test
+INFO  17:12:20,852 - #12 =
+INFO  17:12:20,852 - #38 1
+INFO  17:12:20,852 - #5 ;
+INFO  17:12:20,852 - #40 if
+INFO  17:12:20,852 - #6 (
+INFO  17:12:20,853 - #39 test
+INFO  17:12:20,853 - #7 )
+INFO  17:12:20,853 - #3 {
+INFO  17:12:20,854 - #9 print
+INFO  17:12:20,854 - #6 (
+INFO  17:12:20,854 - #39 niz2
+INFO  17:12:20,854 - #20 [
+INFO  17:12:20,854 - #38 1
+INFO  17:12:20,854 - #21 ]
+INFO  17:12:20,854 - #7 )
+INFO  17:12:20,854 - #5 ;
+INFO  17:12:20,854 - #4 }
+INFO  17:12:20,854 - #10 return
+INFO  17:12:20,855 - #38 0
+INFO  17:12:20,855 - #5 ;
+INFO  17:12:20,855 - #4 }
+INFO  17:12:20,855 - #4 }
+INFO  17:12:20,867 - Deklarisana promenljiva y na liniji 6
+INFO  17:12:20,867 - Deklarisana promenljiva z na liniji 6
+INFO  17:12:20,867 - Deklarisana promenljiva k na liniji 6
+INFO  17:12:20,867 - Deklarisana promenljiva i na liniji 6
+INFO  17:12:20,867 - Deklarisana promenljiva j na liniji 6
+INFO  17:12:20,867 - Deklarisana promenljiva x na liniji 2
+INFO  17:12:20,867 - Deklarisan niz niz na liniji 3
+INFO  17:12:20,867 - Deklarisan niz niz2 na liniji 4
+INFO  17:12:20,867 - Deklarisana promenljiva test na liniji 5
+INFO  17:12:20,868 - Obradjuje se funkcija main na liniji 10
+INFO  17:12:20,868 - Upotreba globalne promenljive niz na liniji 12
+INFO  17:12:20,868 - Upotreba globalne promenljive niz2 na liniji 13
+INFO  17:12:20,868 - Upotreba globalne promenljive x na liniji 14
+INFO  17:12:20,868 - Upotreba globalne promenljive niz na liniji 14
+INFO  17:12:20,868 - Upotreba elementa niza niz na liniji 14
+INFO  17:12:20,868 - Upotreba globalne promenljive niz2 na liniji 15
+INFO  17:12:20,868 - Upotreba elementa niza niz2 na liniji 15
+INFO  17:12:20,868 - Upotreba globalne promenljive test na liniji 17
+ERROR 17:12:20,868 - Greska na liniji 17 :  nekompatibilni tipovi u dodeli vrednosti 5 1
+INFO  17:12:20,868 - Upotreba globalne promenljive test na liniji 20
+INFO  17:12:20,868 - Upotreba globalne promenljive niz2 na liniji 21
+INFO  17:12:20,868 - Upotreba elementa niza niz2 na liniji 21
+INFO  17:12:20,868 - Print calls = 1
+ERROR 17:12:20,869 - Parsiranje NIJE uspesno zavrseno!

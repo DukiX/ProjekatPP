@@ -1,0 +1,122 @@
+INFO  17:18:53,097 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  17:18:53,123 - #2 program
+INFO  17:18:53,123 - #39 MJProgram
+INFO  17:18:53,123 - #39 int
+INFO  17:18:53,124 - #39 x
+INFO  17:18:53,124 - #8 ,
+INFO  17:18:53,125 - #39 y
+INFO  17:18:53,125 - #8 ,
+INFO  17:18:53,125 - #39 z
+INFO  17:18:53,125 - #8 ,
+INFO  17:18:53,125 - #39 k
+INFO  17:18:53,125 - #8 ,
+INFO  17:18:53,125 - #39 i
+INFO  17:18:53,125 - #8 ,
+INFO  17:18:53,125 - #39 j
+INFO  17:18:53,125 - #5 ;
+INFO  17:18:53,125 - #39 int
+INFO  17:18:53,126 - #39 niz
+INFO  17:18:53,126 - #20 [
+INFO  17:18:53,126 - #21 ]
+INFO  17:18:53,126 - #5 ;
+INFO  17:18:53,126 - #39 int
+INFO  17:18:53,126 - #39 niz2
+INFO  17:18:53,127 - #20 [
+INFO  17:18:53,127 - #21 ]
+INFO  17:18:53,127 - #5 ;
+INFO  17:18:53,127 - #39 bool
+INFO  17:18:53,127 - #39 test
+INFO  17:18:53,127 - #5 ;
+INFO  17:18:53,127 - #3 {
+INFO  17:18:53,127 - #39 int
+INFO  17:18:53,128 - #39 main
+INFO  17:18:53,128 - #6 (
+INFO  17:18:53,128 - #7 )
+INFO  17:18:53,128 - #3 {
+INFO  17:18:53,128 - #39 niz
+INFO  17:18:53,129 - #12 =
+INFO  17:18:53,129 - #19 new
+INFO  17:18:53,129 - #39 int
+INFO  17:18:53,129 - #20 [
+INFO  17:18:53,130 - #38 5
+INFO  17:18:53,130 - #21 ]
+INFO  17:18:53,130 - #5 ;
+INFO  17:18:53,130 - #39 niz2
+INFO  17:18:53,131 - #12 =
+INFO  17:18:53,131 - #19 new
+INFO  17:18:53,131 - #39 int
+INFO  17:18:53,131 - #20 [
+INFO  17:18:53,131 - #38 2
+INFO  17:18:53,131 - #21 ]
+INFO  17:18:53,131 - #5 ;
+INFO  17:18:53,131 - #39 x
+INFO  17:18:53,131 - #12 =
+INFO  17:18:53,131 - #39 niz
+INFO  17:18:53,131 - #20 [
+INFO  17:18:53,131 - #38 2
+INFO  17:18:53,131 - #21 ]
+INFO  17:18:53,131 - #5 ;
+INFO  17:18:53,132 - #39 niz2
+INFO  17:18:53,132 - #20 [
+INFO  17:18:53,132 - #38 1
+INFO  17:18:53,132 - #21 ]
+INFO  17:18:53,132 - #12 =
+INFO  17:18:53,132 - #38 5
+INFO  17:18:53,132 - #5 ;
+INFO  17:18:53,132 - #39 test
+INFO  17:18:53,132 - #12 =
+INFO  17:18:53,132 - #29 true
+INFO  17:18:53,132 - #5 ;
+INFO  17:18:53,136 - #40 if
+INFO  17:18:53,136 - #6 (
+INFO  17:18:53,136 - #39 test
+INFO  17:18:53,136 - #27 ||
+INFO  17:18:53,137 - #39 x
+INFO  17:18:53,137 - #32 ==
+INFO  17:18:53,137 - #38 0
+INFO  17:18:53,138 - #26 &&
+INFO  17:18:53,138 - #39 y
+INFO  17:18:53,138 - #32 ==
+INFO  17:18:53,138 - #38 0
+INFO  17:18:53,138 - #7 )
+INFO  17:18:53,138 - #3 {
+INFO  17:18:53,139 - #9 print
+INFO  17:18:53,139 - #6 (
+INFO  17:18:53,139 - #39 niz2
+INFO  17:18:53,139 - #20 [
+INFO  17:18:53,139 - #38 1
+INFO  17:18:53,139 - #21 ]
+INFO  17:18:53,139 - #7 )
+INFO  17:18:53,139 - #5 ;
+INFO  17:18:53,139 - #4 }
+INFO  17:18:53,139 - #10 return
+INFO  17:18:53,140 - #38 0
+INFO  17:18:53,140 - #5 ;
+INFO  17:18:53,140 - #4 }
+INFO  17:18:53,140 - #4 }
+INFO  17:18:53,153 - Deklarisana promenljiva y na liniji 6
+INFO  17:18:53,153 - Deklarisana promenljiva z na liniji 6
+INFO  17:18:53,153 - Deklarisana promenljiva k na liniji 6
+INFO  17:18:53,153 - Deklarisana promenljiva i na liniji 6
+INFO  17:18:53,153 - Deklarisana promenljiva j na liniji 6
+INFO  17:18:53,153 - Deklarisana promenljiva x na liniji 2
+INFO  17:18:53,153 - Deklarisan niz niz na liniji 3
+INFO  17:18:53,153 - Deklarisan niz niz2 na liniji 4
+INFO  17:18:53,153 - Deklarisana promenljiva test na liniji 5
+INFO  17:18:53,154 - Obradjuje se funkcija main na liniji 10
+INFO  17:18:53,154 - Upotreba globalne promenljive niz na liniji 12
+INFO  17:18:53,154 - Upotreba globalne promenljive niz2 na liniji 13
+INFO  17:18:53,154 - Upotreba globalne promenljive x na liniji 14
+INFO  17:18:53,154 - Upotreba globalne promenljive niz na liniji 14
+INFO  17:18:53,154 - Upotreba elementa niza niz na liniji 14
+INFO  17:18:53,154 - Upotreba globalne promenljive niz2 na liniji 15
+INFO  17:18:53,154 - Upotreba elementa niza niz2 na liniji 15
+INFO  17:18:53,154 - Upotreba globalne promenljive test na liniji 17
+INFO  17:18:53,154 - Upotreba globalne promenljive test na liniji 20
+INFO  17:18:53,154 - Upotreba globalne promenljive x na liniji 20
+INFO  17:18:53,154 - Upotreba globalne promenljive y na liniji 20
+INFO  17:18:53,154 - Upotreba globalne promenljive niz2 na liniji 21
+INFO  17:18:53,154 - Upotreba elementa niza niz2 na liniji 21
+INFO  17:18:53,154 - Print calls = 1
+INFO  17:18:53,155 - Generating bytecode file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  17:18:53,159 - Parsiranje uspesno zavrseno!

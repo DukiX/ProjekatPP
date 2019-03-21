@@ -1,0 +1,150 @@
+INFO  17:35:19,064 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  17:35:19,090 - #2 program
+INFO  17:35:19,091 - #39 MJProgram
+INFO  17:35:19,091 - #39 int
+INFO  17:35:19,091 - #39 x
+INFO  17:35:19,092 - #8 ,
+INFO  17:35:19,092 - #39 y
+INFO  17:35:19,092 - #8 ,
+INFO  17:35:19,092 - #39 z
+INFO  17:35:19,092 - #8 ,
+INFO  17:35:19,092 - #39 k
+INFO  17:35:19,092 - #8 ,
+INFO  17:35:19,092 - #39 i
+INFO  17:35:19,093 - #8 ,
+INFO  17:35:19,093 - #39 j
+INFO  17:35:19,093 - #8 ,
+INFO  17:35:19,093 - #39 niz
+INFO  17:35:19,093 - #20 [
+ERROR 17:35:19,093 - 
+Sintaksna greska na liniji 2
+INFO  17:35:19,093 - #21 ]
+INFO  17:35:19,093 - #5 ;
+INFO  17:35:19,093 - #39 char
+INFO  17:35:19,096 - #39 niz2
+INFO  17:35:19,096 - #20 [
+INFO  17:35:19,096 - #21 ]
+DEBUG 17:35:19,096 - Uspesan oporavak od definicije promenljive.
+INFO  17:35:19,096 - #5 ;
+INFO  17:35:19,096 - #39 bool
+INFO  17:35:19,097 - #39 test
+INFO  17:35:19,097 - #5 ;
+INFO  17:35:19,097 - #3 {
+INFO  17:35:19,097 - #39 int
+INFO  17:35:19,097 - #39 main
+INFO  17:35:19,097 - #6 (
+INFO  17:35:19,097 - #7 )
+INFO  17:35:19,098 - #3 {
+INFO  17:35:19,098 - #39 niz
+INFO  17:35:19,098 - #12 =
+INFO  17:35:19,098 - #19 new
+INFO  17:35:19,098 - #39 int
+INFO  17:35:19,099 - #20 [
+INFO  17:35:19,099 - #38 5
+INFO  17:35:19,099 - #21 ]
+INFO  17:35:19,099 - #5 ;
+INFO  17:35:19,100 - #39 niz2
+INFO  17:35:19,100 - #12 =
+INFO  17:35:19,100 - #19 new
+INFO  17:35:19,100 - #39 char
+INFO  17:35:19,100 - #20 [
+INFO  17:35:19,100 - #38 2
+INFO  17:35:19,100 - #21 ]
+INFO  17:35:19,100 - #5 ;
+INFO  17:35:19,100 - #39 x
+INFO  17:35:19,100 - #12 =
+INFO  17:35:19,100 - #39 niz
+INFO  17:35:19,100 - #20 [
+INFO  17:35:19,100 - #38 2
+INFO  17:35:19,100 - #21 ]
+INFO  17:35:19,100 - #5 ;
+INFO  17:35:19,101 - #39 niz2
+INFO  17:35:19,101 - #20 [
+INFO  17:35:19,101 - #38 0
+INFO  17:35:19,101 - #21 ]
+INFO  17:35:19,101 - #12 =
+INFO  17:35:19,101 - #44 a
+INFO  17:35:19,101 - #5 ;
+INFO  17:35:19,101 - #39 niz2
+INFO  17:35:19,101 - #20 [
+INFO  17:35:19,101 - #38 1
+INFO  17:35:19,101 - #21 ]
+INFO  17:35:19,101 - #12 =
+INFO  17:35:19,101 - #44 b
+INFO  17:35:19,101 - #5 ;
+INFO  17:35:19,101 - #39 test
+INFO  17:35:19,101 - #12 =
+INFO  17:35:19,101 - #29 true
+INFO  17:35:19,101 - #5 ;
+INFO  17:35:19,102 - #40 if
+INFO  17:35:19,102 - #6 (
+INFO  17:35:19,102 - #39 x
+INFO  17:35:19,102 - #32 ==
+INFO  17:35:19,103 - #38 1
+INFO  17:35:19,103 - #26 &&
+INFO  17:35:19,104 - #39 y
+INFO  17:35:19,104 - #32 ==
+INFO  17:35:19,104 - #38 0
+INFO  17:35:19,104 - #27 ||
+INFO  17:35:19,104 - #39 test
+INFO  17:35:19,104 - #26 &&
+INFO  17:35:19,105 - #39 k
+INFO  17:35:19,105 - #32 ==
+INFO  17:35:19,105 - #38 0
+INFO  17:35:19,105 - #7 )
+INFO  17:35:19,105 - #3 {
+INFO  17:35:19,105 - #9 print
+INFO  17:35:19,105 - #6 (
+INFO  17:35:19,105 - #39 niz2
+INFO  17:35:19,105 - #20 [
+INFO  17:35:19,105 - #38 0
+INFO  17:35:19,105 - #21 ]
+INFO  17:35:19,105 - #7 )
+INFO  17:35:19,105 - #5 ;
+INFO  17:35:19,106 - #9 print
+INFO  17:35:19,106 - #6 (
+INFO  17:35:19,106 - #39 niz2
+INFO  17:35:19,106 - #20 [
+INFO  17:35:19,106 - #38 1
+INFO  17:35:19,106 - #21 ]
+INFO  17:35:19,106 - #7 )
+INFO  17:35:19,106 - #5 ;
+INFO  17:35:19,106 - #4 }
+INFO  17:35:19,106 - #10 return
+INFO  17:35:19,106 - #38 0
+INFO  17:35:19,106 - #5 ;
+INFO  17:35:19,107 - #4 }
+INFO  17:35:19,107 - #4 }
+INFO  17:35:19,120 - Deklarisan niz niz2 na liniji 4
+INFO  17:35:19,120 - Deklarisana promenljiva test na liniji 5
+INFO  17:35:19,120 - Obradjuje se funkcija main na liniji 10
+ERROR 17:35:19,120 - Greska na liniji 12 : ime niz nije deklarisano! 
+INFO  17:35:19,120 - Upotreba lokalne promenljive niz na liniji 12
+ERROR 17:35:19,120 - Greska na liniji 12 :  nekompatibilni tipovi u dodeli vrednosti 0 3
+INFO  17:35:19,120 - Upotreba globalne promenljive niz2 na liniji 13
+ERROR 17:35:19,120 - Greska na liniji 14 : ime x nije deklarisano! 
+INFO  17:35:19,120 - Upotreba lokalne promenljive x na liniji 14
+ERROR 17:35:19,120 - Greska na liniji 14 : ime niz nije deklarisano! 
+INFO  17:35:19,120 - Upotreba lokalne promenljive niz na liniji 14
+ERROR 17:35:19,120 - Ime noObj nije tip niz na liniji 14
+INFO  17:35:19,120 - Upotreba globalne promenljive niz2 na liniji 15
+INFO  17:35:19,120 - Upotreba elementa niza niz2 na liniji 15
+INFO  17:35:19,120 - Upotreba globalne promenljive niz2 na liniji 16
+INFO  17:35:19,120 - Upotreba elementa niza niz2 na liniji 16
+INFO  17:35:19,124 - Upotreba globalne promenljive test na liniji 18
+ERROR 17:35:19,124 - Greska na liniji 21 : ime x nije deklarisano! 
+INFO  17:35:19,124 - Upotreba lokalne promenljive x na liniji 21
+ERROR 17:35:19,124 - Nekompatibilni tipovi u iskazu na liniji21
+ERROR 17:35:19,124 - Greska na liniji 21 : ime y nije deklarisano! 
+INFO  17:35:19,124 - Upotreba lokalne promenljive y na liniji 21
+ERROR 17:35:19,124 - Nekompatibilni tipovi u iskazu na liniji21
+INFO  17:35:19,124 - Upotreba globalne promenljive test na liniji 21
+ERROR 17:35:19,124 - Greska na liniji 21 : ime k nije deklarisano! 
+INFO  17:35:19,124 - Upotreba lokalne promenljive k na liniji 21
+ERROR 17:35:19,124 - Nekompatibilni tipovi u iskazu na liniji21
+INFO  17:35:19,124 - Upotreba globalne promenljive niz2 na liniji 22
+INFO  17:35:19,124 - Upotreba elementa niza niz2 na liniji 22
+INFO  17:35:19,124 - Upotreba globalne promenljive niz2 na liniji 23
+INFO  17:35:19,124 - Upotreba elementa niza niz2 na liniji 23
+INFO  17:35:19,124 - Print calls = 2
+ERROR 17:35:19,125 - Parsiranje NIJE uspesno zavrseno!

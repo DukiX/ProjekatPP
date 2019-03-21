@@ -1,7 +1,8 @@
  program MJProgram
  	int x,y,z,k,i,j;
  	int niz[];
- 	int niz2[];
+ 	char niz2[];
+ 	bool test;
 {
 
 
@@ -9,11 +10,18 @@
 	int main() {
 		
 		niz = new int[5];
-		niz2=new int[2];
+		niz2=new char[2];
 		x=niz[2];
-		niz2[1]=5;
-		print(niz2[1]);
+		niz2[0]='a';
+		niz2[1]='b';
 		
+		test=true;
+		
+		
+		if(x==1 && y==0 || test && k==0){
+			print(niz2[0]);
+			print(niz2[1]);
+		}
 		
 		//for(i=0;i<5;i++){
 			//if(i%2==0){

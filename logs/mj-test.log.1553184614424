@@ -1,0 +1,112 @@
+INFO  17:10:09,757 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  17:10:09,790 - #2 program
+INFO  17:10:09,790 - #39 MJProgram
+INFO  17:10:09,790 - #39 int
+INFO  17:10:09,790 - #39 x
+INFO  17:10:09,791 - #8 ,
+INFO  17:10:09,791 - #39 y
+INFO  17:10:09,791 - #8 ,
+INFO  17:10:09,791 - #39 z
+INFO  17:10:09,792 - #8 ,
+INFO  17:10:09,792 - #39 k
+INFO  17:10:09,792 - #8 ,
+INFO  17:10:09,792 - #39 i
+INFO  17:10:09,792 - #8 ,
+INFO  17:10:09,792 - #39 j
+INFO  17:10:09,792 - #5 ;
+INFO  17:10:09,792 - #39 int
+INFO  17:10:09,792 - #39 niz
+INFO  17:10:09,792 - #20 [
+INFO  17:10:09,792 - #21 ]
+INFO  17:10:09,792 - #5 ;
+INFO  17:10:09,792 - #39 int
+INFO  17:10:09,792 - #39 niz2
+INFO  17:10:09,794 - #20 [
+INFO  17:10:09,794 - #21 ]
+INFO  17:10:09,794 - #5 ;
+INFO  17:10:09,794 - #39 bool
+INFO  17:10:09,794 - #39 test
+INFO  17:10:09,794 - #5 ;
+INFO  17:10:09,794 - #3 {
+INFO  17:10:09,794 - #39 int
+INFO  17:10:09,795 - #39 main
+INFO  17:10:09,795 - #6 (
+INFO  17:10:09,795 - #7 )
+INFO  17:10:09,795 - #3 {
+INFO  17:10:09,795 - #39 niz
+INFO  17:10:09,796 - #12 =
+INFO  17:10:09,796 - #19 new
+INFO  17:10:09,796 - #39 int
+INFO  17:10:09,796 - #20 [
+INFO  17:10:09,796 - #38 5
+INFO  17:10:09,796 - #21 ]
+INFO  17:10:09,797 - #5 ;
+INFO  17:10:09,797 - #39 niz2
+INFO  17:10:09,798 - #12 =
+INFO  17:10:09,798 - #19 new
+INFO  17:10:09,798 - #39 int
+INFO  17:10:09,798 - #20 [
+INFO  17:10:09,798 - #38 2
+INFO  17:10:09,798 - #21 ]
+INFO  17:10:09,798 - #5 ;
+INFO  17:10:09,798 - #39 x
+INFO  17:10:09,798 - #12 =
+INFO  17:10:09,798 - #39 niz
+INFO  17:10:09,798 - #20 [
+INFO  17:10:09,798 - #38 2
+INFO  17:10:09,798 - #21 ]
+INFO  17:10:09,798 - #5 ;
+INFO  17:10:09,799 - #39 niz2
+INFO  17:10:09,799 - #20 [
+INFO  17:10:09,799 - #38 1
+INFO  17:10:09,799 - #21 ]
+INFO  17:10:09,799 - #12 =
+INFO  17:10:09,799 - #38 5
+INFO  17:10:09,799 - #5 ;
+INFO  17:10:09,799 - #39 test
+INFO  17:10:09,799 - #12 =
+INFO  17:10:09,799 - #29 true
+INFO  17:10:09,799 - #5 ;
+INFO  17:10:09,803 - #40 if
+INFO  17:10:09,803 - #6 (
+INFO  17:10:09,804 - #39 x
+INFO  17:10:09,804 - #7 )
+INFO  17:10:09,804 - #3 {
+INFO  17:10:09,805 - #9 print
+INFO  17:10:09,805 - #6 (
+INFO  17:10:09,805 - #39 niz2
+INFO  17:10:09,805 - #20 [
+INFO  17:10:09,805 - #38 1
+INFO  17:10:09,805 - #21 ]
+INFO  17:10:09,805 - #7 )
+INFO  17:10:09,805 - #5 ;
+INFO  17:10:09,805 - #4 }
+INFO  17:10:09,805 - #10 return
+INFO  17:10:09,806 - #38 0
+INFO  17:10:09,806 - #5 ;
+INFO  17:10:09,806 - #4 }
+INFO  17:10:09,806 - #4 }
+INFO  17:10:09,820 - Deklarisana promenljiva y na liniji 6
+INFO  17:10:09,820 - Deklarisana promenljiva z na liniji 6
+INFO  17:10:09,820 - Deklarisana promenljiva k na liniji 6
+INFO  17:10:09,820 - Deklarisana promenljiva i na liniji 6
+INFO  17:10:09,820 - Deklarisana promenljiva j na liniji 6
+INFO  17:10:09,820 - Deklarisana promenljiva x na liniji 2
+INFO  17:10:09,820 - Deklarisan niz niz na liniji 3
+INFO  17:10:09,820 - Deklarisan niz niz2 na liniji 4
+INFO  17:10:09,820 - Deklarisana promenljiva test na liniji 5
+INFO  17:10:09,820 - Obradjuje se funkcija main na liniji 10
+INFO  17:10:09,820 - Upotreba globalne promenljive niz na liniji 12
+INFO  17:10:09,820 - Upotreba globalne promenljive niz2 na liniji 13
+INFO  17:10:09,820 - Upotreba globalne promenljive x na liniji 14
+INFO  17:10:09,820 - Upotreba globalne promenljive niz na liniji 14
+INFO  17:10:09,820 - Upotreba elementa niza niz na liniji 14
+INFO  17:10:09,820 - Upotreba globalne promenljive niz2 na liniji 15
+INFO  17:10:09,820 - Upotreba elementa niza niz2 na liniji 15
+INFO  17:10:09,820 - Upotreba globalne promenljive test na liniji 17
+INFO  17:10:09,820 - Upotreba globalne promenljive x na liniji 20
+ERROR 17:10:09,821 - Samostalan uslov mora biti bool 20
+INFO  17:10:09,821 - Upotreba globalne promenljive niz2 na liniji 21
+INFO  17:10:09,821 - Upotreba elementa niza niz2 na liniji 21
+INFO  17:10:09,821 - Print calls = 1
+ERROR 17:10:09,821 - Parsiranje NIJE uspesno zavrseno!
