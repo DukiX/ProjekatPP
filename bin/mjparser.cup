@@ -89,6 +89,8 @@ nonterminal Endfor;
 nonterminal Beginc;
 nonterminal Endinc;
 nonterminal BegForCond;
+nonterminal ConstList;
+nonterminal BoolConstDef;
 
 Program ::= (Program) PROG ProgName:p VarDeclList LBRACE MethodDeclList RBRACE 
 ;
@@ -109,7 +111,7 @@ VarDeclaration ::= (VarDecl) Type:varType IDENT:varName VarList:l SEMI
 				|
 				(VarDeclArray) Type:varType IDENT:arrayName LSQUARE RSQUARE SEMI 
 				|
-				(ConstDecl) CONST Type:constType IDENT:constName EQUAL ConstDef:cd SEMI
+				(ConstDecl) CONST Type:constType IDENT:constName EQUAL ConstDef:cd ConstList:cl SEMI
 				|
 				(EnumDecl) ENUM EnumName:e LBRACE EnumList RBRACE
 				;
@@ -117,6 +119,11 @@ VarDeclaration ::= (VarDecl) Type:varType IDENT:varName VarList:l SEMI
 VarList ::= (VarListY) VarList COMMA IDENT:varName
 			|
 			(VarListN) /*epsilon*/
+			;
+			
+ConstList ::= (CnstList) ConstList COMMA IDENT:constName EQUAL ConstDef:cd
+			|
+			(CnstListEmpty) /*epsilon*/
 			;
 
 EnumName ::= (EnumName) IDENT:EnumNme;
@@ -135,8 +142,13 @@ ConstDef ::= (ConstDefNum) NUMBER
 			|
 			(CharConstDef) CHARCONST
 			|
-			(FactorBoolDef) BoolConst
+			(FactorBoolDef) BoolConstDef
 			;
+			
+BoolConstDef ::= (BoolTrueDef) TRUE
+				|
+				(BoolFalseDef) FALSE
+				;
 
 
 Type ::= (Type) IDENT:typeName 

@@ -101,6 +101,8 @@ nonterminal Endfor Endfor;
 nonterminal Beginc Beginc;
 nonterminal Endinc Endinc;
 nonterminal BegForCond BegForCond;
+nonterminal ConstList ConstList;
+nonterminal BoolConstDef BoolConstDef;
 
 Program ::= (Program) PROG ProgName:p VarDeclList:V1 LBRACE MethodDeclList:M2 RBRACE {: RESULT=new Program(p, V1, M2); RESULT.setLine(pleft); :} 
 ;
@@ -121,7 +123,7 @@ VarDeclaration ::= (VarDecl) Type:varType IDENT:varName VarList:l SEMI {: RESULT
 				|
 				(VarDeclArray) Type:varType IDENT:arrayName LSQUARE RSQUARE SEMI {: RESULT=new VarDeclArray(varType, arrayName); RESULT.setLine(varTypeleft); :} 
 				|
-				(ConstDecl) CONST Type:constType IDENT:constName EQUAL ConstDef:cd SEMI {: RESULT=new ConstDecl(constType, constName, cd); RESULT.setLine(constTypeleft); :}
+				(ConstDecl) CONST Type:constType IDENT:constName EQUAL ConstDef:cd ConstList:cl SEMI {: RESULT=new ConstDecl(constType, constName, cd, cl); RESULT.setLine(constTypeleft); :}
 				|
 				(EnumDecl) ENUM EnumName:e LBRACE EnumList:E1 RBRACE {: RESULT=new EnumDecl(e, E1); RESULT.setLine(eleft); :}
 				;
@@ -129,6 +131,11 @@ VarDeclaration ::= (VarDecl) Type:varType IDENT:varName VarList:l SEMI {: RESULT
 VarList ::= (VarListY) VarList:V1 COMMA IDENT:varName {: RESULT=new VarListY(V1, varName); RESULT.setLine(V1left); :}
 			|
 			(VarListN) {: RESULT=new VarListN(); :} /*epsilon*/
+			;
+			
+ConstList ::= (CnstList) ConstList:C1 COMMA IDENT:constName EQUAL ConstDef:cd {: RESULT=new CnstList(C1, constName, cd); RESULT.setLine(C1left); :}
+			|
+			(CnstListEmpty) {: RESULT=new CnstListEmpty(); :} /*epsilon*/
 			;
 
 EnumName ::= (EnumName) IDENT:EnumNme {: RESULT=new EnumName(EnumNme); RESULT.setLine(EnumNmeleft); :};
@@ -147,8 +154,13 @@ ConstDef ::= (ConstDefNum) NUMBER:N1 {: RESULT=new ConstDefNum(N1); RESULT.setLi
 			|
 			(CharConstDef) CHARCONST:C1 {: RESULT=new CharConstDef(C1); RESULT.setLine(C1left); :}
 			|
-			(FactorBoolDef) BoolConst:B1 {: RESULT=new FactorBoolDef(B1); RESULT.setLine(B1left); :}
+			(FactorBoolDef) BoolConstDef:B1 {: RESULT=new FactorBoolDef(B1); RESULT.setLine(B1left); :}
 			;
+			
+BoolConstDef ::= (BoolTrueDef) TRUE {: RESULT=new BoolTrueDef(); :}
+				|
+				(BoolFalseDef) FALSE {: RESULT=new BoolFalseDef(); :}
+				;
 
 
 Type ::= (Type) IDENT:typeName {: RESULT=new Type(typeName); RESULT.setLine(typeNameleft); :} 

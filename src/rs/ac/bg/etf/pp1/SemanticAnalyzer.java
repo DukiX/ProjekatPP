@@ -61,26 +61,54 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		Obj varNode = Tab.insert(Obj.Var, varDecl.getVarName(), varDecl.getType().struct);
 	}
 
+	private LinkedList<Integer> constInt = new LinkedList<>();
+	
 	public void visit(ConstDecl constDecl) {
 		if (constDecl.getType().struct == constDecl.getConstDef().struct) {
 			report_info("Deklarisana konstanta " + constDecl.getConstName(), constDecl);
 			Obj varNode = Tab.insert(Obj.Con, constDecl.getConstName(), constDecl.getType().struct);
+			varNode.setAdr(constInt.removeLast());
 		} else {
 			report_error("Deklarisana konstanta nije dobrog tipa: " + constDecl.getConstName(), constDecl);
 			Obj varNode = Tab.insert(Obj.Con, constDecl.getConstName(), constDecl.getType().struct);
+			varNode.setAdr(constInt.removeLast());
+		}
+	}
+	
+	
+	
+	public void visit(CnstList constDecl) {
+		if (varTip == constDecl.getConstDef().struct) {
+			report_info("Deklarisana konstanta " + constDecl.getConstName(), constDecl);
+			Obj varNode = Tab.insert(Obj.Con, constDecl.getConstName(), varTip);
+			varNode.setAdr(constInt.removeLast());
+		} else {
+			report_error("Deklarisana konstanta nije dobrog tipa: " + constDecl.getConstName(), constDecl);
+			Obj varNode = Tab.insert(Obj.Con, constDecl.getConstName(), varTip);
+			varNode.setAdr(constInt.removeLast());
 		}
 	}
 
 	public void visit(ConstDefNum dfn) {
 		dfn.struct = Tab.intType;
+		constInt.add(dfn.getN1());
 	}
 
 	public void visit(CharConstDef ccd) {
 		ccd.struct = Tab.charType;
+		constInt.add((int)ccd.getC1());
 	}
 
 	public void visit(FactorBoolDef fbd) {
 		fbd.struct = boolType;
+	}
+	
+	public void visit(BoolTrueDef btd) {
+		constInt.add(1);
+	}
+	
+	public void visit(BoolFalseDef bfd) {
+		constInt.add(0);
 	}
 
 	public void visit(VarDeclArray arrayDecl) {

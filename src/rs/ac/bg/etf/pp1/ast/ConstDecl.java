@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 21/2/2019 11:41:32
+// 21/2/2019 19:19:5
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -10,13 +10,16 @@ public class ConstDecl extends VarDeclaration {
     private Type Type;
     private String constName;
     private ConstDef ConstDef;
+    private ConstList ConstList;
 
-    public ConstDecl (Type Type, String constName, ConstDef ConstDef) {
+    public ConstDecl (Type Type, String constName, ConstDef ConstDef, ConstList ConstList) {
         this.Type=Type;
         if(Type!=null) Type.setParent(this);
         this.constName=constName;
         this.ConstDef=ConstDef;
         if(ConstDef!=null) ConstDef.setParent(this);
+        this.ConstList=ConstList;
+        if(ConstList!=null) ConstList.setParent(this);
     }
 
     public Type getType() {
@@ -43,6 +46,14 @@ public class ConstDecl extends VarDeclaration {
         this.ConstDef=ConstDef;
     }
 
+    public ConstList getConstList() {
+        return ConstList;
+    }
+
+    public void setConstList(ConstList ConstList) {
+        this.ConstList=ConstList;
+    }
+
     public void accept(Visitor visitor) {
         visitor.visit(this);
     }
@@ -50,17 +61,20 @@ public class ConstDecl extends VarDeclaration {
     public void childrenAccept(Visitor visitor) {
         if(Type!=null) Type.accept(visitor);
         if(ConstDef!=null) ConstDef.accept(visitor);
+        if(ConstList!=null) ConstList.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
         if(Type!=null) Type.traverseTopDown(visitor);
         if(ConstDef!=null) ConstDef.traverseTopDown(visitor);
+        if(ConstList!=null) ConstList.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
         if(Type!=null) Type.traverseBottomUp(visitor);
         if(ConstDef!=null) ConstDef.traverseBottomUp(visitor);
+        if(ConstList!=null) ConstList.traverseBottomUp(visitor);
         accept(visitor);
     }
 
@@ -80,6 +94,12 @@ public class ConstDecl extends VarDeclaration {
 
         if(ConstDef!=null)
             buffer.append(ConstDef.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
+
+        if(ConstList!=null)
+            buffer.append(ConstList.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");

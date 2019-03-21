@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 21/2/2019 11:41:32
+// 21/2/2019 19:19:5
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -24,12 +24,14 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(VarList VarList) { }
     public void visit(FactorTypeExpr FactorTypeExpr) { }
     public void visit(CondFactList CondFactList) { }
+    public void visit(ConstList ConstList) { }
     public void visit(Condition Condition) { }
     public void visit(For For) { }
     public void visit(ConstDef ConstDef) { }
     public void visit(EnumList EnumList) { }
     public void visit(BoolConst BoolConst) { }
     public void visit(ActualParamList ActualParamList) { }
+    public void visit(BoolConstDef BoolConstDef) { }
     public void visit(EnumNumbering EnumNumbering) { }
     public void visit(VarDeclList VarDeclList) { }
     public void visit(FormalParamList FormalParamList) { }
@@ -137,6 +139,8 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(NoMethodDecl NoMethodDecl) { visit(); }
     public void visit(MethodDeclarations MethodDeclarations) { visit(); }
     public void visit(Type Type) { visit(); }
+    public void visit(BoolFalseDef BoolFalseDef) { visit(); }
+    public void visit(BoolTrueDef BoolTrueDef) { visit(); }
     public void visit(FactorBoolDef FactorBoolDef) { visit(); }
     public void visit(CharConstDef CharConstDef) { visit(); }
     public void visit(ConstDefNum ConstDefNum) { visit(); }
@@ -145,6 +149,8 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(EnumElem EnumElem) { visit(); }
     public void visit(EnumLst EnumLst) { visit(); }
     public void visit(EnumName EnumName) { visit(); }
+    public void visit(CnstListEmpty CnstListEmpty) { visit(); }
+    public void visit(CnstList CnstList) { visit(); }
     public void visit(VarListN VarListN) { visit(); }
     public void visit(VarListY VarListY) { visit(); }
     public void visit(EnumDecl EnumDecl) { visit(); }

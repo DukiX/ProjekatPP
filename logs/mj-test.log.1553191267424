@@ -1,0 +1,169 @@
+INFO  19:00:50,753 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  19:00:50,778 - #2 program
+INFO  19:00:50,778 - #39 MJProgram
+INFO  19:00:50,778 - #39 int
+INFO  19:00:50,779 - #39 x
+INFO  19:00:50,780 - #8 ,
+INFO  19:00:50,780 - #39 y
+INFO  19:00:50,780 - #8 ,
+INFO  19:00:50,780 - #39 z
+INFO  19:00:50,780 - #8 ,
+INFO  19:00:50,780 - #39 k
+INFO  19:00:50,780 - #8 ,
+INFO  19:00:50,780 - #39 i
+INFO  19:00:50,780 - #8 ,
+INFO  19:00:50,780 - #39 j
+INFO  19:00:50,781 - #5 ;
+INFO  19:00:50,781 - #39 int
+INFO  19:00:50,781 - #39 niz
+INFO  19:00:50,781 - #20 [
+INFO  19:00:50,781 - #21 ]
+INFO  19:00:50,781 - #5 ;
+INFO  19:00:50,781 - #39 char
+INFO  19:00:50,781 - #39 niz2
+INFO  19:00:50,783 - #20 [
+INFO  19:00:50,783 - #21 ]
+INFO  19:00:50,783 - #5 ;
+INFO  19:00:50,783 - #39 bool
+INFO  19:00:50,783 - #39 test
+INFO  19:00:50,783 - #5 ;
+INFO  19:00:50,783 - #28 const
+INFO  19:00:50,783 - #39 int
+INFO  19:00:50,783 - #39 a
+INFO  19:00:50,783 - #12 =
+INFO  19:00:50,783 - #38 70
+INFO  19:00:50,783 - #8 ,
+INFO  19:00:50,784 - #39 b
+INFO  19:00:50,784 - #12 =
+INFO  19:00:50,784 - #38 90
+INFO  19:00:50,784 - #8 ,
+INFO  19:00:50,784 - #39 c
+INFO  19:00:50,784 - #12 =
+INFO  19:00:50,784 - #38 100
+INFO  19:00:50,784 - #5 ;
+INFO  19:00:50,784 - #3 {
+INFO  19:00:50,784 - #39 int
+INFO  19:00:50,785 - #39 main
+INFO  19:00:50,785 - #6 (
+INFO  19:00:50,785 - #7 )
+INFO  19:00:50,785 - #3 {
+INFO  19:00:50,785 - #39 niz
+INFO  19:00:50,786 - #12 =
+INFO  19:00:50,787 - #19 new
+INFO  19:00:50,787 - #39 int
+INFO  19:00:50,787 - #20 [
+INFO  19:00:50,787 - #38 5
+INFO  19:00:50,787 - #21 ]
+INFO  19:00:50,788 - #5 ;
+INFO  19:00:50,788 - #39 niz2
+INFO  19:00:50,789 - #12 =
+INFO  19:00:50,789 - #19 new
+INFO  19:00:50,789 - #39 char
+INFO  19:00:50,789 - #20 [
+INFO  19:00:50,789 - #38 2
+INFO  19:00:50,789 - #21 ]
+INFO  19:00:50,789 - #5 ;
+INFO  19:00:50,789 - #39 x
+INFO  19:00:50,789 - #12 =
+INFO  19:00:50,789 - #39 niz
+INFO  19:00:50,789 - #20 [
+INFO  19:00:50,792 - #38 2
+INFO  19:00:50,792 - #21 ]
+INFO  19:00:50,792 - #5 ;
+INFO  19:00:50,793 - #39 niz2
+INFO  19:00:50,793 - #20 [
+INFO  19:00:50,793 - #38 0
+INFO  19:00:50,793 - #21 ]
+INFO  19:00:50,793 - #12 =
+INFO  19:00:50,793 - #44 a
+INFO  19:00:50,793 - #5 ;
+INFO  19:00:50,793 - #39 niz2
+INFO  19:00:50,793 - #20 [
+INFO  19:00:50,793 - #38 1
+INFO  19:00:50,793 - #21 ]
+INFO  19:00:50,793 - #12 =
+INFO  19:00:50,793 - #44 b
+INFO  19:00:50,793 - #5 ;
+INFO  19:00:50,794 - #39 k
+INFO  19:00:50,794 - #12 =
+INFO  19:00:50,794 - #39 a
+INFO  19:00:50,794 - #5 ;
+INFO  19:00:50,794 - #39 test
+INFO  19:00:50,794 - #12 =
+INFO  19:00:50,794 - #29 true
+INFO  19:00:50,794 - #5 ;
+INFO  19:00:50,795 - #40 if
+INFO  19:00:50,795 - #6 (
+INFO  19:00:50,795 - #39 x
+INFO  19:00:50,795 - #32 ==
+INFO  19:00:50,795 - #38 1
+INFO  19:00:50,796 - #26 &&
+INFO  19:00:50,796 - #39 y
+INFO  19:00:50,796 - #32 ==
+INFO  19:00:50,796 - #38 0
+INFO  19:00:50,796 - #27 ||
+INFO  19:00:50,797 - #39 test
+INFO  19:00:50,797 - #26 &&
+INFO  19:00:50,797 - #39 k
+INFO  19:00:50,797 - #32 ==
+INFO  19:00:50,797 - #38 0
+INFO  19:00:50,797 - #7 )
+INFO  19:00:50,797 - #3 {
+INFO  19:00:50,798 - #9 print
+INFO  19:00:50,798 - #6 (
+INFO  19:00:50,798 - #39 niz2
+INFO  19:00:50,798 - #20 [
+INFO  19:00:50,798 - #38 0
+INFO  19:00:50,798 - #21 ]
+INFO  19:00:50,798 - #7 )
+INFO  19:00:50,798 - #5 ;
+INFO  19:00:50,798 - #9 print
+INFO  19:00:50,798 - #6 (
+INFO  19:00:50,798 - #39 niz2
+INFO  19:00:50,798 - #20 [
+INFO  19:00:50,798 - #38 1
+INFO  19:00:50,798 - #21 ]
+INFO  19:00:50,798 - #7 )
+INFO  19:00:50,798 - #5 ;
+INFO  19:00:50,798 - #4 }
+INFO  19:00:50,798 - #10 return
+INFO  19:00:50,799 - #38 0
+INFO  19:00:50,799 - #5 ;
+INFO  19:00:50,799 - #4 }
+INFO  19:00:50,799 - #4 }
+INFO  19:00:50,813 - Deklarisana promenljiva y na liniji 6
+INFO  19:00:50,813 - Deklarisana promenljiva z na liniji 6
+INFO  19:00:50,813 - Deklarisana promenljiva k na liniji 6
+INFO  19:00:50,813 - Deklarisana promenljiva i na liniji 6
+INFO  19:00:50,813 - Deklarisana promenljiva j na liniji 6
+INFO  19:00:50,813 - Deklarisana promenljiva x na liniji 2
+INFO  19:00:50,813 - Deklarisan niz niz na liniji 3
+INFO  19:00:50,813 - Deklarisan niz niz2 na liniji 4
+INFO  19:00:50,813 - Deklarisana promenljiva test na liniji 5
+INFO  19:00:50,813 - Deklarisana konstanta b na liniji 16
+INFO  19:00:50,813 - Deklarisana konstanta c na liniji 16
+INFO  19:00:50,813 - Deklarisana konstanta a na liniji 6
+INFO  19:00:50,813 - Obradjuje se funkcija main na liniji 11
+INFO  19:00:50,813 - Upotreba globalne promenljive niz na liniji 13
+INFO  19:00:50,813 - Upotreba globalne promenljive niz2 na liniji 14
+INFO  19:00:50,813 - Upotreba globalne promenljive x na liniji 15
+INFO  19:00:50,813 - Upotreba globalne promenljive niz na liniji 15
+INFO  19:00:50,814 - Upotreba elementa niza niz na liniji 15
+INFO  19:00:50,814 - Upotreba globalne promenljive niz2 na liniji 16
+INFO  19:00:50,814 - Upotreba elementa niza niz2 na liniji 16
+INFO  19:00:50,814 - Upotreba globalne promenljive niz2 na liniji 17
+INFO  19:00:50,814 - Upotreba elementa niza niz2 na liniji 17
+INFO  19:00:50,814 - Upotreba globalne promenljive k na liniji 18
+INFO  19:00:50,814 - Upotreba globalne konstante a na liniji 18
+INFO  19:00:50,814 - Upotreba globalne promenljive test na liniji 20
+INFO  19:00:50,814 - Upotreba globalne promenljive x na liniji 23
+INFO  19:00:50,814 - Upotreba globalne promenljive y na liniji 23
+INFO  19:00:50,814 - Upotreba globalne promenljive test na liniji 23
+INFO  19:00:50,814 - Upotreba globalne promenljive k na liniji 23
+INFO  19:00:50,814 - Upotreba globalne promenljive niz2 na liniji 24
+INFO  19:00:50,814 - Upotreba elementa niza niz2 na liniji 24
+INFO  19:00:50,814 - Upotreba globalne promenljive niz2 na liniji 25
+INFO  19:00:50,814 - Upotreba elementa niza niz2 na liniji 25
+INFO  19:00:50,814 - Print calls = 2
+INFO  19:00:50,815 - Generating bytecode file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  19:00:50,819 - Parsiranje uspesno zavrseno!

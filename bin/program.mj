@@ -3,6 +3,7 @@
  	int niz[];
  	char niz2[];
  	bool test;
+ 	const char a = 'z',b='x',c='s',d='m';
 {
 
 
@@ -14,13 +15,14 @@
 		x=niz[2];
 		niz2[0]='a';
 		niz2[1]='b';
+		k=70;
 		
 		test=true;
 		
 		
-		if(x==1 && y==0 || test && k==0){
-			print(niz2[0]);
-			print(niz2[1]);
+		if(x==1 && y==0 || test && k==70){
+			print(b);
+			print(a);
 		}
 		
 		//for(i=0;i<5;i++){

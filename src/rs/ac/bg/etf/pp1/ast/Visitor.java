@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 21/2/2019 11:41:32
+// 21/2/2019 19:19:5
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -24,12 +24,14 @@ public interface Visitor {
     public void visit(VarList VarList);
     public void visit(FactorTypeExpr FactorTypeExpr);
     public void visit(CondFactList CondFactList);
+    public void visit(ConstList ConstList);
     public void visit(Condition Condition);
     public void visit(For For);
     public void visit(ConstDef ConstDef);
     public void visit(EnumList EnumList);
     public void visit(BoolConst BoolConst);
     public void visit(ActualParamList ActualParamList);
+    public void visit(BoolConstDef BoolConstDef);
     public void visit(EnumNumbering EnumNumbering);
     public void visit(VarDeclList VarDeclList);
     public void visit(FormalParamList FormalParamList);
@@ -137,6 +139,8 @@ public interface Visitor {
     public void visit(NoMethodDecl NoMethodDecl);
     public void visit(MethodDeclarations MethodDeclarations);
     public void visit(Type Type);
+    public void visit(BoolFalseDef BoolFalseDef);
+    public void visit(BoolTrueDef BoolTrueDef);
     public void visit(FactorBoolDef FactorBoolDef);
     public void visit(CharConstDef CharConstDef);
     public void visit(ConstDefNum ConstDefNum);
@@ -145,6 +149,8 @@ public interface Visitor {
     public void visit(EnumElem EnumElem);
     public void visit(EnumLst EnumLst);
     public void visit(EnumName EnumName);
+    public void visit(CnstListEmpty CnstListEmpty);
+    public void visit(CnstList CnstList);
     public void visit(VarListN VarListN);
     public void visit(VarListY VarListY);
     public void visit(EnumDecl EnumDecl);
