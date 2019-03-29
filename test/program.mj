@@ -6,6 +6,9 @@
  	const char a = 'z',b='x',c='s',d='m';
 {
 
+	void fja(int a,int b[],int c){
+		x=a+b[2]+c;
+	}
 
 	
 	int main() {

@@ -92,6 +92,7 @@ nonterminal BegForCond;
 nonterminal ConstList;
 nonterminal BoolConstDef;
 nonterminal ArrayOpt;
+nonterminal ArrayForPar;
 
 Program ::= (Program) PROG ProgName:p VarDeclList LBRACE MethodDeclList RBRACE 
 ;
@@ -185,7 +186,12 @@ FormalParamList ::= (FormalParamDecls) FormalParamList COMMA FormalParamDecl
 			  		{: parser.log.debug("Uspesan oporavak od formalnog parametra."); :}
 					;
 					
-FormalParamDecl ::= (FormalParamDecl) Type:formalType IDENT:formalName;
+FormalParamDecl ::= (FormalParamDecl) Type:formalType IDENT:formalName ArrayForPar;
+
+ArrayForPar ::= (ArrayForParY) LSQUARE RSQUARE
+				|
+				(ArrayForParN) /* epsilon */
+				;
 
 StatementList ::= (Statements) StatementList Statement 
 					|

@@ -104,6 +104,7 @@ nonterminal BegForCond BegForCond;
 nonterminal ConstList ConstList;
 nonterminal BoolConstDef BoolConstDef;
 nonterminal ArrayOpt ArrayOpt;
+nonterminal ArrayForPar ArrayForPar;
 
 Program ::= (Program) PROG ProgName:p VarDeclList:V1 LBRACE MethodDeclList:M2 RBRACE {: RESULT=new Program(p, V1, M2); RESULT.setLine(pleft); :} 
 ;
@@ -197,7 +198,12 @@ FormalParamList ::= (FormalParamDecls) FormalParamList:F1 COMMA FormalParamDecl:
 			  		{: parser.log.debug("Uspesan oporavak od formalnog parametra."); :} {: RESULT=new ErrFormPar(); :}
 					;
 					
-FormalParamDecl ::= (FormalParamDecl) Type:formalType IDENT:formalName {: RESULT=new FormalParamDecl(formalType, formalName); RESULT.setLine(formalTypeleft); :};
+FormalParamDecl ::= (FormalParamDecl) Type:formalType IDENT:formalName ArrayForPar:A1 {: RESULT=new FormalParamDecl(formalType, formalName, A1); RESULT.setLine(formalTypeleft); :};
+
+ArrayForPar ::= (ArrayForParY) LSQUARE RSQUARE {: RESULT=new ArrayForParY(); :}
+				|
+				(ArrayForParN) {: RESULT=new ArrayForParN(); :} /* epsilon */
+				;
 
 StatementList ::= (Statements) StatementList:S1 Statement:S2 {: RESULT=new Statements(S1, S2); RESULT.setLine(S1left); :} 
 					|

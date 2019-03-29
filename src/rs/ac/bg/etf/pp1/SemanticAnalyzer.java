@@ -56,20 +56,46 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		Tab.openScope();
 	}
 
-	private LinkedList<Integer> nizDeclLista = new LinkedList<>();
+	/*
+	 * public void visit(VarDeclArray arrayDecl) { report_info("Deklarisan niz " +
+	 * arrayDecl.getArrayName(), arrayDecl); Obj varNode = Tab.insert(Obj.Var,
+	 * arrayDecl.getArrayName(), new Struct(Struct.Array,
+	 * arrayDecl.getType().struct)); }
+	 */
 
-	/*public void visit(VarDeclArray arrayDecl) {
-		report_info("Deklarisan niz " + arrayDecl.getArrayName(), arrayDecl);
-		Obj varNode = Tab.insert(Obj.Var, arrayDecl.getArrayName(),
-				new Struct(Struct.Array, arrayDecl.getType().struct));
-	}*/
+	private LinkedList<Integer> nizForParLista = new LinkedList<>();
+
+	public void visit(FormalParamDecl fpd) {
+		if (nizForParLista.removeLast() == 1) {
+			report_info("Deklarisan formalni argument " + fpd.getFormalName(), fpd);
+			Obj varNode = Tab.insert(Obj.Var, fpd.getFormalName(), new Struct(Struct.Array, fpd.getType().struct));
+			int brojParam = currentMethod.getLevel();
+			currentMethod.setLevel(++brojParam);
+			varNode.setFpPos(brojParam);
+		} else {
+			report_info("Deklarisan formalni argument " + fpd.getFormalName(), fpd);
+			Obj varNode = Tab.insert(Obj.Var, fpd.getFormalName(), fpd.getType().struct);
+			int brojParam = currentMethod.getLevel();
+			currentMethod.setLevel(++brojParam);
+			varNode.setFpPos(brojParam);
+		}
+	}
+
+	public void visit(ArrayForParY afpy) {
+		nizForParLista.add(1);
+	}
+
+	public void visit(ArrayForParN afpn) {
+		nizForParLista.add(0);
+	}
+
+	private LinkedList<Integer> nizDeclLista = new LinkedList<>();
 
 	public void visit(VarDecl varDecl) {
 		if (nizDeclLista.removeLast() == 1) {
 			report_info("Deklarisan niz " + varDecl.getVarName(), varDecl);
-			Obj varNode = Tab.insert(Obj.Var, varDecl.getVarName(),
-					new Struct(Struct.Array, varDecl.getType().struct));
-		}else {
+			Obj varNode = Tab.insert(Obj.Var, varDecl.getVarName(), new Struct(Struct.Array, varDecl.getType().struct));
+		} else {
 			report_info("Deklarisana promenljiva " + varDecl.getVarName(), varDecl);
 			Obj varNode = Tab.insert(Obj.Var, varDecl.getVarName(), varDecl.getType().struct);
 		}
@@ -159,14 +185,6 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		Struct estr = new Struct(Struct.Enum, new HashTableDataStructure());
 		okruzujuciEnum = en.obj = Tab.insert(Obj.Type, en.getEnumNme(), estr);
 		report_info("Deklarisano nabrajanje " + en.getEnumNme(), en);
-	}
-
-	public void visit(FormalParamDecl fpd) {
-		report_info("Deklarisan formalni argument " + fpd.getFormalName(), fpd);
-		Obj varNode = Tab.insert(Obj.Var, fpd.getFormalName(), fpd.getType().struct);
-		int brojParam = currentMethod.getLevel();
-		currentMethod.setLevel(++brojParam);
-		varNode.setFpPos(brojParam);
 	}
 
 	public void visit(Increment inc) {

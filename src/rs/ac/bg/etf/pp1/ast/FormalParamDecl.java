@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 29/2/2019 12:8:34
+// 29/2/2019 12:34:5
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -11,11 +11,14 @@ public class FormalParamDecl implements SyntaxNode {
     private int line;
     private Type Type;
     private String formalName;
+    private ArrayForPar ArrayForPar;
 
-    public FormalParamDecl (Type Type, String formalName) {
+    public FormalParamDecl (Type Type, String formalName, ArrayForPar ArrayForPar) {
         this.Type=Type;
         if(Type!=null) Type.setParent(this);
         this.formalName=formalName;
+        this.ArrayForPar=ArrayForPar;
+        if(ArrayForPar!=null) ArrayForPar.setParent(this);
     }
 
     public Type getType() {
@@ -32,6 +35,14 @@ public class FormalParamDecl implements SyntaxNode {
 
     public void setFormalName(String formalName) {
         this.formalName=formalName;
+    }
+
+    public ArrayForPar getArrayForPar() {
+        return ArrayForPar;
+    }
+
+    public void setArrayForPar(ArrayForPar ArrayForPar) {
+        this.ArrayForPar=ArrayForPar;
     }
 
     public SyntaxNode getParent() {
@@ -56,15 +67,18 @@ public class FormalParamDecl implements SyntaxNode {
 
     public void childrenAccept(Visitor visitor) {
         if(Type!=null) Type.accept(visitor);
+        if(ArrayForPar!=null) ArrayForPar.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
         if(Type!=null) Type.traverseTopDown(visitor);
+        if(ArrayForPar!=null) ArrayForPar.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
         if(Type!=null) Type.traverseBottomUp(visitor);
+        if(ArrayForPar!=null) ArrayForPar.traverseBottomUp(visitor);
         accept(visitor);
     }
 
@@ -80,6 +94,12 @@ public class FormalParamDecl implements SyntaxNode {
         buffer.append("\n");
 
         buffer.append(" "+tab+formalName);
+        buffer.append("\n");
+
+        if(ArrayForPar!=null)
+            buffer.append(ArrayForPar.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
         buffer.append("\n");
 
         buffer.append(tab);
