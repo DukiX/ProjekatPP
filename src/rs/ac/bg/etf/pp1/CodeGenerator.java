@@ -41,6 +41,26 @@ public class CodeGenerator extends VisitorAdaptor {
 		Code.put(fpCnt.getCount());
 		Code.put(varCnt.getCount() + fpCnt.getCount());
 	}
+	
+	@Override
+	public void visit(MethodTypeVoid MethodTypeName) {
+		if ("main".equalsIgnoreCase(MethodTypeName.getMethName())) {
+			mainPc = Code.pc;
+		}
+		MethodTypeName.obj.setAdr(Code.pc);
+
+		// Collect arguments and local variables.
+		SyntaxNode methodNode = MethodTypeName.getParent();
+		VarCounter varCnt = new VarCounter();
+		methodNode.traverseTopDown(varCnt);
+		FormParamCounter fpCnt = new FormParamCounter();
+		methodNode.traverseTopDown(fpCnt);
+
+		// Generate the entry.
+		Code.put(Code.enter);
+		Code.put(fpCnt.getCount());
+		Code.put(varCnt.getCount() + fpCnt.getCount());
+	}
 
 	@Override
 	public void visit(VarDecl VarDecl) {

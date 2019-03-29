@@ -312,8 +312,64 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			for (Obj obj : func.getLocalSymbols()) {
 				if (obj.getFpPos() != 0 && obj.getFpPos() <= actParLst.size()) {
 					if (obj.getType() != actParLst.get(obj.getFpPos() - 1)) {
-						report_error("Greska na liniji " + procCall.getLine() + " pogresan tip parametra funkcije "
-								+ func.getName(), null);
+						if (obj.getType().getKind() == Struct.Array
+								&& actParLst.get(obj.getFpPos() - 1).getKind() == Struct.Array) {
+							if (obj.getType().getElemType() == actParLst.get(obj.getFpPos() - 1).getElemType()) {
+								//dobar
+							} else {
+								report_error("Greska na liniji " + procCall.getLine()
+										+ " pogresan tip parametra funkcije " + func.getName(), null);
+							}
+						} else {
+							report_error("Greska na liniji " + procCall.getLine() + " pogresan tip parametra funkcije "
+									+ func.getName(), null);
+						}
+					}
+				}
+			}
+		}
+	}
+
+	public void visit(FuncCall funcCall) {
+		Obj func = funcCall.getDesignator().obj;
+		if (Obj.Meth == func.getKind()) {
+			if (func.getType() == Tab.noType) {
+				report_error("Greska na liniji " + funcCall.getLine() + " : funkcija " + func.getName()
+						+ " nema povratnu vrednost!", funcCall);
+			} else {
+				report_info("Pronadjen poziv funkcije " + func.getName() + " na liniji " + funcCall.getLine(), null);
+				funcCall.struct = func.getType();
+			}
+		} else {
+			report_error("Greska na liniji " + funcCall.getLine() + " : ime " + func.getName() + " nije funkcija!",
+					null);
+			funcCall.struct = Tab.noType;
+		}
+
+		int actPar = listaBrojaParametara.removeLast().get();
+
+		if (func.getLevel() != actPar) {
+			report_error("Greska na liniji " + funcCall.getLine() + " : funkcija " + func.getName()
+					+ " nije prosledjen dobar broj parametara!", null);
+		}
+
+		if (actPar != 0) {
+			LinkedList<Struct> actParLst = listaListiTipova.removeLast();
+			for (Obj obj : func.getLocalSymbols()) {
+				if (obj.getFpPos() != 0 && obj.getFpPos() <= actParLst.size()) {
+					if (obj.getType() != actParLst.get(obj.getFpPos() - 1)) {
+						if (obj.getType().getKind() == Struct.Array
+								&& actParLst.get(obj.getFpPos() - 1).getKind() == Struct.Array) {
+							if (obj.getType().getElemType() == actParLst.get(obj.getFpPos() - 1).getElemType()) {
+								//dobar
+							} else {
+								report_error("Greska na liniji " + funcCall.getLine()
+										+ " pogresan tip parametra funkcije " + func.getName(), null);
+							}
+						} else {
+							report_error("Greska na liniji " + funcCall.getLine() + " pogresan tip parametra funkcije "
+									+ func.getName(), null);
+						}
 					}
 				}
 			}
@@ -386,42 +442,6 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 
 	public void visit(Var var) {
 		var.struct = var.getDesignator().obj.getType();
-	}
-
-	public void visit(FuncCall funcCall) {
-		Obj func = funcCall.getDesignator().obj;
-		if (Obj.Meth == func.getKind()) {
-			if (func.getType() == Tab.noType) {
-				report_error("Greska na liniji " + funcCall.getLine() + " : funkcija " + func.getName()
-						+ " nema povratnu vrednost!", funcCall);
-			} else {
-				report_info("Pronadjen poziv funkcije " + func.getName() + " na liniji " + funcCall.getLine(), null);
-				funcCall.struct = func.getType();
-			}
-		} else {
-			report_error("Greska na liniji " + funcCall.getLine() + " : ime " + func.getName() + " nije funkcija!",
-					null);
-			funcCall.struct = Tab.noType;
-		}
-
-		int actPar = listaBrojaParametara.removeLast().get();
-
-		if (func.getLevel() != actPar) {
-			report_error("Greska na liniji " + funcCall.getLine() + " : funkcija " + func.getName()
-					+ " nije prosledjen dobar broj parametara!", null);
-		}
-
-		if (actPar != 0) {
-			LinkedList<Struct> actParLst = listaListiTipova.removeLast();
-			for (Obj obj : func.getLocalSymbols()) {
-				if (obj.getFpPos() != 0 && obj.getFpPos() <= actParLst.size()) {
-					if (obj.getType() != actParLst.get(obj.getFpPos() - 1)) {
-						report_error("Greska na liniji " + funcCall.getLine() + " pogresan tip parametra funkcije "
-								+ func.getName(), null);
-					}
-				}
-			}
-		}
 	}
 
 	private int inFor = 0;

@@ -6,21 +6,33 @@
  	const char a = 'z',b='x',c='s',d='m';
 {
 
-	void fja(int a,int b[],int c){
-		x=a+b[2]+c;
+	int fja(int a,int b,int c[],bool d){
+		if(d){
+			return a+b+c[0];
+		}else{
+			return 0;
+		}
 	}
 
 	
-	int main() {
+	void main() {
 		
 		niz = new int[5];
 		niz2=new char[2];
 		x=niz[2];
 		niz2[0]='a';
 		niz2[1]='b';
-		k=70;
+		niz[0]=50;
 		
 		test=true;
+		
+		
+		k=fja(1,10,niz,test);
+		
+		print(k);
+		
+		k=70;
+		
 		
 		
 		if(x==1 && y==0 || test && k==70){
@@ -41,6 +53,6 @@
 			//print(niz[i],10);
 		//}
 		
-		return 0;
+		//return 0;
 	}
 }
