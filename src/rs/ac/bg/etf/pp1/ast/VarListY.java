@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 21/2/2019 19:19:5
+// 29/2/2019 12:8:34
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -9,11 +9,14 @@ public class VarListY extends VarList {
 
     private VarList VarList;
     private String varName;
+    private ArrayOpt ArrayOpt;
 
-    public VarListY (VarList VarList, String varName) {
+    public VarListY (VarList VarList, String varName, ArrayOpt ArrayOpt) {
         this.VarList=VarList;
         if(VarList!=null) VarList.setParent(this);
         this.varName=varName;
+        this.ArrayOpt=ArrayOpt;
+        if(ArrayOpt!=null) ArrayOpt.setParent(this);
     }
 
     public VarList getVarList() {
@@ -32,21 +35,32 @@ public class VarListY extends VarList {
         this.varName=varName;
     }
 
+    public ArrayOpt getArrayOpt() {
+        return ArrayOpt;
+    }
+
+    public void setArrayOpt(ArrayOpt ArrayOpt) {
+        this.ArrayOpt=ArrayOpt;
+    }
+
     public void accept(Visitor visitor) {
         visitor.visit(this);
     }
 
     public void childrenAccept(Visitor visitor) {
         if(VarList!=null) VarList.accept(visitor);
+        if(ArrayOpt!=null) ArrayOpt.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
         if(VarList!=null) VarList.traverseTopDown(visitor);
+        if(ArrayOpt!=null) ArrayOpt.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
         if(VarList!=null) VarList.traverseBottomUp(visitor);
+        if(ArrayOpt!=null) ArrayOpt.traverseBottomUp(visitor);
         accept(visitor);
     }
 
@@ -62,6 +76,12 @@ public class VarListY extends VarList {
         buffer.append("\n");
 
         buffer.append(" "+tab+varName);
+        buffer.append("\n");
+
+        if(ArrayOpt!=null)
+            buffer.append(ArrayOpt.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
         buffer.append("\n");
 
         buffer.append(tab);

@@ -1,0 +1,165 @@
+INFO  22:14:39,945 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  22:14:40,227 - #2 program
+INFO  22:14:40,227 - #39 MJProgram
+INFO  22:14:40,227 - #39 int
+INFO  22:14:40,233 - #39 x
+INFO  22:14:40,236 - #8 ,
+INFO  22:14:40,239 - #39 y
+INFO  22:14:40,239 - #8 ,
+INFO  22:14:40,239 - #39 z
+INFO  22:14:40,239 - #8 ,
+INFO  22:14:40,239 - #39 k
+INFO  22:14:40,239 - #8 ,
+INFO  22:14:40,239 - #39 i
+INFO  22:14:40,239 - #8 ,
+INFO  22:14:40,239 - #39 j
+INFO  22:14:40,239 - #5 ;
+INFO  22:14:40,239 - #39 int
+INFO  22:14:40,239 - #39 niz
+INFO  22:14:40,239 - #20 [
+INFO  22:14:40,239 - #21 ]
+INFO  22:14:40,239 - #5 ;
+INFO  22:14:40,239 - #39 char
+INFO  22:14:40,240 - #39 niz2
+INFO  22:14:40,240 - #20 [
+INFO  22:14:40,240 - #21 ]
+INFO  22:14:40,240 - #5 ;
+INFO  22:14:40,240 - #39 bool
+INFO  22:14:40,240 - #39 test
+INFO  22:14:40,240 - #5 ;
+INFO  22:14:40,240 - #28 const
+INFO  22:14:40,240 - #39 char
+INFO  22:14:40,240 - #39 a
+INFO  22:14:40,240 - #12 =
+INFO  22:14:40,240 - #44 z
+INFO  22:14:40,240 - #8 ,
+INFO  22:14:40,243 - #39 b
+INFO  22:14:40,243 - #12 =
+INFO  22:14:40,244 - #44 x
+INFO  22:14:40,244 - #8 ,
+INFO  22:14:40,244 - #39 c
+INFO  22:14:40,244 - #12 =
+INFO  22:14:40,244 - #44 s
+INFO  22:14:40,244 - #8 ,
+INFO  22:14:40,244 - #39 d
+INFO  22:14:40,244 - #12 =
+INFO  22:14:40,244 - #44 m
+INFO  22:14:40,244 - #5 ;
+INFO  22:14:40,244 - #3 {
+INFO  22:14:40,245 - #39 int
+INFO  22:14:40,247 - #39 main
+INFO  22:14:40,247 - #6 (
+INFO  22:14:40,248 - #7 )
+INFO  22:14:40,250 - #3 {
+INFO  22:14:40,250 - #39 niz
+INFO  22:14:40,253 - #12 =
+INFO  22:14:40,260 - #19 new
+INFO  22:14:40,260 - #39 int
+INFO  22:14:40,260 - #20 [
+INFO  22:14:40,261 - #38 5
+INFO  22:14:40,261 - #21 ]
+INFO  22:14:40,270 - #5 ;
+INFO  22:14:40,270 - #39 niz2
+INFO  22:14:40,270 - #12 =
+INFO  22:14:40,270 - #19 new
+INFO  22:14:40,270 - #39 char
+INFO  22:14:40,270 - #20 [
+INFO  22:14:40,271 - #38 2
+INFO  22:14:40,271 - #21 ]
+INFO  22:14:40,271 - #5 ;
+INFO  22:14:40,275 - #39 x
+INFO  22:14:40,275 - #12 =
+INFO  22:14:40,275 - #39 niz
+INFO  22:14:40,275 - #20 [
+INFO  22:14:40,275 - #38 2
+INFO  22:14:40,275 - #21 ]
+INFO  22:14:40,275 - #5 ;
+INFO  22:14:40,275 - #39 niz2
+INFO  22:14:40,275 - #20 [
+INFO  22:14:40,275 - #38 0
+INFO  22:14:40,275 - #21 ]
+INFO  22:14:40,275 - #12 =
+INFO  22:14:40,275 - #44 a
+INFO  22:14:40,275 - #5 ;
+INFO  22:14:40,275 - #39 niz2
+INFO  22:14:40,276 - #20 [
+INFO  22:14:40,276 - #38 1
+INFO  22:14:40,276 - #21 ]
+INFO  22:14:40,276 - #12 =
+INFO  22:14:40,276 - #44 b
+INFO  22:14:40,276 - #5 ;
+INFO  22:14:40,276 - #39 k
+INFO  22:14:40,276 - #12 =
+INFO  22:14:40,276 - #5 ;
+ERROR 22:14:40,277 - 
+Sintaksna greska na liniji 18
+INFO  22:14:40,277 - #39 test
+INFO  22:14:40,277 - #12 =
+INFO  22:14:40,277 - #29 true
+DEBUG 22:14:40,278 - Uspesan oporavak od greske pri dodeli vrednosti.
+INFO  22:14:40,282 - #5 ;
+INFO  22:14:40,287 - #40 if
+INFO  22:14:40,287 - #6 (
+INFO  22:14:40,291 - #39 x
+INFO  22:14:40,291 - #32 ==
+INFO  22:14:40,291 - #38 1
+INFO  22:14:40,295 - #26 &&
+INFO  22:14:40,298 - #39 y
+INFO  22:14:40,298 - #32 ==
+INFO  22:14:40,298 - #38 0
+INFO  22:14:40,298 - #27 ||
+INFO  22:14:40,300 - #39 test
+INFO  22:14:40,303 - #26 &&
+INFO  22:14:40,303 - #39 k
+INFO  22:14:40,303 - #32 ==
+INFO  22:14:40,303 - #38 70
+INFO  22:14:40,304 - #7 )
+INFO  22:14:40,304 - #3 {
+INFO  22:14:40,306 - #9 print
+INFO  22:14:40,306 - #6 (
+INFO  22:14:40,306 - #39 b
+INFO  22:14:40,306 - #7 )
+INFO  22:14:40,306 - #5 ;
+INFO  22:14:40,307 - #9 print
+INFO  22:14:40,307 - #6 (
+INFO  22:14:40,307 - #39 a
+INFO  22:14:40,307 - #7 )
+INFO  22:14:40,307 - #5 ;
+INFO  22:14:40,307 - #4 }
+INFO  22:14:40,307 - #10 return
+INFO  22:14:40,310 - #38 0
+INFO  22:14:40,310 - #5 ;
+INFO  22:14:40,310 - #4 }
+INFO  22:14:40,310 - #4 }
+INFO  22:14:40,341 - Deklarisana promenljiva y na liniji 6
+INFO  22:14:40,341 - Deklarisana promenljiva z na liniji 6
+INFO  22:14:40,341 - Deklarisana promenljiva k na liniji 6
+INFO  22:14:40,341 - Deklarisana promenljiva i na liniji 6
+INFO  22:14:40,342 - Deklarisana promenljiva j na liniji 6
+INFO  22:14:40,342 - Deklarisana promenljiva x na liniji 2
+INFO  22:14:40,342 - Deklarisan niz niz na liniji 3
+INFO  22:14:40,342 - Deklarisan niz niz2 na liniji 4
+INFO  22:14:40,342 - Deklarisana promenljiva test na liniji 5
+INFO  22:14:40,342 - Deklarisana konstanta b na liniji 17
+INFO  22:14:40,342 - Deklarisana konstanta c na liniji 17
+INFO  22:14:40,342 - Deklarisana konstanta d na liniji 17
+INFO  22:14:40,342 - Deklarisana konstanta a na liniji 6
+INFO  22:14:40,342 - Obradjuje se funkcija main na liniji 11
+INFO  22:14:40,342 - Upotreba globalne promenljive niz na liniji 13
+INFO  22:14:40,342 - Upotreba globalne promenljive niz2 na liniji 14
+INFO  22:14:40,342 - Upotreba globalne promenljive x na liniji 15
+INFO  22:14:40,342 - Upotreba globalne promenljive niz na liniji 15
+INFO  22:14:40,342 - Upotreba elementa niza niz na liniji 15
+INFO  22:14:40,342 - Upotreba globalne promenljive niz2 na liniji 16
+INFO  22:14:40,342 - Upotreba elementa niza niz2 na liniji 16
+INFO  22:14:40,342 - Upotreba globalne promenljive niz2 na liniji 17
+INFO  22:14:40,342 - Upotreba elementa niza niz2 na liniji 17
+INFO  22:14:40,342 - Upotreba globalne promenljive test na liniji 20
+INFO  22:14:40,342 - Upotreba globalne promenljive x na liniji 23
+INFO  22:14:40,342 - Upotreba globalne promenljive y na liniji 23
+INFO  22:14:40,342 - Upotreba globalne promenljive test na liniji 23
+INFO  22:14:40,342 - Upotreba globalne promenljive k na liniji 23
+INFO  22:14:40,343 - Upotreba globalne konstante b na liniji 24
+INFO  22:14:40,343 - Upotreba globalne konstante a na liniji 25
+INFO  22:14:40,343 - Print calls = 2
+ERROR 22:14:40,343 - Parsiranje NIJE uspesno zavrseno!

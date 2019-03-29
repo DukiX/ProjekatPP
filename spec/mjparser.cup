@@ -91,6 +91,7 @@ nonterminal Endinc;
 nonterminal BegForCond;
 nonterminal ConstList;
 nonterminal BoolConstDef;
+nonterminal ArrayOpt;
 
 Program ::= (Program) PROG ProgName:p VarDeclList LBRACE MethodDeclList RBRACE 
 ;
@@ -107,18 +108,21 @@ VarDeclList ::= (VarDeclarations) VarDeclList VarDeclaration
 			  	{: parser.log.debug("Uspesan oporavak od definicije promenljive."); :}
 				;
 				
-VarDeclaration ::= (VarDecl) Type:varType IDENT:varName VarList:l SEMI 
-				|
-				(VarDeclArray) Type:varType IDENT:arrayName LSQUARE RSQUARE SEMI 
+VarDeclaration ::= (VarDecl) Type:varType IDENT:varName ArrayOpt VarList:l SEMI 
 				|
 				(ConstDecl) CONST Type:constType IDENT:constName EQUAL ConstDef:cd ConstList:cl SEMI
 				|
 				(EnumDecl) ENUM EnumName:e LBRACE EnumList RBRACE
 				;
 
-VarList ::= (VarListY) VarList COMMA IDENT:varName
+VarList ::= (VarListY) VarList COMMA IDENT:varName ArrayOpt
 			|
 			(VarListN) /*epsilon*/
+			;
+			
+ArrayOpt ::= (ArrayOptY) LSQUARE RSQUARE
+			|
+			(ArrayOptN) /*epsilon*/
 			;
 			
 ConstList ::= (CnstList) ConstList COMMA IDENT:constName EQUAL ConstDef:cd

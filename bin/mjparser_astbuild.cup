@@ -103,6 +103,7 @@ nonterminal Endinc Endinc;
 nonterminal BegForCond BegForCond;
 nonterminal ConstList ConstList;
 nonterminal BoolConstDef BoolConstDef;
+nonterminal ArrayOpt ArrayOpt;
 
 Program ::= (Program) PROG ProgName:p VarDeclList:V1 LBRACE MethodDeclList:M2 RBRACE {: RESULT=new Program(p, V1, M2); RESULT.setLine(pleft); :} 
 ;
@@ -119,18 +120,21 @@ VarDeclList ::= (VarDeclarations) VarDeclList:V1 VarDeclaration:V2 {: RESULT=new
 			  	{: parser.log.debug("Uspesan oporavak od definicije promenljive."); :} {: RESULT=new ErrVarDecl(); :}
 				;
 				
-VarDeclaration ::= (VarDecl) Type:varType IDENT:varName VarList:l SEMI {: RESULT=new VarDecl(varType, varName, l); RESULT.setLine(varTypeleft); :} 
-				|
-				(VarDeclArray) Type:varType IDENT:arrayName LSQUARE RSQUARE SEMI {: RESULT=new VarDeclArray(varType, arrayName); RESULT.setLine(varTypeleft); :} 
+VarDeclaration ::= (VarDecl) Type:varType IDENT:varName ArrayOpt:A1 VarList:l SEMI {: RESULT=new VarDecl(varType, varName, A1, l); RESULT.setLine(varTypeleft); :} 
 				|
 				(ConstDecl) CONST Type:constType IDENT:constName EQUAL ConstDef:cd ConstList:cl SEMI {: RESULT=new ConstDecl(constType, constName, cd, cl); RESULT.setLine(constTypeleft); :}
 				|
 				(EnumDecl) ENUM EnumName:e LBRACE EnumList:E1 RBRACE {: RESULT=new EnumDecl(e, E1); RESULT.setLine(eleft); :}
 				;
 
-VarList ::= (VarListY) VarList:V1 COMMA IDENT:varName {: RESULT=new VarListY(V1, varName); RESULT.setLine(V1left); :}
+VarList ::= (VarListY) VarList:V1 COMMA IDENT:varName ArrayOpt:A2 {: RESULT=new VarListY(V1, varName, A2); RESULT.setLine(V1left); :}
 			|
 			(VarListN) {: RESULT=new VarListN(); :} /*epsilon*/
+			;
+			
+ArrayOpt ::= (ArrayOptY) LSQUARE RSQUARE {: RESULT=new ArrayOptY(); :}
+			|
+			(ArrayOptN) {: RESULT=new ArrayOptN(); :} /*epsilon*/
 			;
 			
 ConstList ::= (CnstList) ConstList:C1 COMMA IDENT:constName EQUAL ConstDef:cd {: RESULT=new CnstList(C1, constName, cd); RESULT.setLine(C1left); :}

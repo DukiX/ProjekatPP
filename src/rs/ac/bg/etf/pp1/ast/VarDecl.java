@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 21/2/2019 19:19:5
+// 29/2/2019 12:8:34
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -9,12 +9,15 @@ public class VarDecl extends VarDeclaration {
 
     private Type Type;
     private String varName;
+    private ArrayOpt ArrayOpt;
     private VarList VarList;
 
-    public VarDecl (Type Type, String varName, VarList VarList) {
+    public VarDecl (Type Type, String varName, ArrayOpt ArrayOpt, VarList VarList) {
         this.Type=Type;
         if(Type!=null) Type.setParent(this);
         this.varName=varName;
+        this.ArrayOpt=ArrayOpt;
+        if(ArrayOpt!=null) ArrayOpt.setParent(this);
         this.VarList=VarList;
         if(VarList!=null) VarList.setParent(this);
     }
@@ -35,6 +38,14 @@ public class VarDecl extends VarDeclaration {
         this.varName=varName;
     }
 
+    public ArrayOpt getArrayOpt() {
+        return ArrayOpt;
+    }
+
+    public void setArrayOpt(ArrayOpt ArrayOpt) {
+        this.ArrayOpt=ArrayOpt;
+    }
+
     public VarList getVarList() {
         return VarList;
     }
@@ -49,17 +60,20 @@ public class VarDecl extends VarDeclaration {
 
     public void childrenAccept(Visitor visitor) {
         if(Type!=null) Type.accept(visitor);
+        if(ArrayOpt!=null) ArrayOpt.accept(visitor);
         if(VarList!=null) VarList.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
         if(Type!=null) Type.traverseTopDown(visitor);
+        if(ArrayOpt!=null) ArrayOpt.traverseTopDown(visitor);
         if(VarList!=null) VarList.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
         if(Type!=null) Type.traverseBottomUp(visitor);
+        if(ArrayOpt!=null) ArrayOpt.traverseBottomUp(visitor);
         if(VarList!=null) VarList.traverseBottomUp(visitor);
         accept(visitor);
     }
@@ -76,6 +90,12 @@ public class VarDecl extends VarDeclaration {
         buffer.append("\n");
 
         buffer.append(" "+tab+varName);
+        buffer.append("\n");
+
+        if(ArrayOpt!=null)
+            buffer.append(ArrayOpt.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
         buffer.append("\n");
 
         if(VarList!=null)
