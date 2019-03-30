@@ -171,20 +171,52 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 
 	public void visit(EnumElem el) {
 		report_info("Deklarisan element nabrajanja " + el.getName(), el);
-		okruzujuciEnum.getType().getMembersTable().insertKey(new Obj(Obj.Con, el.getName(), Tab.intType));
+		Obj o=new Obj(Obj.Con, el.getName(), Tab.intType);
+		int nextConst = enumInt.removeLast();
+		if(nextConst == -1) {
+			o.setAdr(enumConstCount++);
+		}else {
+			o.setAdr(nextConst);
+			enumConstCount=nextConst+1;
+		}
+		okruzujuciEnum.getType().getMembersTable().insertKey(o);
 	}
 
 	public void visit(EnumLst el) {
 		report_info("Deklarisan element nabrajanja " + el.getName(), el);
-		okruzujuciEnum.getType().getMembersTable().insertKey(new Obj(Obj.Con, el.getName(), Tab.intType));
+		Obj o=new Obj(Obj.Con, el.getName(), Tab.intType);
+		int nextConst = enumInt.removeLast();
+		if(nextConst == -1) {
+			o.setAdr(enumConstCount++);
+		}else {
+			o.setAdr(nextConst);
+			enumConstCount=nextConst+1;
+		}
+		okruzujuciEnum.getType().getMembersTable().insertKey(o);
 	}
 
 	private Obj okruzujuciEnum = null;
 
+	private int enumConstCount = 0;
+	
 	public void visit(EnumName en) {
 		Struct estr = new Struct(Struct.Enum, new HashTableDataStructure());
 		okruzujuciEnum = en.obj = Tab.insert(Obj.Type, en.getEnumNme(), estr);
 		report_info("Deklarisano nabrajanje " + en.getEnumNme(), en);
+		
+		enumConstCount=0;
+	}
+	
+	private LinkedList<Integer> enumInt = new LinkedList<>();
+	
+	public void visit(EnumNmbr en) {
+		en.struct = Tab.intType;
+		enumInt.add(en.getN1());
+	}
+	
+	public void visit(EnumNoNmbr enn) {
+		enn.struct = Tab.intType;
+		enumInt.add(-1);
 	}
 
 	public void visit(Increment inc) {

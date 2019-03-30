@@ -74,7 +74,7 @@ nonterminal Unmatched Unmatched;
 nonterminal Matched Matched;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Obj Program, ProgName, Designator, MethodDeclr, MethodTypeN ,EnumName, DesignatorOptions; 
-nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Term, Expr, Factor, FactorList,VarDeclList,BoolConst, VarDeclaration, ConstDef, ActualParamList, VarList; 
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Term, Expr, Factor, FactorList,VarDeclList,BoolConst, VarDeclaration, ConstDef, ActualParamList, VarList,EnumNumbering; 
 
 nonterminal DesignatorStatement DesignatorStatement;
 nonterminal Mulop Mulop;
@@ -88,7 +88,6 @@ nonterminal CondFactList CondFactList;
 nonterminal CondFact CondFact;
 nonterminal Relop Relop;
 nonterminal For For;
-nonterminal EnumNumbering EnumNumbering;
 nonterminal EnumList EnumList;
 nonterminal Endif Endif;
 nonterminal Begelse Begelse;

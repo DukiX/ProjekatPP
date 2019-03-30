@@ -4,6 +4,7 @@
  	char niz2[];
  	bool test;
  	const char a = 'z',b='x',c='s',d='m';
+ 	enum Broj { NULA, JEDAN, PET=5, DESET=10}
 {
 
 	int fja(int a,int b,int c[],bool d){
@@ -19,10 +20,16 @@
 		
 		niz = new int[5];
 		niz2=new char[2];
-		x=niz[2];
+		x=niz[Broj.JEDAN];
+		niz[Broj.JEDAN]=25;
+		print(niz[Broj.JEDAN],20);
 		niz2[0]='a';
 		niz2[1]='b';
 		niz[0]=50;
+		
+		x=Broj.JEDAN;
+		
+		print(x,20);
 		
 		test=true;
 		
