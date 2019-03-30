@@ -246,6 +246,7 @@ public class CodeGenerator extends VisitorAdaptor {
 	}
 
 	public void visit(MatchedRead mr) {
+		Code.put(Code.pop);
 		if (mr.getDesignator().obj.getType() == Tab.charType) {
 			Code.put(Code.bread);
 			Code.store(mr.getDesignator().obj);

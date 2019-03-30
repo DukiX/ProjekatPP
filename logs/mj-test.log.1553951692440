@@ -1,0 +1,36 @@
+INFO  14:14:30,168 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  14:14:30,194 - #2 program
+INFO  14:14:30,195 - #39 MJProgram
+INFO  14:14:30,195 - #39 int
+INFO  14:14:30,195 - #39 x
+INFO  14:14:30,196 - #5 ;
+INFO  14:14:30,196 - #3 {
+INFO  14:14:30,197 - #13 void
+INFO  14:14:30,197 - #39 main
+INFO  14:14:30,197 - #6 (
+INFO  14:14:30,197 - #7 )
+INFO  14:14:30,197 - #3 {
+INFO  14:14:30,197 - #39 x
+INFO  14:14:30,198 - #12 =
+INFO  14:14:30,198 - #38 99
+INFO  14:14:30,198 - #5 ;
+INFO  14:14:30,199 - #14 read
+INFO  14:14:30,200 - #6 (
+INFO  14:14:30,200 - #39 x
+INFO  14:14:30,200 - #7 )
+INFO  14:14:30,200 - #5 ;
+INFO  14:14:30,200 - #9 print
+INFO  14:14:30,201 - #6 (
+INFO  14:14:30,201 - #39 x
+INFO  14:14:30,201 - #7 )
+INFO  14:14:30,202 - #5 ;
+INFO  14:14:30,202 - #4 }
+INFO  14:14:30,202 - #4 }
+INFO  14:14:30,215 - Deklarisana promenljiva x na liniji 2
+INFO  14:14:30,215 - Obradjuje se funkcija main na liniji 6
+INFO  14:14:30,215 - Upotreba globalne promenljive x na liniji 8
+INFO  14:14:30,216 - Upotreba globalne promenljive x na liniji 9
+INFO  14:14:30,216 - Upotreba globalne promenljive x na liniji 10
+INFO  14:14:30,216 - Print calls = 1
+INFO  14:14:30,217 - Generating bytecode file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  14:14:30,225 - Parsiranje uspesno zavrseno!
