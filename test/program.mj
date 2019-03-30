@@ -16,13 +16,17 @@
 	}
 
 	
-	void main() {
+	void main() 
+		Broj nula,jedan;
+	{
+		nula = Broj.NULA;
+		jedan = Broj.JEDAN;
 		
 		niz = new int[5];
 		niz2=new char[2];
 		x=niz[Broj.JEDAN];
 		niz[Broj.JEDAN]=25;
-		print(niz[Broj.JEDAN],20);
+		print(niz[jedan],20);
 		niz2[0]='a';
 		niz2[1]='b';
 		niz[0]=50;

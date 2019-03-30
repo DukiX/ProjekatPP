@@ -250,7 +250,11 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			type.struct = Tab.noType;
 		} else {
 			if (Obj.Type == typeNode.getKind()) {
-				type.struct = typeNode.getType();
+				if(typeNode.getType().getKind()!=Struct.Enum) {
+					type.struct = typeNode.getType();
+				}else {
+					type.struct = Tab.intType;
+				}
 			} else {
 				report_error("Greska: Ime " + type.getTypeName() + " ne predstavlja tip ", type);
 				type.struct = Tab.noType;
