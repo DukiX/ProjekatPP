@@ -66,6 +66,13 @@ public class CodeGenerator extends VisitorAdaptor {
 	public void visit(VarDecl VarDecl) {
 		varCount++;
 	}
+	
+	@Override
+	public void visit(VarListY v) {
+		varCount++;
+	}
+	
+	
 
 	@Override
 	public void visit(FormalParamDecl FormalParam) {

@@ -1,10 +1,12 @@
  program MJProgram
- 	int z,k,i,j,niz3[];
+ 	int z,k,i,j,niz3[],m;
+ 	
  	int niz[],x,y;
  	char niz2[];
  	bool test;
  	const char a = 'z',b='x',c='s',d='m';
  	enum Broj { NULA, JEDAN, PET=5, DESET=10}
+ 	enum JosJedan { A, B, C=5 }
 {
 
 	int fja(int a,int b,int c[],bool d){
@@ -19,6 +21,7 @@
 	void main() 
 		Broj nula,jedan;
 	{
+		print(JosJedan.C);
 		nula = Broj.NULA;
 		jedan = Broj.JEDAN;
 		

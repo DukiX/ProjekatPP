@@ -103,11 +103,13 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 
 	public void visit(VarListY vly) {
 		if (nizDeclLista.removeLast() == 1) {
+			vly.setLine(linija);
 			vly.struct = varTip;
 			report_info("Deklarisan niz " + vly.getVarName(), vly);
 			Obj varNode = Tab.insert(Obj.Var, vly.getVarName(), new Struct(Struct.Array, vly.struct));
 		} else {
 			vly.struct = varTip;
+			vly.setLine(linija);
 			report_info("Deklarisana promenljiva " + vly.getVarName(), vly);
 			Obj varNode = Tab.insert(Obj.Var, vly.getVarName(), vly.struct);
 		}
@@ -137,10 +139,12 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 
 	public void visit(CnstList constDecl) {
 		if (varTip == constDecl.getConstDef().struct) {
+			constDecl.setLine(linija);
 			report_info("Deklarisana konstanta " + constDecl.getConstName(), constDecl);
 			Obj varNode = Tab.insert(Obj.Con, constDecl.getConstName(), varTip);
 			varNode.setAdr(constInt.removeLast());
 		} else {
+			constDecl.setLine(linija);
 			report_error("Deklarisana konstanta nije dobrog tipa: " + constDecl.getConstName(), constDecl);
 			Obj varNode = Tab.insert(Obj.Con, constDecl.getConstName(), varTip);
 			varNode.setAdr(constInt.removeLast());
@@ -176,9 +180,13 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		if(nextConst == -1) {
 			o.setAdr(enumConstCount++);
 		}else {
+			if(dosadasnjeKonstanteEnuma.contains(nextConst)) {
+				report_error("Dupla konstanta u enumu " + el.getName(), el);
+			}
 			o.setAdr(nextConst);
 			enumConstCount=nextConst+1;
 		}
+		dosadasnjeKonstanteEnuma.add(o.getAdr());
 		okruzujuciEnum.getType().getMembersTable().insertKey(o);
 	}
 
@@ -189,9 +197,13 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		if(nextConst == -1) {
 			o.setAdr(enumConstCount++);
 		}else {
+			if(dosadasnjeKonstanteEnuma.contains(nextConst)) {
+				report_error("Dupla konstanta u enumu " + el.getName(), el);
+			}
 			o.setAdr(nextConst);
 			enumConstCount=nextConst+1;
 		}
+		dosadasnjeKonstanteEnuma.add(o.getAdr());
 		okruzujuciEnum.getType().getMembersTable().insertKey(o);
 	}
 
@@ -199,12 +211,16 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 
 	private int enumConstCount = 0;
 	
+	private LinkedList<Integer> dosadasnjeKonstanteEnuma;
+	
 	public void visit(EnumName en) {
 		Struct estr = new Struct(Struct.Enum, new HashTableDataStructure());
 		okruzujuciEnum = en.obj = Tab.insert(Obj.Type, en.getEnumNme(), estr);
 		report_info("Deklarisano nabrajanje " + en.getEnumNme(), en);
 		
 		enumConstCount=0;
+		
+		dosadasnjeKonstanteEnuma=new LinkedList<>();
 	}
 	
 	private LinkedList<Integer> enumInt = new LinkedList<>();
@@ -242,7 +258,8 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	}
 
 	private Struct varTip;
-
+	private int linija;
+	
 	public void visit(Type type) {
 		Obj typeNode = Tab.find(type.getTypeName());
 		if (typeNode == Tab.noObj) {
@@ -261,6 +278,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			}
 		}
 		varTip = type.struct;
+		linija = type.getLine();
 	}
 
 	public void visit(MethodDecl methodDecl) {
