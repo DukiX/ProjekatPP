@@ -92,6 +92,7 @@ nonterminal ConstList;
 nonterminal BoolConstDef;
 nonterminal ArrayOpt;
 nonterminal ArrayForPar;
+nonterminal Rd;
 
 Program ::= (Program) PROG ProgName:p VarDeclList LBRACE MethodDeclList RBRACE 
 ;
@@ -217,7 +218,7 @@ Matched ::=	(ErrAssignment) error SEMI
 			  |
 			  (MatchedDesignatorStatement) DesignatorStatement SEMI	
 			  |
-			  (MatchedRead) READ LPAREN Designator:d RPAREN SEMI
+			  (MatchedRead) Rd LPAREN Designator:d RPAREN SEMI
 			  |
 			  (PrintStmtTwo) PRINT LPAREN Expr:ex COMMA NUMBER:num RPAREN SEMI
 			  |
@@ -229,6 +230,8 @@ Matched ::=	(ErrAssignment) error SEMI
 			  |
 			  (MatchedFor) For LPAREN ForDesignator SEMI BegForCond ForCondition SEMI Beginc ForDesignator Endinc RPAREN Begfor Matched Endfor
 			  ;
+			  
+Rd ::= (Rd) READ;
 			  
 Ifif ::= (Ifif) IF;
 

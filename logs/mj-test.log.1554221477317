@@ -1,0 +1,75 @@
+INFO  18:10:07,305 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  18:10:07,331 - #2 program
+INFO  18:10:07,331 - #39 test302
+INFO  18:10:07,331 - #31 enum
+INFO  18:10:07,332 - #39 IncrementType
+INFO  18:10:07,332 - #3 {
+INFO  18:10:07,332 - #39 BY_ONE
+INFO  18:10:07,332 - #8 ,
+INFO  18:10:07,333 - #39 DOUBLE_VALUE
+INFO  18:10:07,333 - #4 }
+INFO  18:10:07,333 - #39 int
+INFO  18:10:07,333 - #39 i
+INFO  18:10:07,334 - #5 ;
+INFO  18:10:07,334 - #39 bool
+INFO  18:10:07,335 - #39 ibool
+INFO  18:10:07,335 - #5 ;
+INFO  18:10:07,335 - #39 char
+INFO  18:10:07,335 - #39 p
+INFO  18:10:07,335 - #5 ;
+INFO  18:10:07,335 - #39 int
+INFO  18:10:07,335 - #39 niz
+INFO  18:10:07,337 - #20 [
+INFO  18:10:07,337 - #21 ]
+INFO  18:10:07,337 - #5 ;
+INFO  18:10:07,338 - #3 {
+INFO  18:10:07,338 - #13 void
+INFO  18:10:07,338 - #39 main
+INFO  18:10:07,338 - #6 (
+INFO  18:10:07,338 - #7 )
+INFO  18:10:07,338 - #3 {
+INFO  18:10:07,338 - #39 niz
+INFO  18:10:07,339 - #12 =
+INFO  18:10:07,339 - #19 new
+INFO  18:10:07,339 - #39 int
+INFO  18:10:07,339 - #20 [
+INFO  18:10:07,339 - #38 10
+INFO  18:10:07,340 - #21 ]
+INFO  18:10:07,340 - #5 ;
+INFO  18:10:07,340 - #39 niz
+INFO  18:10:07,341 - #20 [
+INFO  18:10:07,341 - #38 9
+INFO  18:10:07,341 - #21 ]
+INFO  18:10:07,341 - #12 =
+INFO  18:10:07,341 - #38 75
+INFO  18:10:07,341 - #5 ;
+INFO  18:10:07,341 - #9 print
+INFO  18:10:07,341 - #6 (
+INFO  18:10:07,341 - #39 chr
+INFO  18:10:07,341 - #6 (
+INFO  18:10:07,341 - #39 niz
+INFO  18:10:07,341 - #20 [
+INFO  18:10:07,341 - #38 9
+INFO  18:10:07,341 - #21 ]
+INFO  18:10:07,342 - #7 )
+INFO  18:10:07,342 - #7 )
+INFO  18:10:07,342 - #5 ;
+INFO  18:10:07,342 - #4 }
+INFO  18:10:07,342 - #4 }
+INFO  18:10:07,355 - Deklarisano nabrajanje IncrementType na liniji 5
+INFO  18:10:07,355 - Deklarisan element nabrajanja BY_ONE na liniji 5
+INFO  18:10:07,355 - Deklarisan element nabrajanja DOUBLE_VALUE na liniji 5
+INFO  18:10:07,355 - Deklarisana promenljiva i na liniji 7
+INFO  18:10:07,356 - Deklarisana promenljiva ibool na liniji 8
+INFO  18:10:07,356 - Deklarisana promenljiva p na liniji 9
+INFO  18:10:07,356 - Deklarisan niz niz na liniji 11
+INFO  18:10:07,356 - Obradjuje se funkcija main na liniji 14
+INFO  18:10:07,356 - Upotreba globalne promenljive niz na liniji 16
+INFO  18:10:07,356 - Upotreba globalne promenljive niz na liniji 17
+INFO  18:10:07,356 - Upotreba elementa niza niz na liniji 17
+INFO  18:10:07,356 - Upotreba globalne promenljive niz na liniji 18
+INFO  18:10:07,356 - Upotreba elementa niza niz na liniji 18
+INFO  18:10:07,356 - Pronadjen poziv funkcije chr na liniji 18
+INFO  18:10:07,356 - Print calls = 1
+INFO  18:10:07,357 - Generating bytecode file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  18:10:07,361 - Parsiranje uspesno zavrseno!

@@ -43,8 +43,8 @@ public class CodeGenerator extends VisitorAdaptor {
 		Code.put(Code.enter);
 		Code.put(0);
 		Code.put(0);
-		
-		//?
+
+		// ?
 
 		Code.put(Code.exit);
 		Code.put(Code.return_);
@@ -56,8 +56,8 @@ public class CodeGenerator extends VisitorAdaptor {
 		Code.put(0);
 		Code.put(0);
 
-		//?
-		
+		// ?
+
 		Code.put(Code.exit);
 		Code.put(Code.return_);
 	}
@@ -205,7 +205,9 @@ public class CodeGenerator extends VisitorAdaptor {
 				 * Code.put(Code.pop);
 				 */
 			}
-			Code.load(designator.obj);
+			if (!uReadu) {
+				Code.load(designator.obj);
+			}
 		}
 	}
 
@@ -291,8 +293,13 @@ public class CodeGenerator extends VisitorAdaptor {
 		}
 	}
 
+	private boolean uReadu = false;
+
+	public void visit(Rd rd) {
+		uReadu = true;
+	}
+
 	public void visit(MatchedRead mr) {
-		Code.put(Code.pop);
 		if (mr.getDesignator().obj.getType() == Tab.charType) {
 			Code.put(Code.bread);
 			Code.store(mr.getDesignator().obj);
@@ -300,6 +307,8 @@ public class CodeGenerator extends VisitorAdaptor {
 			Code.put(Code.read);
 			Code.store(mr.getDesignator().obj);
 		}
+
+		uReadu = false;
 	}
 
 	public void visit(FactorNewArr fna) {
