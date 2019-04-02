@@ -2,6 +2,7 @@ package rs.ac.bg.etf.pp1;
 
 import java.util.LinkedList;
 
+import jdk.internal.org.objectweb.asm.tree.MethodNode;
 import rs.ac.bg.etf.pp1.CounterVisitor.FormParamCounter;
 import rs.ac.bg.etf.pp1.CounterVisitor.VarCounter;
 import rs.ac.bg.etf.pp1.ast.*;
@@ -22,6 +23,45 @@ public class CodeGenerator extends VisitorAdaptor {
 		return mainPc;
 	}
 
+	public CodeGenerator() {
+
+		// LEN metoda
+		Tab.lenObj.setAdr(Code.pc);
+
+		Code.put(Code.enter);
+		Code.put(0);
+		Code.put(0);
+
+		Code.put(Code.arraylength);
+
+		Code.put(Code.exit);
+		Code.put(Code.return_);
+
+		// CHR metoda
+		Tab.chrObj.setAdr(Code.pc);
+
+		Code.put(Code.enter);
+		Code.put(0);
+		Code.put(0);
+		
+		//?
+
+		Code.put(Code.exit);
+		Code.put(Code.return_);
+
+		// ORD metoda
+		Tab.ordObj.setAdr(Code.pc);
+
+		Code.put(Code.enter);
+		Code.put(0);
+		Code.put(0);
+
+		//?
+		
+		Code.put(Code.exit);
+		Code.put(Code.return_);
+	}
+
 	@Override
 	public void visit(MethodTypeName MethodTypeName) {
 		if ("main".equalsIgnoreCase(MethodTypeName.getMethName())) {
@@ -40,8 +80,9 @@ public class CodeGenerator extends VisitorAdaptor {
 		Code.put(Code.enter);
 		Code.put(fpCnt.getCount());
 		Code.put(varCnt.getCount() + fpCnt.getCount());
+
 	}
-	
+
 	@Override
 	public void visit(MethodTypeVoid MethodTypeName) {
 		if ("main".equalsIgnoreCase(MethodTypeName.getMethName())) {
@@ -66,13 +107,11 @@ public class CodeGenerator extends VisitorAdaptor {
 	public void visit(VarDecl VarDecl) {
 		varCount++;
 	}
-	
+
 	@Override
 	public void visit(VarListY v) {
 		varCount++;
 	}
-	
-	
 
 	@Override
 	public void visit(FormalParamDecl FormalParam) {
@@ -284,7 +323,7 @@ public class CodeGenerator extends VisitorAdaptor {
 
 		listaListiAdresaPocIf.add(new LinkedList<>());
 	}
-	
+
 	public void visit(CndFct cf) {
 		Code.put(Code.const_1);
 		Code.putFalseJump(Code.eq, 0);
@@ -361,67 +400,64 @@ public class CodeGenerator extends VisitorAdaptor {
 		Code.putJump(0);
 		listaListiAdresaPocIf.peekLast().add(new Integer(Code.pc - 2));
 	}
-	
+
 	private LinkedList<Integer> listaForPocetnihAdr = new LinkedList<>();
-	
+
 	public void visit(ForFor f) {
 		listaListiAdresaElse.add(new LinkedList<>());
 
 		listaListiAdresaPocIf.add(new LinkedList<>());
-		
+
 		listaListiBreak.add(new LinkedList<>());
 	}
-	
+
 	public void visit(Begfor b) {
 		LinkedList<Integer> lst = listaListiAdresaPocIf.removeLast();
 		for (Integer i : lst) {
 			Code.fixup(i);
 		}
 	}
-	
+
 	public void visit(Beginc b) {
 		listaForPocetnihAdr.add(Code.pc);
 	}
-	
+
 	private LinkedList<Integer> listaAdresaZaInc = new LinkedList<>();
-	
+
 	public void visit(BegForCond e) {
 		listaAdresaZaInc.add(Code.pc);
 	}
-	
+
 	public void visit(Endinc e) {
 		Code.putJump(listaAdresaZaInc.removeLast());
 	}
-	
+
 	public void visit(Endfor e) {
 		Code.putJump(listaForPocetnihAdr.removeLast());
 		LinkedList<Integer> lst = listaListiAdresaElse.removeLast();
 		for (Integer i : lst) {
 			Code.fixup(i);
 		}
-		
+
 		lst = listaListiBreak.removeLast();
 		for (Integer i : lst) {
 			Code.fixup(i);
 		}
 	}
-	
-	
+
 	public void visit(MatchedContinue mb) {
 		Code.putJump(listaForPocetnihAdr.peekLast());
 	}
-	
+
 	private LinkedList<LinkedList<Integer>> listaListiBreak = new LinkedList<>();
-	
+
 	public void visit(MatchedBreak mb) {
 		Code.putJump(0);
-		listaListiBreak.peekLast().add(Code.pc-2);
+		listaListiBreak.peekLast().add(Code.pc - 2);
 	}
-	
+
 	public void visit(EmptyForCond efc) {
 		Code.putJump(0);
 		listaListiAdresaPocIf.peekLast().add(new Integer(Code.pc - 2));
 	}
 }
-
-

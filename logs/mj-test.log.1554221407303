@@ -1,0 +1,85 @@
+INFO  18:09:51,271 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  18:09:51,299 - #2 program
+INFO  18:09:51,299 - #39 test302
+INFO  18:09:51,299 - #31 enum
+INFO  18:09:51,300 - #39 IncrementType
+INFO  18:09:51,300 - #3 {
+INFO  18:09:51,300 - #39 BY_ONE
+INFO  18:09:51,300 - #8 ,
+INFO  18:09:51,300 - #39 DOUBLE_VALUE
+INFO  18:09:51,300 - #4 }
+INFO  18:09:51,301 - #39 int
+INFO  18:09:51,301 - #39 i
+INFO  18:09:51,301 - #5 ;
+INFO  18:09:51,302 - #39 bool
+INFO  18:09:51,303 - #39 ibool
+INFO  18:09:51,303 - #5 ;
+INFO  18:09:51,303 - #39 char
+INFO  18:09:51,303 - #39 p
+INFO  18:09:51,303 - #5 ;
+INFO  18:09:51,303 - #39 int
+INFO  18:09:51,303 - #39 niz
+INFO  18:09:51,304 - #20 [
+INFO  18:09:51,304 - #21 ]
+INFO  18:09:51,304 - #5 ;
+INFO  18:09:51,305 - #3 {
+INFO  18:09:51,305 - #13 void
+INFO  18:09:51,305 - #39 main
+INFO  18:09:51,305 - #6 (
+INFO  18:09:51,305 - #7 )
+INFO  18:09:51,306 - #3 {
+INFO  18:09:51,306 - #39 niz
+INFO  18:09:51,306 - #12 =
+INFO  18:09:51,306 - #19 new
+INFO  18:09:51,306 - #39 int
+INFO  18:09:51,306 - #20 [
+INFO  18:09:51,307 - #38 10
+INFO  18:09:51,307 - #21 ]
+INFO  18:09:51,307 - #5 ;
+INFO  18:09:51,307 - #39 niz
+INFO  18:09:51,308 - #20 [
+INFO  18:09:51,308 - #38 9
+INFO  18:09:51,308 - #21 ]
+INFO  18:09:51,308 - #12 =
+INFO  18:09:51,308 - #38 75
+INFO  18:09:51,308 - #5 ;
+INFO  18:09:51,308 - #9 print
+INFO  18:09:51,308 - #6 (
+INFO  18:09:51,308 - #39 chr
+INFO  18:09:51,309 - #6 (
+INFO  18:09:51,309 - #39 niz
+INFO  18:09:51,309 - #20 [
+INFO  18:09:51,309 - #38 9
+INFO  18:09:51,309 - #21 ]
+INFO  18:09:51,309 - #7 )
+INFO  18:09:51,309 - #7 )
+INFO  18:09:51,309 - #5 ;
+INFO  18:09:51,309 - #14 read
+INFO  18:09:51,309 - #6 (
+INFO  18:09:51,309 - #39 niz
+INFO  18:09:51,309 - #20 [
+INFO  18:09:51,309 - #38 0
+INFO  18:09:51,309 - #21 ]
+INFO  18:09:51,309 - #7 )
+INFO  18:09:51,309 - #5 ;
+INFO  18:09:51,310 - #4 }
+INFO  18:09:51,310 - #4 }
+INFO  18:09:51,322 - Deklarisano nabrajanje IncrementType na liniji 5
+INFO  18:09:51,323 - Deklarisan element nabrajanja BY_ONE na liniji 5
+INFO  18:09:51,326 - Deklarisan element nabrajanja DOUBLE_VALUE na liniji 5
+INFO  18:09:51,326 - Deklarisana promenljiva i na liniji 7
+INFO  18:09:51,326 - Deklarisana promenljiva ibool na liniji 8
+INFO  18:09:51,326 - Deklarisana promenljiva p na liniji 9
+INFO  18:09:51,326 - Deklarisan niz niz na liniji 11
+INFO  18:09:51,326 - Obradjuje se funkcija main na liniji 14
+INFO  18:09:51,326 - Upotreba globalne promenljive niz na liniji 16
+INFO  18:09:51,326 - Upotreba globalne promenljive niz na liniji 17
+INFO  18:09:51,326 - Upotreba elementa niza niz na liniji 17
+INFO  18:09:51,326 - Upotreba globalne promenljive niz na liniji 18
+INFO  18:09:51,327 - Upotreba elementa niza niz na liniji 18
+INFO  18:09:51,327 - Pronadjen poziv funkcije chr na liniji 18
+INFO  18:09:51,327 - Upotreba globalne promenljive niz na liniji 19
+INFO  18:09:51,327 - Upotreba elementa niza niz na liniji 19
+INFO  18:09:51,327 - Print calls = 1
+INFO  18:09:51,327 - Generating bytecode file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  18:09:51,331 - Parsiranje uspesno zavrseno!

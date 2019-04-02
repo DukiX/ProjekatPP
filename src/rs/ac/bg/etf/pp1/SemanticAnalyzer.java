@@ -23,7 +23,32 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 
 	public SemanticAnalyzer() {
 		Tab.currentScope.addToLocals(new Obj(Obj.Type, "bool", boolType));
-		// enumType.setMembers(new HashTableDataStructure());
+
+		// CHR metoda
+		currentMethod = Tab.chrObj;
+		Tab.openScope();
+
+		Obj varNode = Tab.insert(Obj.Var, "chrfor", Tab.intType);
+		currentMethod.setLevel(1);
+		varNode.setFpPos(1);
+
+		Tab.chainLocalSymbols(currentMethod);
+		Tab.closeScope();
+		returnFound = false;
+		currentMethod = null;
+
+		// ORD metoda
+		currentMethod = Tab.ordObj;
+		Tab.openScope();
+
+		varNode = Tab.insert(Obj.Var, "ordfor", Tab.charType);
+		currentMethod.setLevel(1);
+		varNode.setFpPos(1);
+
+		Tab.chainLocalSymbols(currentMethod);
+		Tab.closeScope();
+		returnFound = false;
+		currentMethod = null;
 	}
 
 	Logger log = Logger.getLogger(getClass());
@@ -175,16 +200,16 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 
 	public void visit(EnumElem el) {
 		report_info("Deklarisan element nabrajanja " + el.getName(), el);
-		Obj o=new Obj(Obj.Con, el.getName(), Tab.intType);
+		Obj o = new Obj(Obj.Con, el.getName(), Tab.intType);
 		int nextConst = enumInt.removeLast();
-		if(nextConst == -1) {
+		if (nextConst == -1) {
 			o.setAdr(enumConstCount++);
-		}else {
-			if(dosadasnjeKonstanteEnuma.contains(nextConst)) {
+		} else {
+			if (dosadasnjeKonstanteEnuma.contains(nextConst)) {
 				report_error("Dupla konstanta u enumu " + el.getName(), el);
 			}
 			o.setAdr(nextConst);
-			enumConstCount=nextConst+1;
+			enumConstCount = nextConst + 1;
 		}
 		dosadasnjeKonstanteEnuma.add(o.getAdr());
 		okruzujuciEnum.getType().getMembersTable().insertKey(o);
@@ -192,16 +217,16 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 
 	public void visit(EnumLst el) {
 		report_info("Deklarisan element nabrajanja " + el.getName(), el);
-		Obj o=new Obj(Obj.Con, el.getName(), Tab.intType);
+		Obj o = new Obj(Obj.Con, el.getName(), Tab.intType);
 		int nextConst = enumInt.removeLast();
-		if(nextConst == -1) {
+		if (nextConst == -1) {
 			o.setAdr(enumConstCount++);
-		}else {
-			if(dosadasnjeKonstanteEnuma.contains(nextConst)) {
+		} else {
+			if (dosadasnjeKonstanteEnuma.contains(nextConst)) {
 				report_error("Dupla konstanta u enumu " + el.getName(), el);
 			}
 			o.setAdr(nextConst);
-			enumConstCount=nextConst+1;
+			enumConstCount = nextConst + 1;
 		}
 		dosadasnjeKonstanteEnuma.add(o.getAdr());
 		okruzujuciEnum.getType().getMembersTable().insertKey(o);
@@ -210,26 +235,26 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	private Obj okruzujuciEnum = null;
 
 	private int enumConstCount = 0;
-	
+
 	private LinkedList<Integer> dosadasnjeKonstanteEnuma;
-	
+
 	public void visit(EnumName en) {
 		Struct estr = new Struct(Struct.Enum, new HashTableDataStructure());
 		okruzujuciEnum = en.obj = Tab.insert(Obj.Type, en.getEnumNme(), estr);
 		report_info("Deklarisano nabrajanje " + en.getEnumNme(), en);
-		
-		enumConstCount=0;
-		
-		dosadasnjeKonstanteEnuma=new LinkedList<>();
+
+		enumConstCount = 0;
+
+		dosadasnjeKonstanteEnuma = new LinkedList<>();
 	}
-	
+
 	private LinkedList<Integer> enumInt = new LinkedList<>();
-	
+
 	public void visit(EnumNmbr en) {
 		en.struct = Tab.intType;
 		enumInt.add(en.getN1());
 	}
-	
+
 	public void visit(EnumNoNmbr enn) {
 		enn.struct = Tab.intType;
 		enumInt.add(-1);
@@ -259,7 +284,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 
 	private Struct varTip;
 	private int linija;
-	
+
 	public void visit(Type type) {
 		Obj typeNode = Tab.find(type.getTypeName());
 		if (typeNode == Tab.noObj) {
@@ -267,9 +292,9 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			type.struct = Tab.noType;
 		} else {
 			if (Obj.Type == typeNode.getKind()) {
-				if(typeNode.getType().getKind()!=Struct.Enum) {
+				if (typeNode.getType().getKind() != Struct.Enum) {
 					type.struct = typeNode.getType();
-				}else {
+				} else {
 					type.struct = Tab.intType;
 				}
 			} else {
@@ -369,7 +394,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 						if (obj.getType().getKind() == Struct.Array
 								&& actParLst.get(obj.getFpPos() - 1).getKind() == Struct.Array) {
 							if (obj.getType().getElemType() == actParLst.get(obj.getFpPos() - 1).getElemType()) {
-								//dobar
+								// dobar
 							} else {
 								report_error("Greska na liniji " + procCall.getLine()
 										+ " pogresan tip parametra funkcije " + func.getName(), null);
@@ -415,7 +440,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 						if (obj.getType().getKind() == Struct.Array
 								&& actParLst.get(obj.getFpPos() - 1).getKind() == Struct.Array) {
 							if (obj.getType().getElemType() == actParLst.get(obj.getFpPos() - 1).getElemType()) {
-								//dobar
+								// dobar
 							} else {
 								report_error("Greska na liniji " + funcCall.getLine()
 										+ " pogresan tip parametra funkcije " + func.getName(), null);

@@ -1,0 +1,67 @@
+INFO  17:01:06,149 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  17:01:06,176 - #2 program
+INFO  17:01:06,176 - #39 test302
+INFO  17:01:06,176 - #31 enum
+INFO  17:01:06,176 - #39 IncrementType
+INFO  17:01:06,176 - #3 {
+INFO  17:01:06,177 - #39 BY_ONE
+INFO  17:01:06,177 - #8 ,
+INFO  17:01:06,177 - #39 DOUBLE_VALUE
+INFO  17:01:06,177 - #4 }
+INFO  17:01:06,177 - #39 int
+INFO  17:01:06,178 - #39 i
+INFO  17:01:06,178 - #5 ;
+INFO  17:01:06,179 - #39 bool
+INFO  17:01:06,179 - #39 ibool
+INFO  17:01:06,179 - #5 ;
+INFO  17:01:06,179 - #39 char
+INFO  17:01:06,179 - #39 p
+INFO  17:01:06,179 - #5 ;
+INFO  17:01:06,179 - #39 int
+INFO  17:01:06,179 - #39 niz
+INFO  17:01:06,181 - #20 [
+INFO  17:01:06,181 - #21 ]
+INFO  17:01:06,181 - #5 ;
+INFO  17:01:06,182 - #3 {
+INFO  17:01:06,182 - #13 void
+INFO  17:01:06,182 - #39 main
+INFO  17:01:06,182 - #6 (
+INFO  17:01:06,182 - #7 )
+INFO  17:01:06,182 - #3 {
+INFO  17:01:06,183 - #39 niz
+INFO  17:01:06,183 - #12 =
+INFO  17:01:06,183 - #19 new
+INFO  17:01:06,183 - #39 int
+INFO  17:01:06,183 - #20 [
+INFO  17:01:06,184 - #38 5
+INFO  17:01:06,184 - #21 ]
+INFO  17:01:06,184 - #5 ;
+INFO  17:01:06,185 - #39 i
+INFO  17:01:06,185 - #12 =
+INFO  17:01:06,185 - #39 ord
+INFO  17:01:06,186 - #6 (
+INFO  17:01:06,186 - #44 A
+INFO  17:01:06,186 - #7 )
+INFO  17:01:06,186 - #5 ;
+INFO  17:01:06,186 - #9 print
+INFO  17:01:06,186 - #6 (
+INFO  17:01:06,186 - #39 i
+INFO  17:01:06,186 - #7 )
+INFO  17:01:06,186 - #5 ;
+INFO  17:01:06,186 - #4 }
+INFO  17:01:06,186 - #4 }
+INFO  17:01:06,199 - Deklarisano nabrajanje IncrementType na liniji 5
+INFO  17:01:06,199 - Deklarisan element nabrajanja BY_ONE na liniji 5
+INFO  17:01:06,199 - Deklarisan element nabrajanja DOUBLE_VALUE na liniji 5
+INFO  17:01:06,199 - Deklarisana promenljiva i na liniji 7
+INFO  17:01:06,199 - Deklarisana promenljiva ibool na liniji 8
+INFO  17:01:06,199 - Deklarisana promenljiva p na liniji 9
+INFO  17:01:06,199 - Deklarisan niz niz na liniji 11
+INFO  17:01:06,199 - Obradjuje se funkcija main na liniji 14
+INFO  17:01:06,199 - Upotreba globalne promenljive niz na liniji 16
+INFO  17:01:06,200 - Upotreba globalne promenljive i na liniji 17
+INFO  17:01:06,200 - Pronadjen poziv funkcije ord na liniji 17
+INFO  17:01:06,200 - Upotreba globalne promenljive i na liniji 18
+INFO  17:01:06,200 - Print calls = 1
+INFO  17:01:06,200 - Generating bytecode file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  17:01:06,206 - Parsiranje uspesno zavrseno!

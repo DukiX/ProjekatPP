@@ -1,0 +1,77 @@
+INFO  18:04:39,901 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  18:04:39,928 - #2 program
+INFO  18:04:39,928 - #39 test302
+INFO  18:04:39,928 - #31 enum
+INFO  18:04:39,929 - #39 IncrementType
+INFO  18:04:39,929 - #3 {
+INFO  18:04:39,929 - #39 BY_ONE
+INFO  18:04:39,929 - #8 ,
+INFO  18:04:39,929 - #39 DOUBLE_VALUE
+INFO  18:04:39,929 - #4 }
+INFO  18:04:39,930 - #39 int
+INFO  18:04:39,930 - #39 i
+INFO  18:04:39,930 - #5 ;
+INFO  18:04:39,931 - #39 bool
+INFO  18:04:39,931 - #39 ibool
+INFO  18:04:39,931 - #5 ;
+INFO  18:04:39,931 - #39 char
+INFO  18:04:39,932 - #39 p
+INFO  18:04:39,932 - #5 ;
+INFO  18:04:39,932 - #39 int
+INFO  18:04:39,932 - #39 niz
+INFO  18:04:39,934 - #20 [
+INFO  18:04:39,934 - #21 ]
+INFO  18:04:39,934 - #5 ;
+INFO  18:04:39,934 - #3 {
+INFO  18:04:39,934 - #39 int
+INFO  18:04:39,934 - #39 dada
+INFO  18:04:39,934 - #6 (
+INFO  18:04:39,934 - #7 )
+INFO  18:04:39,935 - #3 {
+INFO  18:04:39,935 - #10 return
+INFO  18:04:39,935 - #38 1
+INFO  18:04:39,936 - #5 ;
+INFO  18:04:39,936 - #4 }
+INFO  18:04:39,937 - #13 void
+INFO  18:04:39,937 - #39 main
+INFO  18:04:39,937 - #6 (
+INFO  18:04:39,937 - #7 )
+INFO  18:04:39,937 - #3 {
+INFO  18:04:39,937 - #39 niz
+INFO  18:04:39,937 - #12 =
+INFO  18:04:39,938 - #19 new
+INFO  18:04:39,938 - #39 int
+INFO  18:04:39,938 - #20 [
+INFO  18:04:39,938 - #38 10
+INFO  18:04:39,938 - #21 ]
+INFO  18:04:39,938 - #5 ;
+INFO  18:04:39,938 - #39 p
+INFO  18:04:39,938 - #12 =
+INFO  18:04:39,938 - #39 chr
+INFO  18:04:39,938 - #6 (
+INFO  18:04:39,939 - #44 }
+INFO  18:04:39,939 - #7 )
+INFO  18:04:39,939 - #5 ;
+INFO  18:04:39,939 - #9 print
+INFO  18:04:39,939 - #6 (
+INFO  18:04:39,939 - #39 p
+INFO  18:04:39,939 - #7 )
+INFO  18:04:39,939 - #5 ;
+INFO  18:04:39,939 - #4 }
+INFO  18:04:39,939 - #4 }
+INFO  18:04:39,952 - Deklarisano nabrajanje IncrementType na liniji 5
+INFO  18:04:39,953 - Deklarisan element nabrajanja BY_ONE na liniji 5
+INFO  18:04:39,953 - Deklarisan element nabrajanja DOUBLE_VALUE na liniji 5
+INFO  18:04:39,953 - Deklarisana promenljiva i na liniji 7
+INFO  18:04:39,953 - Deklarisana promenljiva ibool na liniji 8
+INFO  18:04:39,953 - Deklarisana promenljiva p na liniji 9
+INFO  18:04:39,953 - Deklarisan niz niz na liniji 11
+INFO  18:04:39,956 - Obradjuje se funkcija dada na liniji 13
+INFO  18:04:39,957 - Obradjuje se funkcija main na liniji 17
+INFO  18:04:39,957 - Upotreba globalne promenljive niz na liniji 19
+INFO  18:04:39,957 - Upotreba globalne promenljive p na liniji 20
+INFO  18:04:39,957 - Pronadjen poziv funkcije chr na liniji 20
+ERROR 18:04:39,957 - Greska na liniji 20 pogresan tip parametra funkcije chr
+INFO  18:04:39,957 - Upotreba globalne promenljive p na liniji 21
+INFO  18:04:39,957 - Print calls = 1
+ERROR 18:04:39,957 - Parsiranje NIJE uspesno zavrseno!

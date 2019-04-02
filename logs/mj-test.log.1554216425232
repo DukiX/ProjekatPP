@@ -1,0 +1,134 @@
+INFO  16:38:08,588 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  16:38:08,865 - #2 program
+INFO  16:38:08,865 - #39 test302
+INFO  16:38:08,866 - #31 enum
+INFO  16:38:08,871 - #39 IncrementType
+INFO  16:38:08,871 - #3 {
+INFO  16:38:08,874 - #39 BY_ONE
+INFO  16:38:08,874 - #8 ,
+INFO  16:38:08,876 - #39 DOUBLE_VALUE
+INFO  16:38:08,876 - #4 }
+INFO  16:38:08,876 - #39 int
+INFO  16:38:08,877 - #39 i
+INFO  16:38:08,880 - #5 ;
+INFO  16:38:08,886 - #39 bool
+INFO  16:38:08,886 - #39 ibool
+INFO  16:38:08,886 - #5 ;
+INFO  16:38:08,886 - #39 char
+INFO  16:38:08,886 - #39 p
+INFO  16:38:08,886 - #5 ;
+INFO  16:38:08,886 - #39 int
+INFO  16:38:08,886 - #39 niz
+INFO  16:38:08,888 - #20 [
+INFO  16:38:08,888 - #21 ]
+INFO  16:38:08,888 - #5 ;
+INFO  16:38:08,890 - #3 {
+INFO  16:38:08,890 - #39 int
+INFO  16:38:08,892 - #39 sum
+INFO  16:38:08,892 - #6 (
+INFO  16:38:08,892 - #39 int
+INFO  16:38:08,892 - #39 z
+INFO  16:38:08,892 - #8 ,
+INFO  16:38:08,900 - #39 int
+INFO  16:38:08,900 - #39 d
+INFO  16:38:08,900 - #7 )
+INFO  16:38:08,900 - #3 {
+INFO  16:38:08,900 - #10 return
+INFO  16:38:08,903 - #39 z
+INFO  16:38:08,903 - #11 +
+INFO  16:38:08,914 - #39 d
+INFO  16:38:08,918 - #5 ;
+INFO  16:38:08,918 - #4 }
+INFO  16:38:08,919 - #39 int
+INFO  16:38:08,919 - #39 inkrement
+INFO  16:38:08,919 - #6 (
+INFO  16:38:08,919 - #39 int
+INFO  16:38:08,919 - #39 a
+INFO  16:38:08,919 - #8 ,
+INFO  16:38:08,919 - #39 IncrementType
+INFO  16:38:08,919 - #39 type
+INFO  16:38:08,919 - #7 )
+INFO  16:38:08,919 - #39 int
+INFO  16:38:08,919 - #39 pom
+INFO  16:38:08,919 - #5 ;
+INFO  16:38:08,919 - #3 {
+INFO  16:38:08,919 - #40 if
+INFO  16:38:08,919 - #6 (
+INFO  16:38:08,922 - #39 type
+INFO  16:38:08,922 - #32 ==
+INFO  16:38:08,922 - #39 IncrementType
+INFO  16:38:08,926 - #22 .
+INFO  16:38:08,926 - #39 BY_ONE
+INFO  16:38:08,926 - #7 )
+INFO  16:38:08,930 - #39 pom
+INFO  16:38:08,932 - #12 =
+INFO  16:38:08,932 - #38 1
+INFO  16:38:08,932 - #5 ;
+INFO  16:38:08,932 - #41 else
+INFO  16:38:08,933 - #40 if
+INFO  16:38:08,935 - #6 (
+INFO  16:38:08,938 - #39 type
+INFO  16:38:08,938 - #32 ==
+INFO  16:38:08,938 - #39 IncrementType
+INFO  16:38:08,938 - #22 .
+INFO  16:38:08,938 - #39 DOUBLE_VALUE
+INFO  16:38:08,938 - #7 )
+INFO  16:38:08,938 - #39 pom
+INFO  16:38:08,939 - #12 =
+INFO  16:38:08,939 - #39 a
+INFO  16:38:08,939 - #5 ;
+INFO  16:38:08,939 - #10 return
+INFO  16:38:08,944 - #39 sum
+INFO  16:38:08,944 - #6 (
+INFO  16:38:08,944 - #39 a
+INFO  16:38:08,944 - #8 ,
+INFO  16:38:08,944 - #39 pom
+INFO  16:38:08,944 - #7 )
+INFO  16:38:08,944 - #5 ;
+INFO  16:38:08,944 - #4 }
+INFO  16:38:08,944 - #13 void
+INFO  16:38:08,944 - #39 main
+INFO  16:38:08,944 - #6 (
+INFO  16:38:08,945 - #7 )
+INFO  16:38:08,947 - #3 {
+INFO  16:38:08,947 - #39 p
+INFO  16:38:08,947 - #12 =
+INFO  16:38:08,947 - #39 chr
+INFO  16:38:08,947 - #6 (
+INFO  16:38:08,947 - #38 65
+INFO  16:38:08,947 - #7 )
+INFO  16:38:08,947 - #5 ;
+INFO  16:38:08,947 - #4 }
+INFO  16:38:08,947 - #4 }
+INFO  16:38:08,975 - Deklarisano nabrajanje IncrementType na liniji 5
+INFO  16:38:08,975 - Deklarisan element nabrajanja BY_ONE na liniji 5
+INFO  16:38:08,975 - Deklarisan element nabrajanja DOUBLE_VALUE na liniji 5
+INFO  16:38:08,976 - Deklarisana promenljiva i na liniji 7
+INFO  16:38:08,976 - Deklarisana promenljiva ibool na liniji 8
+INFO  16:38:08,976 - Deklarisana promenljiva p na liniji 9
+INFO  16:38:08,976 - Deklarisan niz niz na liniji 11
+INFO  16:38:08,976 - Obradjuje se funkcija sum na liniji 14
+INFO  16:38:08,976 - Deklarisan formalni argument z na liniji 14
+INFO  16:38:08,976 - Deklarisan formalni argument d na liniji 14
+INFO  16:38:08,976 - Upotreba lokalne promenljive z na liniji 16
+INFO  16:38:08,976 - Upotreba lokalne promenljive d na liniji 16
+INFO  16:38:08,976 - Obradjuje se funkcija inkrement na liniji 19
+INFO  16:38:08,976 - Deklarisan formalni argument a na liniji 19
+INFO  16:38:08,976 - Deklarisan formalni argument type na liniji 19
+INFO  16:38:08,976 - Deklarisana promenljiva pom na liniji 19
+INFO  16:38:08,976 - Upotreba lokalne promenljive type na liniji 21
+INFO  16:38:08,976 - Upotreba konstante BY_ONE nabrajanja IncrementType na liniji 21
+INFO  16:38:08,977 - Upotreba lokalne promenljive pom na liniji 21
+INFO  16:38:08,977 - Upotreba lokalne promenljive type na liniji 22
+INFO  16:38:08,977 - Upotreba konstante DOUBLE_VALUE nabrajanja IncrementType na liniji 22
+INFO  16:38:08,977 - Upotreba lokalne promenljive pom na liniji 22
+INFO  16:38:08,977 - Upotreba lokalne promenljive a na liniji 22
+INFO  16:38:08,977 - Upotreba lokalne promenljive a na liniji 24
+INFO  16:38:08,977 - Upotreba lokalne promenljive pom na liniji 24
+INFO  16:38:08,977 - Pronadjen poziv funkcije sum na liniji 24
+INFO  16:38:08,977 - Obradjuje se funkcija main na liniji 27
+INFO  16:38:08,977 - Upotreba globalne promenljive p na liniji 29
+INFO  16:38:08,977 - Pronadjen poziv funkcije chr na liniji 29
+INFO  16:38:08,977 - Print calls = 0
+INFO  16:38:08,977 - Generating bytecode file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  16:38:08,988 - Parsiranje uspesno zavrseno!

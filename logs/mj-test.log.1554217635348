@@ -1,0 +1,81 @@
+INFO  17:07:05,324 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  17:07:05,350 - #2 program
+INFO  17:07:05,350 - #39 test302
+INFO  17:07:05,350 - #31 enum
+INFO  17:07:05,351 - #39 IncrementType
+INFO  17:07:05,351 - #3 {
+INFO  17:07:05,351 - #39 BY_ONE
+INFO  17:07:05,351 - #8 ,
+INFO  17:07:05,352 - #39 DOUBLE_VALUE
+INFO  17:07:05,352 - #4 }
+INFO  17:07:05,352 - #39 int
+INFO  17:07:05,352 - #39 i
+INFO  17:07:05,352 - #5 ;
+INFO  17:07:05,353 - #39 bool
+INFO  17:07:05,353 - #39 ibool
+INFO  17:07:05,353 - #5 ;
+INFO  17:07:05,354 - #39 char
+INFO  17:07:05,354 - #39 p
+INFO  17:07:05,354 - #5 ;
+INFO  17:07:05,354 - #39 int
+INFO  17:07:05,354 - #39 niz
+INFO  17:07:05,354 - #20 [
+INFO  17:07:05,354 - #21 ]
+INFO  17:07:05,354 - #5 ;
+INFO  17:07:05,354 - #3 {
+INFO  17:07:05,354 - #39 int
+INFO  17:07:05,355 - #39 dada
+INFO  17:07:05,355 - #6 (
+INFO  17:07:05,355 - #7 )
+INFO  17:07:05,355 - #3 {
+INFO  17:07:05,355 - #10 return
+INFO  17:07:05,356 - #38 1
+INFO  17:07:05,356 - #5 ;
+INFO  17:07:05,356 - #4 }
+INFO  17:07:05,357 - #13 void
+INFO  17:07:05,357 - #39 main
+INFO  17:07:05,357 - #6 (
+INFO  17:07:05,357 - #7 )
+INFO  17:07:05,357 - #3 {
+INFO  17:07:05,357 - #39 niz
+INFO  17:07:05,357 - #12 =
+INFO  17:07:05,358 - #19 new
+INFO  17:07:05,358 - #39 int
+INFO  17:07:05,358 - #20 [
+INFO  17:07:05,359 - #38 5
+INFO  17:07:05,359 - #21 ]
+INFO  17:07:05,359 - #5 ;
+INFO  17:07:05,359 - #39 i
+INFO  17:07:05,359 - #12 =
+INFO  17:07:05,359 - #39 ord
+INFO  17:07:05,359 - #6 (
+INFO  17:07:05,359 - #44 A
+INFO  17:07:05,359 - #8 ,
+INFO  17:07:05,359 - #39 x
+INFO  17:07:05,359 - #7 )
+INFO  17:07:05,360 - #5 ;
+INFO  17:07:05,360 - #9 print
+INFO  17:07:05,360 - #6 (
+INFO  17:07:05,360 - #39 i
+INFO  17:07:05,360 - #7 )
+INFO  17:07:05,360 - #5 ;
+INFO  17:07:05,360 - #4 }
+INFO  17:07:05,360 - #4 }
+INFO  17:07:05,373 - Deklarisano nabrajanje IncrementType na liniji 5
+INFO  17:07:05,373 - Deklarisan element nabrajanja BY_ONE na liniji 5
+INFO  17:07:05,373 - Deklarisan element nabrajanja DOUBLE_VALUE na liniji 5
+INFO  17:07:05,373 - Deklarisana promenljiva i na liniji 7
+INFO  17:07:05,373 - Deklarisana promenljiva ibool na liniji 8
+INFO  17:07:05,373 - Deklarisana promenljiva p na liniji 9
+INFO  17:07:05,373 - Deklarisan niz niz na liniji 11
+INFO  17:07:05,373 - Obradjuje se funkcija dada na liniji 13
+INFO  17:07:05,373 - Obradjuje se funkcija main na liniji 17
+INFO  17:07:05,373 - Upotreba globalne promenljive niz na liniji 19
+INFO  17:07:05,373 - Upotreba globalne promenljive i na liniji 20
+ERROR 17:07:05,373 - Greska na liniji 20 : ime x nije deklarisano! 
+INFO  17:07:05,373 - Upotreba lokalne promenljive x na liniji 20
+INFO  17:07:05,373 - Pronadjen poziv funkcije ord na liniji 20
+ERROR 17:07:05,373 - Greska na liniji 20 : funkcija ord nije prosledjen dobar broj parametara!
+INFO  17:07:05,373 - Upotreba globalne promenljive i na liniji 21
+INFO  17:07:05,373 - Print calls = 1
+ERROR 17:07:05,374 - Parsiranje NIJE uspesno zavrseno!
