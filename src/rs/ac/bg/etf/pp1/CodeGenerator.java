@@ -179,7 +179,7 @@ public class CodeGenerator extends VisitorAdaptor {
 	@Override
 	public void visit(Designator designator) {
 		SyntaxNode parent = designator.getParent();
-		if (Assignment.class != parent.getClass() && FuncCall.class != parent.getClass()) {
+		if (Assignment.class != parent.getClass() && FuncCall.class != parent.getClass() && ProcCall.class != parent.getClass()) {
 			if (designator.obj.getKind() == Obj.Elem) {
 				// Code.loadConst(designator.obj.getAdr());
 				/*
