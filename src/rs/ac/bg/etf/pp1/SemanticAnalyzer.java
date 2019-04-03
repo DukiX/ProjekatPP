@@ -92,13 +92,13 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 
 	public void visit(FormalParamDecl fpd) {
 		if (nizForParLista.removeLast() == 1) {
-			report_info("Deklarisan formalni argument " + fpd.getFormalName(), fpd);
+			report_info("Deklarisan formalni parametar " + fpd.getFormalName(), fpd);
 			Obj varNode = Tab.insert(Obj.Var, fpd.getFormalName(), new Struct(Struct.Array, fpd.getType().struct));
 			int brojParam = currentMethod.getLevel();
 			currentMethod.setLevel(++brojParam);
 			varNode.setFpPos(brojParam);
 		} else {
-			report_info("Deklarisan formalni argument " + fpd.getFormalName(), fpd);
+			report_info("Deklarisan formalni parametar " + fpd.getFormalName(), fpd);
 			Obj varNode = Tab.insert(Obj.Var, fpd.getFormalName(), fpd.getType().struct);
 			int brojParam = currentMethod.getLevel();
 			currentMethod.setLevel(++brojParam);
@@ -336,8 +336,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	public void visit(Assignment assignment) {
 		if (!assignment.getExpr().struct.assignableTo(assignment.getDesignator().obj.getType()))
 			report_error("Greska na liniji " + assignment.getLine() + " : "
-					+ " nekompatibilni tipovi u dodeli vrednosti " + assignment.getDesignator().obj.getType().getKind()
-					+ " " + assignment.getExpr().struct.getKind(), null);
+					+ " nekompatibilni tipovi u dodeli vrednosti ", null);
 	}
 
 	public void visit(PrintStmt printStmt) {
@@ -604,9 +603,13 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 						"Upotreba globalne promenljive " + designator.getName() + " na liniji " + designator.getLine(),
 						null);
 			} else {
-				report_info(
-						"Upotreba lokalne promenljive " + designator.getName() + " na liniji " + designator.getLine(),
-						null);
+				if (obj.getFpPos() == 0) {
+					report_info("Upotreba lokalne promenljive " + designator.getName() + " na liniji "
+							+ designator.getLine(), null);
+				} else {
+					report_info("Upotreba formalnog parametra " + designator.getName() + " na liniji "
+							+ designator.getLine(), null);
+				}
 			}
 		} else if (obj.getKind() == Obj.Con) {
 			if (obj.getLevel() == 0) {

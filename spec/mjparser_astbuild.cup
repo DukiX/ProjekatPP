@@ -195,7 +195,7 @@ FormalParamList ::= (FormalParamDecls) FormalParamList:F1 COMMA FormalParamDecl:
 					(SingleFormalParamDecl) FormalParamDecl:F1 {: RESULT=new SingleFormalParamDecl(F1); RESULT.setLine(F1left); :}
 					|
 					(ErrFormPar) error
-			  		{: parser.log.debug("Uspesan oporavak od formalnog parametra."); :} {: RESULT=new ErrFormPar(); :}
+			  		{: parser.log.debug("Uspesan oporavak od greske kod deklaracije formalnog parametra."); :} {: RESULT=new ErrFormPar(); :}
 					;
 					
 FormalParamDecl ::= (FormalParamDecl) Type:formalType IDENT:formalName ArrayForPar:A1 {: RESULT=new FormalParamDecl(formalType, formalName, A1); RESULT.setLine(formalTypeleft); :};

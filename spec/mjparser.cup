@@ -183,7 +183,7 @@ FormalParamList ::= (FormalParamDecls) FormalParamList COMMA FormalParamDecl
 					(SingleFormalParamDecl) FormalParamDecl
 					|
 					(ErrFormPar) error
-			  		{: parser.log.debug("Uspesan oporavak od formalnog parametra."); :}
+			  		{: parser.log.debug("Uspesan oporavak od greske kod deklaracije formalnog parametra."); :}
 					;
 					
 FormalParamDecl ::= (FormalParamDecl) Type:formalType IDENT:formalName ArrayForPar;

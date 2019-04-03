@@ -310,7 +310,7 @@ public class CodeGenerator extends VisitorAdaptor {
 
 		uReadu = false;
 	}
-
+	
 	public void visit(FactorNewArr fna) {
 		Code.put(Code.newarray);
 		if (fna.getType().struct == Tab.charType) {
