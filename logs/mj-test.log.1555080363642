@@ -1,0 +1,73 @@
+INFO  16:45:52,405 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  16:45:52,431 - #2 program
+INFO  16:45:52,431 - #39 test302
+INFO  16:45:52,431 - #31 enum
+INFO  16:45:52,432 - #39 IncrementType
+INFO  16:45:52,432 - #3 {
+INFO  16:45:52,432 - #39 BY_ONE
+INFO  16:45:52,432 - #8 ,
+INFO  16:45:52,433 - #39 DOUBLE_VALUE
+INFO  16:45:52,433 - #4 }
+INFO  16:45:52,433 - #39 int
+INFO  16:45:52,433 - #39 i
+INFO  16:45:52,433 - #5 ;
+INFO  16:45:52,434 - #39 bool
+INFO  16:45:52,434 - #39 ibool
+INFO  16:45:52,434 - #5 ;
+INFO  16:45:52,435 - #39 int
+INFO  16:45:52,435 - #39 niz
+INFO  16:45:52,435 - #20 [
+INFO  16:45:52,435 - #21 ]
+INFO  16:45:52,435 - #5 ;
+INFO  16:45:52,437 - #3 {
+INFO  16:45:52,437 - #13 void
+INFO  16:45:52,437 - #39 main
+INFO  16:45:52,438 - #6 (
+INFO  16:45:52,438 - #7 )
+INFO  16:45:52,438 - #3 {
+INFO  16:45:52,438 - #39 i
+INFO  16:45:52,438 - #12 =
+INFO  16:45:52,439 - #39 ord
+INFO  16:45:52,439 - #6 (
+INFO  16:45:52,439 - #44 A
+INFO  16:45:52,439 - #7 )
+INFO  16:45:52,440 - #5 ;
+INFO  16:45:52,440 - #9 print
+INFO  16:45:52,440 - #6 (
+INFO  16:45:52,440 - #39 i
+INFO  16:45:52,440 - #7 )
+INFO  16:45:52,440 - #5 ;
+INFO  16:45:52,440 - #39 a
+INFO  16:45:52,441 - #12 =
+INFO  16:45:52,441 - #39 chr
+INFO  16:45:52,441 - #6 (
+INFO  16:45:52,441 - #39 i
+INFO  16:45:52,441 - #7 )
+INFO  16:45:52,441 - #5 ;
+INFO  16:45:52,441 - #9 print
+INFO  16:45:52,442 - #6 (
+INFO  16:45:52,442 - #39 a
+INFO  16:45:52,442 - #7 )
+INFO  16:45:52,442 - #5 ;
+INFO  16:45:52,442 - #4 }
+INFO  16:45:52,442 - #4 }
+INFO  16:45:52,455 - Deklarisano nabrajanje IncrementType na liniji 5
+INFO  16:45:52,456 - Deklarisan element nabrajanja BY_ONE na liniji 5
+INFO  16:45:52,456 - Deklarisan element nabrajanja DOUBLE_VALUE na liniji 5
+INFO  16:45:52,456 - Deklarisana promenljiva i na liniji 7
+INFO  16:45:52,456 - Deklarisana promenljiva ibool na liniji 8
+INFO  16:45:52,456 - Deklarisan niz niz na liniji 10
+INFO  16:45:52,456 - Obradjuje se funkcija main na liniji 12
+INFO  16:45:52,456 - Upotreba globalne promenljive i na liniji 14
+INFO  16:45:52,456 - Pronadjen poziv funkcije ord na liniji 14
+INFO  16:45:52,456 - Upotreba globalne promenljive i na liniji 15
+ERROR 16:45:52,456 - Greska na liniji 16 : ime a nije deklarisano! 
+INFO  16:45:52,456 - Upotreba lokalne promenljive a na liniji 16
+INFO  16:45:52,456 - Upotreba globalne promenljive i na liniji 16
+INFO  16:45:52,456 - Pronadjen poziv funkcije chr na liniji 16
+ERROR 16:45:52,456 - Greska na liniji 16 :  nekompatibilni tipovi u dodeli vrednosti 
+ERROR 16:45:52,461 - Greska na liniji 17 : ime a nije deklarisano! 
+INFO  16:45:52,462 - Upotreba lokalne promenljive a na liniji 17
+ERROR 16:45:52,462 - Promenljiva kod print mora biti INT, CHAR ili BOOL na liniji 17
+INFO  16:45:52,462 - Print calls = 2
+ERROR 16:45:52,462 - Parsiranje NIJE uspesno zavrseno!

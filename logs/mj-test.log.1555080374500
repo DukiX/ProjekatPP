@@ -1,0 +1,72 @@
+INFO  16:46:03,645 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  16:46:03,671 - #2 program
+INFO  16:46:03,671 - #39 test302
+INFO  16:46:03,671 - #31 enum
+INFO  16:46:03,672 - #39 IncrementType
+INFO  16:46:03,672 - #3 {
+INFO  16:46:03,672 - #39 BY_ONE
+INFO  16:46:03,672 - #8 ,
+INFO  16:46:03,672 - #39 DOUBLE_VALUE
+INFO  16:46:03,672 - #4 }
+INFO  16:46:03,673 - #39 int
+INFO  16:46:03,673 - #39 i
+INFO  16:46:03,673 - #5 ;
+INFO  16:46:03,674 - #39 chr
+INFO  16:46:03,674 - #39 a
+INFO  16:46:03,674 - #5 ;
+INFO  16:46:03,674 - #39 int
+INFO  16:46:03,674 - #39 niz
+INFO  16:46:03,674 - #20 [
+INFO  16:46:03,675 - #21 ]
+INFO  16:46:03,675 - #5 ;
+INFO  16:46:03,675 - #3 {
+INFO  16:46:03,676 - #13 void
+INFO  16:46:03,677 - #39 main
+INFO  16:46:03,677 - #6 (
+INFO  16:46:03,677 - #7 )
+INFO  16:46:03,677 - #3 {
+INFO  16:46:03,677 - #39 i
+INFO  16:46:03,677 - #12 =
+INFO  16:46:03,678 - #39 ord
+INFO  16:46:03,678 - #6 (
+INFO  16:46:03,678 - #44 A
+INFO  16:46:03,678 - #7 )
+INFO  16:46:03,679 - #5 ;
+INFO  16:46:03,679 - #9 print
+INFO  16:46:03,679 - #6 (
+INFO  16:46:03,679 - #39 i
+INFO  16:46:03,679 - #7 )
+INFO  16:46:03,679 - #5 ;
+INFO  16:46:03,679 - #39 a
+INFO  16:46:03,680 - #12 =
+INFO  16:46:03,680 - #39 chr
+INFO  16:46:03,680 - #6 (
+INFO  16:46:03,680 - #39 i
+INFO  16:46:03,680 - #7 )
+INFO  16:46:03,680 - #5 ;
+INFO  16:46:03,681 - #9 print
+INFO  16:46:03,681 - #6 (
+INFO  16:46:03,681 - #39 a
+INFO  16:46:03,681 - #7 )
+INFO  16:46:03,681 - #5 ;
+INFO  16:46:03,681 - #4 }
+INFO  16:46:03,681 - #4 }
+INFO  16:46:03,694 - Deklarisano nabrajanje IncrementType na liniji 5
+INFO  16:46:03,694 - Deklarisan element nabrajanja BY_ONE na liniji 5
+INFO  16:46:03,694 - Deklarisan element nabrajanja DOUBLE_VALUE na liniji 5
+INFO  16:46:03,694 - Deklarisana promenljiva i na liniji 7
+ERROR 16:46:03,694 - Greska: Ime chr ne predstavlja tip  na liniji 8
+INFO  16:46:03,694 - Deklarisana promenljiva a na liniji 8
+INFO  16:46:03,694 - Deklarisan niz niz na liniji 10
+INFO  16:46:03,694 - Obradjuje se funkcija main na liniji 12
+INFO  16:46:03,694 - Upotreba globalne promenljive i na liniji 14
+INFO  16:46:03,694 - Pronadjen poziv funkcije ord na liniji 14
+INFO  16:46:03,694 - Upotreba globalne promenljive i na liniji 15
+INFO  16:46:03,695 - Upotreba globalne promenljive a na liniji 16
+INFO  16:46:03,695 - Upotreba globalne promenljive i na liniji 16
+INFO  16:46:03,695 - Pronadjen poziv funkcije chr na liniji 16
+ERROR 16:46:03,695 - Greska na liniji 16 :  nekompatibilni tipovi u dodeli vrednosti 
+INFO  16:46:03,699 - Upotreba globalne promenljive a na liniji 17
+ERROR 16:46:03,699 - Promenljiva kod print mora biti INT, CHAR ili BOOL na liniji 17
+INFO  16:46:03,699 - Print calls = 2
+ERROR 16:46:03,700 - Parsiranje NIJE uspesno zavrseno!

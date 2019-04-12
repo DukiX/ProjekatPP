@@ -29,9 +29,11 @@ public class CodeGenerator extends VisitorAdaptor {
 		Tab.lenObj.setAdr(Code.pc);
 
 		Code.put(Code.enter);
-		Code.put(0);
-		Code.put(0);
+		Code.put(1);
+		Code.put(1);
 
+		Code.put(Code.load_n + 0);
+		
 		Code.put(Code.arraylength);
 
 		Code.put(Code.exit);
@@ -41,10 +43,10 @@ public class CodeGenerator extends VisitorAdaptor {
 		Tab.chrObj.setAdr(Code.pc);
 
 		Code.put(Code.enter);
-		Code.put(0);
-		Code.put(0);
+		Code.put(1);
+		Code.put(1);
 
-		// ?
+		Code.put(Code.load_n + 0);
 
 		Code.put(Code.exit);
 		Code.put(Code.return_);
@@ -53,10 +55,10 @@ public class CodeGenerator extends VisitorAdaptor {
 		Tab.ordObj.setAdr(Code.pc);
 
 		Code.put(Code.enter);
-		Code.put(0);
-		Code.put(0);
+		Code.put(1);
+		Code.put(1);
 
-		// ?
+		Code.put(Code.load_n + 0);
 
 		Code.put(Code.exit);
 		Code.put(Code.return_);

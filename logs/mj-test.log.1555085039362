@@ -1,0 +1,71 @@
+INFO  18:03:53,151 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  18:03:53,177 - #2 program
+INFO  18:03:53,177 - #39 test302
+INFO  18:03:53,177 - #31 enum
+INFO  18:03:53,177 - #39 IncrementType
+INFO  18:03:53,178 - #3 {
+INFO  18:03:53,178 - #39 BY_ONE
+INFO  18:03:53,178 - #8 ,
+INFO  18:03:53,178 - #39 DOUBLE_VALUE
+INFO  18:03:53,178 - #4 }
+INFO  18:03:53,179 - #39 int
+INFO  18:03:53,179 - #39 i
+INFO  18:03:53,179 - #5 ;
+INFO  18:03:53,180 - #39 char
+INFO  18:03:53,180 - #39 a
+INFO  18:03:53,180 - #5 ;
+INFO  18:03:53,180 - #39 int
+INFO  18:03:53,180 - #39 niz
+INFO  18:03:53,180 - #20 [
+INFO  18:03:53,180 - #21 ]
+INFO  18:03:53,180 - #5 ;
+INFO  18:03:53,181 - #3 {
+INFO  18:03:53,181 - #39 int
+INFO  18:03:53,181 - #39 sum
+INFO  18:03:53,181 - #6 (
+INFO  18:03:53,181 - #39 int
+INFO  18:03:53,181 - #39 a
+INFO  18:03:53,181 - #7 )
+INFO  18:03:53,182 - #3 {
+INFO  18:03:53,183 - #10 return
+INFO  18:03:53,183 - #39 a
+INFO  18:03:53,183 - #5 ;
+INFO  18:03:53,185 - #4 }
+INFO  18:03:53,185 - #13 void
+INFO  18:03:53,185 - #39 main
+INFO  18:03:53,185 - #6 (
+INFO  18:03:53,185 - #7 )
+INFO  18:03:53,185 - #3 {
+INFO  18:03:53,185 - #39 niz
+INFO  18:03:53,186 - #12 =
+INFO  18:03:53,186 - #19 new
+INFO  18:03:53,186 - #39 int
+INFO  18:03:53,186 - #20 [
+INFO  18:03:53,186 - #38 6
+INFO  18:03:53,186 - #21 ]
+INFO  18:03:53,186 - #5 ;
+INFO  18:03:53,186 - #9 print
+INFO  18:03:53,186 - #6 (
+INFO  18:03:53,186 - #39 chr
+INFO  18:03:53,186 - #6 (
+INFO  18:03:53,187 - #44 A
+INFO  18:03:53,187 - #7 )
+INFO  18:03:53,187 - #7 )
+INFO  18:03:53,187 - #5 ;
+INFO  18:03:53,187 - #4 }
+INFO  18:03:53,187 - #4 }
+INFO  18:03:53,200 - Deklarisano nabrajanje IncrementType na liniji 5
+INFO  18:03:53,200 - Deklarisan element nabrajanja BY_ONE na liniji 5
+INFO  18:03:53,200 - Deklarisan element nabrajanja DOUBLE_VALUE na liniji 5
+INFO  18:03:53,200 - Deklarisana promenljiva i na liniji 7
+INFO  18:03:53,200 - Deklarisana promenljiva a na liniji 8
+INFO  18:03:53,200 - Deklarisan niz niz na liniji 10
+INFO  18:03:53,200 - Obradjuje se funkcija sum na liniji 13
+INFO  18:03:53,200 - Deklarisan formalni parametar a na liniji 13
+INFO  18:03:53,200 - Upotreba formalnog parametra a na liniji 15
+INFO  18:03:53,200 - Obradjuje se funkcija main na liniji 18
+INFO  18:03:53,200 - Upotreba globalne promenljive niz na liniji 20
+INFO  18:03:53,200 - Pronadjen poziv funkcije chr na liniji 21
+ERROR 18:03:53,204 - Greska na liniji 21 pogresan tip parametra funkcije chr
+INFO  18:03:53,204 - Print calls = 1
+ERROR 18:03:53,204 - Parsiranje NIJE uspesno zavrseno!

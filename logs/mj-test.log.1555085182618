@@ -1,0 +1,116 @@
+INFO  18:05:13,396 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  18:05:13,424 - #2 program
+INFO  18:05:13,424 - #39 test302
+INFO  18:05:13,424 - #31 enum
+INFO  18:05:13,425 - #39 IncrementType
+INFO  18:05:13,425 - #3 {
+INFO  18:05:13,425 - #39 BY_ONE
+INFO  18:05:13,425 - #8 ,
+INFO  18:05:13,425 - #39 DOUBLE_VALUE
+INFO  18:05:13,426 - #4 }
+INFO  18:05:13,426 - #39 int
+INFO  18:05:13,426 - #39 i
+INFO  18:05:13,426 - #5 ;
+INFO  18:05:13,427 - #39 char
+INFO  18:05:13,427 - #39 a
+INFO  18:05:13,427 - #5 ;
+INFO  18:05:13,427 - #39 int
+INFO  18:05:13,427 - #39 niz
+INFO  18:05:13,427 - #20 [
+INFO  18:05:13,427 - #21 ]
+INFO  18:05:13,427 - #5 ;
+INFO  18:05:13,429 - #3 {
+INFO  18:05:13,429 - #39 int
+INFO  18:05:13,429 - #39 sum
+INFO  18:05:13,430 - #6 (
+INFO  18:05:13,430 - #39 int
+INFO  18:05:13,430 - #39 a
+INFO  18:05:13,430 - #7 )
+INFO  18:05:13,431 - #3 {
+INFO  18:05:13,431 - #10 return
+INFO  18:05:13,431 - #39 a
+INFO  18:05:13,431 - #5 ;
+INFO  18:05:13,432 - #4 }
+INFO  18:05:13,432 - #13 void
+INFO  18:05:13,433 - #39 main
+INFO  18:05:13,433 - #6 (
+INFO  18:05:13,433 - #7 )
+INFO  18:05:13,433 - #3 {
+INFO  18:05:13,433 - #39 niz
+INFO  18:05:13,433 - #12 =
+INFO  18:05:13,433 - #19 new
+INFO  18:05:13,434 - #39 int
+INFO  18:05:13,434 - #20 [
+INFO  18:05:13,435 - #38 6
+INFO  18:05:13,435 - #21 ]
+INFO  18:05:13,435 - #5 ;
+INFO  18:05:13,435 - #9 print
+INFO  18:05:13,435 - #6 (
+INFO  18:05:13,435 - #39 chr
+INFO  18:05:13,435 - #6 (
+INFO  18:05:13,435 - #38 65
+INFO  18:05:13,435 - #7 )
+INFO  18:05:13,436 - #7 )
+INFO  18:05:13,436 - #5 ;
+INFO  18:05:13,436 - #9 print
+INFO  18:05:13,436 - #6 (
+INFO  18:05:13,436 - #39 ord
+INFO  18:05:13,436 - #6 (
+INFO  18:05:13,436 - #44 B
+INFO  18:05:13,436 - #7 )
+INFO  18:05:13,436 - #7 )
+INFO  18:05:13,436 - #5 ;
+INFO  18:05:13,436 - #9 print
+INFO  18:05:13,436 - #6 (
+INFO  18:05:13,436 - #39 chr
+INFO  18:05:13,436 - #6 (
+INFO  18:05:13,436 - #38 67
+INFO  18:05:13,437 - #7 )
+INFO  18:05:13,437 - #7 )
+INFO  18:05:13,437 - #5 ;
+INFO  18:05:13,437 - #9 print
+INFO  18:05:13,437 - #6 (
+INFO  18:05:13,437 - #39 ord
+INFO  18:05:13,437 - #6 (
+INFO  18:05:13,437 - #44 D
+INFO  18:05:13,437 - #7 )
+INFO  18:05:13,437 - #7 )
+INFO  18:05:13,437 - #5 ;
+INFO  18:05:13,437 - #9 print
+INFO  18:05:13,437 - #6 (
+INFO  18:05:13,437 - #39 chr
+INFO  18:05:13,437 - #6 (
+INFO  18:05:13,437 - #38 69
+INFO  18:05:13,437 - #7 )
+INFO  18:05:13,437 - #7 )
+INFO  18:05:13,437 - #5 ;
+INFO  18:05:13,437 - #9 print
+INFO  18:05:13,437 - #6 (
+INFO  18:05:13,438 - #39 ord
+INFO  18:05:13,438 - #6 (
+INFO  18:05:13,438 - #44 F
+INFO  18:05:13,438 - #7 )
+INFO  18:05:13,438 - #7 )
+INFO  18:05:13,438 - #5 ;
+INFO  18:05:13,438 - #4 }
+INFO  18:05:13,438 - #4 }
+INFO  18:05:13,452 - Deklarisano nabrajanje IncrementType na liniji 5
+INFO  18:05:13,452 - Deklarisan element nabrajanja BY_ONE na liniji 5
+INFO  18:05:13,452 - Deklarisan element nabrajanja DOUBLE_VALUE na liniji 5
+INFO  18:05:13,452 - Deklarisana promenljiva i na liniji 7
+INFO  18:05:13,452 - Deklarisana promenljiva a na liniji 8
+INFO  18:05:13,452 - Deklarisan niz niz na liniji 10
+INFO  18:05:13,453 - Obradjuje se funkcija sum na liniji 13
+INFO  18:05:13,453 - Deklarisan formalni parametar a na liniji 13
+INFO  18:05:13,453 - Upotreba formalnog parametra a na liniji 15
+INFO  18:05:13,453 - Obradjuje se funkcija main na liniji 18
+INFO  18:05:13,453 - Upotreba globalne promenljive niz na liniji 20
+INFO  18:05:13,453 - Pronadjen poziv funkcije chr na liniji 21
+INFO  18:05:13,453 - Pronadjen poziv funkcije ord na liniji 22
+INFO  18:05:13,453 - Pronadjen poziv funkcije chr na liniji 23
+INFO  18:05:13,453 - Pronadjen poziv funkcije ord na liniji 24
+INFO  18:05:13,453 - Pronadjen poziv funkcije chr na liniji 25
+INFO  18:05:13,453 - Pronadjen poziv funkcije ord na liniji 26
+INFO  18:05:13,453 - Print calls = 6
+INFO  18:05:13,454 - Generating bytecode file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  18:05:13,457 - Parsiranje uspesno zavrseno!

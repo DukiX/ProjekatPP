@@ -1,0 +1,72 @@
+INFO  17:52:08,257 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  17:52:08,288 - #2 program
+INFO  17:52:08,288 - #39 test302
+INFO  17:52:08,288 - #31 enum
+INFO  17:52:08,289 - #39 IncrementType
+INFO  17:52:08,289 - #3 {
+INFO  17:52:08,289 - #39 BY_ONE
+INFO  17:52:08,289 - #8 ,
+INFO  17:52:08,290 - #39 DOUBLE_VALUE
+INFO  17:52:08,290 - #4 }
+INFO  17:52:08,290 - #39 int
+INFO  17:52:08,290 - #39 i
+INFO  17:52:08,291 - #5 ;
+INFO  17:52:08,292 - #39 char
+INFO  17:52:08,292 - #39 a
+INFO  17:52:08,292 - #5 ;
+INFO  17:52:08,292 - #39 int
+INFO  17:52:08,292 - #39 niz
+INFO  17:52:08,292 - #20 [
+INFO  17:52:08,292 - #21 ]
+INFO  17:52:08,292 - #5 ;
+INFO  17:52:08,294 - #3 {
+INFO  17:52:08,294 - #39 int
+INFO  17:52:08,294 - #39 sum
+INFO  17:52:08,295 - #6 (
+INFO  17:52:08,295 - #39 int
+INFO  17:52:08,295 - #39 a
+INFO  17:52:08,295 - #7 )
+INFO  17:52:08,296 - #3 {
+INFO  17:52:08,296 - #10 return
+INFO  17:52:08,296 - #39 a
+INFO  17:52:08,296 - #5 ;
+INFO  17:52:08,298 - #4 }
+INFO  17:52:08,298 - #13 void
+INFO  17:52:08,298 - #39 main
+INFO  17:52:08,298 - #6 (
+INFO  17:52:08,298 - #7 )
+INFO  17:52:08,298 - #3 {
+INFO  17:52:08,298 - #39 niz
+INFO  17:52:08,299 - #12 =
+INFO  17:52:08,299 - #19 new
+INFO  17:52:08,299 - #39 int
+INFO  17:52:08,299 - #20 [
+INFO  17:52:08,299 - #38 4
+INFO  17:52:08,299 - #21 ]
+INFO  17:52:08,299 - #5 ;
+INFO  17:52:08,299 - #9 print
+INFO  17:52:08,299 - #6 (
+INFO  17:52:08,299 - #39 len
+INFO  17:52:08,299 - #6 (
+INFO  17:52:08,299 - #39 niz
+INFO  17:52:08,299 - #7 )
+INFO  17:52:08,300 - #7 )
+INFO  17:52:08,300 - #5 ;
+INFO  17:52:08,300 - #4 }
+INFO  17:52:08,300 - #4 }
+INFO  17:52:08,313 - Deklarisano nabrajanje IncrementType na liniji 5
+INFO  17:52:08,313 - Deklarisan element nabrajanja BY_ONE na liniji 5
+INFO  17:52:08,313 - Deklarisan element nabrajanja DOUBLE_VALUE na liniji 5
+INFO  17:52:08,313 - Deklarisana promenljiva i na liniji 7
+INFO  17:52:08,313 - Deklarisana promenljiva a na liniji 8
+INFO  17:52:08,313 - Deklarisan niz niz na liniji 10
+INFO  17:52:08,313 - Obradjuje se funkcija sum na liniji 13
+INFO  17:52:08,313 - Deklarisan formalni parametar a na liniji 13
+INFO  17:52:08,313 - Upotreba formalnog parametra a na liniji 15
+INFO  17:52:08,313 - Obradjuje se funkcija main na liniji 18
+INFO  17:52:08,314 - Upotreba globalne promenljive niz na liniji 20
+INFO  17:52:08,314 - Upotreba globalne promenljive niz na liniji 21
+INFO  17:52:08,314 - Pronadjen poziv funkcije len na liniji 21
+INFO  17:52:08,314 - Print calls = 1
+INFO  17:52:08,314 - Generating bytecode file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  17:52:08,318 - Parsiranje uspesno zavrseno!

@@ -24,6 +24,45 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	public SemanticAnalyzer() {
 		Tab.currentScope.addToLocals(new Obj(Obj.Type, "bool", boolType));
 
+		// CHR metoda
+		currentMethod = Tab.chrObj;
+		Tab.openScope();
+
+		Obj varNode = Tab.insert(Obj.Var, "i", Tab.intType);
+		currentMethod.setLevel(1);
+		varNode.setLevel(1);
+		varNode.setFpPos(1);
+
+		Tab.chainLocalSymbols(currentMethod);
+		Tab.closeScope();
+		returnFound = false;
+		currentMethod = null;
+
+		// ORD metoda
+		currentMethod = Tab.ordObj;
+		Tab.openScope();
+
+		varNode = Tab.insert(Obj.Var, "ch", Tab.charType);
+		currentMethod.setLevel(1);
+		varNode.setLevel(1);
+		varNode.setFpPos(1);
+
+		Tab.chainLocalSymbols(currentMethod);
+		Tab.closeScope();
+		returnFound = false;
+		currentMethod = null;
+		
+		// LEN metoda
+		currentMethod = Tab.lenObj;
+		Tab.openScope();
+
+		varNode = Tab.insert(Obj.Var, "arr", new Struct(Struct.Array, Tab.noType));
+		currentMethod.setLevel(1);
+		varNode.setLevel(1);
+		varNode.setFpPos(1);
+
+		Tab.chainLocalSymbols(currentMethod);
+		Tab.closeScope();
 		returnFound = false;
 		currentMethod = null;
 	}
@@ -369,7 +408,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 					if (obj.getType() != actParLst.get(obj.getFpPos() - 1)) {
 						if (obj.getType().getKind() == Struct.Array
 								&& actParLst.get(obj.getFpPos() - 1).getKind() == Struct.Array) {
-							if (obj.getType().getElemType() == actParLst.get(obj.getFpPos() - 1).getElemType()) {
+							if (obj.getType().getElemType() == actParLst.get(obj.getFpPos() - 1).getElemType() || func.getName().equals("len")) {
 								// dobar
 							} else {
 								report_error("Greska na liniji " + procCall.getLine()
@@ -415,7 +454,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 					if (obj.getType() != actParLst.get(obj.getFpPos() - 1)) {
 						if (obj.getType().getKind() == Struct.Array
 								&& actParLst.get(obj.getFpPos() - 1).getKind() == Struct.Array) {
-							if (obj.getType().getElemType() == actParLst.get(obj.getFpPos() - 1).getElemType()) {
+							if (obj.getType().getElemType() == actParLst.get(obj.getFpPos() - 1).getElemType() || func.getName().equals("len")) {
 								// dobar
 							} else {
 								report_error("Greska na liniji " + funcCall.getLine()

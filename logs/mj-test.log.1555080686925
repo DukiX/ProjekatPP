@@ -1,0 +1,58 @@
+INFO  16:51:08,247 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  16:51:08,272 - #2 program
+INFO  16:51:08,272 - #39 test302
+INFO  16:51:08,272 - #31 enum
+INFO  16:51:08,273 - #39 IncrementType
+INFO  16:51:08,273 - #3 {
+INFO  16:51:08,273 - #39 BY_ONE
+INFO  16:51:08,273 - #8 ,
+INFO  16:51:08,274 - #39 DOUBLE_VALUE
+INFO  16:51:08,274 - #4 }
+INFO  16:51:08,274 - #39 int
+INFO  16:51:08,274 - #39 i
+INFO  16:51:08,275 - #5 ;
+INFO  16:51:08,276 - #39 char
+INFO  16:51:08,276 - #39 a
+INFO  16:51:08,276 - #5 ;
+INFO  16:51:08,276 - #39 int
+INFO  16:51:08,276 - #39 niz
+INFO  16:51:08,276 - #20 [
+INFO  16:51:08,276 - #21 ]
+INFO  16:51:08,276 - #5 ;
+INFO  16:51:08,277 - #3 {
+INFO  16:51:08,277 - #13 void
+INFO  16:51:08,277 - #39 sum
+INFO  16:51:08,277 - #6 (
+INFO  16:51:08,277 - #39 int
+INFO  16:51:08,277 - #39 a
+INFO  16:51:08,277 - #7 )
+INFO  16:51:08,278 - #3 {
+INFO  16:51:08,278 - #4 }
+INFO  16:51:08,279 - #13 void
+INFO  16:51:08,279 - #39 main
+INFO  16:51:08,279 - #6 (
+INFO  16:51:08,279 - #7 )
+INFO  16:51:08,279 - #3 {
+INFO  16:51:08,279 - #39 a
+INFO  16:51:08,279 - #12 =
+INFO  16:51:08,280 - #39 ord
+INFO  16:51:08,280 - #6 (
+INFO  16:51:08,280 - #38 41
+INFO  16:51:08,280 - #7 )
+INFO  16:51:08,281 - #5 ;
+INFO  16:51:08,281 - #4 }
+INFO  16:51:08,281 - #4 }
+INFO  16:51:08,294 - Deklarisano nabrajanje IncrementType na liniji 5
+INFO  16:51:08,294 - Deklarisan element nabrajanja BY_ONE na liniji 5
+INFO  16:51:08,294 - Deklarisan element nabrajanja DOUBLE_VALUE na liniji 5
+INFO  16:51:08,295 - Deklarisana promenljiva i na liniji 7
+INFO  16:51:08,295 - Deklarisana promenljiva a na liniji 8
+INFO  16:51:08,295 - Deklarisan niz niz na liniji 10
+INFO  16:51:08,295 - Obradjuje se funkcija sum na liniji 13
+INFO  16:51:08,295 - Deklarisan formalni parametar a na liniji 13
+INFO  16:51:08,295 - Obradjuje se funkcija main na liniji 18
+INFO  16:51:08,295 - Upotreba globalne promenljive a na liniji 20
+INFO  16:51:08,295 - Pronadjen poziv funkcije ord na liniji 20
+ERROR 16:51:08,295 - Greska na liniji 20 :  nekompatibilni tipovi u dodeli vrednosti 
+INFO  16:51:08,295 - Print calls = 0
+ERROR 16:51:08,295 - Parsiranje NIJE uspesno zavrseno!

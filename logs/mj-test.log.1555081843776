@@ -1,0 +1,68 @@
+INFO  17:09:47,185 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  17:09:47,213 - #2 program
+INFO  17:09:47,213 - #39 test302
+INFO  17:09:47,213 - #31 enum
+INFO  17:09:47,214 - #39 IncrementType
+INFO  17:09:47,214 - #3 {
+INFO  17:09:47,214 - #39 BY_ONE
+INFO  17:09:47,214 - #8 ,
+INFO  17:09:47,215 - #39 DOUBLE_VALUE
+INFO  17:09:47,215 - #4 }
+INFO  17:09:47,215 - #39 int
+INFO  17:09:47,215 - #39 i
+INFO  17:09:47,215 - #5 ;
+INFO  17:09:47,216 - #39 char
+INFO  17:09:47,216 - #39 a
+INFO  17:09:47,216 - #5 ;
+INFO  17:09:47,216 - #39 int
+INFO  17:09:47,217 - #39 niz
+INFO  17:09:47,217 - #20 [
+INFO  17:09:47,217 - #21 ]
+INFO  17:09:47,217 - #5 ;
+INFO  17:09:47,219 - #3 {
+INFO  17:09:47,219 - #39 int
+INFO  17:09:47,219 - #39 sum
+INFO  17:09:47,219 - #6 (
+INFO  17:09:47,219 - #39 int
+INFO  17:09:47,219 - #39 a
+INFO  17:09:47,219 - #7 )
+INFO  17:09:47,220 - #3 {
+INFO  17:09:47,220 - #10 return
+INFO  17:09:47,221 - #39 a
+INFO  17:09:47,221 - #5 ;
+INFO  17:09:47,222 - #4 }
+INFO  17:09:47,222 - #13 void
+INFO  17:09:47,222 - #39 main
+INFO  17:09:47,222 - #6 (
+INFO  17:09:47,222 - #7 )
+INFO  17:09:47,223 - #3 {
+INFO  17:09:47,223 - #39 a
+INFO  17:09:47,223 - #12 =
+INFO  17:09:47,223 - #39 chr
+INFO  17:09:47,223 - #6 (
+INFO  17:09:47,223 - #44 b
+INFO  17:09:47,223 - #7 )
+INFO  17:09:47,223 - #5 ;
+INFO  17:09:47,224 - #9 print
+INFO  17:09:47,224 - #6 (
+INFO  17:09:47,224 - #39 a
+INFO  17:09:47,224 - #7 )
+INFO  17:09:47,224 - #5 ;
+INFO  17:09:47,224 - #4 }
+INFO  17:09:47,224 - #4 }
+INFO  17:09:47,245 - Deklarisano nabrajanje IncrementType na liniji 5
+INFO  17:09:47,245 - Deklarisan element nabrajanja BY_ONE na liniji 5
+INFO  17:09:47,246 - Deklarisan element nabrajanja DOUBLE_VALUE na liniji 5
+INFO  17:09:47,246 - Deklarisana promenljiva i na liniji 7
+INFO  17:09:47,246 - Deklarisana promenljiva a na liniji 8
+INFO  17:09:47,246 - Deklarisan niz niz na liniji 10
+INFO  17:09:47,246 - Obradjuje se funkcija sum na liniji 13
+INFO  17:09:47,246 - Deklarisan formalni parametar a na liniji 13
+INFO  17:09:47,246 - Upotreba formalnog parametra a na liniji 15
+INFO  17:09:47,246 - Obradjuje se funkcija main na liniji 18
+INFO  17:09:47,246 - Upotreba globalne promenljive a na liniji 20
+INFO  17:09:47,246 - Pronadjen poziv funkcije chr na liniji 20
+ERROR 17:09:47,246 - Greska na liniji 20 pogresan tip parametra funkcije chr
+INFO  17:09:47,246 - Upotreba globalne promenljive a na liniji 21
+INFO  17:09:47,246 - Print calls = 1
+ERROR 17:09:47,247 - Parsiranje NIJE uspesno zavrseno!

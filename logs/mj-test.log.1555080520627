@@ -1,0 +1,54 @@
+INFO  16:46:56,671 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  16:46:56,698 - #2 program
+INFO  16:46:56,698 - #39 test302
+INFO  16:46:56,698 - #31 enum
+INFO  16:46:56,699 - #39 IncrementType
+INFO  16:46:56,699 - #3 {
+INFO  16:46:56,700 - #39 BY_ONE
+INFO  16:46:56,700 - #8 ,
+INFO  16:46:56,700 - #39 DOUBLE_VALUE
+INFO  16:46:56,700 - #4 }
+INFO  16:46:56,700 - #39 int
+INFO  16:46:56,700 - #39 i
+INFO  16:46:56,701 - #5 ;
+INFO  16:46:56,702 - #39 char
+INFO  16:46:56,702 - #39 a
+INFO  16:46:56,702 - #5 ;
+INFO  16:46:56,703 - #39 int
+INFO  16:46:56,703 - #39 niz
+INFO  16:46:56,703 - #20 [
+INFO  16:46:56,703 - #21 ]
+INFO  16:46:56,703 - #5 ;
+INFO  16:46:56,705 - #3 {
+INFO  16:46:56,705 - #13 void
+INFO  16:46:56,705 - #39 main
+INFO  16:46:56,705 - #6 (
+INFO  16:46:56,705 - #7 )
+INFO  16:46:56,705 - #3 {
+INFO  16:46:56,705 - #39 i
+INFO  16:46:56,706 - #12 =
+INFO  16:46:56,706 - #39 ord
+INFO  16:46:56,706 - #6 (
+INFO  16:46:56,706 - #44 A
+INFO  16:46:56,707 - #7 )
+INFO  16:46:56,707 - #5 ;
+INFO  16:46:56,707 - #9 print
+INFO  16:46:56,708 - #6 (
+INFO  16:46:56,708 - #39 i
+INFO  16:46:56,708 - #7 )
+INFO  16:46:56,708 - #5 ;
+INFO  16:46:56,708 - #4 }
+INFO  16:46:56,708 - #4 }
+INFO  16:46:56,721 - Deklarisano nabrajanje IncrementType na liniji 5
+INFO  16:46:56,721 - Deklarisan element nabrajanja BY_ONE na liniji 5
+INFO  16:46:56,722 - Deklarisan element nabrajanja DOUBLE_VALUE na liniji 5
+INFO  16:46:56,722 - Deklarisana promenljiva i na liniji 7
+INFO  16:46:56,722 - Deklarisana promenljiva a na liniji 8
+INFO  16:46:56,722 - Deklarisan niz niz na liniji 10
+INFO  16:46:56,722 - Obradjuje se funkcija main na liniji 12
+INFO  16:46:56,722 - Upotreba globalne promenljive i na liniji 14
+INFO  16:46:56,722 - Pronadjen poziv funkcije ord na liniji 14
+INFO  16:46:56,722 - Upotreba globalne promenljive i na liniji 15
+INFO  16:46:56,722 - Print calls = 1
+INFO  16:46:56,722 - Generating bytecode file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  16:46:56,727 - Parsiranje uspesno zavrseno!
