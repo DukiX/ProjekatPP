@@ -24,29 +24,6 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	public SemanticAnalyzer() {
 		Tab.currentScope.addToLocals(new Obj(Obj.Type, "bool", boolType));
 
-		// CHR metoda
-		currentMethod = Tab.chrObj;
-		Tab.openScope();
-
-		Obj varNode = Tab.insert(Obj.Var, "chrfor", Tab.intType);
-		currentMethod.setLevel(1);
-		varNode.setFpPos(1);
-
-		Tab.chainLocalSymbols(currentMethod);
-		Tab.closeScope();
-		returnFound = false;
-		currentMethod = null;
-
-		// ORD metoda
-		currentMethod = Tab.ordObj;
-		Tab.openScope();
-
-		varNode = Tab.insert(Obj.Var, "ordfor", Tab.charType);
-		currentMethod.setLevel(1);
-		varNode.setFpPos(1);
-
-		Tab.chainLocalSymbols(currentMethod);
-		Tab.closeScope();
 		returnFound = false;
 		currentMethod = null;
 	}

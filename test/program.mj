@@ -7,9 +7,6 @@ enum IncrementType { BY_ONE, DOUBLE_VALUE }
 int i;
 bool ibool;
 
-const char kva = 'a';
-char p;
-
 int niz[];
 {
 	
@@ -28,9 +25,6 @@ int niz[];
 	
 	void main()
 	{
-		sum(1,2);
-		p=kva;
-		niz=null;
 		if(1!=1) print(-6);
 		else print(0);  
 			
@@ -44,7 +38,6 @@ int niz[];
 		if(ibool)
 			if(i == 5) print(1); 
 			else print(-1);
-			
 		
 		niz = new int[3];
 		niz[0] = 1;
@@ -78,8 +71,6 @@ int niz[];
 			
 		print(eol); 
 		print(inkrement(niz[2], IncrementType.DOUBLE_VALUE));
-		
-		return;
 	}
 }
 
