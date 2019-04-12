@@ -1,0 +1,111 @@
+INFO  16:21:14,072 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  16:21:14,100 - #2 program
+INFO  16:21:14,100 - #39 test302
+INFO  16:21:14,100 - #31 enum
+INFO  16:21:14,100 - #39 IncrementType
+INFO  16:21:14,100 - #3 {
+INFO  16:21:14,101 - #39 BY_ONE
+INFO  16:21:14,101 - #8 ,
+INFO  16:21:14,101 - #39 DOUBLE_VALUE
+INFO  16:21:14,101 - #4 }
+INFO  16:21:14,101 - #39 int
+INFO  16:21:14,102 - #39 i
+INFO  16:21:14,102 - #5 ;
+INFO  16:21:14,103 - #39 bool
+INFO  16:21:14,103 - #39 ibool
+INFO  16:21:14,103 - #5 ;
+INFO  16:21:14,103 - #39 int
+INFO  16:21:14,103 - #39 niz
+INFO  16:21:14,103 - #20 [
+INFO  16:21:14,103 - #21 ]
+INFO  16:21:14,103 - #5 ;
+INFO  16:21:14,104 - #3 {
+INFO  16:21:14,104 - #39 int
+INFO  16:21:14,104 - #39 sum
+INFO  16:21:14,104 - #6 (
+INFO  16:21:14,104 - #39 int
+INFO  16:21:14,104 - #39 z
+INFO  16:21:14,104 - #8 ,
+INFO  16:21:14,105 - #39 int
+INFO  16:21:14,105 - #39 d
+INFO  16:21:14,105 - #7 )
+INFO  16:21:14,105 - #39 int
+INFO  16:21:14,105 - #39 f
+INFO  16:21:14,105 - #8 ,
+INFO  16:21:14,106 - #39 g
+INFO  16:21:14,106 - #8 ,
+INFO  16:21:14,106 - #39 h
+INFO  16:21:14,106 - #5 ;
+INFO  16:21:14,106 - #3 {
+INFO  16:21:14,106 - #39 f
+INFO  16:21:14,107 - #12 =
+INFO  16:21:14,108 - #38 3
+INFO  16:21:14,108 - #5 ;
+INFO  16:21:14,109 - #39 g
+INFO  16:21:14,109 - #12 =
+INFO  16:21:14,109 - #38 4
+INFO  16:21:14,109 - #5 ;
+INFO  16:21:14,109 - #39 h
+INFO  16:21:14,109 - #12 =
+INFO  16:21:14,109 - #38 5
+INFO  16:21:14,109 - #5 ;
+INFO  16:21:14,109 - #10 return
+INFO  16:21:14,109 - #39 z
+INFO  16:21:14,109 - #11 +
+INFO  16:21:14,109 - #39 d
+INFO  16:21:14,110 - #11 +
+INFO  16:21:14,110 - #39 f
+INFO  16:21:14,110 - #11 +
+INFO  16:21:14,110 - #39 g
+INFO  16:21:14,110 - #11 +
+INFO  16:21:14,110 - #39 h
+INFO  16:21:14,110 - #5 ;
+INFO  16:21:14,110 - #4 }
+INFO  16:21:14,110 - #13 void
+INFO  16:21:14,111 - #39 main
+INFO  16:21:14,111 - #6 (
+INFO  16:21:14,111 - #7 )
+INFO  16:21:14,111 - #3 {
+INFO  16:21:14,111 - #39 i
+INFO  16:21:14,111 - #12 =
+INFO  16:21:14,111 - #39 sum
+INFO  16:21:14,111 - #6 (
+INFO  16:21:14,111 - #38 1
+INFO  16:21:14,111 - #8 ,
+INFO  16:21:14,111 - #38 2
+INFO  16:21:14,111 - #7 )
+INFO  16:21:14,112 - #5 ;
+INFO  16:21:14,112 - #9 print
+INFO  16:21:14,112 - #6 (
+INFO  16:21:14,112 - #39 i
+INFO  16:21:14,112 - #7 )
+INFO  16:21:14,112 - #5 ;
+INFO  16:21:14,112 - #4 }
+INFO  16:21:14,112 - #4 }
+INFO  16:21:14,124 - Deklarisano nabrajanje IncrementType na liniji 5
+INFO  16:21:14,124 - Deklarisan element nabrajanja BY_ONE na liniji 5
+INFO  16:21:14,124 - Deklarisan element nabrajanja DOUBLE_VALUE na liniji 5
+INFO  16:21:14,124 - Deklarisana promenljiva i na liniji 7
+INFO  16:21:14,124 - Deklarisana promenljiva ibool na liniji 8
+INFO  16:21:14,124 - Deklarisan niz niz na liniji 10
+INFO  16:21:14,124 - Obradjuje se funkcija sum na liniji 13
+INFO  16:21:14,124 - Deklarisan formalni parametar z na liniji 13
+INFO  16:21:14,124 - Deklarisan formalni parametar d na liniji 13
+INFO  16:21:14,124 - Deklarisana promenljiva g na liniji 13
+INFO  16:21:14,124 - Deklarisana promenljiva h na liniji 13
+INFO  16:21:14,124 - Deklarisana promenljiva f na liniji 13
+INFO  16:21:14,125 - Upotreba lokalne promenljive f na liniji 15
+INFO  16:21:14,125 - Upotreba lokalne promenljive g na liniji 16
+INFO  16:21:14,125 - Upotreba lokalne promenljive h na liniji 17
+INFO  16:21:14,125 - Upotreba formalnog parametra z na liniji 18
+INFO  16:21:14,125 - Upotreba formalnog parametra d na liniji 18
+INFO  16:21:14,125 - Upotreba lokalne promenljive f na liniji 18
+INFO  16:21:14,125 - Upotreba lokalne promenljive g na liniji 18
+INFO  16:21:14,125 - Upotreba lokalne promenljive h na liniji 18
+INFO  16:21:14,125 - Obradjuje se funkcija main na liniji 21
+INFO  16:21:14,125 - Upotreba globalne promenljive i na liniji 23
+INFO  16:21:14,125 - Pronadjen poziv funkcije sum na liniji 23
+INFO  16:21:14,125 - Upotreba globalne promenljive i na liniji 24
+INFO  16:21:14,125 - Print calls = 1
+INFO  16:21:14,125 - Generating bytecode file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  16:21:14,129 - Parsiranje uspesno zavrseno!

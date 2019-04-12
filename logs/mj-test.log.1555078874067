@@ -1,0 +1,105 @@
+INFO  16:20:20,717 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  16:20:20,745 - #2 program
+INFO  16:20:20,745 - #39 test302
+INFO  16:20:20,745 - #31 enum
+INFO  16:20:20,746 - #39 IncrementType
+INFO  16:20:20,746 - #3 {
+INFO  16:20:20,746 - #39 BY_ONE
+INFO  16:20:20,746 - #8 ,
+INFO  16:20:20,747 - #39 DOUBLE_VALUE
+INFO  16:20:20,747 - #4 }
+INFO  16:20:20,747 - #39 int
+INFO  16:20:20,747 - #39 i
+INFO  16:20:20,747 - #5 ;
+INFO  16:20:20,748 - #39 bool
+INFO  16:20:20,748 - #39 ibool
+INFO  16:20:20,748 - #5 ;
+INFO  16:20:20,748 - #39 int
+INFO  16:20:20,748 - #39 niz
+INFO  16:20:20,748 - #20 [
+INFO  16:20:20,749 - #21 ]
+INFO  16:20:20,749 - #5 ;
+INFO  16:20:20,750 - #3 {
+INFO  16:20:20,750 - #39 int
+INFO  16:20:20,751 - #39 sum
+INFO  16:20:20,751 - #6 (
+INFO  16:20:20,751 - #39 int
+INFO  16:20:20,751 - #39 z
+INFO  16:20:20,751 - #8 ,
+INFO  16:20:20,752 - #39 int
+INFO  16:20:20,752 - #39 d
+INFO  16:20:20,752 - #7 )
+INFO  16:20:20,752 - #39 int
+INFO  16:20:20,752 - #39 f
+INFO  16:20:20,752 - #8 ,
+INFO  16:20:20,752 - #39 g
+INFO  16:20:20,752 - #8 ,
+INFO  16:20:20,752 - #39 h
+INFO  16:20:20,752 - #5 ;
+INFO  16:20:20,752 - #3 {
+INFO  16:20:20,752 - #39 f
+INFO  16:20:20,753 - #12 =
+INFO  16:20:20,753 - #38 3
+INFO  16:20:20,753 - #5 ;
+INFO  16:20:20,754 - #39 g
+INFO  16:20:20,754 - #12 =
+INFO  16:20:20,755 - #38 4
+INFO  16:20:20,755 - #5 ;
+INFO  16:20:20,755 - #39 h
+INFO  16:20:20,755 - #12 =
+INFO  16:20:20,755 - #38 5
+INFO  16:20:20,755 - #5 ;
+INFO  16:20:20,756 - #10 return
+INFO  16:20:20,756 - #39 z
+INFO  16:20:20,756 - #11 +
+INFO  16:20:20,756 - #39 d
+INFO  16:20:20,757 - #11 +
+INFO  16:20:20,757 - #39 f
+INFO  16:20:20,757 - #11 +
+INFO  16:20:20,757 - #39 g
+INFO  16:20:20,757 - #11 +
+INFO  16:20:20,757 - #39 h
+INFO  16:20:20,757 - #5 ;
+INFO  16:20:20,757 - #4 }
+INFO  16:20:20,757 - #13 void
+INFO  16:20:20,757 - #39 main
+INFO  16:20:20,757 - #6 (
+INFO  16:20:20,757 - #7 )
+INFO  16:20:20,758 - #3 {
+INFO  16:20:20,758 - #39 i
+INFO  16:20:20,761 - #12 =
+INFO  16:20:20,761 - #38 1
+INFO  16:20:20,761 - #5 ;
+INFO  16:20:20,761 - #9 print
+INFO  16:20:20,761 - #6 (
+INFO  16:20:20,761 - #39 i
+INFO  16:20:20,762 - #7 )
+INFO  16:20:20,762 - #5 ;
+INFO  16:20:20,762 - #4 }
+INFO  16:20:20,763 - #4 }
+INFO  16:20:20,777 - Deklarisano nabrajanje IncrementType na liniji 5
+INFO  16:20:20,777 - Deklarisan element nabrajanja BY_ONE na liniji 5
+INFO  16:20:20,778 - Deklarisan element nabrajanja DOUBLE_VALUE na liniji 5
+INFO  16:20:20,778 - Deklarisana promenljiva i na liniji 7
+INFO  16:20:20,778 - Deklarisana promenljiva ibool na liniji 8
+INFO  16:20:20,778 - Deklarisan niz niz na liniji 10
+INFO  16:20:20,778 - Obradjuje se funkcija sum na liniji 13
+INFO  16:20:20,778 - Deklarisan formalni parametar z na liniji 13
+INFO  16:20:20,778 - Deklarisan formalni parametar d na liniji 13
+INFO  16:20:20,778 - Deklarisana promenljiva g na liniji 13
+INFO  16:20:20,778 - Deklarisana promenljiva h na liniji 13
+INFO  16:20:20,778 - Deklarisana promenljiva f na liniji 13
+INFO  16:20:20,778 - Upotreba lokalne promenljive f na liniji 15
+INFO  16:20:20,778 - Upotreba lokalne promenljive g na liniji 16
+INFO  16:20:20,778 - Upotreba lokalne promenljive h na liniji 17
+INFO  16:20:20,778 - Upotreba formalnog parametra z na liniji 18
+INFO  16:20:20,778 - Upotreba formalnog parametra d na liniji 18
+INFO  16:20:20,778 - Upotreba lokalne promenljive f na liniji 18
+INFO  16:20:20,778 - Upotreba lokalne promenljive g na liniji 18
+INFO  16:20:20,778 - Upotreba lokalne promenljive h na liniji 18
+INFO  16:20:20,778 - Obradjuje se funkcija main na liniji 21
+INFO  16:20:20,779 - Upotreba globalne promenljive i na liniji 23
+INFO  16:20:20,779 - Upotreba globalne promenljive i na liniji 24
+INFO  16:20:20,779 - Print calls = 1
+INFO  16:20:20,779 - Generating bytecode file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  16:20:20,783 - Parsiranje uspesno zavrseno!
