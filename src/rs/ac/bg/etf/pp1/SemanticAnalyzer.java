@@ -616,24 +616,24 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		if (obj.getKind() == Obj.Var) {
 			if (obj.getLevel() == 0) {
 				report_info(
-						"Upotreba globalne promenljive " + designator.getName() + " na liniji " + designator.getLine(),
+						"Upotreba globalne promenljive " + designator.getName() + " na liniji " + designator.getLine()+", "+ispisCvora(designator.obj),
 						null);
 			} else {
 				if (obj.getFpPos() == 0) {
 					report_info("Upotreba lokalne promenljive " + designator.getName() + " na liniji "
-							+ designator.getLine(), null);
+							+ designator.getLine()+", "+ispisCvora(designator.obj), null);
 				} else {
 					report_info("Upotreba formalnog parametra " + designator.getName() + " na liniji "
-							+ designator.getLine(), null);
+							+ designator.getLine()+", "+ispisCvora(designator.obj), null);
 				}
 			}
 		} else if (obj.getKind() == Obj.Con) {
 			if (obj.getLevel() == 0) {
 				report_info(
-						"Upotreba globalne konstante " + designator.getName() + " na liniji " + designator.getLine(),
+						"Upotreba globalne konstante " + designator.getName() + " na liniji " + designator.getLine()+", "+ispisCvora(designator.obj),
 						null);
 			} else {
-				report_info("Upotreba lokalne konstante " + designator.getName() + " na liniji " + designator.getLine(),
+				report_info("Upotreba lokalne konstante " + designator.getName() + " na liniji " + designator.getLine()+", "+ispisCvora(designator.obj),
 						null);
 			}
 		}
@@ -647,7 +647,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			if (obj.getType().getKind() == Struct.Enum) {
 				if (obj.getType().getMembersTable().searchKey(namedot) != null) {
 					report_info("Upotreba konstante " + namedot + " nabrajanja " + obj.getName() + " na liniji "
-							+ designator.getLine(), null);
+							+ designator.getLine()+", "+ispisCvora(designator.obj), null);
 					designator.obj = obj.getType().getMembersTable().searchKey(namedot);
 				} else {
 					report_error("Upotreba " + namedot + " nije element nabrajanja " + obj.getName() + " na liniji "
@@ -666,7 +666,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 																													// DRUGA
 																													// 2
 																													// ARGUMENTA!!
-				report_info("Upotreba elementa niza " + obj.getName() + " na liniji " + designator.getLine(), null);
+				report_info("Upotreba elementa niza " + obj.getName() + " na liniji " + designator.getLine()+", "+ispisCvora(designator.obj), null);
 			} else {
 				report_error("Ime " + obj.getName() + " nije tip niz na liniji " + designator.getLine(), null);
 			}
@@ -722,6 +722,85 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 
 	public boolean passed() {
 		return !errorDetected;
+	}
+	
+	public String ispisCvora(Obj objToVisit) {
+		StringBuilder output= new StringBuilder();
+		switch (objToVisit.getKind()) {
+			case Obj.Con:  output.append("Con "); break;
+			case Obj.Var:  output.append("Var "); break;
+			case Obj.Type: output.append("Type "); break;
+			case Obj.Meth: output.append("Meth "); break;
+			case Obj.Fld:  output.append("Fld "); break;
+			case Obj.Prog: output.append("Prog "); break;
+		}
+		
+		output.append(objToVisit.getName());
+		output.append(": ");
+		
+		if ((Obj.Var == objToVisit.getKind()) && "this".equalsIgnoreCase(objToVisit.getName()))
+			output.append("");
+		else{
+			switch (objToVisit.getType().getKind()) {
+				case Struct.None:
+					output.append("notype");
+					break;
+				case Struct.Int:
+					output.append("int");
+					break;
+				case Struct.Char:
+					output.append("char");
+					break;
+				case Struct.Array:
+					output.append("Arr of ");
+					
+					switch (objToVisit.getType().getElemType().getKind()) {
+					case Struct.None:
+						output.append("notype");
+						break;
+					case Struct.Int:
+						output.append("int");
+						break;
+					case Struct.Char:
+						output.append("char");
+						break;
+					case Struct.Class:
+						output.append("Class");
+						break;
+					}
+					break;
+				case Struct.Class:
+					output.append("Class [");
+					/*for (Obj obj : objToVisit.getType().getMembers()) {
+						obj.accept(this);
+					}*/
+					output.append("]");
+					break;
+			}
+		}
+		
+		output.append(", ");
+		output.append(objToVisit.getAdr());
+		output.append(", ");
+		output.append(objToVisit.getLevel() + " ");
+				
+		/*if (objToVisit.getKind() == Obj.Prog || objToVisit.getKind() == Obj.Meth) {
+			output.append("\n");
+			nextIndentationLevel();
+		}*/
+		
+
+		/*for (Obj o : objToVisit.getLocalSymbols()) {
+			output.append(currentIndent.toString());
+			o.accept(this);
+			output.append("\n");
+		}
+		
+		if (objToVisit.getKind() == Obj.Prog || objToVisit.getKind() == Obj.Meth) 
+			previousIndentationLevel();*/
+
+		//output.append("]");
+		return output.toString();
 	}
 
 }
