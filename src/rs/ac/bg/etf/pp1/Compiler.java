@@ -89,6 +89,12 @@ public class Compiler {
 			prog.traverseBottomUp(semanticCheck);
 			
 	        log.info("Print calls = " + semanticCheck.printCallCount);
+	        log.info("Globalnih promenljivih = " + semanticCheck.brGrobProm);
+	        log.info("Globalnih konstanti = " + semanticCheck.brGlobConst);
+	        log.info("Globalnih nizova = " + semanticCheck.brGlobNiz);
+	        log.info("Broj metoda = " + semanticCheck.brMet);
+	        log.info("Broj enuma = " + semanticCheck.brEnuma);
+	        
 	        tsdump();
 	        
 	        if (!p.errorDetected && semanticCheck.passed()) {

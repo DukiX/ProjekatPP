@@ -17,6 +17,12 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	Obj currentMethod = null;
 	boolean returnFound = false;
 	int nVars;
+	
+	int brGrobProm;
+	int brGlobConst;
+	int brGlobNiz;
+	int brMet;
+	int brEnuma;
 
 	public static final Struct boolType = new Struct(Struct.Bool);
 	// public static final Struct enumType = new Struct(Struct.Enum,Tab.intType);
@@ -158,10 +164,16 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 
 	public void visit(ArrayOptY aoy) {
 		nizDeclLista.add(1);
+		if(currentMethod==null) {
+			brGlobNiz++;
+		}
 	}
 
 	public void visit(ArrayOptN aon) {
 		nizDeclLista.add(0);
+		if(currentMethod==null) {
+			brGrobProm++;
+		}
 	}
 
 	private LinkedList<Integer> constInt = new LinkedList<>();
@@ -176,6 +188,10 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			Obj varNode = Tab.insert(Obj.Con, constDecl.getConstName(), constDecl.getType().struct);
 			varNode.setAdr(constInt.removeLast());
 		}
+		
+		if(currentMethod==null) {
+			brGlobConst++;
+		}
 	}
 
 	public void visit(CnstList constDecl) {
@@ -189,6 +205,10 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			report_error("Deklarisana konstanta nije dobrog tipa: " + constDecl.getConstName(), constDecl);
 			Obj varNode = Tab.insert(Obj.Con, constDecl.getConstName(), varTip);
 			varNode.setAdr(constInt.removeLast());
+		}
+		
+		if(currentMethod==null) {
+			brGlobConst++;
 		}
 	}
 
@@ -262,6 +282,8 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		enumConstCount = 0;
 
 		dosadasnjeKonstanteEnuma = new LinkedList<>();
+		
+		brEnuma++;
 	}
 
 	private LinkedList<Integer> enumInt = new LinkedList<>();
@@ -333,6 +355,8 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 
 		returnFound = false;
 		currentMethod = null;
+		
+		brMet++;
 	}
 
 	public void visit(MethodTypeName methodTypeName) {
@@ -386,7 +410,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	public void visit(ProcCall procCall) {
 		Obj func = procCall.getDesignator().obj;
 		if (Obj.Meth == func.getKind()) {
-			report_info("Pronadjen poziv funkcije " + func.getName() + " na liniji " + procCall.getLine(), null);
+			report_info("Pronadjen poziv funkcije " + func.getName() + " na liniji " + procCall.getLine()+", "+ispisCvora(func), null);
 			// RESULT = func.getType();
 		} else {
 			report_error("Greska na liniji " + procCall.getLine() + " : ime " + func.getName() + " nije funkcija!",
@@ -431,7 +455,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 				report_error("Greska na liniji " + funcCall.getLine() + " : funkcija " + func.getName()
 						+ " nema povratnu vrednost!", funcCall);
 			} else {
-				report_info("Pronadjen poziv funkcije " + func.getName() + " na liniji " + funcCall.getLine(), null);
+				report_info("Pronadjen poziv funkcije " + func.getName() + " na liniji " + funcCall.getLine()+", "+ispisCvora(func), null);
 				funcCall.struct = func.getType();
 			}
 		} else {
