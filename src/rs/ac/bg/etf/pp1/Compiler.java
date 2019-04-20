@@ -82,7 +82,8 @@ public class Compiler {
 	        Program prog = (Program)(s.value);
 	        
 	        //Ispis stabla:
-			System.out.println(prog.toString(""));
+			//System.out.println(prog.toString(""));
+			log.info(prog.toString(""));
 	        
 			Tab.init(); // Universe scope
 			SemanticAnalyzer semanticCheck = new SemanticAnalyzer();

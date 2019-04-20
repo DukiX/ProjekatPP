@@ -17,10 +17,34 @@
 		</layout>
 	</appender>
 	
+	<appender name = "out" class="org.apache.log4j.FileAppender">
+		<param name = "file" value = "test/izlaz.out" />
+		<param name = "immediateFlush" value = "true" />
+		<param name = "threshold" value = "debug" />
+		<param name = "append" value = "false" />
+		
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%-5p %d{ABSOLUTE} - %m%n"></param>
+		</layout>
+	</appender>
+	
+	<appender name = "err" class="org.apache.log4j.FileAppender">
+		<param name = "file" value = "test/izlaz.err" />
+		<param name = "immediateFlush" value = "true" />
+		<param name = "threshold" value = "warn" />
+		<param name = "append" value = "false" />
+		
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%-5p %d{ABSOLUTE} - %m%n"></param>
+		</layout>
+	</appender>
+	
 	<root>
 		<priority value="debug" />
 		<appender-ref ref="file" />
 		<appender-ref ref="console" />
+		<appender-ref ref = "out"/>
+		<appender-ref ref = "err"/>
 	</root>
 
 </log4j:configuration>  

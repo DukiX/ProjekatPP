@@ -1,0 +1,465 @@
+INFO  10:39:12,004 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  10:39:12,030 - #2 program
+INFO  10:39:12,030 - #39 test302
+INFO  10:39:12,030 - #31 enum
+INFO  10:39:12,031 - #39 IncrementType
+INFO  10:39:12,031 - #3 {
+INFO  10:39:12,031 - #39 BY_ONE
+INFO  10:39:12,031 - #8 ,
+INFO  10:39:12,032 - #39 DOUBLE_VALUE
+INFO  10:39:12,032 - #4 }
+INFO  10:39:12,032 - #39 int
+INFO  10:39:12,032 - #39 i
+INFO  10:39:12,033 - #5 ;
+INFO  10:39:12,034 - #39 bool
+INFO  10:39:12,034 - #39 ibool
+INFO  10:39:12,034 - #5 ;
+INFO  10:39:12,034 - #39 int
+INFO  10:39:12,034 - #39 niz
+INFO  10:39:12,034 - #20 [
+INFO  10:39:12,034 - #21 ]
+INFO  10:39:12,034 - #5 ;
+INFO  10:39:12,036 - #3 {
+INFO  10:39:12,036 - #39 int
+INFO  10:39:12,036 - #39 sum
+INFO  10:39:12,037 - #6 (
+INFO  10:39:12,037 - #39 int
+INFO  10:39:12,037 - #39 z
+INFO  10:39:12,037 - #8 ,
+INFO  10:39:12,039 - #39 int
+INFO  10:39:12,040 - #39 d
+INFO  10:39:12,040 - #7 )
+INFO  10:39:12,040 - #3 {
+INFO  10:39:12,040 - #10 return
+INFO  10:39:12,041 - #39 z
+INFO  10:39:12,041 - #11 +
+INFO  10:39:12,042 - #39 d
+INFO  10:39:12,043 - #5 ;
+INFO  10:39:12,043 - #4 }
+INFO  10:39:12,043 - #39 int
+INFO  10:39:12,043 - #39 inkrement
+INFO  10:39:12,043 - #6 (
+INFO  10:39:12,044 - #39 int
+INFO  10:39:12,044 - #39 a
+INFO  10:39:12,044 - #8 ,
+INFO  10:39:12,044 - #39 IncrementType
+INFO  10:39:12,044 - #39 type
+INFO  10:39:12,044 - #7 )
+INFO  10:39:12,044 - #39 int
+INFO  10:39:12,044 - #39 pom
+INFO  10:39:12,044 - #5 ;
+INFO  10:39:12,044 - #3 {
+INFO  10:39:12,044 - #40 if
+INFO  10:39:12,044 - #6 (
+INFO  10:39:12,045 - #39 type
+INFO  10:39:12,045 - #32 ==
+INFO  10:39:12,045 - #39 IncrementType
+INFO  10:39:12,045 - #22 .
+INFO  10:39:12,045 - #39 BY_ONE
+INFO  10:39:12,045 - #7 )
+INFO  10:39:12,046 - #39 pom
+INFO  10:39:12,047 - #12 =
+INFO  10:39:12,047 - #38 1
+INFO  10:39:12,047 - #5 ;
+INFO  10:39:12,047 - #41 else
+INFO  10:39:12,047 - #40 if
+INFO  10:39:12,048 - #6 (
+INFO  10:39:12,048 - #39 type
+INFO  10:39:12,051 - #32 ==
+INFO  10:39:12,051 - #39 IncrementType
+INFO  10:39:12,051 - #22 .
+INFO  10:39:12,051 - #39 DOUBLE_VALUE
+INFO  10:39:12,051 - #7 )
+INFO  10:39:12,051 - #39 pom
+INFO  10:39:12,051 - #12 =
+INFO  10:39:12,051 - #39 a
+INFO  10:39:12,051 - #5 ;
+INFO  10:39:12,052 - #10 return
+INFO  10:39:12,052 - #39 sum
+INFO  10:39:12,052 - #6 (
+INFO  10:39:12,053 - #39 a
+INFO  10:39:12,053 - #8 ,
+INFO  10:39:12,053 - #39 pom
+INFO  10:39:12,053 - #7 )
+INFO  10:39:12,053 - #5 ;
+INFO  10:39:12,053 - #4 }
+INFO  10:39:12,053 - #13 void
+INFO  10:39:12,053 - #39 main
+INFO  10:39:12,053 - #6 (
+INFO  10:39:12,053 - #7 )
+INFO  10:39:12,054 - #3 {
+INFO  10:39:12,054 - #40 if
+INFO  10:39:12,054 - #6 (
+INFO  10:39:12,054 - #38 1
+INFO  10:39:12,054 - #33 !=
+INFO  10:39:12,054 - #38 1
+INFO  10:39:12,054 - #7 )
+INFO  10:39:12,054 - #9 print
+INFO  10:39:12,054 - #6 (
+INFO  10:39:12,054 - #15 -
+INFO  10:39:12,054 - #38 6
+INFO  10:39:12,054 - #7 )
+INFO  10:39:12,055 - #5 ;
+INFO  10:39:12,055 - #41 else
+INFO  10:39:12,055 - #9 print
+INFO  10:39:12,055 - #6 (
+INFO  10:39:12,055 - #38 0
+INFO  10:39:12,055 - #7 )
+INFO  10:39:12,055 - #5 ;
+INFO  10:39:12,055 - #39 ibool
+INFO  10:39:12,055 - #12 =
+INFO  10:39:12,055 - #30 false
+INFO  10:39:12,055 - #5 ;
+INFO  10:39:12,056 - #39 i
+INFO  10:39:12,056 - #12 =
+INFO  10:39:12,056 - #38 0
+INFO  10:39:12,056 - #5 ;
+INFO  10:39:12,056 - #23 for
+INFO  10:39:12,057 - #6 (
+INFO  10:39:12,057 - #39 i
+INFO  10:39:12,057 - #12 =
+INFO  10:39:12,057 - #38 0
+INFO  10:39:12,057 - #5 ;
+INFO  10:39:12,058 - #39 i
+INFO  10:39:12,058 - #35 <
+INFO  10:39:12,058 - #38 5
+INFO  10:39:12,058 - #5 ;
+INFO  10:39:12,058 - #39 i
+INFO  10:39:12,059 - #42 ++
+INFO  10:39:12,059 - #7 )
+INFO  10:39:12,060 - #3 {
+INFO  10:39:12,060 - #40 if
+INFO  10:39:12,060 - #6 (
+INFO  10:39:12,060 - #39 i
+INFO  10:39:12,060 - #32 ==
+INFO  10:39:12,060 - #38 2
+INFO  10:39:12,060 - #7 )
+INFO  10:39:12,060 - #39 ibool
+INFO  10:39:12,060 - #12 =
+INFO  10:39:12,061 - #29 true
+INFO  10:39:12,061 - #5 ;
+INFO  10:39:12,061 - #4 }
+INFO  10:39:12,061 - #40 if
+INFO  10:39:12,062 - #6 (
+INFO  10:39:12,062 - #39 ibool
+INFO  10:39:12,062 - #7 )
+INFO  10:39:12,062 - #40 if
+INFO  10:39:12,062 - #6 (
+INFO  10:39:12,062 - #39 i
+INFO  10:39:12,062 - #32 ==
+INFO  10:39:12,062 - #38 5
+INFO  10:39:12,062 - #7 )
+INFO  10:39:12,062 - #9 print
+INFO  10:39:12,062 - #6 (
+INFO  10:39:12,062 - #38 1
+INFO  10:39:12,062 - #7 )
+INFO  10:39:12,062 - #5 ;
+INFO  10:39:12,062 - #41 else
+INFO  10:39:12,062 - #9 print
+INFO  10:39:12,062 - #6 (
+INFO  10:39:12,062 - #15 -
+INFO  10:39:12,062 - #38 1
+INFO  10:39:12,062 - #7 )
+INFO  10:39:12,063 - #5 ;
+INFO  10:39:12,063 - #39 niz
+INFO  10:39:12,063 - #12 =
+INFO  10:39:12,063 - #19 new
+INFO  10:39:12,063 - #39 int
+INFO  10:39:12,063 - #20 [
+INFO  10:39:12,063 - #38 3
+INFO  10:39:12,063 - #21 ]
+INFO  10:39:12,063 - #5 ;
+INFO  10:39:12,063 - #39 niz
+INFO  10:39:12,063 - #20 [
+INFO  10:39:12,063 - #38 0
+INFO  10:39:12,063 - #21 ]
+INFO  10:39:12,063 - #12 =
+INFO  10:39:12,063 - #38 1
+INFO  10:39:12,063 - #5 ;
+INFO  10:39:12,063 - #39 niz
+INFO  10:39:12,063 - #20 [
+INFO  10:39:12,063 - #38 1
+INFO  10:39:12,063 - #21 ]
+INFO  10:39:12,063 - #12 =
+INFO  10:39:12,063 - #38 2
+INFO  10:39:12,063 - #5 ;
+INFO  10:39:12,063 - #39 niz
+INFO  10:39:12,063 - #20 [
+INFO  10:39:12,064 - #38 2
+INFO  10:39:12,064 - #21 ]
+INFO  10:39:12,064 - #12 =
+INFO  10:39:12,064 - #39 sum
+INFO  10:39:12,064 - #6 (
+INFO  10:39:12,064 - #39 niz
+INFO  10:39:12,064 - #20 [
+INFO  10:39:12,064 - #38 1
+INFO  10:39:12,064 - #21 ]
+INFO  10:39:12,064 - #8 ,
+INFO  10:39:12,064 - #39 niz
+INFO  10:39:12,064 - #20 [
+INFO  10:39:12,064 - #38 0
+INFO  10:39:12,064 - #21 ]
+INFO  10:39:12,064 - #7 )
+INFO  10:39:12,064 - #11 +
+INFO  10:39:12,064 - #38 1
+INFO  10:39:12,064 - #5 ;
+INFO  10:39:12,064 - #40 if
+INFO  10:39:12,064 - #6 (
+INFO  10:39:12,064 - #39 niz
+INFO  10:39:12,064 - #20 [
+INFO  10:39:12,064 - #38 2
+INFO  10:39:12,064 - #21 ]
+INFO  10:39:12,064 - #32 ==
+INFO  10:39:12,064 - #38 4
+INFO  10:39:12,064 - #7 )
+INFO  10:39:12,064 - #9 print
+INFO  10:39:12,064 - #6 (
+INFO  10:39:12,064 - #39 ord
+INFO  10:39:12,064 - #6 (
+INFO  10:39:12,064 - #44 A
+INFO  10:39:12,065 - #7 )
+INFO  10:39:12,065 - #7 )
+INFO  10:39:12,065 - #5 ;
+INFO  10:39:12,065 - #41 else
+INFO  10:39:12,065 - #9 print
+INFO  10:39:12,065 - #6 (
+INFO  10:39:12,065 - #39 ord
+INFO  10:39:12,065 - #6 (
+INFO  10:39:12,065 - #44 a
+INFO  10:39:12,065 - #7 )
+INFO  10:39:12,065 - #7 )
+INFO  10:39:12,065 - #5 ;
+INFO  10:39:12,065 - #9 print
+INFO  10:39:12,065 - #6 (
+INFO  10:39:12,065 - #39 eol
+INFO  10:39:12,065 - #7 )
+INFO  10:39:12,065 - #5 ;
+INFO  10:39:12,065 - #39 i
+INFO  10:39:12,065 - #12 =
+INFO  10:39:12,065 - #38 0
+INFO  10:39:12,065 - #5 ;
+INFO  10:39:12,065 - #23 for
+INFO  10:39:12,065 - #6 (
+INFO  10:39:12,065 - #5 ;
+INFO  10:39:12,066 - #39 i
+INFO  10:39:12,066 - #35 <
+INFO  10:39:12,066 - #38 10
+INFO  10:39:12,066 - #5 ;
+INFO  10:39:12,067 - #7 )
+INFO  10:39:12,068 - #3 {
+INFO  10:39:12,068 - #40 if
+INFO  10:39:12,068 - #6 (
+INFO  10:39:12,068 - #39 i
+INFO  10:39:12,068 - #32 ==
+INFO  10:39:12,068 - #38 3
+INFO  10:39:12,068 - #7 )
+INFO  10:39:12,068 - #3 {
+INFO  10:39:12,068 - #39 i
+INFO  10:39:12,068 - #42 ++
+INFO  10:39:12,068 - #5 ;
+INFO  10:39:12,068 - #25 continue
+INFO  10:39:12,068 - #5 ;
+INFO  10:39:12,068 - #4 }
+INFO  10:39:12,068 - #40 if
+INFO  10:39:12,068 - #6 (
+INFO  10:39:12,068 - #39 i
+INFO  10:39:12,068 - #32 ==
+INFO  10:39:12,068 - #38 4
+INFO  10:39:12,068 - #7 )
+INFO  10:39:12,068 - #24 break
+INFO  10:39:12,068 - #5 ;
+INFO  10:39:12,068 - #39 i
+INFO  10:39:12,069 - #12 =
+INFO  10:39:12,069 - #39 inkrement
+INFO  10:39:12,069 - #6 (
+INFO  10:39:12,069 - #39 i
+INFO  10:39:12,069 - #8 ,
+INFO  10:39:12,069 - #39 IncrementType
+INFO  10:39:12,069 - #22 .
+INFO  10:39:12,069 - #39 BY_ONE
+INFO  10:39:12,069 - #7 )
+INFO  10:39:12,069 - #5 ;
+INFO  10:39:12,069 - #4 }
+INFO  10:39:12,069 - #40 if
+INFO  10:39:12,069 - #6 (
+INFO  10:39:12,069 - #39 i
+INFO  10:39:12,069 - #32 ==
+INFO  10:39:12,069 - #38 3
+INFO  10:39:12,069 - #7 )
+INFO  10:39:12,069 - #9 print
+INFO  10:39:12,069 - #6 (
+INFO  10:39:12,069 - #38 4
+INFO  10:39:12,069 - #7 )
+INFO  10:39:12,069 - #5 ;
+INFO  10:39:12,069 - #41 else
+INFO  10:39:12,069 - #9 print
+INFO  10:39:12,069 - #6 (
+INFO  10:39:12,069 - #15 -
+INFO  10:39:12,070 - #38 4
+INFO  10:39:12,070 - #7 )
+INFO  10:39:12,070 - #5 ;
+INFO  10:39:12,070 - #14 read
+INFO  10:39:12,070 - #6 (
+INFO  10:39:12,070 - #39 niz
+INFO  10:39:12,070 - #20 [
+INFO  10:39:12,070 - #38 0
+INFO  10:39:12,070 - #21 ]
+INFO  10:39:12,070 - #7 )
+INFO  10:39:12,070 - #5 ;
+INFO  10:39:12,070 - #14 read
+INFO  10:39:12,070 - #6 (
+INFO  10:39:12,070 - #39 niz
+INFO  10:39:12,070 - #20 [
+INFO  10:39:12,070 - #38 1
+INFO  10:39:12,070 - #21 ]
+INFO  10:39:12,070 - #7 )
+INFO  10:39:12,070 - #5 ;
+INFO  10:39:12,070 - #14 read
+INFO  10:39:12,070 - #6 (
+INFO  10:39:12,070 - #39 niz
+INFO  10:39:12,070 - #20 [
+INFO  10:39:12,070 - #38 2
+INFO  10:39:12,070 - #21 ]
+INFO  10:39:12,070 - #7 )
+INFO  10:39:12,070 - #5 ;
+INFO  10:39:12,070 - #9 print
+INFO  10:39:12,071 - #6 (
+INFO  10:39:12,071 - #39 eol
+INFO  10:39:12,071 - #7 )
+INFO  10:39:12,071 - #5 ;
+INFO  10:39:12,071 - #9 print
+INFO  10:39:12,071 - #6 (
+INFO  10:39:12,071 - #39 sum
+INFO  10:39:12,071 - #6 (
+INFO  10:39:12,071 - #39 sum
+INFO  10:39:12,071 - #6 (
+INFO  10:39:12,071 - #39 niz
+INFO  10:39:12,071 - #20 [
+INFO  10:39:12,071 - #38 0
+INFO  10:39:12,071 - #21 ]
+INFO  10:39:12,071 - #8 ,
+INFO  10:39:12,071 - #39 niz
+INFO  10:39:12,071 - #20 [
+INFO  10:39:12,071 - #38 1
+INFO  10:39:12,071 - #21 ]
+INFO  10:39:12,071 - #7 )
+INFO  10:39:12,071 - #8 ,
+INFO  10:39:12,071 - #39 niz
+INFO  10:39:12,071 - #20 [
+INFO  10:39:12,071 - #38 2
+INFO  10:39:12,071 - #21 ]
+INFO  10:39:12,071 - #7 )
+INFO  10:39:12,071 - #7 )
+INFO  10:39:12,071 - #5 ;
+INFO  10:39:12,071 - #9 print
+INFO  10:39:12,071 - #6 (
+INFO  10:39:12,071 - #39 eol
+INFO  10:39:12,071 - #7 )
+INFO  10:39:12,071 - #5 ;
+INFO  10:39:12,071 - #9 print
+INFO  10:39:12,071 - #6 (
+INFO  10:39:12,071 - #39 inkrement
+INFO  10:39:12,071 - #6 (
+INFO  10:39:12,071 - #39 niz
+INFO  10:39:12,071 - #20 [
+INFO  10:39:12,071 - #38 2
+INFO  10:39:12,071 - #21 ]
+INFO  10:39:12,072 - #8 ,
+INFO  10:39:12,072 - #39 IncrementType
+INFO  10:39:12,072 - #22 .
+INFO  10:39:12,072 - #39 DOUBLE_VALUE
+INFO  10:39:12,072 - #7 )
+INFO  10:39:12,072 - #7 )
+INFO  10:39:12,072 - #5 ;
+INFO  10:39:12,072 - #4 }
+INFO  10:39:12,072 - #4 }
+INFO  10:39:12,094 - Deklarisano nabrajanje IncrementType na liniji 5
+INFO  10:39:12,094 - Deklarisan element nabrajanja BY_ONE na liniji 5
+INFO  10:39:12,094 - Deklarisan element nabrajanja DOUBLE_VALUE na liniji 5
+INFO  10:39:12,094 - Deklarisana promenljiva i na liniji 7
+INFO  10:39:12,095 - Deklarisana promenljiva ibool na liniji 8
+INFO  10:39:12,095 - Deklarisan niz niz na liniji 10
+INFO  10:39:12,095 - Obradjuje se funkcija sum na liniji 13
+INFO  10:39:12,095 - Deklarisan formalni parametar z na liniji 13
+INFO  10:39:12,095 - Deklarisan formalni parametar d na liniji 13
+INFO  10:39:12,095 - Upotreba formalnog parametra z na liniji 15, Var z: int, 0, 1 
+INFO  10:39:12,095 - Upotreba formalnog parametra d na liniji 15, Var d: int, 1, 1 
+INFO  10:39:12,095 - Obradjuje se funkcija inkrement na liniji 18
+INFO  10:39:12,095 - Deklarisan formalni parametar a na liniji 18
+INFO  10:39:12,095 - Deklarisan formalni parametar type na liniji 18
+INFO  10:39:12,095 - Deklarisana promenljiva pom na liniji 18
+INFO  10:39:12,095 - Upotreba formalnog parametra type na liniji 20, Var type: int, 1, 1 
+INFO  10:39:12,095 - Upotreba konstante BY_ONE nabrajanja IncrementType na liniji 20, Type IncrementType: , 0, 0 
+INFO  10:39:12,095 - Upotreba lokalne promenljive pom na liniji 20, Var pom: int, 2, 1 
+INFO  10:39:12,095 - Upotreba formalnog parametra type na liniji 21, Var type: int, 1, 1 
+INFO  10:39:12,095 - Upotreba konstante DOUBLE_VALUE nabrajanja IncrementType na liniji 21, Type IncrementType: , 0, 0 
+INFO  10:39:12,095 - Upotreba lokalne promenljive pom na liniji 21, Var pom: int, 2, 1 
+INFO  10:39:12,095 - Upotreba formalnog parametra a na liniji 21, Var a: int, 0, 1 
+INFO  10:39:12,095 - Upotreba formalnog parametra a na liniji 23, Var a: int, 0, 1 
+INFO  10:39:12,095 - Upotreba lokalne promenljive pom na liniji 23, Var pom: int, 2, 1 
+INFO  10:39:12,095 - Pronadjen poziv funkcije sum na liniji 23, Meth sum: int, 0, 2 
+INFO  10:39:12,095 - Obradjuje se funkcija main na liniji 26
+INFO  10:39:12,096 - Upotreba globalne promenljive ibool na liniji 31, Var ibool: , 1, 0 
+INFO  10:39:12,096 - Upotreba globalne promenljive i na liniji 32, Var i: int, 0, 0 
+INFO  10:39:12,096 - Upotreba globalne promenljive i na liniji 33, Var i: int, 0, 0 
+INFO  10:39:12,096 - Upotreba globalne promenljive i na liniji 33, Var i: int, 0, 0 
+INFO  10:39:12,096 - Upotreba globalne promenljive i na liniji 33, Var i: int, 0, 0 
+INFO  10:39:12,096 - Upotreba globalne promenljive i na liniji 35, Var i: int, 0, 0 
+INFO  10:39:12,096 - Upotreba globalne promenljive ibool na liniji 35, Var ibool: , 1, 0 
+INFO  10:39:12,096 - Upotreba globalne promenljive ibool na liniji 38, Var ibool: , 1, 0 
+INFO  10:39:12,096 - Upotreba globalne promenljive i na liniji 39, Var i: int, 0, 0 
+INFO  10:39:12,096 - Upotreba globalne promenljive niz na liniji 42, Var niz: Arr of int, 2, 0 
+INFO  10:39:12,096 - Upotreba globalne promenljive niz na liniji 43, Var niz: Arr of int, 2, 0 
+INFO  10:39:12,096 - Upotreba elementa niza niz na liniji 43, : int, 2, 0 
+INFO  10:39:12,096 - Upotreba globalne promenljive niz na liniji 44, Var niz: Arr of int, 2, 0 
+INFO  10:39:12,096 - Upotreba elementa niza niz na liniji 44, : int, 2, 0 
+INFO  10:39:12,096 - Upotreba globalne promenljive niz na liniji 45, Var niz: Arr of int, 2, 0 
+INFO  10:39:12,096 - Upotreba elementa niza niz na liniji 45, : int, 2, 0 
+INFO  10:39:12,096 - Upotreba globalne promenljive niz na liniji 45, Var niz: Arr of int, 2, 0 
+INFO  10:39:12,096 - Upotreba elementa niza niz na liniji 45, : int, 2, 0 
+INFO  10:39:12,096 - Upotreba globalne promenljive niz na liniji 45, Var niz: Arr of int, 2, 0 
+INFO  10:39:12,096 - Upotreba elementa niza niz na liniji 45, : int, 2, 0 
+INFO  10:39:12,096 - Pronadjen poziv funkcije sum na liniji 45, Meth sum: int, 0, 2 
+INFO  10:39:12,096 - Upotreba globalne promenljive niz na liniji 46, Var niz: Arr of int, 2, 0 
+INFO  10:39:12,096 - Upotreba elementa niza niz na liniji 46, : int, 2, 0 
+INFO  10:39:12,096 - Pronadjen poziv funkcije ord na liniji 46, Meth ord: int, 0, 1 
+INFO  10:39:12,096 - Pronadjen poziv funkcije ord na liniji 47, Meth ord: int, 0, 1 
+INFO  10:39:12,096 - Upotreba globalne konstante eol na liniji 49, Con eol: char, 10, 0 
+INFO  10:39:12,096 - Upotreba globalne promenljive i na liniji 50, Var i: int, 0, 0 
+INFO  10:39:12,096 - Upotreba globalne promenljive i na liniji 51, Var i: int, 0, 0 
+INFO  10:39:12,096 - Upotreba globalne promenljive i na liniji 53, Var i: int, 0, 0 
+INFO  10:39:12,097 - Upotreba globalne promenljive i na liniji 55, Var i: int, 0, 0 
+INFO  10:39:12,097 - Upotreba globalne promenljive i na liniji 58, Var i: int, 0, 0 
+INFO  10:39:12,097 - Upotreba globalne promenljive i na liniji 59, Var i: int, 0, 0 
+INFO  10:39:12,097 - Upotreba globalne promenljive i na liniji 59, Var i: int, 0, 0 
+INFO  10:39:12,097 - Upotreba konstante BY_ONE nabrajanja IncrementType na liniji 59, Type IncrementType: , 0, 0 
+INFO  10:39:12,097 - Pronadjen poziv funkcije inkrement na liniji 59, Meth inkrement: int, 0, 2 
+INFO  10:39:12,097 - Upotreba globalne promenljive i na liniji 62, Var i: int, 0, 0 
+INFO  10:39:12,097 - Upotreba globalne promenljive niz na liniji 65, Var niz: Arr of int, 2, 0 
+INFO  10:39:12,097 - Upotreba elementa niza niz na liniji 65, : int, 2, 0 
+INFO  10:39:12,097 - Upotreba globalne promenljive niz na liniji 66, Var niz: Arr of int, 2, 0 
+INFO  10:39:12,097 - Upotreba elementa niza niz na liniji 66, : int, 2, 0 
+INFO  10:39:12,097 - Upotreba globalne promenljive niz na liniji 67, Var niz: Arr of int, 2, 0 
+INFO  10:39:12,097 - Upotreba elementa niza niz na liniji 67, : int, 2, 0 
+INFO  10:39:12,097 - Upotreba globalne konstante eol na liniji 68, Con eol: char, 10, 0 
+INFO  10:39:12,097 - Upotreba globalne promenljive niz na liniji 70, Var niz: Arr of int, 2, 0 
+INFO  10:39:12,097 - Upotreba elementa niza niz na liniji 70, : int, 2, 0 
+INFO  10:39:12,097 - Upotreba globalne promenljive niz na liniji 70, Var niz: Arr of int, 2, 0 
+INFO  10:39:12,097 - Upotreba elementa niza niz na liniji 70, : int, 2, 0 
+INFO  10:39:12,097 - Pronadjen poziv funkcije sum na liniji 70, Meth sum: int, 0, 2 
+INFO  10:39:12,097 - Upotreba globalne promenljive niz na liniji 70, Var niz: Arr of int, 2, 0 
+INFO  10:39:12,097 - Upotreba elementa niza niz na liniji 70, : int, 2, 0 
+INFO  10:39:12,097 - Pronadjen poziv funkcije sum na liniji 70, Meth sum: int, 0, 2 
+INFO  10:39:12,097 - Upotreba globalne konstante eol na liniji 72, Con eol: char, 10, 0 
+INFO  10:39:12,097 - Upotreba globalne promenljive niz na liniji 73, Var niz: Arr of int, 2, 0 
+INFO  10:39:12,097 - Upotreba elementa niza niz na liniji 73, : int, 2, 0 
+INFO  10:39:12,097 - Upotreba konstante DOUBLE_VALUE nabrajanja IncrementType na liniji 73, Type IncrementType: , 0, 0 
+INFO  10:39:12,097 - Pronadjen poziv funkcije inkrement na liniji 73, Meth inkrement: int, 0, 2 
+INFO  10:39:12,097 - Print calls = 13
+INFO  10:39:12,097 - Globalnih promenljivih = 2
+INFO  10:39:12,097 - Globalnih konstanti = 0
+INFO  10:39:12,097 - Globalnih nizova = 1
+INFO  10:39:12,097 - Broj metoda = 3
+INFO  10:39:12,097 - Broj enuma = 1
+INFO  10:39:12,098 - Generating bytecode file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  10:39:12,102 - Parsiranje uspesno zavrseno!
