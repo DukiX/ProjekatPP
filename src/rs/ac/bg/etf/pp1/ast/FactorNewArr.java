@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 3/3/2019 10:25:52
+// 12/4/2019 21:14:38
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -8,13 +8,16 @@ package rs.ac.bg.etf.pp1.ast;
 public class FactorNewArr extends Factor {
 
     private Type Type;
-    private Expr Expr;
+    private DuzinaNiza DuzinaNiza;
+    private NewInitList NewInitList;
 
-    public FactorNewArr (Type Type, Expr Expr) {
+    public FactorNewArr (Type Type, DuzinaNiza DuzinaNiza, NewInitList NewInitList) {
         this.Type=Type;
         if(Type!=null) Type.setParent(this);
-        this.Expr=Expr;
-        if(Expr!=null) Expr.setParent(this);
+        this.DuzinaNiza=DuzinaNiza;
+        if(DuzinaNiza!=null) DuzinaNiza.setParent(this);
+        this.NewInitList=NewInitList;
+        if(NewInitList!=null) NewInitList.setParent(this);
     }
 
     public Type getType() {
@@ -25,12 +28,20 @@ public class FactorNewArr extends Factor {
         this.Type=Type;
     }
 
-    public Expr getExpr() {
-        return Expr;
+    public DuzinaNiza getDuzinaNiza() {
+        return DuzinaNiza;
     }
 
-    public void setExpr(Expr Expr) {
-        this.Expr=Expr;
+    public void setDuzinaNiza(DuzinaNiza DuzinaNiza) {
+        this.DuzinaNiza=DuzinaNiza;
+    }
+
+    public NewInitList getNewInitList() {
+        return NewInitList;
+    }
+
+    public void setNewInitList(NewInitList NewInitList) {
+        this.NewInitList=NewInitList;
     }
 
     public void accept(Visitor visitor) {
@@ -39,18 +50,21 @@ public class FactorNewArr extends Factor {
 
     public void childrenAccept(Visitor visitor) {
         if(Type!=null) Type.accept(visitor);
-        if(Expr!=null) Expr.accept(visitor);
+        if(DuzinaNiza!=null) DuzinaNiza.accept(visitor);
+        if(NewInitList!=null) NewInitList.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
         if(Type!=null) Type.traverseTopDown(visitor);
-        if(Expr!=null) Expr.traverseTopDown(visitor);
+        if(DuzinaNiza!=null) DuzinaNiza.traverseTopDown(visitor);
+        if(NewInitList!=null) NewInitList.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
         if(Type!=null) Type.traverseBottomUp(visitor);
-        if(Expr!=null) Expr.traverseBottomUp(visitor);
+        if(DuzinaNiza!=null) DuzinaNiza.traverseBottomUp(visitor);
+        if(NewInitList!=null) NewInitList.traverseBottomUp(visitor);
         accept(visitor);
     }
 
@@ -65,8 +79,14 @@ public class FactorNewArr extends Factor {
             buffer.append(tab+"  null");
         buffer.append("\n");
 
-        if(Expr!=null)
-            buffer.append(Expr.toString("  "+tab));
+        if(DuzinaNiza!=null)
+            buffer.append(DuzinaNiza.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
+
+        if(NewInitList!=null)
+            buffer.append(NewInitList.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");

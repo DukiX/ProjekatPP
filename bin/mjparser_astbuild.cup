@@ -105,6 +105,9 @@ nonterminal BoolConstDef BoolConstDef;
 nonterminal ArrayOpt ArrayOpt;
 nonterminal ArrayForPar ArrayForPar;
 nonterminal Rd Rd;
+nonterminal NewInitList NewInitList;
+nonterminal InitList InitList;
+nonterminal DuzinaNiza DuzinaNiza;
 
 Program ::= (Program) PROG ProgName:p VarDeclList:V1 LBRACE MethodDeclList:M2 RBRACE {: RESULT=new Program(p, V1, M2); RESULT.setLine(pleft); :} 
 ;
@@ -335,13 +338,25 @@ Factor ::= (Const) NUMBER:N1 {: RESULT=new Const(N1); RESULT.setLine(N1left); :}
 			|
 			(FactorNew) NEW Type:t {: RESULT=new FactorNew(t); RESULT.setLine(tleft); :}
 			|
-			(FactorNewArr) NEW Type:t LSQUARE Expr:e RSQUARE {: RESULT=new FactorNewArr(t, e); RESULT.setLine(tleft); :}
+			(FactorNewArr) NEW Type:t LSQUARE DuzinaNiza:D1 RSQUARE NewInitList:N2 {: RESULT=new FactorNewArr(t, D1, N2); RESULT.setLine(tleft); :}
 			|
 		   (Var) Designator:d {: RESULT=new Var(d); RESULT.setLine(dleft); :}
 		    |
 		   (FuncCall) Designator:func LPAREN ActualPars:A1 RPAREN {: RESULT=new FuncCall(func, A1); RESULT.setLine(funcleft); :}
 		   ;
 		   
+DuzinaNiza ::= (DuzinaNiza) Expr:e {: RESULT=new DuzinaNiza(e); RESULT.setLine(eleft); :} ;
+		   
+NewInitList ::= (NewInitListYes) LBRACE InitList:I1 RBRACE {: RESULT=new NewInitListYes(I1); RESULT.setLine(I1left); :}
+				|
+				(NewInitListNo) {: RESULT=new NewInitListNo(); :} /*epsilon*/
+				;
+				
+InitList ::= (InitListYes) InitList:I1 COMMA Expr:e {: RESULT=new InitListYes(I1, e); RESULT.setLine(I1left); :}
+				|
+				(InitListNo) Expr:e {: RESULT=new InitListNo(e); RESULT.setLine(eleft); :}
+				;
+		
 BoolConst ::= (BoolTrue) TRUE {: RESULT=new BoolTrue(); :}
 				|
 				(BoolFalse) FALSE {: RESULT=new BoolFalse(); :}

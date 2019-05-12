@@ -536,6 +536,9 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 
 	public void visit(Const cnst) {
 		cnst.struct = Tab.intType;
+		if(cnst.getParent().getParent().getParent() instanceof DuzinaNiza) {
+			duzinaTranutnogNiza=cnst.getN1();
+		}
 	}
 
 	public void visit(CharConst cc) {
@@ -609,13 +612,31 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	 * Struct(Struct.Int); }
 	 */
 
+	private int duzinaTranutnogNiza;
+	private int duzinaInitListe;
+	
 	public void visit(FactorNewArr fna) {
-		if (fna.getExpr().struct != Tab.intType) {
+		if (fna.getDuzinaNiza().getExpr().struct != Tab.intType) {
 			report_error("Promenljiva izmedju [ ] mora biti INT na liniji " + fna.getLine(), null);
 		}
 		fna.struct = new Struct(Struct.Array, fna.getType().struct);
 	}
+	
+	public void visit(NewInitListYes nil) {
+		if(duzinaInitListe!=duzinaTranutnogNiza) {
+			report_error("Broj elemenata inicijalizatorske liste ne ogovara duzini niza " + nil.getLine(), null);
+		}
+		duzinaInitListe=0;
+	}
+	
+	public void visit(InitListYes ily) {
+		duzinaInitListe++;
+	}
 
+	public void visit(InitListNo iln) {
+		duzinaInitListe++;
+	}
+	
 	public void visit(CndFct cf) {
 		if (cf.getExpr().struct != boolType) {
 			report_error("Samostalan uslov mora biti bool " + cf.getLine(), null);
