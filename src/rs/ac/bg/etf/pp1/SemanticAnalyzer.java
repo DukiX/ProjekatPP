@@ -626,7 +626,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	
 	public void visit(NewInitListYes nil) {
 		if(duzinaInitListe!=duzinaTranutnogNiza) {
-			report_error("Broj elemenata inicijalizatorske liste ne ogovara duzini niza " + nil.getLine(), null);
+			report_error("Broj elemenata inicijalizatorske liste ne ogovara duzini niza na liniji " + nil.getLine(), null);
 		}
 		duzinaInitListi.add(duzinaInitListe);
 		duzinaInitListe=0;
@@ -634,10 +634,16 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	
 	public void visit(InitListYes ily) {
 		duzinaInitListe++;
+		if(ily.getExpr().struct.getKind()!=varTip.getKind()) {
+			report_error("Tip elemenata u inicijalizatorskoj listi ne odgovara tipu niza na liniji " + linija, null);
+		}
 	}
 
 	public void visit(InitListNo iln) {
 		duzinaInitListe++;
+		if(iln.getExpr().struct.getKind()!=varTip.getKind()) {
+			report_error("Tip elemenata u inicijalizatorskoj listi ne odgovara tipu niza na liniji " + linija, null);
+		}
 	}
 	
 	public void visit(CndFct cf) {
