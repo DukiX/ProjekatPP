@@ -622,10 +622,13 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		fna.struct = new Struct(Struct.Array, fna.getType().struct);
 	}
 	
+	public static LinkedList<Integer> duzinaInitListi = new LinkedList<>();
+	
 	public void visit(NewInitListYes nil) {
 		if(duzinaInitListe!=duzinaTranutnogNiza) {
 			report_error("Broj elemenata inicijalizatorske liste ne ogovara duzini niza " + nil.getLine(), null);
 		}
+		duzinaInitListi.add(duzinaInitListe);
 		duzinaInitListe=0;
 	}
 	

@@ -33,7 +33,7 @@ public class CodeGenerator extends VisitorAdaptor {
 		Code.put(1);
 
 		Code.put(Code.load_n + 0);
-		
+
 		Code.put(Code.arraylength);
 
 		Code.put(Code.exit);
@@ -159,6 +159,57 @@ public class CodeGenerator extends VisitorAdaptor {
 		}
 
 		Code.store(assignment.getDesignator().obj);
+		// init liste
+		if (initLista) {
+
+			for (int i = duzinaInit - 1; i >= 0; i--) {
+
+				if (assignment.getDesignator().obj.getLevel() == 0) { // global variable
+					Code.put(Code.getstatic);
+					Code.put2(assignment.getDesignator().obj.getAdr());
+				} else {
+					// local variable
+					if (0 <= assignment.getDesignator().obj.getAdr() && assignment.getDesignator().obj.getAdr() <= 3)
+						Code.put(Code.load_n + assignment.getDesignator().obj.getAdr());
+					else {
+						Code.put(Code.load);
+						Code.put(assignment.getDesignator().obj.getAdr());
+					}
+				}
+
+				Code.put(Code.dup_x1);
+				Code.put(Code.pop);
+
+				if (0 <= i && i <= 5)
+					Code.put(Code.const_n + i);
+				else if (i == -1)
+					Code.put(Code.const_m1);
+				else {
+					Code.put(Code.const_);
+					Code.put4(i);
+				}
+
+				Code.put(Code.dup_x1);
+				Code.put(Code.pop);
+				if (assignment.getDesignator().obj.getType().getKind() == Struct.Char) {
+					Code.put(Code.bastore);
+				} else {
+					Code.put(Code.astore);
+				}
+			}
+
+			Code.put(Code.pop);
+			initLista = false;
+		}
+	}
+
+	private int duzinaInit;
+	private boolean initLista = false;
+	private boolean initLista2 = false;
+
+	public void visit(NewInitListYes niy) {
+		initLista = true;
+		initLista2 = true;
 	}
 
 	@Override
@@ -181,7 +232,8 @@ public class CodeGenerator extends VisitorAdaptor {
 	@Override
 	public void visit(Designator designator) {
 		SyntaxNode parent = designator.getParent();
-		if (Assignment.class != parent.getClass() && FuncCall.class != parent.getClass() && ProcCall.class != parent.getClass()) {
+		if (Assignment.class != parent.getClass() && FuncCall.class != parent.getClass()
+				&& ProcCall.class != parent.getClass()) {
 			if (designator.obj.getKind() == Obj.Elem) {
 				// Code.loadConst(designator.obj.getAdr());
 				/*
@@ -312,8 +364,21 @@ public class CodeGenerator extends VisitorAdaptor {
 
 		uReadu = false;
 	}
-	
+
 	public void visit(FactorNewArr fna) {
+		if (initLista2) {
+			duzinaInit = SemanticAnalyzer.duzinaInitListi.removeFirst();
+
+			if (0 <= duzinaInit && duzinaInit <= 5)
+				Code.put(Code.const_n + duzinaInit);
+			else if (duzinaInit == -1)
+				Code.put(Code.const_m1);
+			else {
+				Code.put(Code.const_);
+				Code.put4(duzinaInit);
+			}
+			initLista2=false;
+		}
 		Code.put(Code.newarray);
 		if (fna.getType().struct == Tab.charType) {
 			Code.put(0);
