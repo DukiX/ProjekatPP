@@ -72,8 +72,9 @@ nonterminal Statement Statement;
 nonterminal Addop Addop;
 nonterminal Unmatched Unmatched;
 nonterminal Matched Matched;
+nonterminal DesignatorOptions DesignatorOptions;
 
-nonterminal rs.etf.pp1.symboltable.concepts.Obj Program, ProgName, Designator, MethodDeclr, MethodTypeN ,EnumName, DesignatorOptions; 
+nonterminal rs.etf.pp1.symboltable.concepts.Obj Program, ProgName, Designator, MethodDeclr, MethodTypeN ,EnumName; 
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Type, Term, Expr, Factor, FactorList,VarDeclList,BoolConst, VarDeclaration, ConstDef, ActualParamList, VarList,EnumNumbering; 
 
 nonterminal DesignatorStatement DesignatorStatement;
