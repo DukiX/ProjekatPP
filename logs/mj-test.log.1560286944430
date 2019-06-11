@@ -1,0 +1,43 @@
+INFO  23:02:05,645 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  23:02:05,674 - #2 program
+INFO  23:02:05,675 - #39 test302
+INFO  23:02:05,675 - #39 int
+INFO  23:02:05,675 - #39 niz
+INFO  23:02:05,676 - #20 [
+INFO  23:02:05,676 - #21 ]
+INFO  23:02:05,676 - #5 ;
+INFO  23:02:05,677 - #39 int
+INFO  23:02:05,677 - #39 i
+INFO  23:02:05,677 - #5 ;
+INFO  23:02:05,677 - #3 {
+INFO  23:02:05,678 - #13 void
+INFO  23:02:05,678 - #39 main
+INFO  23:02:05,678 - #6 (
+INFO  23:02:05,678 - #7 )
+INFO  23:02:05,678 - #3 {
+INFO  23:02:05,679 - #39 i
+INFO  23:02:05,679 - #12 =
+INFO  23:02:05,680 - #38 1
+INFO  23:02:05,680 - #5 ;
+INFO  23:02:05,680 - #39 niz
+INFO  23:02:05,681 - #12 =
+INFO  23:02:05,681 - #19 new
+INFO  23:02:05,681 - #39 int
+INFO  23:02:05,681 - #20 [
+INFO  23:02:05,681 - #39 i
+INFO  23:02:05,681 - #21 ]
+INFO  23:02:05,681 - #3 {
+INFO  23:02:05,682 - #38 1
+INFO  23:02:05,682 - #4 }
+INFO  23:02:05,682 - #5 ;
+INFO  23:02:05,682 - #4 }
+INFO  23:02:05,682 - #4 }
+INFO  23:02:05,695 - Deklarisan niz niz na liniji 6
+INFO  23:02:05,695 - Deklarisana promenljiva i na liniji 7
+INFO  23:02:05,695 - Obradjuje se funkcija main na liniji 10
+INFO  23:02:05,696 - Upotreba globalne promenljive i na liniji 12, Var i: int, 1, 0 
+INFO  23:02:05,696 - Upotreba globalne promenljive niz na liniji 13, Var niz: Arr of int, 0, 0 
+INFO  23:02:05,696 - Upotreba globalne promenljive i na liniji 13, Var i: int, 1, 0 
+ERROR 23:02:05,696 - Broj elemenata inicijalizatorske liste ne ogovara duzini niza na liniji 13
+INFO  23:02:05,696 - Print calls = 0
+ERROR 23:02:05,696 - Parsiranje NIJE uspesno zavrseno!

@@ -139,11 +139,11 @@ public class CodeGenerator extends VisitorAdaptor {
 	}
 
 	private Struct varTip;
-	
+
 	public void visit(Type t) {
 		varTip = t.struct;
 	}
-	
+
 	@Override
 	public void visit(Assignment assignment) {
 		if (assignment.getDesignator().obj.getKind() == Obj.Elem) {
@@ -163,95 +163,75 @@ public class CodeGenerator extends VisitorAdaptor {
 			Code.put(Code.dup_x2);
 			Code.put(Code.pop);
 		}
-		if(!niz) {
+		if (!niz) {
 			Code.store(assignment.getDesignator().obj);
 		}
-		niz=false;
+		niz = false;
 		// init liste
 		if (initLista) {
 
-			/*for (int i = duzinaInit - 1; i >= 0; i--) {
-
-				if (assignment.getDesignator().obj.getLevel() == 0) { // global variable
-					Code.put(Code.getstatic);
-					Code.put2(assignment.getDesignator().obj.getAdr());
-				} else {
-					// local variable
-					if (0 <= assignment.getDesignator().obj.getAdr() && assignment.getDesignator().obj.getAdr() <= 3)
-						Code.put(Code.load_n + assignment.getDesignator().obj.getAdr());
-					else {
-						Code.put(Code.load);
-						Code.put(assignment.getDesignator().obj.getAdr());
-					}
-				}
-
-				Code.put(Code.dup_x1);
-				Code.put(Code.pop);
-
-				if (0 <= i && i <= 5)
-					Code.put(Code.const_n + i);
-				else if (i == -1)
-					Code.put(Code.const_m1);
-				else {
-					Code.put(Code.const_);
-					Code.put4(i);
-				}
-
-				Code.put(Code.dup_x1);
-				Code.put(Code.pop);
-				if (assignment.getDesignator().obj.getType().getKind() == Struct.Char) {
-					Code.put(Code.bastore);
-				} else {
-					Code.put(Code.astore);
-				}
-			}
-			*/
-			//Code.put(Code.pop);
+			/*
+			 * for (int i = duzinaInit - 1; i >= 0; i--) {
+			 * 
+			 * if (assignment.getDesignator().obj.getLevel() == 0) { // global variable
+			 * Code.put(Code.getstatic); Code.put2(assignment.getDesignator().obj.getAdr());
+			 * } else { // local variable if (0 <= assignment.getDesignator().obj.getAdr()
+			 * && assignment.getDesignator().obj.getAdr() <= 3) Code.put(Code.load_n +
+			 * assignment.getDesignator().obj.getAdr()); else { Code.put(Code.load);
+			 * Code.put(assignment.getDesignator().obj.getAdr()); } }
+			 * 
+			 * Code.put(Code.dup_x1); Code.put(Code.pop);
+			 * 
+			 * if (0 <= i && i <= 5) Code.put(Code.const_n + i); else if (i == -1)
+			 * Code.put(Code.const_m1); else { Code.put(Code.const_); Code.put4(i); }
+			 * 
+			 * Code.put(Code.dup_x1); Code.put(Code.pop); if
+			 * (assignment.getDesignator().obj.getType().getKind() == Struct.Char) {
+			 * Code.put(Code.bastore); } else { Code.put(Code.astore); } }
+			 */
+			// Code.put(Code.pop);
 			initLista = false;
 		}
 	}
-	
 
 	public void visit(FactorNewArr fna) {
-		/*if (initLista2) {
-			duzinaInit = SemanticAnalyzer.duzinaInitListi.removeFirst();
-
-			if (0 <= duzinaInit && duzinaInit <= 5)
-				Code.put(Code.const_n + duzinaInit);
-			else if (duzinaInit == -1)
-				Code.put(Code.const_m1);
-			else {
-				Code.put(Code.const_);
-				Code.put4(duzinaInit);
-			}
-			initLista2=false;
-		}*/
-		/*Code.put(Code.newarray);
-		if (fna.getType().struct == Tab.charType) {
-			Code.put(0);
-		} else {
-			Code.put(1);
-		}*/
+		/*
+		 * if (initLista2) { duzinaInit =
+		 * SemanticAnalyzer.duzinaInitListi.removeFirst();
+		 * 
+		 * if (0 <= duzinaInit && duzinaInit <= 5) Code.put(Code.const_n + duzinaInit);
+		 * else if (duzinaInit == -1) Code.put(Code.const_m1); else {
+		 * Code.put(Code.const_); Code.put4(duzinaInit); } initLista2=false; }
+		 */
+		/*
+		 * Code.put(Code.newarray); if (fna.getType().struct == Tab.charType) {
+		 * Code.put(0); } else { Code.put(1); }
+		 */
 	}
-	private boolean niz=false;
+
+	private boolean niz = false;
+
 	public void visit(DuzinaNiza dn) {
-		
+
 		Code.put(Code.newarray);
 		if (varTip == Tab.charType) {
 			Code.put(0);
 		} else {
 			Code.put(1);
 		}
-		
-		niz=true;
-		
+
+		niz = true;
+
 		Code.store(des.obj);
+		
+
+		mozeDes = true;
 	}
-	
+
 	private int index = 0;
-	
+
 	public void visit(InitListNo il) {
-		index=0;
+		index = 0;
 		if (0 <= index && index <= 5)
 			Code.put(Code.const_n + index);
 		else if (index == -1)
@@ -260,10 +240,10 @@ public class CodeGenerator extends VisitorAdaptor {
 			Code.put(Code.const_);
 			Code.put4(index);
 		}
-		
+
 		Code.put(Code.dup_x1);
 		Code.put(Code.pop);
-		
+
 		if (des.obj.getLevel() == 0) { // global variable
 			Code.put(Code.getstatic);
 			Code.put2(des.obj.getAdr());
@@ -278,15 +258,15 @@ public class CodeGenerator extends VisitorAdaptor {
 		}
 		Code.put(Code.dup_x2);
 		Code.put(Code.pop);
-		
+
 		if (varTip == Tab.charType) {
-			Code.put(Code.bastore); 
-		}else {
-			Code.put(Code.astore); 
+			Code.put(Code.bastore);
+		} else {
+			Code.put(Code.astore);
 		}
-		
+
 	}
-	
+
 	public void visit(InitListYes il) {
 		index++;
 		if (0 <= index && index <= 5)
@@ -297,10 +277,10 @@ public class CodeGenerator extends VisitorAdaptor {
 			Code.put(Code.const_);
 			Code.put4(index);
 		}
-		
+
 		Code.put(Code.dup_x1);
 		Code.put(Code.pop);
-		
+
 		if (des.obj.getLevel() == 0) { // global variable
 			Code.put(Code.getstatic);
 			Code.put2(des.obj.getAdr());
@@ -315,11 +295,11 @@ public class CodeGenerator extends VisitorAdaptor {
 		}
 		Code.put(Code.dup_x2);
 		Code.put(Code.pop);
-		
+
 		if (varTip == Tab.charType) {
-			Code.put(Code.bastore); 
-		}else {
-			Code.put(Code.astore); 
+			Code.put(Code.bastore);
+		} else {
+			Code.put(Code.astore);
 		}
 	}
 
@@ -348,10 +328,20 @@ public class CodeGenerator extends VisitorAdaptor {
 	public void visit(BoolFalse bf) {
 		Code.load(new Obj(Obj.Con, "$", bf.struct, 0, 0));
 	}
+
+	private boolean mozeDes = true;
+
+	public void visit(LsquareNt l) {
+		mozeDes = false;
+	}
+
 	private Designator des = null;
+
 	@Override
 	public void visit(Designator designator) {
-		des=designator;
+		if (mozeDes) {
+			des = designator;
+		}
 		SyntaxNode parent = designator.getParent();
 		if (Assignment.class != parent.getClass() && FuncCall.class != parent.getClass()
 				&& ProcCall.class != parent.getClass()) {
@@ -485,7 +475,6 @@ public class CodeGenerator extends VisitorAdaptor {
 
 		uReadu = false;
 	}
-
 
 	// int adresa1;
 	int adresa2;

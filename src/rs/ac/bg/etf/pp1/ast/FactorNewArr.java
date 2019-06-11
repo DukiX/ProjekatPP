@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 8/5/2019 18:17:42
+// 11/5/2019 23:17:8
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -8,12 +8,15 @@ package rs.ac.bg.etf.pp1.ast;
 public class FactorNewArr extends Factor {
 
     private Type Type;
+    private LsquareNt LsquareNt;
     private DuzinaNiza DuzinaNiza;
     private NewInitList NewInitList;
 
-    public FactorNewArr (Type Type, DuzinaNiza DuzinaNiza, NewInitList NewInitList) {
+    public FactorNewArr (Type Type, LsquareNt LsquareNt, DuzinaNiza DuzinaNiza, NewInitList NewInitList) {
         this.Type=Type;
         if(Type!=null) Type.setParent(this);
+        this.LsquareNt=LsquareNt;
+        if(LsquareNt!=null) LsquareNt.setParent(this);
         this.DuzinaNiza=DuzinaNiza;
         if(DuzinaNiza!=null) DuzinaNiza.setParent(this);
         this.NewInitList=NewInitList;
@@ -26,6 +29,14 @@ public class FactorNewArr extends Factor {
 
     public void setType(Type Type) {
         this.Type=Type;
+    }
+
+    public LsquareNt getLsquareNt() {
+        return LsquareNt;
+    }
+
+    public void setLsquareNt(LsquareNt LsquareNt) {
+        this.LsquareNt=LsquareNt;
     }
 
     public DuzinaNiza getDuzinaNiza() {
@@ -50,6 +61,7 @@ public class FactorNewArr extends Factor {
 
     public void childrenAccept(Visitor visitor) {
         if(Type!=null) Type.accept(visitor);
+        if(LsquareNt!=null) LsquareNt.accept(visitor);
         if(DuzinaNiza!=null) DuzinaNiza.accept(visitor);
         if(NewInitList!=null) NewInitList.accept(visitor);
     }
@@ -57,12 +69,14 @@ public class FactorNewArr extends Factor {
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
         if(Type!=null) Type.traverseTopDown(visitor);
+        if(LsquareNt!=null) LsquareNt.traverseTopDown(visitor);
         if(DuzinaNiza!=null) DuzinaNiza.traverseTopDown(visitor);
         if(NewInitList!=null) NewInitList.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
         if(Type!=null) Type.traverseBottomUp(visitor);
+        if(LsquareNt!=null) LsquareNt.traverseBottomUp(visitor);
         if(DuzinaNiza!=null) DuzinaNiza.traverseBottomUp(visitor);
         if(NewInitList!=null) NewInitList.traverseBottomUp(visitor);
         accept(visitor);
@@ -75,6 +89,12 @@ public class FactorNewArr extends Factor {
 
         if(Type!=null)
             buffer.append(Type.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
+
+        if(LsquareNt!=null)
+            buffer.append(LsquareNt.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");

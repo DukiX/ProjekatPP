@@ -97,6 +97,7 @@ nonterminal Rd;
 nonterminal NewInitList;
 nonterminal InitList;
 nonterminal DuzinaNiza;
+nonterminal LsquareNt;
 
 Program ::= (Program) PROG ProgName:p VarDeclList LBRACE MethodDeclList RBRACE 
 ;
@@ -327,13 +328,15 @@ Factor ::= (Const) NUMBER
 			|
 			(FactorNew) NEW Type:t
 			|
-			(FactorNewArr) NEW Type:t LSQUARE DuzinaNiza RSQUARE NewInitList
+			(FactorNewArr) NEW Type:t LsquareNt DuzinaNiza RSQUARE NewInitList
 			|
 		   (Var) Designator:d
 		    |
 		   (FuncCall) Designator:func LPAREN ActualPars RPAREN
 		   ;
 		   
+LsquareNt ::= (LsquareNt) LSQUARE;
+
 DuzinaNiza ::= (DuzinaNiza) Expr:e ;
 		   
 NewInitList ::= (NewInitListYes) LBRACE InitList RBRACE

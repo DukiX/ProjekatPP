@@ -1,0 +1,61 @@
+INFO  23:24:10,011 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  23:24:10,040 - #2 program
+INFO  23:24:10,040 - #39 test302
+INFO  23:24:10,041 - #39 int
+INFO  23:24:10,041 - #39 niz
+INFO  23:24:10,042 - #20 [
+INFO  23:24:10,042 - #21 ]
+INFO  23:24:10,042 - #5 ;
+INFO  23:24:10,042 - #39 int
+INFO  23:24:10,043 - #39 i
+INFO  23:24:10,043 - #5 ;
+INFO  23:24:10,043 - #3 {
+INFO  23:24:10,043 - #13 void
+INFO  23:24:10,044 - #39 main
+INFO  23:24:10,044 - #6 (
+INFO  23:24:10,044 - #7 )
+INFO  23:24:10,045 - #3 {
+INFO  23:24:10,045 - #39 i
+INFO  23:24:10,045 - #12 =
+INFO  23:24:10,046 - #38 3
+INFO  23:24:10,046 - #5 ;
+INFO  23:24:10,046 - #39 niz
+INFO  23:24:10,049 - #12 =
+INFO  23:24:10,049 - #19 new
+INFO  23:24:10,049 - #39 int
+INFO  23:24:10,049 - #20 [
+INFO  23:24:10,049 - #39 i
+INFO  23:24:10,049 - #21 ]
+INFO  23:24:10,050 - #3 {
+INFO  23:24:10,050 - #4 }
+ERROR 23:24:10,050 - 
+Sintaksna greska na liniji 14
+INFO  23:24:10,050 - #5 ;
+INFO  23:24:10,050 - #39 niz
+INFO  23:24:10,050 - #20 [
+INFO  23:24:10,050 - #38 0
+DEBUG 23:24:10,050 - Uspesan oporavak od greske pri dodeli vrednosti.
+INFO  23:24:10,051 - #21 ]
+INFO  23:24:10,051 - #12 =
+INFO  23:24:10,051 - #38 5
+INFO  23:24:10,051 - #5 ;
+INFO  23:24:10,051 - #9 print
+INFO  23:24:10,051 - #6 (
+INFO  23:24:10,051 - #39 niz
+INFO  23:24:10,051 - #20 [
+INFO  23:24:10,051 - #38 0
+INFO  23:24:10,052 - #21 ]
+INFO  23:24:10,052 - #7 )
+INFO  23:24:10,052 - #5 ;
+INFO  23:24:10,052 - #4 }
+INFO  23:24:10,053 - #4 }
+INFO  23:24:10,066 - Deklarisan niz niz na liniji 6
+INFO  23:24:10,066 - Deklarisana promenljiva i na liniji 7
+INFO  23:24:10,066 - Obradjuje se funkcija main na liniji 10
+INFO  23:24:10,066 - Upotreba globalne promenljive i na liniji 12, Var i: int, 1, 0 
+INFO  23:24:10,066 - Upotreba globalne promenljive niz na liniji 15, Var niz: Arr of int, 0, 0 
+INFO  23:24:10,066 - Upotreba elementa niza niz na liniji 15, : int, 0, 0 
+INFO  23:24:10,066 - Upotreba globalne promenljive niz na liniji 16, Var niz: Arr of int, 0, 0 
+INFO  23:24:10,066 - Upotreba elementa niza niz na liniji 16, : int, 0, 0 
+INFO  23:24:10,066 - Print calls = 1
+ERROR 23:24:10,067 - Parsiranje NIJE uspesno zavrseno!

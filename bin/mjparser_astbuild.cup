@@ -109,6 +109,7 @@ nonterminal Rd Rd;
 nonterminal NewInitList NewInitList;
 nonterminal InitList InitList;
 nonterminal DuzinaNiza DuzinaNiza;
+nonterminal LsquareNt LsquareNt;
 
 Program ::= (Program) PROG ProgName:p VarDeclList:V1 LBRACE MethodDeclList:M2 RBRACE {: RESULT=new Program(p, V1, M2); RESULT.setLine(pleft); :} 
 ;
@@ -339,13 +340,15 @@ Factor ::= (Const) NUMBER:N1 {: RESULT=new Const(N1); RESULT.setLine(N1left); :}
 			|
 			(FactorNew) NEW Type:t {: RESULT=new FactorNew(t); RESULT.setLine(tleft); :}
 			|
-			(FactorNewArr) NEW Type:t LSQUARE DuzinaNiza:D1 RSQUARE NewInitList:N2 {: RESULT=new FactorNewArr(t, D1, N2); RESULT.setLine(tleft); :}
+			(FactorNewArr) NEW Type:t LsquareNt:L1 DuzinaNiza:D2 RSQUARE NewInitList:N3 {: RESULT=new FactorNewArr(t, L1, D2, N3); RESULT.setLine(tleft); :}
 			|
 		   (Var) Designator:d {: RESULT=new Var(d); RESULT.setLine(dleft); :}
 		    |
 		   (FuncCall) Designator:func LPAREN ActualPars:A1 RPAREN {: RESULT=new FuncCall(func, A1); RESULT.setLine(funcleft); :}
 		   ;
 		   
+LsquareNt ::= (LsquareNt) LSQUARE {: RESULT=new LsquareNt(); :};
+
 DuzinaNiza ::= (DuzinaNiza) Expr:e {: RESULT=new DuzinaNiza(e); RESULT.setLine(eleft); :} ;
 		   
 NewInitList ::= (NewInitListYes) LBRACE InitList:I1 RBRACE {: RESULT=new NewInitListYes(I1); RESULT.setLine(I1left); :}

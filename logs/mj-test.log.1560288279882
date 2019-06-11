@@ -1,0 +1,62 @@
+INFO  23:24:30,514 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  23:24:30,540 - #2 program
+INFO  23:24:30,540 - #39 test302
+INFO  23:24:30,540 - #39 int
+INFO  23:24:30,541 - #39 niz
+INFO  23:24:30,541 - #20 [
+INFO  23:24:30,541 - #21 ]
+INFO  23:24:30,541 - #5 ;
+INFO  23:24:30,542 - #39 int
+INFO  23:24:30,542 - #39 i
+INFO  23:24:30,542 - #5 ;
+INFO  23:24:30,542 - #3 {
+INFO  23:24:30,542 - #13 void
+INFO  23:24:30,543 - #39 main
+INFO  23:24:30,543 - #6 (
+INFO  23:24:30,543 - #7 )
+INFO  23:24:30,543 - #3 {
+INFO  23:24:30,543 - #39 i
+INFO  23:24:30,544 - #12 =
+INFO  23:24:30,544 - #38 3
+INFO  23:24:30,545 - #5 ;
+INFO  23:24:30,545 - #39 niz
+INFO  23:24:30,547 - #12 =
+INFO  23:24:30,547 - #19 new
+INFO  23:24:30,548 - #39 int
+INFO  23:24:30,548 - #20 [
+INFO  23:24:30,548 - #39 i
+INFO  23:24:30,548 - #21 ]
+INFO  23:24:30,548 - #3 {
+INFO  23:24:30,548 - #38 1
+INFO  23:24:30,548 - #4 }
+INFO  23:24:30,549 - #5 ;
+INFO  23:24:30,549 - #39 niz
+INFO  23:24:30,549 - #20 [
+INFO  23:24:30,549 - #38 0
+INFO  23:24:30,549 - #21 ]
+INFO  23:24:30,549 - #12 =
+INFO  23:24:30,549 - #38 5
+INFO  23:24:30,549 - #5 ;
+INFO  23:24:30,549 - #9 print
+INFO  23:24:30,549 - #6 (
+INFO  23:24:30,550 - #39 niz
+INFO  23:24:30,550 - #20 [
+INFO  23:24:30,550 - #38 0
+INFO  23:24:30,550 - #21 ]
+INFO  23:24:30,550 - #7 )
+INFO  23:24:30,550 - #5 ;
+INFO  23:24:30,550 - #4 }
+INFO  23:24:30,550 - #4 }
+INFO  23:24:30,563 - Deklarisan niz niz na liniji 6
+INFO  23:24:30,564 - Deklarisana promenljiva i na liniji 7
+INFO  23:24:30,564 - Obradjuje se funkcija main na liniji 10
+INFO  23:24:30,564 - Upotreba globalne promenljive i na liniji 12, Var i: int, 1, 0 
+INFO  23:24:30,564 - Upotreba globalne promenljive niz na liniji 14, Var niz: Arr of int, 0, 0 
+INFO  23:24:30,564 - Upotreba globalne promenljive i na liniji 14, Var i: int, 1, 0 
+ERROR 23:24:30,564 - Broj elemenata inicijalizatorske liste ne ogovara duzini niza na liniji 14
+INFO  23:24:30,564 - Upotreba globalne promenljive niz na liniji 15, Var niz: Arr of int, 0, 0 
+INFO  23:24:30,564 - Upotreba elementa niza niz na liniji 15, : int, 0, 0 
+INFO  23:24:30,564 - Upotreba globalne promenljive niz na liniji 16, Var niz: Arr of int, 0, 0 
+INFO  23:24:30,564 - Upotreba elementa niza niz na liniji 16, : int, 0, 0 
+INFO  23:24:30,564 - Print calls = 1
+ERROR 23:24:30,565 - Parsiranje NIJE uspesno zavrseno!
