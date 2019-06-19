@@ -1,0 +1,239 @@
+INFO  15:24:46,235 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  15:24:46,260 - #2 program
+INFO  15:24:46,260 - #39 iftest
+INFO  15:24:46,260 - #39 int
+INFO  15:24:46,261 - #39 x
+INFO  15:24:46,261 - #8 ,
+INFO  15:24:46,262 - #39 y
+INFO  15:24:46,262 - #5 ;
+INFO  15:24:46,262 - #39 bool
+INFO  15:24:46,262 - #39 t
+INFO  15:24:46,263 - #5 ;
+INFO  15:24:46,263 - #3 {
+INFO  15:24:46,263 - #13 void
+INFO  15:24:46,263 - #39 main
+INFO  15:24:46,263 - #6 (
+INFO  15:24:46,263 - #7 )
+INFO  15:24:46,264 - #39 int
+INFO  15:24:46,264 - #39 z
+INFO  15:24:46,264 - #5 ;
+INFO  15:24:46,264 - #3 {
+INFO  15:24:46,264 - #39 x
+INFO  15:24:46,264 - #12 =
+INFO  15:24:46,265 - #38 4
+INFO  15:24:46,266 - #5 ;
+INFO  15:24:46,267 - #39 y
+INFO  15:24:46,267 - #12 =
+INFO  15:24:46,267 - #38 5
+INFO  15:24:46,268 - #5 ;
+INFO  15:24:46,268 - #39 t
+INFO  15:24:46,268 - #12 =
+INFO  15:24:46,268 - #30 false
+INFO  15:24:46,268 - #5 ;
+INFO  15:24:46,268 - #23 for
+INFO  15:24:46,268 - #6 (
+INFO  15:24:46,269 - #5 ;
+INFO  15:24:46,269 - #5 ;
+INFO  15:24:46,270 - #7 )
+INFO  15:24:46,271 - #39 x
+INFO  15:24:46,271 - #12 =
+INFO  15:24:46,271 - #38 4
+INFO  15:24:46,271 - #5 ;
+INFO  15:24:46,271 - #4 }
+INFO  15:24:46,272 - #4 }
+INFO  15:24:46,272 - #4 }
+ERROR 15:24:46,272 - 
+Sintaksna greska na liniji 18
+DEBUG 15:24:46,273 - Nepoznata format deklaracije metode. Oporavak od greske
+INFO  15:24:46,274 - Program(
+  ProgName(
+   iftest
+  ) [ProgName]
+  VarDeclarations(
+    VarDeclarations(
+      NoVarDecl(
+      ) [NoVarDecl]
+      VarDecl(
+        Type(
+         int
+        ) [Type]
+       x
+        ArrayOptN(
+        ) [ArrayOptN]
+        VarListY(
+          VarListN(
+          ) [VarListN]
+         y
+          ArrayOptN(
+          ) [ArrayOptN]
+        ) [VarListY]
+      ) [VarDecl]
+    ) [VarDeclarations]
+    VarDecl(
+      Type(
+       bool
+      ) [Type]
+     t
+      ArrayOptN(
+      ) [ArrayOptN]
+      VarListN(
+      ) [VarListN]
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    MethodDeclarations(
+      NoMethodDecl(
+      ) [NoMethodDecl]
+      MethodDecl(
+        MethodTypeVoid(
+         main
+        ) [MethodTypeVoid]
+        NoFormParam(
+        ) [NoFormParam]
+        VarDeclarations(
+          NoVarDecl(
+          ) [NoVarDecl]
+          VarDecl(
+            Type(
+             int
+            ) [Type]
+           z
+            ArrayOptN(
+            ) [ArrayOptN]
+            VarListN(
+            ) [VarListN]
+          ) [VarDecl]
+        ) [VarDeclarations]
+        Statements(
+          Statements(
+            Statements(
+              Statements(
+                NoStmt(
+                ) [NoStmt]
+                MatchedStmt(
+                  MatchedDesignatorStatement(
+                    Assignment(
+                      Designator(
+                       x
+                        NoDesignatorOptions(
+                        ) [NoDesignatorOptions]
+                      ) [Designator]
+                      TermExpr(
+                        Term(
+                          Const(
+                           4
+                          ) [Const]
+                          NoFactor(
+                          ) [NoFactor]
+                        ) [Term]
+                      ) [TermExpr]
+                    ) [Assignment]
+                  ) [MatchedDesignatorStatement]
+                ) [MatchedStmt]
+              ) [Statements]
+              MatchedStmt(
+                MatchedDesignatorStatement(
+                  Assignment(
+                    Designator(
+                     y
+                      NoDesignatorOptions(
+                      ) [NoDesignatorOptions]
+                    ) [Designator]
+                    TermExpr(
+                      Term(
+                        Const(
+                         5
+                        ) [Const]
+                        NoFactor(
+                        ) [NoFactor]
+                      ) [Term]
+                    ) [TermExpr]
+                  ) [Assignment]
+                ) [MatchedDesignatorStatement]
+              ) [MatchedStmt]
+            ) [Statements]
+            MatchedStmt(
+              MatchedDesignatorStatement(
+                Assignment(
+                  Designator(
+                   t
+                    NoDesignatorOptions(
+                    ) [NoDesignatorOptions]
+                  ) [Designator]
+                  TermExpr(
+                    Term(
+                      FactorBool(
+                        BoolFalse(
+                        ) [BoolFalse]
+                      ) [FactorBool]
+                      NoFactor(
+                      ) [NoFactor]
+                    ) [Term]
+                  ) [TermExpr]
+                ) [Assignment]
+              ) [MatchedDesignatorStatement]
+            ) [MatchedStmt]
+          ) [Statements]
+          MatchedStmt(
+            MatchedFor(
+              ForFor(
+              ) [ForFor]
+              ForDesignatorDerived1(
+              ) [ForDesignatorDerived1]
+              BegForCond(
+              ) [BegForCond]
+              EmptyForCond(
+              ) [EmptyForCond]
+              Beginc(
+              ) [Beginc]
+              ForDesignatorDerived1(
+              ) [ForDesignatorDerived1]
+              Endinc(
+              ) [Endinc]
+              Begfor(
+              ) [Begfor]
+              MatchedDesignatorStatement(
+                Assignment(
+                  Designator(
+                   x
+                    NoDesignatorOptions(
+                    ) [NoDesignatorOptions]
+                  ) [Designator]
+                  TermExpr(
+                    Term(
+                      Const(
+                       4
+                      ) [Const]
+                      NoFactor(
+                      ) [NoFactor]
+                    ) [Term]
+                  ) [TermExpr]
+                ) [Assignment]
+              ) [MatchedDesignatorStatement]
+              Endfor(
+              ) [Endfor]
+            ) [MatchedFor]
+          ) [MatchedStmt]
+        ) [Statements]
+      ) [MethodDecl]
+    ) [MethodDeclarations]
+    ErrMethDecl(
+    ) [ErrMethDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  15:24:46,286 - Deklarisana promenljiva y na liniji 3
+INFO  15:24:46,286 - Deklarisana promenljiva x na liniji 3
+INFO  15:24:46,286 - Deklarisana promenljiva t na liniji 4
+INFO  15:24:46,286 - Obradjuje se funkcija main na liniji 8
+INFO  15:24:46,287 - Deklarisana promenljiva z na liniji 9
+INFO  15:24:46,287 - Upotreba globalne promenljive x na liniji 11, Var x: int, 1, 0 
+INFO  15:24:46,287 - Upotreba globalne promenljive y na liniji 12, Var y: int, 0, 0 
+INFO  15:24:46,287 - Upotreba globalne promenljive t na liniji 13, Var t: , 2, 0 
+INFO  15:24:46,288 - Upotreba globalne promenljive x na liniji 15, Var x: int, 1, 0 
+INFO  15:24:46,288 - Print calls = 0
+INFO  15:24:46,288 - Globalnih promenljivih = 3
+INFO  15:24:46,288 - Globalnih konstanti = 0
+INFO  15:24:46,288 - Globalnih nizova = 0
+INFO  15:24:46,288 - Broj metoda = 1
+INFO  15:24:46,288 - Broj enuma = 0
+ERROR 15:24:46,289 - Parsiranje NIJE uspesno zavrseno!

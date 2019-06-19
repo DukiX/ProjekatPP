@@ -1,0 +1,708 @@
+INFO  15:12:03,176 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  15:12:03,202 - #2 program
+INFO  15:12:03,202 - #39 niztest
+INFO  15:12:03,202 - #31 enum
+INFO  15:12:03,203 - #39 IncrementType
+INFO  15:12:03,203 - #3 {
+INFO  15:12:03,203 - #39 BY_ONE
+INFO  15:12:03,203 - #8 ,
+INFO  15:12:03,204 - #39 DOUBLE_VALUE
+INFO  15:12:03,204 - #8 ,
+INFO  15:12:03,204 - #39 trojka
+INFO  15:12:03,204 - #12 =
+INFO  15:12:03,204 - #38 3
+INFO  15:12:03,204 - #4 }
+INFO  15:12:03,204 - #28 const
+INFO  15:12:03,205 - #39 int
+INFO  15:12:03,205 - #39 a
+INFO  15:12:03,205 - #12 =
+INFO  15:12:03,205 - #38 2
+INFO  15:12:03,205 - #5 ;
+INFO  15:12:03,206 - #28 const
+INFO  15:12:03,207 - #39 int
+INFO  15:12:03,207 - #39 b
+INFO  15:12:03,207 - #12 =
+INFO  15:12:03,207 - #38 3
+INFO  15:12:03,207 - #5 ;
+INFO  15:12:03,207 - #39 int
+INFO  15:12:03,207 - #39 i
+INFO  15:12:03,207 - #5 ;
+INFO  15:12:03,208 - #39 int
+INFO  15:12:03,209 - #39 niz
+INFO  15:12:03,209 - #20 [
+INFO  15:12:03,209 - #21 ]
+INFO  15:12:03,209 - #5 ;
+INFO  15:12:03,209 - #3 {
+INFO  15:12:03,209 - #13 void
+INFO  15:12:03,209 - #39 main
+INFO  15:12:03,210 - #6 (
+INFO  15:12:03,210 - #7 )
+INFO  15:12:03,210 - #3 {
+INFO  15:12:03,210 - #39 niz
+INFO  15:12:03,210 - #12 =
+INFO  15:12:03,211 - #19 new
+INFO  15:12:03,211 - #39 int
+INFO  15:12:03,211 - #20 [
+INFO  15:12:03,211 - #39 a
+INFO  15:12:03,212 - #21 ]
+INFO  15:12:03,213 - #3 {
+INFO  15:12:03,213 - #38 1
+INFO  15:12:03,213 - #8 ,
+INFO  15:12:03,213 - #38 2
+INFO  15:12:03,213 - #4 }
+INFO  15:12:03,213 - #5 ;
+INFO  15:12:03,214 - #39 niz
+INFO  15:12:03,214 - #12 =
+INFO  15:12:03,214 - #19 new
+INFO  15:12:03,214 - #39 int
+INFO  15:12:03,214 - #20 [
+INFO  15:12:03,214 - #39 a
+INFO  15:12:03,214 - #21 ]
+INFO  15:12:03,214 - #3 {
+INFO  15:12:03,214 - #38 1
+INFO  15:12:03,214 - #8 ,
+INFO  15:12:03,214 - #38 2
+INFO  15:12:03,214 - #4 }
+INFO  15:12:03,214 - #5 ;
+INFO  15:12:03,214 - #39 niz
+INFO  15:12:03,214 - #12 =
+INFO  15:12:03,214 - #19 new
+INFO  15:12:03,214 - #39 int
+INFO  15:12:03,215 - #20 [
+INFO  15:12:03,215 - #38 1
+INFO  15:12:03,215 - #11 +
+INFO  15:12:03,215 - #38 3
+INFO  15:12:03,215 - #11 +
+INFO  15:12:03,215 - #38 4
+INFO  15:12:03,216 - #11 +
+INFO  15:12:03,216 - #38 5
+INFO  15:12:03,216 - #21 ]
+INFO  15:12:03,216 - #5 ;
+INFO  15:12:03,216 - #39 niz
+INFO  15:12:03,216 - #20 [
+INFO  15:12:03,216 - #38 10
+INFO  15:12:03,216 - #21 ]
+INFO  15:12:03,216 - #12 =
+INFO  15:12:03,216 - #38 99
+INFO  15:12:03,216 - #5 ;
+INFO  15:12:03,216 - #9 print
+INFO  15:12:03,216 - #6 (
+INFO  15:12:03,216 - #39 niz
+INFO  15:12:03,216 - #20 [
+INFO  15:12:03,217 - #39 IncrementType
+INFO  15:12:03,217 - #22 .
+INFO  15:12:03,217 - #39 DOUBLE_VALUE
+INFO  15:12:03,217 - #11 +
+INFO  15:12:03,217 - #38 9
+INFO  15:12:03,217 - #21 ]
+INFO  15:12:03,217 - #7 )
+INFO  15:12:03,217 - #5 ;
+INFO  15:12:03,217 - #9 print
+INFO  15:12:03,217 - #6 (
+INFO  15:12:03,217 - #39 niz
+INFO  15:12:03,217 - #20 [
+INFO  15:12:03,217 - #38 0
+INFO  15:12:03,217 - #21 ]
+INFO  15:12:03,217 - #7 )
+INFO  15:12:03,217 - #5 ;
+INFO  15:12:03,217 - #39 niz
+INFO  15:12:03,217 - #12 =
+INFO  15:12:03,217 - #19 new
+INFO  15:12:03,217 - #39 int
+INFO  15:12:03,217 - #20 [
+INFO  15:12:03,218 - #39 IncrementType
+INFO  15:12:03,218 - #22 .
+INFO  15:12:03,218 - #39 trojka
+INFO  15:12:03,218 - #21 ]
+INFO  15:12:03,218 - #3 {
+INFO  15:12:03,218 - #38 1
+INFO  15:12:03,218 - #8 ,
+INFO  15:12:03,218 - #38 2
+INFO  15:12:03,218 - #8 ,
+INFO  15:12:03,218 - #38 3
+INFO  15:12:03,218 - #4 }
+INFO  15:12:03,218 - #5 ;
+INFO  15:12:03,218 - #9 print
+INFO  15:12:03,218 - #6 (
+INFO  15:12:03,218 - #39 niz
+INFO  15:12:03,218 - #20 [
+INFO  15:12:03,218 - #38 1
+INFO  15:12:03,218 - #21 ]
+INFO  15:12:03,218 - #7 )
+INFO  15:12:03,218 - #5 ;
+INFO  15:12:03,218 - #9 print
+INFO  15:12:03,218 - #6 (
+INFO  15:12:03,219 - #39 niz
+INFO  15:12:03,219 - #20 [
+INFO  15:12:03,219 - #38 2
+INFO  15:12:03,219 - #21 ]
+INFO  15:12:03,219 - #7 )
+INFO  15:12:03,219 - #5 ;
+INFO  15:12:03,219 - #4 }
+INFO  15:12:03,219 - #4 }
+INFO  15:12:03,221 - Program(
+  ProgName(
+   niztest
+  ) [ProgName]
+  VarDeclarations(
+    VarDeclarations(
+      VarDeclarations(
+        VarDeclarations(
+          VarDeclarations(
+            NoVarDecl(
+            ) [NoVarDecl]
+            EnumDecl(
+              EnumName(
+               IncrementType
+              ) [EnumName]
+              EnumLst(
+                EnumLst(
+                  EnumElem(
+                   BY_ONE
+                    EnumNoNmbr(
+                    ) [EnumNoNmbr]
+                  ) [EnumElem]
+                 DOUBLE_VALUE
+                  EnumNoNmbr(
+                  ) [EnumNoNmbr]
+                ) [EnumLst]
+               trojka
+                EnumNmbr(
+                 3
+                ) [EnumNmbr]
+              ) [EnumLst]
+            ) [EnumDecl]
+          ) [VarDeclarations]
+          ConstDecl(
+            Type(
+             int
+            ) [Type]
+           a
+            ConstDefNum(
+             2
+            ) [ConstDefNum]
+            CnstListEmpty(
+            ) [CnstListEmpty]
+          ) [ConstDecl]
+        ) [VarDeclarations]
+        ConstDecl(
+          Type(
+           int
+          ) [Type]
+         b
+          ConstDefNum(
+           3
+          ) [ConstDefNum]
+          CnstListEmpty(
+          ) [CnstListEmpty]
+        ) [ConstDecl]
+      ) [VarDeclarations]
+      VarDecl(
+        Type(
+         int
+        ) [Type]
+       i
+        ArrayOptN(
+        ) [ArrayOptN]
+        VarListN(
+        ) [VarListN]
+      ) [VarDecl]
+    ) [VarDeclarations]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+     niz
+      ArrayOptY(
+      ) [ArrayOptY]
+      VarListN(
+      ) [VarListN]
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      MethodTypeVoid(
+       main
+      ) [MethodTypeVoid]
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      Statements(
+        Statements(
+          Statements(
+            Statements(
+              Statements(
+                Statements(
+                  Statements(
+                    Statements(
+                      Statements(
+                        NoStmt(
+                        ) [NoStmt]
+                        MatchedStmt(
+                          MatchedDesignatorStatement(
+                            Assignment(
+                              Designator(
+                               niz
+                                NoDesignatorOptions(
+                                ) [NoDesignatorOptions]
+                              ) [Designator]
+                              TermExpr(
+                                Term(
+                                  FactorNewArrInit(
+                                    Type(
+                                     int
+                                    ) [Type]
+                                    LsquareNt(
+                                    ) [LsquareNt]
+                                    DuzinaNiza(
+                                      TermExpr(
+                                        Term(
+                                          Var(
+                                            Designator(
+                                             a
+                                              NoDesignatorOptions(
+                                              ) [NoDesignatorOptions]
+                                            ) [Designator]
+                                          ) [Var]
+                                          NoFactor(
+                                          ) [NoFactor]
+                                        ) [Term]
+                                      ) [TermExpr]
+                                    ) [DuzinaNiza]
+                                    NewInitListYes(
+                                      InitListYes(
+                                        InitListNo(
+                                          TermExpr(
+                                            Term(
+                                              Const(
+                                               1
+                                              ) [Const]
+                                              NoFactor(
+                                              ) [NoFactor]
+                                            ) [Term]
+                                          ) [TermExpr]
+                                        ) [InitListNo]
+                                        TermExpr(
+                                          Term(
+                                            Const(
+                                             2
+                                            ) [Const]
+                                            NoFactor(
+                                            ) [NoFactor]
+                                          ) [Term]
+                                        ) [TermExpr]
+                                      ) [InitListYes]
+                                    ) [NewInitListYes]
+                                  ) [FactorNewArrInit]
+                                  NoFactor(
+                                  ) [NoFactor]
+                                ) [Term]
+                              ) [TermExpr]
+                            ) [Assignment]
+                          ) [MatchedDesignatorStatement]
+                        ) [MatchedStmt]
+                      ) [Statements]
+                      MatchedStmt(
+                        MatchedDesignatorStatement(
+                          Assignment(
+                            Designator(
+                             niz
+                              NoDesignatorOptions(
+                              ) [NoDesignatorOptions]
+                            ) [Designator]
+                            TermExpr(
+                              Term(
+                                FactorNewArrInit(
+                                  Type(
+                                   int
+                                  ) [Type]
+                                  LsquareNt(
+                                  ) [LsquareNt]
+                                  DuzinaNiza(
+                                    TermExpr(
+                                      Term(
+                                        Var(
+                                          Designator(
+                                           a
+                                            NoDesignatorOptions(
+                                            ) [NoDesignatorOptions]
+                                          ) [Designator]
+                                        ) [Var]
+                                        NoFactor(
+                                        ) [NoFactor]
+                                      ) [Term]
+                                    ) [TermExpr]
+                                  ) [DuzinaNiza]
+                                  NewInitListYes(
+                                    InitListYes(
+                                      InitListNo(
+                                        TermExpr(
+                                          Term(
+                                            Const(
+                                             1
+                                            ) [Const]
+                                            NoFactor(
+                                            ) [NoFactor]
+                                          ) [Term]
+                                        ) [TermExpr]
+                                      ) [InitListNo]
+                                      TermExpr(
+                                        Term(
+                                          Const(
+                                           2
+                                          ) [Const]
+                                          NoFactor(
+                                          ) [NoFactor]
+                                        ) [Term]
+                                      ) [TermExpr]
+                                    ) [InitListYes]
+                                  ) [NewInitListYes]
+                                ) [FactorNewArrInit]
+                                NoFactor(
+                                ) [NoFactor]
+                              ) [Term]
+                            ) [TermExpr]
+                          ) [Assignment]
+                        ) [MatchedDesignatorStatement]
+                      ) [MatchedStmt]
+                    ) [Statements]
+                    MatchedStmt(
+                      MatchedDesignatorStatement(
+                        Assignment(
+                          Designator(
+                           niz
+                            NoDesignatorOptions(
+                            ) [NoDesignatorOptions]
+                          ) [Designator]
+                          TermExpr(
+                            Term(
+                              FactorNewArr(
+                                Type(
+                                 int
+                                ) [Type]
+                                LsquareNt(
+                                ) [LsquareNt]
+                                DuzinaNiza(
+                                  AddExpr(
+                                    AddExpr(
+                                      AddExpr(
+                                        TermExpr(
+                                          Term(
+                                            Const(
+                                             1
+                                            ) [Const]
+                                            NoFactor(
+                                            ) [NoFactor]
+                                          ) [Term]
+                                        ) [TermExpr]
+                                        Plusop(
+                                        ) [Plusop]
+                                        Term(
+                                          Const(
+                                           3
+                                          ) [Const]
+                                          NoFactor(
+                                          ) [NoFactor]
+                                        ) [Term]
+                                      ) [AddExpr]
+                                      Plusop(
+                                      ) [Plusop]
+                                      Term(
+                                        Const(
+                                         4
+                                        ) [Const]
+                                        NoFactor(
+                                        ) [NoFactor]
+                                      ) [Term]
+                                    ) [AddExpr]
+                                    Plusop(
+                                    ) [Plusop]
+                                    Term(
+                                      Const(
+                                       5
+                                      ) [Const]
+                                      NoFactor(
+                                      ) [NoFactor]
+                                    ) [Term]
+                                  ) [AddExpr]
+                                ) [DuzinaNiza]
+                              ) [FactorNewArr]
+                              NoFactor(
+                              ) [NoFactor]
+                            ) [Term]
+                          ) [TermExpr]
+                        ) [Assignment]
+                      ) [MatchedDesignatorStatement]
+                    ) [MatchedStmt]
+                  ) [Statements]
+                  MatchedStmt(
+                    MatchedDesignatorStatement(
+                      Assignment(
+                        Designator(
+                         niz
+                          SquareDesignatorOption(
+                            TermExpr(
+                              Term(
+                                Const(
+                                 10
+                                ) [Const]
+                                NoFactor(
+                                ) [NoFactor]
+                              ) [Term]
+                            ) [TermExpr]
+                          ) [SquareDesignatorOption]
+                        ) [Designator]
+                        TermExpr(
+                          Term(
+                            Const(
+                             99
+                            ) [Const]
+                            NoFactor(
+                            ) [NoFactor]
+                          ) [Term]
+                        ) [TermExpr]
+                      ) [Assignment]
+                    ) [MatchedDesignatorStatement]
+                  ) [MatchedStmt]
+                ) [Statements]
+                MatchedStmt(
+                  PrintStmt(
+                    TermExpr(
+                      Term(
+                        Var(
+                          Designator(
+                           niz
+                            SquareDesignatorOption(
+                              AddExpr(
+                                TermExpr(
+                                  Term(
+                                    Var(
+                                      Designator(
+                                       IncrementType
+                                        DotDesignatorOption(
+                                         DOUBLE_VALUE
+                                        ) [DotDesignatorOption]
+                                      ) [Designator]
+                                    ) [Var]
+                                    NoFactor(
+                                    ) [NoFactor]
+                                  ) [Term]
+                                ) [TermExpr]
+                                Plusop(
+                                ) [Plusop]
+                                Term(
+                                  Const(
+                                   9
+                                  ) [Const]
+                                  NoFactor(
+                                  ) [NoFactor]
+                                ) [Term]
+                              ) [AddExpr]
+                            ) [SquareDesignatorOption]
+                          ) [Designator]
+                        ) [Var]
+                        NoFactor(
+                        ) [NoFactor]
+                      ) [Term]
+                    ) [TermExpr]
+                  ) [PrintStmt]
+                ) [MatchedStmt]
+              ) [Statements]
+              MatchedStmt(
+                PrintStmt(
+                  TermExpr(
+                    Term(
+                      Var(
+                        Designator(
+                         niz
+                          SquareDesignatorOption(
+                            TermExpr(
+                              Term(
+                                Const(
+                                 0
+                                ) [Const]
+                                NoFactor(
+                                ) [NoFactor]
+                              ) [Term]
+                            ) [TermExpr]
+                          ) [SquareDesignatorOption]
+                        ) [Designator]
+                      ) [Var]
+                      NoFactor(
+                      ) [NoFactor]
+                    ) [Term]
+                  ) [TermExpr]
+                ) [PrintStmt]
+              ) [MatchedStmt]
+            ) [Statements]
+            MatchedStmt(
+              MatchedDesignatorStatement(
+                Assignment(
+                  Designator(
+                   niz
+                    NoDesignatorOptions(
+                    ) [NoDesignatorOptions]
+                  ) [Designator]
+                  TermExpr(
+                    Term(
+                      FactorNewArrInit(
+                        Type(
+                         int
+                        ) [Type]
+                        LsquareNt(
+                        ) [LsquareNt]
+                        DuzinaNiza(
+                          TermExpr(
+                            Term(
+                              Var(
+                                Designator(
+                                 IncrementType
+                                  DotDesignatorOption(
+                                   trojka
+                                  ) [DotDesignatorOption]
+                                ) [Designator]
+                              ) [Var]
+                              NoFactor(
+                              ) [NoFactor]
+                            ) [Term]
+                          ) [TermExpr]
+                        ) [DuzinaNiza]
+                        NewInitListYes(
+                          InitListYes(
+                            InitListYes(
+                              InitListNo(
+                                TermExpr(
+                                  Term(
+                                    Const(
+                                     1
+                                    ) [Const]
+                                    NoFactor(
+                                    ) [NoFactor]
+                                  ) [Term]
+                                ) [TermExpr]
+                              ) [InitListNo]
+                              TermExpr(
+                                Term(
+                                  Const(
+                                   2
+                                  ) [Const]
+                                  NoFactor(
+                                  ) [NoFactor]
+                                ) [Term]
+                              ) [TermExpr]
+                            ) [InitListYes]
+                            TermExpr(
+                              Term(
+                                Const(
+                                 3
+                                ) [Const]
+                                NoFactor(
+                                ) [NoFactor]
+                              ) [Term]
+                            ) [TermExpr]
+                          ) [InitListYes]
+                        ) [NewInitListYes]
+                      ) [FactorNewArrInit]
+                      NoFactor(
+                      ) [NoFactor]
+                    ) [Term]
+                  ) [TermExpr]
+                ) [Assignment]
+              ) [MatchedDesignatorStatement]
+            ) [MatchedStmt]
+          ) [Statements]
+          MatchedStmt(
+            PrintStmt(
+              TermExpr(
+                Term(
+                  Var(
+                    Designator(
+                     niz
+                      SquareDesignatorOption(
+                        TermExpr(
+                          Term(
+                            Const(
+                             1
+                            ) [Const]
+                            NoFactor(
+                            ) [NoFactor]
+                          ) [Term]
+                        ) [TermExpr]
+                      ) [SquareDesignatorOption]
+                    ) [Designator]
+                  ) [Var]
+                  NoFactor(
+                  ) [NoFactor]
+                ) [Term]
+              ) [TermExpr]
+            ) [PrintStmt]
+          ) [MatchedStmt]
+        ) [Statements]
+        MatchedStmt(
+          PrintStmt(
+            TermExpr(
+              Term(
+                Var(
+                  Designator(
+                   niz
+                    SquareDesignatorOption(
+                      TermExpr(
+                        Term(
+                          Const(
+                           2
+                          ) [Const]
+                          NoFactor(
+                          ) [NoFactor]
+                        ) [Term]
+                      ) [TermExpr]
+                    ) [SquareDesignatorOption]
+                  ) [Designator]
+                ) [Var]
+                NoFactor(
+                ) [NoFactor]
+              ) [Term]
+            ) [TermExpr]
+          ) [PrintStmt]
+        ) [MatchedStmt]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  15:12:03,240 - Deklarisano nabrajanje IncrementType na liniji 5
+INFO  15:12:03,240 - Deklarisan element nabrajanja BY_ONE na liniji 5
+INFO  15:12:03,240 - Deklarisan element nabrajanja DOUBLE_VALUE na liniji 5
+INFO  15:12:03,241 - Deklarisan element nabrajanja trojka na liniji 5
+INFO  15:12:03,241 - Deklarisana konstanta a na liniji 7
+INFO  15:12:03,241 - Deklarisana konstanta b na liniji 8
+INFO  15:12:03,241 - Deklarisana promenljiva i na liniji 9
+INFO  15:12:03,241 - Deklarisan niz niz na liniji 10
+INFO  15:12:03,241 - Obradjuje se funkcija main na liniji 13
+INFO  15:12:03,241 - Upotreba globalne promenljive niz na liniji 15, Var niz: Arr of int, 1, 0 
+INFO  15:12:03,241 - Upotreba globalne konstante a na liniji 15, Con a: int, 2, 0 
+INFO  15:12:03,241 - Upotreba globalne promenljive niz na liniji 17, Var niz: Arr of int, 1, 0 
+INFO  15:12:03,241 - Upotreba globalne konstante a na liniji 17, Con a: int, 2, 0 
+INFO  15:12:03,241 - Upotreba globalne promenljive niz na liniji 19, Var niz: Arr of int, 1, 0 
+INFO  15:12:03,241 - Upotreba globalne promenljive niz na liniji 21, Var niz: Arr of int, 1, 0 
+INFO  15:12:03,241 - Upotreba elementa niza niz na liniji 21, : int, 1, 0 
+INFO  15:12:03,241 - Upotreba konstante DOUBLE_VALUE nabrajanja IncrementType na liniji 23, Type IncrementType: , 0, 0 
+INFO  15:12:03,241 - Upotreba globalne promenljive niz na liniji 23, Var niz: Arr of int, 1, 0 
+INFO  15:12:03,241 - Upotreba elementa niza niz na liniji 23, : int, 1, 0 
+INFO  15:12:03,241 - Upotreba globalne promenljive niz na liniji 24, Var niz: Arr of int, 1, 0 
+INFO  15:12:03,241 - Upotreba elementa niza niz na liniji 24, : int, 1, 0 
+INFO  15:12:03,241 - Upotreba globalne promenljive niz na liniji 26, Var niz: Arr of int, 1, 0 
+INFO  15:12:03,242 - Upotreba konstante trojka nabrajanja IncrementType na liniji 26, Type IncrementType: , 0, 0 
+INFO  15:12:03,242 - Upotreba globalne promenljive niz na liniji 27, Var niz: Arr of int, 1, 0 
+INFO  15:12:03,242 - Upotreba elementa niza niz na liniji 27, : int, 1, 0 
+INFO  15:12:03,242 - Upotreba globalne promenljive niz na liniji 28, Var niz: Arr of int, 1, 0 
+INFO  15:12:03,242 - Upotreba elementa niza niz na liniji 28, : int, 1, 0 
+INFO  15:12:03,242 - Print calls = 4
+INFO  15:12:03,242 - Globalnih promenljivih = 1
+INFO  15:12:03,242 - Globalnih konstanti = 2
+INFO  15:12:03,242 - Globalnih nizova = 1
+INFO  15:12:03,242 - Broj metoda = 1
+INFO  15:12:03,242 - Broj enuma = 1
+INFO  15:12:03,242 - Generating bytecode file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  15:12:03,246 - Parsiranje uspesno zavrseno!

@@ -1,0 +1,344 @@
+INFO  15:16:14,430 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  15:16:14,460 - #2 program
+INFO  15:16:14,461 - #39 readtest
+INFO  15:16:14,461 - #39 int
+INFO  15:16:14,461 - #39 x
+INFO  15:16:14,461 - #8 ,
+INFO  15:16:14,462 - #39 y
+INFO  15:16:14,462 - #5 ;
+INFO  15:16:14,462 - #3 {
+INFO  15:16:14,463 - #39 int
+INFO  15:16:14,463 - #39 saberi
+INFO  15:16:14,463 - #6 (
+INFO  15:16:14,463 - #39 int
+INFO  15:16:14,463 - #39 x
+INFO  15:16:14,463 - #8 ,
+INFO  15:16:14,464 - #39 int
+INFO  15:16:14,464 - #39 k
+INFO  15:16:14,464 - #8 ,
+INFO  15:16:14,464 - #39 int
+INFO  15:16:14,465 - #39 z
+INFO  15:16:14,465 - #7 )
+INFO  15:16:14,465 - #3 {
+INFO  15:16:14,467 - #10 return
+INFO  15:16:14,467 - #39 x
+INFO  15:16:14,467 - #11 +
+INFO  15:16:14,468 - #39 k
+INFO  15:16:14,469 - #11 +
+INFO  15:16:14,469 - #39 z
+INFO  15:16:14,469 - #5 ;
+INFO  15:16:14,469 - #4 }
+INFO  15:16:14,469 - #13 void
+INFO  15:16:14,469 - #39 main
+INFO  15:16:14,469 - #6 (
+INFO  15:16:14,470 - #7 )
+INFO  15:16:14,470 - #39 int
+INFO  15:16:14,470 - #39 z
+INFO  15:16:14,470 - #5 ;
+INFO  15:16:14,470 - #3 {
+INFO  15:16:14,470 - #14 read
+INFO  15:16:14,470 - #6 (
+INFO  15:16:14,470 - #39 x
+INFO  15:16:14,471 - #7 )
+INFO  15:16:14,471 - #5 ;
+INFO  15:16:14,471 - #14 read
+INFO  15:16:14,471 - #6 (
+INFO  15:16:14,471 - #39 y
+INFO  15:16:14,471 - #7 )
+INFO  15:16:14,471 - #5 ;
+INFO  15:16:14,471 - #14 read
+INFO  15:16:14,471 - #6 (
+INFO  15:16:14,471 - #39 z
+INFO  15:16:14,471 - #7 )
+INFO  15:16:14,471 - #5 ;
+INFO  15:16:14,471 - #9 print
+INFO  15:16:14,471 - #6 (
+INFO  15:16:14,471 - #39 saberi
+INFO  15:16:14,471 - #6 (
+INFO  15:16:14,472 - #39 x
+INFO  15:16:14,472 - #8 ,
+INFO  15:16:14,472 - #39 y
+INFO  15:16:14,472 - #8 ,
+INFO  15:16:14,472 - #39 z
+INFO  15:16:14,472 - #7 )
+INFO  15:16:14,472 - #7 )
+INFO  15:16:14,472 - #5 ;
+INFO  15:16:14,472 - #4 }
+INFO  15:16:14,472 - #4 }
+INFO  15:16:14,474 - Program(
+  ProgName(
+   readtest
+  ) [ProgName]
+  VarDeclarations(
+    NoVarDecl(
+    ) [NoVarDecl]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+     x
+      ArrayOptN(
+      ) [ArrayOptN]
+      VarListY(
+        VarListN(
+        ) [VarListN]
+       y
+        ArrayOptN(
+        ) [ArrayOptN]
+      ) [VarListY]
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    MethodDeclarations(
+      NoMethodDecl(
+      ) [NoMethodDecl]
+      MethodDecl(
+        MethodTypeName(
+          Type(
+           int
+          ) [Type]
+         saberi
+        ) [MethodTypeName]
+        FormParams(
+          FormalParamDecls(
+            FormalParamDecls(
+              SingleFormalParamDecl(
+                FormalParamDecl(
+                  Type(
+                   int
+                  ) [Type]
+                 x
+                  ArrayForParN(
+                  ) [ArrayForParN]
+                ) [FormalParamDecl]
+              ) [SingleFormalParamDecl]
+              FormalParamDecl(
+                Type(
+                 int
+                ) [Type]
+               k
+                ArrayForParN(
+                ) [ArrayForParN]
+              ) [FormalParamDecl]
+            ) [FormalParamDecls]
+            FormalParamDecl(
+              Type(
+               int
+              ) [Type]
+             z
+              ArrayForParN(
+              ) [ArrayForParN]
+            ) [FormalParamDecl]
+          ) [FormalParamDecls]
+        ) [FormParams]
+        NoVarDecl(
+        ) [NoVarDecl]
+        Statements(
+          NoStmt(
+          ) [NoStmt]
+          MatchedStmt(
+            ReturnExpr(
+              AddExpr(
+                AddExpr(
+                  TermExpr(
+                    Term(
+                      Var(
+                        Designator(
+                         x
+                          NoDesignatorOptions(
+                          ) [NoDesignatorOptions]
+                        ) [Designator]
+                      ) [Var]
+                      NoFactor(
+                      ) [NoFactor]
+                    ) [Term]
+                  ) [TermExpr]
+                  Plusop(
+                  ) [Plusop]
+                  Term(
+                    Var(
+                      Designator(
+                       k
+                        NoDesignatorOptions(
+                        ) [NoDesignatorOptions]
+                      ) [Designator]
+                    ) [Var]
+                    NoFactor(
+                    ) [NoFactor]
+                  ) [Term]
+                ) [AddExpr]
+                Plusop(
+                ) [Plusop]
+                Term(
+                  Var(
+                    Designator(
+                     z
+                      NoDesignatorOptions(
+                      ) [NoDesignatorOptions]
+                    ) [Designator]
+                  ) [Var]
+                  NoFactor(
+                  ) [NoFactor]
+                ) [Term]
+              ) [AddExpr]
+            ) [ReturnExpr]
+          ) [MatchedStmt]
+        ) [Statements]
+      ) [MethodDecl]
+    ) [MethodDeclarations]
+    MethodDecl(
+      MethodTypeVoid(
+       main
+      ) [MethodTypeVoid]
+      NoFormParam(
+      ) [NoFormParam]
+      VarDeclarations(
+        NoVarDecl(
+        ) [NoVarDecl]
+        VarDecl(
+          Type(
+           int
+          ) [Type]
+         z
+          ArrayOptN(
+          ) [ArrayOptN]
+          VarListN(
+          ) [VarListN]
+        ) [VarDecl]
+      ) [VarDeclarations]
+      Statements(
+        Statements(
+          Statements(
+            Statements(
+              NoStmt(
+              ) [NoStmt]
+              MatchedStmt(
+                MatchedRead(
+                  Rd(
+                  ) [Rd]
+                  Designator(
+                   x
+                    NoDesignatorOptions(
+                    ) [NoDesignatorOptions]
+                  ) [Designator]
+                ) [MatchedRead]
+              ) [MatchedStmt]
+            ) [Statements]
+            MatchedStmt(
+              MatchedRead(
+                Rd(
+                ) [Rd]
+                Designator(
+                 y
+                  NoDesignatorOptions(
+                  ) [NoDesignatorOptions]
+                ) [Designator]
+              ) [MatchedRead]
+            ) [MatchedStmt]
+          ) [Statements]
+          MatchedStmt(
+            MatchedRead(
+              Rd(
+              ) [Rd]
+              Designator(
+               z
+                NoDesignatorOptions(
+                ) [NoDesignatorOptions]
+              ) [Designator]
+            ) [MatchedRead]
+          ) [MatchedStmt]
+        ) [Statements]
+        MatchedStmt(
+          PrintStmt(
+            TermExpr(
+              Term(
+                FuncCall(
+                  Designator(
+                   saberi
+                    NoDesignatorOptions(
+                    ) [NoDesignatorOptions]
+                  ) [Designator]
+                  Actuals(
+                    ActualParams(
+                      ActualParams(
+                        ActualParam(
+                          TermExpr(
+                            Term(
+                              Var(
+                                Designator(
+                                 x
+                                  NoDesignatorOptions(
+                                  ) [NoDesignatorOptions]
+                                ) [Designator]
+                              ) [Var]
+                              NoFactor(
+                              ) [NoFactor]
+                            ) [Term]
+                          ) [TermExpr]
+                        ) [ActualParam]
+                        TermExpr(
+                          Term(
+                            Var(
+                              Designator(
+                               y
+                                NoDesignatorOptions(
+                                ) [NoDesignatorOptions]
+                              ) [Designator]
+                            ) [Var]
+                            NoFactor(
+                            ) [NoFactor]
+                          ) [Term]
+                        ) [TermExpr]
+                      ) [ActualParams]
+                      TermExpr(
+                        Term(
+                          Var(
+                            Designator(
+                             z
+                              NoDesignatorOptions(
+                              ) [NoDesignatorOptions]
+                            ) [Designator]
+                          ) [Var]
+                          NoFactor(
+                          ) [NoFactor]
+                        ) [Term]
+                      ) [TermExpr]
+                    ) [ActualParams]
+                  ) [Actuals]
+                ) [FuncCall]
+                NoFactor(
+                ) [NoFactor]
+              ) [Term]
+            ) [TermExpr]
+          ) [PrintStmt]
+        ) [MatchedStmt]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  15:16:14,488 - Deklarisana promenljiva y na liniji 3
+INFO  15:16:14,488 - Deklarisana promenljiva x na liniji 3
+INFO  15:16:14,488 - Obradjuje se funkcija saberi na liniji 6
+INFO  15:16:14,488 - Deklarisan formalni parametar x na liniji 6
+INFO  15:16:14,488 - Deklarisan formalni parametar k na liniji 6
+INFO  15:16:14,488 - Deklarisan formalni parametar z na liniji 6
+INFO  15:16:14,488 - Upotreba formalnog parametra x na liniji 7, Var x: int, 0, 1 
+INFO  15:16:14,488 - Upotreba formalnog parametra k na liniji 7, Var k: int, 1, 1 
+INFO  15:16:14,488 - Upotreba formalnog parametra z na liniji 7, Var z: int, 2, 1 
+INFO  15:16:14,488 - Obradjuje se funkcija main na liniji 10
+INFO  15:16:14,488 - Deklarisana promenljiva z na liniji 11
+INFO  15:16:14,489 - Upotreba globalne promenljive x na liniji 13, Var x: int, 1, 0 
+INFO  15:16:14,489 - Upotreba globalne promenljive y na liniji 14, Var y: int, 0, 0 
+INFO  15:16:14,489 - Upotreba lokalne promenljive z na liniji 15, Var z: int, 0, 1 
+INFO  15:16:14,489 - Upotreba globalne promenljive x na liniji 16, Var x: int, 1, 0 
+INFO  15:16:14,489 - Upotreba globalne promenljive y na liniji 16, Var y: int, 0, 0 
+INFO  15:16:14,489 - Upotreba lokalne promenljive z na liniji 16, Var z: int, 0, 1 
+INFO  15:16:14,489 - Pronadjen poziv funkcije saberi na liniji 16, Meth saberi: int, 0, 3 
+INFO  15:16:14,489 - Print calls = 1
+INFO  15:16:14,489 - Globalnih promenljivih = 2
+INFO  15:16:14,489 - Globalnih konstanti = 0
+INFO  15:16:14,489 - Globalnih nizova = 0
+INFO  15:16:14,489 - Broj metoda = 2
+INFO  15:16:14,489 - Broj enuma = 0
+INFO  15:16:14,490 - Generating bytecode file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  15:16:14,494 - Parsiranje uspesno zavrseno!

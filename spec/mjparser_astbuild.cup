@@ -239,13 +239,14 @@ Matched ::=	(ErrAssignment) error SEMI
 			  |
 			  (PrintStmtTwo) PRINT LPAREN Expr:ex COMMA NUMBER:num RPAREN SEMI {: RESULT=new PrintStmtTwo(ex, num); RESULT.setLine(exleft); :}
 			  |
-			  (MatchedBraces)LBRACE Statement:S1 StatementList:S2 RBRACE {: RESULT=new MatchedBraces(S1, S2); RESULT.setLine(S1left); :}
+			  (MatchedBraces)LBRACE StatementList:S1 RBRACE {: RESULT=new MatchedBraces(S1); RESULT.setLine(S1left); :}
 			  |
 			  (MatchedContinue) CONTINUE SEMI {: RESULT=new MatchedContinue(); :}
 			  |
 			  (MatchedBreak) BREAK SEMI {: RESULT=new MatchedBreak(); :}
 			  |
 			  (MatchedFor) For:F1 LPAREN ForDesignator:F2 SEMI BegForCond:B3 ForCondition:F4 SEMI Beginc:B5 ForDesignator:F6 Endinc:E7 RPAREN Begfor:B8 Matched:M9 Endfor:E10 {: RESULT=new MatchedFor(F1, F2, B3, F4, B5, F6, E7, B8, M9, E10); RESULT.setLine(F1left); :}
+			  
 			  ;
 			  
 Rd ::= (Rd) READ {: RESULT=new Rd(); :};
@@ -283,7 +284,7 @@ ForCondition ::= (ForCond) Condition:C1 {: RESULT=new ForCond(C1); RESULT.setLin
 Condition ::= (Condit) CondTerm:C1 CondTermList:C2 {: RESULT=new Condit(C1, C2); RESULT.setLine(C1left); :}			
 				|
 				(ConditError) error
-				{: parser.log.debug("Uspesan oporavak od if greske."); :} {: RESULT=new ConditError(); :}
+				{: parser.log.debug("Uspesan oporavak od greske u logickom izrazu u if."); :} {: RESULT=new ConditError(); :}
 				;
 
 CondTermList ::= (CondTerms) CondTermList:C1 OR Andbegadr:A2 CondTerm:C3 {: RESULT=new CondTerms(C1, A2, C3); RESULT.setLine(C1left); :}

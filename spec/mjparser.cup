@@ -227,13 +227,14 @@ Matched ::=	(ErrAssignment) error SEMI
 			  |
 			  (PrintStmtTwo) PRINT LPAREN Expr:ex COMMA NUMBER:num RPAREN SEMI
 			  |
-			  (MatchedBraces)LBRACE Statement StatementList RBRACE
+			  (MatchedBraces)LBRACE StatementList RBRACE
 			  |
 			  (MatchedContinue) CONTINUE SEMI
 			  |
 			  (MatchedBreak) BREAK SEMI
 			  |
 			  (MatchedFor) For LPAREN ForDesignator SEMI BegForCond ForCondition SEMI Beginc ForDesignator Endinc RPAREN Begfor Matched Endfor
+			  
 			  ;
 			  
 Rd ::= (Rd) READ;
@@ -271,7 +272,7 @@ ForCondition ::= (ForCond) Condition
 Condition ::= (Condit) CondTerm CondTermList			
 				|
 				(ConditError) error
-				{: parser.log.debug("Uspesan oporavak od if greske."); :}
+				{: parser.log.debug("Uspesan oporavak od greske u logickom izrazu u if."); :}
 				;
 
 CondTermList ::= (CondTerms) CondTermList OR Andbegadr CondTerm

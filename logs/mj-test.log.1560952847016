@@ -1,0 +1,71 @@
+INFO  16:00:19,602 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  16:00:19,628 - #2 program
+INFO  16:00:19,629 - #39 iffortest
+INFO  16:00:19,629 - #39 int
+INFO  16:00:19,629 - #38 23
+ERROR 16:00:19,629 - 
+Sintaksna greska na liniji 3
+INFO  16:00:19,630 - #39 p
+INFO  16:00:19,630 - #8 ,
+INFO  16:00:19,630 - #39 a
+INFO  16:00:19,630 - #5 ;
+INFO  16:00:19,630 - #39 char
+INFO  16:00:19,630 - #39 r
+INFO  16:00:19,631 - #11 +
+INFO  16:00:19,631 - #38 3
+INFO  16:00:19,631 - #5 ;
+INFO  16:00:19,631 - #3 {
+INFO  16:00:19,631 - #13 void
+INFO  16:00:19,631 - #39 main
+INFO  16:00:19,631 - #6 (
+DEBUG 16:00:19,631 - Uspesan oporavak od definicije promenljive.
+INFO  16:00:19,632 - #7 )
+INFO  16:00:19,632 - #39 int
+INFO  16:00:19,633 - #39 z
+INFO  16:00:19,633 - #5 ;
+INFO  16:00:19,634 - #3 {
+INFO  16:00:19,634 - #4 }
+INFO  16:00:19,634 - #4 }
+INFO  16:00:19,635 - Program(
+  ProgName(
+   iffortest
+  ) [ProgName]
+  ErrVarDecl(
+  ) [ErrVarDecl]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      MethodTypeVoid(
+       main
+      ) [MethodTypeVoid]
+      NoFormParam(
+      ) [NoFormParam]
+      VarDeclarations(
+        NoVarDecl(
+        ) [NoVarDecl]
+        VarDecl(
+          Type(
+           int
+          ) [Type]
+         z
+          ArrayOptN(
+          ) [ArrayOptN]
+          VarListN(
+          ) [VarListN]
+        ) [VarDecl]
+      ) [VarDeclarations]
+      NoStmt(
+      ) [NoStmt]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  16:00:19,647 - Obradjuje se funkcija main na liniji 8
+INFO  16:00:19,648 - Deklarisana promenljiva z na liniji 9
+INFO  16:00:19,648 - Print calls = 0
+INFO  16:00:19,648 - Globalnih promenljivih = 0
+INFO  16:00:19,648 - Globalnih konstanti = 0
+INFO  16:00:19,648 - Globalnih nizova = 0
+INFO  16:00:19,648 - Broj metoda = 1
+INFO  16:00:19,648 - Broj enuma = 0
+ERROR 16:00:19,649 - Parsiranje NIJE uspesno zavrseno!

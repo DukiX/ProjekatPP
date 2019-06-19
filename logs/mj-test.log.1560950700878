@@ -1,0 +1,240 @@
+INFO  15:24:55,400 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  15:24:55,426 - #2 program
+INFO  15:24:55,426 - #39 iftest
+INFO  15:24:55,426 - #39 int
+INFO  15:24:55,427 - #39 x
+INFO  15:24:55,427 - #8 ,
+INFO  15:24:55,428 - #39 y
+INFO  15:24:55,428 - #5 ;
+INFO  15:24:55,428 - #39 bool
+INFO  15:24:55,429 - #39 t
+INFO  15:24:55,429 - #5 ;
+INFO  15:24:55,429 - #3 {
+INFO  15:24:55,429 - #13 void
+INFO  15:24:55,429 - #39 main
+INFO  15:24:55,429 - #6 (
+INFO  15:24:55,429 - #7 )
+INFO  15:24:55,430 - #39 int
+INFO  15:24:55,430 - #39 z
+INFO  15:24:55,430 - #5 ;
+INFO  15:24:55,430 - #3 {
+INFO  15:24:55,430 - #39 x
+INFO  15:24:55,430 - #12 =
+INFO  15:24:55,431 - #38 4
+INFO  15:24:55,433 - #5 ;
+INFO  15:24:55,434 - #39 y
+INFO  15:24:55,434 - #12 =
+INFO  15:24:55,434 - #38 5
+INFO  15:24:55,434 - #5 ;
+INFO  15:24:55,434 - #39 t
+INFO  15:24:55,434 - #12 =
+INFO  15:24:55,435 - #30 false
+INFO  15:24:55,435 - #5 ;
+INFO  15:24:55,435 - #23 for
+INFO  15:24:55,435 - #6 (
+INFO  15:24:55,436 - #5 ;
+INFO  15:24:55,436 - #5 ;
+INFO  15:24:55,437 - #7 )
+INFO  15:24:55,437 - #3 {
+INFO  15:24:55,438 - #39 x
+INFO  15:24:55,438 - #12 =
+INFO  15:24:55,438 - #38 4
+INFO  15:24:55,438 - #5 ;
+INFO  15:24:55,438 - #4 }
+INFO  15:24:55,438 - #4 }
+INFO  15:24:55,439 - #4 }
+INFO  15:24:55,440 - Program(
+  ProgName(
+   iftest
+  ) [ProgName]
+  VarDeclarations(
+    VarDeclarations(
+      NoVarDecl(
+      ) [NoVarDecl]
+      VarDecl(
+        Type(
+         int
+        ) [Type]
+       x
+        ArrayOptN(
+        ) [ArrayOptN]
+        VarListY(
+          VarListN(
+          ) [VarListN]
+         y
+          ArrayOptN(
+          ) [ArrayOptN]
+        ) [VarListY]
+      ) [VarDecl]
+    ) [VarDeclarations]
+    VarDecl(
+      Type(
+       bool
+      ) [Type]
+     t
+      ArrayOptN(
+      ) [ArrayOptN]
+      VarListN(
+      ) [VarListN]
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      MethodTypeVoid(
+       main
+      ) [MethodTypeVoid]
+      NoFormParam(
+      ) [NoFormParam]
+      VarDeclarations(
+        NoVarDecl(
+        ) [NoVarDecl]
+        VarDecl(
+          Type(
+           int
+          ) [Type]
+         z
+          ArrayOptN(
+          ) [ArrayOptN]
+          VarListN(
+          ) [VarListN]
+        ) [VarDecl]
+      ) [VarDeclarations]
+      Statements(
+        Statements(
+          Statements(
+            Statements(
+              NoStmt(
+              ) [NoStmt]
+              MatchedStmt(
+                MatchedDesignatorStatement(
+                  Assignment(
+                    Designator(
+                     x
+                      NoDesignatorOptions(
+                      ) [NoDesignatorOptions]
+                    ) [Designator]
+                    TermExpr(
+                      Term(
+                        Const(
+                         4
+                        ) [Const]
+                        NoFactor(
+                        ) [NoFactor]
+                      ) [Term]
+                    ) [TermExpr]
+                  ) [Assignment]
+                ) [MatchedDesignatorStatement]
+              ) [MatchedStmt]
+            ) [Statements]
+            MatchedStmt(
+              MatchedDesignatorStatement(
+                Assignment(
+                  Designator(
+                   y
+                    NoDesignatorOptions(
+                    ) [NoDesignatorOptions]
+                  ) [Designator]
+                  TermExpr(
+                    Term(
+                      Const(
+                       5
+                      ) [Const]
+                      NoFactor(
+                      ) [NoFactor]
+                    ) [Term]
+                  ) [TermExpr]
+                ) [Assignment]
+              ) [MatchedDesignatorStatement]
+            ) [MatchedStmt]
+          ) [Statements]
+          MatchedStmt(
+            MatchedDesignatorStatement(
+              Assignment(
+                Designator(
+                 t
+                  NoDesignatorOptions(
+                  ) [NoDesignatorOptions]
+                ) [Designator]
+                TermExpr(
+                  Term(
+                    FactorBool(
+                      BoolFalse(
+                      ) [BoolFalse]
+                    ) [FactorBool]
+                    NoFactor(
+                    ) [NoFactor]
+                  ) [Term]
+                ) [TermExpr]
+              ) [Assignment]
+            ) [MatchedDesignatorStatement]
+          ) [MatchedStmt]
+        ) [Statements]
+        MatchedStmt(
+          MatchedFor(
+            ForFor(
+            ) [ForFor]
+            ForDesignatorDerived1(
+            ) [ForDesignatorDerived1]
+            BegForCond(
+            ) [BegForCond]
+            EmptyForCond(
+            ) [EmptyForCond]
+            Beginc(
+            ) [Beginc]
+            ForDesignatorDerived1(
+            ) [ForDesignatorDerived1]
+            Endinc(
+            ) [Endinc]
+            Begfor(
+            ) [Begfor]
+            MatchedBraces(
+              MatchedStmt(
+                MatchedDesignatorStatement(
+                  Assignment(
+                    Designator(
+                     x
+                      NoDesignatorOptions(
+                      ) [NoDesignatorOptions]
+                    ) [Designator]
+                    TermExpr(
+                      Term(
+                        Const(
+                         4
+                        ) [Const]
+                        NoFactor(
+                        ) [NoFactor]
+                      ) [Term]
+                    ) [TermExpr]
+                  ) [Assignment]
+                ) [MatchedDesignatorStatement]
+              ) [MatchedStmt]
+              NoStmt(
+              ) [NoStmt]
+            ) [MatchedBraces]
+            Endfor(
+            ) [Endfor]
+          ) [MatchedFor]
+        ) [MatchedStmt]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  15:24:55,454 - Deklarisana promenljiva y na liniji 3
+INFO  15:24:55,454 - Deklarisana promenljiva x na liniji 3
+INFO  15:24:55,455 - Deklarisana promenljiva t na liniji 4
+INFO  15:24:55,455 - Obradjuje se funkcija main na liniji 8
+INFO  15:24:55,455 - Deklarisana promenljiva z na liniji 9
+INFO  15:24:55,455 - Upotreba globalne promenljive x na liniji 11, Var x: int, 1, 0 
+INFO  15:24:55,455 - Upotreba globalne promenljive y na liniji 12, Var y: int, 0, 0 
+INFO  15:24:55,455 - Upotreba globalne promenljive t na liniji 13, Var t: , 2, 0 
+INFO  15:24:55,456 - Upotreba globalne promenljive x na liniji 15, Var x: int, 1, 0 
+INFO  15:24:55,456 - Print calls = 0
+INFO  15:24:55,456 - Globalnih promenljivih = 3
+INFO  15:24:55,456 - Globalnih konstanti = 0
+INFO  15:24:55,456 - Globalnih nizova = 0
+INFO  15:24:55,456 - Broj metoda = 1
+INFO  15:24:55,456 - Broj enuma = 0
+INFO  15:24:55,457 - Generating bytecode file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  15:24:55,461 - Parsiranje uspesno zavrseno!

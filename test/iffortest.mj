@@ -1,0 +1,26 @@
+program iffortest
+
+int x,y;
+bool t;
+
+{
+	
+	void main()
+	int z;
+	{
+		x=4;
+		y=5;
+		t=false;
+		for(;;){
+			x++;
+			if(x==9){}
+			if(x==10) {
+				for(y=0;y<2;y++){
+					print(chr(66+y));
+				}
+				break;
+			}
+			print(x);
+		}
+	}
+}

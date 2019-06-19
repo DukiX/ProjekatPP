@@ -1,0 +1,95 @@
+INFO  15:59:14,024 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  15:59:14,050 - #2 program
+INFO  15:59:14,050 - #39 iffortest
+INFO  15:59:14,050 - #39 int
+INFO  15:59:14,051 - #38 23
+ERROR 15:59:14,051 - 
+Sintaksna greska na liniji 3
+INFO  15:59:14,051 - #39 p
+INFO  15:59:14,051 - #8 ,
+INFO  15:59:14,051 - #39 a
+INFO  15:59:14,052 - #5 ;
+INFO  15:59:14,052 - #3 {
+INFO  15:59:14,052 - #13 void
+INFO  15:59:14,052 - #39 main
+INFO  15:59:14,052 - #6 (
+DEBUG 15:59:14,052 - Uspesan oporavak od definicije promenljive.
+INFO  15:59:14,053 - #7 )
+INFO  15:59:14,053 - #39 int
+INFO  15:59:14,053 - #39 z
+INFO  15:59:14,053 - #5 ;
+INFO  15:59:14,054 - #3 {
+INFO  15:59:14,055 - #39 a
+INFO  15:59:14,055 - #12 =
+INFO  15:59:14,056 - #38 3
+INFO  15:59:14,056 - #5 ;
+INFO  15:59:14,057 - #4 }
+INFO  15:59:14,057 - #4 }
+INFO  15:59:14,058 - Program(
+  ProgName(
+   iffortest
+  ) [ProgName]
+  ErrVarDecl(
+  ) [ErrVarDecl]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      MethodTypeVoid(
+       main
+      ) [MethodTypeVoid]
+      NoFormParam(
+      ) [NoFormParam]
+      VarDeclarations(
+        NoVarDecl(
+        ) [NoVarDecl]
+        VarDecl(
+          Type(
+           int
+          ) [Type]
+         z
+          ArrayOptN(
+          ) [ArrayOptN]
+          VarListN(
+          ) [VarListN]
+        ) [VarDecl]
+      ) [VarDeclarations]
+      Statements(
+        NoStmt(
+        ) [NoStmt]
+        MatchedStmt(
+          MatchedDesignatorStatement(
+            Assignment(
+              Designator(
+               a
+                NoDesignatorOptions(
+                ) [NoDesignatorOptions]
+              ) [Designator]
+              TermExpr(
+                Term(
+                  Const(
+                   3
+                  ) [Const]
+                  NoFactor(
+                  ) [NoFactor]
+                ) [Term]
+              ) [TermExpr]
+            ) [Assignment]
+          ) [MatchedDesignatorStatement]
+        ) [MatchedStmt]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  15:59:14,071 - Obradjuje se funkcija main na liniji 7
+INFO  15:59:14,071 - Deklarisana promenljiva z na liniji 8
+ERROR 15:59:14,071 - Greska na liniji 10 : ime a nije deklarisano! 
+INFO  15:59:14,071 - Upotreba lokalne promenljive a na liniji 10, Var noObj: notype, -1, -1 
+ERROR 15:59:14,071 - Greska na liniji 10 :  nekompatibilni tipovi u dodeli vrednosti 
+INFO  15:59:14,072 - Print calls = 0
+INFO  15:59:14,072 - Globalnih promenljivih = 0
+INFO  15:59:14,072 - Globalnih konstanti = 0
+INFO  15:59:14,072 - Globalnih nizova = 0
+INFO  15:59:14,072 - Broj metoda = 1
+INFO  15:59:14,072 - Broj enuma = 0
+ERROR 15:59:14,073 - Parsiranje NIJE uspesno zavrseno!

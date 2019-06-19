@@ -1,0 +1,100 @@
+INFO  16:00:47,021 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  16:00:47,050 - #2 program
+INFO  16:00:47,050 - #39 iffortest
+INFO  16:00:47,050 - #39 int
+INFO  16:00:47,051 - #38 23
+ERROR 16:00:47,051 - 
+Sintaksna greska na liniji 3
+INFO  16:00:47,051 - #39 p
+INFO  16:00:47,051 - #8 ,
+INFO  16:00:47,051 - #39 a
+INFO  16:00:47,052 - #5 ;
+INFO  16:00:47,052 - #39 char
+INFO  16:00:47,052 - #39 r
+INFO  16:00:47,052 - #11 +
+INFO  16:00:47,052 - #38 3
+INFO  16:00:47,052 - #5 ;
+INFO  16:00:47,052 - #39 int
+INFO  16:00:47,052 - #39 y
+INFO  16:00:47,053 - #5 ;
+INFO  16:00:47,053 - #3 {
+DEBUG 16:00:47,053 - Uspesan oporavak od definicije promenljive.
+INFO  16:00:47,055 - #13 void
+INFO  16:00:47,055 - #39 main
+INFO  16:00:47,055 - #6 (
+INFO  16:00:47,055 - #7 )
+INFO  16:00:47,055 - #39 int
+INFO  16:00:47,056 - #39 z
+INFO  16:00:47,056 - #5 ;
+INFO  16:00:47,056 - #3 {
+INFO  16:00:47,056 - #39 y
+INFO  16:00:47,056 - #12 =
+INFO  16:00:47,057 - #11 +
+ERROR 16:00:47,057 - 
+Sintaksna greska na liniji 11
+INFO  16:00:47,057 - #5 ;
+INFO  16:00:47,057 - #4 }
+INFO  16:00:47,057 - #4 }
+DEBUG 16:00:47,057 - Uspesan oporavak od greske pri dodeli vrednosti.
+INFO  16:00:47,059 - Program(
+  ProgName(
+   iffortest
+  ) [ProgName]
+  VarDeclarations(
+    ErrVarDecl(
+    ) [ErrVarDecl]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+     y
+      ArrayOptN(
+      ) [ArrayOptN]
+      VarListN(
+      ) [VarListN]
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      MethodTypeVoid(
+       main
+      ) [MethodTypeVoid]
+      NoFormParam(
+      ) [NoFormParam]
+      VarDeclarations(
+        NoVarDecl(
+        ) [NoVarDecl]
+        VarDecl(
+          Type(
+           int
+          ) [Type]
+         z
+          ArrayOptN(
+          ) [ArrayOptN]
+          VarListN(
+          ) [VarListN]
+        ) [VarDecl]
+      ) [VarDeclarations]
+      Statements(
+        NoStmt(
+        ) [NoStmt]
+        MatchedStmt(
+          ErrAssignment(
+          ) [ErrAssignment]
+        ) [MatchedStmt]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  16:00:47,071 - Deklarisana promenljiva y na liniji 5
+INFO  16:00:47,071 - Obradjuje se funkcija main na liniji 8
+INFO  16:00:47,071 - Deklarisana promenljiva z na liniji 9
+INFO  16:00:47,071 - Print calls = 0
+INFO  16:00:47,072 - Globalnih promenljivih = 1
+INFO  16:00:47,072 - Globalnih konstanti = 0
+INFO  16:00:47,072 - Globalnih nizova = 0
+INFO  16:00:47,072 - Broj metoda = 1
+INFO  16:00:47,072 - Broj enuma = 0
+ERROR 16:00:47,072 - Parsiranje NIJE uspesno zavrseno!

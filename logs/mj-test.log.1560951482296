@@ -1,0 +1,316 @@
+INFO  15:37:36,085 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  15:37:36,114 - #2 program
+INFO  15:37:36,114 - #39 iftest
+INFO  15:37:36,114 - #39 int
+INFO  15:37:36,114 - #39 x
+INFO  15:37:36,115 - #8 ,
+INFO  15:37:36,116 - #39 y
+INFO  15:37:36,116 - #5 ;
+INFO  15:37:36,116 - #39 bool
+INFO  15:37:36,116 - #39 t
+INFO  15:37:36,116 - #5 ;
+INFO  15:37:36,116 - #3 {
+INFO  15:37:36,117 - #13 void
+INFO  15:37:36,117 - #39 main
+INFO  15:37:36,117 - #6 (
+INFO  15:37:36,117 - #7 )
+INFO  15:37:36,118 - #39 int
+INFO  15:37:36,118 - #39 z
+INFO  15:37:36,118 - #5 ;
+INFO  15:37:36,118 - #3 {
+INFO  15:37:36,118 - #39 x
+INFO  15:37:36,118 - #12 =
+INFO  15:37:36,119 - #38 4
+INFO  15:37:36,121 - #5 ;
+INFO  15:37:36,122 - #39 y
+INFO  15:37:36,122 - #12 =
+INFO  15:37:36,122 - #38 5
+INFO  15:37:36,122 - #5 ;
+INFO  15:37:36,122 - #39 t
+INFO  15:37:36,122 - #12 =
+INFO  15:37:36,122 - #30 false
+INFO  15:37:36,122 - #5 ;
+INFO  15:37:36,123 - #23 for
+INFO  15:37:36,123 - #6 (
+INFO  15:37:36,124 - #5 ;
+INFO  15:37:36,124 - #5 ;
+INFO  15:37:36,125 - #7 )
+INFO  15:37:36,126 - #3 {
+INFO  15:37:36,126 - #39 x
+INFO  15:37:36,126 - #42 ++
+INFO  15:37:36,126 - #5 ;
+INFO  15:37:36,126 - #40 if
+INFO  15:37:36,126 - #6 (
+INFO  15:37:36,127 - #39 x
+INFO  15:37:36,127 - #32 ==
+INFO  15:37:36,127 - #38 10
+INFO  15:37:36,127 - #7 )
+INFO  15:37:36,129 - #24 break
+INFO  15:37:36,129 - #5 ;
+INFO  15:37:36,129 - #9 print
+INFO  15:37:36,130 - #6 (
+INFO  15:37:36,130 - #39 x
+INFO  15:37:36,130 - #7 )
+INFO  15:37:36,130 - #5 ;
+INFO  15:37:36,130 - #4 }
+INFO  15:37:36,130 - #4 }
+INFO  15:37:36,131 - #4 }
+INFO  15:37:36,132 - Program(
+  ProgName(
+   iftest
+  ) [ProgName]
+  VarDeclarations(
+    VarDeclarations(
+      NoVarDecl(
+      ) [NoVarDecl]
+      VarDecl(
+        Type(
+         int
+        ) [Type]
+       x
+        ArrayOptN(
+        ) [ArrayOptN]
+        VarListY(
+          VarListN(
+          ) [VarListN]
+         y
+          ArrayOptN(
+          ) [ArrayOptN]
+        ) [VarListY]
+      ) [VarDecl]
+    ) [VarDeclarations]
+    VarDecl(
+      Type(
+       bool
+      ) [Type]
+     t
+      ArrayOptN(
+      ) [ArrayOptN]
+      VarListN(
+      ) [VarListN]
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      MethodTypeVoid(
+       main
+      ) [MethodTypeVoid]
+      NoFormParam(
+      ) [NoFormParam]
+      VarDeclarations(
+        NoVarDecl(
+        ) [NoVarDecl]
+        VarDecl(
+          Type(
+           int
+          ) [Type]
+         z
+          ArrayOptN(
+          ) [ArrayOptN]
+          VarListN(
+          ) [VarListN]
+        ) [VarDecl]
+      ) [VarDeclarations]
+      Statements(
+        Statements(
+          Statements(
+            Statements(
+              NoStmt(
+              ) [NoStmt]
+              MatchedStmt(
+                MatchedDesignatorStatement(
+                  Assignment(
+                    Designator(
+                     x
+                      NoDesignatorOptions(
+                      ) [NoDesignatorOptions]
+                    ) [Designator]
+                    TermExpr(
+                      Term(
+                        Const(
+                         4
+                        ) [Const]
+                        NoFactor(
+                        ) [NoFactor]
+                      ) [Term]
+                    ) [TermExpr]
+                  ) [Assignment]
+                ) [MatchedDesignatorStatement]
+              ) [MatchedStmt]
+            ) [Statements]
+            MatchedStmt(
+              MatchedDesignatorStatement(
+                Assignment(
+                  Designator(
+                   y
+                    NoDesignatorOptions(
+                    ) [NoDesignatorOptions]
+                  ) [Designator]
+                  TermExpr(
+                    Term(
+                      Const(
+                       5
+                      ) [Const]
+                      NoFactor(
+                      ) [NoFactor]
+                    ) [Term]
+                  ) [TermExpr]
+                ) [Assignment]
+              ) [MatchedDesignatorStatement]
+            ) [MatchedStmt]
+          ) [Statements]
+          MatchedStmt(
+            MatchedDesignatorStatement(
+              Assignment(
+                Designator(
+                 t
+                  NoDesignatorOptions(
+                  ) [NoDesignatorOptions]
+                ) [Designator]
+                TermExpr(
+                  Term(
+                    FactorBool(
+                      BoolFalse(
+                      ) [BoolFalse]
+                    ) [FactorBool]
+                    NoFactor(
+                    ) [NoFactor]
+                  ) [Term]
+                ) [TermExpr]
+              ) [Assignment]
+            ) [MatchedDesignatorStatement]
+          ) [MatchedStmt]
+        ) [Statements]
+        MatchedStmt(
+          MatchedFor(
+            ForFor(
+            ) [ForFor]
+            ForDesignatorDerived1(
+            ) [ForDesignatorDerived1]
+            BegForCond(
+            ) [BegForCond]
+            EmptyForCond(
+            ) [EmptyForCond]
+            Beginc(
+            ) [Beginc]
+            ForDesignatorDerived1(
+            ) [ForDesignatorDerived1]
+            Endinc(
+            ) [Endinc]
+            Begfor(
+            ) [Begfor]
+            MatchedBraces(
+              Statements(
+                Statements(
+                  Statements(
+                    NoStmt(
+                    ) [NoStmt]
+                    MatchedStmt(
+                      MatchedDesignatorStatement(
+                        Increment(
+                          Designator(
+                           x
+                            NoDesignatorOptions(
+                            ) [NoDesignatorOptions]
+                          ) [Designator]
+                        ) [Increment]
+                      ) [MatchedDesignatorStatement]
+                    ) [MatchedStmt]
+                  ) [Statements]
+                  UnmachedStmt(
+                    UnmatchedIf(
+                      Ifif(
+                      ) [Ifif]
+                      Condit(
+                        CondT(
+                          CndFctNotBool(
+                            TermExpr(
+                              Term(
+                                Var(
+                                  Designator(
+                                   x
+                                    NoDesignatorOptions(
+                                    ) [NoDesignatorOptions]
+                                  ) [Designator]
+                                ) [Var]
+                                NoFactor(
+                                ) [NoFactor]
+                              ) [Term]
+                            ) [TermExpr]
+                            Releq(
+                            ) [Releq]
+                            TermExpr(
+                              Term(
+                                Const(
+                                 10
+                                ) [Const]
+                                NoFactor(
+                                ) [NoFactor]
+                              ) [Term]
+                            ) [TermExpr]
+                          ) [CndFctNotBool]
+                          CondFactListDerived1(
+                          ) [CondFactListDerived1]
+                        ) [CondT]
+                        CondTermListDerived1(
+                        ) [CondTermListDerived1]
+                      ) [Condit]
+                      Begif(
+                      ) [Begif]
+                      MatchedStmt(
+                        MatchedBreak(
+                        ) [MatchedBreak]
+                      ) [MatchedStmt]
+                      Endif(
+                      ) [Endif]
+                    ) [UnmatchedIf]
+                  ) [UnmachedStmt]
+                ) [Statements]
+                MatchedStmt(
+                  PrintStmt(
+                    TermExpr(
+                      Term(
+                        Var(
+                          Designator(
+                           x
+                            NoDesignatorOptions(
+                            ) [NoDesignatorOptions]
+                          ) [Designator]
+                        ) [Var]
+                        NoFactor(
+                        ) [NoFactor]
+                      ) [Term]
+                    ) [TermExpr]
+                  ) [PrintStmt]
+                ) [MatchedStmt]
+              ) [Statements]
+            ) [MatchedBraces]
+            Endfor(
+            ) [Endfor]
+          ) [MatchedFor]
+        ) [MatchedStmt]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  15:37:36,147 - Deklarisana promenljiva y na liniji 3
+INFO  15:37:36,147 - Deklarisana promenljiva x na liniji 3
+INFO  15:37:36,147 - Deklarisana promenljiva t na liniji 4
+INFO  15:37:36,147 - Obradjuje se funkcija main na liniji 8
+INFO  15:37:36,148 - Deklarisana promenljiva z na liniji 9
+INFO  15:37:36,148 - Upotreba globalne promenljive x na liniji 11, Var x: int, 1, 0 
+INFO  15:37:36,151 - Upotreba globalne promenljive y na liniji 12, Var y: int, 0, 0 
+INFO  15:37:36,151 - Upotreba globalne promenljive t na liniji 13, Var t: , 2, 0 
+INFO  15:37:36,152 - Upotreba globalne promenljive x na liniji 15, Var x: int, 1, 0 
+INFO  15:37:36,152 - Upotreba globalne promenljive x na liniji 16, Var x: int, 1, 0 
+INFO  15:37:36,152 - Upotreba globalne promenljive x na liniji 17, Var x: int, 1, 0 
+INFO  15:37:36,152 - Print calls = 1
+INFO  15:37:36,152 - Globalnih promenljivih = 3
+INFO  15:37:36,152 - Globalnih konstanti = 0
+INFO  15:37:36,152 - Globalnih nizova = 0
+INFO  15:37:36,152 - Broj metoda = 1
+INFO  15:37:36,152 - Broj enuma = 0
+INFO  15:37:36,153 - Generating bytecode file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  15:37:36,157 - Parsiranje uspesno zavrseno!

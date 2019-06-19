@@ -1,0 +1,64 @@
+INFO  15:46:46,186 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  15:46:46,212 - #2 program
+INFO  15:46:46,212 - #39 iffortest
+INFO  15:46:46,212 - #39 int
+INFO  15:46:46,213 - #38 23
+ERROR 15:46:46,213 - 
+Sintaksna greska na liniji 3
+INFO  15:46:46,213 - #39 p
+INFO  15:46:46,213 - #5 ;
+INFO  15:46:46,213 - #3 {
+INFO  15:46:46,213 - #13 void
+INFO  15:46:46,213 - #39 main
+INFO  15:46:46,214 - #6 (
+DEBUG 15:46:46,214 - Uspesan oporavak od definicije promenljive.
+INFO  15:46:46,214 - #7 )
+INFO  15:46:46,215 - #39 int
+INFO  15:46:46,215 - #39 z
+INFO  15:46:46,215 - #5 ;
+INFO  15:46:46,216 - #3 {
+INFO  15:46:46,216 - #4 }
+INFO  15:46:46,216 - #4 }
+INFO  15:46:46,219 - Program(
+  ProgName(
+   iffortest
+  ) [ProgName]
+  ErrVarDecl(
+  ) [ErrVarDecl]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      MethodTypeVoid(
+       main
+      ) [MethodTypeVoid]
+      NoFormParam(
+      ) [NoFormParam]
+      VarDeclarations(
+        NoVarDecl(
+        ) [NoVarDecl]
+        VarDecl(
+          Type(
+           int
+          ) [Type]
+         z
+          ArrayOptN(
+          ) [ArrayOptN]
+          VarListN(
+          ) [VarListN]
+        ) [VarDecl]
+      ) [VarDeclarations]
+      NoStmt(
+      ) [NoStmt]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  15:46:46,232 - Obradjuje se funkcija main na liniji 7
+INFO  15:46:46,232 - Deklarisana promenljiva z na liniji 8
+INFO  15:46:46,232 - Print calls = 0
+INFO  15:46:46,232 - Globalnih promenljivih = 0
+INFO  15:46:46,232 - Globalnih konstanti = 0
+INFO  15:46:46,232 - Globalnih nizova = 0
+INFO  15:46:46,232 - Broj metoda = 1
+INFO  15:46:46,232 - Broj enuma = 0
+ERROR 15:46:46,233 - Parsiranje NIJE uspesno zavrseno!

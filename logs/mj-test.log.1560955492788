@@ -1,0 +1,114 @@
+INFO  16:44:31,196 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  16:44:31,222 - #2 program
+INFO  16:44:31,222 - #39 sintgreske
+INFO  16:44:31,222 - #31 enum
+INFO  16:44:31,223 - #39 LosEnum
+INFO  16:44:31,223 - #3 {
+INFO  16:44:31,223 - #39 dva
+INFO  16:44:31,223 - #12 =
+INFO  16:44:31,223 - #38 2
+INFO  16:44:31,224 - #8 ,
+INFO  16:44:31,224 - #39 nula
+INFO  16:44:31,224 - #12 =
+INFO  16:44:31,224 - #38 0
+INFO  16:44:31,224 - #8 ,
+INFO  16:44:31,224 - #39 jedan
+INFO  16:44:31,224 - #8 ,
+INFO  16:44:31,224 - #39 dvaopet
+INFO  16:44:31,225 - #12 =
+INFO  16:44:31,225 - #38 2
+INFO  16:44:31,225 - #4 }
+INFO  16:44:31,225 - #28 const
+INFO  16:44:31,225 - #39 int
+INFO  16:44:31,226 - #39 a
+INFO  16:44:31,227 - #12 =
+INFO  16:44:31,227 - #44 a
+INFO  16:44:31,227 - #5 ;
+INFO  16:44:31,227 - #3 {
+INFO  16:44:31,227 - #13 void
+INFO  16:44:31,228 - #39 main
+INFO  16:44:31,228 - #6 (
+INFO  16:44:31,228 - #7 )
+INFO  16:44:31,228 - #3 {
+INFO  16:44:31,228 - #4 }
+INFO  16:44:31,229 - #4 }
+INFO  16:44:31,229 - Program(
+  ProgName(
+   sintgreske
+  ) [ProgName]
+  VarDeclarations(
+    VarDeclarations(
+      NoVarDecl(
+      ) [NoVarDecl]
+      EnumDecl(
+        EnumName(
+         LosEnum
+        ) [EnumName]
+        EnumLst(
+          EnumLst(
+            EnumLst(
+              EnumElem(
+               dva
+                EnumNmbr(
+                 2
+                ) [EnumNmbr]
+              ) [EnumElem]
+             nula
+              EnumNmbr(
+               0
+              ) [EnumNmbr]
+            ) [EnumLst]
+           jedan
+            EnumNoNmbr(
+            ) [EnumNoNmbr]
+          ) [EnumLst]
+         dvaopet
+          EnumNmbr(
+           2
+          ) [EnumNmbr]
+        ) [EnumLst]
+      ) [EnumDecl]
+    ) [VarDeclarations]
+    ConstDecl(
+      Type(
+       int
+      ) [Type]
+     a
+      CharConstDef(
+       a
+      ) [CharConstDef]
+      CnstListEmpty(
+      ) [CnstListEmpty]
+    ) [ConstDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      MethodTypeVoid(
+       main
+      ) [MethodTypeVoid]
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      NoStmt(
+      ) [NoStmt]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  16:44:31,243 - Deklarisano nabrajanje LosEnum na liniji 3
+INFO  16:44:31,243 - Deklarisan element nabrajanja dva na liniji 3
+INFO  16:44:31,243 - Deklarisan element nabrajanja nula na liniji 3
+INFO  16:44:31,243 - Deklarisan element nabrajanja jedan na liniji 3
+INFO  16:44:31,243 - Deklarisan element nabrajanja dvaopet na liniji 3
+ERROR 16:44:31,243 - Dupla konstanta u enumu dvaopet na liniji 3
+ERROR 16:44:31,243 - Deklarisana konstanta nije dobrog tipa: a na liniji 5
+INFO  16:44:31,243 - Obradjuje se funkcija main na liniji 9
+INFO  16:44:31,243 - Print calls = 0
+INFO  16:44:31,243 - Globalnih promenljivih = 0
+INFO  16:44:31,244 - Globalnih konstanti = 1
+INFO  16:44:31,244 - Globalnih nizova = 0
+INFO  16:44:31,244 - Broj metoda = 1
+INFO  16:44:31,244 - Broj enuma = 1
+ERROR 16:44:31,244 - Parsiranje NIJE uspesno zavrseno!

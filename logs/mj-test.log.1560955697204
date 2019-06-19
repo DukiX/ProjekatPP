@@ -1,0 +1,282 @@
+INFO  16:47:39,273 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  16:47:39,299 - #2 program
+INFO  16:47:39,299 - #39 sintgreske
+INFO  16:47:39,299 - #31 enum
+INFO  16:47:39,299 - #39 LosEnum
+INFO  16:47:39,299 - #3 {
+INFO  16:47:39,300 - #39 dva
+INFO  16:47:39,300 - #12 =
+INFO  16:47:39,300 - #38 2
+INFO  16:47:39,300 - #8 ,
+INFO  16:47:39,300 - #39 nula
+INFO  16:47:39,300 - #12 =
+INFO  16:47:39,300 - #38 0
+INFO  16:47:39,300 - #8 ,
+INFO  16:47:39,300 - #39 jedan
+INFO  16:47:39,301 - #8 ,
+INFO  16:47:39,301 - #39 dvaopet
+INFO  16:47:39,301 - #12 =
+INFO  16:47:39,301 - #38 2
+INFO  16:47:39,301 - #4 }
+INFO  16:47:39,301 - #28 const
+INFO  16:47:39,302 - #39 int
+INFO  16:47:39,303 - #39 a
+INFO  16:47:39,304 - #12 =
+INFO  16:47:39,304 - #44 a
+INFO  16:47:39,304 - #5 ;
+INFO  16:47:39,304 - #39 nesto
+INFO  16:47:39,305 - #39 b
+INFO  16:47:39,305 - #5 ;
+INFO  16:47:39,305 - #39 b
+INFO  16:47:39,306 - #39 c
+INFO  16:47:39,306 - #5 ;
+INFO  16:47:39,306 - #3 {
+INFO  16:47:39,306 - #39 int
+INFO  16:47:39,306 - #39 bezReturna
+INFO  16:47:39,306 - #6 (
+INFO  16:47:39,306 - #7 )
+INFO  16:47:39,307 - #39 int
+INFO  16:47:39,307 - #39 z
+INFO  16:47:39,307 - #5 ;
+INFO  16:47:39,307 - #3 {
+INFO  16:47:39,307 - #39 z
+INFO  16:47:39,307 - #12 =
+INFO  16:47:39,308 - #38 3
+INFO  16:47:39,308 - #5 ;
+INFO  16:47:39,309 - #4 }
+INFO  16:47:39,309 - #13 void
+INFO  16:47:39,309 - #39 main
+INFO  16:47:39,309 - #6 (
+INFO  16:47:39,309 - #7 )
+INFO  16:47:39,309 - #39 char
+INFO  16:47:39,309 - #39 t
+INFO  16:47:39,309 - #5 ;
+INFO  16:47:39,309 - #3 {
+INFO  16:47:39,310 - #39 a
+INFO  16:47:39,310 - #42 ++
+INFO  16:47:39,310 - #5 ;
+INFO  16:47:39,310 - #39 t
+INFO  16:47:39,310 - #12 =
+INFO  16:47:39,310 - #39 a
+INFO  16:47:39,310 - #5 ;
+INFO  16:47:39,310 - #4 }
+INFO  16:47:39,310 - #4 }
+INFO  16:47:39,311 - Program(
+  ProgName(
+   sintgreske
+  ) [ProgName]
+  VarDeclarations(
+    VarDeclarations(
+      VarDeclarations(
+        VarDeclarations(
+          NoVarDecl(
+          ) [NoVarDecl]
+          EnumDecl(
+            EnumName(
+             LosEnum
+            ) [EnumName]
+            EnumLst(
+              EnumLst(
+                EnumLst(
+                  EnumElem(
+                   dva
+                    EnumNmbr(
+                     2
+                    ) [EnumNmbr]
+                  ) [EnumElem]
+                 nula
+                  EnumNmbr(
+                   0
+                  ) [EnumNmbr]
+                ) [EnumLst]
+               jedan
+                EnumNoNmbr(
+                ) [EnumNoNmbr]
+              ) [EnumLst]
+             dvaopet
+              EnumNmbr(
+               2
+              ) [EnumNmbr]
+            ) [EnumLst]
+          ) [EnumDecl]
+        ) [VarDeclarations]
+        ConstDecl(
+          Type(
+           int
+          ) [Type]
+         a
+          CharConstDef(
+           a
+          ) [CharConstDef]
+          CnstListEmpty(
+          ) [CnstListEmpty]
+        ) [ConstDecl]
+      ) [VarDeclarations]
+      VarDecl(
+        Type(
+         nesto
+        ) [Type]
+       b
+        ArrayOptN(
+        ) [ArrayOptN]
+        VarListN(
+        ) [VarListN]
+      ) [VarDecl]
+    ) [VarDeclarations]
+    VarDecl(
+      Type(
+       b
+      ) [Type]
+     c
+      ArrayOptN(
+      ) [ArrayOptN]
+      VarListN(
+      ) [VarListN]
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    MethodDeclarations(
+      NoMethodDecl(
+      ) [NoMethodDecl]
+      MethodDecl(
+        MethodTypeName(
+          Type(
+           int
+          ) [Type]
+         bezReturna
+        ) [MethodTypeName]
+        NoFormParam(
+        ) [NoFormParam]
+        VarDeclarations(
+          NoVarDecl(
+          ) [NoVarDecl]
+          VarDecl(
+            Type(
+             int
+            ) [Type]
+           z
+            ArrayOptN(
+            ) [ArrayOptN]
+            VarListN(
+            ) [VarListN]
+          ) [VarDecl]
+        ) [VarDeclarations]
+        Statements(
+          NoStmt(
+          ) [NoStmt]
+          MatchedStmt(
+            MatchedDesignatorStatement(
+              Assignment(
+                Designator(
+                 z
+                  NoDesignatorOptions(
+                  ) [NoDesignatorOptions]
+                ) [Designator]
+                TermExpr(
+                  Term(
+                    Const(
+                     3
+                    ) [Const]
+                    NoFactor(
+                    ) [NoFactor]
+                  ) [Term]
+                ) [TermExpr]
+              ) [Assignment]
+            ) [MatchedDesignatorStatement]
+          ) [MatchedStmt]
+        ) [Statements]
+      ) [MethodDecl]
+    ) [MethodDeclarations]
+    MethodDecl(
+      MethodTypeVoid(
+       main
+      ) [MethodTypeVoid]
+      NoFormParam(
+      ) [NoFormParam]
+      VarDeclarations(
+        NoVarDecl(
+        ) [NoVarDecl]
+        VarDecl(
+          Type(
+           char
+          ) [Type]
+         t
+          ArrayOptN(
+          ) [ArrayOptN]
+          VarListN(
+          ) [VarListN]
+        ) [VarDecl]
+      ) [VarDeclarations]
+      Statements(
+        Statements(
+          NoStmt(
+          ) [NoStmt]
+          MatchedStmt(
+            MatchedDesignatorStatement(
+              Increment(
+                Designator(
+                 a
+                  NoDesignatorOptions(
+                  ) [NoDesignatorOptions]
+                ) [Designator]
+              ) [Increment]
+            ) [MatchedDesignatorStatement]
+          ) [MatchedStmt]
+        ) [Statements]
+        MatchedStmt(
+          MatchedDesignatorStatement(
+            Assignment(
+              Designator(
+               t
+                NoDesignatorOptions(
+                ) [NoDesignatorOptions]
+              ) [Designator]
+              TermExpr(
+                Term(
+                  Var(
+                    Designator(
+                     a
+                      NoDesignatorOptions(
+                      ) [NoDesignatorOptions]
+                    ) [Designator]
+                  ) [Var]
+                  NoFactor(
+                  ) [NoFactor]
+                ) [Term]
+              ) [TermExpr]
+            ) [Assignment]
+          ) [MatchedDesignatorStatement]
+        ) [MatchedStmt]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  16:47:39,328 - Deklarisano nabrajanje LosEnum na liniji 3
+INFO  16:47:39,328 - Deklarisan element nabrajanja dva na liniji 3
+INFO  16:47:39,328 - Deklarisan element nabrajanja nula na liniji 3
+INFO  16:47:39,328 - Deklarisan element nabrajanja jedan na liniji 3
+INFO  16:47:39,328 - Deklarisan element nabrajanja dvaopet na liniji 3
+ERROR 16:47:39,328 - Dupla konstanta u enumu dvaopet na liniji 3
+ERROR 16:47:39,328 - Deklarisana konstanta nije dobrog tipa: a na liniji 5
+ERROR 16:47:39,328 - Nije pronadjen tip nesto u tabeli simbola
+INFO  16:47:39,328 - Deklarisana promenljiva b na liniji 6
+ERROR 16:47:39,328 - Greska: Ime b ne predstavlja tip  na liniji 7
+INFO  16:47:39,329 - Deklarisana promenljiva c na liniji 7
+INFO  16:47:39,329 - Obradjuje se funkcija bezReturna na liniji 10
+INFO  16:47:39,329 - Deklarisana promenljiva z na liniji 11
+INFO  16:47:39,329 - Upotreba lokalne promenljive z na liniji 13, Var z: int, 0, 1 
+ERROR 16:47:39,329 - Semanticka greska na liniji 10: funkcija bezReturna nema return iskaz!
+INFO  16:47:39,329 - Obradjuje se funkcija main na liniji 16
+INFO  16:47:39,329 - Deklarisana promenljiva t na liniji 17
+INFO  16:47:39,330 - Upotreba globalne konstante a na liniji 19, Con a: int, 97, 0 
+ERROR 16:47:39,330 - ++ mora imati promenljivu ili element niza: a na liniji 19
+INFO  16:47:39,330 - Upotreba lokalne promenljive t na liniji 20, Var t: char, 0, 1 
+INFO  16:47:39,330 - Upotreba globalne konstante a na liniji 20, Con a: int, 97, 0 
+ERROR 16:47:39,330 - Greska na liniji 20 :  nekompatibilni tipovi u dodeli vrednosti 
+INFO  16:47:39,330 - Print calls = 0
+INFO  16:47:39,330 - Globalnih promenljivih = 2
+INFO  16:47:39,330 - Globalnih konstanti = 1
+INFO  16:47:39,330 - Globalnih nizova = 0
+INFO  16:47:39,330 - Broj metoda = 2
+INFO  16:47:39,330 - Broj enuma = 1
+ERROR 16:47:39,330 - Parsiranje NIJE uspesno zavrseno!

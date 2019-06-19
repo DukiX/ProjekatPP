@@ -1,0 +1,99 @@
+INFO  16:42:01,487 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  16:42:01,516 - #2 program
+INFO  16:42:01,516 - #39 sintgreske
+INFO  16:42:01,516 - #31 enum
+INFO  16:42:01,517 - #39 IncrementType
+INFO  16:42:01,517 - #3 {
+INFO  16:42:01,517 - #39 BY_ONE
+INFO  16:42:01,517 - #8 ,
+INFO  16:42:01,517 - #39 DOUBLE_VALUE
+INFO  16:42:01,518 - #8 ,
+INFO  16:42:01,518 - #39 trojka
+INFO  16:42:01,518 - #12 =
+INFO  16:42:01,518 - #38 3
+INFO  16:42:01,518 - #4 }
+INFO  16:42:01,518 - #28 const
+INFO  16:42:01,518 - #39 int
+INFO  16:42:01,518 - #39 a
+INFO  16:42:01,519 - #12 =
+INFO  16:42:01,519 - #44 a
+INFO  16:42:01,519 - #5 ;
+INFO  16:42:01,520 - #3 {
+INFO  16:42:01,521 - #13 void
+INFO  16:42:01,522 - #39 main
+INFO  16:42:01,522 - #6 (
+INFO  16:42:01,522 - #7 )
+INFO  16:42:01,522 - #3 {
+INFO  16:42:01,522 - #4 }
+INFO  16:42:01,523 - #4 }
+INFO  16:42:01,524 - Program(
+  ProgName(
+   sintgreske
+  ) [ProgName]
+  VarDeclarations(
+    VarDeclarations(
+      NoVarDecl(
+      ) [NoVarDecl]
+      EnumDecl(
+        EnumName(
+         IncrementType
+        ) [EnumName]
+        EnumLst(
+          EnumLst(
+            EnumElem(
+             BY_ONE
+              EnumNoNmbr(
+              ) [EnumNoNmbr]
+            ) [EnumElem]
+           DOUBLE_VALUE
+            EnumNoNmbr(
+            ) [EnumNoNmbr]
+          ) [EnumLst]
+         trojka
+          EnumNmbr(
+           3
+          ) [EnumNmbr]
+        ) [EnumLst]
+      ) [EnumDecl]
+    ) [VarDeclarations]
+    ConstDecl(
+      Type(
+       int
+      ) [Type]
+     a
+      CharConstDef(
+       a
+      ) [CharConstDef]
+      CnstListEmpty(
+      ) [CnstListEmpty]
+    ) [ConstDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      MethodTypeVoid(
+       main
+      ) [MethodTypeVoid]
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      NoStmt(
+      ) [NoStmt]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  16:42:01,537 - Deklarisano nabrajanje IncrementType na liniji 3
+INFO  16:42:01,538 - Deklarisan element nabrajanja BY_ONE na liniji 3
+INFO  16:42:01,538 - Deklarisan element nabrajanja DOUBLE_VALUE na liniji 3
+INFO  16:42:01,538 - Deklarisan element nabrajanja trojka na liniji 3
+ERROR 16:42:01,538 - Deklarisana konstanta nije dobrog tipa: a na liniji 5
+INFO  16:42:01,538 - Obradjuje se funkcija main na liniji 8
+INFO  16:42:01,538 - Print calls = 0
+INFO  16:42:01,538 - Globalnih promenljivih = 0
+INFO  16:42:01,538 - Globalnih konstanti = 1
+INFO  16:42:01,538 - Globalnih nizova = 0
+INFO  16:42:01,538 - Broj metoda = 1
+INFO  16:42:01,538 - Broj enuma = 1
+ERROR 16:42:01,539 - Parsiranje NIJE uspesno zavrseno!

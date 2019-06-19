@@ -1,0 +1,277 @@
+INFO  16:06:34,018 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  16:06:34,044 - #2 program
+INFO  16:06:34,044 - #39 sintgreskeoporavak
+INFO  16:06:34,044 - #39 int
+INFO  16:06:34,045 - #38 23
+ERROR 16:06:34,045 - 
+Sintaksna greska na liniji 3
+INFO  16:06:34,045 - #39 p
+INFO  16:06:34,045 - #8 ,
+INFO  16:06:34,045 - #39 a
+INFO  16:06:34,045 - #5 ;
+INFO  16:06:34,045 - #39 char
+INFO  16:06:34,045 - #39 r
+INFO  16:06:34,045 - #11 +
+INFO  16:06:34,045 - #38 3
+INFO  16:06:34,046 - #5 ;
+INFO  16:06:34,046 - #39 int
+INFO  16:06:34,046 - #39 y
+INFO  16:06:34,046 - #5 ;
+INFO  16:06:34,046 - #3 {
+DEBUG 16:06:34,046 - Uspesan oporavak od definicije promenljive.
+INFO  16:06:34,049 - #39 int
+INFO  16:06:34,049 - #39 greska
+INFO  16:06:34,049 - #6 (
+INFO  16:06:34,049 - #39 int
+INFO  16:06:34,049 - #11 +
+ERROR 16:06:34,049 - 
+Sintaksna greska na liniji 8
+INFO  16:06:34,049 - #39 r
+INFO  16:06:34,049 - #7 )
+INFO  16:06:34,049 - #3 {
+INFO  16:06:34,049 - #4 }
+INFO  16:06:34,049 - #13 void
+DEBUG 16:06:34,050 - Uspesan oporavak od greske kod deklaracije formalnog parametra.
+INFO  16:06:34,050 - #39 main
+INFO  16:06:34,050 - #6 (
+INFO  16:06:34,050 - #7 )
+INFO  16:06:34,051 - #39 int
+INFO  16:06:34,051 - #39 z
+INFO  16:06:34,051 - #5 ;
+INFO  16:06:34,051 - #3 {
+INFO  16:06:34,051 - #39 y
+INFO  16:06:34,051 - #12 =
+INFO  16:06:34,052 - #11 +
+ERROR 16:06:34,052 - 
+Sintaksna greska na liniji 15
+INFO  16:06:34,052 - #5 ;
+INFO  16:06:34,052 - #23 for
+INFO  16:06:34,052 - #6 (
+INFO  16:06:34,052 - #5 ;
+DEBUG 16:06:34,052 - Uspesan oporavak od greske pri dodeli vrednosti.
+INFO  16:06:34,054 - #39 y
+INFO  16:06:34,055 - #5 ;
+INFO  16:06:34,056 - #7 )
+INFO  16:06:34,057 - #3 {
+INFO  16:06:34,057 - #39 y
+INFO  16:06:34,057 - #12 =
+INFO  16:06:34,057 - #38 3
+INFO  16:06:34,057 - #5 ;
+INFO  16:06:34,057 - #4 }
+INFO  16:06:34,057 - #40 if
+INFO  16:06:34,058 - #6 (
+INFO  16:06:34,058 - #42 ++
+ERROR 16:06:34,058 - 
+Sintaksna greska na liniji 21
+INFO  16:06:34,058 - #11 +
+INFO  16:06:34,058 - #7 )
+INFO  16:06:34,058 - #3 {
+INFO  16:06:34,058 - #39 y
+INFO  16:06:34,062 - #12 =
+DEBUG 16:06:34,062 - Uspesan oporavak od greske u logickom izrazu u if.
+INFO  16:06:34,062 - #38 4
+INFO  16:06:34,062 - #5 ;
+INFO  16:06:34,062 - #4 }
+INFO  16:06:34,062 - #4 }
+INFO  16:06:34,063 - #4 }
+INFO  16:06:34,064 - Program(
+  ProgName(
+   sintgreskeoporavak
+  ) [ProgName]
+  VarDeclarations(
+    ErrVarDecl(
+    ) [ErrVarDecl]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+     y
+      ArrayOptN(
+      ) [ArrayOptN]
+      VarListN(
+      ) [VarListN]
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    MethodDeclarations(
+      NoMethodDecl(
+      ) [NoMethodDecl]
+      MethodDecl(
+        MethodTypeName(
+          Type(
+           int
+          ) [Type]
+         greska
+        ) [MethodTypeName]
+        FormParams(
+          ErrFormPar(
+          ) [ErrFormPar]
+        ) [FormParams]
+        NoVarDecl(
+        ) [NoVarDecl]
+        NoStmt(
+        ) [NoStmt]
+      ) [MethodDecl]
+    ) [MethodDeclarations]
+    MethodDecl(
+      MethodTypeVoid(
+       main
+      ) [MethodTypeVoid]
+      NoFormParam(
+      ) [NoFormParam]
+      VarDeclarations(
+        NoVarDecl(
+        ) [NoVarDecl]
+        VarDecl(
+          Type(
+           int
+          ) [Type]
+         z
+          ArrayOptN(
+          ) [ArrayOptN]
+          VarListN(
+          ) [VarListN]
+        ) [VarDecl]
+      ) [VarDeclarations]
+      Statements(
+        Statements(
+          Statements(
+            NoStmt(
+            ) [NoStmt]
+            MatchedStmt(
+              ErrAssignment(
+              ) [ErrAssignment]
+            ) [MatchedStmt]
+          ) [Statements]
+          MatchedStmt(
+            MatchedFor(
+              ForFor(
+              ) [ForFor]
+              ForDesignatorDerived1(
+              ) [ForDesignatorDerived1]
+              BegForCond(
+              ) [BegForCond]
+              ForCond(
+                Condit(
+                  CondT(
+                    CndFct(
+                      TermExpr(
+                        Term(
+                          Var(
+                            Designator(
+                             y
+                              NoDesignatorOptions(
+                              ) [NoDesignatorOptions]
+                            ) [Designator]
+                          ) [Var]
+                          NoFactor(
+                          ) [NoFactor]
+                        ) [Term]
+                      ) [TermExpr]
+                    ) [CndFct]
+                    CondFactListDerived1(
+                    ) [CondFactListDerived1]
+                  ) [CondT]
+                  CondTermListDerived1(
+                  ) [CondTermListDerived1]
+                ) [Condit]
+              ) [ForCond]
+              Beginc(
+              ) [Beginc]
+              ForDesignatorDerived1(
+              ) [ForDesignatorDerived1]
+              Endinc(
+              ) [Endinc]
+              Begfor(
+              ) [Begfor]
+              MatchedBraces(
+                Statements(
+                  NoStmt(
+                  ) [NoStmt]
+                  MatchedStmt(
+                    MatchedDesignatorStatement(
+                      Assignment(
+                        Designator(
+                         y
+                          NoDesignatorOptions(
+                          ) [NoDesignatorOptions]
+                        ) [Designator]
+                        TermExpr(
+                          Term(
+                            Const(
+                             3
+                            ) [Const]
+                            NoFactor(
+                            ) [NoFactor]
+                          ) [Term]
+                        ) [TermExpr]
+                      ) [Assignment]
+                    ) [MatchedDesignatorStatement]
+                  ) [MatchedStmt]
+                ) [Statements]
+              ) [MatchedBraces]
+              Endfor(
+              ) [Endfor]
+            ) [MatchedFor]
+          ) [MatchedStmt]
+        ) [Statements]
+        UnmachedStmt(
+          UnmatchedIf(
+            Ifif(
+            ) [Ifif]
+            ConditError(
+            ) [ConditError]
+            Begif(
+            ) [Begif]
+            MatchedStmt(
+              MatchedBraces(
+                Statements(
+                  NoStmt(
+                  ) [NoStmt]
+                  MatchedStmt(
+                    MatchedDesignatorStatement(
+                      Assignment(
+                        Designator(
+                         y
+                          NoDesignatorOptions(
+                          ) [NoDesignatorOptions]
+                        ) [Designator]
+                        TermExpr(
+                          Term(
+                            Const(
+                             4
+                            ) [Const]
+                            NoFactor(
+                            ) [NoFactor]
+                          ) [Term]
+                        ) [TermExpr]
+                      ) [Assignment]
+                    ) [MatchedDesignatorStatement]
+                  ) [MatchedStmt]
+                ) [Statements]
+              ) [MatchedBraces]
+            ) [MatchedStmt]
+            Endif(
+            ) [Endif]
+          ) [UnmatchedIf]
+        ) [UnmachedStmt]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  16:06:34,077 - Deklarisana promenljiva y na liniji 5
+INFO  16:06:34,078 - Obradjuje se funkcija greska na liniji 8
+ERROR 16:06:34,078 - Semanticka greska na liniji 8: funcija greska nema return iskaz!
+INFO  16:06:34,078 - Obradjuje se funkcija main na liniji 12
+INFO  16:06:34,078 - Deklarisana promenljiva z na liniji 13
+INFO  16:06:34,078 - Upotreba globalne promenljive y na liniji 17, Var y: int, 0, 0 
+ERROR 16:06:34,078 - Samostalan uslov mora biti bool 17
+INFO  16:06:34,078 - Upotreba globalne promenljive y na liniji 18, Var y: int, 0, 0 
+INFO  16:06:34,079 - Upotreba globalne promenljive y na liniji 22, Var y: int, 0, 0 
+INFO  16:06:34,079 - Print calls = 0
+INFO  16:06:34,079 - Globalnih promenljivih = 1
+INFO  16:06:34,079 - Globalnih konstanti = 0
+INFO  16:06:34,079 - Globalnih nizova = 0
+INFO  16:06:34,079 - Broj metoda = 2
+INFO  16:06:34,079 - Broj enuma = 0
+ERROR 16:06:34,079 - Parsiranje NIJE uspesno zavrseno!

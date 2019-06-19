@@ -1,0 +1,91 @@
+INFO  16:43:52,915 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  16:43:52,942 - #2 program
+INFO  16:43:52,942 - #39 sintgreske
+INFO  16:43:52,942 - #31 enum
+INFO  16:43:52,942 - #39 LosEnum
+INFO  16:43:52,942 - #3 {
+INFO  16:43:52,943 - #39 dva
+INFO  16:43:52,943 - #12 =
+INFO  16:43:52,943 - #38 2
+INFO  16:43:52,943 - #8 ,
+INFO  16:43:52,943 - #39 nula
+INFO  16:43:52,944 - #12 =
+INFO  16:43:52,944 - #38 0
+INFO  16:43:52,944 - #8 ,
+INFO  16:43:52,944 - #39 jedan
+INFO  16:43:52,944 - #8 ,
+INFO  16:43:52,944 - #39 dvaopet
+INFO  16:43:52,944 - #4 }
+INFO  16:43:52,944 - #3 {
+INFO  16:43:52,945 - #13 void
+INFO  16:43:52,945 - #39 main
+INFO  16:43:52,945 - #6 (
+INFO  16:43:52,947 - #7 )
+INFO  16:43:52,947 - #3 {
+INFO  16:43:52,947 - #4 }
+INFO  16:43:52,947 - #4 }
+INFO  16:43:52,948 - Program(
+  ProgName(
+   sintgreske
+  ) [ProgName]
+  VarDeclarations(
+    NoVarDecl(
+    ) [NoVarDecl]
+    EnumDecl(
+      EnumName(
+       LosEnum
+      ) [EnumName]
+      EnumLst(
+        EnumLst(
+          EnumLst(
+            EnumElem(
+             dva
+              EnumNmbr(
+               2
+              ) [EnumNmbr]
+            ) [EnumElem]
+           nula
+            EnumNmbr(
+             0
+            ) [EnumNmbr]
+          ) [EnumLst]
+         jedan
+          EnumNoNmbr(
+          ) [EnumNoNmbr]
+        ) [EnumLst]
+       dvaopet
+        EnumNoNmbr(
+        ) [EnumNoNmbr]
+      ) [EnumLst]
+    ) [EnumDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      MethodTypeVoid(
+       main
+      ) [MethodTypeVoid]
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      NoStmt(
+      ) [NoStmt]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  16:43:52,962 - Deklarisano nabrajanje LosEnum na liniji 3
+INFO  16:43:52,962 - Deklarisan element nabrajanja dva na liniji 3
+INFO  16:43:52,962 - Deklarisan element nabrajanja nula na liniji 3
+INFO  16:43:52,962 - Deklarisan element nabrajanja jedan na liniji 3
+INFO  16:43:52,962 - Deklarisan element nabrajanja dvaopet na liniji 3
+INFO  16:43:52,962 - Obradjuje se funkcija main na liniji 9
+INFO  16:43:52,962 - Print calls = 0
+INFO  16:43:52,962 - Globalnih promenljivih = 0
+INFO  16:43:52,962 - Globalnih konstanti = 0
+INFO  16:43:52,962 - Globalnih nizova = 0
+INFO  16:43:52,962 - Broj metoda = 1
+INFO  16:43:52,962 - Broj enuma = 1
+INFO  16:43:52,963 - Generating bytecode file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  16:43:52,967 - Parsiranje uspesno zavrseno!

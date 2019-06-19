@@ -1,0 +1,86 @@
+INFO  16:43:00,594 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  16:43:00,625 - #2 program
+INFO  16:43:00,625 - #39 sintgreske
+INFO  16:43:00,625 - #31 enum
+INFO  16:43:00,626 - #39 LosEnum
+INFO  16:43:00,626 - #3 {
+INFO  16:43:00,626 - #39 jedan
+INFO  16:43:00,626 - #12 =
+INFO  16:43:00,626 - #38 1
+INFO  16:43:00,626 - #8 ,
+INFO  16:43:00,626 - #39 dva
+INFO  16:43:00,627 - #12 =
+INFO  16:43:00,627 - #38 2
+INFO  16:43:00,627 - #8 ,
+INFO  16:43:00,627 - #39 tri
+INFO  16:43:00,627 - #12 =
+INFO  16:43:00,627 - #38 3
+INFO  16:43:00,627 - #4 }
+INFO  16:43:00,627 - #3 {
+INFO  16:43:00,628 - #13 void
+INFO  16:43:00,628 - #39 main
+INFO  16:43:00,628 - #6 (
+INFO  16:43:00,630 - #7 )
+INFO  16:43:00,631 - #3 {
+INFO  16:43:00,631 - #4 }
+INFO  16:43:00,631 - #4 }
+INFO  16:43:00,632 - Program(
+  ProgName(
+   sintgreske
+  ) [ProgName]
+  VarDeclarations(
+    NoVarDecl(
+    ) [NoVarDecl]
+    EnumDecl(
+      EnumName(
+       LosEnum
+      ) [EnumName]
+      EnumLst(
+        EnumLst(
+          EnumElem(
+           jedan
+            EnumNmbr(
+             1
+            ) [EnumNmbr]
+          ) [EnumElem]
+         dva
+          EnumNmbr(
+           2
+          ) [EnumNmbr]
+        ) [EnumLst]
+       tri
+        EnumNmbr(
+         3
+        ) [EnumNmbr]
+      ) [EnumLst]
+    ) [EnumDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      MethodTypeVoid(
+       main
+      ) [MethodTypeVoid]
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      NoStmt(
+      ) [NoStmt]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  16:43:00,647 - Deklarisano nabrajanje LosEnum na liniji 3
+INFO  16:43:00,647 - Deklarisan element nabrajanja jedan na liniji 3
+INFO  16:43:00,648 - Deklarisan element nabrajanja dva na liniji 3
+INFO  16:43:00,648 - Deklarisan element nabrajanja tri na liniji 3
+INFO  16:43:00,648 - Obradjuje se funkcija main na liniji 9
+INFO  16:43:00,648 - Print calls = 0
+INFO  16:43:00,648 - Globalnih promenljivih = 0
+INFO  16:43:00,648 - Globalnih konstanti = 0
+INFO  16:43:00,648 - Globalnih nizova = 0
+INFO  16:43:00,650 - Broj metoda = 1
+INFO  16:43:00,650 - Broj enuma = 1
+INFO  16:43:00,650 - Generating bytecode file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  16:43:00,655 - Parsiranje uspesno zavrseno!

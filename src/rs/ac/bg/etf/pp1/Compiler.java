@@ -10,6 +10,8 @@ import rs.ac.bg.etf.pp1.ast.*;
 import rs.ac.bg.etf.pp1.util.Log4JUtils;
 import rs.etf.pp1.mj.runtime.Code;
 import rs.etf.pp1.symboltable.*;
+import rs.etf.pp1.symboltable.concepts.Scope;
+import rs.etf.pp1.symboltable.visitors.DumpSymbolTableVisitor;
 
 public class Compiler {
 	/*public static void main(String args[]) throws Exception {
@@ -51,8 +53,13 @@ public class Compiler {
         }
 	}*/
 	
-	public static void tsdump() {
-		Tab.dump();
+	public static void tsdump(Logger log) {
+		log.info("=====================SYMBOL TABLE DUMP=========================");
+		DumpSymbolTableVisitor stv = new DumpSymbolTableVisitor();
+		for (Scope s = Tab.currentScope; s != null; s = s.getOuter()) {
+			s.accept(stv);
+		}
+		log.info("\n"+stv.getOutput());
 	}
 
 	static {
@@ -96,7 +103,7 @@ public class Compiler {
 	        log.info("Broj metoda = " + semanticCheck.brMet);
 	        log.info("Broj enuma = " + semanticCheck.brEnuma);
 	        
-	        tsdump();
+	        tsdump(log);
 	        
 	        if (!p.errorDetected && semanticCheck.passed()) {
 	        	File objFile = new File(args[1]);

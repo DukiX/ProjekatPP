@@ -326,7 +326,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	public void visit(Type type) {
 		Obj typeNode = Tab.find(type.getTypeName());
 		if (typeNode == Tab.noObj) {
-			report_error("Nije pronadjen tip " + type.getTypeName() + " u tabeli simbola", null);
+			report_error("Nije pronadjen tip " + type.getTypeName() + " u tabeli simbola", type);
 			type.struct = Tab.noType;
 		} else {
 			if (Obj.Type == typeNode.getKind()) {
@@ -346,7 +346,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 
 	public void visit(MethodDecl methodDecl) {
 		if (!returnFound && currentMethod.getType() != Tab.noType) {
-			report_error("Semanticka greska na liniji " + methodDecl.getLine() + ": funcija " + currentMethod.getName()
+			report_error("Semanticka greska na liniji " + methodDecl.getLine() + ": funkcija " + currentMethod.getName()
 					+ " nema return iskaz!", null);
 		}
 

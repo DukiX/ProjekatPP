@@ -1,0 +1,235 @@
+INFO  16:09:54,919 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  16:09:54,944 - #2 program
+INFO  16:09:54,944 - #39 sintgreske
+INFO  16:09:54,944 - #31 enum
+INFO  16:09:54,944 - #39 IncrementType
+INFO  16:09:54,944 - #3 {
+INFO  16:09:54,945 - #39 BY_ONE
+INFO  16:09:54,945 - #8 ,
+INFO  16:09:54,945 - #39 DOUBLE_VALUE
+INFO  16:09:54,945 - #8 ,
+INFO  16:09:54,945 - #39 trojka
+INFO  16:09:54,945 - #12 =
+INFO  16:09:54,945 - #38 3
+INFO  16:09:54,946 - #4 }
+INFO  16:09:54,946 - #39 int
+INFO  16:09:54,946 - #39 a
+INFO  16:09:54,946 - #8 ,
+INFO  16:09:54,947 - #39 b
+INFO  16:09:54,947 - #20 [
+INFO  16:09:54,947 - #21 ]
+INFO  16:09:54,947 - #8 ,
+INFO  16:09:54,949 - #39 c
+INFO  16:09:54,949 - #20 [
+INFO  16:09:54,949 - #21 ]
+INFO  16:09:54,949 - #5 ;
+INFO  16:09:54,949 - #3 {
+INFO  16:09:54,949 - #13 void
+INFO  16:09:54,950 - #39 main
+INFO  16:09:54,950 - #6 (
+INFO  16:09:54,950 - #7 )
+INFO  16:09:54,950 - #3 {
+INFO  16:09:54,950 - #39 a
+INFO  16:09:54,950 - #12 =
+INFO  16:09:54,951 - #38 3
+INFO  16:09:54,951 - #5 ;
+INFO  16:09:54,952 - #39 b
+INFO  16:09:54,952 - #12 =
+INFO  16:09:54,952 - #19 new
+INFO  16:09:54,952 - #39 int
+INFO  16:09:54,952 - #20 [
+INFO  16:09:54,952 - #38 3
+INFO  16:09:54,953 - #21 ]
+INFO  16:09:54,953 - #5 ;
+INFO  16:09:54,953 - #39 c
+INFO  16:09:54,953 - #12 =
+INFO  16:09:54,953 - #19 new
+INFO  16:09:54,953 - #39 int
+INFO  16:09:54,953 - #20 [
+INFO  16:09:54,953 - #38 4
+INFO  16:09:54,953 - #21 ]
+INFO  16:09:54,953 - #5 ;
+INFO  16:09:54,954 - #4 }
+INFO  16:09:54,954 - #4 }
+INFO  16:09:54,955 - Program(
+  ProgName(
+   sintgreske
+  ) [ProgName]
+  VarDeclarations(
+    VarDeclarations(
+      NoVarDecl(
+      ) [NoVarDecl]
+      EnumDecl(
+        EnumName(
+         IncrementType
+        ) [EnumName]
+        EnumLst(
+          EnumLst(
+            EnumElem(
+             BY_ONE
+              EnumNoNmbr(
+              ) [EnumNoNmbr]
+            ) [EnumElem]
+           DOUBLE_VALUE
+            EnumNoNmbr(
+            ) [EnumNoNmbr]
+          ) [EnumLst]
+         trojka
+          EnumNmbr(
+           3
+          ) [EnumNmbr]
+        ) [EnumLst]
+      ) [EnumDecl]
+    ) [VarDeclarations]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+     a
+      ArrayOptN(
+      ) [ArrayOptN]
+      VarListY(
+        VarListY(
+          VarListN(
+          ) [VarListN]
+         b
+          ArrayOptY(
+          ) [ArrayOptY]
+        ) [VarListY]
+       c
+        ArrayOptY(
+        ) [ArrayOptY]
+      ) [VarListY]
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      MethodTypeVoid(
+       main
+      ) [MethodTypeVoid]
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      Statements(
+        Statements(
+          Statements(
+            NoStmt(
+            ) [NoStmt]
+            MatchedStmt(
+              MatchedDesignatorStatement(
+                Assignment(
+                  Designator(
+                   a
+                    NoDesignatorOptions(
+                    ) [NoDesignatorOptions]
+                  ) [Designator]
+                  TermExpr(
+                    Term(
+                      Const(
+                       3
+                      ) [Const]
+                      NoFactor(
+                      ) [NoFactor]
+                    ) [Term]
+                  ) [TermExpr]
+                ) [Assignment]
+              ) [MatchedDesignatorStatement]
+            ) [MatchedStmt]
+          ) [Statements]
+          MatchedStmt(
+            MatchedDesignatorStatement(
+              Assignment(
+                Designator(
+                 b
+                  NoDesignatorOptions(
+                  ) [NoDesignatorOptions]
+                ) [Designator]
+                TermExpr(
+                  Term(
+                    FactorNewArr(
+                      Type(
+                       int
+                      ) [Type]
+                      LsquareNt(
+                      ) [LsquareNt]
+                      DuzinaNiza(
+                        TermExpr(
+                          Term(
+                            Const(
+                             3
+                            ) [Const]
+                            NoFactor(
+                            ) [NoFactor]
+                          ) [Term]
+                        ) [TermExpr]
+                      ) [DuzinaNiza]
+                    ) [FactorNewArr]
+                    NoFactor(
+                    ) [NoFactor]
+                  ) [Term]
+                ) [TermExpr]
+              ) [Assignment]
+            ) [MatchedDesignatorStatement]
+          ) [MatchedStmt]
+        ) [Statements]
+        MatchedStmt(
+          MatchedDesignatorStatement(
+            Assignment(
+              Designator(
+               c
+                NoDesignatorOptions(
+                ) [NoDesignatorOptions]
+              ) [Designator]
+              TermExpr(
+                Term(
+                  FactorNewArr(
+                    Type(
+                     int
+                    ) [Type]
+                    LsquareNt(
+                    ) [LsquareNt]
+                    DuzinaNiza(
+                      TermExpr(
+                        Term(
+                          Const(
+                           4
+                          ) [Const]
+                          NoFactor(
+                          ) [NoFactor]
+                        ) [Term]
+                      ) [TermExpr]
+                    ) [DuzinaNiza]
+                  ) [FactorNewArr]
+                  NoFactor(
+                  ) [NoFactor]
+                ) [Term]
+              ) [TermExpr]
+            ) [Assignment]
+          ) [MatchedDesignatorStatement]
+        ) [MatchedStmt]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  16:09:54,968 - Deklarisano nabrajanje IncrementType na liniji 3
+INFO  16:09:54,968 - Deklarisan element nabrajanja BY_ONE na liniji 3
+INFO  16:09:54,968 - Deklarisan element nabrajanja DOUBLE_VALUE na liniji 3
+INFO  16:09:54,968 - Deklarisan element nabrajanja trojka na liniji 3
+INFO  16:09:54,968 - Deklarisan niz b na liniji 5
+INFO  16:09:54,968 - Deklarisan niz c na liniji 5
+INFO  16:09:54,968 - Deklarisana promenljiva a na liniji 5
+INFO  16:09:54,968 - Obradjuje se funkcija main na liniji 8
+INFO  16:09:54,968 - Upotreba globalne promenljive a na liniji 10, Var a: int, 2, 0 
+INFO  16:09:54,968 - Upotreba globalne promenljive b na liniji 11, Var b: Arr of int, 0, 0 
+INFO  16:09:54,969 - Upotreba globalne promenljive c na liniji 12, Var c: Arr of int, 1, 0 
+INFO  16:09:54,969 - Print calls = 0
+INFO  16:09:54,969 - Globalnih promenljivih = 1
+INFO  16:09:54,969 - Globalnih konstanti = 0
+INFO  16:09:54,969 - Globalnih nizova = 2
+INFO  16:09:54,969 - Broj metoda = 1
+INFO  16:09:54,969 - Broj enuma = 1
+INFO  16:09:54,969 - Generating bytecode file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  16:09:54,973 - Parsiranje uspesno zavrseno!

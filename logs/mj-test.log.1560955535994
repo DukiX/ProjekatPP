@@ -1,0 +1,149 @@
+INFO  16:45:13,477 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  16:45:13,503 - #2 program
+INFO  16:45:13,503 - #39 sintgreske
+INFO  16:45:13,503 - #31 enum
+INFO  16:45:13,504 - #39 LosEnum
+INFO  16:45:13,504 - #3 {
+INFO  16:45:13,504 - #39 dva
+INFO  16:45:13,504 - #12 =
+INFO  16:45:13,504 - #38 2
+INFO  16:45:13,504 - #8 ,
+INFO  16:45:13,504 - #39 nula
+INFO  16:45:13,504 - #12 =
+INFO  16:45:13,504 - #38 0
+INFO  16:45:13,505 - #8 ,
+INFO  16:45:13,505 - #39 jedan
+INFO  16:45:13,505 - #8 ,
+INFO  16:45:13,506 - #39 dvaopet
+INFO  16:45:13,506 - #12 =
+INFO  16:45:13,506 - #38 2
+INFO  16:45:13,506 - #4 }
+INFO  16:45:13,506 - #28 const
+INFO  16:45:13,506 - #39 int
+INFO  16:45:13,508 - #39 a
+INFO  16:45:13,508 - #12 =
+INFO  16:45:13,508 - #44 a
+INFO  16:45:13,508 - #5 ;
+INFO  16:45:13,509 - #39 nesto
+INFO  16:45:13,509 - #39 a
+INFO  16:45:13,509 - #5 ;
+INFO  16:45:13,510 - #3 {
+INFO  16:45:13,510 - #13 void
+INFO  16:45:13,510 - #39 main
+INFO  16:45:13,510 - #6 (
+INFO  16:45:13,510 - #7 )
+INFO  16:45:13,511 - #3 {
+INFO  16:45:13,511 - #39 a
+INFO  16:45:13,511 - #42 ++
+INFO  16:45:13,512 - #5 ;
+INFO  16:45:13,512 - #4 }
+INFO  16:45:13,512 - #4 }
+INFO  16:45:13,513 - Program(
+  ProgName(
+   sintgreske
+  ) [ProgName]
+  VarDeclarations(
+    VarDeclarations(
+      VarDeclarations(
+        NoVarDecl(
+        ) [NoVarDecl]
+        EnumDecl(
+          EnumName(
+           LosEnum
+          ) [EnumName]
+          EnumLst(
+            EnumLst(
+              EnumLst(
+                EnumElem(
+                 dva
+                  EnumNmbr(
+                   2
+                  ) [EnumNmbr]
+                ) [EnumElem]
+               nula
+                EnumNmbr(
+                 0
+                ) [EnumNmbr]
+              ) [EnumLst]
+             jedan
+              EnumNoNmbr(
+              ) [EnumNoNmbr]
+            ) [EnumLst]
+           dvaopet
+            EnumNmbr(
+             2
+            ) [EnumNmbr]
+          ) [EnumLst]
+        ) [EnumDecl]
+      ) [VarDeclarations]
+      ConstDecl(
+        Type(
+         int
+        ) [Type]
+       a
+        CharConstDef(
+         a
+        ) [CharConstDef]
+        CnstListEmpty(
+        ) [CnstListEmpty]
+      ) [ConstDecl]
+    ) [VarDeclarations]
+    VarDecl(
+      Type(
+       nesto
+      ) [Type]
+     a
+      ArrayOptN(
+      ) [ArrayOptN]
+      VarListN(
+      ) [VarListN]
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      MethodTypeVoid(
+       main
+      ) [MethodTypeVoid]
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      Statements(
+        NoStmt(
+        ) [NoStmt]
+        MatchedStmt(
+          MatchedDesignatorStatement(
+            Increment(
+              Designator(
+               a
+                NoDesignatorOptions(
+                ) [NoDesignatorOptions]
+              ) [Designator]
+            ) [Increment]
+          ) [MatchedDesignatorStatement]
+        ) [MatchedStmt]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  16:45:13,527 - Deklarisano nabrajanje LosEnum na liniji 3
+INFO  16:45:13,527 - Deklarisan element nabrajanja dva na liniji 3
+INFO  16:45:13,527 - Deklarisan element nabrajanja nula na liniji 3
+INFO  16:45:13,527 - Deklarisan element nabrajanja jedan na liniji 3
+INFO  16:45:13,527 - Deklarisan element nabrajanja dvaopet na liniji 3
+ERROR 16:45:13,527 - Dupla konstanta u enumu dvaopet na liniji 3
+ERROR 16:45:13,527 - Deklarisana konstanta nije dobrog tipa: a na liniji 5
+ERROR 16:45:13,527 - Nije pronadjen tip nesto u tabeli simbola
+INFO  16:45:13,527 - Deklarisana promenljiva a na liniji 6
+INFO  16:45:13,528 - Obradjuje se funkcija main na liniji 9
+INFO  16:45:13,528 - Upotreba globalne konstante a na liniji 11, Con a: int, 97, 0 
+ERROR 16:45:13,528 - ++ mora imati promenljivu ili element niza: a na liniji 11
+INFO  16:45:13,528 - Print calls = 0
+INFO  16:45:13,528 - Globalnih promenljivih = 1
+INFO  16:45:13,528 - Globalnih konstanti = 1
+INFO  16:45:13,528 - Globalnih nizova = 0
+INFO  16:45:13,528 - Broj metoda = 1
+INFO  16:45:13,528 - Broj enuma = 1
+ERROR 16:45:13,529 - Parsiranje NIJE uspesno zavrseno!

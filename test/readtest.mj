@@ -1,0 +1,19 @@
+program readtest
+
+int x,y;
+{
+	
+	int saberi(int x,int k, int z){
+		return x+k+z;
+	}
+	
+	void main()
+	int z;
+	{
+		read(x);
+		read(y);
+		read(z);
+		print(saberi(x,y,z));
+	}
+}
+

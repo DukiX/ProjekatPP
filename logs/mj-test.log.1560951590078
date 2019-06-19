@@ -1,0 +1,363 @@
+INFO  15:39:44,148 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  15:39:44,177 - #2 program
+INFO  15:39:44,177 - #39 iffortest
+INFO  15:39:44,177 - #39 int
+INFO  15:39:44,177 - #39 x
+INFO  15:39:44,178 - #8 ,
+INFO  15:39:44,178 - #39 y
+INFO  15:39:44,178 - #5 ;
+INFO  15:39:44,179 - #39 bool
+INFO  15:39:44,179 - #39 t
+INFO  15:39:44,179 - #5 ;
+INFO  15:39:44,179 - #3 {
+INFO  15:39:44,179 - #13 void
+INFO  15:39:44,179 - #39 main
+INFO  15:39:44,179 - #6 (
+INFO  15:39:44,179 - #7 )
+INFO  15:39:44,180 - #39 int
+INFO  15:39:44,180 - #39 z
+INFO  15:39:44,180 - #5 ;
+INFO  15:39:44,180 - #3 {
+INFO  15:39:44,180 - #39 x
+INFO  15:39:44,181 - #12 =
+INFO  15:39:44,184 - #38 4
+INFO  15:39:44,184 - #5 ;
+INFO  15:39:44,185 - #39 s
+INFO  15:39:44,185 - #39 y
+ERROR 15:39:44,185 - 
+Sintaksna greska na liniji 12
+INFO  15:39:44,185 - #12 =
+INFO  15:39:44,185 - #38 5
+INFO  15:39:44,185 - #5 ;
+INFO  15:39:44,186 - #39 t
+INFO  15:39:44,186 - #12 =
+INFO  15:39:44,186 - #30 false
+DEBUG 15:39:44,186 - Uspesan oporavak od greske pri dodeli vrednosti.
+INFO  15:39:44,187 - #5 ;
+INFO  15:39:44,187 - #23 for
+INFO  15:39:44,187 - #6 (
+INFO  15:39:44,188 - #5 ;
+INFO  15:39:44,188 - #5 ;
+INFO  15:39:44,189 - #7 )
+INFO  15:39:44,189 - #3 {
+INFO  15:39:44,190 - #39 x
+INFO  15:39:44,190 - #42 ++
+INFO  15:39:44,190 - #5 ;
+INFO  15:39:44,190 - #40 if
+INFO  15:39:44,190 - #6 (
+INFO  15:39:44,191 - #39 x
+INFO  15:39:44,191 - #32 ==
+INFO  15:39:44,191 - #38 9
+INFO  15:39:44,191 - #7 )
+INFO  15:39:44,191 - #3 {
+INFO  15:39:44,192 - #4 }
+INFO  15:39:44,192 - #40 if
+INFO  15:39:44,192 - #6 (
+INFO  15:39:44,192 - #39 x
+INFO  15:39:44,192 - #32 ==
+INFO  15:39:44,192 - #38 10
+INFO  15:39:44,192 - #7 )
+INFO  15:39:44,192 - #24 break
+INFO  15:39:44,193 - #5 ;
+INFO  15:39:44,193 - #9 print
+INFO  15:39:44,193 - #6 (
+INFO  15:39:44,193 - #39 x
+INFO  15:39:44,193 - #7 )
+INFO  15:39:44,193 - #5 ;
+INFO  15:39:44,193 - #4 }
+INFO  15:39:44,193 - #4 }
+INFO  15:39:44,194 - #4 }
+INFO  15:39:44,195 - Program(
+  ProgName(
+   iffortest
+  ) [ProgName]
+  VarDeclarations(
+    VarDeclarations(
+      NoVarDecl(
+      ) [NoVarDecl]
+      VarDecl(
+        Type(
+         int
+        ) [Type]
+       x
+        ArrayOptN(
+        ) [ArrayOptN]
+        VarListY(
+          VarListN(
+          ) [VarListN]
+         y
+          ArrayOptN(
+          ) [ArrayOptN]
+        ) [VarListY]
+      ) [VarDecl]
+    ) [VarDeclarations]
+    VarDecl(
+      Type(
+       bool
+      ) [Type]
+     t
+      ArrayOptN(
+      ) [ArrayOptN]
+      VarListN(
+      ) [VarListN]
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      MethodTypeVoid(
+       main
+      ) [MethodTypeVoid]
+      NoFormParam(
+      ) [NoFormParam]
+      VarDeclarations(
+        NoVarDecl(
+        ) [NoVarDecl]
+        VarDecl(
+          Type(
+           int
+          ) [Type]
+         z
+          ArrayOptN(
+          ) [ArrayOptN]
+          VarListN(
+          ) [VarListN]
+        ) [VarDecl]
+      ) [VarDeclarations]
+      Statements(
+        Statements(
+          Statements(
+            Statements(
+              NoStmt(
+              ) [NoStmt]
+              MatchedStmt(
+                MatchedDesignatorStatement(
+                  Assignment(
+                    Designator(
+                     x
+                      NoDesignatorOptions(
+                      ) [NoDesignatorOptions]
+                    ) [Designator]
+                    TermExpr(
+                      Term(
+                        Const(
+                         4
+                        ) [Const]
+                        NoFactor(
+                        ) [NoFactor]
+                      ) [Term]
+                    ) [TermExpr]
+                  ) [Assignment]
+                ) [MatchedDesignatorStatement]
+              ) [MatchedStmt]
+            ) [Statements]
+            MatchedStmt(
+              ErrAssignment(
+              ) [ErrAssignment]
+            ) [MatchedStmt]
+          ) [Statements]
+          MatchedStmt(
+            MatchedDesignatorStatement(
+              Assignment(
+                Designator(
+                 t
+                  NoDesignatorOptions(
+                  ) [NoDesignatorOptions]
+                ) [Designator]
+                TermExpr(
+                  Term(
+                    FactorBool(
+                      BoolFalse(
+                      ) [BoolFalse]
+                    ) [FactorBool]
+                    NoFactor(
+                    ) [NoFactor]
+                  ) [Term]
+                ) [TermExpr]
+              ) [Assignment]
+            ) [MatchedDesignatorStatement]
+          ) [MatchedStmt]
+        ) [Statements]
+        MatchedStmt(
+          MatchedFor(
+            ForFor(
+            ) [ForFor]
+            ForDesignatorDerived1(
+            ) [ForDesignatorDerived1]
+            BegForCond(
+            ) [BegForCond]
+            EmptyForCond(
+            ) [EmptyForCond]
+            Beginc(
+            ) [Beginc]
+            ForDesignatorDerived1(
+            ) [ForDesignatorDerived1]
+            Endinc(
+            ) [Endinc]
+            Begfor(
+            ) [Begfor]
+            MatchedBraces(
+              Statements(
+                Statements(
+                  Statements(
+                    Statements(
+                      NoStmt(
+                      ) [NoStmt]
+                      MatchedStmt(
+                        MatchedDesignatorStatement(
+                          Increment(
+                            Designator(
+                             x
+                              NoDesignatorOptions(
+                              ) [NoDesignatorOptions]
+                            ) [Designator]
+                          ) [Increment]
+                        ) [MatchedDesignatorStatement]
+                      ) [MatchedStmt]
+                    ) [Statements]
+                    UnmachedStmt(
+                      UnmatchedIf(
+                        Ifif(
+                        ) [Ifif]
+                        Condit(
+                          CondT(
+                            CndFctNotBool(
+                              TermExpr(
+                                Term(
+                                  Var(
+                                    Designator(
+                                     x
+                                      NoDesignatorOptions(
+                                      ) [NoDesignatorOptions]
+                                    ) [Designator]
+                                  ) [Var]
+                                  NoFactor(
+                                  ) [NoFactor]
+                                ) [Term]
+                              ) [TermExpr]
+                              Releq(
+                              ) [Releq]
+                              TermExpr(
+                                Term(
+                                  Const(
+                                   9
+                                  ) [Const]
+                                  NoFactor(
+                                  ) [NoFactor]
+                                ) [Term]
+                              ) [TermExpr]
+                            ) [CndFctNotBool]
+                            CondFactListDerived1(
+                            ) [CondFactListDerived1]
+                          ) [CondT]
+                          CondTermListDerived1(
+                          ) [CondTermListDerived1]
+                        ) [Condit]
+                        Begif(
+                        ) [Begif]
+                        MatchedStmt(
+                          MatchedBraces(
+                            NoStmt(
+                            ) [NoStmt]
+                          ) [MatchedBraces]
+                        ) [MatchedStmt]
+                        Endif(
+                        ) [Endif]
+                      ) [UnmatchedIf]
+                    ) [UnmachedStmt]
+                  ) [Statements]
+                  UnmachedStmt(
+                    UnmatchedIf(
+                      Ifif(
+                      ) [Ifif]
+                      Condit(
+                        CondT(
+                          CndFctNotBool(
+                            TermExpr(
+                              Term(
+                                Var(
+                                  Designator(
+                                   x
+                                    NoDesignatorOptions(
+                                    ) [NoDesignatorOptions]
+                                  ) [Designator]
+                                ) [Var]
+                                NoFactor(
+                                ) [NoFactor]
+                              ) [Term]
+                            ) [TermExpr]
+                            Releq(
+                            ) [Releq]
+                            TermExpr(
+                              Term(
+                                Const(
+                                 10
+                                ) [Const]
+                                NoFactor(
+                                ) [NoFactor]
+                              ) [Term]
+                            ) [TermExpr]
+                          ) [CndFctNotBool]
+                          CondFactListDerived1(
+                          ) [CondFactListDerived1]
+                        ) [CondT]
+                        CondTermListDerived1(
+                        ) [CondTermListDerived1]
+                      ) [Condit]
+                      Begif(
+                      ) [Begif]
+                      MatchedStmt(
+                        MatchedBreak(
+                        ) [MatchedBreak]
+                      ) [MatchedStmt]
+                      Endif(
+                      ) [Endif]
+                    ) [UnmatchedIf]
+                  ) [UnmachedStmt]
+                ) [Statements]
+                MatchedStmt(
+                  PrintStmt(
+                    TermExpr(
+                      Term(
+                        Var(
+                          Designator(
+                           x
+                            NoDesignatorOptions(
+                            ) [NoDesignatorOptions]
+                          ) [Designator]
+                        ) [Var]
+                        NoFactor(
+                        ) [NoFactor]
+                      ) [Term]
+                    ) [TermExpr]
+                  ) [PrintStmt]
+                ) [MatchedStmt]
+              ) [Statements]
+            ) [MatchedBraces]
+            Endfor(
+            ) [Endfor]
+          ) [MatchedFor]
+        ) [MatchedStmt]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  15:39:44,209 - Deklarisana promenljiva y na liniji 3
+INFO  15:39:44,209 - Deklarisana promenljiva x na liniji 3
+INFO  15:39:44,209 - Deklarisana promenljiva t na liniji 4
+INFO  15:39:44,209 - Obradjuje se funkcija main na liniji 8
+INFO  15:39:44,209 - Deklarisana promenljiva z na liniji 9
+INFO  15:39:44,209 - Upotreba globalne promenljive x na liniji 11, Var x: int, 1, 0 
+INFO  15:39:44,210 - Upotreba globalne promenljive t na liniji 13, Var t: , 2, 0 
+INFO  15:39:44,210 - Upotreba globalne promenljive x na liniji 15, Var x: int, 1, 0 
+INFO  15:39:44,210 - Upotreba globalne promenljive x na liniji 16, Var x: int, 1, 0 
+INFO  15:39:44,210 - Upotreba globalne promenljive x na liniji 17, Var x: int, 1, 0 
+INFO  15:39:44,210 - Upotreba globalne promenljive x na liniji 18, Var x: int, 1, 0 
+INFO  15:39:44,210 - Print calls = 1
+INFO  15:39:44,210 - Globalnih promenljivih = 3
+INFO  15:39:44,210 - Globalnih konstanti = 0
+INFO  15:39:44,210 - Globalnih nizova = 0
+INFO  15:39:44,210 - Broj metoda = 1
+INFO  15:39:44,210 - Broj enuma = 0
+ERROR 15:39:44,211 - Parsiranje NIJE uspesno zavrseno!

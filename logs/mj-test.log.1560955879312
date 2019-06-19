@@ -1,0 +1,482 @@
+INFO  16:50:37,602 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  16:50:37,627 - #2 program
+INFO  16:50:37,627 - #39 sintgreske
+INFO  16:50:37,627 - #31 enum
+INFO  16:50:37,628 - #39 LosEnum
+INFO  16:50:37,628 - #3 {
+INFO  16:50:37,629 - #39 dva
+INFO  16:50:37,629 - #12 =
+INFO  16:50:37,629 - #38 2
+INFO  16:50:37,629 - #8 ,
+INFO  16:50:37,629 - #39 nula
+INFO  16:50:37,629 - #12 =
+INFO  16:50:37,629 - #38 0
+INFO  16:50:37,629 - #8 ,
+INFO  16:50:37,629 - #39 jedan
+INFO  16:50:37,630 - #8 ,
+INFO  16:50:37,630 - #39 dvaopet
+INFO  16:50:37,630 - #12 =
+INFO  16:50:37,630 - #38 2
+INFO  16:50:37,630 - #4 }
+INFO  16:50:37,630 - #28 const
+INFO  16:50:37,630 - #39 int
+INFO  16:50:37,632 - #39 a
+INFO  16:50:37,633 - #12 =
+INFO  16:50:37,633 - #44 a
+INFO  16:50:37,633 - #5 ;
+INFO  16:50:37,633 - #39 nesto
+INFO  16:50:37,633 - #39 b
+INFO  16:50:37,633 - #5 ;
+INFO  16:50:37,634 - #39 b
+INFO  16:50:37,634 - #39 c
+INFO  16:50:37,634 - #5 ;
+INFO  16:50:37,635 - #3 {
+INFO  16:50:37,635 - #39 int
+INFO  16:50:37,635 - #39 bezReturna
+INFO  16:50:37,635 - #6 (
+INFO  16:50:37,635 - #7 )
+INFO  16:50:37,635 - #39 int
+INFO  16:50:37,635 - #39 z
+INFO  16:50:37,636 - #5 ;
+INFO  16:50:37,636 - #3 {
+INFO  16:50:37,636 - #39 z
+INFO  16:50:37,636 - #12 =
+INFO  16:50:37,637 - #38 3
+INFO  16:50:37,637 - #5 ;
+INFO  16:50:37,637 - #4 }
+INFO  16:50:37,638 - #39 char
+INFO  16:50:37,638 - #39 pogresanRet
+INFO  16:50:37,638 - #6 (
+INFO  16:50:37,638 - #39 int
+INFO  16:50:37,638 - #39 f
+INFO  16:50:37,638 - #7 )
+INFO  16:50:37,639 - #3 {
+INFO  16:50:37,639 - #10 return
+INFO  16:50:37,639 - #38 3
+INFO  16:50:37,639 - #5 ;
+INFO  16:50:37,639 - #4 }
+INFO  16:50:37,639 - #13 void
+INFO  16:50:37,639 - #39 main
+INFO  16:50:37,639 - #6 (
+INFO  16:50:37,640 - #7 )
+INFO  16:50:37,640 - #39 char
+INFO  16:50:37,640 - #39 t
+INFO  16:50:37,640 - #5 ;
+INFO  16:50:37,640 - #39 int
+INFO  16:50:37,640 - #39 k
+INFO  16:50:37,640 - #5 ;
+INFO  16:50:37,640 - #3 {
+INFO  16:50:37,640 - #39 a
+INFO  16:50:37,640 - #42 ++
+INFO  16:50:37,640 - #5 ;
+INFO  16:50:37,640 - #39 t
+INFO  16:50:37,640 - #12 =
+INFO  16:50:37,640 - #39 a
+INFO  16:50:37,640 - #5 ;
+INFO  16:50:37,640 - #39 a
+INFO  16:50:37,640 - #6 (
+INFO  16:50:37,640 - #7 )
+INFO  16:50:37,641 - #5 ;
+INFO  16:50:37,641 - #39 k
+INFO  16:50:37,641 - #12 =
+INFO  16:50:37,641 - #39 bezReturna
+INFO  16:50:37,641 - #6 (
+INFO  16:50:37,641 - #39 t
+INFO  16:50:37,641 - #7 )
+INFO  16:50:37,642 - #5 ;
+INFO  16:50:37,642 - #39 t
+INFO  16:50:37,642 - #12 =
+INFO  16:50:37,642 - #39 pogresanRet
+INFO  16:50:37,642 - #6 (
+INFO  16:50:37,642 - #39 t
+INFO  16:50:37,642 - #7 )
+INFO  16:50:37,642 - #5 ;
+INFO  16:50:37,642 - #4 }
+INFO  16:50:37,642 - #4 }
+INFO  16:50:37,644 - Program(
+  ProgName(
+   sintgreske
+  ) [ProgName]
+  VarDeclarations(
+    VarDeclarations(
+      VarDeclarations(
+        VarDeclarations(
+          NoVarDecl(
+          ) [NoVarDecl]
+          EnumDecl(
+            EnumName(
+             LosEnum
+            ) [EnumName]
+            EnumLst(
+              EnumLst(
+                EnumLst(
+                  EnumElem(
+                   dva
+                    EnumNmbr(
+                     2
+                    ) [EnumNmbr]
+                  ) [EnumElem]
+                 nula
+                  EnumNmbr(
+                   0
+                  ) [EnumNmbr]
+                ) [EnumLst]
+               jedan
+                EnumNoNmbr(
+                ) [EnumNoNmbr]
+              ) [EnumLst]
+             dvaopet
+              EnumNmbr(
+               2
+              ) [EnumNmbr]
+            ) [EnumLst]
+          ) [EnumDecl]
+        ) [VarDeclarations]
+        ConstDecl(
+          Type(
+           int
+          ) [Type]
+         a
+          CharConstDef(
+           a
+          ) [CharConstDef]
+          CnstListEmpty(
+          ) [CnstListEmpty]
+        ) [ConstDecl]
+      ) [VarDeclarations]
+      VarDecl(
+        Type(
+         nesto
+        ) [Type]
+       b
+        ArrayOptN(
+        ) [ArrayOptN]
+        VarListN(
+        ) [VarListN]
+      ) [VarDecl]
+    ) [VarDeclarations]
+    VarDecl(
+      Type(
+       b
+      ) [Type]
+     c
+      ArrayOptN(
+      ) [ArrayOptN]
+      VarListN(
+      ) [VarListN]
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    MethodDeclarations(
+      MethodDeclarations(
+        NoMethodDecl(
+        ) [NoMethodDecl]
+        MethodDecl(
+          MethodTypeName(
+            Type(
+             int
+            ) [Type]
+           bezReturna
+          ) [MethodTypeName]
+          NoFormParam(
+          ) [NoFormParam]
+          VarDeclarations(
+            NoVarDecl(
+            ) [NoVarDecl]
+            VarDecl(
+              Type(
+               int
+              ) [Type]
+             z
+              ArrayOptN(
+              ) [ArrayOptN]
+              VarListN(
+              ) [VarListN]
+            ) [VarDecl]
+          ) [VarDeclarations]
+          Statements(
+            NoStmt(
+            ) [NoStmt]
+            MatchedStmt(
+              MatchedDesignatorStatement(
+                Assignment(
+                  Designator(
+                   z
+                    NoDesignatorOptions(
+                    ) [NoDesignatorOptions]
+                  ) [Designator]
+                  TermExpr(
+                    Term(
+                      Const(
+                       3
+                      ) [Const]
+                      NoFactor(
+                      ) [NoFactor]
+                    ) [Term]
+                  ) [TermExpr]
+                ) [Assignment]
+              ) [MatchedDesignatorStatement]
+            ) [MatchedStmt]
+          ) [Statements]
+        ) [MethodDecl]
+      ) [MethodDeclarations]
+      MethodDecl(
+        MethodTypeName(
+          Type(
+           char
+          ) [Type]
+         pogresanRet
+        ) [MethodTypeName]
+        FormParams(
+          SingleFormalParamDecl(
+            FormalParamDecl(
+              Type(
+               int
+              ) [Type]
+             f
+              ArrayForParN(
+              ) [ArrayForParN]
+            ) [FormalParamDecl]
+          ) [SingleFormalParamDecl]
+        ) [FormParams]
+        NoVarDecl(
+        ) [NoVarDecl]
+        Statements(
+          NoStmt(
+          ) [NoStmt]
+          MatchedStmt(
+            ReturnExpr(
+              TermExpr(
+                Term(
+                  Const(
+                   3
+                  ) [Const]
+                  NoFactor(
+                  ) [NoFactor]
+                ) [Term]
+              ) [TermExpr]
+            ) [ReturnExpr]
+          ) [MatchedStmt]
+        ) [Statements]
+      ) [MethodDecl]
+    ) [MethodDeclarations]
+    MethodDecl(
+      MethodTypeVoid(
+       main
+      ) [MethodTypeVoid]
+      NoFormParam(
+      ) [NoFormParam]
+      VarDeclarations(
+        VarDeclarations(
+          NoVarDecl(
+          ) [NoVarDecl]
+          VarDecl(
+            Type(
+             char
+            ) [Type]
+           t
+            ArrayOptN(
+            ) [ArrayOptN]
+            VarListN(
+            ) [VarListN]
+          ) [VarDecl]
+        ) [VarDeclarations]
+        VarDecl(
+          Type(
+           int
+          ) [Type]
+         k
+          ArrayOptN(
+          ) [ArrayOptN]
+          VarListN(
+          ) [VarListN]
+        ) [VarDecl]
+      ) [VarDeclarations]
+      Statements(
+        Statements(
+          Statements(
+            Statements(
+              Statements(
+                NoStmt(
+                ) [NoStmt]
+                MatchedStmt(
+                  MatchedDesignatorStatement(
+                    Increment(
+                      Designator(
+                       a
+                        NoDesignatorOptions(
+                        ) [NoDesignatorOptions]
+                      ) [Designator]
+                    ) [Increment]
+                  ) [MatchedDesignatorStatement]
+                ) [MatchedStmt]
+              ) [Statements]
+              MatchedStmt(
+                MatchedDesignatorStatement(
+                  Assignment(
+                    Designator(
+                     t
+                      NoDesignatorOptions(
+                      ) [NoDesignatorOptions]
+                    ) [Designator]
+                    TermExpr(
+                      Term(
+                        Var(
+                          Designator(
+                           a
+                            NoDesignatorOptions(
+                            ) [NoDesignatorOptions]
+                          ) [Designator]
+                        ) [Var]
+                        NoFactor(
+                        ) [NoFactor]
+                      ) [Term]
+                    ) [TermExpr]
+                  ) [Assignment]
+                ) [MatchedDesignatorStatement]
+              ) [MatchedStmt]
+            ) [Statements]
+            MatchedStmt(
+              MatchedDesignatorStatement(
+                ProcCall(
+                  Designator(
+                   a
+                    NoDesignatorOptions(
+                    ) [NoDesignatorOptions]
+                  ) [Designator]
+                  NoActuals(
+                  ) [NoActuals]
+                ) [ProcCall]
+              ) [MatchedDesignatorStatement]
+            ) [MatchedStmt]
+          ) [Statements]
+          MatchedStmt(
+            MatchedDesignatorStatement(
+              Assignment(
+                Designator(
+                 k
+                  NoDesignatorOptions(
+                  ) [NoDesignatorOptions]
+                ) [Designator]
+                TermExpr(
+                  Term(
+                    FuncCall(
+                      Designator(
+                       bezReturna
+                        NoDesignatorOptions(
+                        ) [NoDesignatorOptions]
+                      ) [Designator]
+                      Actuals(
+                        ActualParam(
+                          TermExpr(
+                            Term(
+                              Var(
+                                Designator(
+                                 t
+                                  NoDesignatorOptions(
+                                  ) [NoDesignatorOptions]
+                                ) [Designator]
+                              ) [Var]
+                              NoFactor(
+                              ) [NoFactor]
+                            ) [Term]
+                          ) [TermExpr]
+                        ) [ActualParam]
+                      ) [Actuals]
+                    ) [FuncCall]
+                    NoFactor(
+                    ) [NoFactor]
+                  ) [Term]
+                ) [TermExpr]
+              ) [Assignment]
+            ) [MatchedDesignatorStatement]
+          ) [MatchedStmt]
+        ) [Statements]
+        MatchedStmt(
+          MatchedDesignatorStatement(
+            Assignment(
+              Designator(
+               t
+                NoDesignatorOptions(
+                ) [NoDesignatorOptions]
+              ) [Designator]
+              TermExpr(
+                Term(
+                  FuncCall(
+                    Designator(
+                     pogresanRet
+                      NoDesignatorOptions(
+                      ) [NoDesignatorOptions]
+                    ) [Designator]
+                    Actuals(
+                      ActualParam(
+                        TermExpr(
+                          Term(
+                            Var(
+                              Designator(
+                               t
+                                NoDesignatorOptions(
+                                ) [NoDesignatorOptions]
+                              ) [Designator]
+                            ) [Var]
+                            NoFactor(
+                            ) [NoFactor]
+                          ) [Term]
+                        ) [TermExpr]
+                      ) [ActualParam]
+                    ) [Actuals]
+                  ) [FuncCall]
+                  NoFactor(
+                  ) [NoFactor]
+                ) [Term]
+              ) [TermExpr]
+            ) [Assignment]
+          ) [MatchedDesignatorStatement]
+        ) [MatchedStmt]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  16:50:37,657 - Deklarisano nabrajanje LosEnum na liniji 3
+INFO  16:50:37,657 - Deklarisan element nabrajanja dva na liniji 3
+INFO  16:50:37,657 - Deklarisan element nabrajanja nula na liniji 3
+INFO  16:50:37,657 - Deklarisan element nabrajanja jedan na liniji 3
+INFO  16:50:37,657 - Deklarisan element nabrajanja dvaopet na liniji 3
+ERROR 16:50:37,657 - Dupla konstanta u enumu dvaopet na liniji 3
+ERROR 16:50:37,657 - Deklarisana konstanta nije dobrog tipa: a na liniji 5
+ERROR 16:50:37,657 - Nije pronadjen tip nesto u tabeli simbola
+INFO  16:50:37,657 - Deklarisana promenljiva b na liniji 6
+ERROR 16:50:37,657 - Greska: Ime b ne predstavlja tip  na liniji 7
+INFO  16:50:37,657 - Deklarisana promenljiva c na liniji 7
+INFO  16:50:37,657 - Obradjuje se funkcija bezReturna na liniji 10
+INFO  16:50:37,657 - Deklarisana promenljiva z na liniji 11
+INFO  16:50:37,658 - Upotreba lokalne promenljive z na liniji 13, Var z: int, 0, 1 
+ERROR 16:50:37,658 - Semanticka greska na liniji 10: funkcija bezReturna nema return iskaz!
+INFO  16:50:37,658 - Obradjuje se funkcija pogresanRet na liniji 16
+INFO  16:50:37,658 - Deklarisan formalni parametar f na liniji 16
+ERROR 16:50:37,658 - Greska na liniji 18 : tip izraza u return naredbi ne slaze se sa tipom povratne vrednosti funkcije pogresanRet
+INFO  16:50:37,658 - Obradjuje se funkcija main na liniji 21
+INFO  16:50:37,658 - Deklarisana promenljiva t na liniji 22
+INFO  16:50:37,658 - Deklarisana promenljiva k na liniji 23
+INFO  16:50:37,658 - Upotreba globalne konstante a na liniji 25, Con a: int, 97, 0 
+ERROR 16:50:37,658 - ++ mora imati promenljivu ili element niza: a na liniji 25
+INFO  16:50:37,659 - Upotreba lokalne promenljive t na liniji 26, Var t: char, 0, 1 
+INFO  16:50:37,659 - Upotreba globalne konstante a na liniji 26, Con a: int, 97, 0 
+ERROR 16:50:37,659 - Greska na liniji 26 :  nekompatibilni tipovi u dodeli vrednosti 
+INFO  16:50:37,659 - Upotreba globalne konstante a na liniji 27, Con a: int, 97, 0 
+ERROR 16:50:37,659 - Greska na liniji 27 : ime a nije funkcija!
+INFO  16:50:37,659 - Upotreba lokalne promenljive k na liniji 28, Var k: int, 1, 1 
+INFO  16:50:37,659 - Upotreba lokalne promenljive t na liniji 28, Var t: char, 0, 1 
+INFO  16:50:37,659 - Pronadjen poziv funkcije bezReturna na liniji 28, Meth bezReturna: int, 0, 0 
+ERROR 16:50:37,659 - Greska na liniji 28 : funkcija bezReturna nije prosledjen dobar broj parametara!
+INFO  16:50:37,663 - Upotreba lokalne promenljive t na liniji 29, Var t: char, 0, 1 
+INFO  16:50:37,663 - Upotreba lokalne promenljive t na liniji 29, Var t: char, 0, 1 
+INFO  16:50:37,663 - Pronadjen poziv funkcije pogresanRet na liniji 29, Meth pogresanRet: char, 0, 1 
+ERROR 16:50:37,663 - Greska na liniji 29 pogresan tip parametra funkcije pogresanRet
+INFO  16:50:37,663 - Print calls = 0
+INFO  16:50:37,663 - Globalnih promenljivih = 2
+INFO  16:50:37,663 - Globalnih konstanti = 1
+INFO  16:50:37,663 - Globalnih nizova = 0
+INFO  16:50:37,663 - Broj metoda = 3
+INFO  16:50:37,664 - Broj enuma = 1
+ERROR 16:50:37,664 - Parsiranje NIJE uspesno zavrseno!
