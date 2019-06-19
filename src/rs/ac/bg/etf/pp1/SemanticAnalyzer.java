@@ -118,13 +118,13 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			Obj varNode = Tab.insert(Obj.Var, fpd.getFormalName(), new Struct(Struct.Array, fpd.getType().struct));
 			int brojParam = currentMethod.getLevel();
 			currentMethod.setLevel(++brojParam);
-			varNode.setFpPos(brojParam);
+			varNode.setFpPos(brojParam-1);
 		} else {
 			report_info("Deklarisan formalni parametar " + fpd.getFormalName(), fpd);
 			Obj varNode = Tab.insert(Obj.Var, fpd.getFormalName(), fpd.getType().struct);
 			int brojParam = currentMethod.getLevel();
 			currentMethod.setLevel(++brojParam);
-			varNode.setFpPos(brojParam);
+			varNode.setFpPos(brojParam-1);
 		}
 	}
 
@@ -428,11 +428,11 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		if (actPar != 0) {
 			LinkedList<Struct> actParLst = listaListiTipova.removeLast();
 			for (Obj obj : func.getLocalSymbols()) {
-				if (obj.getFpPos() != 0 && obj.getFpPos() <= actParLst.size()) {
-					if (obj.getType() != actParLst.get(obj.getFpPos() - 1)) {
+				if (obj.getFpPos() < actParLst.size()) {
+					if (obj.getType() != actParLst.get(obj.getFpPos())) {
 						if (obj.getType().getKind() == Struct.Array
-								&& actParLst.get(obj.getFpPos() - 1).getKind() == Struct.Array) {
-							if (obj.getType().getElemType() == actParLst.get(obj.getFpPos() - 1).getElemType() || func.getName().equals("len")) {
+								&& actParLst.get(obj.getFpPos()).getKind() == Struct.Array) {
+							if (obj.getType().getElemType() == actParLst.get(obj.getFpPos()).getElemType() || func.getName().equals("len")) {
 								// dobar
 							} else {
 								report_error("Greska na liniji " + procCall.getLine()
@@ -474,11 +474,11 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		if (actPar != 0) {
 			LinkedList<Struct> actParLst = listaListiTipova.removeLast();
 			for (Obj obj : func.getLocalSymbols()) {
-				if (obj.getFpPos() != 0 && obj.getFpPos() <= actParLst.size()) {
-					if (obj.getType() != actParLst.get(obj.getFpPos() - 1)) {
+				if (obj.getFpPos() < actParLst.size()) {
+					if (obj.getType() != actParLst.get(obj.getFpPos())) {
 						if (obj.getType().getKind() == Struct.Array
-								&& actParLst.get(obj.getFpPos() - 1).getKind() == Struct.Array) {
-							if (obj.getType().getElemType() == actParLst.get(obj.getFpPos() - 1).getElemType() || func.getName().equals("len")) {
+								&& actParLst.get(obj.getFpPos()).getKind() == Struct.Array) {
+							if (obj.getType().getElemType() == actParLst.get(obj.getFpPos()).getElemType() || func.getName().equals("len")) {
 								// dobar
 							} else {
 								report_error("Greska na liniji " + funcCall.getLine()
@@ -685,7 +685,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 						"Upotreba globalne promenljive " + designator.getName() + " na liniji " + designator.getLine()+", "+ispisCvora(designator.obj),
 						null);
 			} else {
-				if (obj.getFpPos() == 0) {
+				if (obj.getFpPos() >= currentMethod.getLevel()) {
 					report_info("Upotreba lokalne promenljive " + designator.getName() + " na liniji "
 							+ designator.getLine()+", "+ispisCvora(designator.obj), null);
 				} else {
