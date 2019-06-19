@@ -1,0 +1,57 @@
+INFO  12:33:34,313 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  12:33:34,339 - #2 program
+INFO  12:33:34,339 - #39 test302
+INFO  12:33:34,339 - #31 enum
+INFO  12:33:34,339 - #39 IncrementType
+INFO  12:33:34,340 - #3 {
+INFO  12:33:34,340 - #39 BY_ONE
+INFO  12:33:34,340 - #8 ,
+INFO  12:33:34,340 - #39 DOUBLE_VALUE
+INFO  12:33:34,340 - #4 }
+INFO  12:33:34,341 - #28 const
+INFO  12:33:34,341 - #39 int
+INFO  12:33:34,341 - #39 a
+INFO  12:33:34,341 - #12 =
+INFO  12:33:34,341 - #38 2
+INFO  12:33:34,341 - #5 ;
+INFO  12:33:34,342 - #39 int
+INFO  12:33:34,342 - #39 i
+INFO  12:33:34,342 - #5 ;
+INFO  12:33:34,343 - #39 int
+INFO  12:33:34,343 - #39 niz
+INFO  12:33:34,344 - #20 [
+INFO  12:33:34,344 - #21 ]
+INFO  12:33:34,345 - #5 ;
+INFO  12:33:34,345 - #3 {
+INFO  12:33:34,345 - #13 void
+INFO  12:33:34,345 - #39 main
+INFO  12:33:34,345 - #6 (
+INFO  12:33:34,345 - #7 )
+INFO  12:33:34,346 - #3 {
+INFO  12:33:34,346 - #39 niz
+INFO  12:33:34,346 - #12 =
+INFO  12:33:34,347 - #19 new
+INFO  12:33:34,347 - #39 int
+INFO  12:33:34,347 - #20 [
+INFO  12:33:34,347 - #39 a
+INFO  12:33:34,347 - #21 ]
+INFO  12:33:34,348 - #3 {
+INFO  12:33:34,348 - #38 1
+INFO  12:33:34,348 - #8 ,
+INFO  12:33:34,349 - #38 2
+INFO  12:33:34,349 - #4 }
+INFO  12:33:34,349 - #5 ;
+INFO  12:33:34,349 - #4 }
+INFO  12:33:34,349 - #4 }
+INFO  12:33:34,362 - Deklarisano nabrajanje IncrementType na liniji 5
+INFO  12:33:34,363 - Deklarisan element nabrajanja BY_ONE na liniji 5
+INFO  12:33:34,363 - Deklarisan element nabrajanja DOUBLE_VALUE na liniji 5
+INFO  12:33:34,363 - Deklarisana konstanta a na liniji 7
+INFO  12:33:34,363 - Deklarisana promenljiva i na liniji 8
+INFO  12:33:34,363 - Deklarisan niz niz na liniji 9
+INFO  12:33:34,363 - Obradjuje se funkcija main na liniji 12
+INFO  12:33:34,363 - Upotreba globalne promenljive niz na liniji 14, Var niz: Arr of int, 1, 0 
+INFO  12:33:34,363 - Upotreba globalne konstante a na liniji 14, Con a: int, 2, 0 
+ERROR 12:33:34,363 - Broj elemenata inicijalizatorske liste ne ogovara duzini niza na liniji 14
+INFO  12:33:34,363 - Print calls = 0
+ERROR 12:33:34,364 - Parsiranje NIJE uspesno zavrseno!

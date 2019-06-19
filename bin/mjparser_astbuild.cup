@@ -340,7 +340,9 @@ Factor ::= (Const) NUMBER:N1 {: RESULT=new Const(N1); RESULT.setLine(N1left); :}
 			|
 			(FactorNew) NEW Type:t {: RESULT=new FactorNew(t); RESULT.setLine(tleft); :}
 			|
-			(FactorNewArr) NEW Type:t LsquareNt:L1 DuzinaNiza:D2 RSQUARE NewInitList:N3 {: RESULT=new FactorNewArr(t, L1, D2, N3); RESULT.setLine(tleft); :}
+			(FactorNewArr) NEW Type:t LsquareNt:L1 DuzinaNiza:D2 RSQUARE {: RESULT=new FactorNewArr(t, L1, D2); RESULT.setLine(tleft); :}
+			|
+			(FactorNewArrInit) NEW Type:t LsquareNt:L1 DuzinaNiza:D2 RSQUARE NewInitList:N3 {: RESULT=new FactorNewArrInit(t, L1, D2, N3); RESULT.setLine(tleft); :}
 			|
 		   (Var) Designator:d {: RESULT=new Var(d); RESULT.setLine(dleft); :}
 		    |
@@ -352,8 +354,6 @@ LsquareNt ::= (LsquareNt) LSQUARE {: RESULT=new LsquareNt(); :};
 DuzinaNiza ::= (DuzinaNiza) Expr:e {: RESULT=new DuzinaNiza(e); RESULT.setLine(eleft); :} ;
 		   
 NewInitList ::= (NewInitListYes) LBRACE InitList:I1 RBRACE {: RESULT=new NewInitListYes(I1); RESULT.setLine(I1left); :}
-				|
-				(NewInitListNo) {: RESULT=new NewInitListNo(); :} /*epsilon*/
 				;
 				
 InitList ::= (InitListYes) InitList:I1 COMMA Expr:e {: RESULT=new InitListYes(I1, e); RESULT.setLine(I1left); :}

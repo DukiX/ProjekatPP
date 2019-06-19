@@ -1,0 +1,59 @@
+INFO  12:31:12,557 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  12:31:12,589 - #2 program
+INFO  12:31:12,589 - #39 test302
+INFO  12:31:12,589 - #31 enum
+INFO  12:31:12,590 - #39 IncrementType
+INFO  12:31:12,590 - #3 {
+INFO  12:31:12,590 - #39 BY_ONE
+INFO  12:31:12,590 - #8 ,
+INFO  12:31:12,591 - #39 DOUBLE_VALUE
+INFO  12:31:12,591 - #4 }
+INFO  12:31:12,591 - #39 int
+INFO  12:31:12,591 - #39 a
+INFO  12:31:12,591 - #5 ;
+INFO  12:31:12,592 - #39 int
+INFO  12:31:12,592 - #39 i
+INFO  12:31:12,592 - #5 ;
+INFO  12:31:12,592 - #39 int
+INFO  12:31:12,592 - #39 niz
+INFO  12:31:12,592 - #20 [
+INFO  12:31:12,593 - #21 ]
+INFO  12:31:12,593 - #5 ;
+INFO  12:31:12,593 - #3 {
+INFO  12:31:12,595 - #13 void
+INFO  12:31:12,596 - #39 main
+INFO  12:31:12,596 - #6 (
+INFO  12:31:12,596 - #7 )
+INFO  12:31:12,596 - #3 {
+INFO  12:31:12,596 - #39 a
+INFO  12:31:12,596 - #12 =
+INFO  12:31:12,597 - #38 0
+INFO  12:31:12,597 - #5 ;
+INFO  12:31:12,598 - #39 niz
+INFO  12:31:12,598 - #12 =
+INFO  12:31:12,598 - #19 new
+INFO  12:31:12,598 - #39 int
+INFO  12:31:12,598 - #20 [
+INFO  12:31:12,598 - #39 a
+INFO  12:31:12,599 - #21 ]
+INFO  12:31:12,599 - #3 {
+INFO  12:31:12,599 - #38 1
+INFO  12:31:12,599 - #8 ,
+INFO  12:31:12,599 - #38 2
+INFO  12:31:12,599 - #4 }
+INFO  12:31:12,600 - #5 ;
+INFO  12:31:12,600 - #4 }
+INFO  12:31:12,600 - #4 }
+INFO  12:31:12,614 - Deklarisano nabrajanje IncrementType na liniji 5
+INFO  12:31:12,614 - Deklarisan element nabrajanja BY_ONE na liniji 5
+INFO  12:31:12,614 - Deklarisan element nabrajanja DOUBLE_VALUE na liniji 5
+INFO  12:31:12,614 - Deklarisana promenljiva a na liniji 7
+INFO  12:31:12,614 - Deklarisana promenljiva i na liniji 8
+INFO  12:31:12,614 - Deklarisan niz niz na liniji 9
+INFO  12:31:12,614 - Obradjuje se funkcija main na liniji 12
+INFO  12:31:12,614 - Upotreba globalne promenljive a na liniji 15, Var a: int, 0, 0 
+INFO  12:31:12,614 - Upotreba globalne promenljive niz na liniji 17, Var niz: Arr of int, 2, 0 
+INFO  12:31:12,614 - Upotreba globalne promenljive a na liniji 17, Var a: int, 0, 0 
+ERROR 12:31:12,614 - Broj elemenata inicijalizatorske liste ne ogovara duzini niza na liniji 17
+INFO  12:31:12,614 - Print calls = 0
+ERROR 12:31:12,615 - Parsiranje NIJE uspesno zavrseno!

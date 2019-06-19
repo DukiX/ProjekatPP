@@ -1,0 +1,77 @@
+INFO  12:38:00,663 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  12:38:00,688 - #2 program
+INFO  12:38:00,688 - #39 test302
+INFO  12:38:00,688 - #31 enum
+INFO  12:38:00,689 - #39 IncrementType
+INFO  12:38:00,689 - #3 {
+INFO  12:38:00,689 - #39 BY_ONE
+INFO  12:38:00,689 - #8 ,
+INFO  12:38:00,690 - #39 DOUBLE_VALUE
+INFO  12:38:00,690 - #4 }
+INFO  12:38:00,690 - #28 const
+INFO  12:38:00,690 - #39 int
+INFO  12:38:00,690 - #39 a
+INFO  12:38:00,690 - #12 =
+INFO  12:38:00,690 - #38 2
+INFO  12:38:00,691 - #5 ;
+INFO  12:38:00,691 - #39 int
+INFO  12:38:00,691 - #39 i
+INFO  12:38:00,691 - #5 ;
+INFO  12:38:00,692 - #39 int
+INFO  12:38:00,692 - #39 niz
+INFO  12:38:00,694 - #20 [
+INFO  12:38:00,694 - #21 ]
+INFO  12:38:00,694 - #5 ;
+INFO  12:38:00,695 - #3 {
+INFO  12:38:00,695 - #13 void
+INFO  12:38:00,695 - #39 main
+INFO  12:38:00,695 - #6 (
+INFO  12:38:00,695 - #7 )
+INFO  12:38:00,696 - #3 {
+INFO  12:38:00,696 - #39 niz
+INFO  12:38:00,696 - #12 =
+INFO  12:38:00,697 - #19 new
+INFO  12:38:00,697 - #39 int
+INFO  12:38:00,697 - #20 [
+INFO  12:38:00,697 - #39 a
+INFO  12:38:00,697 - #21 ]
+INFO  12:38:00,698 - #3 {
+INFO  12:38:00,698 - #38 1
+INFO  12:38:00,698 - #8 ,
+INFO  12:38:00,698 - #38 2
+INFO  12:38:00,698 - #4 }
+INFO  12:38:00,699 - #5 ;
+INFO  12:38:00,699 - #9 print
+INFO  12:38:00,699 - #6 (
+INFO  12:38:00,699 - #39 niz
+INFO  12:38:00,699 - #20 [
+INFO  12:38:00,699 - #38 1
+INFO  12:38:00,699 - #21 ]
+INFO  12:38:00,699 - #7 )
+INFO  12:38:00,699 - #5 ;
+INFO  12:38:00,699 - #9 print
+INFO  12:38:00,700 - #6 (
+INFO  12:38:00,700 - #39 niz
+INFO  12:38:00,700 - #20 [
+INFO  12:38:00,700 - #38 0
+INFO  12:38:00,700 - #21 ]
+INFO  12:38:00,700 - #7 )
+INFO  12:38:00,700 - #5 ;
+INFO  12:38:00,700 - #4 }
+INFO  12:38:00,700 - #4 }
+INFO  12:38:00,714 - Deklarisano nabrajanje IncrementType na liniji 5
+INFO  12:38:00,714 - Deklarisan element nabrajanja BY_ONE na liniji 5
+INFO  12:38:00,714 - Deklarisan element nabrajanja DOUBLE_VALUE na liniji 5
+INFO  12:38:00,714 - Deklarisana konstanta a na liniji 7
+INFO  12:38:00,714 - Deklarisana promenljiva i na liniji 8
+INFO  12:38:00,714 - Deklarisan niz niz na liniji 9
+INFO  12:38:00,714 - Obradjuje se funkcija main na liniji 12
+INFO  12:38:00,714 - Upotreba globalne promenljive niz na liniji 14, Var niz: Arr of int, 1, 0 
+INFO  12:38:00,714 - Upotreba globalne konstante a na liniji 14, Con a: int, 2, 0 
+INFO  12:38:00,715 - Upotreba globalne promenljive niz na liniji 16, Var niz: Arr of int, 1, 0 
+INFO  12:38:00,715 - Upotreba elementa niza niz na liniji 16, : int, 1, 0 
+INFO  12:38:00,715 - Upotreba globalne promenljive niz na liniji 17, Var niz: Arr of int, 1, 0 
+INFO  12:38:00,715 - Upotreba elementa niza niz na liniji 17, : int, 1, 0 
+INFO  12:38:00,715 - Print calls = 2
+INFO  12:38:00,715 - Generating bytecode file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  12:38:00,719 - Parsiranje uspesno zavrseno!

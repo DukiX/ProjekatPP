@@ -328,7 +328,9 @@ Factor ::= (Const) NUMBER
 			|
 			(FactorNew) NEW Type:t
 			|
-			(FactorNewArr) NEW Type:t LsquareNt DuzinaNiza RSQUARE NewInitList
+			(FactorNewArr) NEW Type:t LsquareNt DuzinaNiza RSQUARE
+			|
+			(FactorNewArrInit) NEW Type:t LsquareNt DuzinaNiza RSQUARE NewInitList
 			|
 		   (Var) Designator:d
 		    |
@@ -340,8 +342,6 @@ LsquareNt ::= (LsquareNt) LSQUARE;
 DuzinaNiza ::= (DuzinaNiza) Expr:e ;
 		   
 NewInitList ::= (NewInitListYes) LBRACE InitList RBRACE
-				|
-				(NewInitListNo) /*epsilon*/
 				;
 				
 InitList ::= (InitListYes) InitList COMMA Expr:e

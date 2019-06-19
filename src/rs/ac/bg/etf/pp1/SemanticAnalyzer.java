@@ -622,14 +622,26 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		fna.struct = new Struct(Struct.Array, fna.getType().struct);
 	}
 	
+	public void visit(FactorNewArrInit fna) {
+		if (fna.getDuzinaNiza().getExpr().struct != Tab.intType) {
+			report_error("Promenljiva izmedju [ ] mora biti INT na liniji " + fna.getLine(), null);
+		}
+		fna.struct = new Struct(Struct.Array, fna.getType().struct);
+	}
+	
 	public static LinkedList<Integer> duzinaInitListi = new LinkedList<>();
 	
 	public void visit(NewInitListYes nil) {
 		if(duzinaInitListe!=duzinaTranutnogNiza) {
-			report_error("Broj elemenata inicijalizatorske liste ne ogovara duzini niza na liniji " + nil.getLine(), null);
+			if(duzinaTranutnogNiza==0) {
+				report_error("Broj elemenata init liste ili nepoznat za vreme kompajliranja ili je 0 na liniji " + nil.getLine(), null);
+			}else {
+				report_error("Broj elemenata inicijalizatorske liste ne ogovara duzini niza na liniji " + nil.getLine(), null);
+			}
 		}
 		duzinaInitListi.add(duzinaInitListe);
 		duzinaInitListe=0;
+		duzinaTranutnogNiza=0;
 	}
 	
 	public void visit(InitListYes ily) {
@@ -682,6 +694,9 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 				}
 			}
 		} else if (obj.getKind() == Obj.Con) {
+			if(designator.getParent().getParent().getParent().getParent() instanceof DuzinaNiza) {
+				duzinaTranutnogNiza=obj.getAdr();
+			}
 			if (obj.getLevel() == 0) {
 				report_info(
 						"Upotreba globalne konstante " + designator.getName() + " na liniji " + designator.getLine()+", "+ispisCvora(designator.obj),
@@ -703,6 +718,9 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 					report_info("Upotreba konstante " + namedot + " nabrajanja " + obj.getName() + " na liniji "
 							+ designator.getLine()+", "+ispisCvora(designator.obj), null);
 					designator.obj = obj.getType().getMembersTable().searchKey(namedot);
+					if(designator.getParent().getParent().getParent().getParent() instanceof DuzinaNiza) {
+						duzinaTranutnogNiza=designator.obj.getAdr();
+					}
 				} else {
 					report_error("Upotreba " + namedot + " nije element nabrajanja " + obj.getName() + " na liniji "
 							+ designator.getLine(), null);

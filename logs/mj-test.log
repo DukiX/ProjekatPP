@@ -1,59 +1,143 @@
-INFO  23:24:39,885 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
-INFO  23:24:39,911 - #2 program
-INFO  23:24:39,911 - #39 test302
-INFO  23:24:39,911 - #39 int
-INFO  23:24:39,912 - #39 niz
-INFO  23:24:39,912 - #20 [
-INFO  23:24:39,912 - #21 ]
-INFO  23:24:39,912 - #5 ;
-INFO  23:24:39,913 - #39 int
-INFO  23:24:39,914 - #39 i
-INFO  23:24:39,914 - #5 ;
-INFO  23:24:39,914 - #3 {
-INFO  23:24:39,914 - #13 void
-INFO  23:24:39,915 - #39 main
-INFO  23:24:39,915 - #6 (
-INFO  23:24:39,915 - #7 )
-INFO  23:24:39,915 - #3 {
-INFO  23:24:39,916 - #39 i
-INFO  23:24:39,916 - #12 =
-INFO  23:24:39,916 - #38 3
-INFO  23:24:39,917 - #5 ;
-INFO  23:24:39,917 - #39 niz
-INFO  23:24:39,920 - #12 =
-INFO  23:24:39,920 - #19 new
-INFO  23:24:39,920 - #39 int
-INFO  23:24:39,920 - #20 [
-INFO  23:24:39,920 - #39 i
-INFO  23:24:39,921 - #21 ]
-INFO  23:24:39,921 - #5 ;
-INFO  23:24:39,922 - #39 niz
-INFO  23:24:39,922 - #20 [
-INFO  23:24:39,922 - #38 0
-INFO  23:24:39,922 - #21 ]
-INFO  23:24:39,922 - #12 =
-INFO  23:24:39,922 - #38 5
-INFO  23:24:39,922 - #5 ;
-INFO  23:24:39,922 - #9 print
-INFO  23:24:39,922 - #6 (
-INFO  23:24:39,922 - #39 niz
-INFO  23:24:39,922 - #20 [
-INFO  23:24:39,923 - #38 0
-INFO  23:24:39,923 - #21 ]
-INFO  23:24:39,923 - #7 )
-INFO  23:24:39,923 - #5 ;
-INFO  23:24:39,923 - #4 }
-INFO  23:24:39,923 - #4 }
-INFO  23:24:39,936 - Deklarisan niz niz na liniji 6
-INFO  23:24:39,937 - Deklarisana promenljiva i na liniji 7
-INFO  23:24:39,937 - Obradjuje se funkcija main na liniji 10
-INFO  23:24:39,937 - Upotreba globalne promenljive i na liniji 12, Var i: int, 1, 0 
-INFO  23:24:39,937 - Upotreba globalne promenljive niz na liniji 14, Var niz: Arr of int, 0, 0 
-INFO  23:24:39,937 - Upotreba globalne promenljive i na liniji 14, Var i: int, 1, 0 
-INFO  23:24:39,937 - Upotreba globalne promenljive niz na liniji 15, Var niz: Arr of int, 0, 0 
-INFO  23:24:39,937 - Upotreba elementa niza niz na liniji 15, : int, 0, 0 
-INFO  23:24:39,937 - Upotreba globalne promenljive niz na liniji 16, Var niz: Arr of int, 0, 0 
-INFO  23:24:39,937 - Upotreba elementa niza niz na liniji 16, : int, 0, 0 
-INFO  23:24:39,937 - Print calls = 1
-INFO  23:24:39,938 - Generating bytecode file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
-INFO  23:24:39,941 - Parsiranje uspesno zavrseno!
+INFO  12:48:31,445 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  12:48:31,519 - #2 program
+INFO  12:48:31,519 - #39 test302
+INFO  12:48:31,520 - #31 enum
+INFO  12:48:31,520 - #39 IncrementType
+INFO  12:48:31,520 - #3 {
+INFO  12:48:31,521 - #39 BY_ONE
+INFO  12:48:31,521 - #8 ,
+INFO  12:48:31,521 - #39 DOUBLE_VALUE
+INFO  12:48:31,521 - #8 ,
+INFO  12:48:31,521 - #39 trojka
+INFO  12:48:31,521 - #12 =
+INFO  12:48:31,522 - #38 3
+INFO  12:48:31,522 - #4 }
+INFO  12:48:31,522 - #28 const
+INFO  12:48:31,522 - #39 int
+INFO  12:48:31,522 - #39 a
+INFO  12:48:31,523 - #12 =
+INFO  12:48:31,523 - #38 2
+INFO  12:48:31,523 - #5 ;
+INFO  12:48:31,523 - #28 const
+INFO  12:48:31,526 - #39 int
+INFO  12:48:31,526 - #39 b
+INFO  12:48:31,526 - #12 =
+INFO  12:48:31,526 - #38 3
+INFO  12:48:31,526 - #5 ;
+INFO  12:48:31,526 - #39 int
+INFO  12:48:31,526 - #39 i
+INFO  12:48:31,526 - #5 ;
+INFO  12:48:31,527 - #39 int
+INFO  12:48:31,528 - #39 niz
+INFO  12:48:31,528 - #20 [
+INFO  12:48:31,528 - #21 ]
+INFO  12:48:31,528 - #5 ;
+INFO  12:48:31,528 - #3 {
+INFO  12:48:31,528 - #13 void
+INFO  12:48:31,528 - #39 main
+INFO  12:48:31,529 - #6 (
+INFO  12:48:31,529 - #7 )
+INFO  12:48:31,529 - #3 {
+INFO  12:48:31,529 - #39 niz
+INFO  12:48:31,530 - #12 =
+INFO  12:48:31,530 - #19 new
+INFO  12:48:31,530 - #39 int
+INFO  12:48:31,530 - #20 [
+INFO  12:48:31,530 - #39 a
+INFO  12:48:31,531 - #21 ]
+INFO  12:48:31,532 - #3 {
+INFO  12:48:31,532 - #38 1
+INFO  12:48:31,533 - #8 ,
+INFO  12:48:31,533 - #38 2
+INFO  12:48:31,533 - #4 }
+INFO  12:48:31,533 - #5 ;
+INFO  12:48:31,533 - #39 niz
+INFO  12:48:31,533 - #12 =
+INFO  12:48:31,533 - #19 new
+INFO  12:48:31,534 - #39 int
+INFO  12:48:31,534 - #20 [
+INFO  12:48:31,534 - #39 a
+INFO  12:48:31,534 - #21 ]
+INFO  12:48:31,534 - #3 {
+INFO  12:48:31,534 - #38 1
+INFO  12:48:31,534 - #8 ,
+INFO  12:48:31,534 - #38 2
+INFO  12:48:31,535 - #4 }
+INFO  12:48:31,535 - #5 ;
+INFO  12:48:31,535 - #9 print
+INFO  12:48:31,535 - #6 (
+INFO  12:48:31,535 - #39 niz
+INFO  12:48:31,535 - #20 [
+INFO  12:48:31,535 - #38 1
+INFO  12:48:31,535 - #21 ]
+INFO  12:48:31,535 - #7 )
+INFO  12:48:31,535 - #5 ;
+INFO  12:48:31,535 - #9 print
+INFO  12:48:31,536 - #6 (
+INFO  12:48:31,536 - #39 niz
+INFO  12:48:31,536 - #20 [
+INFO  12:48:31,536 - #38 0
+INFO  12:48:31,536 - #21 ]
+INFO  12:48:31,536 - #7 )
+INFO  12:48:31,536 - #5 ;
+INFO  12:48:31,536 - #39 niz
+INFO  12:48:31,536 - #12 =
+INFO  12:48:31,536 - #19 new
+INFO  12:48:31,536 - #39 int
+INFO  12:48:31,536 - #20 [
+INFO  12:48:31,536 - #39 IncrementType
+INFO  12:48:31,536 - #22 .
+INFO  12:48:31,536 - #39 trojka
+INFO  12:48:31,536 - #21 ]
+INFO  12:48:31,536 - #3 {
+INFO  12:48:31,536 - #38 1
+INFO  12:48:31,540 - #8 ,
+INFO  12:48:31,540 - #38 2
+INFO  12:48:31,540 - #8 ,
+INFO  12:48:31,540 - #38 3
+INFO  12:48:31,541 - #4 }
+INFO  12:48:31,541 - #5 ;
+INFO  12:48:31,541 - #9 print
+INFO  12:48:31,541 - #6 (
+INFO  12:48:31,541 - #39 niz
+INFO  12:48:31,541 - #20 [
+INFO  12:48:31,541 - #38 1
+INFO  12:48:31,541 - #21 ]
+INFO  12:48:31,541 - #7 )
+INFO  12:48:31,541 - #5 ;
+INFO  12:48:31,541 - #9 print
+INFO  12:48:31,542 - #6 (
+INFO  12:48:31,543 - #39 niz
+INFO  12:48:31,543 - #20 [
+INFO  12:48:31,543 - #38 2
+INFO  12:48:31,543 - #21 ]
+INFO  12:48:31,543 - #7 )
+INFO  12:48:31,544 - #5 ;
+INFO  12:48:31,544 - #4 }
+INFO  12:48:31,544 - #4 }
+INFO  12:48:31,602 - Deklarisano nabrajanje IncrementType na liniji 5
+INFO  12:48:31,602 - Deklarisan element nabrajanja BY_ONE na liniji 5
+INFO  12:48:31,602 - Deklarisan element nabrajanja DOUBLE_VALUE na liniji 5
+INFO  12:48:31,602 - Deklarisan element nabrajanja trojka na liniji 5
+INFO  12:48:31,602 - Deklarisana konstanta a na liniji 7
+INFO  12:48:31,602 - Deklarisana konstanta b na liniji 8
+INFO  12:48:31,602 - Deklarisana promenljiva i na liniji 9
+INFO  12:48:31,603 - Deklarisan niz niz na liniji 10
+INFO  12:48:31,603 - Obradjuje se funkcija main na liniji 13
+INFO  12:48:31,603 - Upotreba globalne promenljive niz na liniji 15, Var niz: Arr of int, 1, 0 
+INFO  12:48:31,603 - Upotreba globalne konstante a na liniji 15, Con a: int, 2, 0 
+INFO  12:48:31,603 - Upotreba globalne promenljive niz na liniji 17, Var niz: Arr of int, 1, 0 
+INFO  12:48:31,603 - Upotreba globalne konstante a na liniji 17, Con a: int, 2, 0 
+INFO  12:48:31,603 - Upotreba globalne promenljive niz na liniji 19, Var niz: Arr of int, 1, 0 
+INFO  12:48:31,603 - Upotreba elementa niza niz na liniji 19, : int, 1, 0 
+INFO  12:48:31,603 - Upotreba globalne promenljive niz na liniji 20, Var niz: Arr of int, 1, 0 
+INFO  12:48:31,603 - Upotreba elementa niza niz na liniji 20, : int, 1, 0 
+INFO  12:48:31,603 - Upotreba globalne promenljive niz na liniji 22, Var niz: Arr of int, 1, 0 
+INFO  12:48:31,603 - Upotreba konstante trojka nabrajanja IncrementType na liniji 22, Type IncrementType: , 0, 0 
+INFO  12:48:31,603 - Upotreba globalne promenljive niz na liniji 23, Var niz: Arr of int, 1, 0 
+INFO  12:48:31,604 - Upotreba elementa niza niz na liniji 23, : int, 1, 0 
+INFO  12:48:31,604 - Upotreba globalne promenljive niz na liniji 24, Var niz: Arr of int, 1, 0 
+INFO  12:48:31,604 - Upotreba elementa niza niz na liniji 24, : int, 1, 0 
+INFO  12:48:31,604 - Print calls = 4
+INFO  12:48:31,604 - Generating bytecode file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  12:48:31,608 - Parsiranje uspesno zavrseno!

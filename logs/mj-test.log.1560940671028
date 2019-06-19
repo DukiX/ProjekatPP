@@ -1,0 +1,57 @@
+INFO  12:37:29,215 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  12:37:29,240 - #2 program
+INFO  12:37:29,240 - #39 test302
+INFO  12:37:29,240 - #31 enum
+INFO  12:37:29,241 - #39 IncrementType
+INFO  12:37:29,241 - #3 {
+INFO  12:37:29,242 - #39 BY_ONE
+INFO  12:37:29,242 - #8 ,
+INFO  12:37:29,242 - #39 DOUBLE_VALUE
+INFO  12:37:29,242 - #4 }
+INFO  12:37:29,242 - #28 const
+INFO  12:37:29,242 - #39 int
+INFO  12:37:29,242 - #39 a
+INFO  12:37:29,243 - #12 =
+INFO  12:37:29,243 - #38 2
+INFO  12:37:29,243 - #5 ;
+INFO  12:37:29,243 - #39 int
+INFO  12:37:29,244 - #39 i
+INFO  12:37:29,244 - #5 ;
+INFO  12:37:29,244 - #39 int
+INFO  12:37:29,244 - #39 niz
+INFO  12:37:29,246 - #20 [
+INFO  12:37:29,246 - #21 ]
+INFO  12:37:29,246 - #5 ;
+INFO  12:37:29,246 - #3 {
+INFO  12:37:29,246 - #13 void
+INFO  12:37:29,247 - #39 main
+INFO  12:37:29,247 - #6 (
+INFO  12:37:29,247 - #7 )
+INFO  12:37:29,247 - #3 {
+INFO  12:37:29,247 - #39 niz
+INFO  12:37:29,247 - #12 =
+INFO  12:37:29,248 - #19 new
+INFO  12:37:29,248 - #39 int
+INFO  12:37:29,248 - #20 [
+INFO  12:37:29,248 - #39 a
+INFO  12:37:29,248 - #21 ]
+INFO  12:37:29,249 - #3 {
+INFO  12:37:29,249 - #38 1
+INFO  12:37:29,249 - #8 ,
+INFO  12:37:29,250 - #38 2
+INFO  12:37:29,250 - #4 }
+INFO  12:37:29,250 - #5 ;
+INFO  12:37:29,250 - #4 }
+INFO  12:37:29,250 - #4 }
+INFO  12:37:29,264 - Deklarisano nabrajanje IncrementType na liniji 5
+INFO  12:37:29,264 - Deklarisan element nabrajanja BY_ONE na liniji 5
+INFO  12:37:29,264 - Deklarisan element nabrajanja DOUBLE_VALUE na liniji 5
+INFO  12:37:29,264 - Deklarisana konstanta a na liniji 7
+INFO  12:37:29,264 - Deklarisana promenljiva i na liniji 8
+INFO  12:37:29,264 - Deklarisan niz niz na liniji 9
+INFO  12:37:29,264 - Obradjuje se funkcija main na liniji 12
+INFO  12:37:29,264 - Upotreba globalne promenljive niz na liniji 14, Var niz: Arr of int, 1, 0 
+INFO  12:37:29,264 - Upotreba globalne konstante a na liniji 14, Con a: int, 2, 0 
+INFO  12:37:29,264 - Print calls = 0
+INFO  12:37:29,265 - Generating bytecode file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  12:37:29,269 - Parsiranje uspesno zavrseno!

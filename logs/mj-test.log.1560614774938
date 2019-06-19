@@ -1,0 +1,87 @@
+INFO  18:06:04,202 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  18:06:04,230 - #2 program
+INFO  18:06:04,230 - #39 test302
+INFO  18:06:04,230 - #28 const
+INFO  18:06:04,231 - #39 int
+INFO  18:06:04,231 - #39 a
+INFO  18:06:04,231 - #12 =
+INFO  18:06:04,231 - #38 3
+INFO  18:06:04,231 - #5 ;
+INFO  18:06:04,232 - #39 int
+INFO  18:06:04,232 - #39 niz
+INFO  18:06:04,232 - #20 [
+INFO  18:06:04,232 - #21 ]
+INFO  18:06:04,232 - #5 ;
+INFO  18:06:04,234 - #39 int
+INFO  18:06:04,234 - #39 i
+INFO  18:06:04,234 - #5 ;
+INFO  18:06:04,234 - #3 {
+INFO  18:06:04,234 - #13 void
+INFO  18:06:04,235 - #39 main
+INFO  18:06:04,235 - #6 (
+INFO  18:06:04,235 - #7 )
+INFO  18:06:04,237 - #3 {
+INFO  18:06:04,237 - #39 i
+INFO  18:06:04,238 - #12 =
+INFO  18:06:04,238 - #38 3
+INFO  18:06:04,238 - #5 ;
+INFO  18:06:04,239 - #39 niz
+INFO  18:06:04,239 - #12 =
+INFO  18:06:04,240 - #19 new
+INFO  18:06:04,240 - #39 int
+INFO  18:06:04,240 - #20 [
+INFO  18:06:04,240 - #39 a
+INFO  18:06:04,240 - #21 ]
+INFO  18:06:04,241 - #3 {
+INFO  18:06:04,241 - #38 1
+INFO  18:06:04,241 - #8 ,
+INFO  18:06:04,242 - #38 2
+INFO  18:06:04,242 - #8 ,
+INFO  18:06:04,242 - #38 3
+INFO  18:06:04,242 - #4 }
+INFO  18:06:04,242 - #5 ;
+INFO  18:06:04,243 - #39 niz
+INFO  18:06:04,243 - #20 [
+INFO  18:06:04,243 - #38 0
+INFO  18:06:04,243 - #21 ]
+INFO  18:06:04,243 - #12 =
+INFO  18:06:04,245 - #38 5
+INFO  18:06:04,245 - #5 ;
+INFO  18:06:04,245 - #39 niz
+INFO  18:06:04,246 - #20 [
+INFO  18:06:04,247 - #38 2
+INFO  18:06:04,248 - #21 ]
+INFO  18:06:04,248 - #12 =
+INFO  18:06:04,248 - #39 niz
+INFO  18:06:04,249 - #20 [
+INFO  18:06:04,250 - #38 0
+INFO  18:06:04,250 - #21 ]
+INFO  18:06:04,250 - #5 ;
+INFO  18:06:04,251 - #9 print
+INFO  18:06:04,252 - #6 (
+INFO  18:06:04,252 - #39 niz
+INFO  18:06:04,252 - #20 [
+INFO  18:06:04,252 - #38 2
+INFO  18:06:04,253 - #21 ]
+INFO  18:06:04,256 - #7 )
+INFO  18:06:04,256 - #5 ;
+INFO  18:06:04,256 - #4 }
+INFO  18:06:04,257 - #4 }
+INFO  18:06:04,273 - Deklarisana konstanta a na liniji 5
+INFO  18:06:04,273 - Deklarisan niz niz na liniji 6
+INFO  18:06:04,273 - Deklarisana promenljiva i na liniji 7
+INFO  18:06:04,273 - Obradjuje se funkcija main na liniji 10
+INFO  18:06:04,273 - Upotreba globalne promenljive i na liniji 12, Var i: int, 1, 0 
+INFO  18:06:04,273 - Upotreba globalne promenljive niz na liniji 14, Var niz: Arr of int, 0, 0 
+INFO  18:06:04,274 - Upotreba globalne konstante a na liniji 14, Con a: int, 3, 0 
+INFO  18:06:04,274 - Upotreba globalne promenljive niz na liniji 15, Var niz: Arr of int, 0, 0 
+INFO  18:06:04,274 - Upotreba elementa niza niz na liniji 15, : int, 0, 0 
+INFO  18:06:04,274 - Upotreba globalne promenljive niz na liniji 16, Var niz: Arr of int, 0, 0 
+INFO  18:06:04,274 - Upotreba elementa niza niz na liniji 16, : int, 0, 0 
+INFO  18:06:04,274 - Upotreba globalne promenljive niz na liniji 16, Var niz: Arr of int, 0, 0 
+INFO  18:06:04,274 - Upotreba elementa niza niz na liniji 16, : int, 0, 0 
+INFO  18:06:04,274 - Upotreba globalne promenljive niz na liniji 17, Var niz: Arr of int, 0, 0 
+INFO  18:06:04,274 - Upotreba elementa niza niz na liniji 17, : int, 0, 0 
+INFO  18:06:04,274 - Print calls = 1
+INFO  18:06:04,276 - Generating bytecode file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  18:06:04,286 - Parsiranje uspesno zavrseno!

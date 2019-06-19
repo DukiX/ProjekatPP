@@ -2,18 +2,26 @@
 
 program test302
 
+enum IncrementType { BY_ONE, DOUBLE_VALUE,trojka=3 }
 
-int niz[];
+const int a=2;
+const int b = 3;
 int i;
+int niz[];
 {
 	
 	void main()
 	{
-		i=3;
+		niz = new int[a]{1,2};
 		
-		niz = new int[i];
-		niz[0] = 5;
+		niz = new int[a]{1,2};
+		
+		print(niz[1]);
 		print(niz[0]);
+
+		niz = new int[IncrementType.trojka]{1,2,3};	
+		print(niz[1]);
+		print(niz[2]);
 	}
 }
 
