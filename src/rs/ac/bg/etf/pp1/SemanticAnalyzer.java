@@ -37,7 +37,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		Obj varNode = Tab.insert(Obj.Var, "i", Tab.intType);
 		currentMethod.setLevel(1);
 		varNode.setLevel(1);
-		varNode.setFpPos(1);
+		varNode.setFpPos(0);
 
 		Tab.chainLocalSymbols(currentMethod);
 		Tab.closeScope();
@@ -51,7 +51,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		varNode = Tab.insert(Obj.Var, "ch", Tab.charType);
 		currentMethod.setLevel(1);
 		varNode.setLevel(1);
-		varNode.setFpPos(1);
+		varNode.setFpPos(0);
 
 		Tab.chainLocalSymbols(currentMethod);
 		Tab.closeScope();
@@ -65,7 +65,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		varNode = Tab.insert(Obj.Var, "arr", new Struct(Struct.Array, Tab.noType));
 		currentMethod.setLevel(1);
 		varNode.setLevel(1);
-		varNode.setFpPos(1);
+		varNode.setFpPos(0);
 
 		Tab.chainLocalSymbols(currentMethod);
 		Tab.closeScope();
@@ -285,7 +285,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	public void visit(EnumName en) {
 		Struct estr = new Struct(Struct.Enum, new HashTableDataStructure());
 		okruzujuciEnum = en.obj = Tab.insert(Obj.Type, en.getEnumNme(), estr);
-		
+		okruzujuciEnum.setFpPos(-1);
 		report_info("Deklarisano nabrajanje " + en.getEnumNme(), en);
 
 		enumConstCount = 0;
