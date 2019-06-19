@@ -1,0 +1,512 @@
+INFO  20:01:01,939 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  20:01:01,966 - #2 program
+INFO  20:01:01,966 - #39 test301
+INFO  20:01:01,966 - #31 enum
+INFO  20:01:01,967 - #39 Broj
+INFO  20:01:01,967 - #3 {
+INFO  20:01:01,967 - #39 NULA
+INFO  20:01:01,967 - #8 ,
+INFO  20:01:01,967 - #39 JEDAN
+INFO  20:01:01,968 - #8 ,
+INFO  20:01:01,968 - #39 PET
+INFO  20:01:01,968 - #12 =
+INFO  20:01:01,968 - #38 5
+INFO  20:01:01,968 - #8 ,
+INFO  20:01:01,968 - #39 DESET
+INFO  20:01:01,968 - #12 =
+INFO  20:01:01,968 - #38 10
+INFO  20:01:01,968 - #4 }
+INFO  20:01:01,968 - #28 const
+INFO  20:01:01,969 - #39 int
+INFO  20:01:01,969 - #39 jedan
+INFO  20:01:01,969 - #12 =
+INFO  20:01:01,972 - #38 1
+INFO  20:01:01,972 - #5 ;
+INFO  20:01:01,972 - #28 const
+INFO  20:01:01,973 - #39 int
+INFO  20:01:01,973 - #39 pet
+INFO  20:01:01,973 - #12 =
+INFO  20:01:01,973 - #38 5
+INFO  20:01:01,973 - #5 ;
+INFO  20:01:01,973 - #39 int
+INFO  20:01:01,973 - #39 niz
+INFO  20:01:01,973 - #20 [
+INFO  20:01:01,973 - #21 ]
+INFO  20:01:01,973 - #5 ;
+INFO  20:01:01,974 - #39 char
+INFO  20:01:01,974 - #39 nizch
+INFO  20:01:01,974 - #20 [
+INFO  20:01:01,974 - #21 ]
+INFO  20:01:01,974 - #5 ;
+INFO  20:01:01,975 - #3 {
+INFO  20:01:01,975 - #39 int
+INFO  20:01:01,975 - #39 inc
+INFO  20:01:01,975 - #6 (
+INFO  20:01:01,975 - #39 int
+INFO  20:01:01,975 - #39 broj
+INFO  20:01:01,975 - #7 )
+INFO  20:01:01,977 - #3 {
+INFO  20:01:01,977 - #10 return
+INFO  20:01:01,977 - #39 broj
+INFO  20:01:01,977 - #11 +
+INFO  20:01:01,979 - #39 Broj
+INFO  20:01:01,979 - #22 .
+INFO  20:01:01,979 - #39 JEDAN
+INFO  20:01:01,980 - #5 ;
+INFO  20:01:01,980 - #4 }
+INFO  20:01:01,980 - #13 void
+INFO  20:01:01,981 - #39 mul
+INFO  20:01:01,981 - #6 (
+INFO  20:01:01,981 - #39 int
+INFO  20:01:01,981 - #39 arr
+INFO  20:01:01,981 - #20 [
+INFO  20:01:01,981 - #21 ]
+INFO  20:01:01,981 - #8 ,
+INFO  20:01:01,981 - #39 int
+INFO  20:01:01,985 - #39 index
+INFO  20:01:01,985 - #8 ,
+INFO  20:01:01,985 - #39 int
+INFO  20:01:01,985 - #39 b
+INFO  20:01:01,985 - #7 )
+INFO  20:01:01,985 - #3 {
+INFO  20:01:01,985 - #39 arr
+INFO  20:01:01,985 - #20 [
+INFO  20:01:01,985 - #39 index
+INFO  20:01:01,985 - #21 ]
+INFO  20:01:01,985 - #12 =
+INFO  20:01:01,985 - #39 arr
+INFO  20:01:01,985 - #20 [
+INFO  20:01:01,985 - #39 index
+INFO  20:01:01,985 - #21 ]
+INFO  20:01:01,985 - #16 *
+INFO  20:01:01,985 - #39 b
+INFO  20:01:01,986 - #5 ;
+INFO  20:01:01,987 - #4 }
+INFO  20:01:01,987 - #13 void
+INFO  20:01:01,987 - #39 main
+INFO  20:01:01,987 - #6 (
+INFO  20:01:01,987 - #7 )
+INFO  20:01:01,988 - #39 int
+INFO  20:01:01,988 - #39 bodovi
+INFO  20:01:01,988 - #5 ;
+INFO  20:01:01,988 - #39 Broj
+INFO  20:01:01,988 - #39 nula
+INFO  20:01:01,988 - #8 ,
+INFO  20:01:01,988 - #39 jedan
+INFO  20:01:01,988 - #5 ;
+INFO  20:01:01,989 - #3 {
+INFO  20:01:01,989 - #23 for
+INFO  20:01:01,989 - #6 (
+INFO  20:01:01,990 - #5 ;
+INFO  20:01:01,990 - #5 ;
+INFO  20:01:01,991 - #7 )
+INFO  20:01:01,992 - #3 {
+INFO  20:01:01,992 - #24 break
+INFO  20:01:01,992 - #5 ;
+INFO  20:01:01,992 - #4 }
+INFO  20:01:01,993 - #4 }
+INFO  20:01:01,993 - #4 }
+INFO  20:01:01,996 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  VarDeclarations(
+    VarDeclarations(
+      VarDeclarations(
+        VarDeclarations(
+          VarDeclarations(
+            NoVarDecl(
+            ) [NoVarDecl]
+            EnumDecl(
+              EnumName(
+               Broj
+              ) [EnumName]
+              EnumLst(
+                EnumLst(
+                  EnumLst(
+                    EnumElem(
+                     NULA
+                      EnumNoNmbr(
+                      ) [EnumNoNmbr]
+                    ) [EnumElem]
+                   JEDAN
+                    EnumNoNmbr(
+                    ) [EnumNoNmbr]
+                  ) [EnumLst]
+                 PET
+                  EnumNmbr(
+                   5
+                  ) [EnumNmbr]
+                ) [EnumLst]
+               DESET
+                EnumNmbr(
+                 10
+                ) [EnumNmbr]
+              ) [EnumLst]
+            ) [EnumDecl]
+          ) [VarDeclarations]
+          ConstDecl(
+            Type(
+             int
+            ) [Type]
+           jedan
+            ConstDefNum(
+             1
+            ) [ConstDefNum]
+            CnstListEmpty(
+            ) [CnstListEmpty]
+          ) [ConstDecl]
+        ) [VarDeclarations]
+        ConstDecl(
+          Type(
+           int
+          ) [Type]
+         pet
+          ConstDefNum(
+           5
+          ) [ConstDefNum]
+          CnstListEmpty(
+          ) [CnstListEmpty]
+        ) [ConstDecl]
+      ) [VarDeclarations]
+      VarDecl(
+        Type(
+         int
+        ) [Type]
+       niz
+        ArrayOptY(
+        ) [ArrayOptY]
+        VarListN(
+        ) [VarListN]
+      ) [VarDecl]
+    ) [VarDeclarations]
+    VarDecl(
+      Type(
+       char
+      ) [Type]
+     nizch
+      ArrayOptY(
+      ) [ArrayOptY]
+      VarListN(
+      ) [VarListN]
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    MethodDeclarations(
+      MethodDeclarations(
+        NoMethodDecl(
+        ) [NoMethodDecl]
+        MethodDecl(
+          MethodTypeName(
+            Type(
+             int
+            ) [Type]
+           inc
+          ) [MethodTypeName]
+          FormParams(
+            SingleFormalParamDecl(
+              FormalParamDecl(
+                Type(
+                 int
+                ) [Type]
+               broj
+                ArrayForParN(
+                ) [ArrayForParN]
+              ) [FormalParamDecl]
+            ) [SingleFormalParamDecl]
+          ) [FormParams]
+          NoVarDecl(
+          ) [NoVarDecl]
+          Statements(
+            NoStmt(
+            ) [NoStmt]
+            MatchedStmt(
+              ReturnExpr(
+                AddExpr(
+                  TermExpr(
+                    Term(
+                      Var(
+                        Designator(
+                         broj
+                          NoDesignatorOptions(
+                          ) [NoDesignatorOptions]
+                        ) [Designator]
+                      ) [Var]
+                      NoFactor(
+                      ) [NoFactor]
+                    ) [Term]
+                  ) [TermExpr]
+                  Plusop(
+                  ) [Plusop]
+                  Term(
+                    Var(
+                      Designator(
+                       Broj
+                        DotDesignatorOption(
+                         JEDAN
+                        ) [DotDesignatorOption]
+                      ) [Designator]
+                    ) [Var]
+                    NoFactor(
+                    ) [NoFactor]
+                  ) [Term]
+                ) [AddExpr]
+              ) [ReturnExpr]
+            ) [MatchedStmt]
+          ) [Statements]
+        ) [MethodDecl]
+      ) [MethodDeclarations]
+      MethodDecl(
+        MethodTypeVoid(
+         mul
+        ) [MethodTypeVoid]
+        FormParams(
+          FormalParamDecls(
+            FormalParamDecls(
+              SingleFormalParamDecl(
+                FormalParamDecl(
+                  Type(
+                   int
+                  ) [Type]
+                 arr
+                  ArrayForParY(
+                  ) [ArrayForParY]
+                ) [FormalParamDecl]
+              ) [SingleFormalParamDecl]
+              FormalParamDecl(
+                Type(
+                 int
+                ) [Type]
+               index
+                ArrayForParN(
+                ) [ArrayForParN]
+              ) [FormalParamDecl]
+            ) [FormalParamDecls]
+            FormalParamDecl(
+              Type(
+               int
+              ) [Type]
+             b
+              ArrayForParN(
+              ) [ArrayForParN]
+            ) [FormalParamDecl]
+          ) [FormalParamDecls]
+        ) [FormParams]
+        NoVarDecl(
+        ) [NoVarDecl]
+        Statements(
+          NoStmt(
+          ) [NoStmt]
+          MatchedStmt(
+            MatchedDesignatorStatement(
+              Assignment(
+                Designator(
+                 arr
+                  SquareDesignatorOption(
+                    TermExpr(
+                      Term(
+                        Var(
+                          Designator(
+                           index
+                            NoDesignatorOptions(
+                            ) [NoDesignatorOptions]
+                          ) [Designator]
+                        ) [Var]
+                        NoFactor(
+                        ) [NoFactor]
+                      ) [Term]
+                    ) [TermExpr]
+                  ) [SquareDesignatorOption]
+                ) [Designator]
+                TermExpr(
+                  Term(
+                    Var(
+                      Designator(
+                       arr
+                        SquareDesignatorOption(
+                          TermExpr(
+                            Term(
+                              Var(
+                                Designator(
+                                 index
+                                  NoDesignatorOptions(
+                                  ) [NoDesignatorOptions]
+                                ) [Designator]
+                              ) [Var]
+                              NoFactor(
+                              ) [NoFactor]
+                            ) [Term]
+                          ) [TermExpr]
+                        ) [SquareDesignatorOption]
+                      ) [Designator]
+                    ) [Var]
+                    MulopFactor(
+                      NoFactor(
+                      ) [NoFactor]
+                      Timesop(
+                      ) [Timesop]
+                      Var(
+                        Designator(
+                         b
+                          NoDesignatorOptions(
+                          ) [NoDesignatorOptions]
+                        ) [Designator]
+                      ) [Var]
+                    ) [MulopFactor]
+                  ) [Term]
+                ) [TermExpr]
+              ) [Assignment]
+            ) [MatchedDesignatorStatement]
+          ) [MatchedStmt]
+        ) [Statements]
+      ) [MethodDecl]
+    ) [MethodDeclarations]
+    MethodDecl(
+      MethodTypeVoid(
+       main
+      ) [MethodTypeVoid]
+      NoFormParam(
+      ) [NoFormParam]
+      VarDeclarations(
+        VarDeclarations(
+          NoVarDecl(
+          ) [NoVarDecl]
+          VarDecl(
+            Type(
+             int
+            ) [Type]
+           bodovi
+            ArrayOptN(
+            ) [ArrayOptN]
+            VarListN(
+            ) [VarListN]
+          ) [VarDecl]
+        ) [VarDeclarations]
+        VarDecl(
+          Type(
+           Broj
+          ) [Type]
+         nula
+          ArrayOptN(
+          ) [ArrayOptN]
+          VarListY(
+            VarListN(
+            ) [VarListN]
+           jedan
+            ArrayOptN(
+            ) [ArrayOptN]
+          ) [VarListY]
+        ) [VarDecl]
+      ) [VarDeclarations]
+      Statements(
+        NoStmt(
+        ) [NoStmt]
+        MatchedStmt(
+          MatchedFor(
+            ForFor(
+            ) [ForFor]
+            ForDesignatorDerived1(
+            ) [ForDesignatorDerived1]
+            BegForCond(
+            ) [BegForCond]
+            EmptyForCond(
+            ) [EmptyForCond]
+            Beginc(
+            ) [Beginc]
+            ForDesignatorDerived1(
+            ) [ForDesignatorDerived1]
+            Endinc(
+            ) [Endinc]
+            Begfor(
+            ) [Begfor]
+            MatchedBraces(
+              Statements(
+                NoStmt(
+                ) [NoStmt]
+                MatchedStmt(
+                  MatchedBreak(
+                  ) [MatchedBreak]
+                ) [MatchedStmt]
+              ) [Statements]
+            ) [MatchedBraces]
+            Endfor(
+            ) [Endfor]
+          ) [MatchedFor]
+        ) [MatchedStmt]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  20:01:02,010 - Deklarisano nabrajanje Broj na liniji 5
+INFO  20:01:02,010 - Deklarisan element nabrajanja NULA na liniji 5
+INFO  20:01:02,010 - Deklarisan element nabrajanja JEDAN na liniji 5
+INFO  20:01:02,010 - Deklarisan element nabrajanja PET na liniji 5
+INFO  20:01:02,010 - Deklarisan element nabrajanja DESET na liniji 5
+INFO  20:01:02,010 - Deklarisana konstanta jedan na liniji 7
+INFO  20:01:02,010 - Deklarisana konstanta pet na liniji 8
+INFO  20:01:02,010 - Deklarisan niz niz na liniji 10
+INFO  20:01:02,011 - Deklarisan niz nizch na liniji 11
+INFO  20:01:02,011 - Obradjuje se funkcija inc na liniji 14
+INFO  20:01:02,011 - Deklarisan formalni parametar broj na liniji 14
+INFO  20:01:02,011 - Upotreba formalnog parametra broj na liniji 16, Var broj: int, 0, 1 
+INFO  20:01:02,011 - Upotreba konstante JEDAN nabrajanja Broj na liniji 16, Type Broj: , 0, 0 
+INFO  20:01:02,011 - Obradjuje se funkcija mul na liniji 19
+INFO  20:01:02,011 - Deklarisan formalni parametar arr na liniji 19
+INFO  20:01:02,011 - Deklarisan formalni parametar index na liniji 19
+INFO  20:01:02,012 - Deklarisan formalni parametar b na liniji 19
+INFO  20:01:02,012 - Upotreba formalnog parametra index na liniji 21, Var index: int, 1, 1 
+INFO  20:01:02,012 - Upotreba formalnog parametra arr na liniji 21, Var arr: Arr of int, 0, 1 
+INFO  20:01:02,012 - Upotreba elementa niza arr na liniji 21, : int, 0, 1 
+INFO  20:01:02,012 - Upotreba formalnog parametra index na liniji 21, Var index: int, 1, 1 
+INFO  20:01:02,012 - Upotreba formalnog parametra arr na liniji 21, Var arr: Arr of int, 0, 1 
+INFO  20:01:02,012 - Upotreba elementa niza arr na liniji 21, : int, 0, 1 
+INFO  20:01:02,012 - Upotreba formalnog parametra b na liniji 21, Var b: int, 2, 1 
+INFO  20:01:02,012 - Obradjuje se funkcija main na liniji 24
+INFO  20:01:02,012 - Deklarisana promenljiva bodovi na liniji 25
+INFO  20:01:02,012 - Deklarisana promenljiva jedan na liniji 26
+INFO  20:01:02,012 - Deklarisana promenljiva nula na liniji 26
+INFO  20:01:02,013 - Print calls = 0
+INFO  20:01:02,013 - Globalnih promenljivih = 0
+INFO  20:01:02,013 - Globalnih konstanti = 2
+INFO  20:01:02,013 - Globalnih nizova = 2
+INFO  20:01:02,013 - Broj metoda = 3
+INFO  20:01:02,013 - Broj enuma = 1
+INFO  20:01:02,013 - =====================SYMBOL TABLE DUMP=========================
+INFO  20:01:02,013 - 
+Type int: int, -1, -1 
+Type char: char, -1, -1 
+Con eol: char, 10, 0 
+Con null: Class [], 0, 0 
+Meth chr: char, 0, 1 
+   Var i: int, 0, 1 
+
+Meth ord: int, 0, 1 
+   Var ch: char, 0, 1 
+
+Meth len: int, 0, 1 
+   Var arr: Arr of notype, 0, 1 
+
+Type bool: , -1, -1 
+Prog test301: notype, 0, 1 
+   Type Broj: , 0, 0 
+   Con jedan: int, 1, 0 
+   Con pet: int, 5, 0 
+   Var niz: Arr of int, 0, 0 
+   Var nizch: Arr of char, 1, 0 
+   Meth inc: int, 0, 1 
+      Var broj: int, 0, 1 
+
+   Meth mul: notype, 0, 3 
+      Var arr: Arr of int, 0, 1 
+      Var index: int, 1, 1 
+      Var b: int, 2, 1 
+
+   Meth main: notype, 0, 0 
+      Var bodovi: int, 0, 1 
+      Var jedan: int, 1, 1 
+      Var nula: int, 2, 1 
+
+
+
+INFO  20:01:02,013 - Generating bytecode file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  20:01:02,018 - Parsiranje uspesno zavrseno!

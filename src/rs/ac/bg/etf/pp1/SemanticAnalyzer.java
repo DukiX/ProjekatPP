@@ -142,9 +142,11 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		if (nizDeclLista.removeLast() == 1) {
 			report_info("Deklarisan niz " + varDecl.getVarName(), varDecl);
 			Obj varNode = Tab.insert(Obj.Var, varDecl.getVarName(), new Struct(Struct.Array, varDecl.getType().struct));
+			varNode.setFpPos(-1);
 		} else {
 			report_info("Deklarisana promenljiva " + varDecl.getVarName(), varDecl);
 			Obj varNode = Tab.insert(Obj.Var, varDecl.getVarName(), varDecl.getType().struct);
+			varNode.setFpPos(-1);
 		}
 	}
 
@@ -154,11 +156,13 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			vly.struct = varTip;
 			report_info("Deklarisan niz " + vly.getVarName(), vly);
 			Obj varNode = Tab.insert(Obj.Var, vly.getVarName(), new Struct(Struct.Array, vly.struct));
+			varNode.setFpPos(-1);
 		} else {
 			vly.struct = varTip;
 			vly.setLine(linija);
 			report_info("Deklarisana promenljiva " + vly.getVarName(), vly);
 			Obj varNode = Tab.insert(Obj.Var, vly.getVarName(), vly.struct);
+			varNode.setFpPos(-1);
 		}
 	}
 
@@ -183,10 +187,12 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			report_info("Deklarisana konstanta " + constDecl.getConstName(), constDecl);
 			Obj varNode = Tab.insert(Obj.Con, constDecl.getConstName(), constDecl.getType().struct);
 			varNode.setAdr(constInt.removeLast());
+			varNode.setFpPos(-1);
 		} else {
 			report_error("Deklarisana konstanta nije dobrog tipa: " + constDecl.getConstName(), constDecl);
 			Obj varNode = Tab.insert(Obj.Con, constDecl.getConstName(), constDecl.getType().struct);
 			varNode.setAdr(constInt.removeLast());
+			varNode.setFpPos(-1);
 		}
 		
 		if(currentMethod==null) {
@@ -200,11 +206,13 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			report_info("Deklarisana konstanta " + constDecl.getConstName(), constDecl);
 			Obj varNode = Tab.insert(Obj.Con, constDecl.getConstName(), varTip);
 			varNode.setAdr(constInt.removeLast());
+			varNode.setFpPos(-1);
 		} else {
 			constDecl.setLine(linija);
 			report_error("Deklarisana konstanta nije dobrog tipa: " + constDecl.getConstName(), constDecl);
 			Obj varNode = Tab.insert(Obj.Con, constDecl.getConstName(), varTip);
 			varNode.setAdr(constInt.removeLast());
+			varNode.setFpPos(-1);
 		}
 		
 		if(currentMethod==null) {
@@ -277,6 +285,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	public void visit(EnumName en) {
 		Struct estr = new Struct(Struct.Enum, new HashTableDataStructure());
 		okruzujuciEnum = en.obj = Tab.insert(Obj.Type, en.getEnumNme(), estr);
+		
 		report_info("Deklarisano nabrajanje " + en.getEnumNme(), en);
 
 		enumConstCount = 0;
@@ -428,7 +437,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		if (actPar != 0) {
 			LinkedList<Struct> actParLst = listaListiTipova.removeLast();
 			for (Obj obj : func.getLocalSymbols()) {
-				if (obj.getFpPos() < actParLst.size()) {
+				if (obj.getFpPos()!=-1 && obj.getFpPos() < actParLst.size()) {
 					if (obj.getType() != actParLst.get(obj.getFpPos())) {
 						if (obj.getType().getKind() == Struct.Array
 								&& actParLst.get(obj.getFpPos()).getKind() == Struct.Array) {
@@ -474,7 +483,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		if (actPar != 0) {
 			LinkedList<Struct> actParLst = listaListiTipova.removeLast();
 			for (Obj obj : func.getLocalSymbols()) {
-				if (obj.getFpPos() < actParLst.size()) {
+				if (obj.getFpPos()!=-1 && obj.getFpPos() < actParLst.size()) {
 					if (obj.getType() != actParLst.get(obj.getFpPos())) {
 						if (obj.getType().getKind() == Struct.Array
 								&& actParLst.get(obj.getFpPos()).getKind() == Struct.Array) {
@@ -685,7 +694,8 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 						"Upotreba globalne promenljive " + designator.getName() + " na liniji " + designator.getLine()+", "+ispisCvora(designator.obj),
 						null);
 			} else {
-				if (obj.getFpPos() >= currentMethod.getLevel()) {
+				//System.out.println(obj.getFpPos());
+				if (obj.getFpPos() == -1) {
 					report_info("Upotreba lokalne promenljive " + designator.getName() + " na liniji "
 							+ designator.getLine()+", "+ispisCvora(designator.obj), null);
 				} else {

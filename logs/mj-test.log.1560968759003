@@ -1,0 +1,337 @@
+INFO  20:25:47,473 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  20:25:47,496 - #2 program
+INFO  20:25:47,496 - #39 readtest
+INFO  20:25:47,496 - #39 int
+INFO  20:25:47,497 - #39 x
+INFO  20:25:47,497 - #8 ,
+INFO  20:25:47,498 - #39 y
+INFO  20:25:47,498 - #5 ;
+INFO  20:25:47,498 - #3 {
+INFO  20:25:47,498 - #39 int
+INFO  20:25:47,498 - #39 saberi
+INFO  20:25:47,498 - #6 (
+INFO  20:25:47,499 - #39 int
+INFO  20:25:47,499 - #39 x
+INFO  20:25:47,499 - #8 ,
+INFO  20:25:47,500 - #39 int
+INFO  20:25:47,500 - #39 k
+INFO  20:25:47,500 - #8 ,
+INFO  20:25:47,500 - #39 int
+INFO  20:25:47,500 - #39 z
+INFO  20:25:47,500 - #7 )
+INFO  20:25:47,500 - #3 {
+INFO  20:25:47,502 - #10 return
+INFO  20:25:47,503 - #39 x
+INFO  20:25:47,503 - #11 +
+INFO  20:25:47,504 - #39 k
+INFO  20:25:47,504 - #11 +
+INFO  20:25:47,505 - #39 z
+INFO  20:25:47,505 - #5 ;
+INFO  20:25:47,505 - #4 }
+INFO  20:25:47,505 - #13 void
+INFO  20:25:47,505 - #39 main
+INFO  20:25:47,505 - #6 (
+INFO  20:25:47,505 - #7 )
+INFO  20:25:47,506 - #39 int
+INFO  20:25:47,506 - #39 z
+INFO  20:25:47,506 - #5 ;
+INFO  20:25:47,506 - #3 {
+INFO  20:25:47,506 - #14 read
+INFO  20:25:47,506 - #6 (
+INFO  20:25:47,506 - #39 x
+INFO  20:25:47,506 - #7 )
+INFO  20:25:47,506 - #5 ;
+INFO  20:25:47,506 - #14 read
+INFO  20:25:47,507 - #6 (
+INFO  20:25:47,507 - #39 y
+INFO  20:25:47,507 - #7 )
+INFO  20:25:47,507 - #5 ;
+INFO  20:25:47,507 - #14 read
+INFO  20:25:47,507 - #6 (
+INFO  20:25:47,507 - #39 z
+INFO  20:25:47,507 - #7 )
+INFO  20:25:47,507 - #5 ;
+INFO  20:25:47,507 - #9 print
+INFO  20:25:47,507 - #6 (
+INFO  20:25:47,507 - #39 saberi
+INFO  20:25:47,507 - #6 (
+INFO  20:25:47,507 - #39 x
+INFO  20:25:47,507 - #7 )
+INFO  20:25:47,507 - #7 )
+INFO  20:25:47,507 - #5 ;
+INFO  20:25:47,507 - #4 }
+INFO  20:25:47,508 - #4 }
+INFO  20:25:47,509 - Program(
+  ProgName(
+   readtest
+  ) [ProgName]
+  VarDeclarations(
+    NoVarDecl(
+    ) [NoVarDecl]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+     x
+      ArrayOptN(
+      ) [ArrayOptN]
+      VarListY(
+        VarListN(
+        ) [VarListN]
+       y
+        ArrayOptN(
+        ) [ArrayOptN]
+      ) [VarListY]
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    MethodDeclarations(
+      NoMethodDecl(
+      ) [NoMethodDecl]
+      MethodDecl(
+        MethodTypeName(
+          Type(
+           int
+          ) [Type]
+         saberi
+        ) [MethodTypeName]
+        FormParams(
+          FormalParamDecls(
+            FormalParamDecls(
+              SingleFormalParamDecl(
+                FormalParamDecl(
+                  Type(
+                   int
+                  ) [Type]
+                 x
+                  ArrayForParN(
+                  ) [ArrayForParN]
+                ) [FormalParamDecl]
+              ) [SingleFormalParamDecl]
+              FormalParamDecl(
+                Type(
+                 int
+                ) [Type]
+               k
+                ArrayForParN(
+                ) [ArrayForParN]
+              ) [FormalParamDecl]
+            ) [FormalParamDecls]
+            FormalParamDecl(
+              Type(
+               int
+              ) [Type]
+             z
+              ArrayForParN(
+              ) [ArrayForParN]
+            ) [FormalParamDecl]
+          ) [FormalParamDecls]
+        ) [FormParams]
+        NoVarDecl(
+        ) [NoVarDecl]
+        Statements(
+          NoStmt(
+          ) [NoStmt]
+          MatchedStmt(
+            ReturnExpr(
+              AddExpr(
+                AddExpr(
+                  TermExpr(
+                    Term(
+                      Var(
+                        Designator(
+                         x
+                          NoDesignatorOptions(
+                          ) [NoDesignatorOptions]
+                        ) [Designator]
+                      ) [Var]
+                      NoFactor(
+                      ) [NoFactor]
+                    ) [Term]
+                  ) [TermExpr]
+                  Plusop(
+                  ) [Plusop]
+                  Term(
+                    Var(
+                      Designator(
+                       k
+                        NoDesignatorOptions(
+                        ) [NoDesignatorOptions]
+                      ) [Designator]
+                    ) [Var]
+                    NoFactor(
+                    ) [NoFactor]
+                  ) [Term]
+                ) [AddExpr]
+                Plusop(
+                ) [Plusop]
+                Term(
+                  Var(
+                    Designator(
+                     z
+                      NoDesignatorOptions(
+                      ) [NoDesignatorOptions]
+                    ) [Designator]
+                  ) [Var]
+                  NoFactor(
+                  ) [NoFactor]
+                ) [Term]
+              ) [AddExpr]
+            ) [ReturnExpr]
+          ) [MatchedStmt]
+        ) [Statements]
+      ) [MethodDecl]
+    ) [MethodDeclarations]
+    MethodDecl(
+      MethodTypeVoid(
+       main
+      ) [MethodTypeVoid]
+      NoFormParam(
+      ) [NoFormParam]
+      VarDeclarations(
+        NoVarDecl(
+        ) [NoVarDecl]
+        VarDecl(
+          Type(
+           int
+          ) [Type]
+         z
+          ArrayOptN(
+          ) [ArrayOptN]
+          VarListN(
+          ) [VarListN]
+        ) [VarDecl]
+      ) [VarDeclarations]
+      Statements(
+        Statements(
+          Statements(
+            Statements(
+              NoStmt(
+              ) [NoStmt]
+              MatchedStmt(
+                MatchedRead(
+                  Rd(
+                  ) [Rd]
+                  Designator(
+                   x
+                    NoDesignatorOptions(
+                    ) [NoDesignatorOptions]
+                  ) [Designator]
+                ) [MatchedRead]
+              ) [MatchedStmt]
+            ) [Statements]
+            MatchedStmt(
+              MatchedRead(
+                Rd(
+                ) [Rd]
+                Designator(
+                 y
+                  NoDesignatorOptions(
+                  ) [NoDesignatorOptions]
+                ) [Designator]
+              ) [MatchedRead]
+            ) [MatchedStmt]
+          ) [Statements]
+          MatchedStmt(
+            MatchedRead(
+              Rd(
+              ) [Rd]
+              Designator(
+               z
+                NoDesignatorOptions(
+                ) [NoDesignatorOptions]
+              ) [Designator]
+            ) [MatchedRead]
+          ) [MatchedStmt]
+        ) [Statements]
+        MatchedStmt(
+          PrintStmt(
+            TermExpr(
+              Term(
+                FuncCall(
+                  Designator(
+                   saberi
+                    NoDesignatorOptions(
+                    ) [NoDesignatorOptions]
+                  ) [Designator]
+                  Actuals(
+                    ActualParam(
+                      TermExpr(
+                        Term(
+                          Var(
+                            Designator(
+                             x
+                              NoDesignatorOptions(
+                              ) [NoDesignatorOptions]
+                            ) [Designator]
+                          ) [Var]
+                          NoFactor(
+                          ) [NoFactor]
+                        ) [Term]
+                      ) [TermExpr]
+                    ) [ActualParam]
+                  ) [Actuals]
+                ) [FuncCall]
+                NoFactor(
+                ) [NoFactor]
+              ) [Term]
+            ) [TermExpr]
+          ) [PrintStmt]
+        ) [MatchedStmt]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  20:25:47,520 - Deklarisana promenljiva y na liniji 3
+INFO  20:25:47,523 - Deklarisana promenljiva x na liniji 3
+INFO  20:25:47,523 - Obradjuje se funkcija saberi na liniji 6
+INFO  20:25:47,523 - Deklarisan formalni parametar x na liniji 6
+INFO  20:25:47,523 - Deklarisan formalni parametar k na liniji 6
+INFO  20:25:47,523 - Deklarisan formalni parametar z na liniji 6
+INFO  20:25:47,524 - Upotreba formalnog parametra x na liniji 7, Var x: int, 0, 1 
+INFO  20:25:47,524 - Upotreba formalnog parametra k na liniji 7, Var k: int, 1, 1 
+INFO  20:25:47,524 - Upotreba formalnog parametra z na liniji 7, Var z: int, 2, 1 
+INFO  20:25:47,524 - Obradjuje se funkcija main na liniji 10
+INFO  20:25:47,524 - Deklarisana promenljiva z na liniji 11
+INFO  20:25:47,524 - Upotreba globalne promenljive x na liniji 13, Var x: int, 1, 0 
+INFO  20:25:47,524 - Upotreba globalne promenljive y na liniji 14, Var y: int, 0, 0 
+INFO  20:25:47,524 - Upotreba lokalne promenljive z na liniji 15, Var z: int, 0, 1 
+INFO  20:25:47,524 - Upotreba globalne promenljive x na liniji 16, Var x: int, 1, 0 
+INFO  20:25:47,524 - Pronadjen poziv funkcije saberi na liniji 16, Meth saberi: int, 0, 3 
+ERROR 20:25:47,524 - Greska na liniji 16 : funkcija saberi nije prosledjen dobar broj parametara!
+INFO  20:25:47,524 - Print calls = 1
+INFO  20:25:47,525 - Globalnih promenljivih = 2
+INFO  20:25:47,525 - Globalnih konstanti = 0
+INFO  20:25:47,525 - Globalnih nizova = 0
+INFO  20:25:47,525 - Broj metoda = 2
+INFO  20:25:47,525 - Broj enuma = 0
+INFO  20:25:47,525 - =====================SYMBOL TABLE DUMP=========================
+INFO  20:25:47,525 - 
+Type int: int, -1, -1 
+Type char: char, -1, -1 
+Con eol: char, 10, 0 
+Con null: Class [], 0, 0 
+Meth chr: char, 0, 1 
+   Var i: int, 0, 1 
+
+Meth ord: int, 0, 1 
+   Var ch: char, 0, 1 
+
+Meth len: int, 0, 1 
+   Var arr: Arr of notype, 0, 1 
+
+Type bool: , -1, -1 
+Prog readtest: notype, 0, 1 
+   Var y: int, 0, 0 
+   Var x: int, 1, 0 
+   Meth saberi: int, 0, 3 
+      Var x: int, 0, 1 
+      Var k: int, 1, 1 
+      Var z: int, 2, 1 
+
+   Meth main: notype, 0, 0 
+      Var z: int, 0, 1 
+
+
+
+ERROR 20:25:47,525 - Parsiranje NIJE uspesno zavrseno!

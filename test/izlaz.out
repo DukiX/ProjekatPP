@@ -1,420 +1,417 @@
-INFO  19:39:54,569 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
-INFO  19:39:54,595 - #2 program
-INFO  19:39:54,595 - #39 test301
-INFO  19:39:54,595 - #31 enum
-INFO  19:39:54,596 - #39 Broj
-INFO  19:39:54,596 - #3 {
-INFO  19:39:54,596 - #39 NULA
-INFO  19:39:54,596 - #8 ,
-INFO  19:39:54,597 - #39 JEDAN
-INFO  19:39:54,597 - #8 ,
-INFO  19:39:54,597 - #39 PET
-INFO  19:39:54,597 - #12 =
-INFO  19:39:54,597 - #38 5
-INFO  19:39:54,597 - #8 ,
-INFO  19:39:54,597 - #39 DESET
-INFO  19:39:54,597 - #12 =
-INFO  19:39:54,597 - #38 10
-INFO  19:39:54,597 - #4 }
-INFO  19:39:54,598 - #28 const
-INFO  19:39:54,598 - #39 int
-INFO  19:39:54,598 - #39 jedan
-INFO  19:39:54,598 - #12 =
-INFO  19:39:54,598 - #38 1
-INFO  19:39:54,599 - #5 ;
-INFO  19:39:54,599 - #28 const
-INFO  19:39:54,599 - #39 int
-INFO  19:39:54,599 - #39 pet
-INFO  19:39:54,600 - #12 =
-INFO  19:39:54,600 - #38 5
-INFO  19:39:54,600 - #5 ;
-INFO  19:39:54,600 - #39 int
-INFO  19:39:54,600 - #39 niz
-INFO  19:39:54,600 - #20 [
-INFO  19:39:54,600 - #21 ]
-INFO  19:39:54,600 - #5 ;
-INFO  19:39:54,601 - #39 char
-INFO  19:39:54,601 - #39 nizch
-INFO  19:39:54,601 - #20 [
-INFO  19:39:54,601 - #21 ]
-INFO  19:39:54,601 - #5 ;
-INFO  19:39:54,601 - #3 {
-INFO  19:39:54,601 - #39 int
-INFO  19:39:54,602 - #39 inc
-INFO  19:39:54,602 - #6 (
-INFO  19:39:54,602 - #39 int
-INFO  19:39:54,602 - #39 broj
-INFO  19:39:54,602 - #7 )
-INFO  19:39:54,603 - #3 {
-INFO  19:39:54,603 - #10 return
-INFO  19:39:54,603 - #39 broj
-INFO  19:39:54,603 - #11 +
-INFO  19:39:54,605 - #39 Broj
-INFO  19:39:54,605 - #22 .
-INFO  19:39:54,605 - #39 JEDAN
-INFO  19:39:54,605 - #5 ;
-INFO  19:39:54,605 - #4 }
-INFO  19:39:54,606 - #13 void
-INFO  19:39:54,606 - #39 mul
-INFO  19:39:54,606 - #6 (
-INFO  19:39:54,606 - #39 int
-INFO  19:39:54,606 - #39 arr
-INFO  19:39:54,606 - #20 [
-INFO  19:39:54,606 - #21 ]
-INFO  19:39:54,606 - #8 ,
-INFO  19:39:54,606 - #39 int
-INFO  19:39:54,610 - #39 index
-INFO  19:39:54,610 - #8 ,
-INFO  19:39:54,610 - #39 int
-INFO  19:39:54,610 - #39 b
-INFO  19:39:54,610 - #7 )
-INFO  19:39:54,610 - #3 {
-INFO  19:39:54,610 - #39 arr
-INFO  19:39:54,610 - #20 [
-INFO  19:39:54,610 - #39 index
-INFO  19:39:54,610 - #21 ]
-INFO  19:39:54,610 - #12 =
-INFO  19:39:54,610 - #39 arr
-INFO  19:39:54,610 - #20 [
-INFO  19:39:54,610 - #39 index
-INFO  19:39:54,610 - #21 ]
-INFO  19:39:54,611 - #16 *
-INFO  19:39:54,611 - #39 b
-INFO  19:39:54,611 - #5 ;
-INFO  19:39:54,611 - #4 }
-INFO  19:39:54,612 - #13 void
-INFO  19:39:54,612 - #39 main
-INFO  19:39:54,612 - #6 (
-INFO  19:39:54,612 - #7 )
-INFO  19:39:54,612 - #39 int
-INFO  19:39:54,612 - #39 bodovi
-INFO  19:39:54,612 - #5 ;
-INFO  19:39:54,612 - #39 Broj
-INFO  19:39:54,612 - #39 nula
-INFO  19:39:54,612 - #8 ,
-INFO  19:39:54,612 - #39 jedan
-INFO  19:39:54,613 - #5 ;
-INFO  19:39:54,613 - #3 {
-INFO  19:39:54,613 - #39 nula
-INFO  19:39:54,613 - #12 =
-INFO  19:39:54,613 - #39 Broj
-INFO  19:39:54,613 - #22 .
-INFO  19:39:54,613 - #39 NULA
-INFO  19:39:54,613 - #5 ;
-INFO  19:39:54,613 - #39 jedan
-INFO  19:39:54,613 - #12 =
-INFO  19:39:54,613 - #39 Broj
-INFO  19:39:54,613 - #22 .
-INFO  19:39:54,613 - #39 JEDAN
-INFO  19:39:54,613 - #5 ;
-INFO  19:39:54,613 - #39 bodovi
-INFO  19:39:54,613 - #12 =
-INFO  19:39:54,613 - #38 0
-INFO  19:39:54,613 - #5 ;
-INFO  19:39:54,613 - #39 bodovi
-INFO  19:39:54,613 - #42 ++
-INFO  19:39:54,613 - #5 ;
-INFO  19:39:54,614 - #39 bodovi
-INFO  19:39:54,614 - #12 =
-INFO  19:39:54,614 - #39 bodovi
-INFO  19:39:54,614 - #11 +
-INFO  19:39:54,614 - #39 jedan
-INFO  19:39:54,614 - #5 ;
-INFO  19:39:54,614 - #39 bodovi
-INFO  19:39:54,614 - #12 =
-INFO  19:39:54,614 - #39 bodovi
-INFO  19:39:54,614 - #16 *
-INFO  19:39:54,614 - #39 pet
-INFO  19:39:54,614 - #5 ;
-INFO  19:39:54,614 - #39 bodovi
-INFO  19:39:54,614 - #43 --
-INFO  19:39:54,614 - #5 ;
-INFO  19:39:54,614 - #9 print
-INFO  19:39:54,614 - #6 (
-INFO  19:39:54,614 - #39 bodovi
-INFO  19:39:54,614 - #7 )
-INFO  19:39:54,615 - #5 ;
-INFO  19:39:54,615 - #39 niz
-INFO  19:39:54,615 - #12 =
-INFO  19:39:54,615 - #19 new
-INFO  19:39:54,615 - #39 int
-INFO  19:39:54,615 - #20 [
-INFO  19:39:54,615 - #38 2
-INFO  19:39:54,616 - #21 ]
-INFO  19:39:54,616 - #5 ;
-INFO  19:39:54,616 - #39 niz
-INFO  19:39:54,616 - #20 [
-INFO  19:39:54,616 - #39 nula
-INFO  19:39:54,616 - #21 ]
-INFO  19:39:54,616 - #12 =
-INFO  19:39:54,616 - #39 pet
-INFO  19:39:54,616 - #5 ;
-INFO  19:39:54,616 - #39 niz
-INFO  19:39:54,616 - #20 [
-INFO  19:39:54,617 - #38 1
-INFO  19:39:54,617 - #21 ]
-INFO  19:39:54,617 - #12 =
-INFO  19:39:54,617 - #39 Broj
-INFO  19:39:54,617 - #22 .
-INFO  19:39:54,617 - #39 DESET
-INFO  19:39:54,617 - #5 ;
-INFO  19:39:54,617 - #39 mul
-INFO  19:39:54,617 - #6 (
-INFO  19:39:54,617 - #39 niz
-INFO  19:39:54,617 - #8 ,
-INFO  19:39:54,617 - #39 inc
-INFO  19:39:54,617 - #6 (
-INFO  19:39:54,617 - #38 0
-INFO  19:39:54,617 - #7 )
-INFO  19:39:54,617 - #8 ,
-INFO  19:39:54,617 - #38 2
-INFO  19:39:54,617 - #7 )
-INFO  19:39:54,617 - #5 ;
-INFO  19:39:54,618 - #39 mul
-INFO  19:39:54,618 - #6 (
-INFO  19:39:54,618 - #39 niz
-INFO  19:39:54,618 - #8 ,
-INFO  19:39:54,618 - #39 Broj
-INFO  19:39:54,618 - #22 .
-INFO  19:39:54,618 - #39 NULA
-INFO  19:39:54,618 - #8 ,
-INFO  19:39:54,618 - #39 inc
-INFO  19:39:54,618 - #6 (
-INFO  19:39:54,618 - #39 inc
-INFO  19:39:54,618 - #6 (
-INFO  19:39:54,618 - #39 Broj
-INFO  19:39:54,618 - #22 .
-INFO  19:39:54,618 - #39 JEDAN
-INFO  19:39:54,618 - #7 )
-INFO  19:39:54,618 - #11 +
-INFO  19:39:54,618 - #38 1
-INFO  19:39:54,618 - #7 )
-INFO  19:39:54,618 - #7 )
-INFO  19:39:54,618 - #5 ;
-INFO  19:39:54,618 - #39 bodovi
-INFO  19:39:54,618 - #12 =
-INFO  19:39:54,618 - #39 niz
-INFO  19:39:54,618 - #20 [
-INFO  19:39:54,618 - #38 1
-INFO  19:39:54,618 - #21 ]
-INFO  19:39:54,618 - #17 /
-INFO  19:39:54,618 - #39 niz
-INFO  19:39:54,619 - #20 [
-INFO  19:39:54,619 - #38 0
-INFO  19:39:54,619 - #21 ]
-INFO  19:39:54,619 - #5 ;
-INFO  19:39:54,619 - #9 print
-INFO  19:39:54,619 - #6 (
-INFO  19:39:54,619 - #39 bodovi
-INFO  19:39:54,619 - #7 )
-INFO  19:39:54,619 - #5 ;
-INFO  19:39:54,619 - #9 print
-INFO  19:39:54,619 - #6 (
-INFO  19:39:54,619 - #39 niz
-INFO  19:39:54,619 - #20 [
-INFO  19:39:54,619 - #39 Broj
-INFO  19:39:54,619 - #22 .
-INFO  19:39:54,619 - #39 JEDAN
-INFO  19:39:54,619 - #21 ]
-INFO  19:39:54,619 - #7 )
-INFO  19:39:54,619 - #5 ;
-INFO  19:39:54,619 - #39 nizch
-INFO  19:39:54,619 - #12 =
-INFO  19:39:54,619 - #19 new
-INFO  19:39:54,619 - #39 char
-INFO  19:39:54,619 - #20 [
-INFO  19:39:54,619 - #38 3
-INFO  19:39:54,619 - #21 ]
-INFO  19:39:54,619 - #5 ;
-INFO  19:39:54,620 - #39 nizch
-INFO  19:39:54,620 - #20 [
-INFO  19:39:54,620 - #38 0
-INFO  19:39:54,620 - #21 ]
-INFO  19:39:54,620 - #12 =
-INFO  19:39:54,620 - #44 a
-INFO  19:39:54,620 - #5 ;
-INFO  19:39:54,620 - #39 nizch
-INFO  19:39:54,620 - #20 [
-INFO  19:39:54,620 - #39 jedan
-INFO  19:39:54,620 - #21 ]
-INFO  19:39:54,620 - #12 =
-INFO  19:39:54,620 - #44 b
-INFO  19:39:54,620 - #5 ;
-INFO  19:39:54,620 - #39 nizch
-INFO  19:39:54,620 - #20 [
-INFO  19:39:54,620 - #39 pet
-INFO  19:39:54,620 - #15 -
-INFO  19:39:54,620 - #38 3
-INFO  19:39:54,621 - #21 ]
-INFO  19:39:54,621 - #12 =
-INFO  19:39:54,621 - #44 c
-INFO  19:39:54,621 - #5 ;
-INFO  19:39:54,621 - #9 print
-INFO  19:39:54,621 - #6 (
-INFO  19:39:54,621 - #39 nizch
-INFO  19:39:54,621 - #20 [
-INFO  19:39:54,621 - #39 inc
-INFO  19:39:54,621 - #6 (
-INFO  19:39:54,621 - #38 0
-INFO  19:39:54,621 - #7 )
-INFO  19:39:54,621 - #21 ]
-INFO  19:39:54,621 - #7 )
-INFO  19:39:54,621 - #5 ;
-INFO  19:39:54,621 - #9 print
-INFO  19:39:54,621 - #6 (
-INFO  19:39:54,621 - #39 nizch
-INFO  19:39:54,621 - #20 [
-INFO  19:39:54,621 - #39 jedan
-INFO  19:39:54,621 - #16 *
-INFO  19:39:54,622 - #38 2
-INFO  19:39:54,622 - #21 ]
-INFO  19:39:54,622 - #7 )
-INFO  19:39:54,622 - #5 ;
-INFO  19:39:54,622 - #39 bodovi
-INFO  19:39:54,622 - #12 =
-INFO  19:39:54,622 - #39 bodovi
-INFO  19:39:54,622 - #11 +
-INFO  19:39:54,622 - #6 (
-INFO  19:39:54,624 - #6 (
-INFO  19:39:54,624 - #39 pet
-INFO  19:39:54,624 - #16 *
-INFO  19:39:54,624 - #39 jedan
-INFO  19:39:54,624 - #15 -
-INFO  19:39:54,624 - #38 1
-INFO  19:39:54,624 - #7 )
-INFO  19:39:54,624 - #16 *
-INFO  19:39:54,625 - #39 inc
-INFO  19:39:54,625 - #6 (
-INFO  19:39:54,625 - #39 Broj
-INFO  19:39:54,625 - #22 .
-INFO  19:39:54,625 - #39 JEDAN
-INFO  19:39:54,625 - #7 )
-INFO  19:39:54,625 - #15 -
-INFO  19:39:54,625 - #6 (
-INFO  19:39:54,625 - #38 3
-INFO  19:39:54,625 - #18 %
-INFO  19:39:54,625 - #38 2
-INFO  19:39:54,625 - #11 +
-INFO  19:39:54,625 - #38 3
-INFO  19:39:54,625 - #16 *
-INFO  19:39:54,625 - #38 2
-INFO  19:39:54,625 - #15 -
-INFO  19:39:54,625 - #38 3
-INFO  19:39:54,625 - #7 )
-INFO  19:39:54,625 - #15 -
-INFO  19:39:54,625 - #39 inc
-INFO  19:39:54,626 - #6 (
-INFO  19:39:54,626 - #39 Broj
-INFO  19:39:54,626 - #22 .
-INFO  19:39:54,626 - #39 NULA
-INFO  19:39:54,626 - #7 )
-INFO  19:39:54,626 - #16 *
-INFO  19:39:54,626 - #38 0
-INFO  19:39:54,626 - #7 )
-INFO  19:39:54,626 - #5 ;
-INFO  19:39:54,626 - #9 print
-INFO  19:39:54,626 - #6 (
-INFO  19:39:54,626 - #39 bodovi
-INFO  19:39:54,626 - #7 )
-INFO  19:39:54,626 - #5 ;
-INFO  19:39:54,626 - #14 read
-INFO  19:39:54,626 - #6 (
-INFO  19:39:54,626 - #39 bodovi
-INFO  19:39:54,626 - #7 )
-INFO  19:39:54,626 - #5 ;
-INFO  19:39:54,626 - #39 bodovi
-INFO  19:39:54,626 - #12 =
-INFO  19:39:54,626 - #39 inc
-INFO  19:39:54,626 - #6 (
-INFO  19:39:54,626 - #39 bodovi
-INFO  19:39:54,626 - #7 )
-INFO  19:39:54,627 - #5 ;
-INFO  19:39:54,627 - #9 print
-INFO  19:39:54,627 - #6 (
-INFO  19:39:54,627 - #39 bodovi
-INFO  19:39:54,627 - #7 )
-INFO  19:39:54,627 - #5 ;
-INFO  19:39:54,627 - #4 }
-INFO  19:39:54,627 - #4 }
-INFO  19:39:54,635 - Program(
+INFO  20:27:25,869 - Compiling source file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.mj
+INFO  20:27:25,894 - #2 program
+INFO  20:27:25,894 - #39 test302
+INFO  20:27:25,894 - #31 enum
+INFO  20:27:25,894 - #39 IncrementType
+INFO  20:27:25,894 - #3 {
+INFO  20:27:25,895 - #39 BY_ONE
+INFO  20:27:25,895 - #8 ,
+INFO  20:27:25,895 - #39 DOUBLE_VALUE
+INFO  20:27:25,895 - #4 }
+INFO  20:27:25,895 - #39 int
+INFO  20:27:25,896 - #39 i
+INFO  20:27:25,896 - #5 ;
+INFO  20:27:25,897 - #39 bool
+INFO  20:27:25,897 - #39 ibool
+INFO  20:27:25,897 - #5 ;
+INFO  20:27:25,897 - #39 int
+INFO  20:27:25,897 - #39 niz
+INFO  20:27:25,897 - #20 [
+INFO  20:27:25,897 - #21 ]
+INFO  20:27:25,897 - #5 ;
+INFO  20:27:25,900 - #3 {
+INFO  20:27:25,900 - #39 int
+INFO  20:27:25,900 - #39 sum
+INFO  20:27:25,900 - #6 (
+INFO  20:27:25,900 - #39 int
+INFO  20:27:25,900 - #39 z
+INFO  20:27:25,900 - #8 ,
+INFO  20:27:25,901 - #39 int
+INFO  20:27:25,901 - #39 d
+INFO  20:27:25,901 - #7 )
+INFO  20:27:25,901 - #3 {
+INFO  20:27:25,901 - #10 return
+INFO  20:27:25,902 - #39 z
+INFO  20:27:25,902 - #11 +
+INFO  20:27:25,903 - #39 d
+INFO  20:27:25,903 - #5 ;
+INFO  20:27:25,904 - #4 }
+INFO  20:27:25,904 - #39 int
+INFO  20:27:25,904 - #39 inkrement
+INFO  20:27:25,904 - #6 (
+INFO  20:27:25,904 - #39 int
+INFO  20:27:25,904 - #39 a
+INFO  20:27:25,904 - #8 ,
+INFO  20:27:25,904 - #39 IncrementType
+INFO  20:27:25,904 - #39 type
+INFO  20:27:25,904 - #7 )
+INFO  20:27:25,904 - #39 int
+INFO  20:27:25,905 - #39 pom
+INFO  20:27:25,905 - #5 ;
+INFO  20:27:25,905 - #3 {
+INFO  20:27:25,905 - #40 if
+INFO  20:27:25,905 - #6 (
+INFO  20:27:25,905 - #39 type
+INFO  20:27:25,905 - #32 ==
+INFO  20:27:25,905 - #39 IncrementType
+INFO  20:27:25,906 - #22 .
+INFO  20:27:25,906 - #39 BY_ONE
+INFO  20:27:25,906 - #7 )
+INFO  20:27:25,907 - #39 pom
+INFO  20:27:25,907 - #12 =
+INFO  20:27:25,907 - #38 1
+INFO  20:27:25,907 - #5 ;
+INFO  20:27:25,907 - #41 else
+INFO  20:27:25,907 - #40 if
+INFO  20:27:25,911 - #6 (
+INFO  20:27:25,911 - #39 type
+INFO  20:27:25,911 - #32 ==
+INFO  20:27:25,911 - #39 IncrementType
+INFO  20:27:25,911 - #22 .
+INFO  20:27:25,911 - #39 DOUBLE_VALUE
+INFO  20:27:25,911 - #7 )
+INFO  20:27:25,911 - #39 pom
+INFO  20:27:25,911 - #12 =
+INFO  20:27:25,911 - #39 a
+INFO  20:27:25,912 - #5 ;
+INFO  20:27:25,912 - #10 return
+INFO  20:27:25,912 - #39 sum
+INFO  20:27:25,913 - #6 (
+INFO  20:27:25,913 - #39 a
+INFO  20:27:25,913 - #8 ,
+INFO  20:27:25,913 - #39 pom
+INFO  20:27:25,913 - #7 )
+INFO  20:27:25,913 - #5 ;
+INFO  20:27:25,913 - #4 }
+INFO  20:27:25,913 - #13 void
+INFO  20:27:25,913 - #39 main
+INFO  20:27:25,913 - #6 (
+INFO  20:27:25,913 - #7 )
+INFO  20:27:25,914 - #3 {
+INFO  20:27:25,914 - #40 if
+INFO  20:27:25,914 - #6 (
+INFO  20:27:25,914 - #38 1
+INFO  20:27:25,914 - #33 !=
+INFO  20:27:25,914 - #38 1
+INFO  20:27:25,914 - #7 )
+INFO  20:27:25,914 - #9 print
+INFO  20:27:25,914 - #6 (
+INFO  20:27:25,914 - #15 -
+INFO  20:27:25,914 - #38 6
+INFO  20:27:25,914 - #7 )
+INFO  20:27:25,914 - #5 ;
+INFO  20:27:25,914 - #41 else
+INFO  20:27:25,915 - #9 print
+INFO  20:27:25,915 - #6 (
+INFO  20:27:25,915 - #38 0
+INFO  20:27:25,915 - #7 )
+INFO  20:27:25,915 - #5 ;
+INFO  20:27:25,915 - #39 ibool
+INFO  20:27:25,915 - #12 =
+INFO  20:27:25,915 - #30 false
+INFO  20:27:25,915 - #5 ;
+INFO  20:27:25,915 - #39 i
+INFO  20:27:25,916 - #12 =
+INFO  20:27:25,916 - #38 0
+INFO  20:27:25,916 - #5 ;
+INFO  20:27:25,916 - #23 for
+INFO  20:27:25,916 - #6 (
+INFO  20:27:25,916 - #39 i
+INFO  20:27:25,916 - #12 =
+INFO  20:27:25,916 - #38 0
+INFO  20:27:25,916 - #5 ;
+INFO  20:27:25,916 - #39 i
+INFO  20:27:25,917 - #35 <
+INFO  20:27:25,917 - #38 5
+INFO  20:27:25,917 - #5 ;
+INFO  20:27:25,917 - #39 i
+INFO  20:27:25,918 - #42 ++
+INFO  20:27:25,918 - #7 )
+INFO  20:27:25,918 - #3 {
+INFO  20:27:25,918 - #40 if
+INFO  20:27:25,918 - #6 (
+INFO  20:27:25,918 - #39 i
+INFO  20:27:25,918 - #32 ==
+INFO  20:27:25,918 - #38 2
+INFO  20:27:25,918 - #7 )
+INFO  20:27:25,919 - #39 ibool
+INFO  20:27:25,919 - #12 =
+INFO  20:27:25,919 - #29 true
+INFO  20:27:25,919 - #5 ;
+INFO  20:27:25,919 - #4 }
+INFO  20:27:25,919 - #40 if
+INFO  20:27:25,920 - #6 (
+INFO  20:27:25,920 - #39 ibool
+INFO  20:27:25,920 - #7 )
+INFO  20:27:25,920 - #40 if
+INFO  20:27:25,920 - #6 (
+INFO  20:27:25,920 - #39 i
+INFO  20:27:25,920 - #32 ==
+INFO  20:27:25,920 - #38 5
+INFO  20:27:25,920 - #7 )
+INFO  20:27:25,920 - #9 print
+INFO  20:27:25,920 - #6 (
+INFO  20:27:25,920 - #38 1
+INFO  20:27:25,920 - #7 )
+INFO  20:27:25,920 - #5 ;
+INFO  20:27:25,920 - #41 else
+INFO  20:27:25,920 - #9 print
+INFO  20:27:25,920 - #6 (
+INFO  20:27:25,920 - #15 -
+INFO  20:27:25,920 - #38 1
+INFO  20:27:25,920 - #7 )
+INFO  20:27:25,920 - #5 ;
+INFO  20:27:25,920 - #39 niz
+INFO  20:27:25,920 - #12 =
+INFO  20:27:25,920 - #19 new
+INFO  20:27:25,920 - #39 int
+INFO  20:27:25,920 - #20 [
+INFO  20:27:25,921 - #38 3
+INFO  20:27:25,921 - #21 ]
+INFO  20:27:25,921 - #3 {
+INFO  20:27:25,922 - #38 1
+INFO  20:27:25,922 - #8 ,
+INFO  20:27:25,922 - #38 2
+INFO  20:27:25,922 - #8 ,
+INFO  20:27:25,922 - #39 sum
+INFO  20:27:25,922 - #6 (
+INFO  20:27:25,922 - #39 niz
+INFO  20:27:25,922 - #20 [
+INFO  20:27:25,922 - #38 1
+INFO  20:27:25,922 - #21 ]
+INFO  20:27:25,922 - #8 ,
+INFO  20:27:25,922 - #39 niz
+INFO  20:27:25,922 - #20 [
+INFO  20:27:25,922 - #38 0
+INFO  20:27:25,922 - #21 ]
+INFO  20:27:25,922 - #7 )
+INFO  20:27:25,922 - #11 +
+INFO  20:27:25,922 - #38 1
+INFO  20:27:25,922 - #4 }
+INFO  20:27:25,922 - #5 ;
+INFO  20:27:25,923 - #40 if
+INFO  20:27:25,923 - #6 (
+INFO  20:27:25,923 - #39 niz
+INFO  20:27:25,923 - #20 [
+INFO  20:27:25,923 - #38 2
+INFO  20:27:25,923 - #21 ]
+INFO  20:27:25,923 - #32 ==
+INFO  20:27:25,923 - #38 4
+INFO  20:27:25,923 - #7 )
+INFO  20:27:25,923 - #9 print
+INFO  20:27:25,923 - #6 (
+INFO  20:27:25,923 - #39 ord
+INFO  20:27:25,923 - #6 (
+INFO  20:27:25,923 - #44 A
+INFO  20:27:25,923 - #7 )
+INFO  20:27:25,923 - #7 )
+INFO  20:27:25,923 - #5 ;
+INFO  20:27:25,923 - #41 else
+INFO  20:27:25,923 - #9 print
+INFO  20:27:25,923 - #6 (
+INFO  20:27:25,923 - #39 ord
+INFO  20:27:25,923 - #6 (
+INFO  20:27:25,923 - #44 a
+INFO  20:27:25,923 - #7 )
+INFO  20:27:25,923 - #7 )
+INFO  20:27:25,923 - #5 ;
+INFO  20:27:25,923 - #9 print
+INFO  20:27:25,923 - #6 (
+INFO  20:27:25,923 - #39 eol
+INFO  20:27:25,923 - #7 )
+INFO  20:27:25,923 - #5 ;
+INFO  20:27:25,923 - #39 i
+INFO  20:27:25,923 - #12 =
+INFO  20:27:25,923 - #38 0
+INFO  20:27:25,923 - #5 ;
+INFO  20:27:25,924 - #23 for
+INFO  20:27:25,924 - #6 (
+INFO  20:27:25,924 - #5 ;
+INFO  20:27:25,924 - #39 i
+INFO  20:27:25,924 - #35 <
+INFO  20:27:25,924 - #38 10
+INFO  20:27:25,924 - #5 ;
+INFO  20:27:25,924 - #7 )
+INFO  20:27:25,924 - #3 {
+INFO  20:27:25,924 - #40 if
+INFO  20:27:25,924 - #6 (
+INFO  20:27:25,924 - #39 i
+INFO  20:27:25,924 - #32 ==
+INFO  20:27:25,924 - #38 3
+INFO  20:27:25,924 - #7 )
+INFO  20:27:25,926 - #3 {
+INFO  20:27:25,926 - #39 i
+INFO  20:27:25,926 - #42 ++
+INFO  20:27:25,926 - #5 ;
+INFO  20:27:25,926 - #25 continue
+INFO  20:27:25,926 - #5 ;
+INFO  20:27:25,926 - #4 }
+INFO  20:27:25,926 - #40 if
+INFO  20:27:25,927 - #6 (
+INFO  20:27:25,927 - #39 i
+INFO  20:27:25,927 - #32 ==
+INFO  20:27:25,927 - #38 4
+INFO  20:27:25,927 - #7 )
+INFO  20:27:25,927 - #24 break
+INFO  20:27:25,927 - #5 ;
+INFO  20:27:25,927 - #39 i
+INFO  20:27:25,927 - #12 =
+INFO  20:27:25,927 - #39 inkrement
+INFO  20:27:25,927 - #6 (
+INFO  20:27:25,927 - #39 i
+INFO  20:27:25,927 - #8 ,
+INFO  20:27:25,927 - #39 IncrementType
+INFO  20:27:25,927 - #22 .
+INFO  20:27:25,927 - #39 BY_ONE
+INFO  20:27:25,927 - #7 )
+INFO  20:27:25,927 - #5 ;
+INFO  20:27:25,927 - #4 }
+INFO  20:27:25,927 - #40 if
+INFO  20:27:25,927 - #6 (
+INFO  20:27:25,927 - #39 i
+INFO  20:27:25,927 - #32 ==
+INFO  20:27:25,927 - #38 3
+INFO  20:27:25,927 - #7 )
+INFO  20:27:25,927 - #9 print
+INFO  20:27:25,927 - #6 (
+INFO  20:27:25,927 - #38 4
+INFO  20:27:25,927 - #7 )
+INFO  20:27:25,927 - #5 ;
+INFO  20:27:25,928 - #41 else
+INFO  20:27:25,928 - #9 print
+INFO  20:27:25,928 - #6 (
+INFO  20:27:25,928 - #15 -
+INFO  20:27:25,928 - #38 4
+INFO  20:27:25,928 - #7 )
+INFO  20:27:25,928 - #5 ;
+INFO  20:27:25,928 - #14 read
+INFO  20:27:25,928 - #6 (
+INFO  20:27:25,928 - #39 niz
+INFO  20:27:25,928 - #20 [
+INFO  20:27:25,928 - #38 0
+INFO  20:27:25,928 - #21 ]
+INFO  20:27:25,928 - #7 )
+INFO  20:27:25,928 - #5 ;
+INFO  20:27:25,928 - #14 read
+INFO  20:27:25,928 - #6 (
+INFO  20:27:25,928 - #39 niz
+INFO  20:27:25,928 - #20 [
+INFO  20:27:25,928 - #38 1
+INFO  20:27:25,928 - #21 ]
+INFO  20:27:25,928 - #7 )
+INFO  20:27:25,928 - #5 ;
+INFO  20:27:25,928 - #14 read
+INFO  20:27:25,928 - #6 (
+INFO  20:27:25,928 - #39 niz
+INFO  20:27:25,928 - #20 [
+INFO  20:27:25,929 - #38 2
+INFO  20:27:25,929 - #21 ]
+INFO  20:27:25,929 - #7 )
+INFO  20:27:25,929 - #5 ;
+INFO  20:27:25,929 - #9 print
+INFO  20:27:25,929 - #6 (
+INFO  20:27:25,929 - #39 eol
+INFO  20:27:25,929 - #7 )
+INFO  20:27:25,929 - #5 ;
+INFO  20:27:25,929 - #9 print
+INFO  20:27:25,929 - #6 (
+INFO  20:27:25,929 - #39 sum
+INFO  20:27:25,929 - #6 (
+INFO  20:27:25,929 - #39 sum
+INFO  20:27:25,929 - #6 (
+INFO  20:27:25,929 - #39 niz
+INFO  20:27:25,929 - #20 [
+INFO  20:27:25,929 - #38 0
+INFO  20:27:25,929 - #21 ]
+INFO  20:27:25,929 - #8 ,
+INFO  20:27:25,929 - #39 niz
+INFO  20:27:25,929 - #20 [
+INFO  20:27:25,929 - #38 1
+INFO  20:27:25,929 - #21 ]
+INFO  20:27:25,929 - #7 )
+INFO  20:27:25,929 - #8 ,
+INFO  20:27:25,929 - #39 niz
+INFO  20:27:25,929 - #20 [
+INFO  20:27:25,929 - #38 2
+INFO  20:27:25,929 - #21 ]
+INFO  20:27:25,929 - #7 )
+INFO  20:27:25,929 - #7 )
+INFO  20:27:25,929 - #5 ;
+INFO  20:27:25,929 - #9 print
+INFO  20:27:25,929 - #6 (
+INFO  20:27:25,929 - #39 eol
+INFO  20:27:25,929 - #7 )
+INFO  20:27:25,929 - #5 ;
+INFO  20:27:25,929 - #9 print
+INFO  20:27:25,929 - #6 (
+INFO  20:27:25,929 - #39 inkrement
+INFO  20:27:25,929 - #6 (
+INFO  20:27:25,929 - #39 niz
+INFO  20:27:25,929 - #20 [
+INFO  20:27:25,929 - #38 2
+INFO  20:27:25,929 - #21 ]
+INFO  20:27:25,929 - #8 ,
+INFO  20:27:25,929 - #39 IncrementType
+INFO  20:27:25,929 - #22 .
+INFO  20:27:25,930 - #39 DOUBLE_VALUE
+INFO  20:27:25,930 - #7 )
+INFO  20:27:25,930 - #7 )
+INFO  20:27:25,930 - #5 ;
+INFO  20:27:25,930 - #4 }
+INFO  20:27:25,930 - #4 }
+INFO  20:27:25,938 - Program(
   ProgName(
-   test301
+   test302
   ) [ProgName]
   VarDeclarations(
     VarDeclarations(
       VarDeclarations(
         VarDeclarations(
-          VarDeclarations(
-            NoVarDecl(
-            ) [NoVarDecl]
-            EnumDecl(
-              EnumName(
-               Broj
-              ) [EnumName]
-              EnumLst(
-                EnumLst(
-                  EnumLst(
-                    EnumElem(
-                     NULA
-                      EnumNoNmbr(
-                      ) [EnumNoNmbr]
-                    ) [EnumElem]
-                   JEDAN
-                    EnumNoNmbr(
-                    ) [EnumNoNmbr]
-                  ) [EnumLst]
-                 PET
-                  EnumNmbr(
-                   5
-                  ) [EnumNmbr]
-                ) [EnumLst]
-               DESET
-                EnumNmbr(
-                 10
-                ) [EnumNmbr]
-              ) [EnumLst]
-            ) [EnumDecl]
-          ) [VarDeclarations]
-          ConstDecl(
-            Type(
-             int
-            ) [Type]
-           jedan
-            ConstDefNum(
-             1
-            ) [ConstDefNum]
-            CnstListEmpty(
-            ) [CnstListEmpty]
-          ) [ConstDecl]
+          NoVarDecl(
+          ) [NoVarDecl]
+          EnumDecl(
+            EnumName(
+             IncrementType
+            ) [EnumName]
+            EnumLst(
+              EnumElem(
+               BY_ONE
+                EnumNoNmbr(
+                ) [EnumNoNmbr]
+              ) [EnumElem]
+             DOUBLE_VALUE
+              EnumNoNmbr(
+              ) [EnumNoNmbr]
+            ) [EnumLst]
+          ) [EnumDecl]
         ) [VarDeclarations]
-        ConstDecl(
+        VarDecl(
           Type(
            int
           ) [Type]
-         pet
-          ConstDefNum(
-           5
-          ) [ConstDefNum]
-          CnstListEmpty(
-          ) [CnstListEmpty]
-        ) [ConstDecl]
+         i
+          ArrayOptN(
+          ) [ArrayOptN]
+          VarListN(
+          ) [VarListN]
+        ) [VarDecl]
       ) [VarDeclarations]
       VarDecl(
         Type(
-         int
+         bool
         ) [Type]
-       niz
-        ArrayOptY(
-        ) [ArrayOptY]
+       ibool
+        ArrayOptN(
+        ) [ArrayOptN]
         VarListN(
         ) [VarListN]
       ) [VarDecl]
     ) [VarDeclarations]
     VarDecl(
       Type(
-       char
+       int
       ) [Type]
-     nizch
+     niz
       ArrayOptY(
       ) [ArrayOptY]
       VarListN(
@@ -431,19 +428,29 @@ INFO  19:39:54,635 - Program(
             Type(
              int
             ) [Type]
-           inc
+           sum
           ) [MethodTypeName]
           FormParams(
-            SingleFormalParamDecl(
+            FormalParamDecls(
+              SingleFormalParamDecl(
+                FormalParamDecl(
+                  Type(
+                   int
+                  ) [Type]
+                 z
+                  ArrayForParN(
+                  ) [ArrayForParN]
+                ) [FormalParamDecl]
+              ) [SingleFormalParamDecl]
               FormalParamDecl(
                 Type(
                  int
                 ) [Type]
-               broj
+               d
                 ArrayForParN(
                 ) [ArrayForParN]
               ) [FormalParamDecl]
-            ) [SingleFormalParamDecl]
+            ) [FormalParamDecls]
           ) [FormParams]
           NoVarDecl(
           ) [NoVarDecl]
@@ -457,7 +464,7 @@ INFO  19:39:54,635 - Program(
                     Term(
                       Var(
                         Designator(
-                         broj
+                         z
                           NoDesignatorOptions(
                           ) [NoDesignatorOptions]
                         ) [Designator]
@@ -471,10 +478,9 @@ INFO  19:39:54,635 - Program(
                   Term(
                     Var(
                       Designator(
-                       Broj
-                        DotDesignatorOption(
-                         JEDAN
-                        ) [DotDesignatorOption]
+                       d
+                        NoDesignatorOptions(
+                        ) [NoDesignatorOptions]
                       ) [Designator]
                     ) [Var]
                     NoFactor(
@@ -487,78 +493,211 @@ INFO  19:39:54,635 - Program(
         ) [MethodDecl]
       ) [MethodDeclarations]
       MethodDecl(
-        MethodTypeVoid(
-         mul
-        ) [MethodTypeVoid]
+        MethodTypeName(
+          Type(
+           int
+          ) [Type]
+         inkrement
+        ) [MethodTypeName]
         FormParams(
           FormalParamDecls(
-            FormalParamDecls(
-              SingleFormalParamDecl(
-                FormalParamDecl(
-                  Type(
-                   int
-                  ) [Type]
-                 arr
-                  ArrayForParY(
-                  ) [ArrayForParY]
-                ) [FormalParamDecl]
-              ) [SingleFormalParamDecl]
+            SingleFormalParamDecl(
               FormalParamDecl(
                 Type(
                  int
                 ) [Type]
-               index
+               a
                 ArrayForParN(
                 ) [ArrayForParN]
               ) [FormalParamDecl]
-            ) [FormalParamDecls]
+            ) [SingleFormalParamDecl]
             FormalParamDecl(
               Type(
-               int
+               IncrementType
               ) [Type]
-             b
+             type
               ArrayForParN(
               ) [ArrayForParN]
             ) [FormalParamDecl]
           ) [FormalParamDecls]
         ) [FormParams]
-        NoVarDecl(
-        ) [NoVarDecl]
+        VarDeclarations(
+          NoVarDecl(
+          ) [NoVarDecl]
+          VarDecl(
+            Type(
+             int
+            ) [Type]
+           pom
+            ArrayOptN(
+            ) [ArrayOptN]
+            VarListN(
+            ) [VarListN]
+          ) [VarDecl]
+        ) [VarDeclarations]
         Statements(
-          NoStmt(
-          ) [NoStmt]
-          MatchedStmt(
-            MatchedDesignatorStatement(
-              Assignment(
-                Designator(
-                 arr
-                  SquareDesignatorOption(
+          Statements(
+            NoStmt(
+            ) [NoStmt]
+            UnmachedStmt(
+              UnmatchedIfElse(
+                Ifif(
+                ) [Ifif]
+                Condit(
+                  CondT(
+                    CndFctNotBool(
+                      TermExpr(
+                        Term(
+                          Var(
+                            Designator(
+                             type
+                              NoDesignatorOptions(
+                              ) [NoDesignatorOptions]
+                            ) [Designator]
+                          ) [Var]
+                          NoFactor(
+                          ) [NoFactor]
+                        ) [Term]
+                      ) [TermExpr]
+                      Releq(
+                      ) [Releq]
+                      TermExpr(
+                        Term(
+                          Var(
+                            Designator(
+                             IncrementType
+                              DotDesignatorOption(
+                               BY_ONE
+                              ) [DotDesignatorOption]
+                            ) [Designator]
+                          ) [Var]
+                          NoFactor(
+                          ) [NoFactor]
+                        ) [Term]
+                      ) [TermExpr]
+                    ) [CndFctNotBool]
+                    CondFactListDerived1(
+                    ) [CondFactListDerived1]
+                  ) [CondT]
+                  CondTermListDerived1(
+                  ) [CondTermListDerived1]
+                ) [Condit]
+                Begif(
+                ) [Begif]
+                MatchedDesignatorStatement(
+                  Assignment(
+                    Designator(
+                     pom
+                      NoDesignatorOptions(
+                      ) [NoDesignatorOptions]
+                    ) [Designator]
                     TermExpr(
                       Term(
-                        Var(
-                          Designator(
-                           index
-                            NoDesignatorOptions(
-                            ) [NoDesignatorOptions]
-                          ) [Designator]
-                        ) [Var]
+                        Const(
+                         1
+                        ) [Const]
                         NoFactor(
                         ) [NoFactor]
                       ) [Term]
                     ) [TermExpr]
-                  ) [SquareDesignatorOption]
-                ) [Designator]
-                TermExpr(
-                  Term(
-                    Var(
-                      Designator(
-                       arr
-                        SquareDesignatorOption(
+                  ) [Assignment]
+                ) [MatchedDesignatorStatement]
+                Begelse(
+                ) [Begelse]
+                UnmatchedIf(
+                  Ifif(
+                  ) [Ifif]
+                  Condit(
+                    CondT(
+                      CndFctNotBool(
+                        TermExpr(
+                          Term(
+                            Var(
+                              Designator(
+                               type
+                                NoDesignatorOptions(
+                                ) [NoDesignatorOptions]
+                              ) [Designator]
+                            ) [Var]
+                            NoFactor(
+                            ) [NoFactor]
+                          ) [Term]
+                        ) [TermExpr]
+                        Releq(
+                        ) [Releq]
+                        TermExpr(
+                          Term(
+                            Var(
+                              Designator(
+                               IncrementType
+                                DotDesignatorOption(
+                                 DOUBLE_VALUE
+                                ) [DotDesignatorOption]
+                              ) [Designator]
+                            ) [Var]
+                            NoFactor(
+                            ) [NoFactor]
+                          ) [Term]
+                        ) [TermExpr]
+                      ) [CndFctNotBool]
+                      CondFactListDerived1(
+                      ) [CondFactListDerived1]
+                    ) [CondT]
+                    CondTermListDerived1(
+                    ) [CondTermListDerived1]
+                  ) [Condit]
+                  Begif(
+                  ) [Begif]
+                  MatchedStmt(
+                    MatchedDesignatorStatement(
+                      Assignment(
+                        Designator(
+                         pom
+                          NoDesignatorOptions(
+                          ) [NoDesignatorOptions]
+                        ) [Designator]
+                        TermExpr(
+                          Term(
+                            Var(
+                              Designator(
+                               a
+                                NoDesignatorOptions(
+                                ) [NoDesignatorOptions]
+                              ) [Designator]
+                            ) [Var]
+                            NoFactor(
+                            ) [NoFactor]
+                          ) [Term]
+                        ) [TermExpr]
+                      ) [Assignment]
+                    ) [MatchedDesignatorStatement]
+                  ) [MatchedStmt]
+                  Endif(
+                  ) [Endif]
+                ) [UnmatchedIf]
+                Endelse(
+                ) [Endelse]
+              ) [UnmatchedIfElse]
+            ) [UnmachedStmt]
+          ) [Statements]
+          MatchedStmt(
+            ReturnExpr(
+              TermExpr(
+                Term(
+                  FuncCall(
+                    Designator(
+                     sum
+                      NoDesignatorOptions(
+                      ) [NoDesignatorOptions]
+                    ) [Designator]
+                    Actuals(
+                      ActualParams(
+                        ActualParam(
                           TermExpr(
                             Term(
                               Var(
                                 Designator(
-                                 index
+                                 a
                                   NoDesignatorOptions(
                                   ) [NoDesignatorOptions]
                                 ) [Designator]
@@ -567,26 +706,28 @@ INFO  19:39:54,635 - Program(
                               ) [NoFactor]
                             ) [Term]
                           ) [TermExpr]
-                        ) [SquareDesignatorOption]
-                      ) [Designator]
-                    ) [Var]
-                    MulopFactor(
-                      NoFactor(
-                      ) [NoFactor]
-                      Timesop(
-                      ) [Timesop]
-                      Var(
-                        Designator(
-                         b
-                          NoDesignatorOptions(
-                          ) [NoDesignatorOptions]
-                        ) [Designator]
-                      ) [Var]
-                    ) [MulopFactor]
-                  ) [Term]
-                ) [TermExpr]
-              ) [Assignment]
-            ) [MatchedDesignatorStatement]
+                        ) [ActualParam]
+                        TermExpr(
+                          Term(
+                            Var(
+                              Designator(
+                               pom
+                                NoDesignatorOptions(
+                                ) [NoDesignatorOptions]
+                              ) [Designator]
+                            ) [Var]
+                            NoFactor(
+                            ) [NoFactor]
+                          ) [Term]
+                        ) [TermExpr]
+                      ) [ActualParams]
+                    ) [Actuals]
+                  ) [FuncCall]
+                  NoFactor(
+                  ) [NoFactor]
+                ) [Term]
+              ) [TermExpr]
+            ) [ReturnExpr]
           ) [MatchedStmt]
         ) [Statements]
       ) [MethodDecl]
@@ -597,37 +738,8 @@ INFO  19:39:54,635 - Program(
       ) [MethodTypeVoid]
       NoFormParam(
       ) [NoFormParam]
-      VarDeclarations(
-        VarDeclarations(
-          NoVarDecl(
-          ) [NoVarDecl]
-          VarDecl(
-            Type(
-             int
-            ) [Type]
-           bodovi
-            ArrayOptN(
-            ) [ArrayOptN]
-            VarListN(
-            ) [VarListN]
-          ) [VarDecl]
-        ) [VarDeclarations]
-        VarDecl(
-          Type(
-           Broj
-          ) [Type]
-         nula
-          ArrayOptN(
-          ) [ArrayOptN]
-          VarListY(
-            VarListN(
-            ) [VarListN]
-           jedan
-            ArrayOptN(
-            ) [ArrayOptN]
-          ) [VarListY]
-        ) [VarDecl]
-      ) [VarDeclarations]
+      NoVarDecl(
+      ) [NoVarDecl]
       Statements(
         Statements(
           Statements(
@@ -646,309 +758,87 @@ INFO  19:39:54,635 - Program(
                                     Statements(
                                       Statements(
                                         Statements(
-                                          Statements(
-                                            Statements(
-                                              Statements(
-                                                Statements(
-                                                  Statements(
-                                                    Statements(
-                                                      Statements(
-                                                        Statements(
-                                                          Statements(
-                                                            NoStmt(
-                                                            ) [NoStmt]
-                                                            MatchedStmt(
-                                                              MatchedDesignatorStatement(
-                                                                Assignment(
-                                                                  Designator(
-                                                                   nula
-                                                                    NoDesignatorOptions(
-                                                                    ) [NoDesignatorOptions]
-                                                                  ) [Designator]
-                                                                  TermExpr(
-                                                                    Term(
-                                                                      Var(
-                                                                        Designator(
-                                                                         Broj
-                                                                          DotDesignatorOption(
-                                                                           NULA
-                                                                          ) [DotDesignatorOption]
-                                                                        ) [Designator]
-                                                                      ) [Var]
-                                                                      NoFactor(
-                                                                      ) [NoFactor]
-                                                                    ) [Term]
-                                                                  ) [TermExpr]
-                                                                ) [Assignment]
-                                                              ) [MatchedDesignatorStatement]
-                                                            ) [MatchedStmt]
-                                                          ) [Statements]
-                                                          MatchedStmt(
-                                                            MatchedDesignatorStatement(
-                                                              Assignment(
-                                                                Designator(
-                                                                 jedan
-                                                                  NoDesignatorOptions(
-                                                                  ) [NoDesignatorOptions]
-                                                                ) [Designator]
-                                                                TermExpr(
-                                                                  Term(
-                                                                    Var(
-                                                                      Designator(
-                                                                       Broj
-                                                                        DotDesignatorOption(
-                                                                         JEDAN
-                                                                        ) [DotDesignatorOption]
-                                                                      ) [Designator]
-                                                                    ) [Var]
-                                                                    NoFactor(
-                                                                    ) [NoFactor]
-                                                                  ) [Term]
-                                                                ) [TermExpr]
-                                                              ) [Assignment]
-                                                            ) [MatchedDesignatorStatement]
-                                                          ) [MatchedStmt]
-                                                        ) [Statements]
-                                                        MatchedStmt(
-                                                          MatchedDesignatorStatement(
-                                                            Assignment(
-                                                              Designator(
-                                                               bodovi
-                                                                NoDesignatorOptions(
-                                                                ) [NoDesignatorOptions]
-                                                              ) [Designator]
-                                                              TermExpr(
-                                                                Term(
-                                                                  Const(
-                                                                   0
-                                                                  ) [Const]
-                                                                  NoFactor(
-                                                                  ) [NoFactor]
-                                                                ) [Term]
-                                                              ) [TermExpr]
-                                                            ) [Assignment]
-                                                          ) [MatchedDesignatorStatement]
-                                                        ) [MatchedStmt]
-                                                      ) [Statements]
-                                                      MatchedStmt(
-                                                        MatchedDesignatorStatement(
-                                                          Increment(
-                                                            Designator(
-                                                             bodovi
-                                                              NoDesignatorOptions(
-                                                              ) [NoDesignatorOptions]
-                                                            ) [Designator]
-                                                          ) [Increment]
-                                                        ) [MatchedDesignatorStatement]
-                                                      ) [MatchedStmt]
-                                                    ) [Statements]
-                                                    MatchedStmt(
-                                                      MatchedDesignatorStatement(
-                                                        Assignment(
-                                                          Designator(
-                                                           bodovi
-                                                            NoDesignatorOptions(
-                                                            ) [NoDesignatorOptions]
-                                                          ) [Designator]
-                                                          AddExpr(
-                                                            TermExpr(
-                                                              Term(
-                                                                Var(
-                                                                  Designator(
-                                                                   bodovi
-                                                                    NoDesignatorOptions(
-                                                                    ) [NoDesignatorOptions]
-                                                                  ) [Designator]
-                                                                ) [Var]
-                                                                NoFactor(
-                                                                ) [NoFactor]
-                                                              ) [Term]
-                                                            ) [TermExpr]
-                                                            Plusop(
-                                                            ) [Plusop]
-                                                            Term(
-                                                              Var(
-                                                                Designator(
-                                                                 jedan
-                                                                  NoDesignatorOptions(
-                                                                  ) [NoDesignatorOptions]
-                                                                ) [Designator]
-                                                              ) [Var]
-                                                              NoFactor(
-                                                              ) [NoFactor]
-                                                            ) [Term]
-                                                          ) [AddExpr]
-                                                        ) [Assignment]
-                                                      ) [MatchedDesignatorStatement]
-                                                    ) [MatchedStmt]
-                                                  ) [Statements]
-                                                  MatchedStmt(
-                                                    MatchedDesignatorStatement(
-                                                      Assignment(
-                                                        Designator(
-                                                         bodovi
-                                                          NoDesignatorOptions(
-                                                          ) [NoDesignatorOptions]
-                                                        ) [Designator]
-                                                        TermExpr(
-                                                          Term(
-                                                            Var(
-                                                              Designator(
-                                                               bodovi
-                                                                NoDesignatorOptions(
-                                                                ) [NoDesignatorOptions]
-                                                              ) [Designator]
-                                                            ) [Var]
-                                                            MulopFactor(
-                                                              NoFactor(
-                                                              ) [NoFactor]
-                                                              Timesop(
-                                                              ) [Timesop]
-                                                              Var(
-                                                                Designator(
-                                                                 pet
-                                                                  NoDesignatorOptions(
-                                                                  ) [NoDesignatorOptions]
-                                                                ) [Designator]
-                                                              ) [Var]
-                                                            ) [MulopFactor]
-                                                          ) [Term]
-                                                        ) [TermExpr]
-                                                      ) [Assignment]
-                                                    ) [MatchedDesignatorStatement]
-                                                  ) [MatchedStmt]
-                                                ) [Statements]
-                                                MatchedStmt(
-                                                  MatchedDesignatorStatement(
-                                                    Decrement(
-                                                      Designator(
-                                                       bodovi
-                                                        NoDesignatorOptions(
-                                                        ) [NoDesignatorOptions]
-                                                      ) [Designator]
-                                                    ) [Decrement]
-                                                  ) [MatchedDesignatorStatement]
-                                                ) [MatchedStmt]
-                                              ) [Statements]
-                                              MatchedStmt(
-                                                PrintStmt(
-                                                  TermExpr(
-                                                    Term(
-                                                      Var(
-                                                        Designator(
-                                                         bodovi
-                                                          NoDesignatorOptions(
-                                                          ) [NoDesignatorOptions]
-                                                        ) [Designator]
-                                                      ) [Var]
-                                                      NoFactor(
-                                                      ) [NoFactor]
-                                                    ) [Term]
-                                                  ) [TermExpr]
-                                                ) [PrintStmt]
-                                              ) [MatchedStmt]
-                                            ) [Statements]
-                                            MatchedStmt(
-                                              MatchedDesignatorStatement(
-                                                Assignment(
-                                                  Designator(
-                                                   niz
-                                                    NoDesignatorOptions(
-                                                    ) [NoDesignatorOptions]
-                                                  ) [Designator]
-                                                  TermExpr(
-                                                    Term(
-                                                      FactorNewArr(
-                                                        Type(
-                                                         int
-                                                        ) [Type]
-                                                        LsquareNt(
-                                                        ) [LsquareNt]
-                                                        DuzinaNiza(
-                                                          TermExpr(
-                                                            Term(
-                                                              Const(
-                                                               2
-                                                              ) [Const]
-                                                              NoFactor(
-                                                              ) [NoFactor]
-                                                            ) [Term]
-                                                          ) [TermExpr]
-                                                        ) [DuzinaNiza]
-                                                      ) [FactorNewArr]
-                                                      NoFactor(
-                                                      ) [NoFactor]
-                                                    ) [Term]
-                                                  ) [TermExpr]
-                                                ) [Assignment]
-                                              ) [MatchedDesignatorStatement]
-                                            ) [MatchedStmt]
-                                          ) [Statements]
+                                          NoStmt(
+                                          ) [NoStmt]
                                           MatchedStmt(
-                                            MatchedDesignatorStatement(
-                                              Assignment(
-                                                Designator(
-                                                 niz
-                                                  SquareDesignatorOption(
+                                            MatchedIf(
+                                              Ifif(
+                                              ) [Ifif]
+                                              Condit(
+                                                CondT(
+                                                  CndFctNotBool(
                                                     TermExpr(
                                                       Term(
-                                                        Var(
-                                                          Designator(
-                                                           nula
-                                                            NoDesignatorOptions(
-                                                            ) [NoDesignatorOptions]
-                                                          ) [Designator]
-                                                        ) [Var]
+                                                        Const(
+                                                         1
+                                                        ) [Const]
                                                         NoFactor(
                                                         ) [NoFactor]
                                                       ) [Term]
                                                     ) [TermExpr]
-                                                  ) [SquareDesignatorOption]
-                                                ) [Designator]
+                                                    Relne(
+                                                    ) [Relne]
+                                                    TermExpr(
+                                                      Term(
+                                                        Const(
+                                                         1
+                                                        ) [Const]
+                                                        NoFactor(
+                                                        ) [NoFactor]
+                                                      ) [Term]
+                                                    ) [TermExpr]
+                                                  ) [CndFctNotBool]
+                                                  CondFactListDerived1(
+                                                  ) [CondFactListDerived1]
+                                                ) [CondT]
+                                                CondTermListDerived1(
+                                                ) [CondTermListDerived1]
+                                              ) [Condit]
+                                              Begif(
+                                              ) [Begif]
+                                              PrintStmt(
+                                                MinusTerm(
+                                                  Term(
+                                                    Const(
+                                                     6
+                                                    ) [Const]
+                                                    NoFactor(
+                                                    ) [NoFactor]
+                                                  ) [Term]
+                                                ) [MinusTerm]
+                                              ) [PrintStmt]
+                                              Begelse(
+                                              ) [Begelse]
+                                              PrintStmt(
                                                 TermExpr(
                                                   Term(
-                                                    Var(
-                                                      Designator(
-                                                       pet
-                                                        NoDesignatorOptions(
-                                                        ) [NoDesignatorOptions]
-                                                      ) [Designator]
-                                                    ) [Var]
+                                                    Const(
+                                                     0
+                                                    ) [Const]
                                                     NoFactor(
                                                     ) [NoFactor]
                                                   ) [Term]
                                                 ) [TermExpr]
-                                              ) [Assignment]
-                                            ) [MatchedDesignatorStatement]
+                                              ) [PrintStmt]
+                                              Endelse(
+                                              ) [Endelse]
+                                            ) [MatchedIf]
                                           ) [MatchedStmt]
                                         ) [Statements]
                                         MatchedStmt(
                                           MatchedDesignatorStatement(
                                             Assignment(
                                               Designator(
-                                               niz
-                                                SquareDesignatorOption(
-                                                  TermExpr(
-                                                    Term(
-                                                      Const(
-                                                       1
-                                                      ) [Const]
-                                                      NoFactor(
-                                                      ) [NoFactor]
-                                                    ) [Term]
-                                                  ) [TermExpr]
-                                                ) [SquareDesignatorOption]
+                                               ibool
+                                                NoDesignatorOptions(
+                                                ) [NoDesignatorOptions]
                                               ) [Designator]
                                               TermExpr(
                                                 Term(
-                                                  Var(
-                                                    Designator(
-                                                     Broj
-                                                      DotDesignatorOption(
-                                                       DESET
-                                                      ) [DotDesignatorOption]
-                                                    ) [Designator]
-                                                  ) [Var]
+                                                  FactorBool(
+                                                    BoolFalse(
+                                                    ) [BoolFalse]
+                                                  ) [FactorBool]
                                                   NoFactor(
                                                   ) [NoFactor]
                                                 ) [Term]
@@ -959,89 +849,766 @@ INFO  19:39:54,635 - Program(
                                       ) [Statements]
                                       MatchedStmt(
                                         MatchedDesignatorStatement(
-                                          ProcCall(
+                                          Assignment(
                                             Designator(
-                                             mul
+                                             i
                                               NoDesignatorOptions(
                                               ) [NoDesignatorOptions]
                                             ) [Designator]
-                                            Actuals(
-                                              ActualParams(
-                                                ActualParams(
-                                                  ActualParam(
+                                            TermExpr(
+                                              Term(
+                                                Const(
+                                                 0
+                                                ) [Const]
+                                                NoFactor(
+                                                ) [NoFactor]
+                                              ) [Term]
+                                            ) [TermExpr]
+                                          ) [Assignment]
+                                        ) [MatchedDesignatorStatement]
+                                      ) [MatchedStmt]
+                                    ) [Statements]
+                                    MatchedStmt(
+                                      MatchedFor(
+                                        ForFor(
+                                        ) [ForFor]
+                                        ForDesign(
+                                          Assignment(
+                                            Designator(
+                                             i
+                                              NoDesignatorOptions(
+                                              ) [NoDesignatorOptions]
+                                            ) [Designator]
+                                            TermExpr(
+                                              Term(
+                                                Const(
+                                                 0
+                                                ) [Const]
+                                                NoFactor(
+                                                ) [NoFactor]
+                                              ) [Term]
+                                            ) [TermExpr]
+                                          ) [Assignment]
+                                        ) [ForDesign]
+                                        BegForCond(
+                                        ) [BegForCond]
+                                        ForCond(
+                                          Condit(
+                                            CondT(
+                                              CndFctNotBool(
+                                                TermExpr(
+                                                  Term(
+                                                    Var(
+                                                      Designator(
+                                                       i
+                                                        NoDesignatorOptions(
+                                                        ) [NoDesignatorOptions]
+                                                      ) [Designator]
+                                                    ) [Var]
+                                                    NoFactor(
+                                                    ) [NoFactor]
+                                                  ) [Term]
+                                                ) [TermExpr]
+                                                Rellt(
+                                                ) [Rellt]
+                                                TermExpr(
+                                                  Term(
+                                                    Const(
+                                                     5
+                                                    ) [Const]
+                                                    NoFactor(
+                                                    ) [NoFactor]
+                                                  ) [Term]
+                                                ) [TermExpr]
+                                              ) [CndFctNotBool]
+                                              CondFactListDerived1(
+                                              ) [CondFactListDerived1]
+                                            ) [CondT]
+                                            CondTermListDerived1(
+                                            ) [CondTermListDerived1]
+                                          ) [Condit]
+                                        ) [ForCond]
+                                        Beginc(
+                                        ) [Beginc]
+                                        ForDesign(
+                                          Increment(
+                                            Designator(
+                                             i
+                                              NoDesignatorOptions(
+                                              ) [NoDesignatorOptions]
+                                            ) [Designator]
+                                          ) [Increment]
+                                        ) [ForDesign]
+                                        Endinc(
+                                        ) [Endinc]
+                                        Begfor(
+                                        ) [Begfor]
+                                        MatchedBraces(
+                                          Statements(
+                                            NoStmt(
+                                            ) [NoStmt]
+                                            UnmachedStmt(
+                                              UnmatchedIf(
+                                                Ifif(
+                                                ) [Ifif]
+                                                Condit(
+                                                  CondT(
+                                                    CndFctNotBool(
+                                                      TermExpr(
+                                                        Term(
+                                                          Var(
+                                                            Designator(
+                                                             i
+                                                              NoDesignatorOptions(
+                                                              ) [NoDesignatorOptions]
+                                                            ) [Designator]
+                                                          ) [Var]
+                                                          NoFactor(
+                                                          ) [NoFactor]
+                                                        ) [Term]
+                                                      ) [TermExpr]
+                                                      Releq(
+                                                      ) [Releq]
+                                                      TermExpr(
+                                                        Term(
+                                                          Const(
+                                                           2
+                                                          ) [Const]
+                                                          NoFactor(
+                                                          ) [NoFactor]
+                                                        ) [Term]
+                                                      ) [TermExpr]
+                                                    ) [CndFctNotBool]
+                                                    CondFactListDerived1(
+                                                    ) [CondFactListDerived1]
+                                                  ) [CondT]
+                                                  CondTermListDerived1(
+                                                  ) [CondTermListDerived1]
+                                                ) [Condit]
+                                                Begif(
+                                                ) [Begif]
+                                                MatchedStmt(
+                                                  MatchedDesignatorStatement(
+                                                    Assignment(
+                                                      Designator(
+                                                       ibool
+                                                        NoDesignatorOptions(
+                                                        ) [NoDesignatorOptions]
+                                                      ) [Designator]
+                                                      TermExpr(
+                                                        Term(
+                                                          FactorBool(
+                                                            BoolTrue(
+                                                            ) [BoolTrue]
+                                                          ) [FactorBool]
+                                                          NoFactor(
+                                                          ) [NoFactor]
+                                                        ) [Term]
+                                                      ) [TermExpr]
+                                                    ) [Assignment]
+                                                  ) [MatchedDesignatorStatement]
+                                                ) [MatchedStmt]
+                                                Endif(
+                                                ) [Endif]
+                                              ) [UnmatchedIf]
+                                            ) [UnmachedStmt]
+                                          ) [Statements]
+                                        ) [MatchedBraces]
+                                        Endfor(
+                                        ) [Endfor]
+                                      ) [MatchedFor]
+                                    ) [MatchedStmt]
+                                  ) [Statements]
+                                  UnmachedStmt(
+                                    UnmatchedIf(
+                                      Ifif(
+                                      ) [Ifif]
+                                      Condit(
+                                        CondT(
+                                          CndFct(
+                                            TermExpr(
+                                              Term(
+                                                Var(
+                                                  Designator(
+                                                   ibool
+                                                    NoDesignatorOptions(
+                                                    ) [NoDesignatorOptions]
+                                                  ) [Designator]
+                                                ) [Var]
+                                                NoFactor(
+                                                ) [NoFactor]
+                                              ) [Term]
+                                            ) [TermExpr]
+                                          ) [CndFct]
+                                          CondFactListDerived1(
+                                          ) [CondFactListDerived1]
+                                        ) [CondT]
+                                        CondTermListDerived1(
+                                        ) [CondTermListDerived1]
+                                      ) [Condit]
+                                      Begif(
+                                      ) [Begif]
+                                      MatchedStmt(
+                                        MatchedIf(
+                                          Ifif(
+                                          ) [Ifif]
+                                          Condit(
+                                            CondT(
+                                              CndFctNotBool(
+                                                TermExpr(
+                                                  Term(
+                                                    Var(
+                                                      Designator(
+                                                       i
+                                                        NoDesignatorOptions(
+                                                        ) [NoDesignatorOptions]
+                                                      ) [Designator]
+                                                    ) [Var]
+                                                    NoFactor(
+                                                    ) [NoFactor]
+                                                  ) [Term]
+                                                ) [TermExpr]
+                                                Releq(
+                                                ) [Releq]
+                                                TermExpr(
+                                                  Term(
+                                                    Const(
+                                                     5
+                                                    ) [Const]
+                                                    NoFactor(
+                                                    ) [NoFactor]
+                                                  ) [Term]
+                                                ) [TermExpr]
+                                              ) [CndFctNotBool]
+                                              CondFactListDerived1(
+                                              ) [CondFactListDerived1]
+                                            ) [CondT]
+                                            CondTermListDerived1(
+                                            ) [CondTermListDerived1]
+                                          ) [Condit]
+                                          Begif(
+                                          ) [Begif]
+                                          PrintStmt(
+                                            TermExpr(
+                                              Term(
+                                                Const(
+                                                 1
+                                                ) [Const]
+                                                NoFactor(
+                                                ) [NoFactor]
+                                              ) [Term]
+                                            ) [TermExpr]
+                                          ) [PrintStmt]
+                                          Begelse(
+                                          ) [Begelse]
+                                          PrintStmt(
+                                            MinusTerm(
+                                              Term(
+                                                Const(
+                                                 1
+                                                ) [Const]
+                                                NoFactor(
+                                                ) [NoFactor]
+                                              ) [Term]
+                                            ) [MinusTerm]
+                                          ) [PrintStmt]
+                                          Endelse(
+                                          ) [Endelse]
+                                        ) [MatchedIf]
+                                      ) [MatchedStmt]
+                                      Endif(
+                                      ) [Endif]
+                                    ) [UnmatchedIf]
+                                  ) [UnmachedStmt]
+                                ) [Statements]
+                                MatchedStmt(
+                                  MatchedDesignatorStatement(
+                                    Assignment(
+                                      Designator(
+                                       niz
+                                        NoDesignatorOptions(
+                                        ) [NoDesignatorOptions]
+                                      ) [Designator]
+                                      TermExpr(
+                                        Term(
+                                          FactorNewArrInit(
+                                            Type(
+                                             int
+                                            ) [Type]
+                                            LsquareNt(
+                                            ) [LsquareNt]
+                                            DuzinaNiza(
+                                              TermExpr(
+                                                Term(
+                                                  Const(
+                                                   3
+                                                  ) [Const]
+                                                  NoFactor(
+                                                  ) [NoFactor]
+                                                ) [Term]
+                                              ) [TermExpr]
+                                            ) [DuzinaNiza]
+                                            NewInitListYes(
+                                              InitListYes(
+                                                InitListYes(
+                                                  InitListNo(
                                                     TermExpr(
                                                       Term(
-                                                        Var(
-                                                          Designator(
-                                                           niz
-                                                            NoDesignatorOptions(
-                                                            ) [NoDesignatorOptions]
-                                                          ) [Designator]
-                                                        ) [Var]
+                                                        Const(
+                                                         1
+                                                        ) [Const]
                                                         NoFactor(
                                                         ) [NoFactor]
                                                       ) [Term]
                                                     ) [TermExpr]
-                                                  ) [ActualParam]
+                                                  ) [InitListNo]
+                                                  TermExpr(
+                                                    Term(
+                                                      Const(
+                                                       2
+                                                      ) [Const]
+                                                      NoFactor(
+                                                      ) [NoFactor]
+                                                    ) [Term]
+                                                  ) [TermExpr]
+                                                ) [InitListYes]
+                                                AddExpr(
                                                   TermExpr(
                                                     Term(
                                                       FuncCall(
                                                         Designator(
-                                                         inc
+                                                         sum
                                                           NoDesignatorOptions(
                                                           ) [NoDesignatorOptions]
                                                         ) [Designator]
                                                         Actuals(
-                                                          ActualParam(
+                                                          ActualParams(
+                                                            ActualParam(
+                                                              TermExpr(
+                                                                Term(
+                                                                  Var(
+                                                                    Designator(
+                                                                     niz
+                                                                      SquareDesignatorOption(
+                                                                        TermExpr(
+                                                                          Term(
+                                                                            Const(
+                                                                             1
+                                                                            ) [Const]
+                                                                            NoFactor(
+                                                                            ) [NoFactor]
+                                                                          ) [Term]
+                                                                        ) [TermExpr]
+                                                                      ) [SquareDesignatorOption]
+                                                                    ) [Designator]
+                                                                  ) [Var]
+                                                                  NoFactor(
+                                                                  ) [NoFactor]
+                                                                ) [Term]
+                                                              ) [TermExpr]
+                                                            ) [ActualParam]
                                                             TermExpr(
                                                               Term(
-                                                                Const(
-                                                                 0
-                                                                ) [Const]
+                                                                Var(
+                                                                  Designator(
+                                                                   niz
+                                                                    SquareDesignatorOption(
+                                                                      TermExpr(
+                                                                        Term(
+                                                                          Const(
+                                                                           0
+                                                                          ) [Const]
+                                                                          NoFactor(
+                                                                          ) [NoFactor]
+                                                                        ) [Term]
+                                                                      ) [TermExpr]
+                                                                    ) [SquareDesignatorOption]
+                                                                  ) [Designator]
+                                                                ) [Var]
                                                                 NoFactor(
                                                                 ) [NoFactor]
                                                               ) [Term]
                                                             ) [TermExpr]
-                                                          ) [ActualParam]
+                                                          ) [ActualParams]
                                                         ) [Actuals]
                                                       ) [FuncCall]
                                                       NoFactor(
                                                       ) [NoFactor]
                                                     ) [Term]
                                                   ) [TermExpr]
-                                                ) [ActualParams]
-                                                TermExpr(
+                                                  Plusop(
+                                                  ) [Plusop]
                                                   Term(
                                                     Const(
-                                                     2
+                                                     1
                                                     ) [Const]
                                                     NoFactor(
                                                     ) [NoFactor]
                                                   ) [Term]
-                                                ) [TermExpr]
-                                              ) [ActualParams]
-                                            ) [Actuals]
-                                          ) [ProcCall]
-                                        ) [MatchedDesignatorStatement]
-                                      ) [MatchedStmt]
-                                    ) [Statements]
-                                    MatchedStmt(
-                                      MatchedDesignatorStatement(
-                                        ProcCall(
+                                                ) [AddExpr]
+                                              ) [InitListYes]
+                                            ) [NewInitListYes]
+                                          ) [FactorNewArrInit]
+                                          NoFactor(
+                                          ) [NoFactor]
+                                        ) [Term]
+                                      ) [TermExpr]
+                                    ) [Assignment]
+                                  ) [MatchedDesignatorStatement]
+                                ) [MatchedStmt]
+                              ) [Statements]
+                              MatchedStmt(
+                                MatchedIf(
+                                  Ifif(
+                                  ) [Ifif]
+                                  Condit(
+                                    CondT(
+                                      CndFctNotBool(
+                                        TermExpr(
+                                          Term(
+                                            Var(
+                                              Designator(
+                                               niz
+                                                SquareDesignatorOption(
+                                                  TermExpr(
+                                                    Term(
+                                                      Const(
+                                                       2
+                                                      ) [Const]
+                                                      NoFactor(
+                                                      ) [NoFactor]
+                                                    ) [Term]
+                                                  ) [TermExpr]
+                                                ) [SquareDesignatorOption]
+                                              ) [Designator]
+                                            ) [Var]
+                                            NoFactor(
+                                            ) [NoFactor]
+                                          ) [Term]
+                                        ) [TermExpr]
+                                        Releq(
+                                        ) [Releq]
+                                        TermExpr(
+                                          Term(
+                                            Const(
+                                             4
+                                            ) [Const]
+                                            NoFactor(
+                                            ) [NoFactor]
+                                          ) [Term]
+                                        ) [TermExpr]
+                                      ) [CndFctNotBool]
+                                      CondFactListDerived1(
+                                      ) [CondFactListDerived1]
+                                    ) [CondT]
+                                    CondTermListDerived1(
+                                    ) [CondTermListDerived1]
+                                  ) [Condit]
+                                  Begif(
+                                  ) [Begif]
+                                  PrintStmt(
+                                    TermExpr(
+                                      Term(
+                                        FuncCall(
                                           Designator(
-                                           mul
+                                           ord
                                             NoDesignatorOptions(
                                             ) [NoDesignatorOptions]
                                           ) [Designator]
                                           Actuals(
-                                            ActualParams(
+                                            ActualParam(
+                                              TermExpr(
+                                                Term(
+                                                  CharConst(
+                                                   A
+                                                  ) [CharConst]
+                                                  NoFactor(
+                                                  ) [NoFactor]
+                                                ) [Term]
+                                              ) [TermExpr]
+                                            ) [ActualParam]
+                                          ) [Actuals]
+                                        ) [FuncCall]
+                                        NoFactor(
+                                        ) [NoFactor]
+                                      ) [Term]
+                                    ) [TermExpr]
+                                  ) [PrintStmt]
+                                  Begelse(
+                                  ) [Begelse]
+                                  PrintStmt(
+                                    TermExpr(
+                                      Term(
+                                        FuncCall(
+                                          Designator(
+                                           ord
+                                            NoDesignatorOptions(
+                                            ) [NoDesignatorOptions]
+                                          ) [Designator]
+                                          Actuals(
+                                            ActualParam(
+                                              TermExpr(
+                                                Term(
+                                                  CharConst(
+                                                   a
+                                                  ) [CharConst]
+                                                  NoFactor(
+                                                  ) [NoFactor]
+                                                ) [Term]
+                                              ) [TermExpr]
+                                            ) [ActualParam]
+                                          ) [Actuals]
+                                        ) [FuncCall]
+                                        NoFactor(
+                                        ) [NoFactor]
+                                      ) [Term]
+                                    ) [TermExpr]
+                                  ) [PrintStmt]
+                                  Endelse(
+                                  ) [Endelse]
+                                ) [MatchedIf]
+                              ) [MatchedStmt]
+                            ) [Statements]
+                            MatchedStmt(
+                              PrintStmt(
+                                TermExpr(
+                                  Term(
+                                    Var(
+                                      Designator(
+                                       eol
+                                        NoDesignatorOptions(
+                                        ) [NoDesignatorOptions]
+                                      ) [Designator]
+                                    ) [Var]
+                                    NoFactor(
+                                    ) [NoFactor]
+                                  ) [Term]
+                                ) [TermExpr]
+                              ) [PrintStmt]
+                            ) [MatchedStmt]
+                          ) [Statements]
+                          MatchedStmt(
+                            MatchedDesignatorStatement(
+                              Assignment(
+                                Designator(
+                                 i
+                                  NoDesignatorOptions(
+                                  ) [NoDesignatorOptions]
+                                ) [Designator]
+                                TermExpr(
+                                  Term(
+                                    Const(
+                                     0
+                                    ) [Const]
+                                    NoFactor(
+                                    ) [NoFactor]
+                                  ) [Term]
+                                ) [TermExpr]
+                              ) [Assignment]
+                            ) [MatchedDesignatorStatement]
+                          ) [MatchedStmt]
+                        ) [Statements]
+                        MatchedStmt(
+                          MatchedFor(
+                            ForFor(
+                            ) [ForFor]
+                            ForDesignatorDerived1(
+                            ) [ForDesignatorDerived1]
+                            BegForCond(
+                            ) [BegForCond]
+                            ForCond(
+                              Condit(
+                                CondT(
+                                  CndFctNotBool(
+                                    TermExpr(
+                                      Term(
+                                        Var(
+                                          Designator(
+                                           i
+                                            NoDesignatorOptions(
+                                            ) [NoDesignatorOptions]
+                                          ) [Designator]
+                                        ) [Var]
+                                        NoFactor(
+                                        ) [NoFactor]
+                                      ) [Term]
+                                    ) [TermExpr]
+                                    Rellt(
+                                    ) [Rellt]
+                                    TermExpr(
+                                      Term(
+                                        Const(
+                                         10
+                                        ) [Const]
+                                        NoFactor(
+                                        ) [NoFactor]
+                                      ) [Term]
+                                    ) [TermExpr]
+                                  ) [CndFctNotBool]
+                                  CondFactListDerived1(
+                                  ) [CondFactListDerived1]
+                                ) [CondT]
+                                CondTermListDerived1(
+                                ) [CondTermListDerived1]
+                              ) [Condit]
+                            ) [ForCond]
+                            Beginc(
+                            ) [Beginc]
+                            ForDesignatorDerived1(
+                            ) [ForDesignatorDerived1]
+                            Endinc(
+                            ) [Endinc]
+                            Begfor(
+                            ) [Begfor]
+                            MatchedBraces(
+                              Statements(
+                                Statements(
+                                  Statements(
+                                    NoStmt(
+                                    ) [NoStmt]
+                                    UnmachedStmt(
+                                      UnmatchedIf(
+                                        Ifif(
+                                        ) [Ifif]
+                                        Condit(
+                                          CondT(
+                                            CndFctNotBool(
+                                              TermExpr(
+                                                Term(
+                                                  Var(
+                                                    Designator(
+                                                     i
+                                                      NoDesignatorOptions(
+                                                      ) [NoDesignatorOptions]
+                                                    ) [Designator]
+                                                  ) [Var]
+                                                  NoFactor(
+                                                  ) [NoFactor]
+                                                ) [Term]
+                                              ) [TermExpr]
+                                              Releq(
+                                              ) [Releq]
+                                              TermExpr(
+                                                Term(
+                                                  Const(
+                                                   3
+                                                  ) [Const]
+                                                  NoFactor(
+                                                  ) [NoFactor]
+                                                ) [Term]
+                                              ) [TermExpr]
+                                            ) [CndFctNotBool]
+                                            CondFactListDerived1(
+                                            ) [CondFactListDerived1]
+                                          ) [CondT]
+                                          CondTermListDerived1(
+                                          ) [CondTermListDerived1]
+                                        ) [Condit]
+                                        Begif(
+                                        ) [Begif]
+                                        MatchedStmt(
+                                          MatchedBraces(
+                                            Statements(
+                                              Statements(
+                                                NoStmt(
+                                                ) [NoStmt]
+                                                MatchedStmt(
+                                                  MatchedDesignatorStatement(
+                                                    Increment(
+                                                      Designator(
+                                                       i
+                                                        NoDesignatorOptions(
+                                                        ) [NoDesignatorOptions]
+                                                      ) [Designator]
+                                                    ) [Increment]
+                                                  ) [MatchedDesignatorStatement]
+                                                ) [MatchedStmt]
+                                              ) [Statements]
+                                              MatchedStmt(
+                                                MatchedContinue(
+                                                ) [MatchedContinue]
+                                              ) [MatchedStmt]
+                                            ) [Statements]
+                                          ) [MatchedBraces]
+                                        ) [MatchedStmt]
+                                        Endif(
+                                        ) [Endif]
+                                      ) [UnmatchedIf]
+                                    ) [UnmachedStmt]
+                                  ) [Statements]
+                                  UnmachedStmt(
+                                    UnmatchedIf(
+                                      Ifif(
+                                      ) [Ifif]
+                                      Condit(
+                                        CondT(
+                                          CndFctNotBool(
+                                            TermExpr(
+                                              Term(
+                                                Var(
+                                                  Designator(
+                                                   i
+                                                    NoDesignatorOptions(
+                                                    ) [NoDesignatorOptions]
+                                                  ) [Designator]
+                                                ) [Var]
+                                                NoFactor(
+                                                ) [NoFactor]
+                                              ) [Term]
+                                            ) [TermExpr]
+                                            Releq(
+                                            ) [Releq]
+                                            TermExpr(
+                                              Term(
+                                                Const(
+                                                 4
+                                                ) [Const]
+                                                NoFactor(
+                                                ) [NoFactor]
+                                              ) [Term]
+                                            ) [TermExpr]
+                                          ) [CndFctNotBool]
+                                          CondFactListDerived1(
+                                          ) [CondFactListDerived1]
+                                        ) [CondT]
+                                        CondTermListDerived1(
+                                        ) [CondTermListDerived1]
+                                      ) [Condit]
+                                      Begif(
+                                      ) [Begif]
+                                      MatchedStmt(
+                                        MatchedBreak(
+                                        ) [MatchedBreak]
+                                      ) [MatchedStmt]
+                                      Endif(
+                                      ) [Endif]
+                                    ) [UnmatchedIf]
+                                  ) [UnmachedStmt]
+                                ) [Statements]
+                                MatchedStmt(
+                                  MatchedDesignatorStatement(
+                                    Assignment(
+                                      Designator(
+                                       i
+                                        NoDesignatorOptions(
+                                        ) [NoDesignatorOptions]
+                                      ) [Designator]
+                                      TermExpr(
+                                        Term(
+                                          FuncCall(
+                                            Designator(
+                                             inkrement
+                                              NoDesignatorOptions(
+                                              ) [NoDesignatorOptions]
+                                            ) [Designator]
+                                            Actuals(
                                               ActualParams(
                                                 ActualParam(
                                                   TermExpr(
                                                     Term(
                                                       Var(
                                                         Designator(
-                                                         niz
+                                                         i
                                                           NoDesignatorOptions(
                                                           ) [NoDesignatorOptions]
                                                         ) [Designator]
@@ -1055,9 +1622,9 @@ INFO  19:39:54,635 - Program(
                                                   Term(
                                                     Var(
                                                       Designator(
-                                                       Broj
+                                                       IncrementType
                                                         DotDesignatorOption(
-                                                         NULA
+                                                         BY_ONE
                                                         ) [DotDesignatorOption]
                                                       ) [Designator]
                                                     ) [Var]
@@ -1066,297 +1633,45 @@ INFO  19:39:54,635 - Program(
                                                   ) [Term]
                                                 ) [TermExpr]
                                               ) [ActualParams]
-                                              TermExpr(
-                                                Term(
-                                                  FuncCall(
-                                                    Designator(
-                                                     inc
-                                                      NoDesignatorOptions(
-                                                      ) [NoDesignatorOptions]
-                                                    ) [Designator]
-                                                    Actuals(
-                                                      ActualParam(
-                                                        AddExpr(
-                                                          TermExpr(
-                                                            Term(
-                                                              FuncCall(
-                                                                Designator(
-                                                                 inc
-                                                                  NoDesignatorOptions(
-                                                                  ) [NoDesignatorOptions]
-                                                                ) [Designator]
-                                                                Actuals(
-                                                                  ActualParam(
-                                                                    TermExpr(
-                                                                      Term(
-                                                                        Var(
-                                                                          Designator(
-                                                                           Broj
-                                                                            DotDesignatorOption(
-                                                                             JEDAN
-                                                                            ) [DotDesignatorOption]
-                                                                          ) [Designator]
-                                                                        ) [Var]
-                                                                        NoFactor(
-                                                                        ) [NoFactor]
-                                                                      ) [Term]
-                                                                    ) [TermExpr]
-                                                                  ) [ActualParam]
-                                                                ) [Actuals]
-                                                              ) [FuncCall]
-                                                              NoFactor(
-                                                              ) [NoFactor]
-                                                            ) [Term]
-                                                          ) [TermExpr]
-                                                          Plusop(
-                                                          ) [Plusop]
-                                                          Term(
-                                                            Const(
-                                                             1
-                                                            ) [Const]
-                                                            NoFactor(
-                                                            ) [NoFactor]
-                                                          ) [Term]
-                                                        ) [AddExpr]
-                                                      ) [ActualParam]
-                                                    ) [Actuals]
-                                                  ) [FuncCall]
-                                                  NoFactor(
-                                                  ) [NoFactor]
-                                                ) [Term]
-                                              ) [TermExpr]
-                                            ) [ActualParams]
-                                          ) [Actuals]
-                                        ) [ProcCall]
-                                      ) [MatchedDesignatorStatement]
-                                    ) [MatchedStmt]
-                                  ) [Statements]
-                                  MatchedStmt(
-                                    MatchedDesignatorStatement(
-                                      Assignment(
-                                        Designator(
-                                         bodovi
-                                          NoDesignatorOptions(
-                                          ) [NoDesignatorOptions]
-                                        ) [Designator]
-                                        TermExpr(
-                                          Term(
-                                            Var(
-                                              Designator(
-                                               niz
-                                                SquareDesignatorOption(
-                                                  TermExpr(
-                                                    Term(
-                                                      Const(
-                                                       1
-                                                      ) [Const]
-                                                      NoFactor(
-                                                      ) [NoFactor]
-                                                    ) [Term]
-                                                  ) [TermExpr]
-                                                ) [SquareDesignatorOption]
-                                              ) [Designator]
-                                            ) [Var]
-                                            MulopFactor(
-                                              NoFactor(
-                                              ) [NoFactor]
-                                              Divop(
-                                              ) [Divop]
-                                              Var(
-                                                Designator(
-                                                 niz
-                                                  SquareDesignatorOption(
-                                                    TermExpr(
-                                                      Term(
-                                                        Const(
-                                                         0
-                                                        ) [Const]
-                                                        NoFactor(
-                                                        ) [NoFactor]
-                                                      ) [Term]
-                                                    ) [TermExpr]
-                                                  ) [SquareDesignatorOption]
-                                                ) [Designator]
-                                              ) [Var]
-                                            ) [MulopFactor]
-                                          ) [Term]
-                                        ) [TermExpr]
-                                      ) [Assignment]
-                                    ) [MatchedDesignatorStatement]
-                                  ) [MatchedStmt]
-                                ) [Statements]
-                                MatchedStmt(
-                                  PrintStmt(
-                                    TermExpr(
-                                      Term(
-                                        Var(
-                                          Designator(
-                                           bodovi
-                                            NoDesignatorOptions(
-                                            ) [NoDesignatorOptions]
-                                          ) [Designator]
-                                        ) [Var]
-                                        NoFactor(
-                                        ) [NoFactor]
-                                      ) [Term]
-                                    ) [TermExpr]
-                                  ) [PrintStmt]
+                                            ) [Actuals]
+                                          ) [FuncCall]
+                                          NoFactor(
+                                          ) [NoFactor]
+                                        ) [Term]
+                                      ) [TermExpr]
+                                    ) [Assignment]
+                                  ) [MatchedDesignatorStatement]
                                 ) [MatchedStmt]
                               ) [Statements]
-                              MatchedStmt(
-                                PrintStmt(
-                                  TermExpr(
-                                    Term(
-                                      Var(
-                                        Designator(
-                                         niz
-                                          SquareDesignatorOption(
-                                            TermExpr(
-                                              Term(
-                                                Var(
-                                                  Designator(
-                                                   Broj
-                                                    DotDesignatorOption(
-                                                     JEDAN
-                                                    ) [DotDesignatorOption]
-                                                  ) [Designator]
-                                                ) [Var]
-                                                NoFactor(
-                                                ) [NoFactor]
-                                              ) [Term]
-                                            ) [TermExpr]
-                                          ) [SquareDesignatorOption]
-                                        ) [Designator]
-                                      ) [Var]
-                                      NoFactor(
-                                      ) [NoFactor]
-                                    ) [Term]
-                                  ) [TermExpr]
-                                ) [PrintStmt]
-                              ) [MatchedStmt]
-                            ) [Statements]
-                            MatchedStmt(
-                              MatchedDesignatorStatement(
-                                Assignment(
-                                  Designator(
-                                   nizch
-                                    NoDesignatorOptions(
-                                    ) [NoDesignatorOptions]
-                                  ) [Designator]
-                                  TermExpr(
-                                    Term(
-                                      FactorNewArr(
-                                        Type(
-                                         char
-                                        ) [Type]
-                                        LsquareNt(
-                                        ) [LsquareNt]
-                                        DuzinaNiza(
-                                          TermExpr(
-                                            Term(
-                                              Const(
-                                               3
-                                              ) [Const]
-                                              NoFactor(
-                                              ) [NoFactor]
-                                            ) [Term]
-                                          ) [TermExpr]
-                                        ) [DuzinaNiza]
-                                      ) [FactorNewArr]
-                                      NoFactor(
-                                      ) [NoFactor]
-                                    ) [Term]
-                                  ) [TermExpr]
-                                ) [Assignment]
-                              ) [MatchedDesignatorStatement]
-                            ) [MatchedStmt]
-                          ) [Statements]
-                          MatchedStmt(
-                            MatchedDesignatorStatement(
-                              Assignment(
-                                Designator(
-                                 nizch
-                                  SquareDesignatorOption(
-                                    TermExpr(
-                                      Term(
-                                        Const(
-                                         0
-                                        ) [Const]
-                                        NoFactor(
-                                        ) [NoFactor]
-                                      ) [Term]
-                                    ) [TermExpr]
-                                  ) [SquareDesignatorOption]
-                                ) [Designator]
+                            ) [MatchedBraces]
+                            Endfor(
+                            ) [Endfor]
+                          ) [MatchedFor]
+                        ) [MatchedStmt]
+                      ) [Statements]
+                      MatchedStmt(
+                        MatchedIf(
+                          Ifif(
+                          ) [Ifif]
+                          Condit(
+                            CondT(
+                              CndFctNotBool(
                                 TermExpr(
                                   Term(
-                                    CharConst(
-                                     a
-                                    ) [CharConst]
+                                    Var(
+                                      Designator(
+                                       i
+                                        NoDesignatorOptions(
+                                        ) [NoDesignatorOptions]
+                                      ) [Designator]
+                                    ) [Var]
                                     NoFactor(
                                     ) [NoFactor]
                                   ) [Term]
                                 ) [TermExpr]
-                              ) [Assignment]
-                            ) [MatchedDesignatorStatement]
-                          ) [MatchedStmt]
-                        ) [Statements]
-                        MatchedStmt(
-                          MatchedDesignatorStatement(
-                            Assignment(
-                              Designator(
-                               nizch
-                                SquareDesignatorOption(
-                                  TermExpr(
-                                    Term(
-                                      Var(
-                                        Designator(
-                                         jedan
-                                          NoDesignatorOptions(
-                                          ) [NoDesignatorOptions]
-                                        ) [Designator]
-                                      ) [Var]
-                                      NoFactor(
-                                      ) [NoFactor]
-                                    ) [Term]
-                                  ) [TermExpr]
-                                ) [SquareDesignatorOption]
-                              ) [Designator]
-                              TermExpr(
-                                Term(
-                                  CharConst(
-                                   b
-                                  ) [CharConst]
-                                  NoFactor(
-                                  ) [NoFactor]
-                                ) [Term]
-                              ) [TermExpr]
-                            ) [Assignment]
-                          ) [MatchedDesignatorStatement]
-                        ) [MatchedStmt]
-                      ) [Statements]
-                      MatchedStmt(
-                        MatchedDesignatorStatement(
-                          Assignment(
-                            Designator(
-                             nizch
-                              SquareDesignatorOption(
-                                AddExpr(
-                                  TermExpr(
-                                    Term(
-                                      Var(
-                                        Designator(
-                                         pet
-                                          NoDesignatorOptions(
-                                          ) [NoDesignatorOptions]
-                                        ) [Designator]
-                                      ) [Var]
-                                      NoFactor(
-                                      ) [NoFactor]
-                                    ) [Term]
-                                  ) [TermExpr]
-                                  Minop(
-                                  ) [Minop]
+                                Releq(
+                                ) [Releq]
+                                TermExpr(
                                   Term(
                                     Const(
                                      3
@@ -1364,304 +1679,106 @@ INFO  19:39:54,635 - Program(
                                     NoFactor(
                                     ) [NoFactor]
                                   ) [Term]
-                                ) [AddExpr]
-                              ) [SquareDesignatorOption]
-                            ) [Designator]
+                                ) [TermExpr]
+                              ) [CndFctNotBool]
+                              CondFactListDerived1(
+                              ) [CondFactListDerived1]
+                            ) [CondT]
+                            CondTermListDerived1(
+                            ) [CondTermListDerived1]
+                          ) [Condit]
+                          Begif(
+                          ) [Begif]
+                          PrintStmt(
                             TermExpr(
                               Term(
-                                CharConst(
-                                 c
-                                ) [CharConst]
+                                Const(
+                                 4
+                                ) [Const]
                                 NoFactor(
                                 ) [NoFactor]
                               ) [Term]
                             ) [TermExpr]
-                          ) [Assignment]
-                        ) [MatchedDesignatorStatement]
+                          ) [PrintStmt]
+                          Begelse(
+                          ) [Begelse]
+                          PrintStmt(
+                            MinusTerm(
+                              Term(
+                                Const(
+                                 4
+                                ) [Const]
+                                NoFactor(
+                                ) [NoFactor]
+                              ) [Term]
+                            ) [MinusTerm]
+                          ) [PrintStmt]
+                          Endelse(
+                          ) [Endelse]
+                        ) [MatchedIf]
                       ) [MatchedStmt]
                     ) [Statements]
                     MatchedStmt(
-                      PrintStmt(
-                        TermExpr(
-                          Term(
-                            Var(
-                              Designator(
-                               nizch
-                                SquareDesignatorOption(
-                                  TermExpr(
-                                    Term(
-                                      FuncCall(
-                                        Designator(
-                                         inc
-                                          NoDesignatorOptions(
-                                          ) [NoDesignatorOptions]
-                                        ) [Designator]
-                                        Actuals(
-                                          ActualParam(
-                                            TermExpr(
-                                              Term(
-                                                Const(
-                                                 0
-                                                ) [Const]
-                                                NoFactor(
-                                                ) [NoFactor]
-                                              ) [Term]
-                                            ) [TermExpr]
-                                          ) [ActualParam]
-                                        ) [Actuals]
-                                      ) [FuncCall]
-                                      NoFactor(
-                                      ) [NoFactor]
-                                    ) [Term]
-                                  ) [TermExpr]
-                                ) [SquareDesignatorOption]
-                              ) [Designator]
-                            ) [Var]
-                            NoFactor(
-                            ) [NoFactor]
-                          ) [Term]
-                        ) [TermExpr]
-                      ) [PrintStmt]
+                      MatchedRead(
+                        Rd(
+                        ) [Rd]
+                        Designator(
+                         niz
+                          SquareDesignatorOption(
+                            TermExpr(
+                              Term(
+                                Const(
+                                 0
+                                ) [Const]
+                                NoFactor(
+                                ) [NoFactor]
+                              ) [Term]
+                            ) [TermExpr]
+                          ) [SquareDesignatorOption]
+                        ) [Designator]
+                      ) [MatchedRead]
                     ) [MatchedStmt]
                   ) [Statements]
                   MatchedStmt(
-                    PrintStmt(
-                      TermExpr(
-                        Term(
-                          Var(
-                            Designator(
-                             nizch
-                              SquareDesignatorOption(
-                                TermExpr(
-                                  Term(
-                                    Var(
-                                      Designator(
-                                       jedan
-                                        NoDesignatorOptions(
-                                        ) [NoDesignatorOptions]
-                                      ) [Designator]
-                                    ) [Var]
-                                    MulopFactor(
-                                      NoFactor(
-                                      ) [NoFactor]
-                                      Timesop(
-                                      ) [Timesop]
-                                      Const(
-                                       2
-                                      ) [Const]
-                                    ) [MulopFactor]
-                                  ) [Term]
-                                ) [TermExpr]
-                              ) [SquareDesignatorOption]
-                            ) [Designator]
-                          ) [Var]
-                          NoFactor(
-                          ) [NoFactor]
-                        ) [Term]
-                      ) [TermExpr]
-                    ) [PrintStmt]
+                    MatchedRead(
+                      Rd(
+                      ) [Rd]
+                      Designator(
+                       niz
+                        SquareDesignatorOption(
+                          TermExpr(
+                            Term(
+                              Const(
+                               1
+                              ) [Const]
+                              NoFactor(
+                              ) [NoFactor]
+                            ) [Term]
+                          ) [TermExpr]
+                        ) [SquareDesignatorOption]
+                      ) [Designator]
+                    ) [MatchedRead]
                   ) [MatchedStmt]
                 ) [Statements]
                 MatchedStmt(
-                  MatchedDesignatorStatement(
-                    Assignment(
-                      Designator(
-                       bodovi
-                        NoDesignatorOptions(
-                        ) [NoDesignatorOptions]
-                      ) [Designator]
-                      AddExpr(
+                  MatchedRead(
+                    Rd(
+                    ) [Rd]
+                    Designator(
+                     niz
+                      SquareDesignatorOption(
                         TermExpr(
                           Term(
-                            Var(
-                              Designator(
-                               bodovi
-                                NoDesignatorOptions(
-                                ) [NoDesignatorOptions]
-                              ) [Designator]
-                            ) [Var]
+                            Const(
+                             2
+                            ) [Const]
                             NoFactor(
                             ) [NoFactor]
                           ) [Term]
                         ) [TermExpr]
-                        Plusop(
-                        ) [Plusop]
-                        Term(
-                          FactorExpr(
-                            AddExpr(
-                              AddExpr(
-                                TermExpr(
-                                  Term(
-                                    FactorExpr(
-                                      AddExpr(
-                                        TermExpr(
-                                          Term(
-                                            Var(
-                                              Designator(
-                                               pet
-                                                NoDesignatorOptions(
-                                                ) [NoDesignatorOptions]
-                                              ) [Designator]
-                                            ) [Var]
-                                            MulopFactor(
-                                              NoFactor(
-                                              ) [NoFactor]
-                                              Timesop(
-                                              ) [Timesop]
-                                              Var(
-                                                Designator(
-                                                 jedan
-                                                  NoDesignatorOptions(
-                                                  ) [NoDesignatorOptions]
-                                                ) [Designator]
-                                              ) [Var]
-                                            ) [MulopFactor]
-                                          ) [Term]
-                                        ) [TermExpr]
-                                        Minop(
-                                        ) [Minop]
-                                        Term(
-                                          Const(
-                                           1
-                                          ) [Const]
-                                          NoFactor(
-                                          ) [NoFactor]
-                                        ) [Term]
-                                      ) [AddExpr]
-                                    ) [FactorExpr]
-                                    MulopFactor(
-                                      NoFactor(
-                                      ) [NoFactor]
-                                      Timesop(
-                                      ) [Timesop]
-                                      FuncCall(
-                                        Designator(
-                                         inc
-                                          NoDesignatorOptions(
-                                          ) [NoDesignatorOptions]
-                                        ) [Designator]
-                                        Actuals(
-                                          ActualParam(
-                                            TermExpr(
-                                              Term(
-                                                Var(
-                                                  Designator(
-                                                   Broj
-                                                    DotDesignatorOption(
-                                                     JEDAN
-                                                    ) [DotDesignatorOption]
-                                                  ) [Designator]
-                                                ) [Var]
-                                                NoFactor(
-                                                ) [NoFactor]
-                                              ) [Term]
-                                            ) [TermExpr]
-                                          ) [ActualParam]
-                                        ) [Actuals]
-                                      ) [FuncCall]
-                                    ) [MulopFactor]
-                                  ) [Term]
-                                ) [TermExpr]
-                                Minop(
-                                ) [Minop]
-                                Term(
-                                  FactorExpr(
-                                    AddExpr(
-                                      AddExpr(
-                                        TermExpr(
-                                          Term(
-                                            Const(
-                                             3
-                                            ) [Const]
-                                            MulopFactor(
-                                              NoFactor(
-                                              ) [NoFactor]
-                                              Modop(
-                                              ) [Modop]
-                                              Const(
-                                               2
-                                              ) [Const]
-                                            ) [MulopFactor]
-                                          ) [Term]
-                                        ) [TermExpr]
-                                        Plusop(
-                                        ) [Plusop]
-                                        Term(
-                                          Const(
-                                           3
-                                          ) [Const]
-                                          MulopFactor(
-                                            NoFactor(
-                                            ) [NoFactor]
-                                            Timesop(
-                                            ) [Timesop]
-                                            Const(
-                                             2
-                                            ) [Const]
-                                          ) [MulopFactor]
-                                        ) [Term]
-                                      ) [AddExpr]
-                                      Minop(
-                                      ) [Minop]
-                                      Term(
-                                        Const(
-                                         3
-                                        ) [Const]
-                                        NoFactor(
-                                        ) [NoFactor]
-                                      ) [Term]
-                                    ) [AddExpr]
-                                  ) [FactorExpr]
-                                  NoFactor(
-                                  ) [NoFactor]
-                                ) [Term]
-                              ) [AddExpr]
-                              Minop(
-                              ) [Minop]
-                              Term(
-                                FuncCall(
-                                  Designator(
-                                   inc
-                                    NoDesignatorOptions(
-                                    ) [NoDesignatorOptions]
-                                  ) [Designator]
-                                  Actuals(
-                                    ActualParam(
-                                      TermExpr(
-                                        Term(
-                                          Var(
-                                            Designator(
-                                             Broj
-                                              DotDesignatorOption(
-                                               NULA
-                                              ) [DotDesignatorOption]
-                                            ) [Designator]
-                                          ) [Var]
-                                          NoFactor(
-                                          ) [NoFactor]
-                                        ) [Term]
-                                      ) [TermExpr]
-                                    ) [ActualParam]
-                                  ) [Actuals]
-                                ) [FuncCall]
-                                MulopFactor(
-                                  NoFactor(
-                                  ) [NoFactor]
-                                  Timesop(
-                                  ) [Timesop]
-                                  Const(
-                                   0
-                                  ) [Const]
-                                ) [MulopFactor]
-                              ) [Term]
-                            ) [AddExpr]
-                          ) [FactorExpr]
-                          NoFactor(
-                          ) [NoFactor]
-                        ) [Term]
-                      ) [AddExpr]
-                    ) [Assignment]
-                  ) [MatchedDesignatorStatement]
+                      ) [SquareDesignatorOption]
+                    ) [Designator]
+                  ) [MatchedRead]
                 ) [MatchedStmt]
               ) [Statements]
               MatchedStmt(
@@ -1670,7 +1787,7 @@ INFO  19:39:54,635 - Program(
                     Term(
                       Var(
                         Designator(
-                         bodovi
+                         eol
                           NoDesignatorOptions(
                           ) [NoDesignatorOptions]
                         ) [Designator]
@@ -1683,70 +1800,185 @@ INFO  19:39:54,635 - Program(
               ) [MatchedStmt]
             ) [Statements]
             MatchedStmt(
-              MatchedRead(
-                Rd(
-                ) [Rd]
-                Designator(
-                 bodovi
-                  NoDesignatorOptions(
-                  ) [NoDesignatorOptions]
-                ) [Designator]
-              ) [MatchedRead]
-            ) [MatchedStmt]
-          ) [Statements]
-          MatchedStmt(
-            MatchedDesignatorStatement(
-              Assignment(
-                Designator(
-                 bodovi
-                  NoDesignatorOptions(
-                  ) [NoDesignatorOptions]
-                ) [Designator]
+              PrintStmt(
                 TermExpr(
                   Term(
                     FuncCall(
                       Designator(
-                       inc
+                       sum
                         NoDesignatorOptions(
                         ) [NoDesignatorOptions]
                       ) [Designator]
                       Actuals(
-                        ActualParam(
+                        ActualParams(
+                          ActualParam(
+                            TermExpr(
+                              Term(
+                                FuncCall(
+                                  Designator(
+                                   sum
+                                    NoDesignatorOptions(
+                                    ) [NoDesignatorOptions]
+                                  ) [Designator]
+                                  Actuals(
+                                    ActualParams(
+                                      ActualParam(
+                                        TermExpr(
+                                          Term(
+                                            Var(
+                                              Designator(
+                                               niz
+                                                SquareDesignatorOption(
+                                                  TermExpr(
+                                                    Term(
+                                                      Const(
+                                                       0
+                                                      ) [Const]
+                                                      NoFactor(
+                                                      ) [NoFactor]
+                                                    ) [Term]
+                                                  ) [TermExpr]
+                                                ) [SquareDesignatorOption]
+                                              ) [Designator]
+                                            ) [Var]
+                                            NoFactor(
+                                            ) [NoFactor]
+                                          ) [Term]
+                                        ) [TermExpr]
+                                      ) [ActualParam]
+                                      TermExpr(
+                                        Term(
+                                          Var(
+                                            Designator(
+                                             niz
+                                              SquareDesignatorOption(
+                                                TermExpr(
+                                                  Term(
+                                                    Const(
+                                                     1
+                                                    ) [Const]
+                                                    NoFactor(
+                                                    ) [NoFactor]
+                                                  ) [Term]
+                                                ) [TermExpr]
+                                              ) [SquareDesignatorOption]
+                                            ) [Designator]
+                                          ) [Var]
+                                          NoFactor(
+                                          ) [NoFactor]
+                                        ) [Term]
+                                      ) [TermExpr]
+                                    ) [ActualParams]
+                                  ) [Actuals]
+                                ) [FuncCall]
+                                NoFactor(
+                                ) [NoFactor]
+                              ) [Term]
+                            ) [TermExpr]
+                          ) [ActualParam]
                           TermExpr(
                             Term(
                               Var(
                                 Designator(
-                                 bodovi
-                                  NoDesignatorOptions(
-                                  ) [NoDesignatorOptions]
+                                 niz
+                                  SquareDesignatorOption(
+                                    TermExpr(
+                                      Term(
+                                        Const(
+                                         2
+                                        ) [Const]
+                                        NoFactor(
+                                        ) [NoFactor]
+                                      ) [Term]
+                                    ) [TermExpr]
+                                  ) [SquareDesignatorOption]
                                 ) [Designator]
                               ) [Var]
                               NoFactor(
                               ) [NoFactor]
                             ) [Term]
                           ) [TermExpr]
-                        ) [ActualParam]
+                        ) [ActualParams]
                       ) [Actuals]
                     ) [FuncCall]
                     NoFactor(
                     ) [NoFactor]
                   ) [Term]
                 ) [TermExpr]
-              ) [Assignment]
-            ) [MatchedDesignatorStatement]
+              ) [PrintStmt]
+            ) [MatchedStmt]
+          ) [Statements]
+          MatchedStmt(
+            PrintStmt(
+              TermExpr(
+                Term(
+                  Var(
+                    Designator(
+                     eol
+                      NoDesignatorOptions(
+                      ) [NoDesignatorOptions]
+                    ) [Designator]
+                  ) [Var]
+                  NoFactor(
+                  ) [NoFactor]
+                ) [Term]
+              ) [TermExpr]
+            ) [PrintStmt]
           ) [MatchedStmt]
         ) [Statements]
         MatchedStmt(
           PrintStmt(
             TermExpr(
               Term(
-                Var(
+                FuncCall(
                   Designator(
-                   bodovi
+                   inkrement
                     NoDesignatorOptions(
                     ) [NoDesignatorOptions]
                   ) [Designator]
-                ) [Var]
+                  Actuals(
+                    ActualParams(
+                      ActualParam(
+                        TermExpr(
+                          Term(
+                            Var(
+                              Designator(
+                               niz
+                                SquareDesignatorOption(
+                                  TermExpr(
+                                    Term(
+                                      Const(
+                                       2
+                                      ) [Const]
+                                      NoFactor(
+                                      ) [NoFactor]
+                                    ) [Term]
+                                  ) [TermExpr]
+                                ) [SquareDesignatorOption]
+                              ) [Designator]
+                            ) [Var]
+                            NoFactor(
+                            ) [NoFactor]
+                          ) [Term]
+                        ) [TermExpr]
+                      ) [ActualParam]
+                      TermExpr(
+                        Term(
+                          Var(
+                            Designator(
+                             IncrementType
+                              DotDesignatorOption(
+                               DOUBLE_VALUE
+                              ) [DotDesignatorOption]
+                            ) [Designator]
+                          ) [Var]
+                          NoFactor(
+                          ) [NoFactor]
+                        ) [Term]
+                      ) [TermExpr]
+                    ) [ActualParams]
+                  ) [Actuals]
+                ) [FuncCall]
                 NoFactor(
                 ) [NoFactor]
               ) [Term]
@@ -1757,111 +1989,90 @@ INFO  19:39:54,635 - Program(
     ) [MethodDecl]
   ) [MethodDeclarations]
 ) [Program]
-INFO  19:39:54,660 - Deklarisano nabrajanje Broj na liniji 5
-INFO  19:39:54,660 - Deklarisan element nabrajanja NULA na liniji 5
-INFO  19:39:54,660 - Deklarisan element nabrajanja JEDAN na liniji 5
-INFO  19:39:54,660 - Deklarisan element nabrajanja PET na liniji 5
-INFO  19:39:54,660 - Deklarisan element nabrajanja DESET na liniji 5
-INFO  19:39:54,660 - Deklarisana konstanta jedan na liniji 7
-INFO  19:39:54,660 - Deklarisana konstanta pet na liniji 8
-INFO  19:39:54,660 - Deklarisan niz niz na liniji 10
-INFO  19:39:54,660 - Deklarisan niz nizch na liniji 11
-INFO  19:39:54,660 - Obradjuje se funkcija inc na liniji 14
-INFO  19:39:54,660 - Deklarisan formalni parametar broj na liniji 14
-INFO  19:39:54,660 - Upotreba formalnog parametra broj na liniji 16, Var broj: int, 0, 1 
-INFO  19:39:54,660 - Upotreba konstante JEDAN nabrajanja Broj na liniji 16, Type Broj: , 0, 0 
-INFO  19:39:54,660 - Obradjuje se funkcija mul na liniji 19
-INFO  19:39:54,660 - Deklarisan formalni parametar arr na liniji 19
-INFO  19:39:54,661 - Deklarisan formalni parametar index na liniji 19
-INFO  19:39:54,661 - Deklarisan formalni parametar b na liniji 19
-INFO  19:39:54,661 - Upotreba formalnog parametra index na liniji 21, Var index: int, 1, 1 
-INFO  19:39:54,661 - Upotreba formalnog parametra arr na liniji 21, Var arr: Arr of int, 0, 1 
-INFO  19:39:54,661 - Upotreba elementa niza arr na liniji 21, : int, 0, 1 
-INFO  19:39:54,661 - Upotreba formalnog parametra index na liniji 21, Var index: int, 1, 1 
-INFO  19:39:54,661 - Upotreba formalnog parametra arr na liniji 21, Var arr: Arr of int, 0, 1 
-INFO  19:39:54,661 - Upotreba elementa niza arr na liniji 21, : int, 0, 1 
-INFO  19:39:54,661 - Upotreba formalnog parametra b na liniji 21, Var b: int, 2, 1 
-INFO  19:39:54,661 - Obradjuje se funkcija main na liniji 24
-INFO  19:39:54,661 - Deklarisana promenljiva bodovi na liniji 25
-INFO  19:39:54,661 - Deklarisana promenljiva jedan na liniji 26
-INFO  19:39:54,661 - Deklarisana promenljiva nula na liniji 26
-INFO  19:39:54,661 - Upotreba lokalne promenljive nula na liniji 28, Var nula: int, 2, 1 
-INFO  19:39:54,661 - Upotreba konstante NULA nabrajanja Broj na liniji 28, Type Broj: , 0, 0 
-INFO  19:39:54,661 - Upotreba lokalne promenljive jedan na liniji 29, Var jedan: int, 1, 1 
-INFO  19:39:54,661 - Upotreba konstante JEDAN nabrajanja Broj na liniji 29, Type Broj: , 0, 0 
-INFO  19:39:54,661 - Upotreba lokalne promenljive bodovi na liniji 31, Var bodovi: int, 0, 1 
-INFO  19:39:54,661 - Upotreba lokalne promenljive bodovi na liniji 32, Var bodovi: int, 0, 1 
-INFO  19:39:54,661 - Upotreba lokalne promenljive bodovi na liniji 33, Var bodovi: int, 0, 1 
-INFO  19:39:54,661 - Upotreba lokalne promenljive bodovi na liniji 33, Var bodovi: int, 0, 1 
-INFO  19:39:54,661 - Upotreba lokalne promenljive jedan na liniji 33, Var jedan: int, 1, 1 
-INFO  19:39:54,661 - Upotreba lokalne promenljive bodovi na liniji 34, Var bodovi: int, 0, 1 
-INFO  19:39:54,661 - Upotreba lokalne promenljive bodovi na liniji 34, Var bodovi: int, 0, 1 
-INFO  19:39:54,661 - Upotreba globalne konstante pet na liniji 34, Con pet: int, 5, 0 
-INFO  19:39:54,661 - Upotreba lokalne promenljive bodovi na liniji 35, Var bodovi: int, 0, 1 
-INFO  19:39:54,661 - Upotreba lokalne promenljive bodovi na liniji 36, Var bodovi: int, 0, 1 
-INFO  19:39:54,661 - Upotreba globalne promenljive niz na liniji 39, Var niz: Arr of int, 0, 0 
-INFO  19:39:54,661 - Upotreba lokalne promenljive nula na liniji 40, Var nula: int, 2, 1 
-INFO  19:39:54,661 - Upotreba globalne promenljive niz na liniji 40, Var niz: Arr of int, 0, 0 
-INFO  19:39:54,661 - Upotreba elementa niza niz na liniji 40, : int, 0, 0 
-INFO  19:39:54,662 - Upotreba globalne konstante pet na liniji 40, Con pet: int, 5, 0 
-INFO  19:39:54,662 - Upotreba globalne promenljive niz na liniji 41, Var niz: Arr of int, 0, 0 
-INFO  19:39:54,662 - Upotreba elementa niza niz na liniji 41, : int, 0, 0 
-INFO  19:39:54,662 - Upotreba konstante DESET nabrajanja Broj na liniji 41, Type Broj: , 0, 0 
-INFO  19:39:54,662 - Upotreba globalne promenljive niz na liniji 42, Var niz: Arr of int, 0, 0 
-INFO  19:39:54,662 - Pronadjen poziv funkcije inc na liniji 42, Meth inc: int, 0, 1 
-INFO  19:39:54,662 - Pronadjen poziv funkcije mul na liniji 42, Meth mul: notype, 0, 3 
-INFO  19:39:54,662 - Upotreba globalne promenljive niz na liniji 43, Var niz: Arr of int, 0, 0 
-INFO  19:39:54,662 - Upotreba konstante NULA nabrajanja Broj na liniji 43, Type Broj: , 0, 0 
-INFO  19:39:54,662 - Upotreba konstante JEDAN nabrajanja Broj na liniji 43, Type Broj: , 0, 0 
-INFO  19:39:54,662 - Pronadjen poziv funkcije inc na liniji 43, Meth inc: int, 0, 1 
-INFO  19:39:54,662 - Pronadjen poziv funkcije inc na liniji 43, Meth inc: int, 0, 1 
-INFO  19:39:54,662 - Pronadjen poziv funkcije mul na liniji 43, Meth mul: notype, 0, 3 
-INFO  19:39:54,662 - Upotreba lokalne promenljive bodovi na liniji 44, Var bodovi: int, 0, 1 
-INFO  19:39:54,662 - Upotreba globalne promenljive niz na liniji 44, Var niz: Arr of int, 0, 0 
-INFO  19:39:54,662 - Upotreba elementa niza niz na liniji 44, : int, 0, 0 
-INFO  19:39:54,662 - Upotreba globalne promenljive niz na liniji 44, Var niz: Arr of int, 0, 0 
-INFO  19:39:54,662 - Upotreba elementa niza niz na liniji 44, : int, 0, 0 
-INFO  19:39:54,662 - Upotreba lokalne promenljive bodovi na liniji 45, Var bodovi: int, 0, 1 
-INFO  19:39:54,662 - Upotreba konstante JEDAN nabrajanja Broj na liniji 46, Type Broj: , 0, 0 
-INFO  19:39:54,662 - Upotreba globalne promenljive niz na liniji 46, Var niz: Arr of int, 0, 0 
-INFO  19:39:54,662 - Upotreba elementa niza niz na liniji 46, : int, 0, 0 
-INFO  19:39:54,662 - Upotreba globalne promenljive nizch na liniji 49, Var nizch: Arr of char, 1, 0 
-INFO  19:39:54,662 - Upotreba globalne promenljive nizch na liniji 50, Var nizch: Arr of char, 1, 0 
-INFO  19:39:54,662 - Upotreba elementa niza nizch na liniji 50, : char, 1, 0 
-INFO  19:39:54,663 - Upotreba lokalne promenljive jedan na liniji 51, Var jedan: int, 1, 1 
-INFO  19:39:54,663 - Upotreba globalne promenljive nizch na liniji 51, Var nizch: Arr of char, 1, 0 
-INFO  19:39:54,663 - Upotreba elementa niza nizch na liniji 51, : char, 1, 0 
-INFO  19:39:54,663 - Upotreba globalne konstante pet na liniji 52, Con pet: int, 5, 0 
-INFO  19:39:54,663 - Upotreba globalne promenljive nizch na liniji 52, Var nizch: Arr of char, 1, 0 
-INFO  19:39:54,663 - Upotreba elementa niza nizch na liniji 52, : char, 1, 0 
-INFO  19:39:54,663 - Pronadjen poziv funkcije inc na liniji 53, Meth inc: int, 0, 1 
-INFO  19:39:54,663 - Upotreba globalne promenljive nizch na liniji 53, Var nizch: Arr of char, 1, 0 
-INFO  19:39:54,663 - Upotreba elementa niza nizch na liniji 53, : char, 1, 0 
-INFO  19:39:54,663 - Upotreba lokalne promenljive jedan na liniji 54, Var jedan: int, 1, 1 
-INFO  19:39:54,663 - Upotreba globalne promenljive nizch na liniji 54, Var nizch: Arr of char, 1, 0 
-INFO  19:39:54,663 - Upotreba elementa niza nizch na liniji 54, : char, 1, 0 
-INFO  19:39:54,663 - Upotreba lokalne promenljive bodovi na liniji 57, Var bodovi: int, 0, 1 
-INFO  19:39:54,663 - Upotreba lokalne promenljive bodovi na liniji 57, Var bodovi: int, 0, 1 
-INFO  19:39:54,663 - Upotreba globalne konstante pet na liniji 57, Con pet: int, 5, 0 
-INFO  19:39:54,663 - Upotreba lokalne promenljive jedan na liniji 57, Var jedan: int, 1, 1 
-INFO  19:39:54,663 - Upotreba konstante JEDAN nabrajanja Broj na liniji 57, Type Broj: , 0, 0 
-INFO  19:39:54,663 - Pronadjen poziv funkcije inc na liniji 57, Meth inc: int, 0, 1 
-INFO  19:39:54,663 - Upotreba konstante NULA nabrajanja Broj na liniji 57, Type Broj: , 0, 0 
-INFO  19:39:54,663 - Pronadjen poziv funkcije inc na liniji 57, Meth inc: int, 0, 1 
-INFO  19:39:54,663 - Upotreba lokalne promenljive bodovi na liniji 58, Var bodovi: int, 0, 1 
-INFO  19:39:54,663 - Upotreba lokalne promenljive bodovi na liniji 61, Var bodovi: int, 0, 1 
-INFO  19:39:54,663 - Upotreba lokalne promenljive bodovi na liniji 62, Var bodovi: int, 0, 1 
-INFO  19:39:54,663 - Upotreba lokalne promenljive bodovi na liniji 62, Var bodovi: int, 0, 1 
-INFO  19:39:54,663 - Pronadjen poziv funkcije inc na liniji 62, Meth inc: int, 0, 1 
-INFO  19:39:54,663 - Upotreba lokalne promenljive bodovi na liniji 63, Var bodovi: int, 0, 1 
-INFO  19:39:54,663 - Print calls = 7
-INFO  19:39:54,663 - Globalnih promenljivih = 0
-INFO  19:39:54,663 - Globalnih konstanti = 2
-INFO  19:39:54,663 - Globalnih nizova = 2
-INFO  19:39:54,663 - Broj metoda = 3
-INFO  19:39:54,663 - Broj enuma = 1
-INFO  19:39:54,664 - =====================SYMBOL TABLE DUMP=========================
-INFO  19:39:54,664 - 
+INFO  20:27:25,953 - Deklarisano nabrajanje IncrementType na liniji 5
+INFO  20:27:25,953 - Deklarisan element nabrajanja BY_ONE na liniji 5
+INFO  20:27:25,953 - Deklarisan element nabrajanja DOUBLE_VALUE na liniji 5
+INFO  20:27:25,953 - Deklarisana promenljiva i na liniji 7
+INFO  20:27:25,953 - Deklarisana promenljiva ibool na liniji 8
+INFO  20:27:25,953 - Deklarisan niz niz na liniji 10
+INFO  20:27:25,953 - Obradjuje se funkcija sum na liniji 13
+INFO  20:27:25,953 - Deklarisan formalni parametar z na liniji 13
+INFO  20:27:25,953 - Deklarisan formalni parametar d na liniji 13
+INFO  20:27:25,953 - Upotreba formalnog parametra z na liniji 15, Var z: int, 0, 1 
+INFO  20:27:25,953 - Upotreba formalnog parametra d na liniji 15, Var d: int, 1, 1 
+INFO  20:27:25,953 - Obradjuje se funkcija inkrement na liniji 18
+INFO  20:27:25,953 - Deklarisan formalni parametar a na liniji 18
+INFO  20:27:25,953 - Deklarisan formalni parametar type na liniji 18
+INFO  20:27:25,953 - Deklarisana promenljiva pom na liniji 18
+INFO  20:27:25,953 - Upotreba formalnog parametra type na liniji 20, Var type: int, 1, 1 
+INFO  20:27:25,954 - Upotreba konstante BY_ONE nabrajanja IncrementType na liniji 20, Type IncrementType: , 0, 0 
+INFO  20:27:25,954 - Upotreba lokalne promenljive pom na liniji 20, Var pom: int, 2, 1 
+INFO  20:27:25,954 - Upotreba formalnog parametra type na liniji 21, Var type: int, 1, 1 
+INFO  20:27:25,954 - Upotreba konstante DOUBLE_VALUE nabrajanja IncrementType na liniji 21, Type IncrementType: , 0, 0 
+INFO  20:27:25,954 - Upotreba lokalne promenljive pom na liniji 21, Var pom: int, 2, 1 
+INFO  20:27:25,954 - Upotreba formalnog parametra a na liniji 21, Var a: int, 0, 1 
+INFO  20:27:25,954 - Upotreba formalnog parametra a na liniji 23, Var a: int, 0, 1 
+INFO  20:27:25,954 - Upotreba lokalne promenljive pom na liniji 23, Var pom: int, 2, 1 
+INFO  20:27:25,954 - Pronadjen poziv funkcije sum na liniji 23, Meth sum: int, 0, 2 
+INFO  20:27:25,954 - Obradjuje se funkcija main na liniji 26
+INFO  20:27:25,954 - Upotreba globalne promenljive ibool na liniji 31, Var ibool: , 1, 0 
+INFO  20:27:25,954 - Upotreba globalne promenljive i na liniji 32, Var i: int, 0, 0 
+INFO  20:27:25,954 - Upotreba globalne promenljive i na liniji 33, Var i: int, 0, 0 
+INFO  20:27:25,954 - Upotreba globalne promenljive i na liniji 33, Var i: int, 0, 0 
+INFO  20:27:25,954 - Upotreba globalne promenljive i na liniji 33, Var i: int, 0, 0 
+INFO  20:27:25,954 - Upotreba globalne promenljive i na liniji 35, Var i: int, 0, 0 
+INFO  20:27:25,954 - Upotreba globalne promenljive ibool na liniji 35, Var ibool: , 1, 0 
+INFO  20:27:25,954 - Upotreba globalne promenljive ibool na liniji 38, Var ibool: , 1, 0 
+INFO  20:27:25,954 - Upotreba globalne promenljive i na liniji 39, Var i: int, 0, 0 
+INFO  20:27:25,954 - Upotreba globalne promenljive niz na liniji 42, Var niz: Arr of int, 2, 0 
+INFO  20:27:25,954 - Upotreba globalne promenljive niz na liniji 42, Var niz: Arr of int, 2, 0 
+INFO  20:27:25,954 - Upotreba elementa niza niz na liniji 42, : int, 2, 0 
+INFO  20:27:25,954 - Upotreba globalne promenljive niz na liniji 42, Var niz: Arr of int, 2, 0 
+INFO  20:27:25,954 - Upotreba elementa niza niz na liniji 42, : int, 2, 0 
+INFO  20:27:25,954 - Pronadjen poziv funkcije sum na liniji 42, Meth sum: int, 0, 2 
+INFO  20:27:25,955 - Upotreba globalne promenljive niz na liniji 43, Var niz: Arr of int, 2, 0 
+INFO  20:27:25,955 - Upotreba elementa niza niz na liniji 43, : int, 2, 0 
+INFO  20:27:25,955 - Pronadjen poziv funkcije ord na liniji 43, Meth ord: int, 0, 1 
+INFO  20:27:25,955 - Pronadjen poziv funkcije ord na liniji 44, Meth ord: int, 0, 1 
+INFO  20:27:25,955 - Upotreba globalne konstante eol na liniji 46, Con eol: char, 10, 0 
+INFO  20:27:25,955 - Upotreba globalne promenljive i na liniji 47, Var i: int, 0, 0 
+INFO  20:27:25,955 - Upotreba globalne promenljive i na liniji 48, Var i: int, 0, 0 
+INFO  20:27:25,955 - Upotreba globalne promenljive i na liniji 50, Var i: int, 0, 0 
+INFO  20:27:25,955 - Upotreba globalne promenljive i na liniji 52, Var i: int, 0, 0 
+INFO  20:27:25,955 - Upotreba globalne promenljive i na liniji 55, Var i: int, 0, 0 
+INFO  20:27:25,955 - Upotreba globalne promenljive i na liniji 56, Var i: int, 0, 0 
+INFO  20:27:25,955 - Upotreba globalne promenljive i na liniji 56, Var i: int, 0, 0 
+INFO  20:27:25,955 - Upotreba konstante BY_ONE nabrajanja IncrementType na liniji 56, Type IncrementType: , 0, 0 
+INFO  20:27:25,955 - Pronadjen poziv funkcije inkrement na liniji 56, Meth inkrement: int, 0, 2 
+INFO  20:27:25,955 - Upotreba globalne promenljive i na liniji 59, Var i: int, 0, 0 
+INFO  20:27:25,955 - Upotreba globalne promenljive niz na liniji 62, Var niz: Arr of int, 2, 0 
+INFO  20:27:25,955 - Upotreba elementa niza niz na liniji 62, : int, 2, 0 
+INFO  20:27:25,955 - Upotreba globalne promenljive niz na liniji 63, Var niz: Arr of int, 2, 0 
+INFO  20:27:25,955 - Upotreba elementa niza niz na liniji 63, : int, 2, 0 
+INFO  20:27:25,955 - Upotreba globalne promenljive niz na liniji 64, Var niz: Arr of int, 2, 0 
+INFO  20:27:25,955 - Upotreba elementa niza niz na liniji 64, : int, 2, 0 
+INFO  20:27:25,955 - Upotreba globalne konstante eol na liniji 65, Con eol: char, 10, 0 
+INFO  20:27:25,955 - Upotreba globalne promenljive niz na liniji 67, Var niz: Arr of int, 2, 0 
+INFO  20:27:25,955 - Upotreba elementa niza niz na liniji 67, : int, 2, 0 
+INFO  20:27:25,955 - Upotreba globalne promenljive niz na liniji 67, Var niz: Arr of int, 2, 0 
+INFO  20:27:25,955 - Upotreba elementa niza niz na liniji 67, : int, 2, 0 
+INFO  20:27:25,955 - Pronadjen poziv funkcije sum na liniji 67, Meth sum: int, 0, 2 
+INFO  20:27:25,955 - Upotreba globalne promenljive niz na liniji 67, Var niz: Arr of int, 2, 0 
+INFO  20:27:25,955 - Upotreba elementa niza niz na liniji 67, : int, 2, 0 
+INFO  20:27:25,955 - Pronadjen poziv funkcije sum na liniji 67, Meth sum: int, 0, 2 
+INFO  20:27:25,955 - Upotreba globalne konstante eol na liniji 69, Con eol: char, 10, 0 
+INFO  20:27:25,955 - Upotreba globalne promenljive niz na liniji 70, Var niz: Arr of int, 2, 0 
+INFO  20:27:25,955 - Upotreba elementa niza niz na liniji 70, : int, 2, 0 
+INFO  20:27:25,955 - Upotreba konstante DOUBLE_VALUE nabrajanja IncrementType na liniji 70, Type IncrementType: , 0, 0 
+INFO  20:27:25,955 - Pronadjen poziv funkcije inkrement na liniji 70, Meth inkrement: int, 0, 2 
+INFO  20:27:25,955 - Print calls = 13
+INFO  20:27:25,955 - Globalnih promenljivih = 2
+INFO  20:27:25,955 - Globalnih konstanti = 0
+INFO  20:27:25,955 - Globalnih nizova = 1
+INFO  20:27:25,955 - Broj metoda = 3
+INFO  20:27:25,955 - Broj enuma = 1
+INFO  20:27:25,955 - =====================SYMBOL TABLE DUMP=========================
+INFO  20:27:25,956 - 
 Type int: int, -1, -1 
 Type char: char, -1, -1 
 Con eol: char, 10, 0 
@@ -1876,26 +2087,23 @@ Meth len: int, 0, 1
    Var arr: Arr of notype, 0, 1 
 
 Type bool: , -1, -1 
-Prog test301: notype, 0, 1 
-   Type Broj: , 0, 0 
-   Con jedan: int, 1, 0 
-   Con pet: int, 5, 0 
-   Var niz: Arr of int, 0, 0 
-   Var nizch: Arr of char, 1, 0 
-   Meth inc: int, 0, 1 
-      Var broj: int, 0, 1 
+Prog test302: notype, 0, 1 
+   Type IncrementType: , 0, 0 
+   Var i: int, 0, 0 
+   Var ibool: , 1, 0 
+   Var niz: Arr of int, 2, 0 
+   Meth sum: int, 0, 2 
+      Var z: int, 0, 1 
+      Var d: int, 1, 1 
 
-   Meth mul: notype, 0, 3 
-      Var arr: Arr of int, 0, 1 
-      Var index: int, 1, 1 
-      Var b: int, 2, 1 
+   Meth inkrement: int, 0, 2 
+      Var a: int, 0, 1 
+      Var type: int, 1, 1 
+      Var pom: int, 2, 1 
 
    Meth main: notype, 0, 0 
-      Var bodovi: int, 0, 1 
-      Var jedan: int, 1, 1 
-      Var nula: int, 2, 1 
 
 
 
-INFO  19:39:54,664 - Generating bytecode file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
-INFO  19:39:54,668 - Parsiranje uspesno zavrseno!
+INFO  20:27:25,956 - Generating bytecode file: C:\Users\Dusan\Desktop\pp1lab.templateAST\workspace\MJCompiler\test\program.obj
+INFO  20:27:25,960 - Parsiranje uspesno zavrseno!
